@@ -1,0 +1,480 @@
+[
+  {
+    "document_id": "AIOS-CORE-002",
+    "title": "The Gateway Global AIOS Governance Constitution",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "core",
+    "_path": "core\\governance_constitution.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "constrains"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "constrains"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CORE-003",
+    "title": "Gateway Global AIOS Master Platform Operating Agreement",
+    "version": "3.0.0",
+    "status": "ratified",
+    "category": "core",
+    "_path": "core\\master_platform_operating_agreement.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "incorporates"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CORE-001",
+    "title": "AIOS Technical Manifesto & Platform Economics",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "core",
+    "_path": "core\\technical_manifesto.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "incorporated_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-003",
+    "title": "AIOS Agent Integration Protocol (AIP)",
+    "version": "1.2.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications\\AgentIntegrationProtocol.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-004",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-005",
+    "title": "AIOS Agent Integration Guide (AGENTS.md)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications\\agents.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-004",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-004",
+    "title": "AIOS CLI Developer Experience Guide",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications\\CLIDeveloperGuide.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-007",
+    "title": "Google Workspace Integration Governance",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\GoogleWorkspaceIntegrationGovernance.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-001",
+    "title": "AIOS NodeContract Specification",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications\\NodeContract.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-002",
+        "relationship": "extends"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-002",
+    "title": "AIOS PolicyRecord Specification",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications\\PolicyRecord.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-001",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-009",
+    "title": "Security & Sandboxing Model",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\SecuritySandboxingModel.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-COMM-001",
+        "relationship": "enforced_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "extends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-006",
+    "title": "UI Component Registry Standard",
+    "version": "1.2.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\UIComponentRegistryStandard.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-COMM-001",
+        "relationship": "extended_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "enforced_by"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMM-002",
+    "title": "Data Privacy & Compliance Addendum",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "commercial",
+    "_path": "commercial\\DataPrivacyComplianceAddendum.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMM-001",
+    "title": "AIOS Marketplace Terms & Vendor Onboarding",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "commercial",
+    "_path": "commercial\\MarketplaceTermsOnboarding.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "extends"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-005",
+    "title": "Workspace Model & Governed Interface Surfaces",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "amendment",
+    "_path": "amendments\\AMD-2026-005.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "amends"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-006",
+    "title": "Google Workspace Governed Integration Plane",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments\\AMD-2026-006.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "amends"
+      }
+    ]
+  },
+  {
+    "document_id": "",
+    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
+    "version": "",
+    "status": "ratified",
+    "category": "",
+    "_path": "amendments\\ammendment_google.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AIOS-REF-012",
+    "title": "Ecosystem Roadmap & Versioning Policy",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference\\EcosystemRoadmapVersioningPolicy.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "governed_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-COMM-001",
+        "relationship": "extends"
+      }
+    ]
+  },
+  {
+    "document_id": "—",
+    "title": "gateway_plan",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\gateway_plan.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "gateway_plan_review",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\gateway_plan_review.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AIOS-REF-011",
+    "title": "Governance Council Operating Manual",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference\\GovernanceCouncilOperatingManual.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "operationalizes"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-COMM-002",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "—",
+    "title": "intent_driven_skill",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\intent_driven_skill.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "ptt_interface",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\ptt_interface.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "shell_overhaul",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\shell_overhaul.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "UI_PHILOSOPHY",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\UI_PHILOSOPHY.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "uifix_ptt",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference\\uifix_ptt.md",
+    "cross_references": []
+  }
+]

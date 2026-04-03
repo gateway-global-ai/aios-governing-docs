@@ -1,0 +1,13 @@
+{
+  "template_id": "AMD-2026-004",
+  "amendment_id": "AMD-2026-004",
+  "title": "Intent Identity Disclosure & State Identity",
+  "affected_documents": [
+    "AIOS-CORE-001",
+    "AIOS-CORE-002",
+    "AIOS-SPEC-006",
+    "AIOS-REF-012"
+  ],
+  "rationale_note": "Shift from agent identity to state identity; constitutional transparency for intent disclosure.",
+  "ratification_path": "RFC 30d, simulation, two-thirds Council (Constitution Art VI). No MPOA economic amendment path."
+}

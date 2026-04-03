@@ -1,0 +1,12 @@
+{
+  "amendment_id": "AMD-2026-a10b9a",
+  "source_type": "analysis",
+  "rationale": "Paradigm shift: Intent Comprehension, Transparency/State Identity, drafting assistant framing; multi-doc amendment.",
+  "affected_documents": [
+    "AIOS-CORE-001",
+    "AIOS-CORE-002",
+    "AIOS-SPEC-001"
+  ],
+  "submitted": "2026-04-02T14:50:07.128576",
+  "status": "draft"
+}

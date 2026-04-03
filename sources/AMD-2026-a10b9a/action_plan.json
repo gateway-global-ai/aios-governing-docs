@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "source_name": "AMD-2026-a10b9a",
+  "merge_notes": [
+    "All three reports classify the source as a Design Standard/Technical Reference and agree on the core paradigm shift: from 'agent' to 'drafting assistant' and the introduction of Intent Comprehension and State Identity as governed skills. All reports identify the same primary documents for amendment (Technical Manifesto, Governance Constitution, AIP, NodeContract Specification, agents.md). There is strong consensus on the critical priority of these changes. Notable conflicts: DeepSeek and Gemini recommend creating a new 'Intent Comprehension Skill Specification' document, while Gemini's report later states no new documents are recommended. OpenAI's report suggests a new 'AIOS Intent Comprehension and Transparency Guidelines' document. The synthesis resolves this by not creating new documents, as the source material integrates the concepts into existing core documents."
+  ],
+  "actions": [
+    {
+      "id": "act-001",
+      "title": "Add Article X to Technical Manifesto",
+      "description": "Insert the new Article X (Intent Comprehension & Transparency as Governed Skills) into AIOS-CORE-001 after Article IX. This codifies Intent Comprehension as a governed SkillPrimitive and State Identity as a constitutional transparency guarantee, establishing the foundational architectural shift.",
+      "document_id": "AIOS-CORE-001",
+      "target_path": "core/technical_manifesto.md",
+      "priority": "critical",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": []
+    },
+    {
+      "id": "act-002",
+      "title": "Update Governance Constitution for Judicial Transparency",
+      "description": "Add Section 4 to Article III of AIOS-CORE-002, making State Identity disclosure a judicial transparency requirement for Policy evaluations that change IntentKey. Also amend Article II, Section 3 to include State Identity statistics in the weekly transparency log.",
+      "document_id": "AIOS-CORE-002",
+      "target_path": "core/governance_constitution.md",
+      "priority": "critical",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": [
+        "act-001"
+      ]
+    },
+    {
+      "id": "act-003",
+      "title": "Rename and Reframe AIP as Intent Drafting Assistant Protocol",
+      "description": "Change the title of AIOS-SPEC-003 from 'AIOS Agent Integration Protocol (AIP)' to 'AIOS Intent Drafting Assistant Protocol (IDAP)'. Update Section 1 (Architectural Purpose) and replace the 'Agent Mandate' in Section 2 with the new 'Drafting Assistant Mandate' and its six Rules of Engagement.",
+      "document_id": "AIOS-SPEC-003",
+      "target_path": "specifications/AgentIntegrationProtocol.md",
+      "priority": "high",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": [
+        "act-001"
+      ]
+    },
+    {
+      "id": "act-004",
+      "title": "Rename and Update agents.md to drafting-assistant.md",
+      "description": "Rename the file AIOS-SPEC-005 from 'agents.md' to 'drafting-assistant.md'. Replace its content with the new 'DRAFTING-ASSISTANT.md' guide, which reframes AI as a drafting assistant, references the new Intent Drafting Assistant Protocol, and prohibits claiming independent agency.",
+      "document_id": "AIOS-SPEC-005",
+      "target_path": "specifications/agents.md",
+      "priority": "high",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": [
+        "act-003"
+      ]
+    },
+    {
+      "id": "act-005",
+      "title": "Add Intent Comprehension fields to NodeContract Schema",
+      "description": "Update AIOS-SPEC-001 by adding the optional 'intent_comprehension' object to the NodeContract JSON schema, containing properties for min_confidence, disambiguation_skills, and fallback_intent.",
+      "document_id": "AIOS-SPEC-001",
+      "target_path": "specifications/NodeContract.md",
+      "priority": "medium",
+      "status": "proposed",
+      "execution_kind": "schema_extract",
+      "dependencies": [
+        "act-001"
+      ]
+    },
+    {
+      "id": "act-006",
+      "title": "Update UI Component Registry for State Identity Card",
+      "description": "Amend AIOS-SPEC-006 (UI Component Registry Standard) to include the formal definition, properties, and behavioral requirements for the new 'aios-intent-identity-card' component mandated by Article X of the Technical Manifesto.",
+      "document_id": "AIOS-SPEC-006",
+      "target_path": "specifications/UIComponentRegistryStandard.md",
+      "priority": "high",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": [
+        "act-001"
+      ]
+    },
+    {
+      "id": "act-007",
+      "title": "Audit and Update 'Agent' Terminology Across Document Set",
+      "description": "Perform a manual audit of all documents in the registry (especially AIOS-SPEC-004 CLI Guide, commercial, and reference docs) to replace references to 'agent' with 'drafting assistant' or appropriate context-specific terms, ensuring cross-document consistency.",
+      "document_id": "",
+      "target_path": "",
+      "priority": "high",
+      "status": "proposed",
+      "execution_kind": "manual",
+      "dependencies": [
+        "act-003",
+        "act-004"
+      ]
+    },
+    {
+      "id": "act-008",
+      "title": "Regenerate Document Registry",
+      "description": "Run the registry_generator.py script to update the document registry (paths, titles, cross-references) reflecting the renamed AIOS-SPEC-003 and AIOS-SPEC-005, and to capture any new cross-document relationships established by the amendments.",
+      "document_id": "",
+      "target_path": "",
+      "priority": "medium",
+      "status": "proposed",
+      "execution_kind": "registry_regenerate",
+      "dependencies": [
+        "act-003",
+        "act-004",
+        "act-007"
+      ]
+    }
+  ],
+  "synthesized_at": "2026-04-02T20:51:07+00:00",
+  "synthesis_model": "deepseek"
+}

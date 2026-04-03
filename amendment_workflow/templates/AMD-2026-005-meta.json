@@ -1,0 +1,13 @@
+{
+  "template_id": "AMD-2026-005",
+  "amendment_id": "AMD-2026-005",
+  "title": "Workspace Model & Governed Interface Surfaces",
+  "affected_documents": [
+    "AIOS-CORE-001",
+    "AIOS-SPEC-003",
+    "AIOS-SPEC-006"
+  ],
+  "rationale_note": "Codifies amendment_hub workspace, intent routing, binding schemas, transparency states, supersession of post-PR human audit in guides; deterministic intent failure policy.",
+  "ratification_path": "Per Governance Constitution Art VI where applicable; triangulated peer review thresholds; no separate human audit after peer review (AMD-2026-005 §3).",
+  "formal_amendment_path": "amendments/AMD-2026-005.md"
+}

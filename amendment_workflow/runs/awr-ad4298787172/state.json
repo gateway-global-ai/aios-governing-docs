@@ -1,0 +1,133 @@
+{
+  "run_id": "awr-ad4298787172",
+  "template_id": "AMD-2026-004",
+  "created_at": "2026-04-02T22:02:01+00:00",
+  "updated_at": "2026-04-02T22:02:04+00:00",
+  "status": "in_progress",
+  "meta": {
+    "template_id": "AMD-2026-004",
+    "amendment_id": "AMD-2026-004",
+    "title": "Intent Identity Disclosure & State Identity",
+    "affected_documents": [
+      "AIOS-CORE-001",
+      "AIOS-CORE-002",
+      "AIOS-SPEC-006",
+      "AIOS-REF-012"
+    ],
+    "rationale_note": "Shift from agent identity to state identity; constitutional transparency for intent disclosure.",
+    "ratification_path": "RFC 30d, simulation, two-thirds Council (Constitution Art VI). No MPOA economic amendment path."
+  },
+  "proposal_markdown": "# Amendment Proposal: Intent Identity Disclosure & State Identity\n\n**Amendment ID:** `AMD-2026-004`  \n**Date:** 2026-04-02  \n**Author:** Gateway Global (based on user feedback)  \n**Affected Documents:**  \n- Technical Manifesto (AIOS-CORE-001) \u2013 new Article X  \n- Governance Constitution (AIOS-CORE-002) \u2013 Article III & VI updates  \n- UI Component Registry Standard (AIOS-SPEC-006) \u2013 new required component  \n- Ecosystem Roadmap (AIOS-REF-012) \u2013 Q3 2026 feature line  \n\n**Rationale:**  \nThe system is intent\u2011driven, not agent\u2011driven. The current \u201cintent identity\u201d must be disclosed whenever intent changes. \u201cAgent identity\u201d is replaced by **state identity** \u2014 a governed, ephemeral summary of operational mode, skills, and policy constraints.\n\n---\n\n## Proposed Changes (summary)\n\n### 1. Technical Manifesto \u2013 New Article X: Intent Identity Disclosure\n\nInsert after Article IX. Defines **State Identity**, disclosure triggers (session start, IntentKey change, material capability change), `aios-intent-identity-card`, audit logging, session intent history, and reinterpretation of \u201cagent\u201d language as **State Identity** / **Intent Drafting Mandate**.\n\n### 2. Governance Constitution \u2013 Articles III & VI\n\n- **Article III:** Judicial transparency \u2014 Policy evaluations that change `IntentKey` must trigger Intent Identity Disclosure; failure to disclose is escalatable.  \n- **Article VI:** Weekly transparency log includes State Identity summary statistics.\n\n### 3. UI Component Registry Standard \u2013 Mandatory `aios-intent-identity-card`\n\nVariants: `default`, `compact`, `history`. System-maintained; vendors cannot suppress; DCP rejects Kits that hide disclosure.\n\n### 4. Ecosystem Roadmap \u2013 Feature line\n\n**Intent Identity Disclosure (Q3 2026)** \u2014 MINOR addition; no breaking Kit changes required.\n\n---\n\n## Implementation Notes\n\n- Follow-up: `agents.md` and AIP may be updated in a separate amendment.  \n- Security & Sandboxing Model unchanged (UI + audit only).\n\n## Required Ratification\n\n- RFC: 30 days  \n- Simulation: staging  \n- Vote: two-thirds supermajority (Constitution Art VI)  \n\nVersion bumps (post-ratification): Manifesto, Constitution, UI Registry, Roadmap **1.0.0 \u2192 1.1.0** where applicable.\n\n---\n\n*Full legal text would be inserted into each affected document at merge time; this workflow demo does not apply patches.*\n",
+  "peer_reviews": [
+    {
+      "reviewer": "Peer A (architecture)",
+      "model": "simulated",
+      "dimensions": {
+        "clarity": 4,
+        "feasibility": 5,
+        "alignment": 5
+      },
+      "summary": "Architecture review of \u201cIntent Identity Disclosure & State Identity\u201d: Article X placement after Art IX is sound. Recommend explicit linkage to audit log schema in Technical Manifesto Art VI."
+    },
+    {
+      "reviewer": "Peer B (governance)",
+      "model": "simulated",
+      "dimensions": {
+        "clarity": 5,
+        "feasibility": 4,
+        "alignment": 5
+      },
+      "summary": "Constitution updates should reference the existing transparency log cadence. Judicial disclosure requirement is clear; add cross-reference to Council Operating Manual for escalations."
+    },
+    {
+      "reviewer": "Peer C (UX/registry)",
+      "model": "simulated",
+      "dimensions": {
+        "clarity": 4,
+        "feasibility": 4,
+        "alignment": 4
+      },
+      "summary": "Mandatory `aios-intent-identity-card` should specify z-index and conflict rules with vendor UI. Registry bump to 1.1.0 MINOR is consistent with non-breaking platform addition."
+    }
+  ],
+  "consolidated_plan_markdown": "## Recommended plan (synthesized)\n\n**Amendment:** AMD-2026-004 \u2014 Intent Identity Disclosure & State Identity\n\n### Consensus\n- Proceed with **Technical Manifesto** new Article X and **Constitution** transparency hooks as drafted.\n- **UI Component Registry**: register `aios-intent-identity-card` as a system-managed mandatory component with WCAG AA.\n- **Roadmap**: schedule Intent Identity Disclosure under the stated quarter; treat as MINOR platform addition.\n\n### Actions before merge (human)\n1. Open RFC thread and attach this proposal + simulated reviews.\n2. Run staging simulation: Stateful Shell renders identity card on IntentKey transitions.\n3. Council supermajority vote per Constitution Art VI.\n4. After ratification, apply patches to affected files and bump versions (1.0.0 \u2192 1.1.0 where noted).\n\n### Peer review highlights\n- **Peer A (architecture):** Architecture review of \u201cIntent Identity Disclosure & State Identity\u201d: Article X placement after Art IX is sound. Recommend explicit linkage to audit log schema in Technical Manifesto Art VI.\n- **Peer B (governance):** Constitution updates should reference the existing transparency log cadence. Judicial disclosure requirement is clear; add cross-reference to Council Operating Manual for escalations.\n- **Peer C (UX/registry):** Mandatory `aios-intent-identity-card` should specify z-index and conflict rules with vendor UI. Registry bump to 1.1.0 MINOR is consistent with non-breaking platform addition.\n\n*This synthesis is generated for the amendment workflow demo; it does not modify the repository.*",
+  "steps": [
+    {
+      "id": "load",
+      "label": "Load proposal & metadata",
+      "status": "completed",
+      "detail": "Template `AMD-2026-004` loaded (2330 chars).",
+      "at": "2026-04-02T22:02:01+00:00"
+    },
+    {
+      "id": "peer",
+      "label": "Peer review (simulated)",
+      "status": "completed",
+      "detail": "Collected 3 peer reviews (simulated).",
+      "at": "2026-04-02T22:02:03+00:00"
+    },
+    {
+      "id": "synthesize",
+      "label": "Synthesize plan",
+      "status": "completed",
+      "detail": "Consolidated plan drafted from peer feedback.",
+      "at": "2026-04-02T22:02:04+00:00"
+    },
+    {
+      "id": "preview",
+      "label": "Merge preview (no repo writes)",
+      "status": "completed",
+      "detail": "Merge preview acknowledged \u2014 no files modified in this demo.",
+      "at": "2026-04-02T22:02:04+00:00"
+    },
+    {
+      "id": "done",
+      "label": "Workflow complete",
+      "status": "active",
+      "detail": "Advance to complete workflow.",
+      "at": null
+    }
+  ],
+  "console": [
+    {
+      "ts": "2026-04-02T22:02:01+00:00",
+      "level": "info",
+      "message": "Run awr-ad4298787172 created from template AMD-2026-004."
+    },
+    {
+      "ts": "2026-04-02T22:02:01+00:00",
+      "level": "ok",
+      "message": "Proposal loaded into workspace."
+    },
+    {
+      "ts": "2026-04-02T22:02:03+00:00",
+      "level": "ok",
+      "message": "Peer reviews generated (simulated triangulation)."
+    },
+    {
+      "ts": "2026-04-02T22:02:03+00:00",
+      "level": "info",
+      "message": "Step active: Synthesize plan"
+    },
+    {
+      "ts": "2026-04-02T22:02:04+00:00",
+      "level": "ok",
+      "message": "Recommended plan and action steps written."
+    },
+    {
+      "ts": "2026-04-02T22:02:04+00:00",
+      "level": "info",
+      "message": "Step active: Merge preview (no repo writes)"
+    },
+    {
+      "ts": "2026-04-02T22:02:04+00:00",
+      "level": "warn",
+      "message": "Demo mode: repository left unchanged."
+    },
+    {
+      "ts": "2026-04-02T22:02:04+00:00",
+      "level": "info",
+      "message": "Step active: Workflow complete"
+    }
+  ]
+}
