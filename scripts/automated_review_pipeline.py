@@ -120,12 +120,12 @@ def _save_queue(data: dict) -> None:
 
 
 def _split_revision_prompt(assembled: str) -> tuple[str, str]:
-    marker = "## The Original Document"
-    if marker not in assembled:
+    marker_match = re.search(r"(?m)^## The Original Document(?:\b.*)?$", assembled)
+    if not marker_match:
         # Template drift: avoid arbitrary 50/50 split; send full prompt as user message.
         return "You are a senior governance architect.", assembled
-    before, after = assembled.split(marker, 1)
-    return before, marker + after
+    marker_start = marker_match.start()
+    return assembled[:marker_start], assembled[marker_start:]
 
 
 def _strip_json_fence(raw: str) -> str:
