@@ -42,6 +42,7 @@ def _normalize_cross_refs(cross_refs) -> list[str]:
             elif isinstance(ref, dict):
                 value = (
                     ref.get("document_id")
+                    or ref.get("doc_id")
                     or ref.get("id")
                     or ref.get("ref")
                     or ref.get("target")
@@ -55,6 +56,8 @@ def _normalize_cross_refs(cross_refs) -> list[str]:
                 normalized.append(value)
 
     return normalized
+
+
 def _extract_numbers_with_context(content: str, doc_id: str, path: str) -> list[dict]:
     """Extract numbers with units/percentages and surrounding context."""
     patterns = [
