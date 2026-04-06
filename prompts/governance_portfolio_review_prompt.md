@@ -28,7 +28,7 @@ The following is a digest of the registry plus truncated document bodies. Infer 
 
 ## Required outputs
 
-Produce **exactly five** sections in **this order**, each bounded by delimiters on their own lines. Do not add text outside these sections except brief preamble is discouraged—start with the first `===FILE:` block.
+Produce **exactly five** sections in **this order**, each bounded by delimiters on their own lines. Do not add text outside these sections. A brief preamble is discouraged—start immediately with the first `===FILE:` block.
 
 Use these **exact** filenames in the delimiters:
 

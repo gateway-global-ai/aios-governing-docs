@@ -122,6 +122,7 @@ def _save_queue(data: dict) -> None:
 def _split_revision_prompt(assembled: str) -> tuple[str, str]:
     marker = "## The Original Document"
     if marker not in assembled:
+        # Template drift: avoid arbitrary 50/50 split; send full prompt as user message.
         return "You are a senior governance architect.", assembled
     before, after = assembled.split(marker, 1)
     return before, marker + after
@@ -466,7 +467,10 @@ async def _process_document(
         paths_r1 = sorted_review_paths(doc_path, 1)[idx_r1:]
         r1_texts = [read_file(p) for p in paths_r1]
         if len(r1_texts) == 0:
-            print("Error: No Round 1 reviews were generated. Aborting.")
+            print(
+                "Error: No Round 1 reviews were generated. Aborting.",
+                file=sys.stderr,
+            )
             return _finish(1)
         if len(r1_texts) != EXPECTED_R1:
             print(
@@ -477,6 +481,12 @@ async def _process_document(
 
         paths_r2 = sorted_review_paths(doc_path, 2)[idx_r2:]
         r2_texts = [read_file(p) for p in paths_r2]
+        if len(r2_texts) == 0:
+            print(
+                "Error: No Round 2 reviews were generated. Aborting.",
+                file=sys.stderr,
+            )
+            return _finish(1)
         if len(r2_texts) != EXPECTED_R2:
             print(
                 f"Warning: expected {EXPECTED_R2} new Round 2 reviews, got {len(r2_texts)}"
