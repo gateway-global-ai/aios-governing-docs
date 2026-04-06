@@ -52,12 +52,15 @@
 | — | README | — | unregistered | legal | `legal\README.md` |
 | AIOS-OPS-004 | Cursor Agent Execution Rules | 1.1.0 | ratified | operations | `operations\CursorAgentExecutionRules.md` |
 | AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations\CursorAgentExecutionRulesImplementationPlan.md` |
+| AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\CursorEnforcementActivationRunbook.md` |
 | AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations\CursorEnforcementContract.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations\GitHubBranchProtectionActivationChecklist.md` |
+| AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\GitHubEnforcementActivationRunbook.md` |
 | AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
 | AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations\GitHubGovernanceGatesImplementationPlan.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
 | OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
+| AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations\ReviewPipelineToolingGap.md` |
 | WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations\WHISPER_RUNTIME_STANDARD.md` |
 
 ---
@@ -341,12 +344,23 @@
 | AIOS-SPEC-012 | references |
 | AMD-2026-010 | references |
 
+### Cursor Enforcement — Activation Runbook (AIOS-OPS-011)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | references |
+| AIOS-OPS-007 | references |
+| AIOS-OPS-009 | references |
+| AIOS-SPEC-012 | references |
+| AMD-2026-010 | references |
+
 ### Cursor Enforcement Contract (activation) (AIOS-OPS-009)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-OPS-004 | references |
 | AIOS-OPS-007 | references |
+| AIOS-OPS-011 | references |
 | AIOS-SPEC-012 | references |
 | AMD-2026-010 | references |
 
@@ -356,6 +370,17 @@
 |---------------------|--------------|
 | AIOS-OPS-005 | references |
 | AIOS-OPS-006 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-012 | references |
+| AMD-2026-010 | references |
+
+### GitHub Enforcement — Activation Runbook (AIOS-OPS-010)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-005 | references |
+| AIOS-OPS-006 | references |
+| AIOS-OPS-008 | references |
 | AMD-2026-010 | references |
 
 ### GitHub Governance Gates (AIOS-OPS-005)
@@ -389,6 +414,13 @@
 | AIOS-SPEC-007 | references |
 | AMD-2026-007 | references |
 
+### Review Pipeline Tooling Gap (AIOS-OPS-012)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-005 | references |
+| AIOS-OPS-006 | references |
+
 ### Whisper / faster-whisper Local STT Runtime Standard (WHISPER_RUNTIME_STANDARD)
 
 | Referenced Document | Relationship |
@@ -401,8 +433,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 51
-- **Ratified:** 19
+- **Total documents:** 54
+- **Ratified:** 22
 - **Draft:** 24
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

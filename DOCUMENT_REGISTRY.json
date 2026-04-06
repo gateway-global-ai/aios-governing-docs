@@ -912,6 +912,36 @@
     ]
   },
   {
+    "document_id": "AIOS-OPS-011",
+    "title": "Cursor Enforcement — Activation Runbook",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\CursorEnforcementActivationRunbook.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-004",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-OPS-009",
     "title": "Cursor Enforcement Contract (activation)",
     "version": "1.0.0",
@@ -925,6 +955,10 @@
       },
       {
         "doc_id": "AIOS-OPS-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
         "relationship": "references"
       },
       {
@@ -951,6 +985,40 @@
       },
       {
         "doc_id": "AIOS-OPS-006",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-010",
+    "title": "GitHub Enforcement — Activation Runbook",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\GitHubEnforcementActivationRunbook.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-005",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-006",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-008",
         "relationship": "references"
       },
       {
@@ -1039,6 +1107,24 @@
       },
       {
         "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-012",
+    "title": "Review Pipeline Tooling Gap",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\ReviewPipelineToolingGap.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-005",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-006",
         "relationship": "references"
       }
     ]

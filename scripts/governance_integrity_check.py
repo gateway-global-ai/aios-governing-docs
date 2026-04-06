@@ -4,11 +4,12 @@ CI governance integrity checks (AIOS-OPS-005 / AIOS-OPS-006).
 
 Validates only what existing repo tooling supports truthfully:
   G-1  duplicate document_id across scanned registry documents
-  G-3  broken cross_references (via conflict_detector)
+  G-3  broken cross_references to machine document_id targets only (see conflict_detector._is_registry_cross_reference_target)
   G-7  DOCUMENT_REGISTRY.* matches scripts/registry_generator.py output
   YAML reference/agent_registry.yaml parses
+  valid JSON for reference/schemas/cursor_preflight.schema.json when present
 
-Does not run ci_governance_dry_run (requires missing automated_review_pipeline.py).
+Does not run ci_governance_dry_run — see operations/ReviewPipelineToolingGap.md (AIOS-OPS-012).
 
 Usage (repo root):
   py -3 scripts/governance_integrity_check.py

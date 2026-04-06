@@ -12,12 +12,16 @@ reviewers: []
 cross_references:
   - AIOS-OPS-005
   - AIOS-OPS-006
+  - AIOS-OPS-010
+  - AIOS-OPS-012
   - AMD-2026-010
 ---
 
 # AIOS-OPS-008 — GitHub Branch Protection — Activation Checklist
 
 **Law:** **[AIOS-OPS-005](GitHubGovernanceGates.md)** (ratified). This checklist is **procedural** (admin configuration), **not** new normative text. Settings **are not** asserted as already applied until a repo admin records them.
+
+**Handoff:** Step-by-step activation → **[AIOS-OPS-010 — GitHub Enforcement Activation Runbook](GitHubEnforcementActivationRunbook.md)**. Review pipeline CI gap → **[AIOS-OPS-012](ReviewPipelineToolingGap.md)**.
 
 ---
 

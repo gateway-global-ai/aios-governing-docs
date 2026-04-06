@@ -7,7 +7,7 @@
 #   G-7 DOCUMENT_REGISTRY.* drift vs scripts/registry_generator.py
 #   reference/agent_registry.yaml parses as YAML
 #
-# TODO (when automated_review_pipeline.py exists in-repo): optional ci_governance_dry_run for changed docs.
+# TODO: optional ci_governance_dry_run — blocked until automated_review_pipeline.py exists; see operations/ReviewPipelineToolingGap.md (AIOS-OPS-012).
 # TODO Phase 2 (AIOS-OPS-006): ratification/review evidence automation beyond current scripts.
 
 name: Governance integrity

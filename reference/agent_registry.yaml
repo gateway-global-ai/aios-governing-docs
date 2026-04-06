@@ -15,6 +15,9 @@ agents:
       - AIOS-OPS-007
       - AIOS-OPS-008
       - AIOS-OPS-009
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs
@@ -46,6 +49,9 @@ agents:
       - AIOS-OPS-007
       - AIOS-OPS-008
       - AIOS-OPS-009
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs
@@ -73,6 +79,9 @@ agents:
       - AMD-2026-010
       - AIOS-OPS-004
       - AIOS-OPS-005
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs
