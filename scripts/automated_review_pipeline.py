@@ -456,7 +456,7 @@ async def _process_document(
         print(f"\n--- Iteration {iteration}/{max_runs} ---\n")
 
         iter_dir = out_dir / f"iteration_{iteration:02d}"
-        iter_dir.mkdir(parents=True, exist=True)
+        iter_dir.mkdir(parents=True, exist_ok=True)
 
         idx_r1 = len(sorted_review_paths(doc_path, 1))
         idx_r2 = len(sorted_review_paths(doc_path, 2))
