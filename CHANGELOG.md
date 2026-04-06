@@ -25,9 +25,12 @@ All notable changes to the governing document set are recorded here.
 - Peer reviews Round 1 [`reviews/AMD-2026-005/round_1/`](reviews/AMD-2026-005/round_1/); Round 2 reviews + [`ratification_processor_output.md`](reviews/AMD-2026-005/round_2/ratification_processor_output.md) (**READY_FOR_RATIFICATION**).
 - [`prompts/ratification_processor.md`](prompts/ratification_processor.md): reusable ratification processor prompt.
 - Amendment workflow templates [`amendment_workflow/templates/AMD-2026-005.md`](amendment_workflow/templates/AMD-2026-005.md) and [`AMD-2026-005-meta.json`](amendment_workflow/templates/AMD-2026-005-meta.json).
+- [`.github/pull_request_template.md`](.github/pull_request_template.md): minimal PR body template (GitHub vs AIOS governance, checklist).
 
 ### Changed
 
+- [`README.md`](README.md), [`DEVELOPER.md`](DEVELOPER.md), [`reviews/README.md`](reviews/README.md): document **solo-maintainer** GitHub policy—**required status checks** on, **GitHub required human approval** optional; **AIOS** review/ratification remains in-repo (**AMD-2026-005** path); org **rulesets** may override repo settings.
+- [`README.md`](README.md), [`DEVELOPER.md`](DEVELOPER.md): cross-reference PR template.
 - [`specifications/AgentIntegrationProtocol.md`](specifications/AgentIntegrationProtocol.md) **v1.3.0**: **[AMD-2026-007](amendments/AMD-2026-007.md) Section 11** (Intent primitive in **§§7, 9**); **v1.2.0** **§11** Google Workspace (SPEC-007); prior **v1.1.0** Amendment Program + **§§7–10** (AMD-2026-005).
 - [`specifications/UIComponentRegistryStandard.md`](specifications/UIComponentRegistryStandard.md) **v1.3.0**: **[AMD-2026-007](amendments/AMD-2026-007.md) Sections 11.4–11.6** (intent-driven primary surface in **§8**; governing-documents table); **v1.2.0** **§13** Workspace canvas surfaces; prior **v1.1.0** **§§8–12** (AMD-2026-005).
 - [`specifications/GoogleWorkspaceIntegrationGovernance.md`](specifications/GoogleWorkspaceIntegrationGovernance.md) **v0.2.0**: **[AMD-2026-007](amendments/AMD-2026-007.md) Section 11** (intent resolution before Layer 2 routing).

@@ -2,6 +2,8 @@
 
 This directory contains all peer reviews of AIOS governing documents, organized by document and review round.
 
+**Note:** “Ratification” and review stages here are **AIOS in-repo** artifacts (models, rubric, Council path per documents). They are **not** the same as a GitHub pull-request approval; see **README.md** § GitHub vs AIOS governance.
+
 ---
 
 ## Review Process: The 5-Stage Document Lifecycle

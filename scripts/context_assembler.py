@@ -226,7 +226,13 @@ def add_front_matter(content: str, metadata: dict) -> str:
 
 # --- API Clients ---
 
-async def call_openai(system_prompt: str, user_prompt: str, model: str = "gpt-4o") -> str:
+async def call_openai(
+    system_prompt: str,
+    user_prompt: str,
+    model: str = "gpt-4o",
+    *,
+    max_tokens: int = 16000,
+) -> str:
     from openai import AsyncOpenAI
     client = AsyncOpenAI(api_key=OPENAI_API_KEY)
     response = await client.chat.completions.create(
@@ -235,7 +241,7 @@ async def call_openai(system_prompt: str, user_prompt: str, model: str = "gpt-4o
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
-        max_tokens=16000,
+        max_tokens=max_tokens,
         temperature=0.3,
     )
     return response.choices[0].message.content

@@ -255,6 +255,20 @@ openapi-generator-cli generate -i openapi/governance-api.json -g typescript-fetc
 
 ---
 
+## Git and GitHub
+
+**Merge policy:** Prefer **pull requests** into `main` and keep **required status checks** (for example the Governance integrity workflow / `pytest`) **required** in branch protection so merges are gated by CI.
+
+**Solo maintainer:** GitHub does not allow a PR author to **approve** their own pull request when **required reviews** are on. For this repository, treat **GitHub human approval** as **optional** (off or **0** required approvals): merge after **CI passes**, while still completing **AIOS** review and ratification **in-repo** (peer review under `reviews/`, thresholds, ratification processor output per **AMD-2026-005**). Skipping GitHub approval does **not** bypass in-repo governance artifacts.
+
+**Larger teams** may still use GitHub required reviews for access or audit; that is separate from **AMD-2026-005** thresholds and ratification.
+
+**Organization rulesets** may override branch protection at the repo; if **Settings** cannot be edited, adjust rules at the **org** level.
+
+**PR template:** New pull requests use `.github/pull_request_template.md` (summary, governance reminder, checklist).
+
+---
+
 ## Git Integration
 
 The lifecycle script auto-commits and tags on ratification:
