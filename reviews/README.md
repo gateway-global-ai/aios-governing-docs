@@ -100,3 +100,6 @@ python lifecycle.py core/technical_manifesto.md
 
 ### Master Platform Operating Agreement
 - Round 1: `review_001_deepseek.md` (pre-automation, migrated from root)
+
+### AMD-2026-011 + AIOS-SPEC-013 (external repository acquisition package)
+- Round 1: [`AMD-2026-011-AIOS-SPEC-013/round_1/README.md`](AMD-2026-011-AIOS-SPEC-013/round_1/README.md) — triangulated prompt [`TRIANGULATED_REVIEW_PROMPT.md`](AMD-2026-011-AIOS-SPEC-013/round_1/TRIANGULATED_REVIEW_PROMPT.md); **AMD-2026-011** + **AIOS-SPEC-013** as one coordinated review
