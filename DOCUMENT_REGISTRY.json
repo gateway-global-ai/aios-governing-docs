@@ -190,8 +190,8 @@
   {
     "document_id": "AIOS-SPEC-013",
     "title": "External Repository Acquisition, Analysis, and Promotion",
-    "version": "0.1.1",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "specification",
     "_path": "specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md",
     "cross_references": [
@@ -676,10 +676,19 @@
     ]
   },
   {
+    "document_id": "AMD-2026-011-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-011-ratification-motion.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AMD-2026-011",
     "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies",
-    "version": "0.1.2",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-011.md",
     "cross_references": [

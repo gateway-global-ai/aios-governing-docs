@@ -152,4 +152,17 @@ Do **not** apply `status: ratified` or bump ratification versions until Step 2 c
 
 ---
 
+## 10. Execution — ratification merged (2026-04-05)
+
+| Field | Value |
+|-------|--------|
+| **Motion** | [`amendments/AMD-2026-011-ratification-motion.md`](../../../amendments/AMD-2026-011-ratification-motion.md) |
+| **AMD-2026-011** | **v1.0.0**, `status: ratified`, `ratification_date: 2026-04-05` |
+| **AIOS-SPEC-013** | **v1.0.0**, `status: ratified`, `ratification_date: 2026-04-05` |
+| **Registry / integrity** | `py -3 scripts/registry_generator.py`; `py -3 scripts/governance_integrity_check.py` |
+
+**Disposition:** **RATIFIED** — law state updated in repository; **§5–7** historical **NOT_READY** steps superseded for operational use by this **§10** execution record.
+
+---
+
 *This artifact is a governance decision record. It does not amend law.*

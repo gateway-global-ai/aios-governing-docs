@@ -1,12 +1,13 @@
 ---
 document_id: AIOS-SPEC-013
-version: 0.1.1
-status: draft
+version: 1.0.0
+status: ratified
 category: specification
 title: External Repository Acquisition, Analysis, and Promotion
 author: Gateway Global AIOS
 created: 2026-04-05
 last_updated: 2026-04-05
+ratification_date: 2026-04-05
 reviewers: []
 supersedes: null
 cross_references:
@@ -22,17 +23,20 @@ amendment_history:
   - version: 0.1.1
     date: 2026-04-05
     summary: "AMD-2026-011 cross-references — acquisition path §2.2, minimal execution dependency §2.5; §9 operational-use wording."
+  - version: 1.0.0
+    date: 2026-04-05
+    summary: "Ratification — coordinated package with AMD-2026-011 v1.0.0; motion amendments/AMD-2026-011-ratification-motion.md."
 ---
 
-# AIOS-SPEC-013 — External Repository Acquisition, Analysis, and Promotion
+# AIOS-SPEC-013 — External Repository Acquisition, Analysis, and Promotion (v1.0.0 ratified)
 
 ## 0. Status and scope
 
 | Field | Value |
 |-------|--------|
-| **Status** | `draft` — normative interfaces and lifecycle; storage backend and tooling **out of scope** for this version |
+| **Status** | `ratified` — normative interfaces and lifecycle; storage backend and tooling **out of scope** for this version (non-blocking follow-ons may extend in future revisions) |
 | **Binds** | **[AMD-2026-011](../amendments/AMD-2026-011.md)** principles; this specification defines **contracts** and **classes** implementations **SHALL** honor |
-| **Non-goals (v0.1)** | Vendor-specific CI products; long-term blob store design; conflation with **MCP** runtime tools or **governance document** authoring workflows |
+| **Non-goals (v1.0)** | Vendor-specific CI products; long-term blob store design; conflation with **MCP** runtime tools or **governance document** authoring workflows |
 
 This specification does **not** require a particular database or object store. Records **may** live in governed artifacts, operator stores, or future platform services, provided the **evidence** and **fields** below are satisfied.
 

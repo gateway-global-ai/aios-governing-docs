@@ -11,7 +11,7 @@ cd scripts
 py -m pip install -r requirements.txt
 ```
 
-**Minimal dependencies (CI):** The GitHub Actions **Governance integrity** workflow (`.github/workflows/governance-integrity.yml`) installs only [`scripts/requirements.governance-integrity.txt`](scripts/requirements.governance-integrity.txt) — enough for `scripts/governance_integrity_check.py` and its import chain (`pyyaml`, `python-dotenv`). Use the full [`scripts/requirements.txt`](scripts/requirements.txt) for peer review, lifecycle, and other pipeline scripts locally or in jobs that invoke them. See draft **[AMD-2026-011](amendments/AMD-2026-011.md)** (minimal execution dependency principle).
+**Minimal dependencies (CI):** The GitHub Actions **Governance integrity** workflow (`.github/workflows/governance-integrity.yml`) installs only [`scripts/requirements.governance-integrity.txt`](scripts/requirements.governance-integrity.txt) — enough for `scripts/governance_integrity_check.py` and its import chain (`pyyaml`, `python-dotenv`). Use the full [`scripts/requirements.txt`](scripts/requirements.txt) for peer review, lifecycle, and other pipeline scripts locally or in jobs that invoke them. See **[AMD-2026-011](amendments/AMD-2026-011.md)** **v1.0.0** (minimal execution dependency principle).
 
 Create a `.env` file in the **repository root** with API keys. If `C:\Apps\ai-os-voice-interface\.env.local` exists, it is loaded **after** the repository root `.env` and **overrides** the same variable names — use that file as the single place to rotate LLM keys during development.
 
