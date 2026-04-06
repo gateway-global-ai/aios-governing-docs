@@ -126,7 +126,7 @@ def _build_corpus_digest(
 
 def _split_delimited_outputs(text: str) -> dict[str, str]:
     """Parse ===FILE:filename=== sections."""
-    pat = re.compile(r"^===FILE:([^=\n]+)===$", re.MULTILINE)
+    pat = re.compile(r"^\s*===FILE:([^=\n]+)===\s*$", re.MULTILINE)
     matches = list(pat.finditer(text))
     out: dict[str, str] = {}
     for i, m in enumerate(matches):
