@@ -34,6 +34,8 @@ All notable changes to the governing document set are recorded here.
 
 ### Changed
 
+- [`specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md`](specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md) **AIOS-SPEC-013** **v0.1.1**: **AMD-2026-011** section pointers — acquisition path **§2.2**, minimal execution dependency **§2.5**; **§9** operational-use wording.
+- [`amendments/AMD-2026-011.md`](amendments/AMD-2026-011.md) **v0.1.2**: triangulated-review clarifications — copy/import of external artifacts without acquisition intent; **§2.4** promotion may include intermediate states per **AIOS-SPEC-013** §8.
 - [`amendments/AMD-2026-011.md`](amendments/AMD-2026-011.md) **v0.1.1**: peer-review preparation — **§1.1** scope boundaries, **§2.1** terminology table, **§2.2** governed-channel acquisition vs exploratory clone wording, **§2.5** minimal CI dependencies nuance, cross-reference to draft **AIOS-SPEC-013**; ratification checklist and impact tables updated.
 - [`specifications/AgentIntegrationProtocol.md`](specifications/AgentIntegrationProtocol.md) **v1.3.0**: **[AMD-2026-007](amendments/AMD-2026-007.md) Section 11** (Intent primitive in **§§7, 9**); **v1.2.0** **§11** Google Workspace (SPEC-007); prior **v1.1.0** Amendment Program + **§§7–10** (AMD-2026-005).
 - [`specifications/UIComponentRegistryStandard.md`](specifications/UIComponentRegistryStandard.md) **v1.3.0**: **[AMD-2026-007](amendments/AMD-2026-007.md) Sections 11.4–11.6** (intent-driven primary surface in **§8**; governing-documents table); **v1.2.0** **§13** Workspace canvas surfaces; prior **v1.1.0** **§§8–12** (AMD-2026-005).

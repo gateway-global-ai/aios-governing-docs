@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-SPEC-013
-version: 0.1.0
+version: 0.1.1
 status: draft
 category: specification
 title: External Repository Acquisition, Analysis, and Promotion
@@ -18,7 +18,10 @@ cross_references:
     title: Workspace Model & Governed Interface Surfaces
   - doc_id: AMD-2026-011
     title: External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies
-amendment_history: []
+amendment_history:
+  - version: 0.1.1
+    date: 2026-04-05
+    summary: "AMD-2026-011 cross-references — acquisition path §2.2, minimal execution dependency §2.5; §9 operational-use wording."
 ---
 
 # AIOS-SPEC-013 — External Repository Acquisition, Analysis, and Promotion
@@ -48,7 +51,7 @@ At minimum, an acquisition intent **SHALL** identify:
 | **Purpose class** | Evaluation, dependency study, or other allowed purpose — not free-form ad hoc import |
 | **Timestamp** | Immutable record of when intent was emitted |
 
-**SHALL NOT:** substitute intent with silent manual clone into governed or production runtime trees as a **standing** practice (see **AMD-2026-011** §2.1).
+**SHALL NOT:** substitute intent with silent manual clone into governed or production runtime trees as a **standing** practice (see **AMD-2026-011** §2.2).
 
 ---
 
@@ -124,7 +127,7 @@ Transitions **SHALL** be **forward-only** through analysis and policy gates unle
 
 ## 9. Prohibition on direct operational use before promotion
 
-An acquired repository **MUST NOT** be used for **operational** purposes (production runtime default, shared automation without scope, or normative binding across tenants) while in **quarantine** or **evaluation** unless **explicitly** allowed by policy for a **sandbox** class only.
+Operational use is prohibited before promotion except where policy explicitly permits sandbox-class use.
 
 **SHALL NOT:** conflate “developer preview” on a workstation with **approved** promotion without evidence.
 
@@ -151,7 +154,7 @@ Future **ingestion pipelines**, **sandbox orchestrators**, or **MCP-adjacent** t
 
 ## 12. Implementation alignment (non-normative)
 
-- **Governance CI** in this repository follows **minimal execution dependency** (**AMD-2026-011** §2.4): integrity checks use **narrow** Python dependencies — illustrative of the principle; **not** a substitute for acquisition tooling.
+- **Governance CI** in this repository follows **minimal execution dependency** (**AMD-2026-011** §2.5): integrity checks use **narrow** Python dependencies — illustrative of the principle; **not** a substitute for acquisition tooling.
 - **Peer review** of this specification and **AMD-2026-011** should proceed together or in close sequence so principles and contracts stay aligned.
 
 ---
