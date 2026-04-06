@@ -13,7 +13,7 @@
 
 ## Registry
 
-- [ ] **`py scripts/registry_generator.py`** run after front-matter changes to governed markdown (if applicable)
+- [ ] **`py -3 scripts/registry_generator.py`** run after front-matter changes to governed markdown (if applicable)
 
 ## Agent / automation
 
