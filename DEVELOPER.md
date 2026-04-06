@@ -77,6 +77,27 @@ py scripts/peer_review.py core/governance_constitution.md --round 1
 py scripts/peer_review.py specifications/CLIDeveloperGuide.md --round 1 --rubric light --smart-context
 ```
 
+### Optional automation (portfolio + pipeline)
+
+These scripts **do not** replace manual triangulated review for ratification; they are operator tooling. Generated outputs are listed in `.gitignore` (`portfolio_reviews/`, `reviews/**/automated_runs/`, `reviews/**/LAST_RUN_POINTER.json`).
+
+**Corpus / portfolio review** (single OpenAI call over a registry digest):
+
+```bash
+cd scripts
+py -3 governance_portfolio_review.py --dry-run
+py -3 governance_portfolio_review.py
+```
+
+**Automated peer-review → amendment loop** (rounds 1–2 via `peer_review`, then optional OpenAI revision; same API keys as `peer_review.py`):
+
+```bash
+cd scripts
+py -3 automated_review_pipeline.py --document amendments/AMD-2026-007.md --dry-run
+py -3 automated_review_pipeline.py --document amendments/AMD-2026-007.md
+# or: py -3 automated_review_pipeline.py --next
+```
+
 ---
 
 ## Source Analysis & Amendments
@@ -231,6 +252,20 @@ openapi-generator-cli generate -i openapi/governance-api.json -g python -o sdk/p
 # TypeScript SDK
 openapi-generator-cli generate -i openapi/governance-api.json -g typescript-fetch -o sdk/typescript
 ```
+
+---
+
+## Git and GitHub
+
+**Merge policy:** Prefer **pull requests** into `main` and keep **required status checks** (for example the Governance integrity workflow / `pytest`) **required** in branch protection so merges are gated by CI.
+
+**Solo maintainer:** GitHub does not allow a PR author to **approve** their own pull request when **required reviews** are on. For this repository, treat **GitHub human approval** as **optional** (off or **0** required approvals): merge after **CI passes**, while still completing **AIOS** review and ratification **in-repo** (peer review under `reviews/`, thresholds, ratification processor output per **AMD-2026-005**). Skipping GitHub approval does **not** bypass in-repo governance artifacts.
+
+**Larger teams** may still use GitHub required reviews for access or audit; that is separate from **AMD-2026-005** thresholds and ratification.
+
+**Organization rulesets** may override branch protection at the repo; if **Settings** cannot be edited, adjust rules at the **org** level.
+
+**PR template:** New pull requests use `.github/pull_request_template.md` (summary, governance reminder, checklist).
 
 ---
 

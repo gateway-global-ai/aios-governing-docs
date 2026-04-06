@@ -21,6 +21,43 @@ from context_assembler import BASE_DIR, read_file, parse_front_matter
 from registry_generator import scan_documents
 
 
+def _normalize_cross_refs(cross_refs) -> list[str]:
+    """Normalize cross-reference metadata into a list of referenced document ids."""
+    if not cross_refs:
+        return []
+
+    if isinstance(cross_refs, str):
+        ref = cross_refs.strip()
+        return [ref] if ref else []
+
+    normalized = []
+
+    if isinstance(cross_refs, dict):
+        cross_refs = [cross_refs]
+
+    if isinstance(cross_refs, (list, tuple, set)):
+        for ref in cross_refs:
+            if isinstance(ref, str):
+                value = ref.strip()
+            elif isinstance(ref, dict):
+                value = (
+                    ref.get("document_id")
+                    or ref.get("doc_id")
+                    or ref.get("id")
+                    or ref.get("ref")
+                    or ref.get("target")
+                    or ""
+                )
+                value = value.strip() if isinstance(value, str) else ""
+            else:
+                value = ""
+
+            if value:
+                normalized.append(value)
+
+    return normalized
+
+
 def _extract_numbers_with_context(content: str, doc_id: str, path: str) -> list[dict]:
     """Extract numbers with units/percentages and surrounding context."""
     patterns = [
@@ -74,9 +111,9 @@ def _validate_cross_references(docs: list[dict]) -> list[dict]:
     findings = []
 
     for doc in docs:
-        refs = doc.get("cross_references", [])
+        refs = _normalize_cross_refs(doc.get("cross_references", []))
         for ref in refs:
-            ref_id = ref.get("doc_id")
+            ref_id = ref
             if ref_id and ref_id not in valid_ids:
                 findings.append({
                     "type": "broken_cross_reference",

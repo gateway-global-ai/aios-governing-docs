@@ -143,6 +143,14 @@ Automation in `scripts/` (peer review, revision logs, registry) **supports** thi
 
 For **core trilogy** documents, the `lifecycle.py` orchestrator may still use an extended multi-round pipeline (draft → Round 1 → revision → Round 2 → ratification). That pipeline is an **implementation** of review and revision—not a separate “law” from the governance path above.
 
+### GitHub vs AIOS governance
+
+- **GitHub** should enforce **merge mechanics** and **required status checks** (CI). **PR-first** flow to `main` is preferred; direct pushes are an optional repo-owner choice.
+- **Substantive** review and ratification are **in-repo** (triangulated peer review, thresholds, ratification artifacts per **AMD-2026-005** and related process)—not replaced by a GitHub “Approve” button.
+- **Solo-maintainer** operation: keep **GitHub required approving reviews** **off** or set **required approvals** to **0**, so you can merge your own PR after CI passes. Disabling GitHub human approval does **not** waive peer review, thresholds, or ratification recorded here.
+- **Org-level rulesets** can override repository branch protection; if repo settings are read-only, change the rule at the **organization** level.
+- **Pull request defaults:** `.github/pull_request_template.md` (summary, reminder, small checklist).
+
 ---
 
 ## Integration governance

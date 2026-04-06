@@ -1,0 +1,27 @@
+# Branch protection: add required status check exactly as shown in the PR Checks tab
+# after this workflow has run at least once — typically:
+#   Governance integrity / governance-integrity
+name: Governance integrity
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  governance-integrity:
+    name: governance-integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Run tests
+        run: python -m pytest tests/ -q
