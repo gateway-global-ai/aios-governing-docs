@@ -934,6 +934,52 @@
         "relationship": "references"
       },
       {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-019",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-019",
+    "title": "Cursor / IDE — Activation Checklist (operators)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\CursorActivationChecklist.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      },
+      {
         "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
@@ -1102,6 +1148,56 @@
     ]
   },
   {
+    "document_id": "AIOS-OPS-018",
+    "title": "Cursor / IDE Host Activation — Result Record",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\CursorHostActivationResult.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-004",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-017",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-OPS-013",
     "title": "Enforcement Activation — Handoff Summary",
     "version": "1.0.0",
@@ -1151,6 +1247,14 @@
       },
       {
         "doc_id": "AIOS-OPS-017",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-019",
         "relationship": "references"
       },
       {

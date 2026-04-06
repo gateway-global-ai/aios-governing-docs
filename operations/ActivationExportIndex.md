@@ -7,7 +7,7 @@ category: operations
 title: Activation — Export Index
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-07
+last_updated: 2026-04-06
 reviewers: []
 cross_references:
   - AIOS-OPS-008
@@ -19,6 +19,8 @@ cross_references:
   - AIOS-OPS-015
   - AIOS-OPS-016
   - AIOS-OPS-017
+  - AIOS-OPS-018
+  - AIOS-OPS-019
   - AMD-2026-010
 ---
 
@@ -26,7 +28,7 @@ cross_references:
 
 **Packaging artifact only — not new law.** Use this page as the **single operator-facing index** to turn on enforcement. Narrative context: **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)**.
 
-**Enforcement is not live** until a **host admin** applies GitHub settings and **operators** bind Cursor (or equivalent) per the runbooks. Committing these files to the repo **does not** by itself enable branch protection or IDE enforcement.
+**GitHub** default-branch integrity gating may already be live — **[AIOS-OPS-017](GitHubHostActivationResult.md)**. **Cursor / IDE** enforcement is **not** live until **operators** bind rules or skills per the runbooks. Committing these files to the repo **does not** by itself enable IDE-side enforcement.
 
 ---
 
@@ -112,6 +114,8 @@ Detailed operator steps: **[AIOS-OPS-015 — Activation Command Checklist](Activ
 ## Cursor / IDE handoff (not GitHub-configurable)
 
 - **[AIOS-OPS-016 — Cursor / IDE — Host Activation Handoff](CursorHostActivationHandoff.md)** — files to bind, fail-closed rules, manual operator steps.
+- **[AIOS-OPS-018 — Cursor / IDE Host Activation — Result Record](CursorHostActivationResult.md)** — in-repo preparation vs host/IDE steps still required.
+- **[AIOS-OPS-019 — Cursor / IDE — Activation Checklist](CursorActivationChecklist.md)** — minimal operator checklist.
 
 ---
 

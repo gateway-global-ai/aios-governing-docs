@@ -7,7 +7,7 @@ category: operations
 title: Enforcement Activation — Handoff Summary
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-07
+last_updated: 2026-04-06
 reviewers: []
 cross_references:
   - AIOS-OPS-004
@@ -21,6 +21,8 @@ cross_references:
   - AIOS-OPS-015
   - AIOS-OPS-016
   - AIOS-OPS-017
+  - AIOS-OPS-018
+  - AIOS-OPS-019
   - AMD-2026-010
 ---
 
@@ -28,7 +30,7 @@ cross_references:
 
 **This document is a handoff package, not new law.** It points to ratified standards and procedural runbooks already in this repository.
 
-**Operator export index:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (single page index). **Commands:** **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**. **GitHub host result record:** **[AIOS-OPS-017](GitHubHostActivationResult.md)**. **Cursor handoff:** **[AIOS-OPS-016](CursorHostActivationHandoff.md)**.
+**Operator export index:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (single page index). **Commands:** **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**. **GitHub host result record:** **[AIOS-OPS-017](GitHubHostActivationResult.md)**. **Cursor handoff:** **[AIOS-OPS-016](CursorHostActivationHandoff.md)**. **Cursor activation result / checklist:** **[AIOS-OPS-018](CursorHostActivationResult.md)**, **[AIOS-OPS-019](CursorActivationChecklist.md)**.
 
 ---
 
@@ -53,7 +55,7 @@ cross_references:
 
 | Item | Notes |
 |------|--------|
-| **Branch protection + required checks** | Must be turned on in **GitHub** by an admin; not stored as enforced state inside this repo alone. |
+| **Branch protection + required checks** | **May be live** on **`main`** — see **[AIOS-OPS-017](GitHubHostActivationResult.md)**. |
 | **Cursor rules / skills** | Must reference **AIOS-OPS-009** and the schema/registry paths; **Cursor does not auto-load** AIOS enforcement. |
 | **Review-pipeline dry-run in CI** | **Not** enabled — **`automated_review_pipeline.py`** is absent; see **§4**. |
 
