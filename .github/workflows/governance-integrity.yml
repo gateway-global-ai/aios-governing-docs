@@ -3,9 +3,10 @@
 #
 # Implemented checks (truthful to repo tooling):
 #   G-1 duplicate document_id
-#   G-3 broken cross_references
+#   G-3 broken cross_references (machine document_id targets)
 #   G-7 DOCUMENT_REGISTRY.* drift vs scripts/registry_generator.py
 #   reference/agent_registry.yaml parses as YAML
+#   valid JSON for reference/schemas/cursor_preflight.schema.json when present
 #
 # TODO: optional ci_governance_dry_run — blocked until automated_review_pipeline.py exists; see operations/ReviewPipelineToolingGap.md (AIOS-OPS-012).
 # TODO Phase 2 (AIOS-OPS-006): ratification/review evidence automation beyond current scripts.

@@ -13,12 +13,15 @@ cross_references:
   - AIOS-OPS-005
   - AIOS-OPS-006
   - AIOS-OPS-008
+  - AIOS-OPS-013
   - AMD-2026-010
 ---
 
 # AIOS-OPS-010 — GitHub Enforcement — Activation Runbook
 
 **Normative law:** **[AIOS-OPS-005](GitHubGovernanceGates.md)**. This runbook is **procedural** only. Pair with **[AIOS-OPS-008](GitHubBranchProtectionActivationChecklist.md)** (checklist) and **[AIOS-OPS-006](GitHubGovernanceGatesImplementationPlan.md)** (implementation plan).
+
+**Package summary:** **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (single entry point for admins/operators).
 
 ---
 

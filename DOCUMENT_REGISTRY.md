@@ -54,6 +54,7 @@
 | AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations\CursorAgentExecutionRulesImplementationPlan.md` |
 | AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\CursorEnforcementActivationRunbook.md` |
 | AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations\CursorEnforcementContract.md` |
+| AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations\EnforcementActivationHandoffSummary.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations\GitHubBranchProtectionActivationChecklist.md` |
 | AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\GitHubEnforcementActivationRunbook.md` |
 | AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
@@ -351,6 +352,7 @@
 | AIOS-OPS-004 | references |
 | AIOS-OPS-007 | references |
 | AIOS-OPS-009 | references |
+| AIOS-OPS-013 | references |
 | AIOS-SPEC-012 | references |
 | AMD-2026-010 | references |
 
@@ -361,7 +363,21 @@
 | AIOS-OPS-004 | references |
 | AIOS-OPS-007 | references |
 | AIOS-OPS-011 | references |
+| AIOS-OPS-013 | references |
 | AIOS-SPEC-012 | references |
+| AMD-2026-010 | references |
+
+### Enforcement Activation — Handoff Summary (AIOS-OPS-013)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | references |
+| AIOS-OPS-005 | references |
+| AIOS-OPS-008 | references |
+| AIOS-OPS-009 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-012 | references |
 | AMD-2026-010 | references |
 
 ### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
@@ -372,6 +388,7 @@
 | AIOS-OPS-006 | references |
 | AIOS-OPS-010 | references |
 | AIOS-OPS-012 | references |
+| AIOS-OPS-013 | references |
 | AMD-2026-010 | references |
 
 ### GitHub Enforcement — Activation Runbook (AIOS-OPS-010)
@@ -381,6 +398,7 @@
 | AIOS-OPS-005 | references |
 | AIOS-OPS-006 | references |
 | AIOS-OPS-008 | references |
+| AIOS-OPS-013 | references |
 | AMD-2026-010 | references |
 
 ### GitHub Governance Gates (AIOS-OPS-005)
@@ -420,6 +438,7 @@
 |---------------------|--------------|
 | AIOS-OPS-005 | references |
 | AIOS-OPS-006 | references |
+| AIOS-OPS-013 | references |
 
 ### Whisper / faster-whisper Local STT Runtime Standard (WHISPER_RUNTIME_STANDARD)
 
@@ -433,8 +452,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 54
-- **Ratified:** 22
+- **Total documents:** 55
+- **Ratified:** 23
 - **Draft:** 24
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

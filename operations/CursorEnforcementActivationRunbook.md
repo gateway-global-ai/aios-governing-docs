@@ -13,6 +13,7 @@ cross_references:
   - AIOS-OPS-004
   - AIOS-OPS-007
   - AIOS-OPS-009
+  - AIOS-OPS-013
   - AIOS-SPEC-012
   - AMD-2026-010
 ---
@@ -20,6 +21,8 @@ cross_references:
 # AIOS-OPS-011 — Cursor Enforcement — Activation Runbook
 
 **Normative law:** **[AIOS-OPS-004](CursorAgentExecutionRules.md)**. This runbook is **procedural** only. Pair with **[AIOS-OPS-009](CursorEnforcementContract.md)** (contract) and **[AIOS-OPS-007](CursorAgentExecutionRulesImplementationPlan.md)** (implementation plan).
+
+**Package summary:** **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (single entry point for admins/operators).
 
 ---
 

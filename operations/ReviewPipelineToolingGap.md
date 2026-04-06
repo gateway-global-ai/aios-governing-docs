@@ -12,6 +12,7 @@ reviewers: []
 cross_references:
   - AIOS-OPS-005
   - AIOS-OPS-006
+  - AIOS-OPS-013
 ---
 
 # AIOS-OPS-012 — Review Pipeline Tooling Gap
@@ -66,6 +67,7 @@ Until then, **do not** add **`ci_governance_dry_run.py`** to **`governance-integ
 
 - **`scripts/governance_integrity_check.py`** (G-1, G-3, G-7, agent registry YAML parse, schema JSON validity).
 - **`operations/GitHubEnforcementActivationRunbook.md`** (**AIOS-OPS-010**).
+- **`operations/EnforcementActivationHandoffSummary.md`** (**AIOS-OPS-013**) — host handoff entry point.
 
 ---
 
