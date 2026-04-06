@@ -868,6 +868,70 @@
     "cross_references": []
   },
   {
+    "document_id": "AIOS-OPS-015",
+    "title": "Activation — Command Checklist",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\ActivationCommandChecklist.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-014",
+    "title": "Activation — Export Index",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations\\ActivationExportIndex.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-OPS-004",
     "title": "Cursor Agent Execution Rules",
     "version": "1.1.0",
@@ -936,6 +1000,14 @@
         "relationship": "references"
       },
       {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
         "doc_id": "AIOS-SPEC-012",
         "relationship": "references"
       },
@@ -967,6 +1039,14 @@
       },
       {
         "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
         "relationship": "references"
       },
       {
@@ -1016,6 +1096,14 @@
         "relationship": "references"
       },
       {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
         "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
@@ -1050,6 +1138,14 @@
         "relationship": "references"
       },
       {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
         "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
@@ -1077,6 +1173,14 @@
       },
       {
         "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
         "relationship": "references"
       },
       {
@@ -1187,6 +1291,14 @@
       },
       {
         "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
         "relationship": "references"
       }
     ]

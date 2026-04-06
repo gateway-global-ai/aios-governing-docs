@@ -15,6 +15,8 @@ cross_references:
   - AIOS-OPS-010
   - AIOS-OPS-012
   - AIOS-OPS-013
+  - AIOS-OPS-014
+  - AIOS-OPS-015
   - AMD-2026-010
 ---
 
@@ -22,7 +24,7 @@ cross_references:
 
 **Law:** **[AIOS-OPS-005](GitHubGovernanceGates.md)** (ratified). This checklist is **procedural** (admin configuration), **not** new normative text. Settings **are not** asserted as already applied until a repo admin records them.
 
-**Handoff:** Single entry point → **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)**. GitHub steps → **[AIOS-OPS-010](GitHubEnforcementActivationRunbook.md)**. Review pipeline CI gap → **[AIOS-OPS-012](ReviewPipelineToolingGap.md)**.
+**Handoff:** Operator index → **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)**. Narrative → **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)**. Commands → **[AIOS-OPS-015](ActivationCommandChecklist.md)**. GitHub steps → **[AIOS-OPS-010](GitHubEnforcementActivationRunbook.md)**. Review pipeline CI gap → **[AIOS-OPS-012](ReviewPipelineToolingGap.md)**.
 
 ---
 

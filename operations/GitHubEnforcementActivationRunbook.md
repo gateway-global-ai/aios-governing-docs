@@ -14,6 +14,8 @@ cross_references:
   - AIOS-OPS-006
   - AIOS-OPS-008
   - AIOS-OPS-013
+  - AIOS-OPS-014
+  - AIOS-OPS-015
   - AMD-2026-010
 ---
 
@@ -21,7 +23,7 @@ cross_references:
 
 **Normative law:** **[AIOS-OPS-005](GitHubGovernanceGates.md)**. This runbook is **procedural** only. Pair with **[AIOS-OPS-008](GitHubBranchProtectionActivationChecklist.md)** (checklist) and **[AIOS-OPS-006](GitHubGovernanceGatesImplementationPlan.md)** (implementation plan).
 
-**Package summary:** **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (single entry point for admins/operators).
+**Package summary:** **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (narrative handoff); **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (operator index); **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)** (commands).
 
 ---
 

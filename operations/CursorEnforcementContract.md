@@ -14,6 +14,8 @@ cross_references:
   - AIOS-OPS-007
   - AIOS-OPS-011
   - AIOS-OPS-013
+  - AIOS-OPS-014
+  - AIOS-OPS-015
   - AIOS-SPEC-012
   - AMD-2026-010
 ---
@@ -22,7 +24,7 @@ cross_references:
 
 **Binding law:** **[AIOS-OPS-004](CursorAgentExecutionRules.md)** (ratified). This file is an **activation artifact** that restates the **runtime contract** for Cursor (and equivalent IDE agents). It **does not** add obligations beyond **AIOS-OPS-004**, **AIOS-SPEC-012**, or **AMD-2026-010**.
 
-**Handoff:** **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (package entry point); **[AIOS-OPS-011 — Cursor Enforcement Activation Runbook](CursorEnforcementActivationRunbook.md)** (bindings, validation, rollback).
+**Handoff:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (operator index); **[AIOS-OPS-013 — Enforcement Activation Handoff Summary](EnforcementActivationHandoffSummary.md)** (narrative); **[AIOS-OPS-011 — Cursor Enforcement Activation Runbook](CursorEnforcementActivationRunbook.md)** (bindings, validation, rollback); **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)** (commands).
 
 **Schema:** [`reference/schemas/cursor_preflight.schema.json`](../reference/schemas/cursor_preflight.schema.json) **SHALL** validate the **preflight JSON** object (Appendix A keys and enums).
 

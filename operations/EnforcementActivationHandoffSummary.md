@@ -17,12 +17,16 @@ cross_references:
   - AIOS-OPS-010
   - AIOS-OPS-011
   - AIOS-OPS-012
+  - AIOS-OPS-014
+  - AIOS-OPS-015
   - AMD-2026-010
 ---
 
 # AIOS-OPS-013 — Enforcement Activation — Handoff Summary
 
 **This document is a handoff package, not new law.** It points to ratified standards and procedural runbooks already in this repository.
+
+**Operator export index:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (single page index). **Commands:** **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**.
 
 ---
 
@@ -33,7 +37,7 @@ cross_references:
 - **Amendment:** **[AMD-2026-010](../amendments/AMD-2026-010.md)** (Governance Enforcement Package v1), with motion **[AMD-2026-010-ratification-motion.md](../amendments/AMD-2026-010-ratification-motion.md)** as recorded.
 - **Operations / specification (package):** **[AIOS-OPS-004](CursorAgentExecutionRules.md)**, **[AIOS-OPS-005](GitHubGovernanceGates.md)**, **[AIOS-SPEC-012](../specifications/AgentClassRegistrationAndAuthorityModel.md)**.
 - **Implementation plans (non-normative):** **[AIOS-OPS-006](GitHubGovernanceGatesImplementationPlan.md)**, **[AIOS-OPS-007](CursorAgentExecutionRulesImplementationPlan.md)**.
-- **Activation artifacts (procedural):** **[AIOS-OPS-008](GitHubBranchProtectionActivationChecklist.md)** through **[AIOS-OPS-012](ReviewPipelineToolingGap.md)** and this summary (**AIOS-OPS-013**).
+- **Activation artifacts (procedural):** **[AIOS-OPS-008](GitHubBranchProtectionActivationChecklist.md)** through **[AIOS-OPS-012](ReviewPipelineToolingGap.md)**; this summary (**AIOS-OPS-013**); export packaging **[AIOS-OPS-014](ActivationExportIndex.md)**, **[AIOS-OPS-015](ActivationCommandChecklist.md)**.
 
 ### What is activation-ready (in-repo)
 
@@ -41,7 +45,7 @@ cross_references:
 |-------|-----------|
 | **GitHub CI** | **`.github/workflows/governance-integrity.yml`** → **`scripts/governance_integrity_check.py`** |
 | **Cursor / IDE** | **[AIOS-OPS-009](CursorEnforcementContract.md)**, **`reference/schemas/cursor_preflight.schema.json`**, **`reference/agent_registry.yaml`** |
-| **Procedure** | **[AIOS-OPS-010](GitHubEnforcementActivationRunbook.md)**, **[AIOS-OPS-011](CursorEnforcementActivationRunbook.md)** |
+| **Procedure** | **[AIOS-OPS-010](GitHubEnforcementActivationRunbook.md)**, **[AIOS-OPS-011](CursorEnforcementActivationRunbook.md)**, **[AIOS-OPS-014](ActivationExportIndex.md)**, **[AIOS-OPS-015](ActivationCommandChecklist.md)** |
 
 ### What is not yet live (host-side)
 
