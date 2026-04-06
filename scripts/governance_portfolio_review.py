@@ -90,7 +90,7 @@ def _build_corpus_digest(
 
     registry = load_registry_json()
     seen_paths: set[str] = set()
-    core_paths = {_norm_registry_path(str(p)) for p in CORE_DOCS.values()}
+    core_paths = {_norm_registry_path(str(p.relative_to(BASE_DIR))) for p in CORE_DOCS.values()}
 
     for entry in sorted(registry, key=lambda e: str(e.get("document_id", ""))):
         doc_id = entry.get("document_id", "")

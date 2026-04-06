@@ -110,7 +110,7 @@ def _validate_cross_references(docs: list[dict]) -> list[dict]:
     for doc in docs:
         refs = _normalize_cross_refs(doc.get("cross_references", []))
         for ref in refs:
-            ref_id = ref.get("doc_id")
+            ref_id = ref
             if ref_id and ref_id not in valid_ids:
                 findings.append({
                     "type": "broken_cross_reference",
