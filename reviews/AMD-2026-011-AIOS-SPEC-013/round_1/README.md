@@ -16,8 +16,9 @@
 | File | Purpose |
 |------|---------|
 | [`TRIANGULATED_REVIEW_PROMPT.md`](TRIANGULATED_REVIEW_PROMPT.md) | Full instructions, review questions, rubric, output format |
-| *(to be added by reviewers)* | `review_001_<reviewer_id>.md`, `review_002_<reviewer_id>.md`, … |
-| *(optional after Round 1)* | `REVIEW_SYNTHESIS.md` — coordinator synthesis |
+| [`review_001_openai.md`](review_001_openai.md) | Round 1 triangulated review (composite **4.2**, **approved_with_changes**) |
+| [`review_002_gemini.md`](review_002_gemini.md) | Round 1 triangulated review (composite **4.3**, **approved_with_changes**) |
+| *(optional)* | `REVIEW_SYNTHESIS.md` — coordinator synthesis |
 
 ---
 

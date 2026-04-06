@@ -135,4 +135,21 @@ Do **not** apply `status: ratified` or bump ratification versions until Step 2 c
 
 ---
 
+## 9. Supplement (2026-04-05) — triangulation complete; processor re-evaluation
+
+**Inputs added:** [`round_1/review_001_openai.md`](../round_1/review_001_openai.md), [`round_1/review_002_gemini.md`](../round_1/review_002_gemini.md).
+
+| Reviewer | Disposition | Composite | Any Dim < 3 | Blocking |
+|----------|-------------|-----------|-------------|----------|
+| openai | approved_with_changes | 4.2 | No | None stated |
+| gemini | approved_with_changes | 4.3 | No | None stated |
+
+**Threshold check:** Both composites **≥ 3.5**; neither review reports any dimension **&lt; 3**; no blocking conflict cited between reviews.
+
+**Updated package recommendation:** **READY_FOR_RATIFICATION** (processor output — **not** yet merged law). **Council / constitutional ratification motion** and **front-matter updates** remain **outstanding** until executed in a dedicated PR.
+
+**Per-document (from reviews):** **AMD-2026-011** — approved_with_changes; **AIOS-SPEC-013** — approved_with_changes (non-blocking follow-ons: purpose-class taxonomy, example intent JSON).
+
+---
+
 *This artifact is a governance decision record. It does not amend law.*

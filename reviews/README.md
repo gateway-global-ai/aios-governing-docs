@@ -103,4 +103,4 @@ python lifecycle.py core/technical_manifesto.md
 
 ### AMD-2026-011 + AIOS-SPEC-013 (external repository acquisition package)
 - Round 1: [`AMD-2026-011-AIOS-SPEC-013/round_1/README.md`](AMD-2026-011-AIOS-SPEC-013/round_1/README.md) — triangulated prompt [`TRIANGULATED_REVIEW_PROMPT.md`](AMD-2026-011-AIOS-SPEC-013/round_1/TRIANGULATED_REVIEW_PROMPT.md); **AMD-2026-011** + **AIOS-SPEC-013** as one coordinated review
-- Ratification: [`AMD-2026-011-AIOS-SPEC-013/ratification/ratification_processor_output.md`](AMD-2026-011-AIOS-SPEC-013/ratification/ratification_processor_output.md) — processor run (2026-04-05): **NOT_READY_FOR_RATIFICATION** pending triangulated reviews
+- Ratification: [`AMD-2026-011-AIOS-SPEC-013/ratification/ratification_processor_output.md`](AMD-2026-011-AIOS-SPEC-013/ratification/ratification_processor_output.md) — initial **TRIANGULATION_INCOMPLETE**; **§9 Supplement** — **READY_FOR_RATIFICATION** after [`round_1/review_001_openai.md`](AMD-2026-011-AIOS-SPEC-013/round_1/review_001_openai.md), [`round_1/review_002_gemini.md`](AMD-2026-011-AIOS-SPEC-013/round_1/review_002_gemini.md) (Council motion still required for merge)
