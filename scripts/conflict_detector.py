@@ -18,7 +18,7 @@ import re
 from pathlib import Path
 
 from context_assembler import BASE_DIR, read_file, parse_front_matter
-from registry_generator import scan_documents
+from registry_generator import _normalize_cross_refs, scan_documents
 
 
 def _extract_numbers_with_context(content: str, doc_id: str, path: str) -> list[dict]:
@@ -74,7 +74,7 @@ def _validate_cross_references(docs: list[dict]) -> list[dict]:
     findings = []
 
     for doc in docs:
-        refs = doc.get("cross_references", [])
+        refs = _normalize_cross_refs(doc.get("cross_references", []))
         for ref in refs:
             ref_id = ref.get("doc_id")
             if ref_id and ref_id not in valid_ids:
