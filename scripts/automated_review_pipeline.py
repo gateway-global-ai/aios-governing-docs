@@ -465,6 +465,9 @@ async def _process_document(
 
         paths_r1 = sorted_review_paths(doc_path, 1)[idx_r1:]
         r1_texts = [read_file(p) for p in paths_r1]
+        if len(r1_texts) == 0:
+            print("Error: No Round 1 reviews were generated. Aborting.")
+            return _finish(1)
         if len(r1_texts) != EXPECTED_R1:
             print(
                 f"Warning: expected {EXPECTED_R1} new Round 1 reviews, got {len(r1_texts)}"
