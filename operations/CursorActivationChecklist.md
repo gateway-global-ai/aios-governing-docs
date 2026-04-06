@@ -16,7 +16,6 @@ cross_references:
   - AIOS-OPS-015
   - AIOS-OPS-016
   - AIOS-OPS-018
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-019 — Cursor / IDE — Activation Checklist (operators)

@@ -650,6 +650,28 @@
     ]
   },
   {
+    "document_id": "AMD-2026-011",
+    "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-011.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "title": "Governance Constitution"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "title": "AIOS Agent Integration Protocol (AIP)"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      }
+    ]
+  },
+  {
     "document_id": "",
     "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
     "version": "",
@@ -821,10 +843,6 @@
       {
         "doc_id": "AIOS-OPS-014",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -879,10 +897,6 @@
       {
         "doc_id": "AIOS-OPS-019",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -917,10 +931,6 @@
       {
         "doc_id": "AIOS-OPS-018",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -932,14 +942,6 @@
     "category": "operations",
     "_path": "operations/CursorEnforcementActivationRunbook.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-007",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-009",
         "relationship": "references"
@@ -954,14 +956,6 @@
       },
       {
         "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
     ]
@@ -975,14 +969,6 @@
     "_path": "operations/CursorEnforcementContract.md",
     "cross_references": [
       {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-007",
-        "relationship": "references"
-      },
-      {
         "doc_id": "AIOS-OPS-011",
         "relationship": "references"
       },
@@ -997,14 +983,6 @@
       {
         "doc_id": "AIOS-OPS-015",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -1017,10 +995,6 @@
     "_path": "operations/CursorHostActivationHandoff.md",
     "cross_references": [
       {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
         "doc_id": "AIOS-OPS-009",
         "relationship": "references"
       },
@@ -1030,14 +1004,6 @@
       },
       {
         "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
     ]
@@ -1050,10 +1016,6 @@
     "category": "operations",
     "_path": "operations/CursorHostActivationResult.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-009",
         "relationship": "references"
@@ -1081,14 +1043,6 @@
       {
         "doc_id": "AIOS-OPS-017",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -1100,14 +1054,6 @@
     "category": "operations",
     "_path": "operations/EnforcementActivationHandoffSummary.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-008",
         "relationship": "references"
@@ -1151,10 +1097,6 @@
       {
         "doc_id": "AIOS-OPS-019",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -1166,14 +1108,6 @@
     "category": "operations",
     "_path": "operations/GitHubBranchProtectionActivationChecklist.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-006",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-010",
         "relationship": "references"
@@ -1193,10 +1127,6 @@
       {
         "doc_id": "AIOS-OPS-015",
         "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
       }
     ]
   },
@@ -1208,14 +1138,6 @@
     "category": "operations",
     "_path": "operations/GitHubEnforcementActivationRunbook.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-006",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-008",
         "relationship": "references"
@@ -1230,10 +1152,6 @@
       },
       {
         "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
     ]
@@ -1260,10 +1178,6 @@
       },
       {
         "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
         "relationship": "references"
       }
     ]
@@ -1320,14 +1234,6 @@
     "category": "operations",
     "_path": "operations/ReviewPipelineToolingGap.md",
     "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-006",
-        "relationship": "references"
-      },
       {
         "doc_id": "AIOS-OPS-013",
         "relationship": "references"

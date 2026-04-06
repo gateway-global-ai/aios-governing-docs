@@ -1,0 +1,5 @@
+# Minimal dependencies for scripts/governance_integrity_check.py and its import chain
+# (conflict_detector → registry_generator → context_assembler: PyYAML + python-dotenv only at import time).
+# Full pipeline tooling remains in scripts/requirements.txt.
+pyyaml>=6.0
+python-dotenv>=1.0.0

@@ -14,7 +14,6 @@ cross_references:
   - AIOS-OPS-010
   - AIOS-OPS-014
   - AIOS-OPS-015
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-017 — GitHub Host Activation — Result Record

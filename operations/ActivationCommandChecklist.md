@@ -12,7 +12,6 @@ reviewers: []
 cross_references:
   - AIOS-OPS-013
   - AIOS-OPS-014
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-015 — Activation — Command Checklist

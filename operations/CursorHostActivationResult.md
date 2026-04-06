@@ -10,7 +10,6 @@ created: 2026-04-06
 last_updated: 2026-04-06
 reviewers: []
 cross_references:
-  - AIOS-OPS-004
   - AIOS-OPS-009
   - AIOS-OPS-011
   - AIOS-OPS-013
@@ -18,8 +17,6 @@ cross_references:
   - AIOS-OPS-015
   - AIOS-OPS-016
   - AIOS-OPS-017
-  - AIOS-SPEC-012
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-018 — Cursor / IDE Host Activation — Result Record

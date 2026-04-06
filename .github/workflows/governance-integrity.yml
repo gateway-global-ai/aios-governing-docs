@@ -10,6 +10,8 @@
 #
 # TODO: optional ci_governance_dry_run — blocked until automated_review_pipeline.py exists; see operations/ReviewPipelineToolingGap.md (AIOS-OPS-012).
 # TODO Phase 2 (AIOS-OPS-006): ratification/review evidence automation beyond current scripts.
+#
+# Dependencies: scripts/requirements.governance-integrity.txt (minimal; see AMD-2026-011 §6).
 
 name: Governance integrity
 
@@ -34,8 +36,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
+      - name: Install dependencies (governance integrity only)
+        run: pip install -r scripts/requirements.governance-integrity.txt
 
       - name: Run governance integrity check
         run: python scripts/governance_integrity_check.py

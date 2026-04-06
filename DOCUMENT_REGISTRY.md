@@ -34,6 +34,7 @@
 | AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
 | AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
+| AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 0.1.0 | draft | amendment | `amendments/AMD-2026-011.md` |
 | — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
@@ -281,6 +282,14 @@
 | AMD-2026-007 | — |
 | WORKSPACE.md | — |
 
+### External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies (AMD-2026-011)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-002 | — |
+| AIOS-SPEC-003 | — |
+| AMD-2026-005 | — |
+
 ### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
 
 | Referenced Document | Relationship |
@@ -316,7 +325,6 @@
 |---------------------|--------------|
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
-| AMD-2026-010 | references |
 
 ### Activation — Export Index (AIOS-OPS-014)
 
@@ -333,7 +341,6 @@
 | AIOS-OPS-017 | references |
 | AIOS-OPS-018 | references |
 | AIOS-OPS-019 | references |
-| AMD-2026-010 | references |
 
 ### Cursor / IDE — Activation Checklist (operators) (AIOS-OPS-019)
 
@@ -345,50 +352,37 @@
 | AIOS-OPS-015 | references |
 | AIOS-OPS-016 | references |
 | AIOS-OPS-018 | references |
-| AMD-2026-010 | references |
 
 ### Cursor Enforcement — Activation Runbook (AIOS-OPS-011)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-004 | references |
-| AIOS-OPS-007 | references |
 | AIOS-OPS-009 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
-| AIOS-SPEC-012 | references |
-| AMD-2026-010 | references |
 
 ### Cursor Enforcement Contract (activation) (AIOS-OPS-009)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-004 | references |
-| AIOS-OPS-007 | references |
 | AIOS-OPS-011 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
-| AIOS-SPEC-012 | references |
-| AMD-2026-010 | references |
 
 ### Cursor / IDE — Host Activation Handoff (AIOS-OPS-016)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-004 | references |
 | AIOS-OPS-009 | references |
 | AIOS-OPS-011 | references |
 | AIOS-OPS-014 | references |
-| AIOS-SPEC-012 | references |
-| AMD-2026-010 | references |
 
 ### Cursor / IDE Host Activation — Result Record (AIOS-OPS-018)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-004 | references |
 | AIOS-OPS-009 | references |
 | AIOS-OPS-011 | references |
 | AIOS-OPS-013 | references |
@@ -396,15 +390,11 @@
 | AIOS-OPS-015 | references |
 | AIOS-OPS-016 | references |
 | AIOS-OPS-017 | references |
-| AIOS-SPEC-012 | references |
-| AMD-2026-010 | references |
 
 ### Enforcement Activation — Handoff Summary (AIOS-OPS-013)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-004 | references |
-| AIOS-OPS-005 | references |
 | AIOS-OPS-008 | references |
 | AIOS-OPS-009 | references |
 | AIOS-OPS-010 | references |
@@ -416,32 +406,25 @@
 | AIOS-OPS-017 | references |
 | AIOS-OPS-018 | references |
 | AIOS-OPS-019 | references |
-| AMD-2026-010 | references |
 
 ### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-005 | references |
-| AIOS-OPS-006 | references |
 | AIOS-OPS-010 | references |
 | AIOS-OPS-012 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
-| AMD-2026-010 | references |
 
 ### GitHub Enforcement — Activation Runbook (AIOS-OPS-010)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-005 | references |
-| AIOS-OPS-006 | references |
 | AIOS-OPS-008 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
-| AMD-2026-010 | references |
 
 ### GitHub Host Activation — Result Record (AIOS-OPS-017)
 
@@ -451,7 +434,6 @@
 | AIOS-OPS-010 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
-| AMD-2026-010 | references |
 
 ### Local Text-to-Speech (TTS) Runtime Standard (LOCAL_TTS_RUNTIME_STANDARD)
 
@@ -473,8 +455,6 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-OPS-005 | references |
-| AIOS-OPS-006 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
@@ -491,8 +471,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 54
+- **Total documents:** 55
 - **Ratified:** 22
-- **Draft:** 24
+- **Draft:** 25
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

@@ -21,7 +21,6 @@ cross_references:
   - AIOS-OPS-017
   - AIOS-OPS-018
   - AIOS-OPS-019
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-014 — Activation — Export Index

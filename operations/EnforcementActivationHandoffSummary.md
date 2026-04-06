@@ -10,8 +10,6 @@ created: 2026-04-07
 last_updated: 2026-04-06
 reviewers: []
 cross_references:
-  - AIOS-OPS-004
-  - AIOS-OPS-005
   - AIOS-OPS-008
   - AIOS-OPS-009
   - AIOS-OPS-010
@@ -23,7 +21,6 @@ cross_references:
   - AIOS-OPS-017
   - AIOS-OPS-018
   - AIOS-OPS-019
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-013 — Enforcement Activation — Handoff Summary

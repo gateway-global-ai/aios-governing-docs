@@ -10,14 +10,10 @@ created: 2026-04-07
 last_updated: 2026-04-07
 reviewers: []
 cross_references:
-  - AIOS-OPS-004
-  - AIOS-OPS-007
   - AIOS-OPS-011
   - AIOS-OPS-013
   - AIOS-OPS-014
   - AIOS-OPS-015
-  - AIOS-SPEC-012
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-009 — Cursor Enforcement Contract (activation)

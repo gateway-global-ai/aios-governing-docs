@@ -10,8 +10,6 @@ created: 2026-04-07
 last_updated: 2026-04-07
 reviewers: []
 cross_references:
-  - AIOS-OPS-005
-  - AIOS-OPS-006
   - AIOS-OPS-013
   - AIOS-OPS-014
   - AIOS-OPS-015

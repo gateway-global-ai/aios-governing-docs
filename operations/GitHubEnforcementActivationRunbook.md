@@ -10,13 +10,10 @@ created: 2026-04-07
 last_updated: 2026-04-07
 reviewers: []
 cross_references:
-  - AIOS-OPS-005
-  - AIOS-OPS-006
   - AIOS-OPS-008
   - AIOS-OPS-013
   - AIOS-OPS-014
   - AIOS-OPS-015
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-010 — GitHub Enforcement — Activation Runbook

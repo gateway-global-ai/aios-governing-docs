@@ -10,12 +10,9 @@ created: 2026-04-05
 last_updated: 2026-04-05
 reviewers: []
 cross_references:
-  - AIOS-OPS-004
   - AIOS-OPS-009
   - AIOS-OPS-011
   - AIOS-OPS-014
-  - AIOS-SPEC-012
-  - AMD-2026-010
 ---
 
 # AIOS-OPS-016 — Cursor / IDE — Host Activation Handoff
