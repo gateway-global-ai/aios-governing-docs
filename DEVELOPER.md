@@ -77,6 +77,27 @@ py scripts/peer_review.py core/governance_constitution.md --round 1
 py scripts/peer_review.py specifications/CLIDeveloperGuide.md --round 1 --rubric light --smart-context
 ```
 
+### Optional automation (portfolio + pipeline)
+
+These scripts **do not** replace manual triangulated review for ratification; they are operator tooling. Generated outputs are listed in `.gitignore` (`portfolio_reviews/`, `reviews/**/automated_runs/`, `reviews/**/LAST_RUN_POINTER.json`).
+
+**Corpus / portfolio review** (single OpenAI call over a registry digest):
+
+```bash
+cd scripts
+py -3 governance_portfolio_review.py --dry-run
+py -3 governance_portfolio_review.py
+```
+
+**Automated peer-review → amendment loop** (rounds 1–2 via `peer_review`, then optional OpenAI revision; same API keys as `peer_review.py`):
+
+```bash
+cd scripts
+py -3 automated_review_pipeline.py --document amendments/AMD-2026-007.md --dry-run
+py -3 automated_review_pipeline.py --document amendments/AMD-2026-007.md
+# or: py -3 automated_review_pipeline.py --next
+```
+
 ---
 
 ## Source Analysis & Amendments
