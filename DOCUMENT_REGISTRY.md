@@ -8,67 +8,67 @@
 
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
-| AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core\governance_constitution.md` |
-| AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core\master_platform_operating_agreement.md` |
-| AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core\technical_manifesto.md` |
-| AIOS-SPEC-012 | Agent Class Registration and Authority Model | 1.1.0 | ratified | specification | `specifications\AgentClassRegistrationAndAuthorityModel.md` |
-| AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications\AgentIntegrationProtocol.md` |
-| AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications\agents.md` |
-| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications\AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
-| AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications\CLIDeveloperGuide.md` |
-| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications\ExecutionScopeAndContextBounding.md` |
-| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications\GoogleWorkspaceIntegrationGovernance.md` |
-| AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications\IntentDiscoveryOnboardingFramework.md` |
-| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.1 | draft | specification | `specifications\IntentPrimitiveAndExecutionModel.md` |
-| AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications\NodeContract.md` |
-| AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications\PolicyRecord.md` |
-| AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications\SecuritySandboxingModel.md` |
-| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications\UIComponentRegistryStandard.md` |
-| AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial\DataPrivacyComplianceAddendum.md` |
-| AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial\MarketplaceTermsOnboarding.md` |
-| AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments\AMD-2026-005.md` |
-| AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments\AMD-2026-006.md` |
-| AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.1.0 | draft | amendment | `amendments\AMD-2026-007.md` |
-| AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments\AMD-2026-008.md` |
-| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.1 | draft | amendment_addendum | `amendments\AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
-| AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.0 | draft | operational_plan | `amendments\AMD-2026-009-merge-deltas-and-first-slice.md` |
-| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments\AMD-2026-009-ratification-motion.md` |
-| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments\AMD-2026-009-spec-merge-checklist.md` |
-| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments\AMD-2026-009.md` |
-| AMD-2026-010-RATIFICATION-MOTION | Ratification motion — Governance Enforcement Package v1 (AMD-2026-010) | — | ratified | council_motion | `amendments\AMD-2026-010-ratification-motion.md` |
-| AMD-2026-010 | Governance Enforcement, Agent Control, and Canonical Boundary | 1.0.2 | ratified | amendment | `amendments\AMD-2026-010.md` |
-| — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments\ammendment_google.md` |
-| AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference\EcosystemRoadmapVersioningPolicy.md` |
-| — | gateway_plan | — | unregistered | reference | `reference\gateway_plan.md` |
-| — | gateway_plan_review | — | unregistered | reference | `reference\gateway_plan_review.md` |
-| AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference\GovernanceCouncilOperatingManual.md` |
-| — | intent_driven_skill | — | unregistered | reference | `reference\intent_driven_skill.md` |
-| — | ptt_interface | — | unregistered | reference | `reference\ptt_interface.md` |
-| — | shell_overhaul | — | unregistered | reference | `reference\shell_overhaul.md` |
-| — | UI_PHILOSOPHY | — | unregistered | reference | `reference\UI_PHILOSOPHY.md` |
-| — | uifix_ptt | — | unregistered | reference | `reference\uifix_ptt.md` |
-| LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal\LEGAL-001-Privacy-Policy.md` |
-| LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal\LEGAL-002-Terms-of-Service.md` |
-| — | README | — | unregistered | legal | `legal\README.md` |
-| AIOS-OPS-015 | Activation — Command Checklist | 1.0.0 | ratified | operations | `operations\ActivationCommandChecklist.md` |
-| AIOS-OPS-014 | Activation — Export Index | 1.0.0 | ratified | operations | `operations\ActivationExportIndex.md` |
-| AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations\CursorActivationChecklist.md` |
-| AIOS-OPS-004 | Cursor Agent Execution Rules | 1.1.0 | ratified | operations | `operations\CursorAgentExecutionRules.md` |
-| AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations\CursorAgentExecutionRulesImplementationPlan.md` |
-| AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\CursorEnforcementActivationRunbook.md` |
-| AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations\CursorEnforcementContract.md` |
-| AIOS-OPS-016 | Cursor / IDE — Host Activation Handoff | 1.0.0 | ratified | operations | `operations\CursorHostActivationHandoff.md` |
-| AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations\CursorHostActivationResult.md` |
-| AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations\EnforcementActivationHandoffSummary.md` |
-| AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations\GitHubBranchProtectionActivationChecklist.md` |
-| AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\GitHubEnforcementActivationRunbook.md` |
-| AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
-| AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations\GitHubGovernanceGatesImplementationPlan.md` |
-| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations\GitHubHostActivationResult.md` |
-| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
-| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
-| AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations\ReviewPipelineToolingGap.md` |
-| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations\WHISPER_RUNTIME_STANDARD.md` |
+| AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core/governance_constitution.md` |
+| AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core/master_platform_operating_agreement.md` |
+| AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core/technical_manifesto.md` |
+| AIOS-SPEC-012 | Agent Class Registration and Authority Model | 1.1.0 | ratified | specification | `specifications/AgentClassRegistrationAndAuthorityModel.md` |
+| AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
+| AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
+| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
+| AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
+| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
+| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
+| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.1 | draft | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
+| AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
+| AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
+| AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
+| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
+| AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
+| AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
+| AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
+| AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
+| AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.1.0 | draft | amendment | `amendments/AMD-2026-007.md` |
+| AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
+| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.1 | draft | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
+| AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.0 | draft | operational_plan | `amendments/AMD-2026-009-merge-deltas-and-first-slice.md` |
+| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
+| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
+| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
+| AMD-2026-010-RATIFICATION-MOTION | Ratification motion — Governance Enforcement Package v1 (AMD-2026-010) | — | ratified | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
+| AMD-2026-010 | Governance Enforcement, Agent Control, and Canonical Boundary | 1.0.2 | ratified | amendment | `amendments/AMD-2026-010.md` |
+| — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
+| AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
+| — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
+| — | gateway_plan_review | — | unregistered | reference | `reference/gateway_plan_review.md` |
+| AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
+| — | intent_driven_skill | — | unregistered | reference | `reference/intent_driven_skill.md` |
+| — | ptt_interface | — | unregistered | reference | `reference/ptt_interface.md` |
+| — | shell_overhaul | — | unregistered | reference | `reference/shell_overhaul.md` |
+| — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
+| — | uifix_ptt | — | unregistered | reference | `reference/uifix_ptt.md` |
+| LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
+| LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
+| — | README | — | unregistered | legal | `legal/README.md` |
+| AIOS-OPS-015 | Activation — Command Checklist | 1.0.0 | ratified | operations | `operations/ActivationCommandChecklist.md` |
+| AIOS-OPS-014 | Activation — Export Index | 1.0.0 | ratified | operations | `operations/ActivationExportIndex.md` |
+| AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
+| AIOS-OPS-004 | Cursor Agent Execution Rules | 1.1.0 | ratified | operations | `operations/CursorAgentExecutionRules.md` |
+| AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations/CursorAgentExecutionRulesImplementationPlan.md` |
+| AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/CursorEnforcementActivationRunbook.md` |
+| AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations/CursorEnforcementContract.md` |
+| AIOS-OPS-016 | Cursor / IDE — Host Activation Handoff | 1.0.0 | ratified | operations | `operations/CursorHostActivationHandoff.md` |
+| AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
+| AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations/EnforcementActivationHandoffSummary.md` |
+| AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
+| AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/GitHubEnforcementActivationRunbook.md` |
+| AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations/GitHubGovernanceGates.md` |
+| AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations/GitHubGovernanceGatesImplementationPlan.md` |
+| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
+| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
+| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
+| AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations/ReviewPipelineToolingGap.md` |
+| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
 
 ---
 

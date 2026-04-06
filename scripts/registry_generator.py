@@ -20,6 +20,11 @@ SCAN_DIRS = [
 ]
 
 
+def _registry_rel_path(md_file: Path) -> str:
+    """Return repo-relative path with forward slashes for all OS (matches Linux CI / G-7)."""
+    return md_file.relative_to(BASE_DIR).as_posix()
+
+
 def scan_documents() -> list[dict]:
     """Scan all document directories for files with front matter."""
     docs = []
@@ -31,11 +36,11 @@ def scan_documents() -> list[dict]:
             content = read_file(md_file)
             metadata, _ = parse_front_matter(content)
             if metadata:
-                metadata["_path"] = str(md_file.relative_to(BASE_DIR))
+                metadata["_path"] = _registry_rel_path(md_file)
                 docs.append(metadata)
             else:
                 docs.append({
-                    "_path": str(md_file.relative_to(BASE_DIR)),
+                    "_path": _registry_rel_path(md_file),
                     "document_id": "—",
                     "title": md_file.stem,
                     "version": "—",
