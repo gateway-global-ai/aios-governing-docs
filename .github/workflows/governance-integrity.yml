@@ -1,0 +1,40 @@
+# Governance integrity — AIOS-OPS-005 / AIOS-OPS-006
+# Phase 1: run on PR and push; treat as required check only after branch protection is configured (AIOS-OPS-008).
+#
+# Implemented checks (truthful to repo tooling):
+#   G-1 duplicate document_id
+#   G-3 broken cross_references
+#   G-7 DOCUMENT_REGISTRY.* drift vs scripts/registry_generator.py
+#   reference/agent_registry.yaml parses as YAML
+#
+# TODO (when automated_review_pipeline.py exists in-repo): optional ci_governance_dry_run for changed docs.
+# TODO Phase 2 (AIOS-OPS-006): ratification/review evidence automation beyond current scripts.
+
+name: Governance integrity
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  governance-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run governance integrity check
+        run: python scripts/governance_integrity_check.py

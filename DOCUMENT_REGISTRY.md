@@ -11,6 +11,7 @@
 | AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core\governance_constitution.md` |
 | AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core\master_platform_operating_agreement.md` |
 | AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core\technical_manifesto.md` |
+| AIOS-SPEC-012 | Agent Class Registration and Authority Model | 1.1.0 | ratified | specification | `specifications\AgentClassRegistrationAndAuthorityModel.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications\AgentIntegrationProtocol.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications\agents.md` |
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications\AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
@@ -34,6 +35,8 @@
 | AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments\AMD-2026-009-ratification-motion.md` |
 | AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments\AMD-2026-009-spec-merge-checklist.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments\AMD-2026-009.md` |
+| AMD-2026-010-RATIFICATION-MOTION | Ratification motion — Governance Enforcement Package v1 (AMD-2026-010) | — | ratified | council_motion | `amendments\AMD-2026-010-ratification-motion.md` |
+| AMD-2026-010 | Governance Enforcement, Agent Control, and Canonical Boundary | 1.0.2 | ratified | amendment | `amendments\AMD-2026-010.md` |
 | — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments\ammendment_google.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference\EcosystemRoadmapVersioningPolicy.md` |
 | — | gateway_plan | — | unregistered | reference | `reference\gateway_plan.md` |
@@ -47,6 +50,12 @@
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal\LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal\LEGAL-002-Terms-of-Service.md` |
 | — | README | — | unregistered | legal | `legal\README.md` |
+| AIOS-OPS-004 | Cursor Agent Execution Rules | 1.1.0 | ratified | operations | `operations\CursorAgentExecutionRules.md` |
+| AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations\CursorAgentExecutionRulesImplementationPlan.md` |
+| AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations\CursorEnforcementContract.md` |
+| AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations\GitHubBranchProtectionActivationChecklist.md` |
+| AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
+| AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations\GitHubGovernanceGatesImplementationPlan.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
 | OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
 | WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations\WHISPER_RUNTIME_STANDARD.md` |
@@ -75,6 +84,15 @@
 |---------------------|--------------|
 | AIOS-CORE-002 | constrained_by |
 | AIOS-CORE-003 | incorporated_by |
+
+### Agent Class Registration and Authority Model (AIOS-SPEC-012)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-002 | constrained_by |
+| AMD-2026-010 | implements |
+| AIOS-OPS-004 | complements |
+| AIOS-OPS-005 | complements |
 
 ### AIOS Agent Integration Protocol (AIP) (AIOS-SPEC-003)
 
@@ -269,6 +287,15 @@
 | AMD-2026-007 | — |
 | WORKSPACE.md | — |
 
+### Governance Enforcement, Agent Control, and Canonical Boundary (AMD-2026-010)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | — |
+| AIOS-OPS-005 | — |
+| AIOS-SPEC-012 | — |
+| AIOS-CORE-002 | — |
+
 ### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
 
 | Referenced Document | Relationship |
@@ -298,6 +325,54 @@
 |---------------------|--------------|
 | LEGAL-001 | references |
 
+### Cursor Agent Execution Rules (AIOS-OPS-004)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-010 | references |
+| AIOS-OPS-005 | references |
+| AIOS-SPEC-012 | references |
+
+### Cursor Agent Execution Rules — Implementation Plan (AIOS-OPS-007)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | references |
+| AIOS-SPEC-012 | references |
+| AMD-2026-010 | references |
+
+### Cursor Enforcement Contract (activation) (AIOS-OPS-009)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | references |
+| AIOS-OPS-007 | references |
+| AIOS-SPEC-012 | references |
+| AMD-2026-010 | references |
+
+### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-005 | references |
+| AIOS-OPS-006 | references |
+| AMD-2026-010 | references |
+
+### GitHub Governance Gates (AIOS-OPS-005)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-010 | references |
+| AIOS-OPS-004 | references |
+| AIOS-SPEC-012 | references |
+
+### GitHub Governance Gates — Implementation Plan (AIOS-OPS-006)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-005 | references |
+| AMD-2026-010 | references |
+
 ### Local Text-to-Speech (TTS) Runtime Standard (LOCAL_TTS_RUNTIME_STANDARD)
 
 | Referenced Document | Relationship |
@@ -326,8 +401,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 42
-- **Ratified:** 10
+- **Total documents:** 51
+- **Ratified:** 19
 - **Draft:** 24
 - **Under review:** 0
 - **Unregistered (no front matter):** 8
