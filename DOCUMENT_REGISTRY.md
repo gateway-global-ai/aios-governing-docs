@@ -16,6 +16,7 @@
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
 | AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
+| AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 0.1.0 | draft | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
 | AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
 | AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.1 | draft | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
@@ -34,7 +35,7 @@
 | AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
 | AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
-| AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 0.1.0 | draft | amendment | `amendments/AMD-2026-011.md` |
+| AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 0.1.1 | draft | amendment | `amendments/AMD-2026-011.md` |
 | — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
@@ -134,6 +135,15 @@
 | AIOS-SPEC-009 | constrained_by |
 | AIOS-SPEC-001 | complements |
 | AMD-2026-009 | constrained_by |
+
+### External Repository Acquisition, Analysis, and Promotion (AIOS-SPEC-013)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-002 | — |
+| AIOS-SPEC-003 | — |
+| AMD-2026-005 | — |
+| AMD-2026-011 | — |
 
 ### Google Workspace Integration Governance (AIOS-SPEC-007)
 
@@ -289,6 +299,7 @@
 | AIOS-CORE-002 | — |
 | AIOS-SPEC-003 | — |
 | AMD-2026-005 | — |
+| AIOS-SPEC-013 | — |
 
 ### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
 
@@ -471,8 +482,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 55
+- **Total documents:** 56
 - **Ratified:** 22
-- **Draft:** 25
+- **Draft:** 26
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

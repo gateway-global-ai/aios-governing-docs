@@ -18,7 +18,7 @@ Formalizes **system-driven external repository acquisition**, **quarantine**, **
 
 ## Spec / document follow-on
 
-- Normative **interface and lifecycle** detail for acquisition and quarantine should eventually live in a **dedicated specification** (proposed **AIOS-SPEC-013** — see amendment body); **AIOS-SPEC-009** remains reserved for the Intent Primitive and Execution Model in this repository.
+- **AIOS-SPEC-013** (*External Repository Acquisition, Analysis, and Promotion*) is filed as a **draft** at [`specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md`](../../specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md) — normative contracts and promotion classes; **AIOS-SPEC-009** remains reserved for the Intent Primitive and Execution Model in this repository.
 
 ## Risk if not adopted
 

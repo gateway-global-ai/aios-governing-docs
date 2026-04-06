@@ -6,6 +6,8 @@
 
 Structured notes and future primary sources for **external repository acquisition**, **quarantine**, **analysis**, **promotion**, and **minimal governance execution dependencies**. Replace or extend this stub as acquisition tooling and Council decisions produce authoritative artifacts.
 
+**Formalization:** Draft specification **[AIOS-SPEC-013](../../specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md)** (contracts and promotion classes) pairs with **[AMD-2026-011](../../amendments/AMD-2026-011.md)** for triangulated peer review.
+
 ## Working notes (non-normative)
 
 - **Acquisition intent:** system-emitted, policy-bound requests to obtain an external repository artifact for governed evaluation — not a default operator workflow.

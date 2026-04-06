@@ -188,6 +188,32 @@
     ]
   },
   {
+    "document_id": "AIOS-SPEC-013",
+    "title": "External Repository Acquisition, Analysis, and Promotion",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "title": "Governance Constitution"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "title": "AIOS Agent Integration Protocol (AIP)"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-011",
+        "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-SPEC-007",
     "title": "Google Workspace Integration Governance",
     "version": "0.1.1",
@@ -652,7 +678,7 @@
   {
     "document_id": "AMD-2026-011",
     "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "status": "draft",
     "category": "amendment",
     "_path": "amendments/AMD-2026-011.md",
@@ -668,6 +694,10 @@
       {
         "doc_id": "AMD-2026-005",
         "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AIOS-SPEC-013",
+        "title": "External Repository Acquisition, Analysis, and Promotion"
       }
     ]
   },
