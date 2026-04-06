@@ -13,7 +13,7 @@ cross_references:
   - { doc_id: "AIOS-CORE-001", relationship: "implements" }
   - { doc_id: "AIOS-CORE-003", relationship: "amends" }
   - { doc_id: "AIOS-CORE-002", relationship: "constrained_by" }
-  - { doc_id: "AIOS-SPEC-009", relationship: "complements" }
+  - { doc_id: "AIOS-SPEC-011", relationship: "complements" }
 amendment_history: []
 ---
 # AIOS Data Privacy & Compliance Addendum v1.0.0

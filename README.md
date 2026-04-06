@@ -39,7 +39,7 @@ Product repositories (for example the voice interface) **implement** these rules
 ## Repository structure
 
 ```
-governing_docs/
+.
 ├── .env                         # API keys (DeepSeek, Gemini, OpenAI) — not committed
 ├── README.md                    # This file
 ├── DEVELOPER.md                 # How to run scripts, APIs, lifecycle, registry
@@ -201,7 +201,7 @@ These tools do **not** replace ratification or the supremacy of written document
 
 ## Relationship to product repositories
 
-| This repo (`governing_docs`) | Product repos (e.g. voice interface) |
+| This repository (`gateway-global-ai/aios-governing-docs`) | Product repos (e.g. voice interface) |
 |------------------------------|--------------------------------------|
 | Defines rules, specs, amendments, registry | Implements UX, APIs, adapters under those rules |
 | Source of truth for “what is allowed” | Must not override ratified governance |

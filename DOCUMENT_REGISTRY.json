@@ -56,7 +56,7 @@
   {
     "document_id": "AIOS-SPEC-003",
     "title": "AIOS Agent Integration Protocol (AIP)",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "status": "ratified",
     "category": "specification",
     "_path": "specifications\\AgentIntegrationProtocol.md",
@@ -102,6 +102,24 @@
     ]
   },
   {
+    "document_id": "AIOS-SPEC-009-CONFORMANCE-TEST-V1",
+    "title": "AIOS-SPEC-009 Pre-Ratification Conformance Test Suite",
+    "version": "1.2.0",
+    "status": "draft",
+    "category": "conformance",
+    "_path": "specifications\\AIOS-SPEC-009-CONFORMANCE-TEST-V1.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-SPEC-004",
     "title": "AIOS CLI Developer Experience Guide",
     "version": "1.0.0",
@@ -128,12 +146,12 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-007",
-    "title": "Google Workspace Integration Governance",
-    "version": "0.1.0",
+    "document_id": "AIOS-SPEC-010",
+    "title": "Execution Scope and Context Bounding",
+    "version": "1.0.4",
     "status": "draft",
     "category": "specification",
-    "_path": "specifications\\GoogleWorkspaceIntegrationGovernance.md",
+    "_path": "specifications\\ExecutionScopeAndContextBounding.md",
     "cross_references": [
       {
         "doc_id": "AIOS-CORE-001",
@@ -144,16 +162,138 @@
         "relationship": "constrained_by"
       },
       {
-        "doc_id": "AMD-2026-005",
-        "relationship": "constrained_by"
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "complements"
       },
       {
         "doc_id": "AIOS-SPEC-003",
+        "relationship": "extends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005",
         "relationship": "complements"
       },
       {
-        "doc_id": "AIOS-SPEC-006",
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-001",
         "relationship": "complements"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-007",
+    "title": "Google Workspace Integration Governance",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\GoogleWorkspaceIntegrationGovernance.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "title": "Intent-Scoped Web Retrieval and Governed Website Review"
+      },
+      {
+        "path": "WORKSPACE.md",
+        "note": "Informative operator and capability notes (repository root)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-008",
+    "title": "Intent Discovery & Onboarding Framework",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\IntentDiscoveryOnboardingFramework.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-009",
+    "title": "Intent Primitive and Execution Model",
+    "version": "0.5.1",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications\\IntentPrimitiveAndExecutionModel.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009-CONFORMANCE-TEST-V1",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "OLLAMA_RUNTIME_STANDARD",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "WHISPER_RUNTIME_STANDARD",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "LOCAL_TTS_RUNTIME_STANDARD",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "relationship": "references"
       }
     ]
   },
@@ -206,7 +346,7 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-009",
+    "document_id": "AIOS-SPEC-011",
     "title": "Security & Sandboxing Model",
     "version": "1.0.0",
     "status": "draft",
@@ -238,7 +378,7 @@
   {
     "document_id": "AIOS-SPEC-006",
     "title": "UI Component Registry Standard",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "status": "draft",
     "category": "specification",
     "_path": "specifications\\UIComponentRegistryStandard.md",
@@ -261,6 +401,10 @@
       },
       {
         "doc_id": "AMD-2026-005",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AMD-2026-007",
         "relationship": "constrained_by"
       },
       {
@@ -290,7 +434,7 @@
         "relationship": "constrained_by"
       },
       {
-        "doc_id": "AIOS-SPEC-009",
+        "doc_id": "AIOS-SPEC-011",
         "relationship": "complements"
       }
     ]
@@ -354,6 +498,154 @@
       {
         "doc_id": "AIOS-SPEC-006",
         "relationship": "amends"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-007",
+    "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments\\AMD-2026-007.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-006",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008",
+    "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)",
+    "version": "1.2.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments\\AMD-2026-008.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "title": "Google Workspace Integration Governance"
+      },
+      {
+        "doc_id": "OLLAMA_RUNTIME_STANDARD",
+        "title": "Ollama Local Model Runtime Standard"
+      },
+      {
+        "doc_id": "WHISPER_RUNTIME_STANDARD",
+        "title": "Whisper / faster-whisper Local STT Runtime Standard"
+      },
+      {
+        "doc_id": "LOCAL_TTS_RUNTIME_STANDARD",
+        "title": "Local Text-to-Speech (TTS) Runtime Standard"
+      },
+      {
+        "doc_id": "MPOA",
+        "title": "Master Platform Operating Agreement"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-009-ADD-001",
+    "title": "Retrieval backend neutrality (beyond Google PSE / Custom Search)",
+    "version": "1.0.1",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments\\AMD-2026-009-ADD-001-retrieval-backend-neutrality.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-009"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007"
+      },
+      {
+        "doc_id": "AIOS-SPEC-010"
+      },
+      {
+        "path": "reviews/amd_2026_009_add_001/round_1/REVIEW_BRIEF.md",
+        "note": "Triangulated peer review prompt (search/knowledge strategy)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-009-MERGE-DELTAS-FIRST-SLICE",
+    "title": "Normative merge deltas (sanity-check) and first implementation slice",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "operational_plan",
+    "_path": "amendments\\AMD-2026-009-merge-deltas-and-first-slice.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-009-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-009",
+    "version": "",
+    "status": "draft",
+    "category": "council_motion",
+    "_path": "amendments\\AMD-2026-009-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-009-SPEC-MERGE-CHECKLIST",
+    "title": "Normative spec-merge checklist (AMD-2026-009 §10)",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "operational_checklist",
+    "_path": "amendments\\AMD-2026-009-spec-merge-checklist.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-009",
+    "title": "Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition)",
+    "version": "0.1.6",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments\\AMD-2026-009.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "title": "Google Workspace Integration Governance"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-010",
+        "title": "Execution Scope Envelope (SPEC-010)"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "WORKSPACE.md",
+        "title": "Workspace Domain Pack (informative; repository)"
       }
     ]
   },
@@ -423,7 +715,7 @@
         "relationship": "operationalizes"
       },
       {
-        "doc_id": "AIOS-SPEC-009",
+        "doc_id": "AIOS-SPEC-011",
         "relationship": "complements"
       },
       {
@@ -476,5 +768,108 @@
     "category": "reference",
     "_path": "reference\\uifix_ptt.md",
     "cross_references": []
+  },
+  {
+    "document_id": "LEGAL-001",
+    "title": "Privacy Policy",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "legal",
+    "_path": "legal\\LEGAL-001-Privacy-Policy.md",
+    "cross_references": [
+      {
+        "doc_id": "LEGAL-002",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "LEGAL-002",
+    "title": "Terms of Service",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "legal",
+    "_path": "legal\\LEGAL-002-Terms-of-Service.md",
+    "cross_references": [
+      {
+        "doc_id": "LEGAL-001",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "—",
+    "title": "README",
+    "version": "—",
+    "status": "unregistered",
+    "category": "legal",
+    "_path": "legal\\README.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "LOCAL_TTS_RUNTIME_STANDARD",
+    "title": "Local Text-to-Speech (TTS) Runtime Standard",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "operations",
+    "_path": "operations\\LOCAL_TTS_RUNTIME_STANDARD.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009 §17",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "OLLAMA_RUNTIME_STANDARD",
+    "title": "Ollama Local Model Runtime Standard",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "operations",
+    "_path": "operations\\OLLAMA_RUNTIME_STANDARD.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "WHISPER_RUNTIME_STANDARD",
+    "title": "Whisper / faster-whisper Local STT Runtime Standard",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "operations",
+    "_path": "operations\\WHISPER_RUNTIME_STANDARD.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009 §17",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "relationship": "references"
+      }
+    ]
   }
 ]

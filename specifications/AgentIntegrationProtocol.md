@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-003
 title: AIOS Agent Integration Protocol (AIP)
-version: 1.2.0
+version: 1.3.0
 status: ratified
 category: specification
 author: Gateway Global
 created: 2026-03-28
-last_updated: 2026-04-02
+last_updated: 2026-04-03
 reviewers: []
 supersedes: null
 cross_references:
@@ -23,7 +23,7 @@ amendment_history:
     ratified: null
     summary: Google Workspace governed integration plane; workspace.* intents; SPEC-007
 ---
-# AIOS Agent Integration Protocol (AIP) v1.2.0
+# AIOS Agent Integration Protocol (AIP) v1.3.0
 
 ## 1. Architectural Purpose
 The Agent Integration Protocol (AIP) defines the exact interface and constraints for autonomous and semi‑autonomous coding agents operating within the Gateway Global AIOS ecosystem. It provides the machine‑readable instructions for agents to generate, test, and deploy platform primitives.
@@ -183,6 +183,8 @@ Because agents are integrated via MCP, they operate in a deterministic feedback 
 
 AI drafting assistants and conversational orchestration layers MUST emit structured intent for governed Amendment Program operations.
 
+**Intent primitive:** Layers that **classify**, **route**, **persist**, or **audit** user goals SHOULD align with the **Intent** definition, lifecycle, validation, and governance enforcement model in **[AMD-2026-007](../amendments/AMD-2026-007.md) Section 11** *(draft amendment; not ratified)*. The intent identifiers and payloads in this section are **emitted** intents; they MUST be produced only after **resolution** and **validation** consistent with applicable ratified requirements (including **Actor**, **domain**, **plane**, and **policy** attachment).
+
 ### Allowed Amendment Intents
 
 | Intent ID | Meaning | Required Parameters | Target View |
@@ -245,7 +247,7 @@ Silent degradation is invalid under AIOS governance.
 
 ## 9. Schema Authority
 
-The intent, routing, and payload structures defined by AMD-2026-005 are authoritative for Amendment Program orchestration.
+The intent, routing, and payload structures defined by AMD-2026-005 are authoritative for Amendment Program orchestration. The **logical Intent model** and **serialization rules** for resolved intents are described in **[AMD-2026-007](../amendments/AMD-2026-007.md) Section 11.2** *(draft amendment; not ratified)*; orchestration that persists or exchanges **Intent** records SHOULD conform to that section pending ratification of the amendment.
 
 All agentic and assistant systems covered by this specification MUST comply with the canonical schema for:
 

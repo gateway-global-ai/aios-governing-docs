@@ -7,11 +7,11 @@ This guide explains how to use the governance document management system, run li
 ## Prerequisites
 
 ```bash
-cd C:\Apps\governing_docs\scripts
+cd scripts
 py -m pip install -r requirements.txt
 ```
 
-Create a `.env` file in the root `governing_docs/` directory with API keys. If `C:\Apps\ai-os-voice-interface\.env.local` exists, it is loaded **after** `governing_docs/.env` and **overrides** the same variable names — use that file as the single place to rotate LLM keys during development.
+Create a `.env` file in the **repository root** with API keys. If `C:\Apps\ai-os-voice-interface\.env.local` exists, it is loaded **after** the repository root `.env` and **overrides** the same variable names — use that file as the single place to rotate LLM keys during development.
 
 ```
 DEEPSEEK_API_KEY=your_key
@@ -37,7 +37,7 @@ Governance markdown and the API layer resolve `{{GATEWAY_*}}` placeholders using
 
 There is **no** separate post–peer-review **human audit** gate solely to satisfy workflow. Constitutional and Council-controlled gates (e.g. Tier 3 dual-signature, Council vote) still apply where the Constitution or MPOA already requires them.
 
-Normative detail for agents and orchestration: **AIOS-SPEC-003** §§1 (Amendment Program workspace model), **7–10** (governed intent emission, deterministic failure, schema authority, peer review/ratification flow), **§11** (Google Workspace governed intents). Governed UI surfaces: **AIOS-SPEC-006** §§8–12 (shell vs view, workspace/workflow types, footer contract, load states, registration), **§13** (Workspace canvas surfaces). **Google Workspace MCP** (external server): see **AIOS-SPEC-007** — Layer 1 scope classes vs Layer 2 `workspace.*` intents (one-to-one mapping); production MUST NOT rely on single-user MCP mode (see spec §2.3).
+Normative detail for agents and orchestration: **AIOS-SPEC-003** §§1 (Amendment Program workspace model), **7–10** (governed intent emission, deterministic failure, schema authority, peer review/ratification flow), **§11** (Google Workspace governed intents); **Intent** primitive, lifecycle, and serialization: **[AMD-2026-007](../amendments/AMD-2026-007.md) Section 11** (cross-referenced from SPEC-003 **§§7, 9**). Governed UI surfaces: **AIOS-SPEC-006** §§8–12 (shell vs view, workspace/workflow types, footer contract, load states, registration), **§13** (Workspace canvas surfaces); intent-driven primary surface and transparency: **AMD-2026-007** Sections **11.4–11.6** (cross-referenced from SPEC-006). **Google Workspace MCP** (external server): see **AIOS-SPEC-007** — Layer 1 scope classes vs Layer 2 `workspace.*` intents (one-to-one mapping); intent resolution before routing: **AMD-2026-007** Section 11; production MUST NOT rely on single-user MCP mode (see spec §2.3).
 
 ### Full Lifecycle (core documents)
 
@@ -246,7 +246,7 @@ Tag: v1.0.0-aios-technical-manifesto-platform-economics
 Initialize the repo if not already done:
 
 ```bash
-cd C:\Apps\governing_docs
+cd <repository root>
 git init
 git add .
 git commit -m "Initial governance system setup"
@@ -259,7 +259,7 @@ git commit -m "Initial governance system setup"
 Run the test suite:
 
 ```bash
-cd C:\Apps\governing_docs
+cd <repository root>
 py -m pytest tests/ -v
 ```
 
@@ -268,7 +268,7 @@ py -m pytest tests/ -v
 ## Folder Structure
 
 ```
-governing_docs/
+.
 ├── core/                  # Manifesto, Constitution, MPOA
 ├── specifications/        # NodeContract, PolicyRecord, AIP, CLI Guide, agents.md
 │   └── schemas/           # Extracted JSON schemas (.json files)

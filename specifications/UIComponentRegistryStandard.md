@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-006
 title: UI Component Registry Standard
-version: 1.2.0
+version: 1.3.0
 status: draft
 category: specification
 author: Gateway Global
 created: 2026-04-02
-last_updated: 2026-04-02
+last_updated: 2026-04-03
 reviewers: []
 supersedes: null
 cross_references:
@@ -15,6 +15,7 @@ cross_references:
   - { doc_id: "AIOS-COMM-001", relationship: "extended_by" }
   - { doc_id: "AIOS-CORE-003", relationship: "enforced_by" }
   - { doc_id: "AMD-2026-005", relationship: "constrained_by" }
+  - { doc_id: "AMD-2026-007", relationship: "constrained_by" }
   - { doc_id: "AIOS-SPEC-007", relationship: "constrained_by" }
 amendment_history:
   - amendment_id: AMD-2026-005
@@ -23,8 +24,11 @@ amendment_history:
   - amendment_id: AMD-2026-006
     ratified: null
     summary: Google Workspace governed canvas surfaces
+  - amendment_id: AMD-2026-007
+    ratified: null
+    summary: Intent-driven primary surface, outcome-first rendering, transparency (Sections 11.4–11.6)
 ---
-# AIOS UI Component Registry Standard v1.2.0
+# AIOS UI Component Registry Standard v1.3.0
 
 ## 1. Architectural Purpose
 
@@ -42,6 +46,7 @@ By requiring all components to be explicitly registered, versioned, and accessib
 | **Legislative Process** (Constitution Art II) | Adding or modifying a component is a legislative act. Proposals go through the DCP; high‑risk or core‑UI changes may trigger Tier 3 ratification. |
 | **Economic & SLA Terms** (MPOA Art VI) | The UI Component SLA (72 business hours for approval) is directly enforced by this standard. |
 | **Marketplace Certification** (Marketplace Terms Phase 2) | Vendors submitting Kits that require custom components must follow this standard's submission process. |
+| **Intent-driven UI** ([AMD-2026-007](../amendments/AMD-2026-007.md) Sections 11.4–11.6) | Primary surfaces that render **resolved intent** MUST meet the intent-driven UI contract, outcome-first rendering, and transparency rules in that amendment. |
 
 ---
 
@@ -183,6 +188,10 @@ A governed view MUST own:
 - compliance with footer and exit contracts.
 
 A view MUST NOT silently mutate global canvas state outside the shell/controller contract.
+
+### Intent-driven primary surface (normative reference)
+
+Where the Platform renders **intent-resolved** or **voice-first** canvases, the **primary surface** MUST comply with **[AMD-2026-007](../amendments/AMD-2026-007.md) Sections 11.4–11.6** (intent-driven UI contract, outcome-first rendering, transparency requirements).
 
 ---
 

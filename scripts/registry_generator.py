@@ -9,7 +9,15 @@ import json
 from pathlib import Path
 from context_assembler import BASE_DIR, parse_front_matter, read_file, today
 
-SCAN_DIRS = ["core", "specifications", "commercial", "amendments", "reference"]
+SCAN_DIRS = [
+    "core",
+    "specifications",
+    "commercial",
+    "amendments",
+    "reference",
+    "legal",
+    "operations",
+]
 
 
 def scan_documents() -> list[dict]:
@@ -37,6 +45,17 @@ def scan_documents() -> list[dict]:
     return docs
 
 
+def _normalize_cross_refs(refs: list) -> list:
+    """Allow YAML lists of dicts or plain document id strings."""
+    out = []
+    for ref in refs or []:
+        if isinstance(ref, dict):
+            out.append(ref)
+        else:
+            out.append({"doc_id": str(ref), "relationship": "references"})
+    return out
+
+
 def generate_registry_json(docs: list[dict]) -> str:
     """Generate the DOCUMENT_REGISTRY.json content."""
     clean_docs = []
@@ -48,7 +67,7 @@ def generate_registry_json(docs: list[dict]) -> str:
             "status": doc.get("status", ""),
             "category": doc.get("category", ""),
             "_path": doc.get("_path", ""),
-            "cross_references": doc.get("cross_references", []),
+            "cross_references": _normalize_cross_refs(doc.get("cross_references", [])),
         }
         clean_docs.append(clean)
     return json.dumps(clean_docs, indent=2, ensure_ascii=False)
@@ -88,7 +107,7 @@ def generate_registry(docs: list[dict]) -> str:
 
     has_refs = False
     for doc in docs:
-        refs = doc.get("cross_references", [])
+        refs = _normalize_cross_refs(doc.get("cross_references", []))
         if refs:
             has_refs = True
             title = doc.get("title", doc.get("_path", "Unknown"))

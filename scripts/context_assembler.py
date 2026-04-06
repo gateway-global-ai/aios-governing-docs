@@ -15,6 +15,8 @@ import yaml
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(BASE_DIR / ".env")
+# Repo-local secrets (e.g. Cursor workspace); overrides .env for the same keys.
+load_dotenv(BASE_DIR / ".env.local", override=True)
 # Optional: share LLM keys with ai-os-voice-interface (single .env.local in Apps).
 # override=True so newer keys in .env.local win over stale copies in governing_docs/.env.
 _voice_env = BASE_DIR.parent / "ai-os-voice-interface" / ".env.local"

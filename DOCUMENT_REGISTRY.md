@@ -1,6 +1,6 @@
 # AIOS Document Registry
 
-*Auto-generated on 2026-04-02 by `scripts/registry_generator.py`. Do not edit manually.*
+*Auto-generated on 2026-04-05 by `scripts/registry_generator.py`. Do not edit manually.*
 
 ---
 
@@ -11,18 +11,29 @@
 | AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core\governance_constitution.md` |
 | AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core\master_platform_operating_agreement.md` |
 | AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core\technical_manifesto.md` |
-| AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.2.0 | ratified | specification | `specifications\AgentIntegrationProtocol.md` |
+| AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications\AgentIntegrationProtocol.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications\agents.md` |
+| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications\AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications\CLIDeveloperGuide.md` |
-| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.0 | draft | specification | `specifications\GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications\ExecutionScopeAndContextBounding.md` |
+| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications\GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications\IntentDiscoveryOnboardingFramework.md` |
+| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.1 | draft | specification | `specifications\IntentPrimitiveAndExecutionModel.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications\NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications\PolicyRecord.md` |
-| AIOS-SPEC-009 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications\SecuritySandboxingModel.md` |
-| AIOS-SPEC-006 | UI Component Registry Standard | 1.2.0 | draft | specification | `specifications\UIComponentRegistryStandard.md` |
+| AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications\SecuritySandboxingModel.md` |
+| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications\UIComponentRegistryStandard.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial\DataPrivacyComplianceAddendum.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial\MarketplaceTermsOnboarding.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments\AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments\AMD-2026-006.md` |
+| AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.1.0 | draft | amendment | `amendments\AMD-2026-007.md` |
+| AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments\AMD-2026-008.md` |
+| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.1 | draft | amendment_addendum | `amendments\AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
+| AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.0 | draft | operational_plan | `amendments\AMD-2026-009-merge-deltas-and-first-slice.md` |
+| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments\AMD-2026-009-ratification-motion.md` |
+| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments\AMD-2026-009-spec-merge-checklist.md` |
+| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments\AMD-2026-009.md` |
 | — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments\ammendment_google.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference\EcosystemRoadmapVersioningPolicy.md` |
 | — | gateway_plan | — | unregistered | reference | `reference\gateway_plan.md` |
@@ -33,6 +44,12 @@
 | — | shell_overhaul | — | unregistered | reference | `reference\shell_overhaul.md` |
 | — | UI_PHILOSOPHY | — | unregistered | reference | `reference\UI_PHILOSOPHY.md` |
 | — | uifix_ptt | — | unregistered | reference | `reference\uifix_ptt.md` |
+| LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal\LEGAL-001-Privacy-Policy.md` |
+| LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal\LEGAL-002-Terms-of-Service.md` |
+| — | README | — | unregistered | legal | `legal\README.md` |
+| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
+| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
+| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations\WHISPER_RUNTIME_STANDARD.md` |
 
 ---
 
@@ -76,6 +93,13 @@
 | AIOS-SPEC-003 | implements |
 | AIOS-SPEC-004 | complements |
 
+### AIOS-SPEC-009 Pre-Ratification Conformance Test Suite (AIOS-SPEC-009-CONFORMANCE-TEST-V1)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | references |
+| AMD-2026-007 | references |
+
 ### AIOS CLI Developer Experience Guide (AIOS-SPEC-004)
 
 | Referenced Document | Relationship |
@@ -85,15 +109,53 @@
 | AIOS-CORE-003 | implements |
 | AIOS-SPEC-003 | complements |
 
-### Google Workspace Integration Governance (AIOS-SPEC-007)
+### Execution Scope and Context Bounding (AIOS-SPEC-010)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | constrained_by |
-| AMD-2026-005 | constrained_by |
-| AIOS-SPEC-003 | complements |
-| AIOS-SPEC-006 | complements |
+| AIOS-CORE-003 | complements |
+| AIOS-SPEC-003 | extends |
+| AIOS-SPEC-005 | complements |
+| AIOS-SPEC-009 | constrained_by |
+| AIOS-SPEC-001 | complements |
+| AMD-2026-009 | constrained_by |
+
+### Google Workspace Integration Governance (AIOS-SPEC-007)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | — |
+| AMD-2026-009 | — |
+| — | — |
+
+### Intent Discovery & Onboarding Framework (AIOS-SPEC-008)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-001 | references |
+| AIOS-SPEC-003 | references |
+| AIOS-SPEC-006 | references |
+| AIOS-SPEC-007 | references |
+| AIOS-SPEC-009 | references |
+| AMD-2026-005 | references |
+| AMD-2026-007 | references |
+
+### Intent Primitive and Execution Model (AIOS-SPEC-009)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-006 | references |
+| AIOS-SPEC-007 | references |
+| AIOS-SPEC-008 | references |
+| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | references |
+| AMD-2026-007 | references |
+| AMD-2026-008 | references |
+| OLLAMA_RUNTIME_STANDARD | references |
+| WHISPER_RUNTIME_STANDARD | references |
+| LOCAL_TTS_RUNTIME_STANDARD | references |
+| AMD-2026-009 | references |
 
 ### AIOS NodeContract Specification (AIOS-SPEC-001)
 
@@ -112,7 +174,7 @@
 | AIOS-CORE-003 | implements |
 | AIOS-SPEC-001 | complements |
 
-### Security & Sandboxing Model (AIOS-SPEC-009)
+### Security & Sandboxing Model (AIOS-SPEC-011)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
@@ -131,6 +193,7 @@
 | AIOS-COMM-001 | extended_by |
 | AIOS-CORE-003 | enforced_by |
 | AMD-2026-005 | constrained_by |
+| AMD-2026-007 | constrained_by |
 | AIOS-SPEC-007 | constrained_by |
 
 ### Data Privacy & Compliance Addendum (AIOS-COMM-002)
@@ -140,7 +203,7 @@
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-003 | amends |
 | AIOS-CORE-002 | constrained_by |
-| AIOS-SPEC-009 | complements |
+| AIOS-SPEC-011 | complements |
 
 ### AIOS Marketplace Terms & Vendor Onboarding (AIOS-COMM-001)
 
@@ -165,6 +228,47 @@
 | AIOS-SPEC-003 | amends |
 | AIOS-SPEC-006 | amends |
 
+### Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI (AMD-2026-007)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-006 | references |
+| AIOS-SPEC-007 | references |
+| AIOS-SPEC-008 | references |
+| AIOS-SPEC-009 | references |
+| AMD-2026-005 | references |
+| AMD-2026-006 | references |
+
+### Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) (AMD-2026-008)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | — |
+| AIOS-SPEC-007 | — |
+| OLLAMA_RUNTIME_STANDARD | — |
+| WHISPER_RUNTIME_STANDARD | — |
+| LOCAL_TTS_RUNTIME_STANDARD | — |
+| MPOA | — |
+
+### Retrieval backend neutrality (beyond Google PSE / Custom Search) (AMD-2026-009-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-009 | — |
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-010 | — |
+| — | — |
+
+### Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) (AMD-2026-009)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-009 | — |
+| AIOS-SPEC-010 | — |
+| AMD-2026-007 | — |
+| WORKSPACE.md | — |
+
 ### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
 
 | Referenced Document | Relationship |
@@ -179,15 +283,51 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-CORE-002 | operationalizes |
-| AIOS-SPEC-009 | complements |
+| AIOS-SPEC-011 | complements |
 | AIOS-COMM-002 | complements |
+
+### Privacy Policy (LEGAL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| LEGAL-002 | references |
+
+### Terms of Service (LEGAL-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| LEGAL-001 | references |
+
+### Local Text-to-Speech (TTS) Runtime Standard (LOCAL_TTS_RUNTIME_STANDARD)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | references |
+| AIOS-SPEC-009 §17 | references |
+| AMD-2026-008 | references |
+
+### Ollama Local Model Runtime Standard (OLLAMA_RUNTIME_STANDARD)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | references |
+| AIOS-SPEC-007 | references |
+| AMD-2026-007 | references |
+
+### Whisper / faster-whisper Local STT Runtime Standard (WHISPER_RUNTIME_STANDARD)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | references |
+| AIOS-SPEC-009 §17 | references |
+| AMD-2026-008 | references |
 
 ---
 
 ## Document Statistics
 
-- **Total documents:** 25
+- **Total documents:** 42
 - **Ratified:** 10
-- **Draft:** 8
+- **Draft:** 24
 - **Under review:** 0
-- **Unregistered (no front matter):** 7
+- **Unregistered (no front matter):** 8

@@ -11,7 +11,7 @@ reviewers: []
 supersedes: null
 cross_references:
   - { doc_id: "AIOS-CORE-002", relationship: "operationalizes" }
-  - { doc_id: "AIOS-SPEC-009", relationship: "complements" }
+  - { doc_id: "AIOS-SPEC-011", relationship: "complements" }
   - { doc_id: "AIOS-COMM-002", relationship: "complements" }
 amendment_history: []
 ---
