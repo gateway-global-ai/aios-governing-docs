@@ -122,7 +122,7 @@ def _save_queue(data: dict) -> None:
 def _split_revision_prompt(assembled: str) -> tuple[str, str]:
     marker = "## The Original Document"
     if marker not in assembled:
-        return assembled[: len(assembled) // 2], assembled[len(assembled) // 2 :]
+        return "You are a senior governance architect.", assembled
     before, after = assembled.split(marker, 1)
     return before, marker + after
 
