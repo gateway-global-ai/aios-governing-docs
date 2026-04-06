@@ -1282,7 +1282,7 @@
   {
     "document_id": "AIOS-OPS-017",
     "title": "GitHub Host Activation — Result Record",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "status": "ratified",
     "category": "operations",
     "_path": "operations\\GitHubHostActivationResult.md",

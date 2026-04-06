@@ -62,7 +62,7 @@
 | AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\GitHubEnforcementActivationRunbook.md` |
 | AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
 | AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations\GitHubGovernanceGatesImplementationPlan.md` |
-| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.0.0 | ratified | operations | `operations\GitHubHostActivationResult.md` |
+| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations\GitHubHostActivationResult.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
 | OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
 | AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations\ReviewPipelineToolingGap.md` |
