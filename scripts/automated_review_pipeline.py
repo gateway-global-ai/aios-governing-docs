@@ -707,7 +707,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--document",
-        help="Path relative to governing_docs/ (bypasses queue)",
+        help="Path relative to the repository root (for example: core/... or amendments/...) (bypasses queue)",
     )
     parser.add_argument(
         "--next",
