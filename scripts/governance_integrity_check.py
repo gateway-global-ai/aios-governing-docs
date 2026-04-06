@@ -75,7 +75,8 @@ def check_g7_registry_drift() -> bool:
         print(r.stderr or r.stdout, file=sys.stderr)
         return False
     # Compare working tree to HEAD so CI and local runs detect uncommitted/stale registry
-    # (not merely unstaged vs index).
+    # (not merely unstaged vs index). DOCUMENT_REGISTRY.md must not embed volatile metadata
+    # (e.g. wall-clock dates) or G-7 would false-fail when the calendar day changes.
     r2 = subprocess.run(
         ["git", "diff", "--exit-code", "HEAD", "--", "DOCUMENT_REGISTRY.md", "DOCUMENT_REGISTRY.json"],
         cwd=str(BASE),
