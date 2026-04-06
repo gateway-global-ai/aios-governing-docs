@@ -1,3 +1,6 @@
+# Branch protection: add required status check exactly as shown in the PR Checks tab
+# after this workflow has run at least once — typically:
+#   Governance integrity / governance-integrity
 name: Governance integrity
 
 on:
@@ -11,6 +14,7 @@ permissions:
 
 jobs:
   governance-integrity:
+    name: governance-integrity
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
