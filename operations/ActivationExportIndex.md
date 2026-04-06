@@ -17,6 +17,8 @@ cross_references:
   - AIOS-OPS-012
   - AIOS-OPS-013
   - AIOS-OPS-015
+  - AIOS-OPS-016
+  - AIOS-OPS-017
   - AMD-2026-010
 ---
 
@@ -98,6 +100,18 @@ py -3 scripts/governance_integrity_check.py
 Success: terminal prints **`governance_integrity_check: OK`**. Commit **`DOCUMENT_REGISTRY.md`** and **`DOCUMENT_REGISTRY.json`** whenever `registry_generator.py` changes them.
 
 Detailed operator steps: **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**.
+
+---
+
+## Host activation record (GitHub)
+
+- **[AIOS-OPS-017 — GitHub Host Activation — Result Record](GitHubHostActivationResult.md)** — what was done on the host (update after admin completes **AIOS-OPS-010**).
+
+---
+
+## Cursor / IDE handoff (not GitHub-configurable)
+
+- **[AIOS-OPS-016 — Cursor / IDE — Host Activation Handoff](CursorHostActivationHandoff.md)** — files to bind, fail-closed rules, manual operator steps.
 
 ---
 

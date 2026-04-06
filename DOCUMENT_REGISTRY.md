@@ -56,11 +56,13 @@
 | AIOS-OPS-007 | Cursor Agent Execution Rules — Implementation Plan | 1.0.0 | ratified | operations | `operations\CursorAgentExecutionRulesImplementationPlan.md` |
 | AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\CursorEnforcementActivationRunbook.md` |
 | AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations\CursorEnforcementContract.md` |
+| AIOS-OPS-016 | Cursor / IDE — Host Activation Handoff | 1.0.0 | ratified | operations | `operations\CursorHostActivationHandoff.md` |
 | AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations\EnforcementActivationHandoffSummary.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations\GitHubBranchProtectionActivationChecklist.md` |
 | AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations\GitHubEnforcementActivationRunbook.md` |
 | AIOS-OPS-005 | GitHub Governance Gates | 1.1.0 | ratified | operations | `operations\GitHubGovernanceGates.md` |
 | AIOS-OPS-006 | GitHub Governance Gates — Implementation Plan | 1.0.0 | ratified | operations | `operations\GitHubGovernanceGatesImplementationPlan.md` |
+| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.0.0 | ratified | operations | `operations\GitHubHostActivationResult.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations\LOCAL_TTS_RUNTIME_STANDARD.md` |
 | OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations\OLLAMA_RUNTIME_STANDARD.md` |
 | AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations\ReviewPipelineToolingGap.md` |
@@ -350,6 +352,8 @@
 | AIOS-OPS-012 | references |
 | AIOS-OPS-013 | references |
 | AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-017 | references |
 | AMD-2026-010 | references |
 
 ### Cursor Agent Execution Rules (AIOS-OPS-004)
@@ -394,6 +398,17 @@
 | AIOS-SPEC-012 | references |
 | AMD-2026-010 | references |
 
+### Cursor / IDE — Host Activation Handoff (AIOS-OPS-016)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-004 | references |
+| AIOS-OPS-009 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-014 | references |
+| AIOS-SPEC-012 | references |
+| AMD-2026-010 | references |
+
 ### Enforcement Activation — Handoff Summary (AIOS-OPS-013)
 
 | Referenced Document | Relationship |
@@ -407,6 +422,8 @@
 | AIOS-OPS-012 | references |
 | AIOS-OPS-014 | references |
 | AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-017 | references |
 | AMD-2026-010 | references |
 
 ### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
@@ -449,6 +466,16 @@
 | AIOS-OPS-005 | references |
 | AMD-2026-010 | references |
 
+### GitHub Host Activation — Result Record (AIOS-OPS-017)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-008 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+| AMD-2026-010 | references |
+
 ### Local Text-to-Speech (TTS) Runtime Standard (LOCAL_TTS_RUNTIME_STANDARD)
 
 | Referenced Document | Relationship |
@@ -487,8 +514,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 57
-- **Ratified:** 25
+- **Total documents:** 59
+- **Ratified:** 27
 - **Draft:** 24
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

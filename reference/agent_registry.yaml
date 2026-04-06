@@ -21,6 +21,8 @@ agents:
       - AIOS-OPS-013
       - AIOS-OPS-014
       - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs
@@ -58,6 +60,8 @@ agents:
       - AIOS-OPS-013
       - AIOS-OPS-014
       - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs
@@ -91,6 +95,8 @@ agents:
       - AIOS-OPS-013
       - AIOS-OPS-014
       - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
       - AIOS-SPEC-012
     repo_scope:
       - gateway-global-ai/aios-governing-docs

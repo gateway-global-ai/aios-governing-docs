@@ -19,6 +19,8 @@ cross_references:
   - AIOS-OPS-012
   - AIOS-OPS-014
   - AIOS-OPS-015
+  - AIOS-OPS-016
+  - AIOS-OPS-017
   - AMD-2026-010
 ---
 
@@ -26,7 +28,7 @@ cross_references:
 
 **This document is a handoff package, not new law.** It points to ratified standards and procedural runbooks already in this repository.
 
-**Operator export index:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (single page index). **Commands:** **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**.
+**Operator export index:** **[AIOS-OPS-014 — Activation Export Index](ActivationExportIndex.md)** (single page index). **Commands:** **[AIOS-OPS-015 — Activation Command Checklist](ActivationCommandChecklist.md)**. **GitHub host result record:** **[AIOS-OPS-017](GitHubHostActivationResult.md)**. **Cursor handoff:** **[AIOS-OPS-016](CursorHostActivationHandoff.md)**.
 
 ---
 
