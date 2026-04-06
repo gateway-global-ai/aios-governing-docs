@@ -54,32 +54,6 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-012",
-    "title": "Agent Class Registration and Authority Model",
-    "version": "1.1.0",
-    "status": "ratified",
-    "category": "specification",
-    "_path": "specifications/AgentClassRegistrationAndAuthorityModel.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "implements"
-      },
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "complements"
-      }
-    ]
-  },
-  {
     "document_id": "AIOS-SPEC-003",
     "title": "AIOS Agent Integration Protocol (AIP)",
     "version": "1.3.0",
@@ -676,41 +650,6 @@
     ]
   },
   {
-    "document_id": "AMD-2026-010-RATIFICATION-MOTION",
-    "title": "Ratification motion — Governance Enforcement Package v1 (AMD-2026-010)",
-    "version": "",
-    "status": "ratified",
-    "category": "council_motion",
-    "_path": "amendments/AMD-2026-010-ratification-motion.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "AMD-2026-010",
-    "title": "Governance Enforcement, Agent Control, and Canonical Boundary",
-    "version": "1.0.2",
-    "status": "ratified",
-    "category": "amendment",
-    "_path": "amendments/AMD-2026-010.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-004",
-        "title": "Cursor Agent Execution Rules"
-      },
-      {
-        "doc_id": "AIOS-OPS-005",
-        "title": "GitHub Governance Gates"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "title": "Agent Class Registration and Authority Model"
-      },
-      {
-        "doc_id": "AIOS-CORE-002",
-        "title": "Governance Constitution"
-      }
-    ]
-  },
-  {
     "document_id": "",
     "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
     "version": "",
@@ -977,50 +916,6 @@
       },
       {
         "doc_id": "AIOS-OPS-018",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-004",
-    "title": "Cursor Agent Execution Rules",
-    "version": "1.1.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorAgentExecutionRules.md",
-    "cross_references": [
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-005",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-007",
-    "title": "Cursor Agent Execution Rules — Implementation Plan",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorAgentExecutionRulesImplementationPlan.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
         "relationship": "references"
       },
       {
@@ -1335,46 +1230,6 @@
       },
       {
         "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-005",
-    "title": "GitHub Governance Gates",
-    "version": "1.1.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/GitHubGovernanceGates.md",
-    "cross_references": [
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-004",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-SPEC-012",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-006",
-    "title": "GitHub Governance Gates — Implementation Plan",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/GitHubGovernanceGatesImplementationPlan.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-005",
         "relationship": "references"
       },
       {
