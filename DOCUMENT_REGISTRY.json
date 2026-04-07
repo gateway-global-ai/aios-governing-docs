@@ -276,50 +276,65 @@
   {
     "document_id": "AIOS-SPEC-009",
     "title": "Intent Primitive and Execution Model",
-    "version": "0.5.1",
-    "status": "draft",
+    "version": "0.5.5",
+    "status": "ratified",
     "category": "specification",
     "_path": "specifications/IntentPrimitiveAndExecutionModel.md",
     "cross_references": [
       {
+        "doc_id": "AIOS-SPEC-002",
+        "relationship": "constrained_by",
+        "citation": "PolicyRecord Specification (AIOS-SPEC-002) — policy-backed execution readiness"
+      },
+      {
         "doc_id": "AIOS-SPEC-006",
-        "relationship": "references"
+        "relationship": "constrained_by",
+        "citation": "UI Component Registry Standard (AIOS-SPEC-006) — shell surfaces and command rail"
       },
       {
         "doc_id": "AIOS-SPEC-007",
-        "relationship": "references"
+        "relationship": "implements",
+        "citation": "Google Workspace Integration Governance (AIOS-SPEC-007) — integration layer"
       },
       {
         "doc_id": "AIOS-SPEC-008",
-        "relationship": "references"
+        "relationship": "extends",
+        "citation": "Intent Discovery and Onboarding Framework (AIOS-SPEC-008)"
       },
       {
         "doc_id": "AIOS-SPEC-009-CONFORMANCE-TEST-V1",
-        "relationship": "references"
+        "relationship": "references",
+        "citation": "AIOS-SPEC-009 Pre-Ratification Conformance Test Suite"
       },
       {
         "doc_id": "AMD-2026-007",
-        "relationship": "references"
+        "relationship": "constrained_by",
+        "citation": "Amendment AMD-2026-007 — intent primitive, shell affordances, §11.9"
       },
       {
         "doc_id": "AMD-2026-008",
-        "relationship": "references"
+        "relationship": "references",
+        "citation": "Amendment AMD-2026-008 — sovereign voice and local runtime ratification"
       },
       {
         "doc_id": "OLLAMA_RUNTIME_STANDARD",
-        "relationship": "references"
+        "relationship": "references",
+        "citation": "Ollama Runtime Standard (operations/OLLAMA_RUNTIME_STANDARD.md)"
       },
       {
         "doc_id": "WHISPER_RUNTIME_STANDARD",
-        "relationship": "references"
+        "relationship": "references",
+        "citation": "Whisper Runtime Standard (operations/WHISPER_RUNTIME_STANDARD.md)"
       },
       {
         "doc_id": "LOCAL_TTS_RUNTIME_STANDARD",
-        "relationship": "references"
+        "relationship": "references",
+        "citation": "Local TTS Runtime Standard (operations/LOCAL_TTS_RUNTIME_STANDARD.md)"
       },
       {
         "doc_id": "AMD-2026-009",
-        "relationship": "references"
+        "relationship": "constrained_by",
+        "citation": "Amendment AMD-2026-009 — bounded web retrieval and governed website review"
       }
     ]
   },
@@ -440,6 +455,24 @@
     ]
   },
   {
+    "document_id": "AIOS-SPEC-012",
+    "title": "Workspace Domain Pack v1",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "specifications/WorkspaceDomainPackV1.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "title": "Google Workspace Integration Governance"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-COMM-002",
     "title": "Data Privacy & Compliance Addendum",
     "version": "1.0.0",
@@ -526,6 +559,15 @@
         "relationship": "amends"
       }
     ]
+  },
+  {
+    "document_id": "AMD-2026-007-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-007",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-007-ratification-motion.md",
+    "cross_references": []
   },
   {
     "document_id": "AMD-2026-007",
@@ -676,6 +718,49 @@
     ]
   },
   {
+    "document_id": "AMD-2026-010-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-010",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-010-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-010",
+    "title": "Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot)",
+    "version": "0.2.0",
+    "status": "ratified",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-010.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "title": "AIOS Agent Integration Protocol (AIP)"
+      },
+      {
+        "doc_id": "AMD-2026-010-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-010"
+      }
+    ]
+  },
+  {
     "document_id": "AMD-2026-011-RATIFICATION-MOTION",
     "title": "Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package)",
     "version": "1.0.0",
@@ -718,6 +803,24 @@
     "category": "",
     "_path": "amendments/ammendment_google.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AIOS-POLICY-INDEX",
+    "title": "AIOS Policy Identifier Index (in-repo master list)",
+    "version": "1.1.0",
+    "status": "ratified",
+    "category": "reference",
+    "_path": "reference/AIOS_POLICY_INDEX.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
   },
   {
     "document_id": "AIOS-REF-012",

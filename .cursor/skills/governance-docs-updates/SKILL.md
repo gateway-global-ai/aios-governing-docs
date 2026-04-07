@@ -46,12 +46,14 @@ Requires `.env` keys — see `DEVELOPER.md`.
 
 ---
 
-## Git
+## Git / GitHub
+
+Prefer a **PR** to `main` with **CI green**; see **README.md** (GitHub vs AIOS governance), **DEVELOPER.md** (Git and GitHub), and **`.github/pull_request_template.md`**. **Solo maintainer:** GitHub **required approving reviews** should be off or zero—governance review stays **in-repo** (peer review, ratification), not on the GitHub Approve button.
 
 ```bash
 git add -A
 git commit -m "docs: <message>"
-git push origin main
+git push origin <branch>
 ```
 
 ---

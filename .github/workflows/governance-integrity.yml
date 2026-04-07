@@ -1,6 +1,10 @@
 # Governance integrity — AIOS-OPS-005 / AIOS-OPS-006
 # Phase 1: run on PR and push; treat as required check only after branch protection is configured (AIOS-OPS-008).
 #
+# Branch protection: add required status check exactly as shown in the PR Checks tab
+# after this workflow has run at least once — typically:
+#   Governance integrity / governance-integrity
+#
 # Implemented checks (truthful to repo tooling):
 #   G-1 duplicate document_id
 #   G-3 broken cross_references (machine document_id targets)
