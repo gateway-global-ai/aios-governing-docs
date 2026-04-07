@@ -1,27 +1,47 @@
+# Governance integrity — AIOS-OPS-005 / AIOS-OPS-006
+# Phase 1: run on PR and push; treat as required check only after branch protection is configured (AIOS-OPS-008).
+#
 # Branch protection: add required status check exactly as shown in the PR Checks tab
 # after this workflow has run at least once — typically:
 #   Governance integrity / governance-integrity
+#
+# Implemented checks (truthful to repo tooling):
+#   G-1 duplicate document_id
+#   G-3 broken cross_references (machine document_id targets)
+#   G-7 DOCUMENT_REGISTRY.* drift vs scripts/registry_generator.py
+#   reference/agent_registry.yaml parses as YAML
+#   valid JSON for reference/schemas/cursor_preflight.schema.json when present
+#
+# TODO: optional ci_governance_dry_run — blocked until automated_review_pipeline.py exists; see operations/ReviewPipelineToolingGap.md (AIOS-OPS-012).
+# TODO Phase 2 (AIOS-OPS-006): ratification/review evidence automation beyond current scripts.
+#
+# Dependencies: scripts/requirements.governance-integrity.txt (minimal; see AMD-2026-011 §6).
+
 name: Governance integrity
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, master]
   push:
-    branches: [main]
+    branches: [main, master]
 
 permissions:
   contents: read
 
 jobs:
   governance-integrity:
-    name: governance-integrity
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
-      - name: Run tests
-        run: python -m pytest tests/ -q
+
+      - name: Install dependencies (governance integrity only)
+        run: pip install -r scripts/requirements.governance-integrity.txt
+
+      - name: Run governance integrity check
+        run: python scripts/governance_integrity_check.py

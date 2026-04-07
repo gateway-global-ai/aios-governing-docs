@@ -2,6 +2,10 @@
 """
 Run `automated_review_pipeline.py --dry-run` for each changed governing document in a git range.
 
+**Tooling gap:** `automated_review_pipeline.py` is not shipped in this repo. Do not wire this
+script into CI until the pipeline exists or this caller is refactored — see
+`operations/ReviewPipelineToolingGap.md` (AIOS-OPS-012).
+
 Designed for PR CI: exit 0 only if every dry-run reports ready_for_full_run (see dry_run_report.json).
 
 Usage (repo root = governing_docs):

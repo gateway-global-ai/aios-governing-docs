@@ -1,0 +1,122 @@
+# Agent registry — AIOS-SPEC-012
+# Normative path: reference/agent_registry.yaml
+# Controlled registrations for gateway-global-ai/aios-governing-docs (narrow scopes).
+
+version: 1
+agents:
+  - agent_id: aios-gov-agent-audit-001
+    class: governance_audit
+    authority_scope:
+      - AIOS-CORE-002
+      - AMD-2026-010
+      - AIOS-OPS-004
+      - AIOS-OPS-005
+      - AIOS-OPS-006
+      - AIOS-OPS-007
+      - AIOS-OPS-008
+      - AIOS-OPS-009
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
+      - AIOS-OPS-013
+      - AIOS-OPS-014
+      - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
+      - AIOS-OPS-018
+      - AIOS-OPS-019
+      - AIOS-SPEC-012
+    repo_scope:
+      - gateway-global-ai/aios-governing-docs
+    allowed_artifact_types:
+      - peer_review
+      - operations
+      - other
+    forbidden_actions:
+      - author_normative_governance_as_binding
+      - merge_without_human_approval
+      - delete_peer_review_evidence
+    escalation_conditions:
+      - ambiguous_lifecycle_or_ratification
+      - duplicate_document_id
+      - registry_or_integrity_check_failure
+    status: active
+    valid_from: "2026-04-07"
+    valid_until: null
+    registered_by: organization
+
+  - agent_id: aios-gov-agent-drafting-001
+    class: governance_drafting
+    authority_scope:
+      - AIOS-CORE-002
+      - AMD-2026-010
+      - AIOS-OPS-004
+      - AIOS-OPS-005
+      - AIOS-OPS-006
+      - AIOS-OPS-007
+      - AIOS-OPS-008
+      - AIOS-OPS-009
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
+      - AIOS-OPS-013
+      - AIOS-OPS-014
+      - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
+      - AIOS-OPS-018
+      - AIOS-OPS-019
+      - AIOS-SPEC-012
+    repo_scope:
+      - gateway-global-ai/aios-governing-docs
+    allowed_artifact_types:
+      - amendment
+      - specification
+      - operations
+      - peer_review
+    forbidden_actions:
+      - claim_ratification_without_repository_record
+      - fabricate_reviewers_or_approvals
+      - write_application_product_code
+    escalation_conditions:
+      - lifecycle_ambiguous
+      - preflight_or_registry_validation_failed
+    status: active
+    valid_from: "2026-04-07"
+    valid_until: null
+    registered_by: organization
+
+  - agent_id: aios-gov-agent-review-001
+    class: review
+    authority_scope:
+      - AIOS-CORE-002
+      - AMD-2026-010
+      - AIOS-OPS-004
+      - AIOS-OPS-005
+      - AIOS-OPS-010
+      - AIOS-OPS-011
+      - AIOS-OPS-012
+      - AIOS-OPS-013
+      - AIOS-OPS-014
+      - AIOS-OPS-015
+      - AIOS-OPS-016
+      - AIOS-OPS-017
+      - AIOS-OPS-018
+      - AIOS-OPS-019
+      - AIOS-SPEC-012
+    repo_scope:
+      - gateway-global-ai/aios-governing-docs
+    allowed_artifact_types:
+      - peer_review
+      - operations
+    forbidden_actions:
+      - invent_historical_review_events
+      - mark_ratified_or_merge_amendments
+      - impersonate_named_humans_without_attribution_model
+    escalation_conditions:
+      - low_confidence_scores_or_rubric_failure
+      - conflict_with_ratified_text
+    status: active
+    valid_from: "2026-04-07"
+    valid_until: null
+    registered_by: organization

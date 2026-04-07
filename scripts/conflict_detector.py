@@ -18,44 +18,7 @@ import re
 from pathlib import Path
 
 from context_assembler import BASE_DIR, read_file, parse_front_matter
-from registry_generator import scan_documents
-
-
-def _normalize_cross_refs(cross_refs) -> list[str]:
-    """Normalize cross-reference metadata into a list of referenced document ids."""
-    if not cross_refs:
-        return []
-
-    if isinstance(cross_refs, str):
-        ref = cross_refs.strip()
-        return [ref] if ref else []
-
-    normalized = []
-
-    if isinstance(cross_refs, dict):
-        cross_refs = [cross_refs]
-
-    if isinstance(cross_refs, (list, tuple, set)):
-        for ref in cross_refs:
-            if isinstance(ref, str):
-                value = ref.strip()
-            elif isinstance(ref, dict):
-                value = (
-                    ref.get("document_id")
-                    or ref.get("doc_id")
-                    or ref.get("id")
-                    or ref.get("ref")
-                    or ref.get("target")
-                    or ""
-                )
-                value = value.strip() if isinstance(value, str) else ""
-            else:
-                value = ""
-
-            if value:
-                normalized.append(value)
-
-    return normalized
+from registry_generator import scan_documents, _normalize_cross_refs
 
 
 def _extract_numbers_with_context(content: str, doc_id: str, path: str) -> list[dict]:
@@ -105,6 +68,25 @@ def _extract_defined_terms(content: str, doc_id: str, path: str) -> list[dict]:
     return terms
 
 
+def _is_registry_cross_reference_target(ref_id: str) -> bool:
+    """
+    Only validate cross_references that are unambiguous machine document_id targets.
+    Informal aliases (e.g. MPOA), file paths (WORKSPACE.md), or section-tagged strings
+    are skipped — they are not AIOS document_id keys in front matter.
+    """
+    if not ref_id or not isinstance(ref_id, str):
+        return False
+    if any(c in ref_id for c in ".§/\uFFFD"):
+        return False
+    if ref_id.startswith("AMD-"):
+        return True
+    if ref_id.startswith("LEGAL-"):
+        return True
+    if ref_id.startswith("AIOS-"):
+        return len(ref_id) >= 8
+    return False
+
+
 def _validate_cross_references(docs: list[dict]) -> list[dict]:
     """Check that all cross_references point to existing documents."""
     valid_ids = {d.get("document_id") for d in docs if d.get("document_id")}
@@ -113,8 +95,8 @@ def _validate_cross_references(docs: list[dict]) -> list[dict]:
     for doc in docs:
         refs = _normalize_cross_refs(doc.get("cross_references", []))
         for ref in refs:
-            ref_id = ref
-            if ref_id and ref_id not in valid_ids:
+            ref_id = ref.strip() if isinstance(ref, str) else ""
+            if ref_id and ref_id not in valid_ids and _is_registry_cross_reference_target(ref_id):
                 findings.append({
                     "type": "broken_cross_reference",
                     "severity": "high",

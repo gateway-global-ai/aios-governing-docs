@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gateway-global-ai/aios-governing-docs/reference/schemas/cursor_preflight.schema.json",
+  "title": "AIOS Cursor preflight record",
+  "description": "Machine-readable shape aligned to AIOS-OPS-004 Appendix A (normative enums).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "repo_scope",
+    "repo_kind",
+    "task_type",
+    "artifact_type",
+    "governing_document_ids",
+    "lifecycle_state",
+    "allowed_actions"
+  ],
+  "properties": {
+    "repo_scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact repository URL or local path (AIOS-OPS-004 §2)."
+    },
+    "repo_kind": {
+      "type": "string",
+      "enum": ["governance_repository", "implementation_repository"]
+    },
+    "task_type": {
+      "type": "string",
+      "enum": [
+        "governance_audit",
+        "governance_drafting",
+        "implementation",
+        "review",
+        "migration",
+        "documentation_informative",
+        "unknown"
+      ]
+    },
+    "artifact_type": {
+      "type": "string",
+      "enum": [
+        "amendment",
+        "specification",
+        "operations",
+        "peer_review",
+        "application_code",
+        "config",
+        "other",
+        "unknown"
+      ]
+    },
+    "governing_document_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "lifecycle_state": {
+      "type": "string",
+      "enum": ["draft", "under_review", "ratified", "not_applicable"]
+    },
+    "allowed_actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["read_only", "edit_markdown", "run_script", "create_commit", "no_writes"]
+      },
+      "uniqueItems": true
+    }
+  }
+}
