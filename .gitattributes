@@ -1,0 +1,4 @@
+# Registry outputs must be LF-only so governance_integrity_check G-7 passes on ubuntu-latest
+# after `py -3 scripts/registry_generator.py` (Windows can otherwise write CRLF).
+DOCUMENT_REGISTRY.md text eol=lf
+DOCUMENT_REGISTRY.json text eol=lf

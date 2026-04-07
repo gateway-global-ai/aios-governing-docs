@@ -157,12 +157,13 @@ def main():
 
     registry_md = generate_registry(docs)
     md_path = BASE_DIR / "DOCUMENT_REGISTRY.md"
-    md_path.write_text(registry_md, encoding="utf-8")
+    # Always LF so Linux CI matches Windows (G-7); CRLF in repo breaks git diff on ubuntu-latest.
+    md_path.write_text(registry_md, encoding="utf-8", newline="\n")
     print(f"Registry generated: DOCUMENT_REGISTRY.md")
 
     registry_json = generate_registry_json(docs)
     json_path = BASE_DIR / "DOCUMENT_REGISTRY.json"
-    json_path.write_text(registry_json, encoding="utf-8")
+    json_path.write_text(registry_json, encoding="utf-8", newline="\n")
     print(f"Registry generated: DOCUMENT_REGISTRY.json")
 
 
