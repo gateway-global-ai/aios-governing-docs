@@ -25,6 +25,14 @@ def _registry_rel_path(md_file: Path) -> str:
     return md_file.relative_to(BASE_DIR).as_posix()
 
 
+def _doc_sort_key(doc: dict) -> tuple[str, str]:
+    """Stable ordering for registry output (same on Windows and Linux — avoids G-7 drift)."""
+    did = (doc.get("document_id") or "").strip()
+    if not did or did == "—":
+        return ("\uffff", doc.get("_path", ""))
+    return (did, "")
+
+
 def scan_documents() -> list[dict]:
     """Scan all document directories for files with front matter."""
     docs = []
@@ -124,7 +132,14 @@ def generate_registry(docs: list[dict]) -> str:
             lines.append("")
             lines.append("| Referenced Document | Relationship |")
             lines.append("|---------------------|--------------|")
-            for ref in refs:
+            refs_sorted = sorted(
+                refs,
+                key=lambda r: (
+                    str(r.get("doc_id") or ""),
+                    str(r.get("relationship") or ""),
+                ),
+            )
+            for ref in refs_sorted:
                 ref_id = ref.get("doc_id", "—")
                 rel = ref.get("relationship", "—")
                 lines.append(f"| {ref_id} | {rel} |")
@@ -152,7 +167,7 @@ def generate_registry(docs: list[dict]) -> str:
 
 def main():
     print("Scanning documents...")
-    docs = scan_documents()
+    docs = sorted(scan_documents(), key=_doc_sort_key)
     print(f"Found {len(docs)} documents")
 
     registry_md = generate_registry(docs)

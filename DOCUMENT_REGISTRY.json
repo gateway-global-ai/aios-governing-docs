@@ -1,5 +1,67 @@
 [
   {
+    "document_id": "AIOS-COMM-001",
+    "title": "AIOS Marketplace Terms & Vendor Onboarding",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "commercial",
+    "_path": "commercial/MarketplaceTermsOnboarding.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "extends"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMM-002",
+    "title": "Data Privacy & Compliance Addendum",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "commercial",
+    "_path": "commercial/DataPrivacyComplianceAddendum.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "amends"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-011",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CORE-001",
+    "title": "AIOS Technical Manifesto & Platform Economics",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "core",
+    "_path": "core/technical_manifesto.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "incorporated_by"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-CORE-002",
     "title": "The Gateway Global AIOS Governance Constitution",
     "version": "1.0.0",
@@ -36,20 +98,492 @@
     ]
   },
   {
-    "document_id": "AIOS-CORE-001",
-    "title": "AIOS Technical Manifesto & Platform Economics",
+    "document_id": "AIOS-OPS-008",
+    "title": "GitHub Branch Protection — Activation Checklist",
     "version": "1.0.0",
     "status": "ratified",
-    "category": "core",
-    "_path": "core/technical_manifesto.md",
+    "category": "operations",
+    "_path": "operations/GitHubBranchProtectionActivationChecklist.md",
     "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-009",
+    "title": "Cursor Enforcement Contract (activation)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/CursorEnforcementContract.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-010",
+    "title": "GitHub Enforcement — Activation Runbook",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/GitHubEnforcementActivationRunbook.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-011",
+    "title": "Cursor Enforcement — Activation Runbook",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/CursorEnforcementActivationRunbook.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-012",
+    "title": "Review Pipeline Tooling Gap",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/ReviewPipelineToolingGap.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-013",
+    "title": "Enforcement Activation — Handoff Summary",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/EnforcementActivationHandoffSummary.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-017",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-019",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-014",
+    "title": "Activation — Export Index",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/ActivationExportIndex.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-017",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-019",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-015",
+    "title": "Activation — Command Checklist",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/ActivationCommandChecklist.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-016",
+    "title": "Cursor / IDE — Host Activation Handoff",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/CursorHostActivationHandoff.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-017",
+    "title": "GitHub Host Activation — Result Record",
+    "version": "1.1.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/GitHubHostActivationResult.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-010",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-018",
+    "title": "Cursor / IDE Host Activation — Result Record",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/CursorHostActivationResult.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-013",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-017",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-OPS-019",
+    "title": "Cursor / IDE — Activation Checklist (operators)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "operations",
+    "_path": "operations/CursorActivationChecklist.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-OPS-009",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-011",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-014",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-015",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-016",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AIOS-OPS-018",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-POLICY-INDEX",
+    "title": "AIOS Policy Identifier Index (in-repo master list)",
+    "version": "1.1.0",
+    "status": "ratified",
+    "category": "reference",
+    "_path": "reference/AIOS_POLICY_INDEX.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-010",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-REF-011",
+    "title": "Governance Council Operating Manual",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/GovernanceCouncilOperatingManual.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "operationalizes"
+      },
+      {
+        "doc_id": "AIOS-SPEC-011",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-COMM-002",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-REF-012",
+    "title": "Ecosystem Roadmap & Versioning Policy",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/EcosystemRoadmapVersioningPolicy.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "governed_by"
+      },
+      {
+        "doc_id": "AIOS-CORE-003",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-COMM-001",
+        "relationship": "extends"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-001",
+    "title": "AIOS NodeContract Specification",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications/NodeContract.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-002",
+        "relationship": "extends"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-002",
+    "title": "AIOS PolicyRecord Specification",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications/PolicyRecord.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CORE-001",
+        "relationship": "implements"
+      },
       {
         "doc_id": "AIOS-CORE-002",
         "relationship": "constrained_by"
       },
       {
         "doc_id": "AIOS-CORE-003",
-        "relationship": "incorporated_by"
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-001",
+        "relationship": "complements"
       }
     ]
   },
@@ -84,42 +618,6 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-005",
-    "title": "AIOS Agent Integration Guide (AGENTS.md)",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "specification",
-    "_path": "specifications/agents.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-SPEC-003",
-        "relationship": "implements"
-      },
-      {
-        "doc_id": "AIOS-SPEC-004",
-        "relationship": "complements"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-SPEC-009-CONFORMANCE-TEST-V1",
-    "title": "AIOS-SPEC-009 Pre-Ratification Conformance Test Suite",
-    "version": "1.2.0",
-    "status": "draft",
-    "category": "conformance",
-    "_path": "specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-SPEC-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-007",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
     "document_id": "AIOS-SPEC-004",
     "title": "AIOS CLI Developer Experience Guide",
     "version": "1.0.0",
@@ -146,12 +644,30 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-010",
-    "title": "Execution Scope and Context Bounding",
-    "version": "1.0.4",
+    "document_id": "AIOS-SPEC-005",
+    "title": "AIOS Agent Integration Guide (AGENTS.md)",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications/agents.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "implements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-004",
+        "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SPEC-006",
+    "title": "UI Component Registry Standard",
+    "version": "1.3.0",
     "status": "draft",
     "category": "specification",
-    "_path": "specifications/ExecutionScopeAndContextBounding.md",
+    "_path": "specifications/UIComponentRegistryStandard.md",
     "cross_references": [
       {
         "doc_id": "AIOS-CORE-001",
@@ -162,54 +678,24 @@
         "relationship": "constrained_by"
       },
       {
+        "doc_id": "AIOS-COMM-001",
+        "relationship": "extended_by"
+      },
+      {
         "doc_id": "AIOS-CORE-003",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AIOS-SPEC-003",
-        "relationship": "extends"
-      },
-      {
-        "doc_id": "AIOS-SPEC-005",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AIOS-SPEC-009",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AIOS-SPEC-001",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AMD-2026-009",
-        "relationship": "constrained_by"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-SPEC-013",
-    "title": "External Repository Acquisition, Analysis, and Promotion",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "specification",
-    "_path": "specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-002",
-        "title": "Governance Constitution"
-      },
-      {
-        "doc_id": "AIOS-SPEC-003",
-        "title": "AIOS Agent Integration Protocol (AIP)"
+        "relationship": "enforced_by"
       },
       {
         "doc_id": "AMD-2026-005",
-        "title": "Workspace Model & Governed Interface Surfaces"
+        "relationship": "constrained_by"
       },
       {
-        "doc_id": "AMD-2026-011",
-        "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies"
+        "doc_id": "AMD-2026-007",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "relationship": "constrained_by"
       }
     ]
   },
@@ -339,34 +825,30 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-001",
-    "title": "AIOS NodeContract Specification",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "specification",
-    "_path": "specifications/NodeContract.md",
+    "document_id": "AIOS-SPEC-009-CONFORMANCE-TEST-V1",
+    "title": "AIOS-SPEC-009 Pre-Ratification Conformance Test Suite",
+    "version": "1.2.0",
+    "status": "draft",
+    "category": "conformance",
+    "_path": "specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md",
     "cross_references": [
       {
-        "doc_id": "AIOS-CORE-001",
-        "relationship": "implements"
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "references"
       },
       {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AIOS-SPEC-002",
-        "relationship": "extends"
+        "doc_id": "AMD-2026-007",
+        "relationship": "references"
       }
     ]
   },
   {
-    "document_id": "AIOS-SPEC-002",
-    "title": "AIOS PolicyRecord Specification",
-    "version": "1.0.0",
-    "status": "ratified",
+    "document_id": "AIOS-SPEC-010",
+    "title": "Execution Scope and Context Bounding",
+    "version": "1.0.4",
+    "status": "draft",
     "category": "specification",
-    "_path": "specifications/PolicyRecord.md",
+    "_path": "specifications/ExecutionScopeAndContextBounding.md",
     "cross_references": [
       {
         "doc_id": "AIOS-CORE-001",
@@ -378,11 +860,27 @@
       },
       {
         "doc_id": "AIOS-CORE-003",
-        "relationship": "implements"
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003",
+        "relationship": "extends"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005",
+        "relationship": "complements"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "relationship": "constrained_by"
       },
       {
         "doc_id": "AIOS-SPEC-001",
         "relationship": "complements"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "relationship": "constrained_by"
       }
     ]
   },
@@ -417,44 +915,6 @@
     ]
   },
   {
-    "document_id": "AIOS-SPEC-006",
-    "title": "UI Component Registry Standard",
-    "version": "1.3.0",
-    "status": "draft",
-    "category": "specification",
-    "_path": "specifications/UIComponentRegistryStandard.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-001",
-        "relationship": "implements"
-      },
-      {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AIOS-COMM-001",
-        "relationship": "extended_by"
-      },
-      {
-        "doc_id": "AIOS-CORE-003",
-        "relationship": "enforced_by"
-      },
-      {
-        "doc_id": "AMD-2026-005",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AMD-2026-007",
-        "relationship": "constrained_by"
-      },
-      {
-        "doc_id": "AIOS-SPEC-007",
-        "relationship": "constrained_by"
-      }
-    ]
-  },
-  {
     "document_id": "AIOS-SPEC-012",
     "title": "Workspace Domain Pack v1",
     "version": "0.1.0",
@@ -473,46 +933,28 @@
     ]
   },
   {
-    "document_id": "AIOS-COMM-002",
-    "title": "Data Privacy & Compliance Addendum",
+    "document_id": "AIOS-SPEC-013",
+    "title": "External Repository Acquisition, Analysis, and Promotion",
     "version": "1.0.0",
-    "status": "draft",
-    "category": "commercial",
-    "_path": "commercial/DataPrivacyComplianceAddendum.md",
+    "status": "ratified",
+    "category": "specification",
+    "_path": "specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md",
     "cross_references": [
       {
-        "doc_id": "AIOS-CORE-001",
-        "relationship": "implements"
-      },
-      {
-        "doc_id": "AIOS-CORE-003",
-        "relationship": "amends"
-      },
-      {
         "doc_id": "AIOS-CORE-002",
-        "relationship": "constrained_by"
+        "title": "Governance Constitution"
       },
       {
-        "doc_id": "AIOS-SPEC-011",
-        "relationship": "complements"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-COMM-001",
-    "title": "AIOS Marketplace Terms & Vendor Onboarding",
-    "version": "1.0.0",
-    "status": "draft",
-    "category": "commercial",
-    "_path": "commercial/MarketplaceTermsOnboarding.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-003",
-        "relationship": "extends"
+        "doc_id": "AIOS-SPEC-003",
+        "title": "AIOS Agent Integration Protocol (AIP)"
       },
       {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "constrained_by"
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-011",
+        "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies"
       }
     ]
   },
@@ -561,15 +1003,6 @@
     ]
   },
   {
-    "document_id": "AMD-2026-007-RATIFICATION-MOTION",
-    "title": "Ratification motion — AMD-2026-007",
-    "version": "",
-    "status": "approved",
-    "category": "council_motion",
-    "_path": "amendments/AMD-2026-007-ratification-motion.md",
-    "cross_references": []
-  },
-  {
     "document_id": "AMD-2026-007",
     "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI",
     "version": "0.1.0",
@@ -604,6 +1037,15 @@
     ]
   },
   {
+    "document_id": "AMD-2026-007-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-007",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-007-ratification-motion.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AMD-2026-008",
     "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)",
     "version": "1.2.0",
@@ -634,6 +1076,36 @@
       {
         "doc_id": "MPOA",
         "title": "Master Platform Operating Agreement"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-009",
+    "title": "Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition)",
+    "version": "0.1.6",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-009.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-007",
+        "title": "Google Workspace Integration Governance"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-010",
+        "title": "Execution Scope Envelope (SPEC-010)"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "WORKSPACE.md",
+        "title": "Workspace Domain Pack (informative; repository)"
       }
     ]
   },
@@ -688,45 +1160,6 @@
     "cross_references": []
   },
   {
-    "document_id": "AMD-2026-009",
-    "title": "Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition)",
-    "version": "0.1.6",
-    "status": "draft",
-    "category": "amendment",
-    "_path": "amendments/AMD-2026-009.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-SPEC-007",
-        "title": "Google Workspace Integration Governance"
-      },
-      {
-        "doc_id": "AIOS-SPEC-009",
-        "title": "Intent Primitive and Execution Model"
-      },
-      {
-        "doc_id": "AIOS-SPEC-010",
-        "title": "Execution Scope Envelope (SPEC-010)"
-      },
-      {
-        "doc_id": "AMD-2026-007",
-        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
-      },
-      {
-        "doc_id": "WORKSPACE.md",
-        "title": "Workspace Domain Pack (informative; repository)"
-      }
-    ]
-  },
-  {
-    "document_id": "AMD-2026-010-RATIFICATION-MOTION",
-    "title": "Ratification motion — AMD-2026-010",
-    "version": "",
-    "status": "approved",
-    "category": "council_motion",
-    "_path": "amendments/AMD-2026-010-ratification-motion.md",
-    "cross_references": []
-  },
-  {
     "document_id": "AMD-2026-010",
     "title": "Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot)",
     "version": "0.2.0",
@@ -761,12 +1194,12 @@
     ]
   },
   {
-    "document_id": "AMD-2026-011-RATIFICATION-MOTION",
-    "title": "Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package)",
-    "version": "1.0.0",
-    "status": "ratified",
+    "document_id": "AMD-2026-010-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-010",
+    "version": "",
+    "status": "approved",
     "category": "council_motion",
-    "_path": "amendments/AMD-2026-011-ratification-motion.md",
+    "_path": "amendments/AMD-2026-010-ratification-motion.md",
     "cross_references": []
   },
   {
@@ -796,141 +1229,12 @@
     ]
   },
   {
-    "document_id": "",
-    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
-    "version": "",
-    "status": "ratified",
-    "category": "",
-    "_path": "amendments/ammendment_google.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "AIOS-POLICY-INDEX",
-    "title": "AIOS Policy Identifier Index (in-repo master list)",
-    "version": "1.1.0",
-    "status": "ratified",
-    "category": "reference",
-    "_path": "reference/AIOS_POLICY_INDEX.md",
-    "cross_references": [
-      {
-        "doc_id": "AMD-2026-007",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AMD-2026-010",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-REF-012",
-    "title": "Ecosystem Roadmap & Versioning Policy",
+    "document_id": "AMD-2026-011-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package)",
     "version": "1.0.0",
-    "status": "draft",
-    "category": "reference",
-    "_path": "reference/EcosystemRoadmapVersioningPolicy.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-001",
-        "relationship": "implements"
-      },
-      {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "governed_by"
-      },
-      {
-        "doc_id": "AIOS-CORE-003",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AIOS-COMM-001",
-        "relationship": "extends"
-      }
-    ]
-  },
-  {
-    "document_id": "—",
-    "title": "gateway_plan",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/gateway_plan.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "—",
-    "title": "gateway_plan_review",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/gateway_plan_review.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "AIOS-REF-011",
-    "title": "Governance Council Operating Manual",
-    "version": "1.0.0",
-    "status": "draft",
-    "category": "reference",
-    "_path": "reference/GovernanceCouncilOperatingManual.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-CORE-002",
-        "relationship": "operationalizes"
-      },
-      {
-        "doc_id": "AIOS-SPEC-011",
-        "relationship": "complements"
-      },
-      {
-        "doc_id": "AIOS-COMM-002",
-        "relationship": "complements"
-      }
-    ]
-  },
-  {
-    "document_id": "—",
-    "title": "intent_driven_skill",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/intent_driven_skill.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "—",
-    "title": "ptt_interface",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/ptt_interface.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "—",
-    "title": "shell_overhaul",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/shell_overhaul.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "—",
-    "title": "UI_PHILOSOPHY",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/UI_PHILOSOPHY.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "—",
-    "title": "uifix_ptt",
-    "version": "—",
-    "status": "unregistered",
-    "category": "reference",
-    "_path": "reference/uifix_ptt.md",
+    "status": "ratified",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-011-ratification-motion.md",
     "cross_references": []
   },
   {
@@ -957,369 +1261,6 @@
     "cross_references": [
       {
         "doc_id": "LEGAL-001",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "—",
-    "title": "README",
-    "version": "—",
-    "status": "unregistered",
-    "category": "legal",
-    "_path": "legal/README.md",
-    "cross_references": []
-  },
-  {
-    "document_id": "AIOS-OPS-015",
-    "title": "Activation — Command Checklist",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/ActivationCommandChecklist.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-014",
-    "title": "Activation — Export Index",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/ActivationExportIndex.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-008",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-016",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-017",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-018",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-019",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-019",
-    "title": "Cursor / IDE — Activation Checklist (operators)",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorActivationChecklist.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-016",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-018",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-011",
-    "title": "Cursor Enforcement — Activation Runbook",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorEnforcementActivationRunbook.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-009",
-    "title": "Cursor Enforcement Contract (activation)",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorEnforcementContract.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-016",
-    "title": "Cursor / IDE — Host Activation Handoff",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorHostActivationHandoff.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-018",
-    "title": "Cursor / IDE Host Activation — Result Record",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/CursorHostActivationResult.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-016",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-017",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-013",
-    "title": "Enforcement Activation — Handoff Summary",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/EnforcementActivationHandoffSummary.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-008",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-009",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-011",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-016",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-017",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-018",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-019",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-008",
-    "title": "GitHub Branch Protection — Activation Checklist",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/GitHubBranchProtectionActivationChecklist.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-012",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-010",
-    "title": "GitHub Enforcement — Activation Runbook",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/GitHubEnforcementActivationRunbook.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-008",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
-    "document_id": "AIOS-OPS-017",
-    "title": "GitHub Host Activation — Result Record",
-    "version": "1.1.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/GitHubHostActivationResult.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-008",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-010",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
         "relationship": "references"
       }
     ]
@@ -1369,28 +1310,6 @@
     ]
   },
   {
-    "document_id": "AIOS-OPS-012",
-    "title": "Review Pipeline Tooling Gap",
-    "version": "1.0.0",
-    "status": "ratified",
-    "category": "operations",
-    "_path": "operations/ReviewPipelineToolingGap.md",
-    "cross_references": [
-      {
-        "doc_id": "AIOS-OPS-013",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-014",
-        "relationship": "references"
-      },
-      {
-        "doc_id": "AIOS-OPS-015",
-        "relationship": "references"
-      }
-    ]
-  },
-  {
     "document_id": "WHISPER_RUNTIME_STANDARD",
     "title": "Whisper / faster-whisper Local STT Runtime Standard",
     "version": "0.1.0",
@@ -1411,5 +1330,86 @@
         "relationship": "references"
       }
     ]
+  },
+  {
+    "document_id": "",
+    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
+    "version": "",
+    "status": "ratified",
+    "category": "",
+    "_path": "amendments/ammendment_google.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "README",
+    "version": "—",
+    "status": "unregistered",
+    "category": "legal",
+    "_path": "legal/README.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "UI_PHILOSOPHY",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/UI_PHILOSOPHY.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "gateway_plan",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/gateway_plan.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "gateway_plan_review",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/gateway_plan_review.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "intent_driven_skill",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/intent_driven_skill.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "ptt_interface",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/ptt_interface.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "shell_overhaul",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/shell_overhaul.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "uifix_ptt",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference",
+    "_path": "reference/uifix_ptt.md",
+    "cross_references": []
   }
 ]
