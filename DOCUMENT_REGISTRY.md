@@ -8,72 +8,95 @@
 
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
+| AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
+| AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
+| AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core/technical_manifesto.md` |
 | AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core/governance_constitution.md` |
 | AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core/master_platform_operating_agreement.md` |
-| AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core/technical_manifesto.md` |
+| AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
+| AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations/CursorEnforcementContract.md` |
+| AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/GitHubEnforcementActivationRunbook.md` |
+| AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/CursorEnforcementActivationRunbook.md` |
+| AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations/ReviewPipelineToolingGap.md` |
+| AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations/EnforcementActivationHandoffSummary.md` |
+| AIOS-OPS-014 | Activation — Export Index | 1.0.0 | ratified | operations | `operations/ActivationExportIndex.md` |
+| AIOS-OPS-015 | Activation — Command Checklist | 1.0.0 | ratified | operations | `operations/ActivationCommandChecklist.md` |
+| AIOS-OPS-016 | Cursor / IDE — Host Activation Handoff | 1.0.0 | ratified | operations | `operations/CursorHostActivationHandoff.md` |
+| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
+| AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
+| AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
+| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.1.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
+| AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
+| AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
+| AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
-| AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
-| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
-| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
-| AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
+| AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
+| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
 | AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
 | AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.5 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
-| AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
-| AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
+| AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
+| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
 | AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
-| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
 | AIOS-SPEC-012 | Workspace Domain Pack v1 | 0.1.0 | draft | specification | `specifications/WorkspaceDomainPackV1.md` |
-| AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
-| AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
+| AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
-| AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.1.0 | draft | amendment | `amendments/AMD-2026-007.md` |
+| AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
+| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
 | AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.1 | draft | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
 | AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.0 | draft | operational_plan | `amendments/AMD-2026-009-merge-deltas-and-first-slice.md` |
 | AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
 | AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
-| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
-| AMD-2026-010-RATIFICATION-MOTION | Ratification motion — AMD-2026-010 | — | approved | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
 | AMD-2026-010 | Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) | 0.2.0 | ratified | amendment | `amendments/AMD-2026-010.md` |
-| AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
+| AMD-2026-010-RATIFICATION-MOTION | Ratification motion — AMD-2026-010 | — | approved | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
 | AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 1.0.0 | ratified | amendment | `amendments/AMD-2026-011.md` |
+| AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
+| LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
+| LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
+| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
+| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
+| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
 | — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
-| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.1.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
-| AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
+| — | README | — | unregistered | legal | `legal/README.md` |
+| — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
 | — | gateway_plan_review | — | unregistered | reference | `reference/gateway_plan_review.md` |
-| AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | — | intent_driven_skill | — | unregistered | reference | `reference/intent_driven_skill.md` |
 | — | ptt_interface | — | unregistered | reference | `reference/ptt_interface.md` |
 | — | shell_overhaul | — | unregistered | reference | `reference/shell_overhaul.md` |
-| — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
 | — | uifix_ptt | — | unregistered | reference | `reference/uifix_ptt.md` |
-| LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
-| LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
-| — | README | — | unregistered | legal | `legal/README.md` |
-| AIOS-OPS-015 | Activation — Command Checklist | 1.0.0 | ratified | operations | `operations/ActivationCommandChecklist.md` |
-| AIOS-OPS-014 | Activation — Export Index | 1.0.0 | ratified | operations | `operations/ActivationExportIndex.md` |
-| AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
-| AIOS-OPS-011 | Cursor Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/CursorEnforcementActivationRunbook.md` |
-| AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations/CursorEnforcementContract.md` |
-| AIOS-OPS-016 | Cursor / IDE — Host Activation Handoff | 1.0.0 | ratified | operations | `operations/CursorHostActivationHandoff.md` |
-| AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
-| AIOS-OPS-013 | Enforcement Activation — Handoff Summary | 1.0.0 | ratified | operations | `operations/EnforcementActivationHandoffSummary.md` |
-| AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
-| AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/GitHubEnforcementActivationRunbook.md` |
-| AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
-| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
-| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
-| AIOS-OPS-012 | Review Pipeline Tooling Gap | 1.0.0 | ratified | operations | `operations/ReviewPipelineToolingGap.md` |
-| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
 
 ---
 
 ## Cross-Reference Map
+
+### AIOS Marketplace Terms & Vendor Onboarding (AIOS-COMM-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-002 | constrained_by |
+| AIOS-CORE-003 | extends |
+
+### Data Privacy & Compliance Addendum (AIOS-COMM-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-001 | implements |
+| AIOS-CORE-002 | constrained_by |
+| AIOS-CORE-003 | amends |
+| AIOS-SPEC-011 | complements |
+
+### AIOS Technical Manifesto & Platform Economics (AIOS-CORE-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-002 | constrained_by |
+| AIOS-CORE-003 | incorporated_by |
 
 ### The Gateway Global AIOS Governance Constitution (AIOS-CORE-002)
 
@@ -89,12 +112,170 @@
 | AIOS-CORE-001 | incorporates |
 | AIOS-CORE-002 | constrained_by |
 
-### AIOS Technical Manifesto & Platform Economics (AIOS-CORE-001)
+### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
+| AIOS-OPS-010 | references |
+| AIOS-OPS-012 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### Cursor Enforcement Contract (activation) (AIOS-OPS-009)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-011 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### GitHub Enforcement — Activation Runbook (AIOS-OPS-010)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-008 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### Cursor Enforcement — Activation Runbook (AIOS-OPS-011)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-009 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### Review Pipeline Tooling Gap (AIOS-OPS-012)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### Enforcement Activation — Handoff Summary (AIOS-OPS-013)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-008 | references |
+| AIOS-OPS-009 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-012 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-017 | references |
+| AIOS-OPS-018 | references |
+| AIOS-OPS-019 | references |
+
+### Activation — Export Index (AIOS-OPS-014)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-008 | references |
+| AIOS-OPS-009 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-012 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-017 | references |
+| AIOS-OPS-018 | references |
+| AIOS-OPS-019 | references |
+
+### Activation — Command Checklist (AIOS-OPS-015)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+
+### Cursor / IDE — Host Activation Handoff (AIOS-OPS-016)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-009 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-014 | references |
+
+### GitHub Host Activation — Result Record (AIOS-OPS-017)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-008 | references |
+| AIOS-OPS-010 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+
+### Cursor / IDE Host Activation — Result Record (AIOS-OPS-018)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-009 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-013 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-017 | references |
+
+### Cursor / IDE — Activation Checklist (operators) (AIOS-OPS-019)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-OPS-009 | references |
+| AIOS-OPS-011 | references |
+| AIOS-OPS-014 | references |
+| AIOS-OPS-015 | references |
+| AIOS-OPS-016 | references |
+| AIOS-OPS-018 | references |
+
+### AIOS Policy Identifier Index (in-repo master list) (AIOS-POLICY-INDEX)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-007 | references |
+| AMD-2026-010 | references |
+
+### Governance Council Operating Manual (AIOS-REF-011)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMM-002 | complements |
+| AIOS-CORE-002 | operationalizes |
+| AIOS-SPEC-011 | complements |
+
+### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMM-001 | extends |
+| AIOS-CORE-001 | implements |
+| AIOS-CORE-002 | governed_by |
+| AIOS-CORE-003 | complements |
+
+### AIOS NodeContract Specification (AIOS-SPEC-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | constrained_by |
-| AIOS-CORE-003 | incorporated_by |
+| AIOS-SPEC-002 | extends |
+
+### AIOS PolicyRecord Specification (AIOS-SPEC-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CORE-001 | implements |
+| AIOS-CORE-002 | constrained_by |
+| AIOS-CORE-003 | implements |
+| AIOS-SPEC-001 | complements |
 
 ### AIOS Agent Integration Protocol (AIP) (AIOS-SPEC-003)
 
@@ -103,22 +284,8 @@
 | AIOS-CORE-002 | constrained_by |
 | AIOS-SPEC-004 | complements |
 | AIOS-SPEC-005 | complements |
-| AMD-2026-005 | constrained_by |
 | AIOS-SPEC-007 | constrained_by |
-
-### AIOS Agent Integration Guide (AGENTS.md) (AIOS-SPEC-005)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-SPEC-003 | implements |
-| AIOS-SPEC-004 | complements |
-
-### AIOS-SPEC-009 Pre-Ratification Conformance Test Suite (AIOS-SPEC-009-CONFORMANCE-TEST-V1)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-SPEC-009 | references |
-| AMD-2026-007 | references |
+| AMD-2026-005 | constrained_by |
 
 ### AIOS CLI Developer Experience Guide (AIOS-SPEC-004)
 
@@ -129,35 +296,32 @@
 | AIOS-CORE-003 | implements |
 | AIOS-SPEC-003 | complements |
 
-### Execution Scope and Context Bounding (AIOS-SPEC-010)
+### AIOS Agent Integration Guide (AGENTS.md) (AIOS-SPEC-005)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
+| AIOS-SPEC-003 | implements |
+| AIOS-SPEC-004 | complements |
+
+### UI Component Registry Standard (AIOS-SPEC-006)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMM-001 | extended_by |
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | constrained_by |
-| AIOS-CORE-003 | complements |
-| AIOS-SPEC-003 | extends |
-| AIOS-SPEC-005 | complements |
-| AIOS-SPEC-009 | constrained_by |
-| AIOS-SPEC-001 | complements |
-| AMD-2026-009 | constrained_by |
-
-### External Repository Acquisition, Analysis, and Promotion (AIOS-SPEC-013)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-CORE-002 | — |
-| AIOS-SPEC-003 | — |
-| AMD-2026-005 | — |
-| AMD-2026-011 | — |
+| AIOS-CORE-003 | enforced_by |
+| AIOS-SPEC-007 | constrained_by |
+| AMD-2026-005 | constrained_by |
+| AMD-2026-007 | constrained_by |
 
 ### Google Workspace Integration Governance (AIOS-SPEC-007)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
+| — | — |
 | AIOS-SPEC-009 | — |
 | AMD-2026-009 | — |
-| — | — |
 
 ### Intent Discovery & Onboarding Framework (AIOS-SPEC-008)
 
@@ -182,72 +346,56 @@
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | references |
 | AMD-2026-007 | constrained_by |
 | AMD-2026-008 | references |
+| AMD-2026-009 | constrained_by |
+| LOCAL_TTS_RUNTIME_STANDARD | references |
 | OLLAMA_RUNTIME_STANDARD | references |
 | WHISPER_RUNTIME_STANDARD | references |
-| LOCAL_TTS_RUNTIME_STANDARD | references |
-| AMD-2026-009 | constrained_by |
 
-### AIOS NodeContract Specification (AIOS-SPEC-001)
+### AIOS-SPEC-009 Pre-Ratification Conformance Test Suite (AIOS-SPEC-009-CONFORMANCE-TEST-V1)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | references |
+| AMD-2026-007 | references |
+
+### Execution Scope and Context Bounding (AIOS-SPEC-010)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | constrained_by |
-| AIOS-SPEC-002 | extends |
-
-### AIOS PolicyRecord Specification (AIOS-SPEC-002)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-CORE-001 | implements |
-| AIOS-CORE-002 | constrained_by |
-| AIOS-CORE-003 | implements |
+| AIOS-CORE-003 | complements |
 | AIOS-SPEC-001 | complements |
+| AIOS-SPEC-003 | extends |
+| AIOS-SPEC-005 | complements |
+| AIOS-SPEC-009 | constrained_by |
+| AMD-2026-009 | constrained_by |
 
 ### Security & Sandboxing Model (AIOS-SPEC-011)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-CORE-001 | implements |
-| AIOS-CORE-002 | constrained_by |
 | AIOS-COMM-001 | enforced_by |
-| AIOS-SPEC-006 | extends |
-| AIOS-SPEC-005 | complements |
-
-### UI Component Registry Standard (AIOS-SPEC-006)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | constrained_by |
-| AIOS-COMM-001 | extended_by |
-| AIOS-CORE-003 | enforced_by |
-| AMD-2026-005 | constrained_by |
-| AMD-2026-007 | constrained_by |
-| AIOS-SPEC-007 | constrained_by |
+| AIOS-SPEC-005 | complements |
+| AIOS-SPEC-006 | extends |
 
 ### Workspace Domain Pack v1 (AIOS-SPEC-012)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AMD-2026-007 | — |
 | AIOS-SPEC-007 | — |
+| AMD-2026-007 | — |
 
-### Data Privacy & Compliance Addendum (AIOS-COMM-002)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-CORE-001 | implements |
-| AIOS-CORE-003 | amends |
-| AIOS-CORE-002 | constrained_by |
-| AIOS-SPEC-011 | complements |
-
-### AIOS Marketplace Terms & Vendor Onboarding (AIOS-COMM-001)
+### External Repository Acquisition, Analysis, and Promotion (AIOS-SPEC-013)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-CORE-003 | extends |
-| AIOS-CORE-002 | constrained_by |
+| AIOS-CORE-002 | — |
+| AIOS-SPEC-003 | — |
+| AMD-2026-005 | — |
+| AMD-2026-011 | — |
 
 ### Workspace Model & Governed Interface Surfaces (AMD-2026-005)
 
@@ -261,9 +409,9 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AMD-2026-005 | amends |
 | AIOS-SPEC-003 | amends |
 | AIOS-SPEC-006 | amends |
+| AMD-2026-005 | amends |
 
 ### Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI (AMD-2026-007)
 
@@ -280,21 +428,12 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-SPEC-009 | — |
 | AIOS-SPEC-007 | — |
-| OLLAMA_RUNTIME_STANDARD | — |
-| WHISPER_RUNTIME_STANDARD | — |
+| AIOS-SPEC-009 | — |
 | LOCAL_TTS_RUNTIME_STANDARD | — |
 | MPOA | — |
-
-### Retrieval backend neutrality (beyond Google PSE / Custom Search) (AMD-2026-009-ADD-001)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AMD-2026-009 | — |
-| AIOS-SPEC-007 | — |
-| AIOS-SPEC-010 | — |
-| — | — |
+| OLLAMA_RUNTIME_STANDARD | — |
+| WHISPER_RUNTIME_STANDARD | — |
 
 ### Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) (AMD-2026-009)
 
@@ -306,15 +445,24 @@
 | AMD-2026-007 | — |
 | WORKSPACE.md | — |
 
+### Retrieval backend neutrality (beyond Google PSE / Custom Search) (AMD-2026-009-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| — | — |
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-010 | — |
+| AMD-2026-009 | — |
+
 ### Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) (AMD-2026-010)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AMD-2026-005 | — |
-| AMD-2026-007 | — |
+| AIOS-SPEC-003 | — |
 | AIOS-SPEC-006 | — |
 | AIOS-SPEC-009 | — |
-| AIOS-SPEC-003 | — |
+| AMD-2026-005 | — |
+| AMD-2026-007 | — |
 | AMD-2026-010-RATIFICATION-MOTION | — |
 
 ### External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies (AMD-2026-011)
@@ -323,32 +471,8 @@
 |---------------------|--------------|
 | AIOS-CORE-002 | — |
 | AIOS-SPEC-003 | — |
-| AMD-2026-005 | — |
 | AIOS-SPEC-013 | — |
-
-### AIOS Policy Identifier Index (in-repo master list) (AIOS-POLICY-INDEX)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AMD-2026-007 | references |
-| AMD-2026-010 | references |
-
-### Ecosystem Roadmap & Versioning Policy (AIOS-REF-012)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-CORE-001 | implements |
-| AIOS-CORE-002 | governed_by |
-| AIOS-CORE-003 | complements |
-| AIOS-COMM-001 | extends |
-
-### Governance Council Operating Manual (AIOS-REF-011)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-CORE-002 | operationalizes |
-| AIOS-SPEC-011 | complements |
-| AIOS-COMM-002 | complements |
+| AMD-2026-005 | — |
 
 ### Privacy Policy (LEGAL-001)
 
@@ -362,122 +486,6 @@
 |---------------------|--------------|
 | LEGAL-001 | references |
 
-### Activation — Command Checklist (AIOS-OPS-015)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-
-### Activation — Export Index (AIOS-OPS-014)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-008 | references |
-| AIOS-OPS-009 | references |
-| AIOS-OPS-010 | references |
-| AIOS-OPS-011 | references |
-| AIOS-OPS-012 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-015 | references |
-| AIOS-OPS-016 | references |
-| AIOS-OPS-017 | references |
-| AIOS-OPS-018 | references |
-| AIOS-OPS-019 | references |
-
-### Cursor / IDE — Activation Checklist (operators) (AIOS-OPS-019)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-009 | references |
-| AIOS-OPS-011 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-| AIOS-OPS-016 | references |
-| AIOS-OPS-018 | references |
-
-### Cursor Enforcement — Activation Runbook (AIOS-OPS-011)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-009 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-
-### Cursor Enforcement Contract (activation) (AIOS-OPS-009)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-011 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-
-### Cursor / IDE — Host Activation Handoff (AIOS-OPS-016)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-009 | references |
-| AIOS-OPS-011 | references |
-| AIOS-OPS-014 | references |
-
-### Cursor / IDE Host Activation — Result Record (AIOS-OPS-018)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-009 | references |
-| AIOS-OPS-011 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-| AIOS-OPS-016 | references |
-| AIOS-OPS-017 | references |
-
-### Enforcement Activation — Handoff Summary (AIOS-OPS-013)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-008 | references |
-| AIOS-OPS-009 | references |
-| AIOS-OPS-010 | references |
-| AIOS-OPS-011 | references |
-| AIOS-OPS-012 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-| AIOS-OPS-016 | references |
-| AIOS-OPS-017 | references |
-| AIOS-OPS-018 | references |
-| AIOS-OPS-019 | references |
-
-### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-010 | references |
-| AIOS-OPS-012 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-
-### GitHub Enforcement — Activation Runbook (AIOS-OPS-010)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-008 | references |
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-
-### GitHub Host Activation — Result Record (AIOS-OPS-017)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-008 | references |
-| AIOS-OPS-010 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
-
 ### Local Text-to-Speech (TTS) Runtime Standard (LOCAL_TTS_RUNTIME_STANDARD)
 
 | Referenced Document | Relationship |
@@ -490,17 +498,9 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
-| AIOS-SPEC-009 | references |
 | AIOS-SPEC-007 | references |
+| AIOS-SPEC-009 | references |
 | AMD-2026-007 | references |
-
-### Review Pipeline Tooling Gap (AIOS-OPS-012)
-
-| Referenced Document | Relationship |
-|---------------------|--------------|
-| AIOS-OPS-013 | references |
-| AIOS-OPS-014 | references |
-| AIOS-OPS-015 | references |
 
 ### Whisper / faster-whisper Local STT Runtime Standard (WHISPER_RUNTIME_STANDARD)
 
