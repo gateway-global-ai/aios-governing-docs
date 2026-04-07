@@ -1,27 +1,62 @@
 ---
 document_id: AIOS-SPEC-009
-version: 0.5.1
-status: draft
+version: 0.5.5
+status: ratified
 category: specification
 title: Intent Primitive and Execution Model
 author: Gateway Global AIOS
 created: 2026-04-04
-last_updated: 2026-04-03
+last_updated: 2026-04-06
 reviewers: []
-ratification_target: null
+ratification_target: 2026-04-06
 supersedes: null
 cross_references:
-  - AIOS-SPEC-006
-  - AIOS-SPEC-007
-  - AIOS-SPEC-008
-  - AIOS-SPEC-009-CONFORMANCE-TEST-V1
-  - AMD-2026-007
-  - AMD-2026-008
-  - OLLAMA_RUNTIME_STANDARD
-  - WHISPER_RUNTIME_STANDARD
-  - LOCAL_TTS_RUNTIME_STANDARD
-  - AMD-2026-009
+  - doc_id: AIOS-SPEC-002
+    relationship: constrained_by
+    citation: "PolicyRecord Specification (AIOS-SPEC-002) — policy-backed execution readiness"
+  - doc_id: AIOS-SPEC-006
+    relationship: constrained_by
+    citation: "UI Component Registry Standard (AIOS-SPEC-006) — shell surfaces and command rail"
+  - doc_id: AIOS-SPEC-007
+    relationship: implements
+    citation: "Google Workspace Integration Governance (AIOS-SPEC-007) — integration layer"
+  - doc_id: AIOS-SPEC-008
+    relationship: extends
+    citation: "Intent Discovery and Onboarding Framework (AIOS-SPEC-008)"
+  - doc_id: AIOS-SPEC-009-CONFORMANCE-TEST-V1
+    relationship: references
+    citation: "AIOS-SPEC-009 Pre-Ratification Conformance Test Suite"
+  - doc_id: AMD-2026-007
+    relationship: constrained_by
+    citation: "Amendment AMD-2026-007 — intent primitive, shell affordances, §11.9"
+  - doc_id: AMD-2026-008
+    relationship: references
+    citation: "Amendment AMD-2026-008 — sovereign voice and local runtime ratification"
+  - doc_id: OLLAMA_RUNTIME_STANDARD
+    relationship: references
+    citation: "Ollama Runtime Standard (operations/OLLAMA_RUNTIME_STANDARD.md)"
+  - doc_id: WHISPER_RUNTIME_STANDARD
+    relationship: references
+    citation: "Whisper Runtime Standard (operations/WHISPER_RUNTIME_STANDARD.md)"
+  - doc_id: LOCAL_TTS_RUNTIME_STANDARD
+    relationship: references
+    citation: "Local TTS Runtime Standard (operations/LOCAL_TTS_RUNTIME_STANDARD.md)"
+  - doc_id: AMD-2026-009
+    relationship: constrained_by
+    citation: "Amendment AMD-2026-009 — bounded web retrieval and governed website review"
 amendment_history:
+  - version: 0.5.5
+    date: 2026-04-06
+    summary: §12.2 primary transparency — replace subjective “when material” with PolicyRecord-backed execution-readiness threshold (AIOS-SPEC-002); §12.3 confidence optional per UX policy; ratified.
+  - version: 0.5.4
+    date: 2026-04-16
+    summary: §15.4 economic disclosure — replace “where feasible” with explicit non-binding estimate vs infeasibility + billing-basis disclosure (MPOA / tenant policy).
+  - version: 0.5.3
+    date: 2026-04-14
+    summary: Round 1 triangulation (AIOS-SPEC-009) — §6.3 policy thresholds; §8 multi-modal state; §12 disclosure; §15.4 economic disclosure + §15.5.1 MPOA liability; promoted playbook terminology; Style Guide cross_references (dict + citation).
+  - version: 0.5.2
+    date: 2026-04-07
+    summary: §2.1 shell-state vs domain intent boundary (AMD-2026-007 §11.9 non-duplication); POL-SHELL-004 routing plane vs skill execution plane.
   - version: 0.5.1
     date: 2026-04-03
     summary: §2 external knowledge in scope; §15.8 external knowledge steps, audit chain, AMD-2026-009 §7.1 cross-link.
@@ -39,14 +74,14 @@ amendment_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | `draft` |
+| **Status** | `ratified` (**v0.5.5**, **2026-04-06**) |
 | **Ratification** | Requires alignment with **AMD-2026-007** §11; **AIOS-SPEC-008** **MUST** reference or merge this spec; **AIOS-SPEC-007** **MUST** enforce this spec at the integration layer |
 
 This specification defines the **core primitive of the AI OS: Intent**.
 
 All routing, UI, policy, voice interaction, and capability execution **MUST** conform to this model.
 
-**Relationship to AMD-2026-007:** Amendment **AMD-2026-007** §11 and this specification **MUST** remain aligned; on conflict, **governance process** determines precedence (typically: ratified spec over draft AMD section, or merged text in a single revision).
+**Relationship to AMD-2026-007:** Amendment **AMD-2026-007** (ratified) **§11** and this specification **MUST** remain aligned; on conflict, **governance process** determines precedence (typically: merged text in a single revision). **§11.9** of that amendment governs **shell-state** only; **§2.1** below fixes **SPEC-009** scope to **domain intent** without duplicating **§11.9**.
 
 **Relationship to AMD-2026-009:** Where execution includes **bounded web retrieval** or **governed website review**, **[AMD-2026-009](../amendments/AMD-2026-009.md)** **SHALL** govern search scope classes, review modes, audit fields, and failure behavior — see **§15.8**.
 
@@ -85,6 +120,17 @@ Define a **single, canonical model for intent** that:
 - Vendor-specific integrations.
 - UI styling or component design (covered in **AIOS-SPEC-006**).
 - Domain-specific playbooks (covered in domain packs).
+- **Shell chrome and shell-only control paths** — **normative** rules are **[AMD-2026-007](../amendments/AMD-2026-007.md) §11.9** and **AIOS-SPEC-006**; this specification does **not** define shell UI registry behavior (see **§2.1**).
+
+### 2.1 Shell state vs domain intent (normative boundary)
+
+**AIOS-SPEC-009** governs **domain intent** — definition, lifecycle, resolution, validation, and execution through **controlled capabilities** under **policy**.
+
+**Shell state** transitions (command rail, voice/chat/menu chrome, session-local shell routing, **§11.9** of **AMD-2026-007**) are **not** **domain intent execution** and **SHALL NOT** be modeled as **intent fulfillment** through the **skill** or **domain execution** plane. **Shell-only** commands **SHALL** route through the **shell control / routing plane** under **authority** and **POL-SHELL-004**–**006** — **not** through capabilities that **fulfill** **resolved** **Workspace** **intents** per this specification.
+
+This section **does not** replace **AMD-2026-007** **§11.9** or **AIOS-SPEC-006**; it **prevents** **SPEC-009** from being misread as the **locus** of **shell-state** semantics.
+
+*Example (non-normative):* A control that **only** switches **Workspace account** or **toggles** **shell chrome** routes on the **shell control / routing plane** (**AMD-2026-007** **§11.9**). A flow that **fulfills** a **resolved** **Workspace** **domain** outcome (e.g. **summarize unread mail**) is **domain intent** under this specification and **§2.1** above.
 
 ---
 
@@ -201,6 +247,8 @@ For **time-indexed domains**, including at minimum **Workspace mail** and **Work
 
 **Temporal grounding** is a **required part of intent grounding** when the target domain is time-indexed and an **unbounded** or **materially over-broad** time range would return a **large** or **operationally non-actionable** result set — unless the user or session has already fixed the slice (**POL-INTENT-004**).
 
+**Policy-defined thresholds (normative):** Qualitative terms in this subsection and in **§6.3.2** — including **materially over-broad**, **large**, **materially broad**, and **operationally non-actionable** — **SHALL** be **operationalized** through **numeric**, **enumerated**, or **PolicyRecord**-backed **thresholds** (tenant or platform policy). Implementations **MUST NOT** treat these phrases as **purely subjective** without **documented** limits. Where thresholds are **not** yet configured, the system **SHALL** apply **conservative** grounding (**§6.3.1** paths **1–4**) before executing **broad** reads.
+
 When temporal grounding is required, the system **MUST** satisfy **at least one** of:
 
 1. **Explicit period** — The user stated a time range, **or** explicitly requested **all-time** / full-corpus scope (e.g. *check all of my emails for invoices*).
@@ -212,7 +260,7 @@ The system **MUST NOT** **silently** execute an **effectively unbounded** mail o
 
 ### 6.3.2 Result-set disclosure and narrowing (REQUIRED)
 
-When a **candidate query** for a time-indexed domain would return a **materially broad** result set, the system **SHALL** **disclose** the **approximate scope** (or volume, when available) and **require or apply narrowing** before presenting the task as **fully executed** or before implying completion (**POL-INTENT-005**).
+When a **candidate query** for a time-indexed domain would return a **materially broad** result set — evaluated against **PolicyRecord** thresholds per **§6.3.1** (**policy-defined thresholds**) — the system **SHALL** **disclose** the **approximate scope** (or volume, when available) and **require or apply narrowing** before presenting the task as **fully executed** or before implying completion (**POL-INTENT-005**).
 
 Examples of disclosure:
 
@@ -250,7 +298,7 @@ The system **MUST** validate:
 
 - Persist **intent context**.
 - Update **session state**.
-- Reflect in **composed session summary** (see **AMD-2026-007** and **AIOS-SPEC-007** transparency model).
+- Reflect in **composed session summary** (see **AMD-2026-007** and **AIOS-SPEC-007** transparency model). When **§6.3.1(3)** applies a **governed default** **TemporalScope**, that **scope** **SHALL** appear in **composed session summary** (or equivalent **session truth** surface) so **subsequent** turns do **not** imply a **broader** or **different** corpus than is **actually** **active**.
 
 ---
 
@@ -287,6 +335,14 @@ Intent state **MAY**:
 
 - Be refined incrementally.
 - Span multiple interactions or modalities (voice ↔ chat ↔ menu).
+
+### 8.1 Multi-modal continuity
+
+For a **single actor session**, **active intent state** (including **TemporalScope** when applicable) **SHALL** be **consistent** across **voice**, **chat**, **menu**, and **system triggers**: **refinement** or **clarification** performed in **one** modality **SHALL** update **shared** intent state **before** a **new** **resolved** outcome is executed that **depends** on that refinement. **Shell-only** transitions (**§2.1**) **SHALL NOT** be recorded as **resolved domain intent** **fulfillment**.
+
+### 8.2 Session boundary
+
+When a **session** **expires** or the **session identifier** **changes**, intent state **SHALL** be **cleared** or **restored** per **product** rules. **Temporal** and **domain** grounding **MUST** be **re-validated** before execution if prior state is **stale** or **ambiguous**.
 
 ---
 
@@ -360,25 +416,28 @@ Upon intent resolution, the system **SHALL**:
 
 The system **SHALL** disclose:
 
-### Actor
+### 12.1 Actor
 
 - Identity and role.
 
-### System state
+### 12.2 System state (primary-appropriate)
 
-- **Lane**
-- **Auth**
-- **Adapter**
-- **Capability readiness**
+**Policy-backed threshold (normative):** On the **primary** surface, **when** **execution** **readiness** **for** the **resolved** **intent** **does** **not** **meet** the **minimum** **required** **for** **executable** **outcomes** **as** **defined** **in** the **active** **PolicyRecord** (**AIOS-SPEC-002**) **or** **tenant** **policy** **equivalent** **for** **that** **intent** **domain** **and** **actor** **class** — **including** **blocked** **execution**, **incomplete** **result** **risk**, or **degraded** **lane**, **auth**, **adapter**, or **capability** **state** **per** **that** **policy** — the system **SHALL** surface **at minimum**:
 
-### Intent state
+- **Lane** (e.g. local interpretation vs remote, per **§16–§17** when applicable).
+- **Auth** state (**signed in** / **signed out** / **degraded**).
+- **Adapter** readiness (**connected** / **degraded** / **unavailable**) for the **relevant** **Workspace** or **control** path.
+- **Capability readiness** that **blocks** the **current** **resolved** intent (e.g. **local** runtime **not** **running_ready** when **policy** requires **local-first**).
 
-- **Resolved intent** (summary or id per UX policy)
-- **Confidence** (optional when material)
+### 12.3 Intent state
 
-### Operator trace
+- **Resolved intent** (summary or stable **intent id** per UX policy).
+- **Confidence** (optional **per** **UX** **policy**).
 
-- **Audit**, **payload**, **transport**
+### 12.4 Operator trace
+
+- **Audit**, **payload**, **transport**.
+- For **external knowledge** steps (**§15.8**), **operator** surfaces **SHALL** expose **scope class**, **review mode**, and **retrieval** correlation **consistent** with **AMD-2026-009** **§9** minima **without** making them **default primary** content for typical users.
 
 **Operator trace** **MUST** be **accessible** and **MUST NOT** be the **default primary** surface for typical users.
 
@@ -403,7 +462,7 @@ This specification enforces:
 - **POL-INTENT-003** (UI contract)
 - **POL-INTENT-004** (temporal grounding for time-indexed domains)
 - **POL-INTENT-005** (result-set disclosure and narrowing)
-- **POL-INTENT-006** (execution plan approval for unverified or sensitive plans)
+- **POL-INTENT-006** (execution plan approval for plans not yet **promoted** or for **sensitive** plans)
 - **POL-INTENT-007** (playbook promotion after verification)
 
 Defined in **AMD-2026-007** §5.
@@ -412,7 +471,7 @@ Defined in **AMD-2026-007** §5.
 
 ## 15. Intent compilation and approval model (REQUIRED)
 
-This section defines the **governed execution lifecycle** that bridges **intent** (**§4–§6**), **temporal grounding** (**§6.3.1–6.3.2**), the **capability registry**, **policy**, and **long-term learning** via **verified playbooks**.
+This section defines the **governed execution lifecycle** that bridges **intent** (**§4–§6**), **temporal grounding** (**§6.3.1–6.3.2**), the **capability registry**, **policy**, and **long-term learning** via **promoted playbooks** (historically successful plans; **not** a **Platform** **warranty** of future outcomes — see **§15.5.1**, **§15.6**).
 
 Normative flow:
 
@@ -459,9 +518,10 @@ interface ExecutionPlan {
   actions: Action[];
   expectedOutcome: string;
   riskLevel: "low" | "medium" | "high";
-  /** Set when plan matches a known verified playbook (§15.7). */
+  /** Set when plan matches a known promoted playbook record (§15.7). */
   playbookId?: string;
-  verified?: boolean;
+  /** True when the plan matches a promoted playbook record (not a warranty of outcome). */
+  matchesPromotedPlaybook?: boolean;
 }
 
 interface Skill {
@@ -481,7 +541,7 @@ Implementations **MAY** extend these interfaces with ordering, dependencies, and
 
 ### 15.4 Proposal requirement
 
-For **new**, **unverified**, or **high-risk** execution plans (per **§15.7**), the system **SHALL** present a **proposal** to the user **before** execution (**POL-INTENT-006**).
+For **new**, **not yet promoted**, or **high-risk** execution plans (per **§15.7**), the system **SHALL** present a **proposal** to the user **before** execution (**POL-INTENT-006**).
 
 The proposal **MUST** include:
 
@@ -490,6 +550,9 @@ The proposal **MUST** include:
 - **Result volume** or scope estimate when available (**POL-INTENT-005**).
 - **Planned skills/actions** (summary level acceptable in primary UI; detail in operator trace as needed).
 - **Expected outcome** and **risk level**.
+- **Economic disclosure:** If any **planned step** **may** debit the **Funded Data Account** or incur **other** **metered** **Platform** charges under the **Master Platform Operating Agreement (MPOA)**, the proposal **MUST** **state** that **usage-based** **cost** **may** **accrue**. The proposal **SHALL** also satisfy **at least one** of:
+  1. **Non-binding estimate** — Include a **non-binding** **numeric** or **range** **estimate** of **expected** **charge** when **pricing** and **metering** **inputs** **available** to the **proposal** **surface** at **proposal** time are **sufficient** to compute it; **or**
+  2. **Infeasibility + billing basis** — When a **numeric** **estimate** **cannot** be produced for a **step** (insufficient **signals**, **third-party** **pricing**, or **variable** **usage**), the proposal **MUST** **state** that **no** **estimate** **is** **available** for **that** **step** and **SHALL** **disclose** the **billing basis** (e.g. per-token, per-request, per-minute, **Funded Data Account** draw) **as** **defined** in the **MPOA** **or** **tenant** **billing** **policy**, **such** **that** the **Tenant** **always** **receives** **either** a **non-binding** **estimate** **or** a **defined** **basis** **for** **charges** — **not** a **blanket** **“feasibility”** **exception**.
 
 ### 15.5 Execution gating
 
@@ -497,9 +560,13 @@ The system **MUST NOT** execute:
 
 - **Write-plane** actions,
 - **Multi-step composite** actions that have not been approved per **§15.7**, or
-- **New or unverified** plans that require explicit approval,
+- **New** or **not yet promoted** plans that require explicit approval,
 
 without **user approval** or **policy-based auto-approval** consistent with **§15.7** (**POL-INTENT-006**).
+
+#### 15.5.1 Liability for approved plans
+
+**Tenant** **approval** of a **proposed execution plan** (**§15.4–15.5**) **assigns** **business-outcome** **responsibility** for **that execution** to the **Tenant** in accordance with **MPOA** **Article III** (tenant configuration and approval liability). **Promoted playbook** status indicates **prior** **successful** **runs** under **policy**; it **does** **not** **constitute** a **Platform** **warranty** of **future** **results**.
 
 ### 15.6 Plan verification and promotion
 
@@ -512,7 +579,7 @@ If execution is **successful** and policy allows:
 
 If **unsuccessful**:
 
-- The plan **MUST NOT** be promoted as verified.
+- The plan **MUST NOT** be **promoted** to the **promoted playbook** registry for **reuse** until **re-verified** under policy.
 - The system **SHOULD** log failure and **SHOULD** support user correction or replay.
 
 This is the **governed skill acquisition loop**: validated behavior becomes **deterministic** and **lower-friction** over time without abandoning auditability.
@@ -523,12 +590,12 @@ Not every plan requires a full proposal. The system **SHALL** apply rules at lea
 
 | Case | Behavior |
 |------|----------|
-| **Known verified playbook** + **read** plane | **MAY** auto-execute (no proposal) if policy allows |
-| **Known verified playbook** + **draft** plane | **MAY** auto-execute with **preview** or short confirmation per policy |
-| **Known verified playbook** + **write** plane | **SHALL** require **explicit confirmation** unless policy defines a narrower auto-approve (documented) |
-| **New or unverified plan** | **SHALL** **propose** before execute (**POL-INTENT-006**) |
+| **Known promoted playbook** + **read** plane | **MAY** auto-execute (no proposal) if policy allows |
+| **Known promoted playbook** + **draft** plane | **MAY** auto-execute with **preview** or short confirmation per policy |
+| **Known promoted playbook** + **write** plane | **SHALL** require **explicit confirmation** unless policy defines a narrower auto-approve (documented) |
+| **New or not yet promoted plan** | **SHALL** **propose** before execute (**POL-INTENT-006**) |
 
-Domain packs **MAY** refine this table; **MUST NOT** weaken **write-plane** or **unverified-plan** protections without governance amendment.
+Domain packs **MAY** refine this table; **MUST NOT** weaken **write-plane** or **not-yet-promoted** plan protections without governance amendment.
 
 ### 15.8 External knowledge steps (web retrieval and governed review)
 
@@ -745,7 +812,7 @@ Non-exhaustive implementation loci (repository may differ):
 
 ## 20. Ratification checklist
 
-- [ ] Governance approval
+- [x] Governance approval (**Path B** editorial + coordinator sign-off, **v0.5.5**, **2026-04-06**)
 - [ ] **AIOS-SPEC-008** alignment
 - [ ] **AIOS-SPEC-007** enforcement
 - [ ] Policy registration (**POL-INTENT-001**–**007**, **POL-MODEL-001**–**004**)
