@@ -44,8 +44,24 @@ reviews/
 │   │   ├── review_003_{model}.md
 │   │   ├── review_004_{model}.md
 │   │   └── review_005_{model}.md
+│   ├── kernel/                    # optional — kernel shadow pilot (advisory only)
+│   │   ├── KERNEL_SHADOW_BRIEF.md
+│   │   └── KERNEL_SHADOW_FINDINGS.md
 │   └── revision_log.md
+├── kernel_shadow/                 # pilot coordination (not a document slug)
+│   ├── README.md
+│   └── pilot_runs/
 ```
+
+---
+
+## Kernel shadow pilot (optional — [AMD-2026-010](../amendments/AMD-2026-010.md))
+
+The **triangulated** pipeline above remains the **binding** ratification path (**[AMD-2026-005](../amendments/AMD-2026-005.md)**). **Kernel shadow** review is an **advisory**, **non-blocking** lane for shell/state/routing focus (**AMD-2026-010 §4.4**).
+
+- **When:** Parallel to Round 1 or Round 2 for documents with shell, routing, or **POL-SHELL**-class impact — **not** instead of triangulation.
+- **Where:** Per-document artifacts under `reviews/{document_slug}/kernel/`; coordination and metrics under [`kernel_shadow/README.md`](kernel_shadow/README.md).
+- **Templates:** [`templates/kernel_shadow_review_brief.md`](../templates/kernel_shadow_review_brief.md), [`kernel_shadow_findings.md`](../templates/kernel_shadow_findings.md), [`kernel_shadow_pilot_metrics.md`](../templates/kernel_shadow_pilot_metrics.md).
 
 ---
 
@@ -102,3 +118,18 @@ python lifecycle.py core/technical_manifesto.md
 
 ### Master Platform Operating Agreement
 - Round 1: `review_001_deepseek.md` (pre-automation, migrated from root)
+
+### AMD-2026-010 (Kernel Engineer role, kernel review lane — shadow pilot)
+- Round 1: [`amd_2026_010/round_1/review_001_openai.md`](amd_2026_010/round_1/review_001_openai.md), [`review_002_gemini.md`](amd_2026_010/round_1/review_002_gemini.md); brief [`amd_2026_010/round_1/REVIEW_BRIEF.md`](amd_2026_010/round_1/REVIEW_BRIEF.md).
+- Round 2: [`amd_2026_010/round_2/review_001_deepseek.md`](amd_2026_010/round_2/review_001_deepseek.md), [`review_002_openai.md`](amd_2026_010/round_2/review_002_openai.md), [`review_003_gemini.md`](amd_2026_010/round_2/review_003_gemini.md); [`REVIEW_SYNTHESIS.md`](amd_2026_010/round_2/REVIEW_SYNTHESIS.md); [`RATIFICATION_GATE_REPORT.md`](amd_2026_010/round_2/RATIFICATION_GATE_REPORT.md). **Ratified:** [`../amendments/AMD-2026-010.md`](../amendments/AMD-2026-010.md) **v0.2.0** with motion [`../amendments/AMD-2026-010-ratification-motion.md`](../amendments/AMD-2026-010-ratification-motion.md); policy index [`../reference/AIOS_POLICY_INDEX.md`](../reference/AIOS_POLICY_INDEX.md).
+
+### AIOS-SPEC-009 (Intent primitive and execution model)
+- Round 1 **Pass A** (v0.5.2, superseded): [`intent_primitive_execution_model/round_1/review_001_openai.md`](intent_primitive_execution_model/round_1/review_001_openai.md), [`review_002_gemini.md`](intent_primitive_execution_model/round_1/review_002_gemini.md) — **FAIL** **AMD-2026-005**.
+- Round 1 **Pass B** (v0.5.3): [`review_003_openai.md`](intent_primitive_execution_model/round_1/review_003_openai.md), [`review_004_gemini.md`](intent_primitive_execution_model/round_1/review_004_gemini.md) — **PASS** (superseded as **latest** by Pass C).
+- Round 1 **Pass C** (v0.5.4): [`review_005_openai.md`](intent_primitive_execution_model/round_1/review_005_openai.md), [`review_006_gemini.md`](intent_primitive_execution_model/round_1/review_006_gemini.md); [`round_1/REVIEW_SYNTHESIS.md`](intent_primitive_execution_model/round_1/REVIEW_SYNTHESIS.md); [`round_1/RATIFICATION_GATE_REPORT.md`](intent_primitive_execution_model/round_1/RATIFICATION_GATE_REPORT.md) — **PASS**.
+- Round 2 (v0.5.4): [`review_001_deepseek.md`](intent_primitive_execution_model/round_2/review_001_deepseek.md), [`review_002_openai.md`](intent_primitive_execution_model/round_2/review_002_openai.md), [`review_003_gemini.md`](intent_primitive_execution_model/round_2/review_003_gemini.md); [`round_2/REVIEW_SYNTHESIS.md`](intent_primitive_execution_model/round_2/REVIEW_SYNTHESIS.md); [`round_2/RATIFICATION_GATE_REPORT.md`](intent_primitive_execution_model/round_2/RATIFICATION_GATE_REPORT.md) — **PASS** (**AMD-2026-005**). [`revision_log.md`](intent_primitive_execution_model/revision_log.md). Kernel shadow (advisory): [`intent_primitive_execution_model/kernel/KERNEL_SHADOW_FINDINGS.md`](intent_primitive_execution_model/kernel/KERNEL_SHADOW_FINDINGS.md).
+- **Ratified:** [`../specifications/IntentPrimitiveAndExecutionModel.md`](../specifications/IntentPrimitiveAndExecutionModel.md) **v0.5.5** (**2026-04-06**). Path B editorial + coordinator sign-off: [`round_2/EDITORIAL_APPROVAL_v0.5.5.md`](intent_primitive_execution_model/round_2/EDITORIAL_APPROVAL_v0.5.5.md) (**§12.2** **PolicyRecord** threshold; **§12.3** **UX** policy). Gate report **§4:** [`round_2/RATIFICATION_GATE_REPORT.md`](intent_primitive_execution_model/round_2/RATIFICATION_GATE_REPORT.md).
+
+### AMD-2026-007 (Intent primitive, shell affordances, §11.9 shell vs skills)
+- Round 1: [`amd_2026_007/round_1/review_001_openai.md`](amd_2026_007/round_1/review_001_openai.md), [`review_002_gemini.md`](amd_2026_007/round_1/review_002_gemini.md); [`REVIEW_SYNTHESIS.md`](amd_2026_007/round_1/REVIEW_SYNTHESIS.md); [`RATIFICATION_GATE_REPORT.md`](amd_2026_007/round_1/RATIFICATION_GATE_REPORT.md) (**Round 1** → **READY_FOR_ROUND_2**).
+- Round 2: [`amd_2026_007/round_2/review_001_deepseek.md`](amd_2026_007/round_2/review_001_deepseek.md), [`review_002_openai.md`](amd_2026_007/round_2/review_002_openai.md), [`review_003_gemini.md`](amd_2026_007/round_2/review_003_gemini.md); [`REVIEW_SYNTHESIS.md`](amd_2026_007/round_2/REVIEW_SYNTHESIS.md); [`RATIFICATION_GATE_REPORT.md`](amd_2026_007/round_2/RATIFICATION_GATE_REPORT.md). **Ratified:** [`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md) **v0.2.1** with motion [`../amendments/AMD-2026-007-ratification-motion.md`](../amendments/AMD-2026-007-ratification-motion.md); policy index [`../reference/AIOS_POLICY_INDEX.md`](../reference/AIOS_POLICY_INDEX.md).
