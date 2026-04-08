@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.0
+version: 1.1.1
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -8,6 +8,7 @@ author: Gateway Global AIOS
 created: 2026-04-07
 last_updated: 2026-04-07
 cross_references:
+  - doc_id: AMD-001
   - doc_id: AMD-2026-006
   - doc_id: AMD-2026-007
   - doc_id: AMD-2026-008
@@ -16,7 +17,11 @@ cross_references:
   - doc_id: AIOS-AMD-PLAN-001
   - doc_id: AMD-2026-013
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
+  - doc_id: AIOS-AMD-001-DISPOSITION-001
 amendment_history:
+  - version: 1.1.1
+    date: 2026-04-07
+    summary: AMD-001 taxonomy resolution — AIOS-AMD-001-DISPOSITION-001; legacy_ratified_bridge; ordering before 006/009/008 closure.
   - version: 1.1.0
     date: 2026-04-07
     summary: Foundation cohesion section — explicit closure order for remaining draft AMDs 006 → 009 (+ addenda) → 008; ratified substrate named.
@@ -85,6 +90,10 @@ amendment_history:
 | **AMD-2026-012** | Shell authority and voice-first entry |
 | **AMD-2026-013** | Intent-bearing repository taxonomy (architecture / builder) |
 
+### AMD-001 — taxonomy resolution (before 006 / 009 / 008 closure)
+
+**[AMD-001](../../amendments/ammendment_google.md)** is **ratified** but uses the **pre-`AMD-2026-*`** numbering era and a **legacy** filename. It is **not** unfinished law; it is a **classification** problem. **Resolve** its place in the amendment universe **before** deep closure on the **2026** draft tracks below—see **[AMD-001 taxonomy and disposition](AMD-001-TAXONOMY-AND-DISPOSITION.md)**. This aligns with **[AMD-2026-013](../amendments/AMD-2026-013.md)** (declared taxonomy and accountability): **AMD-001** is the **explicit** legacy object, not an untracked exception.
+
 ### Cohesion-critical remainder (three draft AMDs)
 
 Only these **draft** amendments are **in scope** for “close the foundation” sequencing:
@@ -99,6 +108,7 @@ Only these **draft** amendments are **in scope** for “close the foundation” 
 
 ### Ordering caveats (explicit)
 
+0. **AMD-001** taxonomy is **documented** (see subsection above); **spec embodiment** of its CLI matrix remains **AIOS-SPEC-003 / 004 / 005** maintenance work.
 1. **Logical order** above is **006 → 009 → 008** for **dependency and merge hygiene** (Workspace plane **before** web+envelope merge work; **local runtime** **after** both **remote** planes are stable on paper).
 2. **Schedule order** may differ: **006** had **Round 1 FAIL** — it **must** complete **[AIOS-AMD-PLAN-001](AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** revision and a **passing** triangulation round **before** ratification. **009** may therefore **reach council sooner** than **006**; that is acceptable if **§10** spec-merge work is used to **reconcile** **SPEC-007** with **006** when **006** closes.
 3. **One active binding track** at a time ([Operating rules](#operating-rules)) still applies unless **council** authorizes overlap.
@@ -119,4 +129,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.0.*
+*End of AIOS-AMD-TRACKER-001 v1.1.1.*

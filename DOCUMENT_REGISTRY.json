@@ -19,6 +19,31 @@
     ]
   },
   {
+    "document_id": "AIOS-AMD-001-DISPOSITION-001",
+    "title": "AMD-001 — taxonomy, classification, and disposition",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "reference",
+    "_path": "reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-001"
+      },
+      {
+        "doc_id": "AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003"
+      },
+      {
+        "doc_id": "AIOS-SPEC-004"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-AMD-PLAN-001",
     "title": "Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)",
     "version": "1.0.2",
@@ -43,11 +68,14 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-001"
+      },
       {
         "doc_id": "AMD-2026-006"
       },
@@ -71,6 +99,9 @@
       },
       {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-AMD-001-DISPOSITION-001"
       }
     ]
   },
@@ -1400,6 +1431,15 @@
     ]
   },
   {
+    "document_id": "AMD-001",
+    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
+    "version": "",
+    "status": "ratified",
+    "category": "",
+    "_path": "amendments/ammendment_google.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AMD-2026-005",
     "title": "Workspace Model & Governed Interface Surfaces",
     "version": "1.0.0",
@@ -1877,15 +1917,6 @@
         "relationship": "references"
       }
     ]
-  },
-  {
-    "document_id": "",
-    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
-    "version": "",
-    "status": "ratified",
-    "category": "",
-    "_path": "amendments/ammendment_google.md",
-    "cross_references": []
   },
   {
     "document_id": "—",

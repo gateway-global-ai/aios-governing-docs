@@ -9,8 +9,9 @@
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
+| AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
 | AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.2 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.1.0 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.1.1 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |
@@ -57,6 +58,7 @@
 | AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
 | AIOS-SPEC-012 | Workspace Domain Pack v1 | 0.1.0 | draft | specification | `specifications/WorkspaceDomainPackV1.md` |
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
+| AMD-001 | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
@@ -80,7 +82,6 @@
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
 | OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
 | WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
-| — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | — | README | — | unregistered | legal | `legal/README.md` |
 | — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
@@ -102,6 +103,16 @@
 | AIOS-SPEC-009 | — |
 | AMD-2026-012 | — |
 
+### AMD-001 — taxonomy, classification, and disposition (AIOS-AMD-001-DISPOSITION-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-003 | — |
+| AIOS-SPEC-004 | — |
+| AIOS-SPEC-005 | — |
+| AMD-001 | — |
+| AMD-2026-013 | — |
+
 ### Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) (AIOS-AMD-PLAN-001)
 
 | Referenced Document | Relationship |
@@ -115,8 +126,10 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
+| AIOS-AMD-001-DISPOSITION-001 | — |
 | AIOS-AMD-PLAN-001 | — |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | — |
+| AMD-001 | — |
 | AMD-2026-005 | — |
 | AMD-2026-006 | — |
 | AMD-2026-007 | — |
@@ -726,8 +739,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 81
-- **Ratified:** 32
+- **Total documents:** 82
+- **Ratified:** 33
 - **Draft:** 35
 - **Under review:** 0
 - **Unregistered (no front matter):** 8
