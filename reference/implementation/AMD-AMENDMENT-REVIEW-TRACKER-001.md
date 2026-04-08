@@ -60,7 +60,7 @@ amendment_history:
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
 | **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/`](../reviews/amd_2026_009/) | **Round 2** synthesis positive — **next:** finalize motion **[`amendments/AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)**; council; **§10** spec-merge checklist |
-| **AMD-2026-013** | `under_review` | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — **Round 2** [`REVIEW_SYNTHESIS`](../reviews/amd_2026_013/round_2/REVIEW_SYNTHESIS.md) **PASS** | **v0.2.3**; **next:** ratification path (motion / Council) per tier — optional §6.1 tighten if coordinator wants Gemini concern closed |
+| **AMD-2026-013** | `under_review` | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — **Round 2** [`REVIEW_SYNTHESIS`](../reviews/amd_2026_013/round_2/REVIEW_SYNTHESIS.md) **PASS** | **v0.2.4** — §6.1 accountability pass; **next:** ratification (motion / Council) per tier |
 
 ---
 

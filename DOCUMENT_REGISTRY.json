@@ -955,7 +955,7 @@
   {
     "document_id": "AIOS-REPO-TAXONOMY-001",
     "title": "Intent-bearing repository taxonomy — implementation note and migration appendix",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-REPO-TAXONOMY-001.md",
@@ -1724,7 +1724,7 @@
   {
     "document_id": "AMD-2026-013",
     "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "status": "under_review",
     "category": "amendment",
     "_path": "amendments/AMD-2026-013.md",
@@ -1756,6 +1756,10 @@
       {
         "doc_id": "AIOS-SPEC-009",
         "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "title": "The Gateway Global AIOS Governance Constitution"
       },
       {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
