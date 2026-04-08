@@ -6,7 +6,7 @@
 
 | Phase | Artifact | Status |
 |-------|-----------|--------|
-| **A — Evidence** | [`reference/knowledge_base/snapshots/product_context_bundle.md`](../../../reference/knowledge_base/snapshots/product_context_bundle.md) (regenerate via `generate_product_context_bundle.py`); [`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md) | Baseline exists — **refresh** before Round 2 |
+| **A — Evidence** | [`product_context_bundle.md`](../../../reference/knowledge_base/snapshots/product_context_bundle.md); [`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md) | **Partial:** bundle **regenerated** — see [`EVIDENCE-PHASE-A-STATUS.md`](EVIDENCE-PHASE-A-STATUS.md). **Cursor research** refresh **not** automated — coordinator decision. |
 | **B — Architect** | [`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md) (from template) | **Pending** |
 | **C — UI** | [`UI_PLAN.md`](UI_PLAN.md) (from template) | **Pending** |
 | **D — Committee** | [`COMMITTEE_PACKET.md`](COMMITTEE_PACKET.md) (from template) | **Pending** |

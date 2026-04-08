@@ -55,7 +55,7 @@ Per **[AMD-AMENDMENT-REVIEW-TRACKER-001](../../reference/implementation/AMD-AMEN
 
 ## 6. Earliest next pass (coordinator choice)
 
-**Phase A — evidence refresh** — regenerate [`reference/knowledge_base/snapshots/product_context_bundle.md`](../../reference/knowledge_base/snapshots/product_context_bundle.md) and refresh or supersede [`reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md) so **Architect** (Phase B) cites **current** repo truth.
+**Phase A — evidence** — **Status:** [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md) — **`product_context_bundle`** regenerated; **Cursor research** file refresh is **manual** / **coordinator** (not scripted). **Phase B — Architect** is next once Phase A is **accepted** for planning purposes.
 
 ---
 

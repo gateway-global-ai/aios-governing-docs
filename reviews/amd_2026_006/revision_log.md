@@ -8,6 +8,8 @@
 
 ## Pending
 
-**Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**; **Phase A** evidence refresh next).
+**Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**).
 
-**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — then **revision** to address Round 1 + committee themes; **Round 2** — record version bumps below when applied.
+**Phase A (evidence)** — [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md): **`product_context_bundle`** refreshed; **`CURRENT_SYSTEM_RESEARCH`** refresh **optional** / **manual** (see status doc).
+
+**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — **Phase B** Architect plan **next** after coordinator accepts **Phase A** evidence; then **revision** to address Round 1 + committee themes; **Round 2** — record version bumps below when applied.
