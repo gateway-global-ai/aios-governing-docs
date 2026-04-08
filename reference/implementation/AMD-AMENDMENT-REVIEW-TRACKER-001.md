@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.5
+version: 1.1.6
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -20,6 +20,9 @@ cross_references:
   - doc_id: AIOS-AMD-001-DISPOSITION-001
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.1.6
+    date: 2026-04-08
+    summary: AMD-2026-006 + AIOS-SPEC-007 ratified 1.0.0 per AMD-2026-006-RATIFICATION-MOTION v1.0.0; active cohesion track AMD-2026-009.
   - version: 1.1.5
     date: 2026-04-08
     summary: AMD-2026-006 motion Council-ready; post-ratification next cohesion focus AMD-2026-009 (006→009→008).
@@ -80,7 +83,7 @@ amendment_history:
 
 | Amendment | `status` (YAML) | Review packet | Next governed step |
 |-----------|-----------------|---------------|---------------------|
-| **AMD-2026-006** | `draft` | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) | **SPEC-007** Round 2 **PASS**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **draft** — **Council / ratification** next (package **v0.2.0**); see [`revision_log.md`](../../reviews/amd_2026_006/revision_log.md) |
+| **AMD-2026-006** | **`ratified` `1.0.0`** | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) — Round 2 **PASS** on **SPEC-007**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **2026-04-08** | **Follow-on:** implementation alignment; **next cohesion track** **[AMD-2026-009](../amendments/AMD-2026-009.md)** |
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
 | **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/`](../reviews/amd_2026_009/) | **Round 2** synthesis positive — **next:** finalize motion **[`amendments/AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)**; council; **§10** spec-merge checklist |
@@ -102,28 +105,26 @@ amendment_history:
 | **AMD-2026-011** | External repo acquisition + **AIOS-SPEC-013** package |
 | **AMD-2026-012** | Shell authority and voice-first entry |
 | **AMD-2026-013** | Intent-bearing repository taxonomy (architecture / builder) |
+| **AMD-2026-006** | Google Workspace governed integration plane (**AIOS-SPEC-007**) |
 
-### AMD-001 — taxonomy resolution (before 006 / 009 / 008 closure)
+### AMD-001 — taxonomy resolution (before 009 / 008 closure)
 
 **[AMD-001](../../amendments/ammendment_google.md)** is **ratified** but uses the **pre-`AMD-2026-*`** numbering era and a **legacy** filename. It is **not** unfinished law; it is a **classification** problem. **Resolve** its place in the amendment universe **before** deep closure on the **2026** draft tracks below—see **[AMD-001 taxonomy and disposition](AMD-001-TAXONOMY-AND-DISPOSITION.md)**. This aligns with **[AMD-2026-013](../amendments/AMD-2026-013.md)** (declared taxonomy and accountability): **AMD-001** is the **explicit** legacy object, not an untracked exception.
 
-### Cohesion-critical remainder (three draft AMDs)
-
-Only these **draft** amendments are **in scope** for “close the foundation” sequencing:
+### Cohesion-critical remainder (two draft AMDs)
 
 | Order | Amendment | Title / scope | Why it belongs in this set |
 |-------|-----------|----------------|----------------------------|
-| **1** | **[AMD-2026-006](../amendments/AMD-2026-006.md)** | Google Workspace governed integration plane | Locks **Workspace → control plane → MCP** as binding law (**AIOS-SPEC-007** path); everything else that touches Workspace execution assumes this plane eventually **ratifies**. |
-| **2** | **[AMD-2026-009](../amendments/AMD-2026-009.md)** (+ **[ADD-001](../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** as packaged addendum, **[§10 spec-merge checklist](../amendments/AMD-2026-009-spec-merge-checklist.md)** execution) | Intent-scoped web retrieval + governed website review | Completes **external knowledge** acquisition **and** **SPEC-007 / SPEC-009 / SPEC-010** alignment; **Round 2** synthesis already **positive**. |
-| **3** | **[AMD-2026-008](../amendments/AMD-2026-008.md)** | Sovereign voice + local runtime lanes | Binds **local** STT / TTS / interpret stack **after** remote **Workspace** and **web** paths are defined; reduces cross-cutting churn on shared specs. |
+| **1** | **[AMD-2026-009](../amendments/AMD-2026-009.md)** (+ **[ADD-001](../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** as packaged addendum, **[§10 spec-merge checklist](../amendments/AMD-2026-009-spec-merge-checklist.md)** execution) | Intent-scoped web retrieval + governed website review | Completes **external knowledge** acquisition **and** **SPEC-007 / SPEC-009 / SPEC-010** alignment; **Round 2** synthesis already **positive**. |
+| **2** | **[AMD-2026-008](../amendments/AMD-2026-008.md)** | Sovereign voice + local runtime lanes | Binds **local** STT / TTS / interpret stack **after** remote **Workspace** and **web** paths are defined; reduces cross-cutting churn on shared specs. |
 
 **Not** separate foundation tracks: **ratification motions**, **merge-deltas** artifacts, and **checklists** — they **serve** the AMDs above, not additional AMD IDs.
 
 ### Ordering caveats (explicit)
 
 0. **AMD-001** taxonomy is **documented** (see subsection above); **spec embodiment** of its CLI matrix remains **AIOS-SPEC-003 / 004 / 005** maintenance work.
-1. **Logical order** above is **006 → 009 → 008** for **dependency and merge hygiene** (Workspace plane **before** web+envelope merge work; **local runtime** **after** both **remote** planes are stable on paper).
-2. **Schedule order** may differ: **006** had **Round 1 FAIL** — it **must** complete **[AIOS-AMD-PLAN-001](AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** revision and a **passing** triangulation round **before** ratification. **009** may therefore **reach council sooner** than **006**; that is acceptable if **§10** spec-merge work is used to **reconcile** **SPEC-007** with **006** when **006** closes.
+1. **Logical order** for the **remainder** is **009 → 008** after **006** **ratified** **2026-04-08** (**AIOS-SPEC-007** **v1.0.0**).
+2. **Schedule order** may still differ: **009** may advance on its own motion timeline; **§10** spec-merge work **SHOULD** stay consistent with **ratified** **SPEC-007**.
 3. **One active binding track** at a time ([Operating rules](#operating-rules)) still applies unless **council** authorizes overlap.
 
 ---
@@ -142,4 +143,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.5.*
+*End of AIOS-AMD-TRACKER-001 v1.1.6.*

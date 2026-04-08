@@ -13,6 +13,8 @@ All notable changes to the governing document set are recorded here.
 
 ### Added
 
+- **AMD-2026-006 + AIOS-SPEC-007 ratified (2026-04-08):** [`amendments/AMD-2026-006.md`](amendments/AMD-2026-006.md) **`ratified` `1.0.0`**; [`specifications/GoogleWorkspaceIntegrationGovernance.md`](specifications/GoogleWorkspaceIntegrationGovernance.md) (**AIOS-SPEC-007**) **`ratified` `1.0.0`**; motion [`amendments/AMD-2026-006-ratification-motion.md`](amendments/AMD-2026-006-ratification-motion.md) **v1.0.0** executed; **[`AMD-AMENDMENT-REVIEW-TRACKER-001`](reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** **v1.1.6** (foundation remainder **009 → 008**); [`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md); [`reviews/amd_2026_006/README.md`](reviews/amd_2026_006/README.md); [`reviews/amd_2026_006/planning/README.md`](reviews/amd_2026_006/planning/README.md).
+
 - **AMD-2026-006 Council-ready note (2026-04-08):** [`amendments/AMD-2026-006-ratification-motion.md`](amendments/AMD-2026-006-ratification-motion.md) coordinator status; **[AMD-AMENDMENT-REVIEW-TRACKER-001](reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** **v1.1.5**; [`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md).
 
 - **AMD-2026-006 / AIOS-SPEC-007 ratification motion draft (2026-04-08):** [`amendments/AMD-2026-006-ratification-motion.md`](amendments/AMD-2026-006-ratification-motion.md); **[AMD-AMENDMENT-REVIEW-TRACKER-001](reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** **v1.1.4**; [`amendments/AMD-2026-006.md`](amendments/AMD-2026-006.md) cross-reference; [`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md).

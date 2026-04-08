@@ -50,10 +50,23 @@
 
 ---
 
-## Pending
+## Ratification executed — 2026-04-08
 
-**Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**).
+**Motion:** **[`AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **`approved`** **2026-04-08** — **Immediate actions** executed in one pass (front matter, registry, **CHANGELOG**, **[AMD-AMENDMENT-REVIEW-TRACKER-001](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** **v1.1.6**).
+
+| Artifact | Version | Status |
+|----------|---------|--------|
+| **[AIOS-SPEC-007](../../specifications/GoogleWorkspaceIntegrationGovernance.md)** | **1.0.0** | **`ratified`** |
+| **[AMD-2026-006](../../amendments/AMD-2026-006.md)** | **1.0.0** | **`ratified`** |
+
+**Next cohesion focus (active governed track):** **[AMD-2026-009](../../amendments/AMD-2026-009.md)** — see **[tracker](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**009 → 008** remainder).
+
+---
+
+## Closed — packet complete
+
+**Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**historical**; **006** ratified).
 
 **Phase A (evidence)** — **Accepted 2026-04-08** — **Option B** — [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md); [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md).
 
-**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — Phases **A–E** complete **2026-04-08**; **Round 2** on **SPEC-007** complete — [`../googleworkspaceintegrationgovernance/round_2/`](../googleworkspaceintegrationgovernance/round_2/). **Next:** ratification / Council motion per tier (see **Ratification path** above).
+**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — Phases **A–F** complete **2026-04-08**; **ratification** executed **2026-04-08**.

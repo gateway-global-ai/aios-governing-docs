@@ -5,14 +5,14 @@ peer_review_primary_target: AIOS-SPEC-007
 peer_review_basis_spec_version: 0.2.0
 companion_amendment_version: 0.2.0
 motion_version: 1.0.0
-status: draft
+status: approved
 category: council_motion
 title: Ratification motion — AMD-2026-006 / AIOS-SPEC-007
 author: Gateway Global AIOS
 created: 2026-04-08
 last_updated: 2026-04-08
-approved: null
-execution_path: null
+approved: 2026-04-08
+execution_path: amendments/AMD-2026-006.md; specifications/GoogleWorkspaceIntegrationGovernance.md (ratified 2026-04-08)
 ---
 
 # Ratification motion — AMD-2026-006 / AIOS-SPEC-007
@@ -23,7 +23,7 @@ execution_path: null
 
 | Field | Record |
 |-------|--------|
-| **Document** | **[AIOS-SPEC-007](../specifications/GoogleWorkspaceIntegrationGovernance.md)** (**`GoogleWorkspaceIntegrationGovernance.md`**) **v0.2.0** (`draft`) |
+| **Document** | **[AIOS-SPEC-007](../specifications/GoogleWorkspaceIntegrationGovernance.md)** (**`GoogleWorkspaceIntegrationGovernance.md`**) **v0.2.0** (review basis → ratified as **1.0.0**) |
 | **Mean composite** | **~3.87** (DeepSeek **3.7**, OpenAI **3.9**, Gemini **4.0**) |
 | **Dimension floor** | **3** — no dimension **below** 3 in any reviewer scorecard |
 | **Dispositions** | **approved_with_changes** (all three reviewers) |
@@ -41,8 +41,8 @@ Council is asked to **approve / ratify** a **two-part package** at **v0.2.0** su
 
 | Role | Artifact | Version |
 |------|----------|---------|
-| **Reviewed normative bulk** | **[AIOS-SPEC-007](../specifications/GoogleWorkspaceIntegrationGovernance.md)** — Google Workspace integration governance (routing chain, routing envelope §5, control plane outcomes §6, canvas / SPEC-006 §7, execution scope §8, web retrieval §3, informative Annex A) | **0.2.0** |
-| **Companion amendment instrument** | **[AMD-2026-006](AMD-2026-006.md)** — ratifies **SPEC-007**; extends **AIOS-SPEC-003** and **AIOS-SPEC-006** by reference | **0.2.0** |
+| **Reviewed normative bulk** | **[AIOS-SPEC-007](../specifications/GoogleWorkspaceIntegrationGovernance.md)** — Google Workspace integration governance (routing chain, routing envelope §5, control plane outcomes §6, canvas / SPEC-006 §7, execution scope §8, web retrieval §3, informative Annex A) | **Ratified `1.0.0`** (substantive basis **v0.2.0** peer-reviewed) |
+| **Companion amendment instrument** | **[AMD-2026-006](AMD-2026-006.md)** — ratifies **SPEC-007**; extends **AIOS-SPEC-003** and **AIOS-SPEC-006** by reference | **Ratified `1.0.0`** |
 
 **Effect:** **AIOS-SPEC-007** is the **binding technical SHALL/MUST** surface for Workspace integration; **AMD-2026-006** is the **amendment** that **ratifies** that spec and **anchors** adjacent doctrine (**AIP**, **UI registry**) without duplicating the spec body.
 
@@ -99,12 +99,22 @@ Upon **approval**:
 
 ---
 
-## Coordinator status (non-normative)
+## Execution record (in-repo)
 
-- **Council-ready:** No further drafting or procedural expansion **unless Council requests** changes to this motion or the **v0.2.0** package.
-- **On approval:** Execute **Immediate actions** (**§** above) in **one** maintainer pass.
-- **Next cohesion-critical track (after 006 ratifies):** **[AMD-2026-009](AMD-2026-009.md)** — see closure order in **[AMD-AMENDMENT-REVIEW-TRACKER-001](../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**006 → 009 → 008**).
+| Field | Value |
+|-------|--------|
+| **Executed** | **2026-04-08** |
+| **Peer review basis** | **AIOS-SPEC-007** **v0.2.0** — [`reviews/googleworkspaceintegrationgovernance/round_2/`](../reviews/googleworkspaceintegrationgovernance/round_2/) **PASS** |
+| **Ratified** | **AIOS-SPEC-007** **`1.0.0`**; **AMD-2026-006** **`1.0.0`** |
+| **Revision log** | [`reviews/amd_2026_006/revision_log.md`](../reviews/amd_2026_006/revision_log.md) |
 
 ---
 
-*End of ratification motion — AMD-2026-006 / AIOS-SPEC-007 — motion version 1.0.0 (`draft` pending Council).*
+## Coordinator status (non-normative)
+
+- **Ratification executed** **2026-04-08** — Immediate actions **§** applied in one maintainer pass.
+- **Next cohesion-critical track:** **[AMD-2026-009](AMD-2026-009.md)** — **[AMD-AMENDMENT-REVIEW-TRACKER-001](../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**006 → 009 → 008**).
+
+---
+
+*End of ratification motion — AMD-2026-006 / AIOS-SPEC-007 — motion version **1.0.0** **approved** **2026-04-08**.*

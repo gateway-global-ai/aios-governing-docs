@@ -1,6 +1,6 @@
 # Peer review — AMD-2026-006 (Google Workspace governed integration plane)
 
-**Cohesion track:** **Active** — first in **006 → 009 → 008** sequence. **Restart summary:** [`RESTART-PACKET.md`](RESTART-PACKET.md). **Ratification motion (draft):** [`../../amendments/AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md). **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md).
+**Status:** **`ratified` `1.0.0`** **2026-04-08** — **[`AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** executed. **Next cohesion track:** **009 → 008** — [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md). **Restart summary (historical):** [`RESTART-PACKET.md`](RESTART-PACKET.md).
 
 **Phase A:** **Accepted 2026-04-08** (Option B) — [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md); active research [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md).
 
@@ -12,8 +12,8 @@
 
 | Item | Location |
 |------|----------|
-| **Amendment** | [`amendments/AMD-2026-006.md`](../../amendments/AMD-2026-006.md) (**v0.2.0** `draft`) |
-| **Normative spec** | [`specifications/GoogleWorkspaceIntegrationGovernance.md`](../../specifications/GoogleWorkspaceIntegrationGovernance.md) (**AIOS-SPEC-007**, **v0.2.0** `draft`) |
+| **Amendment** | [`amendments/AMD-2026-006.md`](../../amendments/AMD-2026-006.md) (**`ratified` `1.0.0`**) |
+| **Normative spec** | [`specifications/GoogleWorkspaceIntegrationGovernance.md`](../../specifications/GoogleWorkspaceIntegrationGovernance.md) (**AIOS-SPEC-007**, **`ratified` `1.0.0`**) |
 | **Coordinator brief** | [`REVIEW_BRIEF.md`](REVIEW_BRIEF.md) |
 | **Triangulation prompt** | [`TRIANGULATED_REVIEW_PROMPT.md`](TRIANGULATED_REVIEW_PROMPT.md) |
 | **Revision log** | [`revision_log.md`](revision_log.md) |
