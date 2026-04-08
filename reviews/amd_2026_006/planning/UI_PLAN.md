@@ -1,8 +1,8 @@
-# UI plan — AMD-2026-006 / Workspace surfaces (draft)
+# UI plan — AMD-2026-006 / Workspace surfaces
 
 **Date:** 2026-04-08  
 **Builds on:** [`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md) (Phase B **verified** 2026-04-08)  
-**Verifier:** _pending human review_
+**Verifier:** Human review — **accepted** 2026-04-08 (Phase C complete)
 
 ---
 
@@ -62,11 +62,11 @@ Users experience **Google Workspace** inside a **dedicated Workspace canvas over
 
 ## 6. Verification checklist
 
-- [ ] Surface IDs match **`src/shellCanvas/canvasTypes.ts`** — `CanvasView` / `ALL_CANVAS_VIEWS`.
-- [ ] No **dashboard-first** regression vs **AMD-2026-007** / shell authority: **Shell** strip + **`shellIntentRouter`** remain the **app shell** authority; Workspace is **overlay** + **ICP**, not a separate “home app.”
-- [ ] **`App.tsx`** branch per `workspaceCanvas.view` matches the table in **§2** (including **`WorkspaceHubSurface`** `mode` prop).
-- [ ] Disclosure files (**`spec009PrimaryDisclosure.ts`**, **`deriveWorkspaceIntentForDisclosure.ts`**, **`shellSurfaceLabels.ts`**) reviewed if **SPEC-009** / **AMD-2026-012** alignment is questioned in committee.
+- [x] Surface IDs match **`src/shellCanvas/canvasTypes.ts`** — `CanvasView` / `ALL_CANVAS_VIEWS`.
+- [x] No **dashboard-first** regression vs **AMD-2026-007** / shell authority: **Shell** strip + **`shellIntentRouter`** remain the **app shell** authority; Workspace is **overlay** + **ICP**, not a separate “home app.”
+- [x] **`App.tsx`** branch per `workspaceCanvas.view` matches the table in **§2** (including **`WorkspaceHubSurface`** `mode` prop).
+- [ ] Disclosure files (**`spec009PrimaryDisclosure.ts`**, **`deriveWorkspaceIntentForDisclosure.ts`**, **`shellSurfaceLabels.ts`**) — **committee** if **SPEC-009** / **AMD-2026-012** alignment is disputed before Round 2.
 
 ---
 
-*Draft — pending human verification against `ai-os-voice-interface` before Phase D (committee packet).*
+*Phase C verified 2026-04-08 — committee packet (**Phase D**) issued; **no** author revision until committee records outcome.*

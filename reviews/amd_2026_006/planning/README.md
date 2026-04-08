@@ -8,8 +8,8 @@
 |-------|-----------|--------|
 | **A — Evidence** | [`product_context_bundle.md`](../../../reference/knowledge_base/snapshots/product_context_bundle.md); [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md) | **Accepted** — [`EVIDENCE-PHASE-A-STATUS.md`](EVIDENCE-PHASE-A-STATUS.md) **Option B** **2026-04-08** |
 | **B — Architect** | [`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md) (from template) | **Verified** 2026-04-08 |
-| **C — UI** | [`UI_PLAN.md`](UI_PLAN.md) (from template) | **Draft complete — pending human verification** |
-| **D — Committee** | [`COMMITTEE_PACKET.md`](COMMITTEE_PACKET.md) (from template) | **Pending** |
+| **C — UI** | [`UI_PLAN.md`](UI_PLAN.md) (from template) | **Verified** 2026-04-08 |
+| **D — Committee** | [`COMMITTEE_PACKET.md`](COMMITTEE_PACKET.md) | **Issued** 2026-04-08 — **outcome pending** (see packet §3) |
 | **E — Author revision** | [`../revision_log.md`](../revision_log.md) + AMD-006 + AIOS-SPEC-007 | **After** committee |
 | **F — Peer review** | `round_2/` | **After** E |
 | **Execution demo (optional)** | [`../execution/`](../execution/) — **[AIOS-EXEC-DEMO-001](../../../reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** | After B (and usually C); run `scripts/run_isolated_execution_demo.py` |
