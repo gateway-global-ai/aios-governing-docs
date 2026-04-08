@@ -10,7 +10,7 @@
 |-------------|-------|---------|--------|----------|------|
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
 | AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.2 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.0.8 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.0.9 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |
@@ -37,12 +37,12 @@
 | AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
 | AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
-| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.2.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.3.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
 | AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
 | AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | AIOS-REF-013 | Implementation runway pointer (product conformance) | 1.6.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-RUNWAY-POINTER.md` |
-| AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 0.2.4 | draft | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
+| AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 1.0.0 | ratified | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
@@ -73,7 +73,8 @@
 | AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
 | AMD-2026-012 | Shell Authority and Voice-First Entry | 1.0.0 | ratified | amendment | `amendments/AMD-2026-012.md` |
 | AMD-2026-012-RATIFICATION-MOTION | Ratification motion — AMD-2026-012 | — | approved | council_motion | `amendments/AMD-2026-012-ratification-motion.md` |
-| AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 0.2.4 | under_review | amendment | `amendments/AMD-2026-013.md` |
+| AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-013.md` |
+| AMD-2026-013-RATIFICATION-MOTION | Ratification motion — AMD-2026-013 | — | approved | council_motion | `amendments/AMD-2026-013-ratification-motion.md` |
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
@@ -390,6 +391,7 @@
 | AMD-2026-007 | references |
 | AMD-2026-010 | references |
 | AMD-2026-012 | references |
+| AMD-2026-013 | references |
 
 ### Ratification motion — AIOS-DEV-PROC-001 (AIOS-RAT-MOTION-DEV-PROC-001)
 
@@ -682,6 +684,7 @@
 | AMD-2026-005 | — |
 | AMD-2026-007 | — |
 | AMD-2026-012 | — |
+| AMD-2026-013-RATIFICATION-MOTION | — |
 
 ### Privacy Policy (LEGAL-001)
 
@@ -723,8 +726,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 80
-- **Ratified:** 30
-- **Draft:** 36
+- **Total documents:** 81
+- **Ratified:** 32
+- **Draft:** 35
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

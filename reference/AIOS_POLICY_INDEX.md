@@ -1,16 +1,17 @@
 ---
 document_id: AIOS-POLICY-INDEX
-version: 1.2.0
+version: 1.3.0
 status: ratified
 category: reference
 title: AIOS Policy Identifier Index (in-repo master list)
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-11
+last_updated: 2026-04-07
 cross_references:
   - AMD-2026-007
   - AMD-2026-010
   - AMD-2026-012
+  - AMD-2026-013
 ---
 
 # AIOS Policy Identifier Index (in-repo)
@@ -36,6 +37,10 @@ Policy IDs **POL-INTENT-001**–**007**, **POL-SHELL-001**–**006**, **POL-UI-0
 
 **No new `POL-*` identifiers.** This amendment establishes **Shell** as single governed entry and session authority, voice-first standard, **§7** finite primary-outcome family, subordinate skills/tools, and admin/runtime separation — **[AMD-2026-012](../amendments/AMD-2026-012.md)**; ratification motion **[AMD-2026-012-RATIFICATION-MOTION](../amendments/AMD-2026-012-ratification-motion.md)**.
 
+## AMD-2026-013 (ratified v1.0.0)
+
+**No new `POL-*` identifiers.** This amendment establishes **declared repository taxonomy** under architecture and builder authority (intent scaffolding, migration operability, **§6.1** accountability) — **[AMD-2026-013](../amendments/AMD-2026-013.md)**; ratification motion **[AMD-2026-013-RATIFICATION-MOTION](../amendments/AMD-2026-013-ratification-motion.md)**; companion memo **[AIOS-REPO-TAXONOMY-001](implementation/AIOS-REPO-TAXONOMY-001.md)**.
+
 ---
 
-*End of AIOS Policy Identifier Index v1.2.0.*
+*End of AIOS Policy Identifier Index v1.3.0.*

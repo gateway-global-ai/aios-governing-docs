@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.0.8
+version: 1.0.9
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-08
+last_updated: 2026-04-07
 cross_references:
   - doc_id: AMD-2026-006
   - doc_id: AMD-2026-007
@@ -17,6 +17,9 @@ cross_references:
   - doc_id: AMD-2026-013
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
 amendment_history:
+  - version: 1.0.9
+    date: 2026-04-07
+    summary: AMD-2026-013 ratified v1.0.0 — AMD-2026-013-RATIFICATION-MOTION v1.0.0; AIOS-REPO-TAXONOMY-001 v1.0.0; AIOS_POLICY_INDEX v1.3.0.
   - version: 1.0.8
     date: 2026-04-08
     summary: AMD-2026-013 Round 2 PASS — v0.2.3 revision_log; reviews/amd_2026_013/round_2; R1→R2 delta.
@@ -60,7 +63,7 @@ amendment_history:
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
 | **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/`](../reviews/amd_2026_009/) | **Round 2** synthesis positive — **next:** finalize motion **[`amendments/AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)**; council; **§10** spec-merge checklist |
-| **AMD-2026-013** | `under_review` | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — **Round 2** [`REVIEW_SYNTHESIS`](../reviews/amd_2026_013/round_2/REVIEW_SYNTHESIS.md) **PASS** | **v0.2.4** — §6.1 accountability pass; **next:** ratification (motion / Council) per tier |
+| **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
 
 ---
 
@@ -78,4 +81,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.0.8.*
+*End of AIOS-AMD-TRACKER-001 v1.0.9.*

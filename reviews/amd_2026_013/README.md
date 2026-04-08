@@ -1,8 +1,10 @@
 # Peer review — AMD-2026-013 (Intent-Bearing Repository Taxonomy)
 
-**Amendment:** [`amendments/AMD-2026-013.md`](../../amendments/AMD-2026-013.md) — **v0.2.3** (Round 2 revision; **v0.2.2** = Round 1 freeze).
+**Amendment:** [`amendments/AMD-2026-013.md`](../../amendments/AMD-2026-013.md) — **`ratified` `1.0.0`** (substantive freeze **v0.2.4**; **v0.2.3** = Round 2 scoring basis; **v0.2.2** = Round 1 freeze).
 
-**Companion (non-normative):** [`reference/implementation/AIOS-REPO-TAXONOMY-001.md`](../../reference/implementation/AIOS-REPO-TAXONOMY-001.md) **v0.2.3**. **Revision log:** [`revision_log.md`](revision_log.md).
+**Companion (non-normative):** [`reference/implementation/AIOS-REPO-TAXONOMY-001.md`](../../reference/implementation/AIOS-REPO-TAXONOMY-001.md) **`ratified` `1.0.0`**. **Revision log:** [`revision_log.md`](revision_log.md).
+
+**Ratification motion (executed):** [`amendments/AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md) **v1.0.0** — **2026-04-07** — explicit audit trail: Round 2 numerics on **v0.2.3**; **v0.2.4** = narrow post-gate §6.1/accountability clarification.
 
 **Committee packet:** [`reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md`](../../reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md).
 

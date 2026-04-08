@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-REPO-TAXONOMY-001
-version: 0.2.4
-status: draft
+version: 1.0.0
+status: ratified
 category: reference
 title: Intent-bearing repository taxonomy — implementation note and migration appendix
 author: Gateway Global AIOS
 created: 2026-04-08
-last_updated: 2026-04-08
+last_updated: 2026-04-07
 cross_references:
   - doc_id: AMD-2026-013
     title: Intent-Bearing Repository Taxonomy (Architecture and Builder Control)
@@ -15,6 +15,9 @@ cross_references:
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
     title: Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)
 amendment_history:
+  - version: 1.0.0
+    date: 2026-04-07
+    summary: "Ratified in lockstep with AMD-2026-013 v1.0.0; substantive content frozen at v0.2.4 memo revision."
   - version: 0.2.4
     date: 2026-04-08
     summary: "Mirror AMD-2026-013 v0.2.4 §6.1 — maintainer merge authority, planning input-only, README precedence."
@@ -37,7 +40,7 @@ amendment_history:
 
 # AIOS-REPO-TAXONOMY-001 — Intent-bearing repository taxonomy
 
-**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v0.2.4**. **Frozen** with the amendment for **ratification** discussion (same freeze window). Normative law resides in the amendment; this memo may be revised for clarity after ratification unless the amendment requires substantive change.
+**Status:** ratified implementation memo **v1.0.0** — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v1.0.0** (substantive freeze **v0.2.4**). Normative law resides in the amendment; this memo **may** be revised for clarity in non-normative ways unless a future ratified amendment requires substantive change.
 
 ## A. Normative boundary and applicability
 
