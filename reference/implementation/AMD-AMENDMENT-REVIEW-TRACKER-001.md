@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.1
+version: 1.1.2
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -19,6 +19,9 @@ cross_references:
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
   - doc_id: AIOS-AMD-001-DISPOSITION-001
 amendment_history:
+  - version: 1.1.2
+    date: 2026-04-07
+    summary: AMD-2026-006 cohesion track — RESTART-PACKET.md; Phase A evidence refresh next per AIOS-AMD-PLAN-001.
   - version: 1.1.1
     date: 2026-04-07
     summary: AMD-001 taxonomy resolution — AIOS-AMD-001-DISPOSITION-001; legacy_ratified_bridge; ordering before 006/009/008 closure.
@@ -129,4 +132,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.1.*
+*End of AIOS-AMD-TRACKER-001 v1.1.2.*

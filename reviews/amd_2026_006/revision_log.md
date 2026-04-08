@@ -8,4 +8,6 @@
 
 ## Pending
 
+**Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**; **Phase A** evidence refresh next).
+
 **Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — then **revision** to address Round 1 + committee themes; **Round 2** — record version bumps below when applied.
