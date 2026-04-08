@@ -13,6 +13,7 @@ All notable changes to the governing document set are recorded here.
 
 ### Added
 
+- **AMD-2026-006 Phase B — ARCHITECT_PLAN.md (2026-04-08):** [`reviews/amd_2026_006/planning/ARCHITECT_PLAN.md`](reviews/amd_2026_006/planning/ARCHITECT_PLAN.md) — draft; pending human verify; [`planning/README.md`](reviews/amd_2026_006/planning/README.md).
 - **AMD-AMENDMENT-REVIEW-TRACKER-001 v1.1.3 (2026-04-08):** [`reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md`](reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md) — AMD-2026-006 Phase A accepted; Phase B next.
 - **AIOS-AMD-PLAN-001 v1.0.3 (2026-04-08):** [`reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md`](reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md) — Phase A evidence example path → `CURRENT_SYSTEM_RESEARCH_2026-04-08.md`.
 - **AMD-2026-006 Phase A Option B — CURRENT_SYSTEM_RESEARCH 2026-04-08 (2026-04-08):** [`reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md); [`cursor_research_outputs/README.md`](reference/knowledge_base/cursor_research_outputs/README.md) active pointer; Phase A **accepted** — [`reviews/amd_2026_006/planning/EVIDENCE-PHASE-A-STATUS.md`](reviews/amd_2026_006/planning/EVIDENCE-PHASE-A-STATUS.md), [`revision_log.md`](reviews/amd_2026_006/revision_log.md), [`COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](reviews/amd_2026_006/COORDINATOR_RESEARCH_REFRESH_PROMPT.md).
