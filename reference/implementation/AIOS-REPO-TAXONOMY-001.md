@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-REPO-TAXONOMY-001
-version: 0.2.2
+version: 0.2.3
 status: draft
 category: reference
 title: Intent-bearing repository taxonomy — implementation note and migration appendix
@@ -15,6 +15,9 @@ cross_references:
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
     title: Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)
 amendment_history:
+  - version: 0.2.3
+    date: 2026-04-08
+    summary: "§F conformance hook (non-normative); aligned with AMD-2026-013 v0.2.3 Round 2 freeze."
   - version: 0.2.2
     date: 2026-04-08
     summary: "Frozen in lockstep with AMD-2026-013 v0.2.2 for peer review Round 1 — no substantive edits until peer review completes unless amendment requires revision."
@@ -31,7 +34,7 @@ amendment_history:
 
 # AIOS-REPO-TAXONOMY-001 — Intent-bearing repository taxonomy
 
-**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v0.2.2**. **Frozen** with the amendment for **peer review Round 1** (same freeze window). Normative law resides in the amendment; this memo may be revised for clarity after peer review unless the amendment requires substantive change.
+**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v0.2.3**. **Frozen** with the amendment for **peer review Round 2** (same freeze window). Normative law resides in the amendment; this memo may be revised for clarity after peer review unless the amendment requires substantive change.
 
 ## A. Normative boundary and applicability
 
@@ -114,6 +117,7 @@ Product trees **should** mirror intent classes under `docs/` or agreed roots per
 | Execution demo packet | `reviews/demos/demo_exec_ui_review/planning/REVIEW_TARGET.yaml` | Demo — intent-bearing review target declared in YAML |
 | Amendment review (current) | `reviews/amd_2026_012/round_2/` | Amendment — target path `reviews/amendments/amd_2026_012/` pending Phase 2 |
 | Process packet | `reviews/aios_dev_conformance_process/` | Reference / process — target under `reviews/reference_docs/...` pending Phase 2 and mapping |
+| Classified demo root | `reviews/demos/demo_exec_ui_review/` | Same demo, showing `reviews/demos/<leaf>/` prefix after Phase 1 |
 
 ---
 
@@ -178,6 +182,15 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ---
 
+## F. Conformance and validation (operator guidance, non-normative)
+
+This section is **not** new binding law; it records **optional** hooks aligned with [AMD-2026-013](../../amendments/AMD-2026-013.md) §2.1.3.
+
+- **Optional automation:** CI or `scripts/governance_integrity_check.py` may flag new top-level folders under `reviews/` that do not match a declared class or a documented exception in [`CLASSIFICATION_AND_MIGRATION.md`](../../reviews/CLASSIFICATION_AND_MIGRATION.md). Remediation remains human—architecture/builder alignment—not silent auto-rename.
+- **Dual-read:** During migration, keep old/new path pairs documented in the migration map until the builder retires the old path.
+
+---
+
 ## Cross-references
 
 | Document | Purpose |
@@ -189,4 +202,4 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ---
 
-*End of AIOS-REPO-TAXONOMY-001 v0.2.2 draft.*
+*End of AIOS-REPO-TAXONOMY-001 v0.2.3 draft.*

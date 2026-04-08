@@ -43,7 +43,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -955,7 +955,7 @@
   {
     "document_id": "AIOS-REPO-TAXONOMY-001",
     "title": "Intent-bearing repository taxonomy — implementation note and migration appendix",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-REPO-TAXONOMY-001.md",
@@ -1724,7 +1724,7 @@
   {
     "document_id": "AMD-2026-013",
     "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "status": "under_review",
     "category": "amendment",
     "_path": "amendments/AMD-2026-013.md",
@@ -1752,6 +1752,10 @@
       {
         "doc_id": "AIOS-REPO-TAXONOMY-001",
         "title": "Intent-bearing repository taxonomy — implementation note and migration appendix"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
       },
       {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
