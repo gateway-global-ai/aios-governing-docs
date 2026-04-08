@@ -113,7 +113,7 @@ Upon **approval**:
 ## Coordinator status (non-normative)
 
 - **Ratification executed** **2026-04-08** — Immediate actions **§** applied in one maintainer pass.
-- **Next cohesion-critical track:** **[AMD-2026-009](AMD-2026-009.md)** — **[AMD-AMENDMENT-REVIEW-TRACKER-001](../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**006 → 009 → 008**).
+- **Next cohesion-critical track (historical at execution):** **[AMD-2026-009](AMD-2026-009.md)** — **[AMD-AMENDMENT-REVIEW-TRACKER-001](../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**006 → 009 → 008**). **Update:** **009** and **008** are **ratified**; foundation sequence **complete** — tracker **v1.2.5**.
 
 ---
 

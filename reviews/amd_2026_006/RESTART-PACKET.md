@@ -2,6 +2,8 @@
 
 **Purpose:** Declare **AMD-2026-006** as the **active** cohesion-critical track (**006 → 009 → 008**) and record **what failed**, **what exists**, and the **next disciplined steps** under **[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** — **not** to complete the amendment in one pass.
 
+**Update (2026-04-08):** The **006 → 009 → 008** foundation sequence is **complete** (**008** **`ratified` `1.0.0`**). This **RESTART** packet remains **historical** context for **006** only.
+
 **Amendment:** [`../../amendments/AMD-2026-006.md`](../../amendments/AMD-2026-006.md) — **v0.1.0** `draft`.  
 **Normative bulk (ratification target):** [`../../specifications/GoogleWorkspaceIntegrationGovernance.md`](../../specifications/GoogleWorkspaceIntegrationGovernance.md) — **AIOS-SPEC-007**.
 

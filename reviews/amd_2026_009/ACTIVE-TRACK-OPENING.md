@@ -1,6 +1,6 @@
 # AMD-2026-009 — active cohesion track opening (2026-04-08)
 
-**Superseded — track closed:** **[AMD-2026-009](../../amendments/AMD-2026-009.md)** **`ratified` `1.0.0`** **2026-04-09**; motion **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** executed; **[`revision_log.md`](revision_log.md)** is the post-ratification record. **Next cohesion focus:** **[AMD-2026-008](../../amendments/AMD-2026-008.md)**.
+**Superseded — track closed:** **[AMD-2026-009](../../amendments/AMD-2026-009.md)** **`ratified` `1.0.0`** **2026-04-09**; motion **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** executed; **[`revision_log.md`](revision_log.md)** is the post-ratification record. **Foundation sequence closed:** **[AMD-2026-008](../../amendments/AMD-2026-008.md)** **`ratified` `1.0.0`** **2026-04-08** (motion **[`AMD-2026-008-ratification-motion.md`](../../amendments/AMD-2026-008-ratification-motion.md)**).
 
 ---
 
@@ -41,7 +41,7 @@
 
 ## 4. Explicit non-scope
 
-- **AMD-2026-008** — out of scope until **009** is structurally settled.
+- **AMD-2026-008** — **closed** **2026-04-08**; post-ratification record [`../amd_2026_008/revision_log.md`](../amd_2026_008/revision_log.md).
 - **AMD-2026-006** — closed; reference only for **SPEC-007** **ratified** text.
 - **AMD-001** — disposition resolved elsewhere; not in this queue.
 

@@ -1,8 +1,6 @@
 {
-  "items": [
-    {
-      "path": "operations/LOCAL_TTS_RUNTIME_STANDARD.md",
-      "status": "pending"
-    }
-  ]
+  "meta": {
+    "queue_note": "No pending items. AMD-2026-008-ADD-003 is ratified 1.0.0 (2026-04-10); not on active review queue."
+  },
+  "items": []
 }

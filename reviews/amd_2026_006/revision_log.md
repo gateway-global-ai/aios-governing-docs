@@ -59,7 +59,7 @@
 | **[AIOS-SPEC-007](../../specifications/GoogleWorkspaceIntegrationGovernance.md)** | **1.0.0** | **`ratified`** |
 | **[AMD-2026-006](../../amendments/AMD-2026-006.md)** | **1.0.0** | **`ratified`** |
 
-**Next cohesion focus (active governed track):** **[AMD-2026-009](../../amendments/AMD-2026-009.md)** — see **[tracker](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**009 → 008** remainder).
+**Foundation closure:** **006 → 009 → 008** **complete** — **[AMD-2026-008](../../amendments/AMD-2026-008.md)** **`ratified` `1.0.0`** **2026-04-08**; **[tracker](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** **v1.2.5**; **[`../amd_2026_008/revision_log.md`](../amd_2026_008/revision_log.md)**.
 
 ---
 

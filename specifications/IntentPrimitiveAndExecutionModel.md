@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-009
-version: 0.5.6
+version: 0.5.7
 status: ratified
 category: specification
 title: Intent Primitive and Execution Model
 author: Gateway Global AIOS
 created: 2026-04-04
-last_updated: 2026-04-09
+last_updated: 2026-04-08
 reviewers: []
 ratification_target: 2026-04-06
 supersedes: null
@@ -31,7 +31,10 @@ cross_references:
     citation: "Amendment AMD-2026-007 — intent primitive, shell affordances, §11.9"
   - doc_id: AMD-2026-008
     relationship: references
-    citation: "Amendment AMD-2026-008 — sovereign voice and local runtime ratification"
+    citation: "Amendment AMD-2026-008 — sovereign voice and local runtime ratification (ratified 1.0.0)"
+  - doc_id: AMD-2026-008-RATIFICATION-MOTION
+    relationship: references
+    citation: "Ratification motion — AMD-2026-008 (approved 2026-04-08)"
   - doc_id: OLLAMA_RUNTIME_STANDARD
     relationship: references
     citation: "Ollama Runtime Standard (operations/OLLAMA_RUNTIME_STANDARD.md)"
@@ -48,6 +51,9 @@ cross_references:
     relationship: references
     citation: "Ratification motion — AMD-2026-009 (approved 2026-04-09)"
 amendment_history:
+  - version: 0.5.7
+    date: 2026-04-08
+    summary: "AMD-2026-008 ratified 1.0.0; §3.1 incorporation freeze note (this revision); motion AMD-2026-008-RATIFICATION-MOTION v1.0.2; no normative body change."
   - version: 0.5.6
     date: 2026-04-09
     summary: "AMD-2026-009 ratified 1.0.0; §15.8 / external knowledge cross-reference reaffirmed; motion AMD-2026-009-RATIFICATION-MOTION v1.0.0."
@@ -80,7 +86,7 @@ amendment_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | `ratified` (**v0.5.6**, **2026-04-09**) |
+| **Status** | `ratified` (**v0.5.7**, **2026-04-08**) |
 | **Ratification** | Requires alignment with **AMD-2026-007** §11; **AIOS-SPEC-008** **MUST** reference or merge this spec; **AIOS-SPEC-007** **MUST** enforce this spec at the integration layer |
 
 This specification defines the **core primitive of the AI OS: Intent**.
@@ -90,6 +96,8 @@ All routing, UI, policy, voice interaction, and capability execution **MUST** co
 **Relationship to AMD-2026-007:** Amendment **AMD-2026-007** (ratified) **§11** and this specification **MUST** remain aligned; on conflict, **governance process** determines precedence (typically: merged text in a single revision). **§11.9** of that amendment governs **shell-state** only; **§2.1** below fixes **SPEC-009** scope to **domain intent** without duplicating **§11.9**.
 
 **Relationship to AMD-2026-009:** Where execution includes **bounded web retrieval** or **governed website review**, **[AMD-2026-009](../amendments/AMD-2026-009.md)** **SHALL** govern search scope classes, review modes, audit fields, and failure behavior — see **§15.8**.
+
+**Relationship to AMD-2026-008:** **[AMD-2026-008](../amendments/AMD-2026-008.md)** **ratified** **1.0.0** incorporates this specification (**§3.1**) as part of the **sovereign voice / local runtime** normative package; lane and runtime obligations in **§16–§17** **SHALL** be read together with that amendment and the **AIOS-OPS-001**–**003** operations standards.
 
 ---
 
@@ -835,4 +843,4 @@ Before ratifying this specification, run the **[AIOS-SPEC-009 Pre-Ratification C
 
 ---
 
-**End of AIOS-SPEC-009 v0.5.6**
+**End of AIOS-SPEC-009 v0.5.7**

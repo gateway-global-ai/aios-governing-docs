@@ -42,6 +42,10 @@ cd scripts
 py -3 peer_review.py ../amendments/AMD-2026-006.md --round 1 --rubric full --smart-context --models deepseek openai gemini --product-context
 ```
 
+Optional environment variables (see `scripts/context_assembler.py`): **`OPENAI_PEER_REVIEW_MODEL`** (default **`gpt-5.4`**) — override e.g. `gpt-4o` or `gpt-4o-mini` if you need a different cost or behavior; **`GEMINI_PEER_REVIEW_MODEL`** (default `gemini-2.5-pro`) — use e.g. `gemini-2.0-flash` if the Pro model returns HTTP 503 (capacity).
+
+**Manifest logging:** each `peer_review.py` run writes **`peer_review_manifest_<UTC>_<slug>.json`** under `reviews/<slug>/round_<N>/` (included cross-reference files, product snapshot path/bytes, resolved models, estimated prompt tokens, output classification). Policy: **[`reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md`](../implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md)**.
+
 Or an explicit path under the governing_docs root:
 
 ```bash

@@ -1,6 +1,6 @@
 # Peer review — AMD-2026-009 (intent-scoped web retrieval and governed website review)
 
-**Cohesion track:** **Ratified** **2026-04-09** — parent **[AMD-2026-009](../../amendments/AMD-2026-009.md)** **`ratified` `1.0.0`** and packaged **[ADD-001](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **`ratified` `1.0.0`**; motion **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** executed. **Next foundation focus:** **[AMD-2026-008](../../amendments/AMD-2026-008.md)**. **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md) **v1.2.1**.
+**Cohesion track:** **Ratified** **2026-04-09** — parent **[AMD-2026-009](../../amendments/AMD-2026-009.md)** **`ratified` `1.0.0`** and packaged **[ADD-001](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **`ratified` `1.0.0`**; motion **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** executed. **Foundation sequence** **006 → 009 → 008** **complete** — **[AMD-2026-008](../../amendments/AMD-2026-008.md)** **`ratified` `1.0.0`** **2026-04-08**. **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md) **v1.2.5**.
 
 **Historical opening packet:** [`ACTIVE-TRACK-OPENING.md`](ACTIVE-TRACK-OPENING.md). **Execution log:** [`revision_log.md`](revision_log.md).
 
