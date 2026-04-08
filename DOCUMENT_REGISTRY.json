@@ -68,7 +68,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.1.9",
+    "version": "1.2.0",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -1667,7 +1667,7 @@
     "document_id": "AMD-2026-009-RATIFICATION-MOTION",
     "title": "Ratification motion — AMD-2026-009",
     "version": "",
-    "status": "draft",
+    "status": "council_ready",
     "category": "council_motion",
     "_path": "amendments/AMD-2026-009-ratification-motion.md",
     "cross_references": []

@@ -18,7 +18,7 @@
 | Layer | State |
 |-------|--------|
 | **Main AMD** | **Round 2 complete** per amendment YAML (`peer_review: round_2_complete`); syntheses under [`round_1/REVIEW_SYNTHESIS.md`](round_1/REVIEW_SYNTHESIS.md), [`round_2/REVIEW_SYNTHESIS.md`](round_2/REVIEW_SYNTHESIS.md). |
-| **Ratification motion** | **[`draft`](../../amendments/AMD-2026-009-ratification-motion.md)** — not approved. |
+| **Ratification motion** | **[`council_ready`](../../amendments/AMD-2026-009-ratification-motion.md)** **2026-04-08** — Council vote next. |
 | **ADD-001** | **Round 1 triangulated** **2026-04-08** — [`../amd_2026_009_add_001/round_1/`](../amd_2026_009_add_001/round_1/) — **PASS** numerics; **approved_with_changes** (revision before ratification if bundled). |
 | **§10 merge execution** | Checklist exists; **post-ratification** work. **Note:** merge-deltas doc **A.0** referenced **AIOS-SPEC-007** as **draft** **2026-04-03**; **SPEC-007** is now **ratified** **1.0.0** (**2026-04-08**). Reconcile merge planning against **current** SPEC-007 **on checklist execution**, not by silently assuming the old snapshot. |
 
@@ -45,8 +45,8 @@
 
 ## 5. Next gates (honest)
 
-1. **ADD-001:** Triangulation **complete** — **next:** **author revision** (§2 / §2.1) **or** Council agenda choice (**parent-only** vs bundled); motion documents both.
-2. **Motion:** Advance **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** from `draft` to **Council-ready** when Council confirms scope (parent-only vs bundled addendum).
+1. **ADD-001:** Triangulation **complete**; **v1.0.3** author revision applied — **Council** chooses **parent-only** vs **bundled** using motion **Statement**.
+2. **Motion:** **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** is **`council_ready`** **2026-04-08** — **next:** Council **vote** / approval; then **Immediate actions** if approved.
 3. **Optional documentation:** Add **`RATIFICATION_GATE_REPORT.md`** **only** if required by process—derive numerics from existing Round 2 artifacts (no fabricated scores).
 4. **Post-approval:** [`AMD-2026-009-spec-merge-checklist.md`](../../amendments/AMD-2026-009-spec-merge-checklist.md) §1–§2 against **current** specs (**SPEC-007** **1.0.0**).
 

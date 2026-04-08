@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.9
+version: 1.2.0
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -20,6 +20,9 @@ cross_references:
   - doc_id: AIOS-AMD-001-DISPOSITION-001
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.2.0
+    date: 2026-04-08
+    summary: AMD-2026-009-ratification-motion.md status council_ready 2026-04-08; next step Council vote / approval.
   - version: 1.1.9
     date: 2026-04-08
     summary: AMD-2026-009-ADD-001 v1.0.3 narrow post–Round 1 author revision (§2/§2.1 diligence + scraping).
@@ -152,4 +155,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.9.*
+*End of AIOS-AMD-TRACKER-001 v1.2.0.*

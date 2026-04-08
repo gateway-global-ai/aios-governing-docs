@@ -19,7 +19,7 @@
 
 | Role | Artifact |
 |------|----------|
-| **Ratification motion (draft)** | [`amendments/AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md) |
+| **Ratification motion** | [`amendments/AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md) — **`council_ready`** **2026-04-08** |
 | **§10 execution path** | [`amendments/AMD-2026-009-spec-merge-checklist.md`](../../amendments/AMD-2026-009-spec-merge-checklist.md) |
 | **Merge / first-slice plan** | [`amendments/AMD-2026-009-merge-deltas-and-first-slice.md`](../../amendments/AMD-2026-009-merge-deltas-and-first-slice.md) |
 | **Addendum (parent-linked)** | [`amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md`](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) — peer review folder: [`../amd_2026_009_add_001/`](../amd_2026_009_add_001/) |

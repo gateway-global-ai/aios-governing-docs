@@ -3,16 +3,23 @@ document_id: AMD-2026-009-RATIFICATION-MOTION
 subject_amendment: AMD-2026-009
 subject_version: 0.1.6
 motion_version: 1.0.0
-status: draft
+status: council_ready
 category: council_motion
 title: Ratification motion — AMD-2026-009
 author: Gateway Global AIOS
 created: 2026-04-03
 last_updated: 2026-04-08
+council_ready_date: 2026-04-08
 execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 ---
 
 # Ratification motion — AMD-2026-009
+
+## Coordinator status
+
+**Council-ready** **2026-04-08.** No further drafting is required unless **Council** requests changes. **Packet:** **[AMD-2026-009](AMD-2026-009.md)** **v0.1.6** (main instrument; **Round 2** triangulation **PASS** on [`reviews/amd_2026_009/`](../reviews/amd_2026_009/)); optional bundled addendum **[AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **v1.0.3** (Round 1 **PASS** + narrow post-review revision — see [`reviews/amd_2026_009_add_001/round_1/`](../reviews/amd_2026_009_add_001/round_1/)). **Council** may approve **parent only**, **parent + addendum**, or **defer** ADD-001 per **Statement** below.
+
+---
 
 ## Statement
 
@@ -67,4 +74,4 @@ Upon **approval**, the following **SHALL** apply:
 
 ---
 
-*End of ratification motion — AMD-2026-009, motion version 1.0.0.*
+*End of ratification motion — AMD-2026-009, motion version 1.0.0 (**Council-ready** **2026-04-08**).*
