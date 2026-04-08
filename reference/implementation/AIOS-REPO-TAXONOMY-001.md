@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-REPO-TAXONOMY-001
-version: 0.2.1
+version: 0.2.2
 status: draft
 category: reference
 title: Intent-bearing repository taxonomy — implementation note and migration appendix
@@ -15,6 +15,9 @@ cross_references:
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
     title: Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)
 amendment_history:
+  - version: 0.2.2
+    date: 2026-04-08
+    summary: "Frozen in lockstep with AMD-2026-013 v0.2.2 for peer review Round 1 — no substantive edits until peer review completes unless amendment requires revision."
   - version: 0.2.1
     date: 2026-04-08
     summary: "Committee submission packet cross-reference; aligned with AMD-2026-013 v0.2.1."
@@ -28,7 +31,7 @@ amendment_history:
 
 # AIOS-REPO-TAXONOMY-001 — Intent-bearing repository taxonomy
 
-**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md). Normative law resides in the amendment; this document operationalizes practice and may be revised for clarity unless the committee directs otherwise.
+**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v0.2.2**. **Frozen** with the amendment for **peer review Round 1** (same freeze window). Normative law resides in the amendment; this memo may be revised for clarity after peer review unless the amendment requires substantive change.
 
 ## A. Normative boundary and applicability
 
@@ -186,4 +189,4 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ---
 
-*End of AIOS-REPO-TAXONOMY-001 v0.2.1 draft.*
+*End of AIOS-REPO-TAXONOMY-001 v0.2.2 draft.*

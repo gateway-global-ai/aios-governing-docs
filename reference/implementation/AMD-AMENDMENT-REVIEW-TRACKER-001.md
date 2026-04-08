@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.0.6
+version: 1.0.7
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -17,6 +17,9 @@ cross_references:
   - doc_id: AMD-2026-013
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
 amendment_history:
+  - version: 1.0.7
+    date: 2026-04-08
+    summary: AMD-2026-013 Round 1 triangulation PASS — reviews/amd_2026_013/round_1; v0.2.2 frozen.
   - version: 1.0.6
     date: 2026-04-08
     summary: AMD-2026-013 review packet column — COMMITTEE-REVIEW-BRIEF-AMD-2026-013; v0.2.1 pointer.
@@ -54,7 +57,7 @@ amendment_history:
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
 | **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/`](../reviews/amd_2026_009/) | **Round 2** synthesis positive — **next:** finalize motion **[`amendments/AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)**; council; **§10** spec-merge checklist |
-| **AMD-2026-013** | `draft` | **[`COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md`](COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md)** (**AIOS-COMMITTEE-BRIEF-AMD-2026-013**) | **Intent-bearing repository taxonomy** — **[`amendments/AMD-2026-013.md`](../amendments/AMD-2026-013.md)** **v0.2.1**; **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)**; **next:** committee review → stabilize → **AMD-2026-005** peer review |
+| **AMD-2026-013** | `under_review` | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — **Round 1** [`REVIEW_SYNTHESIS`](../reviews/amd_2026_013/round_1/REVIEW_SYNTHESIS.md) **PASS** | **v0.2.2** frozen; **next:** optional author revision → **Round 2** or coordinator path to motion |
 
 ---
 
@@ -72,4 +75,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.0.6.*
+*End of AIOS-AMD-TRACKER-001 v1.0.7.*
