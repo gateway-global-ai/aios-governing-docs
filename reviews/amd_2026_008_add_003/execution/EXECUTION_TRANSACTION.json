@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.2.0",
+  "review_slug": "amd_2026_008_add_003",
+  "source_repo": "C:/Apps/ai-os-voice-interface",
+  "product_repo_path": "C:/Apps/ai-os-voice-interface",
+  "source_branch": "main",
+  "working_branch": "execution/amd_2026_008_add_003/runner-20260408-214701Z",
+  "base_commit_sha": "2997f9b765d489bc57dbdd851768400f53e5ddbf",
+  "head_commit_sha": "2997f9b765d489bc57dbdd851768400f53e5ddbf",
+  "governing_manifest_label": "amd_2026_006_workspace_track",
+  "evidence_bundle_hash": null,
+  "architect_plan_hash": "3eaf857513684b89a6bff91e64d7ffc4c6ef8060db4321a307e3573f429bb586",
+  "ui_plan_hash": "14931fad8f0713fd3d411b66f783ae835547f4b20543de34644ebb7494de4358",
+  "execution_scope": "mvp_runner_amd_2026_008_add_003",
+  "allowed_surfaces": [
+    "shell (composition contract / disclosure affordances)",
+    "voice canvas (draft vs substantive / gate states)",
+    "draft send publish flow (blocked send, originality disclosure)"
+  ],
+  "required_visual_proofs": [
+    "screenshot: user-visible state when a \u00a75.9 fail-closed or DCP outcome is surfaced (banner, toast, or modal)",
+    "screenshot: draft or send path showing composition contract or professional disclosure when required"
+  ],
+  "created_at": "2026-04-08T21:47:01Z",
+  "updated_at": "2026-04-08T21:47:01Z",
+  "validation_started_at": null,
+  "validation_completed_at": null,
+  "artifacts": {
+    "execution_contract": "EXECUTION_CONTRACT.md",
+    "validation_results": "VALIDATION_RESULTS.md",
+    "worklog": "WORKLOG.md",
+    "changed_files": "CHANGED_FILES.md",
+    "human_review_packet": "HUMAN_REVIEW_PACKET.md",
+    "visual_evidence_dir": "VISUAL_EVIDENCE"
+  },
+  "failure_stage": null,
+  "operator_disclosures": {
+    "execution_lane_posture": "worktree_bound",
+    "validation_proof_available": false,
+    "validation_non_proof_reason": "skip_validation",
+    "visual_capture_automated": false
+  },
+  "human_review_status": {
+    "state": "pending",
+    "reviewed_at": null,
+    "reviewer": null,
+    "notes": null
+  },
+  "verification_status": "branch_ready",
+  "promotion_status": "blocked",
+  "overrides_disclosed": true,
+  "notes": "MVP runner \u2014 visual capture manual; see VISUAL_EVIDENCE/CAPTURE_CHECKLIST.md. operator_disclosures states binding and validation proof honestly.",
+  "governance_repo_path": ".",
+  "worktree_path": "C:/Apps/aios-exec-amd_2026_008_add_003-20260408-214701Z",
+  "isolation_mode": "worktree",
+  "runner_name": "run_isolated_execution_demo.py",
+  "runner_version": "0.3.1"
+}

@@ -1,5 +1,5 @@
 ---
-review_id: REV-AMD-2026-008-002
+review_id: REV-AMD-2026-008-001
 document_reviewed: amendments/AMD-2026-008.md
 document_version: 1.2.0
 reviewer: DeepSeek R3
@@ -80,7 +80,7 @@ cross_references:
 **Scores:** Architectural Fidelity: 5, Legal Enforceability: 4, Style & Clarity: 2
 
 **Recommendation:** Remove decorative bolding and use standard emphasis conventions:
-**Proposed Text:** "This amendment ratifies, as a single governed package, the sovereign runtime stack for speech-input, interpretation, and speech-output, and binds the platform to incorporated normative documents listed in Section 3. It does not replace substantive law in those documents; it adopts them for ratification and adds the obligations in Sections 4โ€“6."
+**Proposed Text:** "This amendment ratifies, as a single governed package, the sovereign runtime stack for speech-input, interpretation, and speech-output, and binds the platform to incorporated normative documents listed in Section 3. It does not replace substantive law in those documents; it adopts them for ratification and adds the obligations in Sections 4โÿÿ6."
 
 ### ยง3.1 Documents adopted as substantive normative law
 
@@ -96,7 +96,7 @@ cross_references:
 
 **Scores:** Legal Enforceability: 4, Practical Operability: 3, Friction Factor: 4
 
-**Recommendation:** Add timeline to ยง3.3.4: "If a conflict arises between Sections 4โ€“6 of this amendment and a later revision of an incorporated document, the Council SHALL reconcile the conflict within 30 business days through amendment or supersession in accordance with the Governance Constitution."
+**Recommendation:** Add timeline to ยง3.3.4: "If a conflict arises between Sections 4โÿÿ6 of this amendment and a later revision of an incorporated document, the Council SHALL reconcile the conflict within 30 business days through amendment or supersession in accordance with the Governance Constitution."
 
 ### ยง4.4 Shell and session summary
 

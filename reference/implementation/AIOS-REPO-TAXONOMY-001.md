@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-REPO-TAXONOMY-001
-version: 0.2.1
-status: draft
+version: 1.0.0
+status: ratified
 category: reference
 title: Intent-bearing repository taxonomy — implementation note and migration appendix
 author: Gateway Global AIOS
 created: 2026-04-08
-last_updated: 2026-04-08
+last_updated: 2026-04-07
 cross_references:
   - doc_id: AMD-2026-013
     title: Intent-Bearing Repository Taxonomy (Architecture and Builder Control)
@@ -15,6 +15,18 @@ cross_references:
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
     title: Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)
 amendment_history:
+  - version: 1.0.0
+    date: 2026-04-07
+    summary: "Ratified in lockstep with AMD-2026-013 v1.0.0; substantive content frozen at v0.2.4 memo revision."
+  - version: 0.2.4
+    date: 2026-04-08
+    summary: "Mirror AMD-2026-013 v0.2.4 §6.1 — maintainer merge authority, planning input-only, README precedence."
+  - version: 0.2.3
+    date: 2026-04-08
+    summary: "§F conformance hook (non-normative); aligned with AMD-2026-013 v0.2.3 Round 2 freeze."
+  - version: 0.2.2
+    date: 2026-04-08
+    summary: "Frozen in lockstep with AMD-2026-013 v0.2.2 for peer review Round 1 — no substantive edits until peer review completes unless amendment requires revision."
   - version: 0.2.1
     date: 2026-04-08
     summary: "Committee submission packet cross-reference; aligned with AMD-2026-013 v0.2.1."
@@ -28,7 +40,7 @@ amendment_history:
 
 # AIOS-REPO-TAXONOMY-001 — Intent-bearing repository taxonomy
 
-**Status:** draft implementation memo — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md). Normative law resides in the amendment; this document operationalizes practice and may be revised for clarity unless the committee directs otherwise.
+**Status:** ratified implementation memo **v1.0.0** — operational detail for [AMD-2026-013](../../amendments/AMD-2026-013.md) **v1.0.0** (substantive freeze **v0.2.4**). Normative law resides in the amendment; this memo **may** be revised for clarity in non-normative ways unless a future ratified amendment requires substantive change.
 
 ## A. Normative boundary and applicability
 
@@ -111,12 +123,13 @@ Product trees **should** mirror intent classes under `docs/` or agreed roots per
 | Execution demo packet | `reviews/demos/demo_exec_ui_review/planning/REVIEW_TARGET.yaml` | Demo — intent-bearing review target declared in YAML |
 | Amendment review (current) | `reviews/amd_2026_012/round_2/` | Amendment — target path `reviews/amendments/amd_2026_012/` pending Phase 2 |
 | Process packet | `reviews/aios_dev_conformance_process/` | Reference / process — target under `reviews/reference_docs/...` pending Phase 2 and mapping |
+| Classified demo root | `reviews/demos/demo_exec_ui_review/` | Same demo, showing `reviews/demos/<leaf>/` prefix after Phase 1 |
 
 ---
 
 ## C. Architecture agent impact — separation of duties
 
-Normative summary: see [AMD-2026-013 §6](../../amendments/AMD-2026-013.md).
+Normative summary: see [AMD-2026-013 §6](../../amendments/AMD-2026-013.md) and **§6.1** (accountable **maintainer** merge approval for taxonomy changes; **AIOS-AMD-PLAN-001** input-only; **builder** = merge authority and published root list / **README** precedence per §6.1).
 
 - The **architecture role** defines taxonomy rules and documents them here and in planning prompts as needed.
 - The **builder** maintains the tree according to those rules and the migration map.
@@ -175,6 +188,15 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ---
 
+## F. Conformance and validation (operator guidance, non-normative)
+
+This section is **not** new binding law; it records **optional** hooks aligned with [AMD-2026-013](../../amendments/AMD-2026-013.md) §2.1 (new intent-bearing roots under governed namespaces).
+
+- **Optional automation:** CI or `scripts/governance_integrity_check.py` may flag new top-level folders under `reviews/` that do not match a declared class or a documented exception in [`CLASSIFICATION_AND_MIGRATION.md`](../../reviews/CLASSIFICATION_AND_MIGRATION.md). Remediation remains human—architecture/builder alignment—not silent auto-rename.
+- **Dual-read:** During migration, keep old/new path pairs documented in the migration map until the builder retires the old path.
+
+---
+
 ## Cross-references
 
 | Document | Purpose |
@@ -186,4 +208,4 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ---
 
-*End of AIOS-REPO-TAXONOMY-001 v0.2.1 draft.*
+*End of AIOS-REPO-TAXONOMY-001 v0.2.4 draft.*

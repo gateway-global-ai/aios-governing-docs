@@ -1,0 +1,11 @@
+# Optional review target for run_isolated_execution_demo.py — ADD-003 composition / control-plane scope.
+# Quote list items that contain ":" so YAML keeps them as strings.
+
+allowed_surfaces:
+  - shell (composition contract / disclosure affordances)
+  - voice canvas (draft vs substantive / gate states)
+  - draft send publish flow (blocked send, originality disclosure)
+
+required_visual_proofs:
+  - "screenshot: user-visible state when a §5.9 fail-closed or DCP outcome is surfaced (banner, toast, or modal)"
+  - "screenshot: draft or send path showing composition contract or professional disclosure when required"

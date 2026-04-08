@@ -9,11 +9,14 @@
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
-| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.2 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.0.6 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
+| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.2.6 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |
+| AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001 | Composition control plane — architecture memo (bounded domains and addendum seams) | 1.0.0 | draft | reference | `reference/implementation/AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001.md` |
+| AIOS-COMPOSITION-CONTROL-RD-NOTES-001 | Composition control plane — R&D and knowledge capture (AMD-2026-008 addendum track) | 1.0.0 | draft | reference | `reference/implementation/AIOS-COMPOSITION-CONTROL-RD-NOTES-001.md` |
 | AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core/technical_manifesto.md` |
 | AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core/governance_constitution.md` |
 | AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core/master_platform_operating_agreement.md` |
@@ -37,49 +40,60 @@
 | AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
 | AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
-| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.2.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-PEER-REVIEW-MODEL-ROUTING-001 | Peer review model routing and evidence policy (AIOS) | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md` |
+| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.4.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
 | AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
 | AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | AIOS-REF-013 | Implementation runway pointer (product conformance) | 1.6.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-RUNWAY-POINTER.md` |
-| AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 0.2.1 | draft | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
+| AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 1.0.0 | ratified | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
+| AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) | 1.0.0 | draft | reference | `reference/implementation/AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
 | AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
-| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-007 | Google Workspace Integration Governance | 1.0.1 | ratified | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
-| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.5 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
+| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.7 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
-| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
+| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.5 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
 | AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
 | AIOS-SPEC-012 | Workspace Domain Pack v1 | 0.1.0 | draft | specification | `specifications/WorkspaceDomainPackV1.md` |
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
+| AMD-001 | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
-| AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
+| AMD-2026-006 | Google Workspace Governed Integration Plane | 1.0.0 | ratified | amendment | `amendments/AMD-2026-006.md` |
+| AMD-2026-006-RATIFICATION-MOTION | Ratification motion — AMD-2026-006 / AIOS-SPEC-007 | — | approved | council_motion | `amendments/AMD-2026-006-ratification-motion.md` |
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
 | AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
-| AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
-| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
-| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.1 | draft | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
-| AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.0 | draft | operational_plan | `amendments/AMD-2026-009-merge-deltas-and-first-slice.md` |
-| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | draft | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
-| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
+| AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-008.md` |
+| AMD-2026-008-ADD-001 | Base Shell Navigation Primitives and Start-Here Control | 0.1.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-001-base-shell-navigation-primitives-and-start-here-control.md` |
+| AMD-2026-008-ADD-002 | Verbose Grounding, Shell Voice Output Control, and Output Packaging | 0.13.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-002-verbose-grounding-shell-voice-output-and-output-packaging.md` |
+| AMD-2026-008-ADD-003 | Composition Control Plane for Messages, Invites, and Documents | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md` |
+| AMD-2026-008-ADD-003-ANNEX-A | ADD-003 Annex A — Informative composition and knowledge-basis examples | 1.0.0 | draft | amendment_addendum_annex | `amendments/AMD-2026-008-ADD-003-ANNEX-A-informative-composition-examples.md` |
+| AMD-2026-008-ADD-003-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-003 (composition control plane) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-003-ratification-motion.md` |
+| AMD-2026-008-RATIFICATION-MOTION | Ratification motion — AMD-2026-008 | — | approved | council_motion | `amendments/AMD-2026-008-ratification-motion.md` |
+| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-009.md` |
+| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
+| AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.1 | draft | operational_plan | `amendments/AMD-2026-009-merge-deltas-and-first-slice.md` |
+| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | approved | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
+| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.1 | ratified | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
 | AMD-2026-010 | Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) | 0.2.0 | ratified | amendment | `amendments/AMD-2026-010.md` |
 | AMD-2026-010-RATIFICATION-MOTION | Ratification motion — AMD-2026-010 | — | approved | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
 | AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 1.0.0 | ratified | amendment | `amendments/AMD-2026-011.md` |
 | AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
 | AMD-2026-012 | Shell Authority and Voice-First Entry | 1.0.0 | ratified | amendment | `amendments/AMD-2026-012.md` |
 | AMD-2026-012-RATIFICATION-MOTION | Ratification motion — AMD-2026-012 | — | approved | council_motion | `amendments/AMD-2026-012-ratification-motion.md` |
-| AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 0.2.1 | draft | amendment | `amendments/AMD-2026-013.md` |
+| AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-013.md` |
+| AMD-2026-013-RATIFICATION-MOTION | Ratification motion — AMD-2026-013 | — | approved | council_motion | `amendments/AMD-2026-013-ratification-motion.md` |
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
-| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
-| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | draft | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
-| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | draft | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
-| — | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
+| LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | ratified | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
+| OLLAMA_RUNTIME_STANDARD | Ollama Local Model Runtime Standard | 0.1.0 | ratified | operations | `operations/OLLAMA_RUNTIME_STANDARD.md` |
+| ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD | Originality and Source-Boundary Verification (Implementation Home) | 0.4.1 | draft | operations | `operations/ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD.md` |
+| WHISPER_RUNTIME_STANDARD | Whisper / faster-whisper Local STT Runtime Standard | 0.1.0 | ratified | operations | `operations/WHISPER_RUNTIME_STANDARD.md` |
 | — | README | — | unregistered | legal | `legal/README.md` |
 | — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
@@ -101,6 +115,16 @@
 | AIOS-SPEC-009 | — |
 | AMD-2026-012 | — |
 
+### AMD-001 — taxonomy, classification, and disposition (AIOS-AMD-001-DISPOSITION-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-003 | — |
+| AIOS-SPEC-004 | — |
+| AIOS-SPEC-005 | — |
+| AMD-001 | — |
+| AMD-2026-013 | — |
+
 ### Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) (AIOS-AMD-PLAN-001)
 
 | Referenced Document | Relationship |
@@ -114,12 +138,17 @@
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
+| AIOS-AMD-001-DISPOSITION-001 | — |
 | AIOS-AMD-PLAN-001 | — |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | — |
+| AMD-001 | — |
 | AMD-2026-005 | — |
 | AMD-2026-006 | — |
+| AMD-2026-006-RATIFICATION-MOTION | — |
 | AMD-2026-007 | — |
 | AMD-2026-008 | — |
+| AMD-2026-008-ADD-003-RATIFICATION-MOTION | — |
+| AMD-2026-008-RATIFICATION-MOTION | — |
 | AMD-2026-009 | — |
 | AMD-2026-013 | — |
 
@@ -149,6 +178,29 @@
 | AMD-2026-007 | — |
 | AMD-2026-012 | — |
 | AMD-2026-013 | — |
+
+### Composition control plane — architecture memo (bounded domains and addendum seams) (AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMPOSITION-CONTROL-RD-NOTES-001 | — |
+| AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
+
+### Composition control plane — R&D and knowledge capture (AMD-2026-008 addendum track) (AIOS-COMPOSITION-CONTROL-RD-NOTES-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001 | — |
+| AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
 
 ### AIOS Technical Manifesto & Platform Economics (AIOS-CORE-001)
 
@@ -388,8 +440,10 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AMD-2026-007 | references |
+| AMD-2026-009 | references |
 | AMD-2026-010 | references |
 | AMD-2026-012 | references |
+| AMD-2026-013 | references |
 
 ### Ratification motion — AIOS-DEV-PROC-001 (AIOS-RAT-MOTION-DEV-PROC-001)
 
@@ -442,6 +496,17 @@
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | — |
 | AIOS-EXEC-DEMO-001 | — |
 | AMD-2026-013 | — |
+
+### Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) (AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001 | — |
+| AIOS-COMPOSITION-CONTROL-RD-NOTES-001 | — |
+| AIOS-SPEC-006 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
 
 ### AIOS NodeContract Specification (AIOS-SPEC-001)
 
@@ -503,8 +568,13 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | — | — |
+| AIOS-SPEC-006 | — |
 | AIOS-SPEC-009 | — |
+| AIOS-SPEC-010 | — |
+| AMD-2026-006 | — |
+| AMD-2026-006-RATIFICATION-MOTION | — |
 | AMD-2026-009 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 
 ### Intent Discovery & Onboarding Framework (AIOS-SPEC-008)
 
@@ -529,7 +599,9 @@
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | references |
 | AMD-2026-007 | constrained_by |
 | AMD-2026-008 | references |
+| AMD-2026-008-RATIFICATION-MOTION | references |
 | AMD-2026-009 | constrained_by |
+| AMD-2026-009-RATIFICATION-MOTION | references |
 | LOCAL_TTS_RUNTIME_STANDARD | references |
 | OLLAMA_RUNTIME_STANDARD | references |
 | WHISPER_RUNTIME_STANDARD | references |
@@ -553,6 +625,7 @@
 | AIOS-SPEC-005 | complements |
 | AIOS-SPEC-009 | constrained_by |
 | AMD-2026-009 | constrained_by |
+| AMD-2026-009-RATIFICATION-MOTION | references |
 
 ### Security & Sandboxing Model (AIOS-SPEC-011)
 
@@ -596,6 +669,7 @@
 | AIOS-SPEC-006 | amends |
 | AIOS-SPEC-007 | ratifies |
 | AMD-2026-005 | amends |
+| AMD-2026-006-RATIFICATION-MOTION | ratification_motion |
 
 ### Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI (AMD-2026-007)
 
@@ -614,10 +688,50 @@
 |---------------------|--------------|
 | AIOS-SPEC-007 | — |
 | AIOS-SPEC-009 | — |
+| AMD-2026-008-ADD-003-RATIFICATION-MOTION | ratification_motion |
+| AMD-2026-008-RATIFICATION-MOTION | ratification_motion |
 | LOCAL_TTS_RUNTIME_STANDARD | — |
 | MPOA | — |
 | OLLAMA_RUNTIME_STANDARD | — |
 | WHISPER_RUNTIME_STANDARD | — |
+
+### Base Shell Navigation Primitives and Start-Here Control (AMD-2026-008-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-002 | — |
+
+### Verbose Grounding, Shell Voice Output Control, and Output Packaging (AMD-2026-008-ADD-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-003 | — |
+| MPOA | — |
+
+### Composition Control Plane for Messages, Invites, and Documents (AMD-2026-008-ADD-003)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001 | — |
+| AIOS-COMPOSITION-CONTROL-RD-NOTES-001 | — |
+| AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003-ANNEX-A | — |
+| AMD-2026-008-ADD-003-RATIFICATION-MOTION | ratification_motion |
+| MPOA | — |
+| ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD | — |
+
+### ADD-003 Annex A — Informative composition and knowledge-basis examples (AMD-2026-008-ADD-003-ANNEX-A)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
 
 ### Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) (AMD-2026-009)
 
@@ -627,6 +741,7 @@
 | AIOS-SPEC-009 | — |
 | AIOS-SPEC-010 | — |
 | AMD-2026-007 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 | WORKSPACE.md | — |
 
 ### Retrieval backend neutrality (beyond Google PSE / Custom Search) (AMD-2026-009-ADD-001)
@@ -634,9 +749,11 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | — | — |
+| — | — |
 | AIOS-SPEC-007 | — |
 | AIOS-SPEC-010 | — |
 | AMD-2026-009 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 
 ### Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) (AMD-2026-010)
 
@@ -675,11 +792,14 @@
 |---------------------|--------------|
 | AIOS-AMD-PLAN-001 | — |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | — |
+| AIOS-CORE-002 | — |
 | AIOS-EXEC-DEMO-001 | — |
 | AIOS-REPO-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
 | AMD-2026-005 | — |
 | AMD-2026-007 | — |
 | AMD-2026-012 | — |
+| AMD-2026-013-RATIFICATION-MOTION | — |
 
 ### Privacy Policy (LEGAL-001)
 
@@ -700,6 +820,7 @@
 | AIOS-SPEC-009 | references |
 | AIOS-SPEC-009 §17 | references |
 | AMD-2026-008 | references |
+| AMD-2026-008-RATIFICATION-MOTION | references |
 
 ### Ollama Local Model Runtime Standard (OLLAMA_RUNTIME_STANDARD)
 
@@ -708,6 +829,14 @@
 | AIOS-SPEC-007 | references |
 | AIOS-SPEC-009 | references |
 | AMD-2026-007 | references |
+| AMD-2026-008 | references |
+| AMD-2026-008-RATIFICATION-MOTION | references |
+
+### Originality and Source-Boundary Verification (Implementation Home) (ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AMD-2026-008-ADD-003 | — |
 
 ### Whisper / faster-whisper Local STT Runtime Standard (WHISPER_RUNTIME_STANDARD)
 
@@ -716,13 +845,14 @@
 | AIOS-SPEC-009 | references |
 | AIOS-SPEC-009 §17 | references |
 | AMD-2026-008 | references |
+| AMD-2026-008-RATIFICATION-MOTION | references |
 
 ---
 
 ## Document Statistics
 
-- **Total documents:** 80
-- **Ratified:** 30
-- **Draft:** 37
+- **Total documents:** 94
+- **Ratified:** 43
+- **Draft:** 33
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

@@ -3,20 +3,43 @@ document_id: AMD-2026-009-RATIFICATION-MOTION
 subject_amendment: AMD-2026-009
 subject_version: 0.1.6
 motion_version: 1.0.0
-status: draft
+status: approved
 category: council_motion
 title: Ratification motion — AMD-2026-009
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-09
+council_ready_date: 2026-04-08
+approved: 2026-04-09
 execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 ---
 
 # Ratification motion — AMD-2026-009
 
+## Coordinator status
+
+**Ratification executed** **2026-04-09.** **Council** approved **AMD-2026-009** **v0.1.6** substantive text as **ratified** **1.0.0** and **AMD-2026-009-ADD-001** **v1.0.3** substantive text as **ratified** **1.0.0** (bundled package). Repository follow-through: amendment records, **[spec-merge checklist](AMD-2026-009-spec-merge-checklist.md)** execution, **non-goals** preserved, **§4** first-implementation gate documented.
+
+| Step | State |
+|------|--------|
+| Amendment / addendum `status` + `ratification_target` | **Executed** **2026-04-09** |
+| Checklist §1–§2 merges (SPEC-007 / 009 / 010, policy index, WORKSPACE) | **Executed** **2026-04-09** (doctrine alignment; §4 implementation gate = process / future PR) |
+| Checklist §3 non-goals | **Preserved** in merged text |
+| Checklist §4 narrow first slice | **Recorded** as process gate (not product code in this repo) |
+
+---
+
+## Historical — pre-vote (2026-04-08)
+
+**Council-ready** **2026-04-08.** **Packet:** **[AMD-2026-009](AMD-2026-009.md)** **v0.1.6** (main instrument; **Round 2** triangulation **PASS** on [`reviews/amd_2026_009/`](../reviews/amd_2026_009/)); optional bundled addendum **[AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **v1.0.3** (Round 1 **PASS** + narrow post-review revision — see [`reviews/amd_2026_009_add_001/round_1/`](../reviews/amd_2026_009_add_001/round_1/)).
+
+---
+
 ## Statement
 
 Council is asked to **ratify** **[AMD-2026-009](AMD-2026-009.md)** at **version 0.1.6** (*Intent-Scoped Web Retrieval and Governed Website Review / External Knowledge Acquisition*), as the governing amendment for **bounded web retrieval and governed website review** in the AIOS stack, after **peer review Round 2** (triangulated) recorded on the amendment. *(Versions 0.1.3–0.1.6 add procedural artifacts: spec-merge checklist, ratification motion, pre-merge delta / first-slice plan, and addendum AMD-2026-009-ADD-001; normative substance aligns with v0.1.2 editorial and Round 2 review.)*
+
+**Evidence — addendum [AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) (optional bundled artifact):** **Round 1** triangulated peer review **2026-04-08** — [`REVIEW_SYNTHESIS.md`](../reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../reviews/amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](AMD-2026-005.md)** numerics; disposition **approved_with_changes**; **v1.0.3** narrow author revision (**§2** / **§2.1** / **§2.2**) applied **2026-04-08** in response to Round 1 themes. Council may ratify **parent only** and defer ADD-001 per agenda.
 
 ## Scope (what this ratifies)
 
@@ -65,4 +88,4 @@ Upon **approval**, the following **SHALL** apply:
 
 ---
 
-*End of ratification motion — AMD-2026-009, motion version 1.0.0.*
+*End of ratification motion — AMD-2026-009, motion version 1.0.0 (**approved** **2026-04-09**).*

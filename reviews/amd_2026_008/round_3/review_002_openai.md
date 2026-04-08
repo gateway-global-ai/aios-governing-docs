@@ -1,6 +1,6 @@
-```markdown
-review_id: REV-AMD-2026-008-003
-document_reviewed: AMD-2026-008
+---
+review_id: REV-AMD-2026-008-002
+document_reviewed: amendments/AMD-2026-008.md
 document_version: 1.2.0
 reviewer: OpenAI
 review_date: 2026-04-06
@@ -94,4 +94,3 @@ composite_score: 4.0
 1. Align document formatting and terminology with the AIOS Writing Style Guide.
 2. Replace subjective language in §3.3 with an objective trigger for re-ratification.
 3. Specify mechanisms for readiness and fallback disclosures, including UI elements and operator interfaces.
-```
