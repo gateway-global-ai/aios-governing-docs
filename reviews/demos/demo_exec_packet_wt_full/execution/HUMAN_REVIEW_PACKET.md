@@ -1,6 +1,6 @@
-# Human review packet — demo_exec_ui_review
+# Human review packet — demos/demo_exec_packet_wt_full
 
-> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
+> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demos/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
 
 **Status:** draft — MVP runner output
 
@@ -26,7 +26,7 @@ Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the i
 
 ## Summary
 
-- **Isolation:** worktree `C:/Apps/aios-exec-demo_exec_ui_review-20260408-050629Z`
+- **Isolation:** worktree `C:/Apps/aios-exec-demos/demo_exec_packet_wt_full-20260408-051145Z`
 - **Base commit:** `8713c6df134fc27a76976d4b440471ba53d61dfa`
 - **verification_status:** `repo_truth_ok`
 - **promotion_status:** `ready_for_human_review`
@@ -42,17 +42,14 @@ Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the i
 ### Declared review target (visible behavior scope)
 
 **allowed_surfaces** (from `planning/REVIEW_TARGET.yaml`):
-- WorkspaceHubSurface (workspace hub overlay — connect / hub state)
-- ShellIdentityBar (account / session identity)
-- CommandRail (command entry / rail chrome)
-- ShellVoiceIdlePanel (voice idle / listening affordance when applicable)
-- WorkspaceOnboardingSurface (first-run or reconnect onboarding, if shown)
+- workspace hub (Google Workspace connect / read slice)
+- shell identity bar
+- command rail
+- workspace onboarding surface
 
 **required_visual_proofs** (from `planning/REVIEW_TARGET.yaml`):
-- screenshot: full app shell with identity bar + command rail visible (baseline)
-- screenshot: workspace hub open showing connection or auth state (signed-in, auth_required, or error — whichever matches run)
-- screenshot: same session with voice idle panel visible OR note N/A if voice chrome hidden by design for this branch
-- short note: which route or overlay state each image corresponds to (one line each)
+- screenshot: workspace hub after sign-in or equivalent connected state
+- screenshot: shell chrome with voice idle panel visible (if applicable to branch)
 
 ### Still requires manual visual inspection
 

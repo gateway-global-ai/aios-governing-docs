@@ -28,7 +28,7 @@ From governance repo root:
 py -3 scripts/run_isolated_execution_demo.py --review-slug amd_2026_006 --product-repo /path/to/ai-os-voice-interface --source-branch main
 ```
 
-Packet-only (no git / no npm): `--no-git`. See **[AIOS-EXEC-DEMO-001](../../reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** Annex E and [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py).
+Packet-only (no git / no npm): `--no-git`. **Sample/demo slugs** live under **`reviews/demos/`** — use **`--review-slug demos/<demo_slug>`** (see [`reviews/demos/demo_exec_packet_samples/README.md`](../../reviews/demos/demo_exec_packet_samples/README.md)). See **[AIOS-EXEC-DEMO-001](../../reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** Annex E and [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py).
 
 ## Review target (optional, planning folder)
 

@@ -1,6 +1,6 @@
-# Human review packet — demo_exec_packet_no_git
+# Human review packet — demos/demo_exec_packet_no_git
 
-> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
+> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demos/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
 
 **Status:** draft — MVP runner output
 

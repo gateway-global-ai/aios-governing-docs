@@ -20,7 +20,7 @@
 | AIOS-COUNCIL-BRIEF-002 | Council review brief — AI OS interface implementation control program | 1.1.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-INTERFACE-CONTROL-001.md` |
 | AIOS-COUNCIL-BRIEF-003 | Council review brief — AIOS development conformance process (AIOS-DEV-PROC-001) | 1.0.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-DEV-PROC-001.md` |
 | AIOS-DEV-PROC-001 | AI OS development conformance — triangulated peer review | 1.0.0 | draft | reference | `reference/implementation/AIOS-DEVELOPMENT-CONFORMANCE-PROCESS.md` |
-| AIOS-EXEC-DEMO-001 | Isolated execution demonstration pipeline (draft proposal) | 0.1.4 | draft | reference | `reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md` |
+| AIOS-EXEC-DEMO-001 | Isolated execution demonstration pipeline (draft proposal) | 0.1.5 | draft | reference | `reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md` |
 | AIOS-IMPL-LEDGER-001 | AIOS Implementation Ledger and Anti-Drift Operating Loop | 1.1.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-LEDGER.md` |
 | AIOS-MASTER-IMPL-001 | AIOS Master Implementation Program (cross-repo) | 1.2.4 | draft | reference | `reference/implementation/AIOS-MASTER-IMPLEMENTATION-PROGRAM.md` |
 | AIOS-MBL009-TRACKER-001 | MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker | 1.0.0 | open | reference | `reference/implementation/MBL-009-tracker-amd-2026-007-policy-index.md` |

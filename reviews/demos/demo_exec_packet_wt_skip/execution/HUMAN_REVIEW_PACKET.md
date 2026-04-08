@@ -1,6 +1,6 @@
-# Human review packet — demo_exec_packet_wt_full
+# Human review packet — demos/demo_exec_packet_wt_skip
 
-> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
+> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demos/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
 
 **Status:** draft — MVP runner output
 
@@ -19,42 +19,34 @@ Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the i
 
 ## Binding and proof (from `operator_disclosures`)
 
+> **Validation proof:** **`validation_skipped`** or **`--skip-validation`** means **no install/build/test proof** was produced. That is an honest **non-success** for build health — not a soft pass.
+
 - **execution_lane_posture:** `worktree_bound`
-- **validation_proof_available:** True
-- **validation_non_proof_reason:** None
+- **validation_proof_available:** False
+- **validation_non_proof_reason:** skip_validation
 - **visual_capture_automated:** False
 
 ## Summary
 
-- **Isolation:** worktree `C:/Apps/aios-exec-demo_exec_packet_wt_full-20260408-050617Z`
-- **Base commit:** `8713c6df134fc27a76976d4b440471ba53d61dfa`
-- **verification_status:** `repo_truth_ok`
-- **promotion_status:** `ready_for_human_review`
+- **Isolation:** worktree `C:/Apps/aios-exec-demos/demo_exec_packet_wt_skip-20260408-051141Z`
+- **Base commit:** `2997f9b765d489bc57dbdd851768400f53e5ddbf`
+- **verification_status:** `branch_ready`
+- **promotion_status:** `blocked`
 - **failure_stage:** `null`
 
 ## What validation proved vs what is still manual
 
 ### Proven by automated validation
 
-- **Repo binding:** `source_branch`, `worktree_path`, and commit SHAs in `EXECUTION_TRANSACTION.json` when this run created a worktree.
-- **Install / build / test:** see `VALIDATION_RESULTS.md` for commands, exit codes, and captured logs.
+- **Build/test proof:** not available for this run (skipped, failed, or not reached). See `VALIDATION_RESULTS.md` and `validation_non_proof_reason` in `operator_disclosures` — **not** a soft pass.
 
 ### Declared review target (visible behavior scope)
 
-**allowed_surfaces** (from `planning/REVIEW_TARGET.yaml`):
-- workspace hub (Google Workspace connect / read slice)
-- shell identity bar
-- command rail
-- workspace onboarding surface
-
-**required_visual_proofs** (from `planning/REVIEW_TARGET.yaml`):
-- screenshot: workspace hub after sign-in or equivalent connected state
-- screenshot: shell chrome with voice idle panel visible (if applicable to branch)
+*No entries in `planning/REVIEW_TARGET.yaml` — add `allowed_surfaces` and `required_visual_proofs` when the review must judge UI/shell/workspace behavior.*
 
 ### Still requires manual visual inspection
 
 - The runner does **not** produce screenshots. Capture evidence under `VISUAL_EVIDENCE/` per `CAPTURE_CHECKLIST.md`.
-- **Minimum manual captures:** satisfy **required_visual_proofs** above (transaction mirrors this list).
 
 ## Decision requested
 
@@ -67,5 +59,5 @@ Can you approve **next action** given **what is actually proven** above (binding
 
 ## Overrides disclosed
 
-- None.
+- `--no-git` or `--skip-validation` was used.
 

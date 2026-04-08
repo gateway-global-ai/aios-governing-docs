@@ -10,6 +10,9 @@ Usage (governance repo root):
   py -3 scripts/run_isolated_execution_demo.py --review-slug amd_2026_006 \\
       --product-repo C:/Apps/ai-os-voice-interface --source-branch main
 
+  py -3 scripts/run_isolated_execution_demo.py --review-slug demos/demo_exec_ui_review \\
+      --product-repo C:/Apps/ai-os-voice-interface --source-branch main
+
   py -3 scripts/run_isolated_execution_demo.py --review-slug amd_2026_006 --no-git
 
 See: reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md
@@ -333,6 +336,12 @@ def _sanitize_branch_segment(s: str) -> str:
     return re.sub(r"[^a-zA-Z0-9._/-]+", "-", s).strip("-") or "slug"
 
 
+def _is_demo_execution_slug(slug: str) -> bool:
+    """True for demo_exec_* sample packets (optional ``demos/`` prefix after reviews/)."""
+    tail = slug.split("/")[-1] if "/" in slug else slug
+    return tail.startswith("demo_exec_")
+
+
 def _write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -420,11 +429,11 @@ def _write_aux_artifacts(
         )
 
     sample_note = ""
-    if slug.startswith("demo_exec_"):
+    if _is_demo_execution_slug(slug):
         sample_note = (
             "> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, "
             "not an authoritative product verdict or amendment review outcome. Index: "
-            "[`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).\n\n"
+            "[`reviews/demos/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).\n\n"
         )
 
     hrp = (
@@ -553,7 +562,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="MVP isolated execution demonstration packet + optional git worktree validation"
     )
-    parser.add_argument("--review-slug", required=True, help="reviews/<slug>/")
+    parser.add_argument(
+        "--review-slug",
+        required=True,
+        help="Path under reviews/ (e.g. amd_2026_006 or demos/demo_exec_ui_review)",
+    )
     parser.add_argument(
         "--governance-root",
         type=Path,

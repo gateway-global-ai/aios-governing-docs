@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-EXEC-DEMO-001
-version: 0.1.4
+version: 0.1.5
 status: draft
 category: reference
 title: Isolated execution demonstration pipeline (draft proposal)
@@ -12,12 +12,15 @@ cross_references:
   - doc_id: AMD-2026-005
   - doc_id: AIOS-REF-013
 amendment_history:
+  - version: 0.1.5
+    date: 2026-04-08
+    summary: Sample packets under reviews/demos/; CLASSIFICATION_AND_MIGRATION.md; --review-slug demos/<demo_slug>.
   - version: 0.1.4
     date: 2026-04-08
     summary: Optional planning/REVIEW_TARGET.yaml populates allowed_surfaces and required_visual_proofs; HUMAN_REVIEW_PACKET section “what validation proved vs manual visual”; runner 0.3.1 (Windows npm PATH resolution; review targeting).
   - version: 0.1.3
     date: 2026-04-08
-    summary: Schema 1.2.0 operator_disclosures (binding vs packet-only, validation proof honesty); HUMAN_REVIEW_PACKET navigation-first; sample packets under reviews/demo_exec_packet_*; runner 0.3.0.
+    summary: Schema 1.2.0 operator_disclosures (binding vs packet-only, validation proof honesty); HUMAN_REVIEW_PACKET navigation-first; sample packets under reviews/demos/demo_exec_*; runner 0.3.0.
   - version: 0.1.2
     date: 2026-04-07
     summary: Transaction schema 1.1.0 — product_repo_path, ISO timestamps, artifacts index, failure_stage, human_review_status; runner 0.2.0; optional --source-repo-url.
@@ -380,7 +383,7 @@ Normative JSON Schema: **[`reference/schemas/execution_transaction.schema.json`]
 
 ## Annex E — MVP runner (implemented)
 
-**Location:** [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py) (Python 3; runner **v0.3.1**; stdlib + PyYAML for manifest label and optional `REVIEW_TARGET.yaml`). **Sample outputs:** [`reviews/demo_exec_packet_samples/README.md`](../../reviews/demo_exec_packet_samples/README.md).
+**Location:** [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py) (Python 3; runner **v0.3.1**; stdlib + PyYAML for manifest label and optional `REVIEW_TARGET.yaml`). **Sample outputs:** [`reviews/demos/demo_exec_packet_samples/README.md`](../../reviews/demos/demo_exec_packet_samples/README.md).
 
 **What it does (deterministic):**
 
@@ -421,4 +424,4 @@ It is **not** normative law; it is **operator guidance** for tooling and humans.
 
 ---
 
-*End of AIOS-EXEC-DEMO-001 v0.1.4 draft.*
+*End of AIOS-EXEC-DEMO-001 v0.1.5 draft.*
