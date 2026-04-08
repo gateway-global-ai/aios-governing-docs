@@ -21,6 +21,7 @@ import argparse
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -148,12 +149,31 @@ def _read_manifest_label() -> str:
         return "unknown"
 
 
+def _resolve_argv(argv: list[str]) -> list[str]:
+    """Resolve bare executable names via PATH (Windows: npm is npm.cmd; CreateProcess needs a real path)."""
+    if not argv or not argv[0]:
+        return argv
+    head = argv[0]
+    try:
+        if Path(head).exists():
+            return argv
+    except OSError:
+        pass
+    if "/" in head or "\\" in head:
+        return argv
+    resolved = shutil.which(head)
+    if resolved:
+        return [resolved] + list(argv[1:])
+    return argv
+
+
 def _run_subprocess(
     cwd: Path,
     argv: list[str],
     timeout: float = 900.0,
 ) -> tuple[int, str, str]:
     """Return (exit_code, stdout, stderr) as strings."""
+    argv = _resolve_argv(argv)
     p = subprocess.run(
         argv,
         cwd=str(cwd),
