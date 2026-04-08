@@ -1,0 +1,18 @@
+# Files to concatenate into snapshots/product_context_bundle.md for peer review.
+# Paths are relative to the ai-os-voice-interface repository root.
+# Regenerate: py -3 scripts/generate_product_context_bundle.py
+#
+# Rationale: governing-doc reviewers must see the *implemented* Phase 1 intents,
+# scope classes, MCP tool mapping, and control-plane entry — not only AMD/SPEC text.
+
+voice_repo_label: ai-os-voice-interface
+
+include:
+  - WORKSPACE.md
+  - src/workspace/intentRegistry.ts
+  - src/workspace/scopeClasses.ts
+  - src/workspace/mcpIntentToolMap.ts
+  - src/workspace/workspaceIntentRouter.ts
+  - src/workspace/integrationControlPlane.ts
+  - src/workspace/types.ts
+  - docs/implementation/AIOS-IMPLEMENTATION-CONTROL-PROGRAM.md

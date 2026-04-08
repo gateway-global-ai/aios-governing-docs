@@ -38,6 +38,16 @@ The following documents are provided as governance context. Evaluate the documen
 
 ---
 
+## Product implementation snapshot (informative — **not** the scored document)
+
+The following text is a **concatenated snapshot** of the **ai-os-voice-interface** repository (intents, scope classes, MCP tool map, control-plane entry points, and related docs). It exists so reviewers can compare **governance** language to **what the product actually implements**. It does **not** override governing documents; it **grounds** consistency checks.
+
+If this section is empty or says “not loaded,” treat implementation alignment as **unknown** unless you cite this snapshot.
+
+{{PRODUCT_IMPLEMENTATION_CONTEXT}}
+
+---
+
 ## Style Guide (binding writing conventions)
 
 {{STYLE_GUIDE}}

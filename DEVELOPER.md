@@ -79,6 +79,18 @@ py scripts/peer_review.py core/governance_constitution.md --round 1
 py scripts/peer_review.py specifications/CLIDeveloperGuide.md --round 1 --rubric light --smart-context
 ```
 
+**Product implementation snapshot (Workspace / integration reviews):** Regenerate the concatenated **ai-os-voice-interface** excerpt, then pass **`--product-context`** so reviewers see intents, MCP mapping, and control-plane code — see [`reference/knowledge_base/README.md`](../reference/knowledge_base/README.md).
+
+```bash
+py -3 scripts/generate_product_context_bundle.py
+cd scripts
+py -3 peer_review.py ../amendments/AMD-2026-006.md --round 1 --smart-context --product-context
+```
+
+**Pre-ratification planning (local Ollama, Architect → UI):** Build a merged knowledge bundle, then run planning agents that write `reviews/<slug>/planning/ARCHITECT_PLAN.md` and `UI_PLAN.md`. See [`reference/knowledge_base/agents/README.md`](reference/knowledge_base/agents/README.md) and **[AIOS-AMD-PLAN-001](reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** (`py -3 scripts/build_agent_kb.py`, `py -3 scripts/ollama_planning_agent.py`).
+
+**Isolated execution demonstration (MVP, non-normative):** After planning artifacts exist, `py -3 scripts/run_isolated_execution_demo.py` creates `reviews/<slug>/execution/` and can attach a **git worktree** + **npm** validation on the product repo. See **[AIOS-EXEC-DEMO-001](reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** Annex E.
+
 ### Optional automation (portfolio + pipeline)
 
 These scripts **do not** replace manual triangulated review for ratification; they are operator tooling. Generated outputs are listed in `.gitignore` (`portfolio_reviews/`, `reviews/**/automated_runs/`, `reviews/**/LAST_RUN_POINTER.json`).

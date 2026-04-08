@@ -20,7 +20,7 @@ Use repo root as working directory for git and for `scripts/` commands.
 
 1. **Ratification path (AMD-2026-005):** Author validation → triangulated peer review → thresholds (composite ≥ 3.5, no dimension below 3) → ratification. No extra post–peer-review human audit as a workflow gate unless constitutional law already requires it.
 2. **Workspace / Google (SPEC-007):** Layer 2 `workspace.*` intents map to **exactly one** Layer 1 `workspace.google.*` scope class; product integrations use control plane + adapter, not raw tool exposure.
-3. **Registry:** After changing governed markdown with front matter under `core/`, `specifications/`, `commercial/`, `amendments/`, or `reference/`, run **`scripts/registry_generator.py`**.
+3. **Registry:** After changing governed markdown with front matter under `core/`, `specifications/`, `commercial/`, `amendments/`, `reference/`, or `reference/implementation/`, run **`scripts/registry_generator.py`**.
 4. **Cross-references:** Keep YAML `document_id` / `cross_references` consistent; follow `templates/amendment_template.md` for amendments.
 
 ---
