@@ -99,4 +99,12 @@ Upon **approval**:
 
 ---
 
+## Coordinator status (non-normative)
+
+- **Council-ready:** No further drafting or procedural expansion **unless Council requests** changes to this motion or the **v0.2.0** package.
+- **On approval:** Execute **Immediate actions** (**§** above) in **one** maintainer pass.
+- **Next cohesion-critical track (after 006 ratifies):** **[AMD-2026-009](AMD-2026-009.md)** — see closure order in **[AMD-AMENDMENT-REVIEW-TRACKER-001](../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)** (**006 → 009 → 008**).
+
+---
+
 *End of ratification motion — AMD-2026-006 / AIOS-SPEC-007 — motion version 1.0.0 (`draft` pending Council).*

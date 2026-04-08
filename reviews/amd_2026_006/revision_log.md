@@ -46,7 +46,7 @@
 
 **Recommendation:** Advance **AIOS-SPEC-007 v0.2.0** and companion **[AMD-2026-006](../../amendments/AMD-2026-006.md) v0.2.0** to **ratification path** (Council / motion per tier) **without** another full peer review cycle. **Optional** pre-motion: surgical **§0 / MPOA** linkage in **SPEC-007** only if Council wants stronger legal language — **not** a default requirement. **`peer_review.py`** on **`amendments/AMD-2026-006.md`** alone — **only** if a **procedural** reason requires an amendment-scored artifact.
 
-**Ratification motion (draft):** **[`AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md)** — pending Council approval.
+**Ratification motion (draft):** **[`AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md)** — **Council-ready**; no further drafting unless Council requests; on approval execute motion **Immediate actions** in one pass; then advance cohesion focus to **[AMD-2026-009](../../amendments/AMD-2026-009.md)** per **[tracker](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)**.
 
 ---
 
