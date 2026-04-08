@@ -11,7 +11,7 @@
 | **C — UI** | [`UI_PLAN.md`](UI_PLAN.md) (from template) | **Verified** 2026-04-08 |
 | **D — Committee** | [`COMMITTEE_PACKET.md`](COMMITTEE_PACKET.md) | **Approved** 2026-04-08 — planning frozen; **no** changes to ARCHITECT/UI plans |
 | **E — Author revision** | [`../revision_log.md`](../revision_log.md) + AMD-006 + AIOS-SPEC-007 | **Complete** **2026-04-08** — **v0.2.0** freeze; see [`round_2/README.md`](../round_2/README.md) |
-| **F — Peer review** | [`round_2/README.md`](../round_2/README.md) + [`googleworkspaceintegrationgovernance/round_2/`](../../googleworkspaceintegrationgovernance/round_2/) | **SPEC-007 Round 2** **PASS** **2026-04-08** |
+| **F — Peer review** | [`round_2/README.md`](../round_2/README.md) + [`../../googleworkspaceintegrationgovernance/round_2/`](../../googleworkspaceintegrationgovernance/round_2/) | **SPEC-007 Round 2** **PASS** **2026-04-08** |
 | **Execution demo (optional)** | [`../execution/`](../execution/) — **[AIOS-EXEC-DEMO-001](../../../reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** | After B (and usually C); run `scripts/run_isolated_execution_demo.py` |
 
 ## Templates
