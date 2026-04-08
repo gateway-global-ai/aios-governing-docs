@@ -43,7 +43,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -65,6 +65,12 @@
       },
       {
         "doc_id": "AIOS-AMD-PLAN-001"
+      },
+      {
+        "doc_id": "AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013"
       }
     ]
   },
@@ -109,6 +115,34 @@
       {
         "doc_id": "AIOS-SPEC-011",
         "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
+    "title": "Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)",
+    "version": "1.0.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-REPO-TAXONOMY-001"
+      },
+      {
+        "doc_id": "AMD-2026-005"
+      },
+      {
+        "doc_id": "AMD-2026-007"
+      },
+      {
+        "doc_id": "AMD-2026-012"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001"
       }
     ]
   },
@@ -919,6 +953,30 @@
     ]
   },
   {
+    "document_id": "AIOS-REPO-TAXONOMY-001",
+    "title": "Intent-bearing repository taxonomy — implementation note and migration appendix",
+    "version": "0.2.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-REPO-TAXONOMY-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001"
+      },
+      {
+        "doc_id": "AIOS-EXEC-DEMO-001"
+      },
+      {
+        "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
+        "title": "Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-SPEC-001",
     "title": "AIOS NodeContract Specification",
     "version": "1.0.0",
@@ -1662,6 +1720,44 @@
     "category": "council_motion",
     "_path": "amendments/AMD-2026-012-ratification-motion.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-013",
+    "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)",
+    "version": "0.2.1",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-013.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-EXEC-DEMO-001",
+        "title": "Isolated execution demonstration pipeline"
+      },
+      {
+        "doc_id": "AIOS-REPO-TAXONOMY-001",
+        "title": "Intent-bearing repository taxonomy — implementation note and migration appendix"
+      },
+      {
+        "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
+        "title": "Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)"
+      }
+    ]
   },
   {
     "document_id": "LEGAL-001",

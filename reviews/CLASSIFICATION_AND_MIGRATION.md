@@ -3,6 +3,8 @@
 **Status:** governance infrastructure (non-normative).  
 **Purpose:** Make `reviews/` scalable and classifiable; preserve traceability; avoid blind renames.
 
+**Normative framing (draft):** Intent-bearing repository taxonomy and architecture/builder authority are stated in **[AMD-2026-013](../amendments/AMD-2026-013.md)**; operational detail is in **[AIOS-REPO-TAXONOMY-001](../reference/implementation/AIOS-REPO-TAXONOMY-001.md)**. This document remains the operational migration map until superseded.
+
 ---
 
 ## A. Audit — current top-level folders under `reviews/`

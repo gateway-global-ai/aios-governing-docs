@@ -18,6 +18,8 @@ This document is the **operator README** for the **pre-ratification planning** a
 
 **Non‑negotiable:** Generated **`ARCHITECT_PLAN.md`** and **`UI_PLAN.md`** are **drafts**. A human must verify them against **`ai-os-voice-interface`** (source, behavior, diffs) and governing text before they inform amendment or spec edits.
 
+**Intent-bearing repository taxonomy (draft):** Folder layout under governed repos is **architecture-relevant**. The **Architect** role **defines** taxonomy rules; the **builder** **maintains** classified paths; **implementation** agents **consume** declared structure — see **[AMD-2026-013](../../amendments/AMD-2026-013.md)** and **[AIOS-REPO-TAXONOMY-001](../../implementation/AIOS-REPO-TAXONOMY-001.md)**. Planning outputs **SHOULD** use **classified** review paths where declared (e.g. `reviews/<amendment_slug>/planning/` today; `reviews/amendments/<slug>/planning/` when migrated per memo).
+
 ---
 
 ## 2. Where this sits in AIOS-AMD-PLAN-001
