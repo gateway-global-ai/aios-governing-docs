@@ -2,6 +2,8 @@
 
 **Cohesion track:** **Active** — first in **006 → 009 → 008** sequence. **Restart summary:** [`RESTART-PACKET.md`](RESTART-PACKET.md).
 
+**Coordinator prompts (AMD-PLAN-001):** [`COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](COORDINATOR_RESEARCH_REFRESH_PROMPT.md) (Phase A — optional research) · [`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md) (Phase B — after Phase A frozen).
+
 **Status:** **Round 1 complete** — **FAIL** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerical gate — [`round_1/REVIEW_SYNTHESIS.md`](round_1/REVIEW_SYNTHESIS.md), [`round_1/RATIFICATION_GATE_REPORT.md`](round_1/RATIFICATION_GATE_REPORT.md). Reviews: [`review_001_deepseek.md`](round_1/review_001_deepseek.md), [`review_002_openai.md`](round_1/review_002_openai.md), [`review_003_gemini.md`](round_1/review_003_gemini.md).
 
 **Next (before Round 2):** **[Pre-ratification planning lifecycle](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** (**AIOS-AMD-PLAN-001**) — Evidence → Architect → UI → Committee → author revision → **peer review**. **Phase table:** [`planning/README.md`](planning/README.md). **Earliest step:** **Phase A — evidence refresh** (see **RESTART-PACKET** §6).
