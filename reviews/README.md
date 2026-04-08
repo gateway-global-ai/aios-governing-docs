@@ -4,9 +4,13 @@ This directory contains all peer reviews of AIOS governing documents, organized 
 
 **Note:** “Ratification” and review stages here are **AIOS in-repo** artifacts (models, rubric, Council path per documents). They are **not** the same as a GitHub pull-request approval; see **README.md** § GitHub vs AIOS governance.
 
-**Execution lane samples (AIOS-EXEC-DEMO-001, non-ratification):** [`demo_exec_packet_samples/README.md`](demo_exec_packet_samples/README.md) — example `--no-git` and worktree `--skip-validation` packets for human review of packet quality.
+**Execution lane samples (AIOS-EXEC-DEMO-001, non-ratification):** [`demos/demo_exec_packet_samples/README.md`](demos/demo_exec_packet_samples/README.md) — example `--no-git` and worktree `--skip-validation` packets; use **`--review-slug demos/<demo_slug>`** (e.g. `demos/demo_exec_ui_review`).
 
 **Round-to-round score delta (optional, tight):** copy [`../templates/review_delta_template.md`](../templates/review_delta_template.md) into the review folder after a new round to separate structural gains, remaining gaps, and preference-only critique.
+
+## Reviews tree — operational policy
+
+**`reviews/` is a classified workspace tree**, not a scratch area. **Demo/sample execution packets** live only under **`reviews/demos/`**. New folders at the root of `reviews/` must map to a known class (amendment, specification, composite package, reference/process, or archived legacy) — see **[`CLASSIFICATION_AND_MIGRATION.md`](CLASSIFICATION_AND_MIGRATION.md)** (audit, migration map, deferred moves).
 
 ---
 

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.2.0",
+  "review_slug": "demos/demo_exec_packet_wt_full",
+  "source_repo": "C:/Apps/ai-os-voice-interface",
+  "product_repo_path": "C:/Apps/ai-os-voice-interface",
+  "source_branch": "conformance/pilot-workspace-call-graph",
+  "working_branch": "execution/demos/demo_exec_packet_wt_full/runner-20260408-051145Z",
+  "base_commit_sha": "8713c6df134fc27a76976d4b440471ba53d61dfa",
+  "head_commit_sha": "8713c6df134fc27a76976d4b440471ba53d61dfa",
+  "governing_manifest_label": "amd_2026_006_workspace_track",
+  "evidence_bundle_hash": null,
+  "architect_plan_hash": "949b580733f324660c873a52313c75d9334dd559abcd9a77dc3180481e8ee4d1",
+  "ui_plan_hash": null,
+  "execution_scope": "mvp_runner_demos/demo_exec_packet_wt_full",
+  "allowed_surfaces": [
+    "workspace hub (Google Workspace connect / read slice)",
+    "shell identity bar",
+    "command rail",
+    "workspace onboarding surface"
+  ],
+  "required_visual_proofs": [
+    "screenshot: workspace hub after sign-in or equivalent connected state",
+    "screenshot: shell chrome with voice idle panel visible (if applicable to branch)"
+  ],
+  "created_at": "2026-04-08T05:11:45Z",
+  "updated_at": "2026-04-08T05:11:57Z",
+  "validation_started_at": "2026-04-08T05:11:46Z",
+  "validation_completed_at": "2026-04-08T05:11:57Z",
+  "artifacts": {
+    "execution_contract": "EXECUTION_CONTRACT.md",
+    "validation_results": "VALIDATION_RESULTS.md",
+    "worklog": "WORKLOG.md",
+    "changed_files": "CHANGED_FILES.md",
+    "human_review_packet": "HUMAN_REVIEW_PACKET.md",
+    "visual_evidence_dir": "VISUAL_EVIDENCE"
+  },
+  "failure_stage": null,
+  "operator_disclosures": {
+    "execution_lane_posture": "worktree_bound",
+    "validation_proof_available": true,
+    "validation_non_proof_reason": null,
+    "visual_capture_automated": false
+  },
+  "human_review_status": {
+    "state": "pending",
+    "reviewed_at": null,
+    "reviewer": null,
+    "notes": null
+  },
+  "verification_status": "repo_truth_ok",
+  "promotion_status": "ready_for_human_review",
+  "overrides_disclosed": false,
+  "notes": "MVP runner \u2014 visual capture manual; see VISUAL_EVIDENCE/CAPTURE_CHECKLIST.md. operator_disclosures states binding and validation proof honestly.",
+  "governance_repo_path": ".",
+  "worktree_path": "C:/Apps/aios-exec-demos/demo_exec_packet_wt_full-20260408-051145Z",
+  "isolation_mode": "worktree",
+  "runner_name": "run_isolated_execution_demo.py",
+  "runner_version": "0.3.1"
+}

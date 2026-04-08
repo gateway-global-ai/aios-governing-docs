@@ -1,4 +1,6 @@
-# Human review packet — demo_exec_packet_no_git
+# Human review packet — demos/demo_exec_packet_no_git
+
+> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demos/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
 
 **Status:** draft — MVP runner output
 
@@ -31,6 +33,20 @@ Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the i
 - **verification_status:** `inputs_valid`
 - **promotion_status:** `blocked`
 - **failure_stage:** `null`
+
+## What validation proved vs what is still manual
+
+### Proven by automated validation
+
+- **No product worktree or npm steps.** This packet is planning/governance evidence only; see `VALIDATION_RESULTS.md` and `operator_disclosures`.
+
+### Declared review target (visible behavior scope)
+
+*No entries in `planning/REVIEW_TARGET.yaml` — add `allowed_surfaces` and `required_visual_proofs` when the review must judge UI/shell/workspace behavior.*
+
+### Still requires manual visual inspection
+
+- The runner does **not** produce screenshots. Capture evidence under `VISUAL_EVIDENCE/` per `CAPTURE_CHECKLIST.md`.
 
 ## Decision requested
 

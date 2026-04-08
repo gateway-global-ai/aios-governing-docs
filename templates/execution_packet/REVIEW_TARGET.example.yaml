@@ -1,0 +1,14 @@
+# Optional: copy to reviews/<slug>/planning/REVIEW_TARGET.yaml before running the MVP runner.
+# Populates EXECUTION_TRANSACTION.json → allowed_surfaces, required_visual_proofs
+# and drives the human review packet + VISUAL_EVIDENCE checklist (no screenshot automation).
+#
+# Quote lines that contain ":" so they stay plain strings (not YAML mappings).
+
+allowed_surfaces:
+  - workspace hub (read/connect)
+  - shell identity bar
+  - command rail
+
+required_visual_proofs:
+  - "screenshot: workspace hub in a connected or clearly authenticated state"
+  - "screenshot: shell with voice idle panel visible (if in scope)"
