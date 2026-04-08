@@ -2,7 +2,9 @@
 
 **Cohesion track:** **Active** — first in **006 → 009 → 008** sequence. **Restart summary:** [`RESTART-PACKET.md`](RESTART-PACKET.md).
 
-**Coordinator prompts (AMD-PLAN-001):** [`COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](COORDINATOR_RESEARCH_REFRESH_PROMPT.md) (Phase A — optional research) · [`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md) (Phase B — after Phase A frozen).
+**Phase A:** **Accepted 2026-04-08** (Option B) — [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md); active research [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md).
+
+**Coordinator prompts (AMD-PLAN-001):** [`COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](COORDINATOR_RESEARCH_REFRESH_PROMPT.md) (Phase A — completed Option B) · [`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md) (**Phase B next**).
 
 **Status:** **Round 1 complete** — **FAIL** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerical gate — [`round_1/REVIEW_SYNTHESIS.md`](round_1/REVIEW_SYNTHESIS.md), [`round_1/RATIFICATION_GATE_REPORT.md`](round_1/RATIFICATION_GATE_REPORT.md). Reviews: [`review_001_deepseek.md`](round_1/review_001_deepseek.md), [`review_002_openai.md`](round_1/review_002_openai.md), [`review_003_gemini.md`](round_1/review_003_gemini.md).
 

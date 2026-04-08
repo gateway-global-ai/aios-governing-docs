@@ -12,9 +12,9 @@
 
 | Field | Value |
 |-------|--------|
-| **Coordinator decision** | ☐ **Option A** — Proceed to Phase B on bundle only  ☐ **Option B** — Run this research refresh first |
-| **Date** | |
-| **Rationale** | |
+| **Coordinator decision** | ☑ **Option B** — Run this research refresh first (**executed 2026-04-08** — [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md)) |
+| **Date** | **2026-04-08** |
+| **Rationale** | Phase A Option B — successor research before Architect ([`EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md)). |
 
 ---
 

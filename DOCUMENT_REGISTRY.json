@@ -46,7 +46,7 @@
   {
     "document_id": "AIOS-AMD-PLAN-001",
     "title": "Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
@@ -68,7 +68,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",

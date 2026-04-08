@@ -10,6 +10,6 @@
 
 **Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**).
 
-**Phase A (evidence)** — [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md): **`product_context_bundle`** refreshed; **`CURRENT_SYSTEM_RESEARCH`** refresh **optional** / **manual** (see status doc).
+**Phase A (evidence)** — **Accepted 2026-04-08** — **Option B** — [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md); [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md).
 
-**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — **Phase B** Architect plan **next** after coordinator accepts **Phase A** evidence; then **revision** to address Round 1 + committee themes; **Round 2** — record version bumps below when applied.
+**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — **Phase B** Architect plan **next** ([`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](../COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md)); then **revision** to address Round 1 + committee themes; **Round 2** — record version bumps below when applied.

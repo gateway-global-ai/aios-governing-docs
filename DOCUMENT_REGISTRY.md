@@ -10,8 +10,8 @@
 |-------------|-------|---------|--------|----------|------|
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
 | AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
-| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.2 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.1.2 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.1.3 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |

@@ -4,7 +4,8 @@
 
 | Document | Description |
 |----------|-------------|
-| [**`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`**](CURRENT_SYSTEM_RESEARCH_2026-04-07.md) | **Active** — structured pass over the **current** `ai-os-voice-interface` tree (`src/`, Workspace ICP, shell, prod host). Replaces flat archived passes 1–5 for operational use. |
+| [**`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`**](CURRENT_SYSTEM_RESEARCH_2026-04-08.md) | **Active** — successor pass (AMD-2026-006 Phase A Option B); expanded intent inventory, ICP **`execution_scope`** path, scope/search classes. |
+| [`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](CURRENT_SYSTEM_RESEARCH_2026-04-07.md) | **Superseded** for current ops — keep for history. |
 
 **Product code snapshot (regenerate often):** [`../snapshots/product_context_bundle.md`](../snapshots/product_context_bundle.md) — `generate_product_context_bundle.py`
 
@@ -26,7 +27,7 @@
 
 ```bash
 cd scripts
-py -3 peer_review.py ../amendments/AMD-2026-006.md --round 1 --smart-context --product-context ../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md
+py -3 peer_review.py ../amendments/AMD-2026-006.md --round 1 --smart-context --product-context ../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md
 ```
 
 *(Use a **concatenated** markdown if both bundle + research must load — token limits apply.)*

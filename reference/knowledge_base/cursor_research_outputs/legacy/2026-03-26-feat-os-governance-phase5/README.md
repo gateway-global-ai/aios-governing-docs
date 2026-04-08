@@ -6,7 +6,7 @@
 
 These five files are **archived for history only**. Do **not** use them as the source of truth for the present app.
 
-**Current research:** [`../../CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../CURRENT_SYSTEM_RESEARCH_2026-04-07.md)
+**Current research:** [`../../CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../CURRENT_SYSTEM_RESEARCH_2026-04-08.md)
 
 | Original pass | File |
 |---------------|------|

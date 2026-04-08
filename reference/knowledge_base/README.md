@@ -11,7 +11,7 @@
 | [`cursor_research_pack.md`](cursor_research_pack.md) | **Cursor research prompt suite** — five passes (Architecture Cartographer, Capability Extractor, Governance Breach Auditor, Registry Migration Planner, Control Plane Coverage Auditor). Use for **discovery** before inventing registries; aligns with “inspect → map → classify → extract → plan.” |
 | [`ai_os_voice_bundle_manifest.yaml`](ai_os_voice_bundle_manifest.yaml) | List of **ai-os-voice-interface** paths concatenated into the product snapshot. |
 | [`snapshots/product_context_bundle.md`](snapshots/product_context_bundle.md) | **Generated** bundle (run script below). **Informative** input to `peer_review.py`. |
-| [`cursor_research_outputs/`](cursor_research_outputs/README.md) | **Current** system research (**`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`**) + **legacy** archived five-pass reports (superseded **`client/src`** era). |
+| [`cursor_research_outputs/`](cursor_research_outputs/README.md) | **Current** system research (**`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`**) + **legacy** archived five-pass reports (superseded **`client/src`** era). |
 
 ---
 
@@ -56,6 +56,6 @@ The prompt template injects this under **“Product implementation snapshot”**
 
 The canonical copy of **`0_cursor_research_pack.md`** lives here as [`cursor_research_pack.md`](cursor_research_pack.md) (sync from your machine if you iterate). **Product snapshot** + **research pack** are complementary: **snapshot** = current code excerpts; **research pack** = **how** to run multi-agent discovery and coverage passes before changing architecture.
 
-The **current** research narrative is [`cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md). Older five-pass Downloads live under [`cursor_research_outputs/legacy/`](cursor_research_outputs/legacy/2026-03-26-feat-os-governance-phase5/README.md) (**do not** treat as present-day architecture). Use **`product_context_bundle.md`** for **verbatim** source excerpts; use **CURRENT_SYSTEM_RESEARCH** for **structured** commentary aligned to today’s tree.
+The **current** research narrative is [`cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md). Older five-pass Downloads live under [`cursor_research_outputs/legacy/`](cursor_research_outputs/legacy/2026-03-26-feat-os-governance-phase5/README.md) (**do not** treat as present-day architecture). Use **`product_context_bundle.md`** for **verbatim** source excerpts; use **CURRENT_SYSTEM_RESEARCH** for **structured** commentary aligned to today’s tree.
 
 **Amendment workflow:** **[`AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md`](../implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** (**AIOS-AMD-PLAN-001**) ties evidence + architect + UI + committee **before** binding peer review on integration-heavy AMDs (e.g. **AMD-2026-006** [`planning/`](../../reviews/amd_2026_006/planning/README.md)).

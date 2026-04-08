@@ -24,7 +24,19 @@ py -3 scripts/generate_product_context_bundle.py --voice-root C:/Apps/ai-os-voic
 
 | Artifact | Reason |
 |----------|--------|
-| **`CURRENT_SYSTEM_RESEARCH_*.md`** | There is **no** repository script that regenerates the **structured Cursor research** narrative. The active file **[`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md)** remains the **latest checked-in** research pass **unless** a coordinator runs a **new** Cursor research pass and adds a **dated successor** file (or replaces by explicit decision). **This agent pass does not fabricate** that content. |
+| *(resolved — see Phase A acceptance below)* | |
+
+---
+
+## Phase A acceptance — **Option B** — **2026-04-08**
+
+| Field | Record |
+|-------|--------|
+| **Decision** | **Option B** — coordinator-led **`CURRENT_SYSTEM_RESEARCH`** successor before Architect. |
+| **`CURRENT_SYSTEM_RESEARCH` successor** | **[`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md)** |
+| **README pointer** | **[`cursor_research_outputs/README.md`](../../../reference/knowledge_base/cursor_research_outputs/README.md)** — **active** = **2026-04-08** |
+| **`product_context_bundle`** | Regenerated **2026-04-08** (prior pass); still valid as verbatim excerpt anchor. |
+| **Phase A status** | **Accepted / frozen** for **AMD-2026-006** planning — **Phase B (Architect)** may proceed per **[`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](../COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md)** preconditions. |
 
 ---
 
@@ -32,14 +44,7 @@ py -3 scripts/generate_product_context_bundle.py --voice-root C:/Apps/ai-os-voic
 
 **Minimum:** **`product_context_bundle`** is current enough for **Architect** to cite **verbatim** product paths **as of** the bundle **Generated** date.
 
-**Coordinator decision (explicit):**
-
-| Option | Meaning |
-|--------|---------|
-| **Proceed to Phase B on bundle only** | Accept **Phase A** after **`product_context_bundle`** refresh; **no** new **`CURRENT_SYSTEM_RESEARCH`** file. |
-| **Research refresh first (recommended for 006)** | Run coordinator-led pass using **[`../COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](../COORDINATOR_RESEARCH_REFRESH_PROMPT.md)**; add **`CURRENT_SYSTEM_RESEARCH_YYYY-MM-DD.md`**; update **[`cursor_research_outputs/README.md`](../../../reference/knowledge_base/cursor_research_outputs/README.md)**; **then** freeze **Phase A** and open **Phase B**. |
-
-**Lead-architect bias:** Prefer **research refresh first** — **006** already failed Round 1; narrative/system layer may catch gaps **not** visible in the bundle alone. **Not** a hard block if coordinator accepts bundle-only.
+**Coordinator decision:** **Option B executed** — see **Phase A acceptance** section above. (Historical: bundle-only was the alternative.)
 
 ---
 

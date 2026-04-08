@@ -6,7 +6,7 @@
 
 | Phase | Artifact | Status |
 |-------|-----------|--------|
-| **A — Evidence** | [`product_context_bundle.md`](../../../reference/knowledge_base/snapshots/product_context_bundle.md); [`CURRENT_SYSTEM_RESEARCH_2026-04-07.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md) | **Partial:** bundle **regenerated** — see [`EVIDENCE-PHASE-A-STATUS.md`](EVIDENCE-PHASE-A-STATUS.md). **Cursor research** refresh **not** automated — coordinator decision. |
+| **A — Evidence** | [`product_context_bundle.md`](../../../reference/knowledge_base/snapshots/product_context_bundle.md); [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md) | **Accepted** — [`EVIDENCE-PHASE-A-STATUS.md`](EVIDENCE-PHASE-A-STATUS.md) **Option B** **2026-04-08** |
 | **B — Architect** | [`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md) (from template) | **Pending** |
 | **C — UI** | [`UI_PLAN.md`](UI_PLAN.md) (from template) | **Pending** |
 | **D — Committee** | [`COMMITTEE_PACKET.md`](COMMITTEE_PACKET.md) (from template) | **Pending** |
