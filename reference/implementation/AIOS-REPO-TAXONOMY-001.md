@@ -184,7 +184,7 @@ See [AMD-2026-013 §7](../../amendments/AMD-2026-013.md) for the full routing se
 
 ## F. Conformance and validation (operator guidance, non-normative)
 
-This section is **not** new binding law; it records **optional** hooks aligned with [AMD-2026-013](../../amendments/AMD-2026-013.md) §2.1.3.
+This section is **not** new binding law; it records **optional** hooks aligned with [AMD-2026-013](../../amendments/AMD-2026-013.md) §2.1 (new intent-bearing roots under governed namespaces).
 
 - **Optional automation:** CI or `scripts/governance_integrity_check.py` may flag new top-level folders under `reviews/` that do not match a declared class or a documented exception in [`CLASSIFICATION_AND_MIGRATION.md`](../../reviews/CLASSIFICATION_AND_MIGRATION.md). Remediation remains human—architecture/builder alignment—not silent auto-rename.
 - **Dual-read:** During migration, keep old/new path pairs documented in the migration map until the builder retires the old path.
