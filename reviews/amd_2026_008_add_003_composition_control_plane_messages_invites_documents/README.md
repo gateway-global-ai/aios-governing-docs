@@ -10,3 +10,5 @@
 | **Round 2** | [`round_2/REVIEW_SYNTHESIS.md`](round_2/REVIEW_SYNTHESIS.md) | [`round_2/RATIFICATION_GATE_REPORT.md`](round_2/RATIFICATION_GATE_REPORT.md) |
 
 **Traceability:** [`revision_log.md`](revision_log.md) (Phases E–H). **Doctrine freeze:** [`DOCTRINE_FREEZE.md`](DOCTRINE_FREEZE.md) (**lifted** post-ratification). **Planning (historical):** [`../amd_2026_008_add_003/planning/COMMITTEE_PACKET.md`](../amd_2026_008_add_003/planning/COMMITTEE_PACKET.md).
+
+**Milestone commit (repo):** **`d02d401`** on **`fix/registry-deterministic-sort`** — authoritative bundle for this ratification cycle; indexed in **[`CHANGELOG.md`](../../CHANGELOG.md)** (Repository milestones).

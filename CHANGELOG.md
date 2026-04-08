@@ -7,6 +7,12 @@ All notable changes to the governing document set are recorded here.
 - Ratified versions: `v{version}-{doc-slug}` (e.g., `v1.0.0-technical-manifesto`)
 - System milestones: `system-v{version}` (e.g., `system-v1.0`)
 
+### Repository milestones (git)
+
+| Milestone | Commit | Branch (as pushed) | Notes |
+|-----------|--------|-------------------|--------|
+| **AMD-2026-008-ADD-003** — full governance cycle (ratification through registry / tracker / packet closure) | `d02d401` | `fix/registry-deterministic-sort` | Authoritative repo marker for **`ratified` `1.0.0`** and the bundled closeout on that branch (drafting, planning, peer review, gate, ratification, tooling, adjacent governance edits). |
+
 ---
 
 ## [Unreleased] — Governance + Google Workspace pack (2026-04-02)

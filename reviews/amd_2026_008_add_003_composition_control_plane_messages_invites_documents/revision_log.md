@@ -48,3 +48,5 @@
 **Execution:** **[AMD-2026-008-ADD-003](../../amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md)** **`status: ratified`**, **`version: 1.0.0`**, **`ratification_date: 2026-04-10`**; **`DOCUMENT_REGISTRY`** / **`CHANGELOG`**; **[`DOCTRINE_FREEZE.md`](DOCTRINE_FREEZE.md)** lifted; **[AMD-2026-008](../../amendments/AMD-2026-008.md)** `cross_references` motion link.
 
 **Substantive basis:** **`draft` `0.14.7`** (Round 2 triad **004**/**005**/**006** + **[`RATIFICATION_GATE_REPORT.md`](round_2/RATIFICATION_GATE_REPORT.md)** **PASS**).
+
+**Git milestone (authoritative bundle on `aios-governing-docs`):** **`d02d401`** (`fix/registry-deterministic-sort`) — records the full closeout in one commit; see **[`CHANGELOG.md`](../../CHANGELOG.md)** (Repository milestones).
