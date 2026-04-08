@@ -28,6 +28,8 @@
 
 **Round 1 triangulated** **2026-04-08** — [`../amd_2026_009_add_001/round_1/`](../amd_2026_009_add_001/round_1/): [`REVIEW_SYNTHESIS.md`](../amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerics (light rubric); disposition **approved_with_changes** (author revision on diligence / §2.1 language **before** ratification if Council bundles the addendum).
 
+**Version honesty:** Triangulation scores apply to the **v1.0.1** reviewed body. **[ADD-001 v1.0.3](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** is a **narrow** post–Round 1 tightening (§2 / §2.1 / §2.2) — **not** re-scored unless policy or Council requires **Round 2**.
+
 **Parent amendment** §1.3 states ADD-001 **SHALL** be ratified or rejected as **its own** Council artifact. The **ratification motion** now records ADD-001 evidence and **parent-only** option — see [`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md).
 
 ## Cross-references
