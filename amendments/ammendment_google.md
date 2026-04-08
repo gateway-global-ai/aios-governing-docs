@@ -1,7 +1,11 @@
 ---
+document_id: AMD-001
 amendment_id: AMD-001
 title: Agent-Native CLI Design Patterns (Google CLI Article Analysis)
 type: amendment_to_existing
+classification: legacy_ratified_bridge
+amendment_series: pre_2026
+taxonomy_note: "Separate numbering era from AMD-2026-*; canonical classification — reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md"
 status: ratified
 source_material: sources/google_cli_article/impact_report.md
 affected_documents:
@@ -11,6 +15,17 @@ affected_documents:
 created: 2026-03-30
 author: DeepSeek
 ratification_date: 2026-04-01
+last_updated: 2026-04-07
+---
+
+## 0. Classification (read first)
+
+| Field | Value |
+|-------|--------|
+| **Series** | **Pre-`AMD-2026-*`** — **`AMD-001`** is **not** part of the 2026 numbered amendment program. |
+| **Role** | **Legacy ratified bridge amendment** — source-analysis-derived directive toward **AIOS-SPEC-003 / 004 / 005**; see **[AMD-001 taxonomy and disposition](../reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md)**. |
+| **Path** | **`amendments/ammendment_google.md`** retained for stability (legacy filename spelling). |
+
 ---
 
 This is an excellent article that crystallizes a critical insight: **the CLI is no longer just a human interface—it’s an API for agents**. Your existing AIOS CLI design is already strong, but this article provides a set of practical patterns that can elevate it from “agent‑accessible” to “agent‑native.”

@@ -11,11 +11,17 @@ Usage:
     python peer_review.py amendments/AMD-2026-006.md --round 1 --smart-context --product-context
       # --product-context loads reference/knowledge_base/snapshots/product_context_bundle.md
       # after: py -3 scripts/generate_product_context_bundle.py
+
+Env (optional): OPENAI_PEER_REVIEW_MODEL (default gpt-5.4), GEMINI_PEER_REVIEW_MODEL,
+  DEEPSEEK_PEER_REVIEW_MODEL (default deepseek-chat). Each run writes peer_review_manifest_*.json under reviews/<slug>/round_N/.
 """
 
 import argparse
 import asyncio
+import json
+import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 from context_assembler import (
@@ -25,6 +31,10 @@ from context_assembler import (
     find_reviews, find_revision_log, call_models_parallel,
     save_review, today, MODEL_CALLERS,
     resolve_product_implementation_text,
+    peer_review_context_bundle_info,
+    product_context_bundle_info,
+    classify_peer_review_output,
+    get_doc_slug,
 )
 
 ROUND_1_MODELS = ["openai", "gemini"]
@@ -39,6 +49,24 @@ REVIEWER_FOCUS = {
 
 def _is_core_doc(doc_path: str) -> bool:
     return doc_path.startswith("core/") or doc_path.startswith("core\\")
+
+
+def _rough_tokens(text: str) -> int:
+    return max(1, len(text) // 4)
+
+
+def _utc_timestamp_slug() -> str:
+    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
+def _resolved_api_model(model_name: str) -> str:
+    if model_name == "openai":
+        return os.environ.get("OPENAI_PEER_REVIEW_MODEL", "gpt-5.4")
+    if model_name == "gemini":
+        return os.environ.get("GEMINI_PEER_REVIEW_MODEL", "gemini-2.5-pro")
+    if model_name == "deepseek":
+        return os.environ.get("DEEPSEEK_PEER_REVIEW_MODEL", "deepseek-chat")
+    return model_name
 
 
 def build_prompt(
@@ -135,6 +163,9 @@ async def run_review(
         print(f"Product snapshot: {'default bundle' if product_context_arg == 'default' else product_context_arg}")
     print(f"{'='*60}\n")
 
+    bundle_info = peer_review_context_bundle_info(doc_path, smart_context)
+    prod_info = product_context_bundle_info(product_context_arg)
+
     prompts = {}
     for model in models:
         sys_prompt, user_prompt = build_prompt(
@@ -162,9 +193,45 @@ async def run_review(
             print(f"  [{model_name}] ERROR: {e}")
 
     print("\nSaving reviews...")
+    result_rows = []
     for model_name, content in results.items():
+        sys_p, usr_p = prompts[model_name]
         out_path = save_review(doc_path, review_round, model_name, content)
         print(f"  Saved: {out_path.relative_to(BASE_DIR)}")
+        result_rows.append(
+            {
+                "model_lane": model_name,
+                "resolved_api_model": _resolved_api_model(model_name),
+                "output_path": str(out_path.relative_to(BASE_DIR)).replace("\\", "/"),
+                "output_chars": len(content),
+                "output_classification": classify_peer_review_output(content),
+                "estimated_prompt_tokens_system": _rough_tokens(sys_p),
+                "estimated_prompt_tokens_user": _rough_tokens(usr_p),
+                "estimated_prompt_tokens_total": _rough_tokens(sys_p) + _rough_tokens(usr_p),
+            }
+        )
+
+    slug = get_doc_slug(doc_path)
+    round_dir = BASE_DIR / "reviews" / slug / f"round_{review_round}"
+    round_dir.mkdir(parents=True, exist_ok=True)
+    # Short filename only (slug in JSON) — long paths hit Windows MAX_PATH when slug is repeated.
+    manifest_name = f"peer_review_manifest_{_utc_timestamp_slug()}.json"
+    manifest_path = round_dir / manifest_name
+    manifest_body = {
+        "schema": "aios.peer_review_manifest.v1",
+        "document_slug": slug,
+        "document": doc_path.replace("\\", "/"),
+        "review_round": review_round,
+        "rubric": rubric,
+        "smart_context": smart_context,
+        "product_context_arg": product_context_arg,
+        "context_bundle": bundle_info,
+        "product_context_bundle": prod_info,
+        "models_requested": models,
+        "results": result_rows,
+    }
+    manifest_path.write_text(json.dumps(manifest_body, indent=2), encoding="utf-8")
+    print(f"\nManifest: {manifest_path.relative_to(BASE_DIR)}")
 
     print(f"\nRound {review_round} review complete.")
 

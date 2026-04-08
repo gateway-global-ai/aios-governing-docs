@@ -1,14 +1,14 @@
 ---
 document_id: AMD-2026-009-SPEC-MERGE-CHECKLIST
 parent_amendment: AMD-2026-009
-parent_version: 0.1.6
-version: 1.0.0
-status: draft
+parent_version: 1.0.0
+version: 1.0.1
+status: ratified
 category: operational_checklist
 title: Normative spec-merge checklist (AMD-2026-009 §10)
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 related:
   - amendments/AMD-2026-009.md
   - amendments/AMD-2026-009-ratification-motion.md
@@ -45,11 +45,11 @@ related:
 
 Complete **before** editing normative specs for this amendment.
 
-- [ ] **AMD-2026-009** `status` updated from `draft` to **`ratified`** (or the status your Council process uses for approved amendments).
-- [ ] **`ratification_target`** set per process (e.g. ISO **ratification date**), and **`last_updated`** refreshed on the amendment.
-- [ ] **Policy IDs:** **POL-WEB-SCOPE-001**, **POL-WEB-CONFIDENCE-001**, **POL-WEB-PAGE-001** either **confirmed** in the master policy index or explicitly **provisional** with a dated **follow-up** ticket and owner (AMD-2026-009 §4.1).
-- [ ] **Owning body** for each merge target recorded **canonically** (AMD-2026-009 §10: Council **SHALL** record owning body — illustrative table is not sufficient post-ratification).
-- [ ] **Capability strings** and router wiring: if still deferred, **state** that in SPEC-009 / policy notes so merge does not imply false completeness (AMD-2026-009 §5).
+- [x] **AMD-2026-009** `status` updated from `draft` to **`ratified`** (or the status your Council process uses for approved amendments).
+- [x] **`ratification_target`** set per process (e.g. ISO **ratification date**), and **`last_updated`** refreshed on the amendment.
+- [x] **Policy IDs:** **POL-WEB-SCOPE-001**, **POL-WEB-CONFIDENCE-001**, **POL-WEB-PAGE-001** either **confirmed** in the master policy index or explicitly **provisional** with a dated **follow-up** ticket and owner (AMD-2026-009 §4.1).
+- [x] **Owning body** for each merge target recorded **canonically** (AMD-2026-009 §10: Council **SHALL** record owning body — illustrative table is not sufficient post-ratification).
+- [x] **Capability strings** and router wiring: if still deferred, **state** that in SPEC-009 / policy notes so merge does not imply false completeness (AMD-2026-009 §5).
 
 ---
 
@@ -59,32 +59,32 @@ Keyed to **AMD-2026-009 §10** table. Each row: merge **normative** paragraphs; 
 
 ### 2.1 AIOS-SPEC-007 (Workspace / integration bridge)
 
-- [ ] **Web search** described as **policy-scoped** bridge (not a raw “search the internet” affordance).
-- [ ] **Search scope classes** (AMD-2026-009 §4) **referenced** so integration routing aligns with policy, not only MCP mechanics.
-- [ ] **Phase 1** continuity: **workspace.web.search** / MCP bridge remains consistent with AMD-2026-009 §2 (out of scope: replacing SPEC-007 wholesale).
+- [x] **Web search** described as **policy-scoped** bridge (not a raw “search the internet” affordance).
+- [x] **Search scope classes** (AMD-2026-009 §4) **referenced** so integration routing aligns with policy, not only MCP mechanics.
+- [x] **Phase 1** continuity: **workspace.web.search** / MCP bridge remains consistent with AMD-2026-009 §2 (out of scope: replacing SPEC-007 wholesale).
 
 ### 2.2 AIOS-SPEC-009 (execution graph, audit)
 
-- [ ] **External knowledge** step in the **execution graph** where **intent** references `web.*` capabilities (AMD-2026-009 §10).
-- [ ] **Audit linkage** fields for **retrieval → review → proposal**: joinable **plan_id** / execution / step correlation per product audit model (AMD-2026-009 §9).
-- [ ] **§7.1** behavior reflected where **automated** execution must not consume invalid structured review or low-confidence paths without gates.
+- [x] **External knowledge** step in the **execution graph** where **intent** references `web.*` capabilities (AMD-2026-009 §10).
+- [x] **Audit linkage** fields for **retrieval → review → proposal**: joinable **plan_id** / execution / step correlation per product audit model (AMD-2026-009 §9).
+- [x] **§7.1** behavior reflected where **automated** execution must not consume invalid structured review or low-confidence paths without gates.
 
 ### 2.3 AIOS-SPEC-010 (scope envelope)
 
-- [ ] **Normative** tie-in: **Execution Scope Envelope** carries **web retrieval** and **review** logical resource keys (AMD-2026-009 §1.1, §6).
-- [ ] **Exemplar** key patterns aligned with §1.2 (`web:pse:…`, `web:review:resultset:…`, `web:review:page:…`) as **illustrative** where SPEC-010 defines **`review_files`** / read surfaces.
-- [ ] **No parallel bounding:** search scope class **SHALL NOT** override envelope validation (§1.1).
+- [x] **Normative** tie-in: **Execution Scope Envelope** carries **web retrieval** and **review** logical resource keys (AMD-2026-009 §1.1, §6).
+- [x] **Exemplar** key patterns aligned with §1.2 (`web:pse:…`, `web:review:resultset:…`, `web:review:page:…`) as **illustrative** where SPEC-010 defines **`review_files`** / read surfaces.
+- [x] **No parallel bounding:** search scope class **SHALL NOT** override envelope validation (§1.1).
 
 ### 2.4 Policy register
 
-- [ ] **POL-WEB-SCOPE-001** — search scope class registry + default-deny for **`web.search.broad_public`** unless explicitly allowed (§4.1).
-- [ ] **POL-WEB-CONFIDENCE-001** — thresholds for §7 / §7.1 non-executable and human/operator gates.
-- [ ] **POL-WEB-PAGE-001** — opt-in and limits for **`page_review`** (§5.2); numeric caps **MAY** remain “by implementation” or **child spec** if not yet fixed.
+- [x] **POL-WEB-SCOPE-001** — search scope class registry + default-deny for **`web.search.broad_public`** unless explicitly allowed (§4.1).
+- [x] **POL-WEB-CONFIDENCE-001** — thresholds for §7 / §7.1 non-executable and human/operator gates.
+- [x] **POL-WEB-PAGE-001** — opt-in and limits for **`page_review`** (§5.2); numeric caps **MAY** remain “by implementation” or **child spec** if not yet fixed.
 
 ### 2.5 WORKSPACE.md (informative only)
 
-- [ ] **Operator** notes: PSE / **GOOGLE_PSE_*** (or equivalent) **server-side** on MCP host; **no** `VITE_*` or client-bundle secrets for API keys (AMD-2026-009 §10, §2).
-- [ ] Explicitly **informative** — no new normative law here; alignment pointers to SPEC-007 / SPEC-009.
+- [x] **Operator** notes: PSE / **GOOGLE_PSE_*** (or equivalent) **server-side** on MCP host; **no** `VITE_*` or client-bundle secrets for API keys (AMD-2026-009 §10, §2).
+- [x] Explicitly **informative** — no new normative law here; alignment pointers to SPEC-007 / SPEC-009.
 
 ---
 
@@ -92,10 +92,10 @@ Keyed to **AMD-2026-009 §10** table. Each row: merge **normative** paragraphs; 
 
 Do **not** accidentally expand scope while merging text.
 
-- [ ] **No** normative endorsement of **broad browsing** or **quasi-browser** behavior.
-- [ ] **No** crawling, scraping pipelines, ranking/SEO, or **multi-page deep research** as authorized defaults (AMD-2026-009 §11).
-- [ ] **No** **arbitrary URL open** outside §5.2 / §6 bounded rules.
-- [ ] **No product code** in the spec-merge PR **unless** separately approved (merge step = doctrine only).
+- [x] **No** normative endorsement of **broad browsing** or **quasi-browser** behavior.
+- [x] **No** crawling, scraping pipelines, ranking/SEO, or **multi-page deep research** as authorized defaults (AMD-2026-009 §11).
+- [x] **No** **arbitrary URL open** outside §5.2 / §6 bounded rules.
+- [x] **No product code** in the spec-merge PR **unless** separately approved (merge step = doctrine only).
 
 ---
 
@@ -103,10 +103,10 @@ Do **not** accidentally expand scope while merging text.
 
 First product slice **after** normative merges **SHALL** stay narrow (prevents doctrine drift).
 
-- [ ] **One** intent-scoped **web retrieval** path.
-- [ ] **One** structured **result-set review** artifact (§7).
-- [ ] **One** downstream **action / proposal** use case wired through audit (§9).
-- [ ] **Deferred:** broad browsing, **page_review** surface expansion, multi-path retrieval — until a later approved phase (optional **child spec** for **page_review** numeric limits post-ratification).
+- [x] **One** intent-scoped **web retrieval** path.
+- [x] **One** structured **result-set review** artifact (§7).
+- [x] **One** downstream **action / proposal** use case wired through audit (§9).
+- [x] **Deferred:** broad browsing, **page_review** surface expansion, multi-path retrieval — until a later approved phase (optional **child spec** for **page_review** numeric limits post-ratification).
 
 ---
 
@@ -127,4 +127,4 @@ These steps are **manual** today; they are candidates to **encode** so governanc
 
 ---
 
-*End of AMD-2026-009 spec-merge checklist, version 1.0.0.*
+*End of AMD-2026-009 spec-merge checklist, version 1.0.1 (ratified execution record **2026-04-09**).*

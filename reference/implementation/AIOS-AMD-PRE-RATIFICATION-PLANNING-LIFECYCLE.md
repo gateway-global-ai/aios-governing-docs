@@ -1,18 +1,21 @@
 ---
 document_id: AIOS-AMD-PLAN-001
-version: 1.0.2
+version: 1.0.3
 status: draft
 category: reference
 title: Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-07
+last_updated: 2026-04-08
 cross_references:
   - doc_id: AMD-2026-005
   - doc_id: AIOS-SPEC-007
   - doc_id: AIOS-REF-013
   - doc_id: AIOS-EXEC-DEMO-001
 amendment_history:
+  - version: 1.0.3
+    date: 2026-04-08
+    summary: Phase A evidence table — CURRENT_SYSTEM_RESEARCH example path → 2026-04-08 successor.
   - version: 1.0.2
     date: 2026-04-07
     summary: Cross-reference draft AIOS-EXEC-DEMO-001 (isolated execution demonstration pipeline after planning).
@@ -48,7 +51,7 @@ amendment_history:
 
 | Phase | Name | Owner | Output |
 |-------|------|--------|--------|
-| **A** | **Evidence** | Coordinator | Regenerated [`reference/knowledge_base/snapshots/product_context_bundle.md`](../knowledge_base/snapshots/product_context_bundle.md); [`reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_*.md`](../knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md) (or successor). |
+| **A** | **Evidence** | Coordinator | Regenerated [`reference/knowledge_base/snapshots/product_context_bundle.md`](../knowledge_base/snapshots/product_context_bundle.md); [`reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_*.md`](../knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md) (or dated successor). |
 | **B** | **Architect** | Agent + human verification | **`ARCHITECT_PLAN.md`** (from [`ARCHITECT_PLAN_TEMPLATE.md`](../reviews/amd_2026_006/planning/ARCHITECT_PLAN_TEMPLATE.md)) — schemas, routes, storage/session; **every claim** cites **repo path** or **governing §**. |
 | **C** | **UI** | Agent + human verification | **`UI_PLAN.md`** (from [`UI_PLAN_TEMPLATE.md`](../reviews/amd_2026_006/planning/UI_PLAN_TEMPLATE.md)) — surfaces, disclosure, Shell/Workspace behavior vs **AMD-2026-007** / **AIOS-SPEC-006**. |
 | **D** | **Committee** | Council / designated reviewers | **`COMMITTEE_PACKET.md`** (from [`COMMITTEE_PACKET_TEMPLATE.md`](../reviews/amd_2026_006/planning/COMMITTEE_PACKET_TEMPLATE.md)) — approved **or** change requests; **no** ratification vote here — **informs** author revision. |
@@ -90,4 +93,4 @@ Implementation memo (non-normative): **`ai-os-voice-interface`** — see **[AIOS
 
 ---
 
-*End of AIOS-AMD-PLAN-001 v1.0.2.*
+*End of AIOS-AMD-PLAN-001 v1.0.3.*

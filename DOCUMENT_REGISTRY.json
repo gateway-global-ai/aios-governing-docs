@@ -19,9 +19,34 @@
     ]
   },
   {
+    "document_id": "AIOS-AMD-001-DISPOSITION-001",
+    "title": "AMD-001 — taxonomy, classification, and disposition",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "reference",
+    "_path": "reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-001"
+      },
+      {
+        "doc_id": "AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-SPEC-003"
+      },
+      {
+        "doc_id": "AIOS-SPEC-004"
+      },
+      {
+        "doc_id": "AIOS-SPEC-005"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-AMD-PLAN-001",
     "title": "Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
@@ -43,11 +68,14 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.0.6",
+    "version": "1.2.6",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-001"
+      },
       {
         "doc_id": "AMD-2026-006"
       },
@@ -71,6 +99,18 @@
       },
       {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013"
+      },
+      {
+        "doc_id": "AIOS-AMD-001-DISPOSITION-001"
+      },
+      {
+        "doc_id": "AMD-2026-006-RATIFICATION-MOTION"
+      },
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION"
       }
     ]
   },
@@ -143,6 +183,65 @@
       },
       {
         "doc_id": "AIOS-AMD-PLAN-001"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001",
+    "title": "Composition control plane — architecture memo (bounded domains and addendum seams)",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003"
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-RD-NOTES-001"
+      },
+      {
+        "doc_id": "AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-COMPOSITION-CONTROL-RD-NOTES-001",
+    "title": "Composition control plane — R&D and knowledge capture (AMD-2026-008 addendum track)",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-COMPOSITION-CONTROL-RD-NOTES-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001"
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001"
+      },
+      {
+        "doc_id": "AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001"
       }
     ]
   },
@@ -801,9 +900,18 @@
     ]
   },
   {
+    "document_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+    "title": "Peer review model routing and evidence policy (AIOS)",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AIOS-POLICY-INDEX",
     "title": "AIOS Policy Identifier Index (in-repo master list)",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "status": "ratified",
     "category": "reference",
     "_path": "reference/AIOS_POLICY_INDEX.md",
@@ -813,11 +921,19 @@
         "relationship": "references"
       },
       {
+        "doc_id": "AMD-2026-009",
+        "relationship": "references"
+      },
+      {
         "doc_id": "AMD-2026-010",
         "relationship": "references"
       },
       {
         "doc_id": "AMD-2026-012",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-013",
         "relationship": "references"
       }
     ]
@@ -955,8 +1071,8 @@
   {
     "document_id": "AIOS-REPO-TAXONOMY-001",
     "title": "Intent-bearing repository taxonomy — implementation note and migration appendix",
-    "version": "0.2.1",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "reference",
     "_path": "reference/implementation/AIOS-REPO-TAXONOMY-001.md",
     "cross_references": [
@@ -973,6 +1089,34 @@
       {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
         "title": "Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001",
+    "title": "Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track)",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-001"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006"
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-RD-NOTES-001"
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001"
       }
     ]
   },
@@ -1139,18 +1283,38 @@
   {
     "document_id": "AIOS-SPEC-007",
     "title": "Google Workspace Integration Governance",
-    "version": "0.1.1",
-    "status": "draft",
+    "version": "1.0.1",
+    "status": "ratified",
     "category": "specification",
     "_path": "specifications/GoogleWorkspaceIntegrationGovernance.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-2026-006-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-006 / AIOS-SPEC-007"
+      },
+      {
+        "doc_id": "AMD-2026-006",
+        "title": "Google Workspace Governed Integration Plane"
+      },
       {
         "doc_id": "AIOS-SPEC-009",
         "title": "Intent Primitive and Execution Model"
       },
       {
+        "doc_id": "AIOS-SPEC-010",
+        "title": "Execution Scope Envelope"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
+      },
+      {
         "doc_id": "AMD-2026-009",
-        "title": "Intent-Scoped Web Retrieval and Governed Website Review"
+        "title": "Intent-Scoped Web Retrieval and Governed Website Review (ratified 1.0.0)"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
       },
       {
         "path": "WORKSPACE.md",
@@ -1199,7 +1363,7 @@
   {
     "document_id": "AIOS-SPEC-009",
     "title": "Intent Primitive and Execution Model",
-    "version": "0.5.5",
+    "version": "0.5.7",
     "status": "ratified",
     "category": "specification",
     "_path": "specifications/IntentPrimitiveAndExecutionModel.md",
@@ -1237,7 +1401,12 @@
       {
         "doc_id": "AMD-2026-008",
         "relationship": "references",
-        "citation": "Amendment AMD-2026-008 — sovereign voice and local runtime ratification"
+        "citation": "Amendment AMD-2026-008 — sovereign voice and local runtime ratification (ratified 1.0.0)"
+      },
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION",
+        "relationship": "references",
+        "citation": "Ratification motion — AMD-2026-008 (approved 2026-04-08)"
       },
       {
         "doc_id": "OLLAMA_RUNTIME_STANDARD",
@@ -1257,7 +1426,12 @@
       {
         "doc_id": "AMD-2026-009",
         "relationship": "constrained_by",
-        "citation": "Amendment AMD-2026-009 — bounded web retrieval and governed website review"
+        "citation": "Amendment AMD-2026-009 — bounded web retrieval and governed website review (ratified 1.0.0)"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "relationship": "references",
+        "citation": "Ratification motion — AMD-2026-009 (approved 2026-04-09)"
       }
     ]
   },
@@ -1282,7 +1456,7 @@
   {
     "document_id": "AIOS-SPEC-010",
     "title": "Execution Scope and Context Bounding",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "status": "draft",
     "category": "specification",
     "_path": "specifications/ExecutionScopeAndContextBounding.md",
@@ -1318,6 +1492,10 @@
       {
         "doc_id": "AMD-2026-009",
         "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "relationship": "references"
       }
     ]
   },
@@ -1396,6 +1574,15 @@
     ]
   },
   {
+    "document_id": "AMD-001",
+    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
+    "version": "",
+    "status": "ratified",
+    "category": "",
+    "_path": "amendments/ammendment_google.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AMD-2026-005",
     "title": "Workspace Model & Governed Interface Surfaces",
     "version": "1.0.0",
@@ -1420,11 +1607,16 @@
   {
     "document_id": "AMD-2026-006",
     "title": "Google Workspace Governed Integration Plane",
-    "version": "0.1.0",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-006.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-2026-006-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-006 / AIOS-SPEC-007",
+        "relationship": "ratification_motion"
+      },
       {
         "doc_id": "AMD-2026-005",
         "relationship": "amends"
@@ -1442,6 +1634,15 @@
         "relationship": "ratifies"
       }
     ]
+  },
+  {
+    "document_id": "AMD-2026-006-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-006 / AIOS-SPEC-007",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-006-ratification-motion.md",
+    "cross_references": []
   },
   {
     "document_id": "AMD-2026-007",
@@ -1489,11 +1690,21 @@
   {
     "document_id": "AMD-2026-008",
     "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)",
-    "version": "1.2.0",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-008.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-008",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-008-ADD-003",
+        "relationship": "ratification_motion"
+      },
       {
         "doc_id": "AIOS-SPEC-009",
         "title": "Intent Primitive and Execution Model"
@@ -1521,13 +1732,156 @@
     ]
   },
   {
+    "document_id": "AMD-2026-008-ADD-001",
+    "title": "Base Shell Navigation Primitives and Start-Here Control",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-008-ADD-001-base-shell-navigation-primitives-and-start-here-control.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-002",
+    "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging",
+    "version": "0.13.0",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-008-ADD-002-verbose-grounding-shell-voice-output-and-output-packaging.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001",
+        "title": "Base Shell Navigation Primitives and Start-Here Control"
+      },
+      {
+        "doc_id": "MPOA",
+        "title": "Master Platform Operating Agreement",
+        "note": "Commercial entitlements and tiers for premium BOOK capabilities (Section 10.11)."
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003",
+        "title": "Composition Control Plane for Messages, Invites, and Documents",
+        "note": "Composition classes, document subclasses, action semantics, composition contract (§5), language/localization (§16), measurement contract (§17), knowledge basis/discovery (§18), originality/source-boundary (§19), reference-guided composition (§20 incl. adherence §20.11–§20.15), professional disclosure (§9.4); orthogonal to depth/packaging."
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-003",
+    "title": "Composition Control Plane for Messages, Invites, and Documents",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-008-ADD-003",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001",
+        "title": "Base Shell Navigation Primitives and Start-Here Control"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging"
+      },
+      {
+        "doc_id": "MPOA",
+        "title": "Master Platform Operating Agreement",
+        "note": "Commercial tiers, entitlements, and liability for send/publish actions."
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-RD-NOTES-001",
+        "title": "Composition control plane — R&D and knowledge capture (AMD-2026-008 addendum track)",
+        "note": "Informative; non-normative intake / process capture."
+      },
+      {
+        "doc_id": "AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001",
+        "title": "Composition control plane — architecture memo (bounded domains and addendum seams)",
+        "note": "Informative; doctrinal seams and dependency map."
+      },
+      {
+        "doc_id": "AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001",
+        "title": "Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track)",
+        "note": "Informative; doctrine-to-surface mapping."
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003-ANNEX-A",
+        "title": "ADD-003 Annex A — Informative composition and knowledge-basis examples",
+        "note": "Informative JSON; moved from §5.7 and §18.9."
+      },
+      {
+        "doc_id": "ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD",
+        "title": "Originality and Source-Boundary Verification (Implementation Home)",
+        "note": "AIOS-OPS-020 — metrics, thresholds, evaluation record schema, DCP; default home for §19.4(b)/§19.10."
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-003-ANNEX-A",
+    "title": "ADD-003 Annex A — Informative composition and knowledge-basis examples",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "amendment_addendum_annex",
+    "_path": "amendments/AMD-2026-008-ADD-003-ANNEX-A-informative-composition-examples.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-003",
+        "title": "Composition Control Plane for Messages, Invites, and Documents"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-008-ADD-003 (composition control plane)",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-008-ADD-003-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-008-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-008",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-008-ratification-motion.md",
+    "cross_references": []
+  },
+  {
     "document_id": "AMD-2026-009",
     "title": "Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition)",
-    "version": "0.1.6",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-009.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
+      },
       {
         "doc_id": "AIOS-SPEC-007",
         "title": "Google Workspace Integration Governance"
@@ -1553,8 +1907,8 @@
   {
     "document_id": "AMD-2026-009-ADD-001",
     "title": "Retrieval backend neutrality (beyond Google PSE / Custom Search)",
-    "version": "1.0.1",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment_addendum",
     "_path": "amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md",
     "cross_references": [
@@ -1570,13 +1924,21 @@
       {
         "path": "reviews/amd_2026_009_add_001/round_1/REVIEW_BRIEF.md",
         "note": "Triangulated peer review prompt (search/knowledge strategy)"
+      },
+      {
+        "path": "reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md",
+        "note": "Round 1 synthesis — approved_with_changes; gate report"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
       }
     ]
   },
   {
     "document_id": "AMD-2026-009-MERGE-DELTAS-FIRST-SLICE",
     "title": "Normative merge deltas (sanity-check) and first implementation slice",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "status": "draft",
     "category": "operational_plan",
     "_path": "amendments/AMD-2026-009-merge-deltas-and-first-slice.md",
@@ -1586,7 +1948,7 @@
     "document_id": "AMD-2026-009-RATIFICATION-MOTION",
     "title": "Ratification motion — AMD-2026-009",
     "version": "",
-    "status": "draft",
+    "status": "approved",
     "category": "council_motion",
     "_path": "amendments/AMD-2026-009-ratification-motion.md",
     "cross_references": []
@@ -1594,8 +1956,8 @@
   {
     "document_id": "AMD-2026-009-SPEC-MERGE-CHECKLIST",
     "title": "Normative spec-merge checklist (AMD-2026-009 §10)",
-    "version": "1.0.0",
-    "status": "draft",
+    "version": "1.0.1",
+    "status": "ratified",
     "category": "operational_checklist",
     "_path": "amendments/AMD-2026-009-spec-merge-checklist.md",
     "cross_references": []
@@ -1724,8 +2086,8 @@
   {
     "document_id": "AMD-2026-013",
     "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)",
-    "version": "0.2.1",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-013.md",
     "cross_references": [
@@ -1754,10 +2116,31 @@
         "title": "Intent-bearing repository taxonomy — implementation note and migration appendix"
       },
       {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-CORE-002",
+        "title": "The Gateway Global AIOS Governance Constitution"
+      },
+      {
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013",
         "title": "Committee review brief — intent-bearing repository taxonomy (AMD-2026-013)"
+      },
+      {
+        "doc_id": "AMD-2026-013-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-013"
       }
     ]
+  },
+  {
+    "document_id": "AMD-2026-013-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-013",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-013-ratification-motion.md",
+    "cross_references": []
   },
   {
     "document_id": "LEGAL-001",
@@ -1791,7 +2174,7 @@
     "document_id": "LOCAL_TTS_RUNTIME_STANDARD",
     "title": "Local Text-to-Speech (TTS) Runtime Standard",
     "version": "0.1.0",
-    "status": "draft",
+    "status": "ratified",
     "category": "operations",
     "_path": "operations/LOCAL_TTS_RUNTIME_STANDARD.md",
     "cross_references": [
@@ -1806,6 +2189,10 @@
       {
         "doc_id": "AMD-2026-008",
         "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION",
+        "relationship": "references"
       }
     ]
   },
@@ -1813,7 +2200,7 @@
     "document_id": "OLLAMA_RUNTIME_STANDARD",
     "title": "Ollama Local Model Runtime Standard",
     "version": "0.1.0",
-    "status": "draft",
+    "status": "ratified",
     "category": "operations",
     "_path": "operations/OLLAMA_RUNTIME_STANDARD.md",
     "cross_references": [
@@ -1828,6 +2215,29 @@
       {
         "doc_id": "AMD-2026-007",
         "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION",
+        "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD",
+    "title": "Originality and Source-Boundary Verification (Implementation Home)",
+    "version": "0.4.1",
+    "status": "draft",
+    "category": "operations",
+    "_path": "operations/ORIGINALITY_SOURCE_BOUNDARY_VERIFICATION_STANDARD.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-003",
+        "title": "Composition Control Plane for Messages, Invites, and Documents",
+        "note": "Normative doctrine — §19 originality/source-boundary gate; §19.4 option (b); §19.10 implementation handoff."
       }
     ]
   },
@@ -1835,7 +2245,7 @@
     "document_id": "WHISPER_RUNTIME_STANDARD",
     "title": "Whisper / faster-whisper Local STT Runtime Standard",
     "version": "0.1.0",
-    "status": "draft",
+    "status": "ratified",
     "category": "operations",
     "_path": "operations/WHISPER_RUNTIME_STANDARD.md",
     "cross_references": [
@@ -1850,17 +2260,12 @@
       {
         "doc_id": "AMD-2026-008",
         "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-008-RATIFICATION-MOTION",
+        "relationship": "references"
       }
     ]
-  },
-  {
-    "document_id": "",
-    "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
-    "version": "",
-    "status": "ratified",
-    "category": "",
-    "_path": "amendments/ammendment_google.md",
-    "cross_references": []
   },
   {
     "document_id": "—",

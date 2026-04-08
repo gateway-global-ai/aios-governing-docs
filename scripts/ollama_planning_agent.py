@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import os
+from datetime import date
 from pathlib import Path
 
 import httpx
@@ -129,7 +130,16 @@ def main() -> None:
             + arch
             + "\n\n## Template to complete\n\n"
             + template
-            + "\n\nProduce a complete `UI_PLAN.md` body following the template."
+            + "\n\nProduce a complete `UI_PLAN.md` body following the template.\n\n"
+            f"**Today's date (use exactly):** {date.today().isoformat()}\n\n"
+            "**Constraints:** Output **only** markdown for the plan — no \"I can help\", no "
+            "\"Here is a complete\", no assistant preamble or closing disclaimer. "
+            "**First character** of your output must be `#` (the title heading). "
+            "Do not use placeholder person names "
+            "(e.g. John Doe); use `TBD` or `unknown — reason` if a verifier is unknown.\n"
+            "**Depends on:** link `./ARCHITECT_PLAN.md` (same directory) — no example.com or "
+            "external placeholder URLs. End at the **last** `- [ ]` checklist line — **no** text, "
+            "headings, or \"verify your work\" lines after that."
         )
         out = out_ui
 

@@ -2,17 +2,22 @@
 document_id: WHISPER_RUNTIME_STANDARD
 registry_id: AIOS-OPS-002
 version: 0.1.0
-status: draft
+status: ratified
 category: operations
 title: Whisper / faster-whisper Local STT Runtime Standard
 author: Gateway Global AIOS
 created: 2026-04-04
-last_updated: 2026-04-04
+last_updated: 2026-04-08
 reviewers: []
 cross_references:
   - AIOS-SPEC-009
   - AIOS-SPEC-009 §17
   - AMD-2026-008
+  - AMD-2026-008-RATIFICATION-MOTION
+amendment_history:
+  - version: 0.1.0
+    date: 2026-04-08
+    summary: "Ratified per AMD-2026-008 §3.1 incorporation package; AMD-2026-008-RATIFICATION-MOTION v1.0.2; substantive basis unchanged from draft."
 ---
 
 # Whisper / faster-whisper Local STT Runtime Standard

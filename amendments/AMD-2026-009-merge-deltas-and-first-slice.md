@@ -2,17 +2,21 @@
 document_id: AMD-2026-009-MERGE-DELTAS-FIRST-SLICE
 parent_amendment: AMD-2026-009
 parent_version: 0.1.5
-version: 1.0.0
+version: 1.0.1
 status: draft
 category: operational_plan
 title: Normative merge deltas (sanity-check) and first implementation slice
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-08
 applied_normative_merge: 2026-04-03
 related:
   - amendments/AMD-2026-009.md
   - amendments/AMD-2026-009-spec-merge-checklist.md
+amendment_history:
+  - version: 1.0.1
+    date: 2026-04-08
+    summary: A.0 — AIOS-SPEC-007 baseline note; repository SPEC-007 ratified 1.0.0 (AMD-2026-006); reconcile §10 merges against current file, not 2026-04-03 draft snapshot alone.
 ---
 
 # AMD-2026-009 — Normative merge deltas (pre-apply sanity-check) + first implementation slice
@@ -27,7 +31,9 @@ related:
 
 | Expected path (checklist) | Status in this repo |
 |---------------------------|---------------------|
-| `specifications/GoogleWorkspaceIntegrationGovernance.md` (**AIOS-SPEC-007**) | **Present** (v0.1.0 draft, 2026-04-03). Earlier gap closed; expand with fuller upstream content if your org maintains a richer SPEC-007 elsewhere. |
+| `specifications/GoogleWorkspaceIntegrationGovernance.md` (**AIOS-SPEC-007**) | **Present** — **`ratified` `1.0.0`** (**2026-04-08**; **[AMD-2026-006](AMD-2026-006.md)**). *Supersedes the 2026-04-03 “v0.1.0 draft” snapshot referenced in earlier edits of this operational plan.* |
+
+**Reconcile:** When executing **[spec-merge checklist](AMD-2026-009-spec-merge-checklist.md)** §2.1, **diff against the current ratified SPEC-007** in this repository — do **not** assume the older draft outline in historical notes below is still the live baseline.
 
 **Note:** If a **canonical** SPEC-007 exists outside this repo, **merge** non-conflicting sections or add a pointer in §0 of the repository file.
 
