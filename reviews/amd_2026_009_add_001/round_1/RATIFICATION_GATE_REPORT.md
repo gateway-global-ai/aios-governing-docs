@@ -2,7 +2,7 @@
 
 | Field | Value |
 |-------|--------|
-| **Addendum** | [AMD-2026-009-ADD-001](../../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) **v1.0.2** (Round 1 scoring used normative text as at **v1.0.1**; **v1.0.2** records peer-review completion) |
+| **Addendum** | [AMD-2026-009-ADD-001](../../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) **v1.0.3** (Round 1 scoring used normative text as at **v1.0.1**; **v1.0.2** metadata; **v1.0.3** narrow post–Round 1 author revision per synthesis) |
 | **Round** | 1 |
 | **Rubric** | Light (5 dimensions) |
 | **Gate instrument** | [AMD-2026-005](../../../amendments/AMD-2026-005.md) |

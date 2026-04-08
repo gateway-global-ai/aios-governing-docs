@@ -68,7 +68,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -1630,7 +1630,7 @@
   {
     "document_id": "AMD-2026-009-ADD-001",
     "title": "Retrieval backend neutrality (beyond Google PSE / Custom Search)",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "status": "draft",
     "category": "amendment_addendum",
     "_path": "amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md",

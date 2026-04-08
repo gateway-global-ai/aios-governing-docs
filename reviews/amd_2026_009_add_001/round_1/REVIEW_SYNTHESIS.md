@@ -17,3 +17,5 @@
 3. **§4 deltas** — Replace vague “tweak” language with **concrete** sibling-artifact edits when ready for merge pass (after parent/addendum ratification sequencing).
 
 **Next (process):** **Author revision** (v1.0.2+ editorial) **or** **Round 2** if Council/process requires another triangulation after edits — then **ratification** path with parent **AMD-2026-009** per coordinator scope.
+
+**Post–Round 1 author revision:** Addendum **v1.0.3** (**2026-04-08**) — narrow **§2** / **§2.1** / **§2.2** edits (registration fields, diligence ownership, default-deny scraping, backend eligibility). Round 1 scores remain tied to the **v1.0.1** reviewed body; **v1.0.3** is substantive **approved_with_changes** follow-through, not a re-score.
