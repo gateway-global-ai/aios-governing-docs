@@ -2,21 +2,34 @@
 document_id: AMD-2026-009-ADD-001
 parent_amendment: AMD-2026-009
 parent_version: 0.1.6
-version: 1.0.1
+version: 1.0.2
 status: draft
 category: amendment_addendum
 title: Retrieval backend neutrality (beyond Google PSE / Custom Search)
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-08
 ratification_target: null
+peer_review: round_1_complete
+peer_review_date: 2026-04-08
+reviewers:
+  - DeepSeek R3
+  - OpenAI
+  - Gemini 2.5 Pro
+peer_review_rounds:
+  round_1: reviews/amd_2026_009_add_001/round_1/
 cross_references:
   - doc_id: AMD-2026-009
   - doc_id: AIOS-SPEC-007
   - doc_id: AIOS-SPEC-010
   - path: reviews/amd_2026_009_add_001/round_1/REVIEW_BRIEF.md
     note: Triangulated peer review prompt (search/knowledge strategy)
+  - path: reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md
+    note: Round 1 synthesis — approved_with_changes; gate report
 addendum_history:
+  - version: 1.0.2
+    date: 2026-04-08
+    summary: Triangulated peer review Round 1 complete — reviews/amd_2026_009_add_001/round_1/ (light rubric); RATIFICATION_GATE_REPORT PASS AMD-2026-005 numerics; disposition approved_with_changes (author revision before ratification).
   - version: 1.0.1
     date: 2026-04-03
     summary: §2.1 privacy/independent providers (DuckDuckGo et al.); triangulated peer review brief under reviews/amd_2026_009_add_001/.
@@ -103,4 +116,4 @@ Implementations **SHALL** accept at least the following **generic** pattern (alo
 
 ---
 
-*End of AMD-2026-009-ADD-001, version 1.0.1.*
+*End of AMD-2026-009-ADD-001, version 1.0.2.*

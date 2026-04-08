@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.7
+version: 1.1.8
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -20,6 +20,9 @@ cross_references:
   - doc_id: AIOS-AMD-001-DISPOSITION-001
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.1.8
+    date: 2026-04-08
+    summary: AMD-2026-009-ADD-001 Round 1 triangulated peer review complete; merge-deltas v1.0.1 SPEC-007 ratified baseline note; motion evidence line.
   - version: 1.1.7
     date: 2026-04-08
     summary: AMD-2026-009 active cohesion track — reviews/amd_2026_009/README.md + ACTIVE-TRACK-OPENING.md; snapshot row clarified; 006 closed.
@@ -89,7 +92,7 @@ amendment_history:
 | **AMD-2026-006** | **`ratified` `1.0.0`** | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) — Round 2 **PASS** on **SPEC-007**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **2026-04-08** | **Follow-on:** implementation alignment; **next cohesion track** **[AMD-2026-009](../amendments/AMD-2026-009.md)** |
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
-| **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** complete on **main** AMD; **[`ACTIVE-TRACK-OPENING.md`](../reviews/amd_2026_009/ACTIVE-TRACK-OPENING.md)** | **Next:** **ADD-001** triangulate **or** explicitly **defer/split** in motion; **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** `draft` → Council-ready; then **§10** checklist (reconcile **SPEC-007** **1.0.0**) |
+| **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** complete | **Next:** **author revision** on ADD-001 (if bundled) **or** Council **parent-only**; **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** `draft` → Council-ready; **§10** checklist vs **SPEC-007** **1.0.0** |
 | **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
 
 ---
@@ -146,4 +149,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.7.*
+*End of AIOS-AMD-TRACKER-001 v1.1.8.*

@@ -8,7 +8,7 @@ category: council_motion
 title: Ratification motion — AMD-2026-009
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-08
 execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 ---
 
@@ -17,6 +17,8 @@ execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 ## Statement
 
 Council is asked to **ratify** **[AMD-2026-009](AMD-2026-009.md)** at **version 0.1.6** (*Intent-Scoped Web Retrieval and Governed Website Review / External Knowledge Acquisition*), as the governing amendment for **bounded web retrieval and governed website review** in the AIOS stack, after **peer review Round 2** (triangulated) recorded on the amendment. *(Versions 0.1.3–0.1.6 add procedural artifacts: spec-merge checklist, ratification motion, pre-merge delta / first-slice plan, and addendum AMD-2026-009-ADD-001; normative substance aligns with v0.1.2 editorial and Round 2 review.)*
+
+**Evidence — addendum [AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) (optional bundled artifact):** **Round 1** triangulated peer review **2026-04-08** — [`REVIEW_SYNTHESIS.md`](../reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../reviews/amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](AMD-2026-005.md)** numerics; disposition **approved_with_changes** (author revision on §2 / §2.1 diligence language **before** ratification if Council bundles the addendum). Council may ratify **parent only** and defer ADD-001 per agenda.
 
 ## Scope (what this ratifies)
 

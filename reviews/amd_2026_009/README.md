@@ -24,11 +24,11 @@
 | **Merge / first-slice plan** | [`amendments/AMD-2026-009-merge-deltas-and-first-slice.md`](../../amendments/AMD-2026-009-merge-deltas-and-first-slice.md) |
 | **Addendum (parent-linked)** | [`amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md`](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) — peer review folder: [`../amd_2026_009_add_001/`](../amd_2026_009_add_001/) |
 
-## Addendum AMD-2026-009-ADD-001 — honest status
+## Addendum AMD-2026-009-ADD-001 — peer review status
 
-[`reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md`](../amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md) is still a **template** (“Pending”); companion `review_*.md` files are **not** completed runs. **Do not** treat ADD-001 as triangulated until that synthesis is filled from real reviews.
+**Round 1 triangulated** **2026-04-08** — [`../amd_2026_009_add_001/round_1/`](../amd_2026_009_add_001/round_1/): [`REVIEW_SYNTHESIS.md`](../amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerics (light rubric); disposition **approved_with_changes** (author revision on diligence / §2.1 language **before** ratification if Council bundles the addendum).
 
-**Parent amendment** §1.3 states ADD-001 **SHALL** be ratified or rejected as **its own** Council artifact. Package **AMD-2026-009** ratification decisions accordingly (parent-only motion vs bundled agenda vs defer ADD-001).
+**Parent amendment** §1.3 states ADD-001 **SHALL** be ratified or rejected as **its own** Council artifact. The **ratification motion** now records ADD-001 evidence and **parent-only** option — see [`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md).
 
 ## Cross-references
 
