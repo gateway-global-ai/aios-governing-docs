@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.1.3
+version: 1.1.4
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -18,7 +18,11 @@ cross_references:
   - doc_id: AMD-2026-013
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
   - doc_id: AIOS-AMD-001-DISPOSITION-001
+  - doc_id: AMD-2026-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.1.4
+    date: 2026-04-08
+    summary: AMD-2026-006 — ratification motion draft AMD-2026-006-RATIFICATION-MOTION; SPEC-007 R2 PASS; Council next.
   - version: 1.1.3
     date: 2026-04-08
     summary: AMD-2026-006 Phase A accepted Option B — CURRENT_SYSTEM_RESEARCH_2026-04-08.md; Phase B Architect next.
@@ -73,7 +77,7 @@ amendment_history:
 
 | Amendment | `status` (YAML) | Review packet | Next governed step |
 |-----------|-----------------|---------------|---------------------|
-| **AMD-2026-006** | `draft` | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) | **Phase A accepted** **2026-04-08** (Option B — [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md)); **Phase B (Architect)** next — [`COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md`](../../reviews/amd_2026_006/COORDINATOR_ARCHITECT_PHASE_B_PROMPT.md) |
+| **AMD-2026-006** | `draft` | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) | **SPEC-007** Round 2 **PASS**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **draft** — **Council / ratification** next (package **v0.2.0**); see [`revision_log.md`](../../reviews/amd_2026_006/revision_log.md) |
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
 | **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/`](../reviews/amd_2026_009/) | **Round 2** synthesis positive — **next:** finalize motion **[`amendments/AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)**; council; **§10** spec-merge checklist |
@@ -135,4 +139,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.1.3.*
+*End of AIOS-AMD-TRACKER-001 v1.1.4.*

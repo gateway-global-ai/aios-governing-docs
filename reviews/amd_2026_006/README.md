@@ -1,6 +1,6 @@
 # Peer review — AMD-2026-006 (Google Workspace governed integration plane)
 
-**Cohesion track:** **Active** — first in **006 → 009 → 008** sequence. **Restart summary:** [`RESTART-PACKET.md`](RESTART-PACKET.md). **Ratification path:** coordinator note in [`revision_log.md`](revision_log.md) — **SPEC-007** Round 2 **PASS**; proceed per Council (optional surgical §0/MPOA only if desired).
+**Cohesion track:** **Active** — first in **006 → 009 → 008** sequence. **Restart summary:** [`RESTART-PACKET.md`](RESTART-PACKET.md). **Ratification motion (draft):** [`../../amendments/AMD-2026-006-ratification-motion.md`](../../amendments/AMD-2026-006-ratification-motion.md). **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md).
 
 **Phase A:** **Accepted 2026-04-08** (Option B) — [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md); active research [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md).
 
