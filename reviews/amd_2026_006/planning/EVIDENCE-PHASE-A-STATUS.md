@@ -32,7 +32,14 @@ py -3 scripts/generate_product_context_bundle.py --voice-root C:/Apps/ai-os-voic
 
 **Minimum:** **`product_context_bundle`** is current enough for **Architect** to cite **verbatim** product paths **as of** the bundle **Generated** date.
 
-**Recommended before Architect:** Coordinator **confirms** whether **`CURRENT_SYSTEM_RESEARCH`** should be **refreshed** for material `ai-os-voice-interface` drift since **2026-04-07**. If yes, produce a **new** `CURRENT_SYSTEM_RESEARCH_YYYY-MM-DD.md` via governed research workflow; update **[`cursor_research_outputs/README.md`](../../../reference/knowledge_base/cursor_research_outputs/README.md)** pointers.
+**Coordinator decision (explicit):**
+
+| Option | Meaning |
+|--------|---------|
+| **Proceed to Phase B on bundle only** | Accept **Phase A** after **`product_context_bundle`** refresh; **no** new **`CURRENT_SYSTEM_RESEARCH`** file. |
+| **Research refresh first (recommended for 006)** | Run coordinator-led pass using **[`../COORDINATOR_RESEARCH_REFRESH_PROMPT.md`](../COORDINATOR_RESEARCH_REFRESH_PROMPT.md)**; add **`CURRENT_SYSTEM_RESEARCH_YYYY-MM-DD.md`**; update **[`cursor_research_outputs/README.md`](../../../reference/knowledge_base/cursor_research_outputs/README.md)**; **then** freeze **Phase A** and open **Phase B**. |
+
+**Lead-architect bias:** Prefer **research refresh first** — **006** already failed Round 1; narrative/system layer may catch gaps **not** visible in the bundle alone. **Not** a hard block if coordinator accepts bundle-only.
 
 ---
 
