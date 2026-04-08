@@ -13,6 +13,8 @@ All notable changes to the governing document set are recorded here.
 
 ### Added
 
+- **AMD-2026-006 ratification path note (2026-04-08):** [`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md) — coordinator recommendation after **SPEC-007** Round 2 **PASS**; optional §0/MPOA; optional amendment-only `peer_review.py`.
+
 - **AIOS-SPEC-007 peer review Round 2 (2026-04-08):** [`reviews/googleworkspaceintegrationgovernance/round_2/`](reviews/googleworkspaceintegrationgovernance/round_2/) — triangulated reviews; [`REVIEW_SYNTHESIS.md`](reviews/googleworkspaceintegrationgovernance/round_2/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](reviews/googleworkspaceintegrationgovernance/round_2/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](amendments/AMD-2026-005.md)** numerics; [`reviews/googleworkspaceintegrationgovernance/README.md`](reviews/googleworkspaceintegrationgovernance/README.md); [`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md) Round 2 + non-blocking `types.ts` § note.
 
 - **AMD-2026-006 Phase E + Round 2 freeze (2026-04-08):** **[AIOS-SPEC-007](specifications/GoogleWorkspaceIntegrationGovernance.md)** **v0.2.0** — normative **§§5–8** (routing envelope, control plane codes, canvas/**SPEC-006**, **SPEC-010** scope); **[AMD-2026-006](amendments/AMD-2026-006.md)** **v0.2.0** — non-stub ratification of strengthened SPEC; **[`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md)** traceability table; **[`reviews/amd_2026_006/round_2/README.md`](reviews/amd_2026_006/round_2/README.md)** — **`peer_review.py`** primary target **SPEC-007**; registry regenerated.

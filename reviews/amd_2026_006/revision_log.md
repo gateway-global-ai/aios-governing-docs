@@ -30,8 +30,6 @@
 
 **Freeze:** This pair is the **Round 2 candidate** until superseded by a later revision entry or ratification bump. **Planning** artifacts [`planning/ARCHITECT_PLAN.md`](planning/ARCHITECT_PLAN.md), [`planning/UI_PLAN.md`](planning/UI_PLAN.md) remain **frozen** reference (committee **2026-04-08**).
 
-**Next:** [`round_2/README.md`](round_2/README.md) — **`peer_review.py`** **Round 2** targeting **SPEC-007** primarily.
-
 ---
 
 ## Round 2 — AIOS-SPEC-007 (primary target) — 2026-04-08
@@ -42,10 +40,18 @@
 
 ---
 
+## Ratification path — coordinator note (2026-04-08)
+
+**Process validation:** Round 1 **FAIL** for substantive reasons → evidence → Architect / UI → committee → Phase E author revision → normative bulk in **AIOS-SPEC-007** → **Round 2 PASS** on **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerics (composites **3.7 / 3.9 / 4.0**, floor **3**). Remaining reviewer themes are **narrow** and **non-blocking** (optional tightening, not structural rescue).
+
+**Recommendation:** Advance **AIOS-SPEC-007 v0.2.0** and companion **[AMD-2026-006](../../amendments/AMD-2026-006.md) v0.2.0** to **ratification path** (Council / motion per tier) **without** another full peer review cycle. **Optional** pre-motion: surgical **§0 / MPOA** linkage in **SPEC-007** only if Council wants stronger legal language — **not** a default requirement. **`peer_review.py`** on **`amendments/AMD-2026-006.md`** alone — **only** if a **procedural** reason requires an amendment-scored artifact.
+
+---
+
 ## Pending
 
 **Governed restart** — [`RESTART-PACKET.md`](RESTART-PACKET.md) (**cohesion track open**).
 
 **Phase A (evidence)** — **Accepted 2026-04-08** — **Option B** — [`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md); [`planning/EVIDENCE-PHASE-A-STATUS.md`](planning/EVIDENCE-PHASE-A-STATUS.md).
 
-**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — Phases **A–D** complete; **Phase E** **delivered** **2026-04-08** (this log + document bumps). **Round 2** — **not** run in-repo until coordinator executes **`peer_review.py`**.
+**Planning lifecycle** (**[AIOS-AMD-PLAN-001](../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**) — [`planning/README.md`](planning/README.md) — Phases **A–E** complete **2026-04-08**; **Round 2** on **SPEC-007** complete — [`../googleworkspaceintegrationgovernance/round_2/`](../googleworkspaceintegrationgovernance/round_2/). **Next:** ratification / Council motion per tier (see **Ratification path** above).
