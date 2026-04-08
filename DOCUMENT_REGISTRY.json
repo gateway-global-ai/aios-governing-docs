@@ -1174,7 +1174,7 @@
   {
     "document_id": "AIOS-SPEC-007",
     "title": "Google Workspace Integration Governance",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "status": "draft",
     "category": "specification",
     "_path": "specifications/GoogleWorkspaceIntegrationGovernance.md",
@@ -1182,6 +1182,14 @@
       {
         "doc_id": "AIOS-SPEC-009",
         "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-010",
+        "title": "Execution Scope Envelope"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
       },
       {
         "doc_id": "AMD-2026-009",
@@ -1464,7 +1472,7 @@
   {
     "document_id": "AMD-2026-006",
     "title": "Google Workspace Governed Integration Plane",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "status": "draft",
     "category": "amendment",
     "_path": "amendments/AMD-2026-006.md",

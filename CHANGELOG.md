@@ -13,6 +13,8 @@ All notable changes to the governing document set are recorded here.
 
 ### Added
 
+- **AMD-2026-006 Phase E + Round 2 freeze (2026-04-08):** **[AIOS-SPEC-007](specifications/GoogleWorkspaceIntegrationGovernance.md)** **v0.2.0** — normative **§§5–8** (routing envelope, control plane codes, canvas/**SPEC-006**, **SPEC-010** scope); **[AMD-2026-006](amendments/AMD-2026-006.md)** **v0.2.0** — non-stub ratification of strengthened SPEC; **[`reviews/amd_2026_006/revision_log.md`](reviews/amd_2026_006/revision_log.md)** traceability table; **[`reviews/amd_2026_006/round_2/README.md`](reviews/amd_2026_006/round_2/README.md)** — **`peer_review.py`** primary target **SPEC-007**; registry regenerated.
+
 - **AMD-2026-006 Phase D — committee approval (2026-04-08):** [`reviews/amd_2026_006/planning/COMMITTEE_PACKET.md`](reviews/amd_2026_006/planning/COMMITTEE_PACKET.md) — **Approved**; **[`ARCHITECT_PLAN.md`](reviews/amd_2026_006/planning/ARCHITECT_PLAN.md)** / **[`UI_PLAN.md`](reviews/amd_2026_006/planning/UI_PLAN.md)** **no changes**; **Phase E** authorized (AMD + SPEC only).
 - **AMD-2026-006 Phase C — UI_PLAN.md (2026-04-08):** [`reviews/amd_2026_006/planning/UI_PLAN.md`](reviews/amd_2026_006/planning/UI_PLAN.md) — verified against `ai-os-voice-interface` (`App.tsx`, `workspaceIntentRouter.ts`); **accepted** 2026-04-08 (supersedes prior “pending verify” note).
 - **AMD-2026-006 Phase B — ARCHITECT_PLAN.md verified (2026-04-08):** [`reviews/amd_2026_006/planning/ARCHITECT_PLAN.md`](reviews/amd_2026_006/planning/ARCHITECT_PLAN.md); [`planning/README.md`](reviews/amd_2026_006/planning/README.md).

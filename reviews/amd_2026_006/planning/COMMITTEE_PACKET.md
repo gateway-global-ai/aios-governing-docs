@@ -56,10 +56,10 @@ Answer each: **Approve** / **Revise** / **Reject** (one line each; optional comm
 
 | Step | Owner | When |
 |------|--------|------|
-| Record **§3** | Committee / designated reviewers | After review |
-| Author revision (**Phase E**) | Amendment author | **After** §3 **Approve** or **Approved with changes** |
-| `revision_log.md` + version bumps | Author | With E |
-| **`peer_review.py` Round 2** (`--product-context`) | Coordinator | **After** E |
+| ~~Record **§3**~~ | Committee | **Done** 2026-04-08 |
+| ~~Author revision (**Phase E**)~~ | Amendment author | **Done** 2026-04-08 — **[AMD-2026-006](../../../amendments/AMD-2026-006.md)** **v0.2.0**, **[AIOS-SPEC-007](../../../specifications/GoogleWorkspaceIntegrationGovernance.md)** **v0.2.0** |
+| `revision_log.md` + freeze | Author | **Done** — [`../revision_log.md`](../revision_log.md) |
+| **`peer_review.py` Round 2** (`--product-context`) | Coordinator | **Next** — [`../round_2/README.md`](../round_2/README.md) |
 
 See **[AIOS-AMD-PLAN-001](../../../reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** Phase F.
 

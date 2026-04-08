@@ -69,4 +69,4 @@ Users experience **Google Workspace** inside a **dedicated Workspace canvas over
 
 ---
 
-*Phase C verified 2026-04-08 — committee packet (**Phase D**) issued; **no** author revision until committee records outcome.*
+*Phase C verified 2026-04-08 — Phase E revision freeze recorded in [`revision_log.md`](../revision_log.md).*

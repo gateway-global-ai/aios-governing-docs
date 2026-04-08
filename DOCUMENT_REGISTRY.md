@@ -50,7 +50,7 @@
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
 | AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
-| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.1.1 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-007 | Google Workspace Integration Governance | 0.2.0 | draft | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
 | AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.5 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
@@ -60,7 +60,7 @@
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
 | AMD-001 | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
-| AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
+| AMD-2026-006 | Google Workspace Governed Integration Plane | 0.2.0 | draft | amendment | `amendments/AMD-2026-006.md` |
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
 | AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
@@ -518,7 +518,9 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | — | — |
+| AIOS-SPEC-006 | — |
 | AIOS-SPEC-009 | — |
+| AIOS-SPEC-010 | — |
 | AMD-2026-009 | — |
 
 ### Intent Discovery & Onboarding Framework (AIOS-SPEC-008)
