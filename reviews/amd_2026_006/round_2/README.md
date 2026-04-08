@@ -1,22 +1,20 @@
 # Peer review — Round 2 — AMD-2026-006 / AIOS-SPEC-007
 
-**Status:** Ready to run after **[Phase E freeze](../revision_log.md)** (**2026-04-08**).
+**Status:** **Complete** **2026-04-08** — primary target **AIOS-SPEC-007** **v0.2.0**.
 
-## Primary target (committee + Round 1 coordinator note)
+**Artifacts (slug folder):** `peer_review.py` writes under **`reviews/googleworkspaceintegrationgovernance/round_2/`** (derived from the specification filename). That is the canonical location for this run:
 
-**`specifications/GoogleWorkspaceIntegrationGovernance.md`** (**AIOS-SPEC-007** **v0.2.0**).
+- **[`../../googleworkspaceintegrationgovernance/round_2/REVIEW_SYNTHESIS.md`](../../googleworkspaceintegrationgovernance/round_2/REVIEW_SYNTHESIS.md)**
+- **[`../../googleworkspaceintegrationgovernance/round_2/RATIFICATION_GATE_REPORT.md`](../../googleworkspaceintegrationgovernance/round_2/RATIFICATION_GATE_REPORT.md)**
+- Reviews: **`review_001_deepseek.md`**, **`review_002_openai.md`**, **`review_003_gemini.md`** (same folder)
 
-Normative bulk and **AMD-2026-006** alignment live in that file and **[`amendments/AMD-2026-006.md`](../../../amendments/AMD-2026-006.md)**; triangulation should score **SPEC-007** substance first.
+**Gate:** **PASS** **[AMD-2026-005](../../../amendments/AMD-2026-005.md)** numerics on **SPEC-007** — see synthesis.
 
-## Command (from `scripts/`)
+## Command (record)
 
 ```bash
 cd scripts
 py -3 peer_review.py ../specifications/GoogleWorkspaceIntegrationGovernance.md --round 2 --rubric full --smart-context --product-context
 ```
 
-Adjust **`--models`** per **`DEVELOPER.md`** and coordinator policy. **Optional:** second pass with **`../amendments/AMD-2026-006.md`** or merged prompt if the coordinator wants explicit amendment scoring.
-
-## Outputs
-
-Place triangulated reviews, **`REVIEW_SYNTHESIS.md`**, and **`RATIFICATION_GATE_REPORT.md`** in this folder (`round_2/`) following **`reviews/README.md`** conventions.
+**Optional:** second pass with **`../amendments/AMD-2026-006.md`** if the coordinator wants explicit amendment scoring.

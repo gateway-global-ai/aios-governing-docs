@@ -6,7 +6,9 @@
 
 **Planning (AIOS-AMD-PLAN-001):** **Complete through Phase E** — [`planning/README.md`](planning/README.md). **Traceability + freeze:** [`revision_log.md`](revision_log.md).
 
-**Status:** **Round 1** — **FAIL** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** — [`round_1/REVIEW_SYNTHESIS.md`](round_1/REVIEW_SYNTHESIS.md), [`round_1/RATIFICATION_GATE_REPORT.md`](round_1/RATIFICATION_GATE_REPORT.md). **Round 2** — **ready** — [`round_2/README.md`](round_2/README.md) (**primary target: AIOS-SPEC-007 v0.2.0**).
+**Round 1:** **FAIL** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** — [`round_1/REVIEW_SYNTHESIS.md`](round_1/REVIEW_SYNTHESIS.md), [`round_1/RATIFICATION_GATE_REPORT.md`](round_1/RATIFICATION_GATE_REPORT.md) (scored **AMD-2026-006** **v0.1.0**).
+
+**Round 2 (SPEC-007 primary):** **PASS** numerics — [`../../googleworkspaceintegrationgovernance/round_2/REVIEW_SYNTHESIS.md`](../../googleworkspaceintegrationgovernance/round_2/REVIEW_SYNTHESIS.md), [`../../googleworkspaceintegrationgovernance/round_2/RATIFICATION_GATE_REPORT.md`](../../googleworkspaceintegrationgovernance/round_2/RATIFICATION_GATE_REPORT.md). Pointer: [`round_2/README.md`](round_2/README.md).
 
 | Item | Location |
 |------|----------|
