@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-007
-version: 1.0.0
+version: 1.0.1
 status: ratified
 category: specification
 title: Google Workspace Integration Governance
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-08
+last_updated: 2026-04-09
 reviewers: []
 ratification_target: "2026-04-08"
 supersedes: null
@@ -22,10 +22,15 @@ cross_references:
   - doc_id: AIOS-SPEC-006
     title: UI Component Registry Standard
   - doc_id: AMD-2026-009
-    title: Intent-Scoped Web Retrieval and Governed Website Review
+    title: Intent-Scoped Web Retrieval and Governed Website Review (ratified 1.0.0)
+  - doc_id: AMD-2026-009-RATIFICATION-MOTION
+    title: Ratification motion — AMD-2026-009
   - path: WORKSPACE.md
     note: Informative operator and capability notes (repository root)
 amendment_history:
+  - version: 1.0.1
+    date: 2026-04-09
+    summary: AMD-2026-009 ratified 1.0.0 per AMD-2026-009-RATIFICATION-MOTION v1.0.0; §3 alignment reaffirmed with ratified amendment and ADD-001 1.0.0.
   - version: 1.0.0
     date: 2026-04-08
     summary: Ratified per AMD-2026-006-RATIFICATION-MOTION v1.0.0; substantive basis peer-reviewed as v0.2.0 (Round 2 PASS); frozen as ratified line 1.0.0.
@@ -46,7 +51,7 @@ amendment_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | `ratified` (**1.0.0**) |
+| **Status** | `ratified` (**1.0.1**) |
 | **Framing** | Normative requirements for how the AI OS **voice / agent layer** integrates with **Google Workspace** via **MCP** and governed **intent** routing. Informative deployment and env detail **MAY** live in **`WORKSPACE.md`** (repository root); this spec states **SHALL** / **MUST** rules products **MUST** satisfy to claim compliance. |
 
 **Non-normative — legal:** Commercial terms, liability allocation, and enforceability between parties **MAY** be addressed in **MPOA**, council instruments, or operator agreements. This specification defines **technical governance** and **integration behavior**, not standalone contractual obligations.
@@ -76,7 +81,7 @@ The **agent or voice layer** **MUST NOT** bind to raw MCP tool names. **Intent �
 
 ## 3. Web search and external retrieval (PSE)
 
-This section incorporates **[AMD-2026-009](../amendments/AMD-2026-009.md)** requirements at the **integration** layer.
+This section incorporates **[AMD-2026-009](../amendments/AMD-2026-009.md)** (**`ratified` `1.0.0`**) and, where applicable, **[ADD-001](../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** (**`ratified` `1.0.0`**) at the **integration** layer.
 
 1. Workspace MCP tools that invoke **Programmable Search Engine (PSE)** / **Custom Search JSON API** (e.g. **`search_custom`**) **SHALL** be **policy-scoped**: the effective **search scope class** (AMD-2026-009 §4) **SHALL** be determined by **intent → capability → policy**, not by ad hoc client parameters alone.
 2. Implementations **SHALL** reference **POL-WEB-SCOPE-001** (or successor in the organization policy register) for which **search scope classes** are allowed per tenant or intent.
@@ -156,4 +161,4 @@ The following paths are **non-normative** but **verified** for the **AI OS voice
 
 ---
 
-*End of AIOS-SPEC-007, version 1.0.0 (ratified).*
+*End of AIOS-SPEC-007, version 1.0.1 (ratified).*

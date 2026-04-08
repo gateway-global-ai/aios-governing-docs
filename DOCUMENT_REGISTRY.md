@@ -11,7 +11,7 @@
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
 | AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
 | AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.2.0 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.2.1 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |
@@ -38,7 +38,7 @@
 | AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
 | AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
-| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.3.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.4.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
 | AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
 | AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
@@ -50,11 +50,11 @@
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
 | AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
-| AIOS-SPEC-007 | Google Workspace Integration Governance | 1.0.0 | ratified | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
+| AIOS-SPEC-007 | Google Workspace Integration Governance | 1.0.1 | ratified | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
-| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.5 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
+| AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.6 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
 | AIOS-SPEC-009-CONFORMANCE-TEST-V1 | AIOS-SPEC-009 Pre-Ratification Conformance Test Suite | 1.2.0 | draft | conformance | `specifications/AIOS-SPEC-009-CONFORMANCE-TEST-V1.md` |
-| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.4 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
+| AIOS-SPEC-010 | Execution Scope and Context Bounding | 1.0.5 | draft | specification | `specifications/ExecutionScopeAndContextBounding.md` |
 | AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
 | AIOS-SPEC-012 | Workspace Domain Pack v1 | 0.1.0 | draft | specification | `specifications/WorkspaceDomainPackV1.md` |
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
@@ -65,11 +65,11 @@
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
 | AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
-| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
-| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.3 | draft | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
+| AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-009.md` |
+| AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
 | AMD-2026-009-MERGE-DELTAS-FIRST-SLICE | Normative merge deltas (sanity-check) and first implementation slice | 1.0.1 | draft | operational_plan | `amendments/AMD-2026-009-merge-deltas-and-first-slice.md` |
-| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | council_ready | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
-| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.0 | draft | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
+| AMD-2026-009-RATIFICATION-MOTION | Ratification motion — AMD-2026-009 | — | approved | council_motion | `amendments/AMD-2026-009-ratification-motion.md` |
+| AMD-2026-009-SPEC-MERGE-CHECKLIST | Normative spec-merge checklist (AMD-2026-009 §10) | 1.0.1 | ratified | operational_checklist | `amendments/AMD-2026-009-spec-merge-checklist.md` |
 | AMD-2026-010 | Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) | 0.2.0 | ratified | amendment | `amendments/AMD-2026-010.md` |
 | AMD-2026-010-RATIFICATION-MOTION | Ratification motion — AMD-2026-010 | — | approved | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
 | AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 1.0.0 | ratified | amendment | `amendments/AMD-2026-011.md` |
@@ -404,6 +404,7 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AMD-2026-007 | references |
+| AMD-2026-009 | references |
 | AMD-2026-010 | references |
 | AMD-2026-012 | references |
 | AMD-2026-013 | references |
@@ -526,6 +527,7 @@
 | AMD-2026-006 | — |
 | AMD-2026-006-RATIFICATION-MOTION | — |
 | AMD-2026-009 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 
 ### Intent Discovery & Onboarding Framework (AIOS-SPEC-008)
 
@@ -551,6 +553,7 @@
 | AMD-2026-007 | constrained_by |
 | AMD-2026-008 | references |
 | AMD-2026-009 | constrained_by |
+| AMD-2026-009-RATIFICATION-MOTION | references |
 | LOCAL_TTS_RUNTIME_STANDARD | references |
 | OLLAMA_RUNTIME_STANDARD | references |
 | WHISPER_RUNTIME_STANDARD | references |
@@ -574,6 +577,7 @@
 | AIOS-SPEC-005 | complements |
 | AIOS-SPEC-009 | constrained_by |
 | AMD-2026-009 | constrained_by |
+| AMD-2026-009-RATIFICATION-MOTION | references |
 
 ### Security & Sandboxing Model (AIOS-SPEC-011)
 
@@ -649,6 +653,7 @@
 | AIOS-SPEC-009 | — |
 | AIOS-SPEC-010 | — |
 | AMD-2026-007 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 | WORKSPACE.md | — |
 
 ### Retrieval backend neutrality (beyond Google PSE / Custom Search) (AMD-2026-009-ADD-001)
@@ -660,6 +665,7 @@
 | AIOS-SPEC-007 | — |
 | AIOS-SPEC-010 | — |
 | AMD-2026-009 | — |
+| AMD-2026-009-RATIFICATION-MOTION | — |
 
 ### Kernel Engineer Role and Specialist Kernel Review Lane (Shadow Pilot) (AMD-2026-010)
 
@@ -748,7 +754,7 @@
 ## Document Statistics
 
 - **Total documents:** 83
-- **Ratified:** 35
-- **Draft:** 32
+- **Ratified:** 38
+- **Draft:** 29
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

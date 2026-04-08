@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-010
 title: Execution Scope and Context Bounding
-version: 1.0.4
+version: 1.0.5
 status: draft
 category: specification
 author: Gateway Global AIOS
 created: 2026-04-04
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 reviewers: []
 supersedes: null
 cross_references:
@@ -18,14 +18,16 @@ cross_references:
   - { doc_id: "AIOS-SPEC-009", relationship: "constrained_by" }
   - { doc_id: "AIOS-SPEC-001", relationship: "complements" }
   - { doc_id: "AMD-2026-009", relationship: "constrained_by" }
+  - { doc_id: "AMD-2026-009-RATIFICATION-MOTION", relationship: "references" }
 amendment_history:
+  - { version: "1.0.5", date: "2026-04-09", summary: "AMD-2026-009 ratified 1.0.0 / ADD-001 1.0.0; §4.1.1 cross-reference reaffirmed." }
   - { version: "1.0.4", date: "2026-04-03", summary: "§4.1.1 web:retrieval key pattern (AMD-2026-009-ADD-001)." }
   - { version: "1.0.3", date: "2026-04-03", summary: "§4.1.1 logical web keys; §5.2 web/PSE bounding; §6 AMD-2026-009; §8 web review_files conformance." }
   - { version: "1.0.2", date: "2026-04-06", summary: "Deterministic escalation trigger (§3.1); required scope_confidence and scope_rationale (§4.1); Article IV + multi-party override rules (§5.3); MPOA liability linkage (§5.2); DCP compliance hook (§8)." }
   - { version: "1.0.1", date: "2026-04-04", summary: "Scope confidence, breadth/risk, expansion prohibition, context bounding, read/write line, audited overrides, scope_rationale." }
 ---
 
-# AIOS Execution Scope and Context Bounding v1.0.4
+# AIOS Execution Scope and Context Bounding v1.0.5
 
 ## 1. Architectural Purpose
 
@@ -121,7 +123,7 @@ Paths **SHALL** use forward slashes and **SHALL NOT** contain `..` traversal seg
 
 ### 4.1.1 Logical resource keys (web retrieval and review)
 
-For **bounded web retrieval** and **governed website review** under **[AMD-2026-009](../amendments/AMD-2026-009.md)**, `scope.review_files` **MAY** include **logical keys** (illustrative patterns in AMD-2026-009 §1.2), for example:
+For **bounded web retrieval** and **governed website review** under **[AMD-2026-009](../amendments/AMD-2026-009.md)** (**`ratified` `1.0.0`**), `scope.review_files` **MAY** include **logical keys** (illustrative patterns in AMD-2026-009 §1.2), for example:
 
 - `web:pse:{engine_alias}:{query_fingerprint}` — one governed PSE / Custom Search call.
 - `web:retrieval:{backend_id}:{query_fingerprint}` — one governed call for a **policy-registered** backend (**AMD-2026-009-ADD-001**).
@@ -237,6 +239,7 @@ A platform component **conforms** to AIOS-SPEC-010 if it:
 
 | Version | Date | Summary |
 |---------|------|---------|
+| 1.0.5 | 2026-04-09 | AMD-2026-009 / ADD-001 ratified; §4.1.1 ratified cross-reference. |
 | 1.0.0 | 2026-04-04 | Initial draft: execution scope envelope, JSON shape, enforcement hooks. |
 | 1.0.1 | 2026-04-04 | Confidence/escalation, breadth/risk, expansion prohibition, context bounding, read/write rule, audited overrides, `scope_rationale`. |
 | 1.0.4 | 2026-04-03 | `web:retrieval:{backend_id}:…` in §4.1.1 (ADD-001). |

@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-009
-version: 0.5.5
+version: 0.5.6
 status: ratified
 category: specification
 title: Intent Primitive and Execution Model
 author: Gateway Global AIOS
 created: 2026-04-04
-last_updated: 2026-04-06
+last_updated: 2026-04-09
 reviewers: []
 ratification_target: 2026-04-06
 supersedes: null
@@ -43,8 +43,14 @@ cross_references:
     citation: "Local TTS Runtime Standard (operations/LOCAL_TTS_RUNTIME_STANDARD.md)"
   - doc_id: AMD-2026-009
     relationship: constrained_by
-    citation: "Amendment AMD-2026-009 — bounded web retrieval and governed website review"
+    citation: "Amendment AMD-2026-009 — bounded web retrieval and governed website review (ratified 1.0.0)"
+  - doc_id: AMD-2026-009-RATIFICATION-MOTION
+    relationship: references
+    citation: "Ratification motion — AMD-2026-009 (approved 2026-04-09)"
 amendment_history:
+  - version: 0.5.6
+    date: 2026-04-09
+    summary: "AMD-2026-009 ratified 1.0.0; §15.8 / external knowledge cross-reference reaffirmed; motion AMD-2026-009-RATIFICATION-MOTION v1.0.0."
   - version: 0.5.5
     date: 2026-04-06
     summary: §12.2 primary transparency — replace subjective “when material” with PolicyRecord-backed execution-readiness threshold (AIOS-SPEC-002); §12.3 confidence optional per UX policy; ratified.
@@ -74,7 +80,7 @@ amendment_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | `ratified` (**v0.5.5**, **2026-04-06**) |
+| **Status** | `ratified` (**v0.5.6**, **2026-04-09**) |
 | **Ratification** | Requires alignment with **AMD-2026-007** §11; **AIOS-SPEC-008** **MUST** reference or merge this spec; **AIOS-SPEC-007** **MUST** enforce this spec at the integration layer |
 
 This specification defines the **core primitive of the AI OS: Intent**.
@@ -829,4 +835,4 @@ Before ratifying this specification, run the **[AIOS-SPEC-009 Pre-Ratification C
 
 ---
 
-**End of AIOS-SPEC-009**
+**End of AIOS-SPEC-009 v0.5.6**

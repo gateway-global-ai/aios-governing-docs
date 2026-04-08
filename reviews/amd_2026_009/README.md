@@ -1,8 +1,8 @@
 # Peer review — AMD-2026-009 (intent-scoped web retrieval and governed website review)
 
-**Cohesion track:** **Active** — **first** in **009 → 008** remainder after **[AMD-2026-006](../../amendments/AMD-2026-006.md)** + **[AIOS-SPEC-007](../../specifications/GoogleWorkspaceIntegrationGovernance.md)** **ratified** **2026-04-08**. **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md).
+**Cohesion track:** **Ratified** **2026-04-09** — parent **[AMD-2026-009](../../amendments/AMD-2026-009.md)** **`ratified` `1.0.0`** and packaged **[ADD-001](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **`ratified` `1.0.0`**; motion **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** executed. **Next foundation focus:** **[AMD-2026-008](../../amendments/AMD-2026-008.md)**. **Tracker:** [`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md) **v1.2.1**.
 
-**Opening state (continuation, not a blank restart):** [`ACTIVE-TRACK-OPENING.md`](ACTIVE-TRACK-OPENING.md).
+**Historical opening packet:** [`ACTIVE-TRACK-OPENING.md`](ACTIVE-TRACK-OPENING.md). **Execution log:** [`revision_log.md`](revision_log.md).
 
 ## Binding peer review — main amendment (AMD-2026-009)
 
@@ -13,24 +13,26 @@
 
 **Note:** This folder does **not** currently include a standalone **`RATIFICATION_GATE_REPORT.md`**. Numerics and consensus are recorded in **`round_2/REVIEW_SYNTHESIS.md`** (composites **4.2–4.5**; see synthesis text). If process requires a formal gate file, add it **without** inventing scores—derive from existing reviews.
 
-**Authoritative amendment:** [`amendments/AMD-2026-009.md`](../../amendments/AMD-2026-009.md) (**v0.1.6** `draft`; YAML: **`peer_review: round_2_complete`**).
+**Authoritative amendment:** [`AMD-2026-009.md`](../../amendments/AMD-2026-009.md) (**`ratified` `1.0.0`**; **`ratification_target`:** **2026-04-09**).
 
 ## Supporting artifacts (not separate constitutional tracks)
 
 | Role | Artifact |
 |------|----------|
-| **Ratification motion** | [`amendments/AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md) — **`council_ready`** **2026-04-08** |
-| **§10 execution path** | [`amendments/AMD-2026-009-spec-merge-checklist.md`](../../amendments/AMD-2026-009-spec-merge-checklist.md) |
+| **Ratification motion** | [`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md) — **`approved`** **2026-04-09** |
+| **§10 execution path** | [`AMD-2026-009-spec-merge-checklist.md`](../../amendments/AMD-2026-009-spec-merge-checklist.md) — **`ratified`** **v1.0.1** (checklist executed) |
 | **Merge / first-slice plan** | [`amendments/AMD-2026-009-merge-deltas-and-first-slice.md`](../../amendments/AMD-2026-009-merge-deltas-and-first-slice.md) |
 | **Addendum (parent-linked)** | [`amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md`](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) — peer review folder: [`../amd_2026_009_add_001/`](../amd_2026_009_add_001/) |
 
-## Addendum AMD-2026-009-ADD-001 — peer review status
+## Addendum AMD-2026-009-ADD-001 — peer review + ratification
 
-**Round 1 triangulated** **2026-04-08** — [`../amd_2026_009_add_001/round_1/`](../amd_2026_009_add_001/round_1/): [`REVIEW_SYNTHESIS.md`](../amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerics (light rubric); disposition **approved_with_changes** (author revision on diligence / §2.1 language **before** ratification if Council bundles the addendum).
+**Authoritative addendum:** [`AMD-2026-009-ADD-001-retrieval-backend-neutrality.md`](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md) — **`ratified` `1.0.0`** (**2026-04-09**), bundled with parent per **[`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md)**.
 
-**Version honesty:** Triangulation scores apply to the **v1.0.1** reviewed body. **[ADD-001 v1.0.3](../../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** is a **narrow** post–Round 1 tightening (§2 / §2.1 / §2.2) — **not** re-scored unless policy or Council requires **Round 2**.
+**Round 1 triangulated** **2026-04-08** — [`../amd_2026_009_add_001/round_1/`](../amd_2026_009_add_001/round_1/): [`REVIEW_SYNTHESIS.md`](../amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md), [`RATIFICATION_GATE_REPORT.md`](../amd_2026_009_add_001/round_1/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** numerics (light rubric); disposition **approved_with_changes** (author revision **v1.0.3** on diligence / §2.1 language **before** ratification).
 
-**Parent amendment** §1.3 states ADD-001 **SHALL** be ratified or rejected as **its own** Council artifact. The **ratification motion** now records ADD-001 evidence and **parent-only** option — see [`AMD-2026-009-ratification-motion.md`](../../amendments/AMD-2026-009-ratification-motion.md).
+**Version honesty:** Triangulation scores apply to the **v1.0.1** reviewed body; **v1.0.3** is a **narrow** post–Round 1 tightening (§2 / §2.1 / §2.2) — **not** re-scored unless policy or Council requires **Round 2**. **Ratified** numbering **`1.0.0`** is the post–Council package id (see addendum **`addendum_history`**).
+
+**Parent amendment** §1.3 states ADD-001 **SHALL** be ratified or rejected as **its own** Council artifact; Council **bundled** ratification with the parent on **2026-04-09** — see motion **Statement**.
 
 ## Cross-references
 

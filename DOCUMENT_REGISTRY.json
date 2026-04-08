@@ -68,7 +68,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -837,13 +837,17 @@
   {
     "document_id": "AIOS-POLICY-INDEX",
     "title": "AIOS Policy Identifier Index (in-repo master list)",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "status": "ratified",
     "category": "reference",
     "_path": "reference/AIOS_POLICY_INDEX.md",
     "cross_references": [
       {
         "doc_id": "AMD-2026-007",
+        "relationship": "references"
+      },
+      {
+        "doc_id": "AMD-2026-009",
         "relationship": "references"
       },
       {
@@ -1177,7 +1181,7 @@
   {
     "document_id": "AIOS-SPEC-007",
     "title": "Google Workspace Integration Governance",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "status": "ratified",
     "category": "specification",
     "_path": "specifications/GoogleWorkspaceIntegrationGovernance.md",
@@ -1204,7 +1208,11 @@
       },
       {
         "doc_id": "AMD-2026-009",
-        "title": "Intent-Scoped Web Retrieval and Governed Website Review"
+        "title": "Intent-Scoped Web Retrieval and Governed Website Review (ratified 1.0.0)"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
       },
       {
         "path": "WORKSPACE.md",
@@ -1253,7 +1261,7 @@
   {
     "document_id": "AIOS-SPEC-009",
     "title": "Intent Primitive and Execution Model",
-    "version": "0.5.5",
+    "version": "0.5.6",
     "status": "ratified",
     "category": "specification",
     "_path": "specifications/IntentPrimitiveAndExecutionModel.md",
@@ -1311,7 +1319,12 @@
       {
         "doc_id": "AMD-2026-009",
         "relationship": "constrained_by",
-        "citation": "Amendment AMD-2026-009 — bounded web retrieval and governed website review"
+        "citation": "Amendment AMD-2026-009 — bounded web retrieval and governed website review (ratified 1.0.0)"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "relationship": "references",
+        "citation": "Ratification motion — AMD-2026-009 (approved 2026-04-09)"
       }
     ]
   },
@@ -1336,7 +1349,7 @@
   {
     "document_id": "AIOS-SPEC-010",
     "title": "Execution Scope and Context Bounding",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "status": "draft",
     "category": "specification",
     "_path": "specifications/ExecutionScopeAndContextBounding.md",
@@ -1372,6 +1385,10 @@
       {
         "doc_id": "AMD-2026-009",
         "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "relationship": "references"
       }
     ]
   },
@@ -1600,11 +1617,15 @@
   {
     "document_id": "AMD-2026-009",
     "title": "Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition)",
-    "version": "0.1.6",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment",
     "_path": "amendments/AMD-2026-009.md",
     "cross_references": [
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
+      },
       {
         "doc_id": "AIOS-SPEC-007",
         "title": "Google Workspace Integration Governance"
@@ -1630,8 +1651,8 @@
   {
     "document_id": "AMD-2026-009-ADD-001",
     "title": "Retrieval backend neutrality (beyond Google PSE / Custom Search)",
-    "version": "1.0.3",
-    "status": "draft",
+    "version": "1.0.0",
+    "status": "ratified",
     "category": "amendment_addendum",
     "_path": "amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md",
     "cross_references": [
@@ -1651,6 +1672,10 @@
       {
         "path": "reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md",
         "note": "Round 1 synthesis — approved_with_changes; gate report"
+      },
+      {
+        "doc_id": "AMD-2026-009-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-009"
       }
     ]
   },
@@ -1667,7 +1692,7 @@
     "document_id": "AMD-2026-009-RATIFICATION-MOTION",
     "title": "Ratification motion — AMD-2026-009",
     "version": "",
-    "status": "council_ready",
+    "status": "approved",
     "category": "council_motion",
     "_path": "amendments/AMD-2026-009-ratification-motion.md",
     "cross_references": []
@@ -1675,8 +1700,8 @@
   {
     "document_id": "AMD-2026-009-SPEC-MERGE-CHECKLIST",
     "title": "Normative spec-merge checklist (AMD-2026-009 §10)",
-    "version": "1.0.0",
-    "status": "draft",
+    "version": "1.0.1",
+    "status": "ratified",
     "category": "operational_checklist",
     "_path": "amendments/AMD-2026-009-spec-merge-checklist.md",
     "cross_references": []

@@ -1,15 +1,15 @@
 ---
 document_id: AMD-2026-009-ADD-001
 parent_amendment: AMD-2026-009
-parent_version: 0.1.6
-version: 1.0.3
-status: draft
+parent_version: 1.0.0
+version: 1.0.0
+status: ratified
 category: amendment_addendum
 title: Retrieval backend neutrality (beyond Google PSE / Custom Search)
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-08
-ratification_target: null
+last_updated: 2026-04-09
+ratification_target: "2026-04-09"
 peer_review: round_1_complete
 peer_review_date: 2026-04-08
 reviewers:
@@ -26,7 +26,12 @@ cross_references:
     note: Triangulated peer review prompt (search/knowledge strategy)
   - path: reviews/amd_2026_009_add_001/round_1/REVIEW_SYNTHESIS.md
     note: Round 1 synthesis — approved_with_changes; gate report
+  - doc_id: AMD-2026-009-RATIFICATION-MOTION
+    title: Ratification motion — AMD-2026-009
 addendum_history:
+  - version: 1.0.0
+    date: 2026-04-09
+    summary: Ratified per AMD-2026-009-RATIFICATION-MOTION v1.0.0 (bundled with AMD-2026-009 1.0.0); substantive freeze from pre-ratification draft **v1.0.3**.
   - version: 1.0.3
     date: 2026-04-08
     summary: Narrow post–Round 1 author revision — §2 minimum registration fields + diligence ownership; §2.3 backend eligibility; §2.1 default-deny scraping / unofficial endpoints; informative table retained.
@@ -36,7 +41,7 @@ addendum_history:
   - version: 1.0.1
     date: 2026-04-03
     summary: §2.1 privacy/independent providers (DuckDuckGo et al.); triangulated peer review brief under reviews/amd_2026_009_add_001/.
-  - version: 1.0.0
+  - version: 0.1.0
     date: 2026-04-03
     summary: Initial draft — policy-registered retrieval backends; PSE optional; exemplar providers.
 ---
@@ -47,7 +52,7 @@ addendum_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | `draft` — **addendum** to **[AMD-2026-009](AMD-2026-009.md)** for Council / architecture review |
+| **Status** | **`ratified` `1.0.0`** (**2026-04-09**) — addendum to **[AMD-2026-009](AMD-2026-009.md)** **1.0.0** |
 | **Does not replace** | **AMD-2026-009** remains the parent framework for **governed external knowledge acquisition**. This addendum **narrows** one implementation assumption: **Google Programmable Search Engine (PSE) / Custom Search JSON API** is **one** permitted **retrieval backend**, not a **mandatory** exclusive. |
 
 ## 1. Problem statement (operational)
@@ -135,4 +140,4 @@ Implementations **SHALL** accept at least the following **generic** pattern (alo
 
 ---
 
-*End of AMD-2026-009-ADD-001, version 1.0.3.*
+*End of AMD-2026-009-ADD-001, version 1.0.0 (ratified).*

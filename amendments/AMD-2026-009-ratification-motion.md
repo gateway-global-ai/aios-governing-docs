@@ -3,13 +3,14 @@ document_id: AMD-2026-009-RATIFICATION-MOTION
 subject_amendment: AMD-2026-009
 subject_version: 0.1.6
 motion_version: 1.0.0
-status: council_ready
+status: approved
 category: council_motion
 title: Ratification motion — AMD-2026-009
 author: Gateway Global AIOS
 created: 2026-04-03
-last_updated: 2026-04-08
+last_updated: 2026-04-09
 council_ready_date: 2026-04-08
+approved: 2026-04-09
 execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 ---
 
@@ -17,7 +18,20 @@ execution_path: amendments/AMD-2026-009-spec-merge-checklist.md
 
 ## Coordinator status
 
-**Council-ready** **2026-04-08.** No further drafting is required unless **Council** requests changes. **Packet:** **[AMD-2026-009](AMD-2026-009.md)** **v0.1.6** (main instrument; **Round 2** triangulation **PASS** on [`reviews/amd_2026_009/`](../reviews/amd_2026_009/)); optional bundled addendum **[AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **v1.0.3** (Round 1 **PASS** + narrow post-review revision — see [`reviews/amd_2026_009_add_001/round_1/`](../reviews/amd_2026_009_add_001/round_1/)). **Council** may approve **parent only**, **parent + addendum**, or **defer** ADD-001 per **Statement** below.
+**Ratification executed** **2026-04-09.** **Council** approved **AMD-2026-009** **v0.1.6** substantive text as **ratified** **1.0.0** and **AMD-2026-009-ADD-001** **v1.0.3** substantive text as **ratified** **1.0.0** (bundled package). Repository follow-through: amendment records, **[spec-merge checklist](AMD-2026-009-spec-merge-checklist.md)** execution, **non-goals** preserved, **§4** first-implementation gate documented.
+
+| Step | State |
+|------|--------|
+| Amendment / addendum `status` + `ratification_target` | **Executed** **2026-04-09** |
+| Checklist §1–§2 merges (SPEC-007 / 009 / 010, policy index, WORKSPACE) | **Executed** **2026-04-09** (doctrine alignment; §4 implementation gate = process / future PR) |
+| Checklist §3 non-goals | **Preserved** in merged text |
+| Checklist §4 narrow first slice | **Recorded** as process gate (not product code in this repo) |
+
+---
+
+## Historical — pre-vote (2026-04-08)
+
+**Council-ready** **2026-04-08.** **Packet:** **[AMD-2026-009](AMD-2026-009.md)** **v0.1.6** (main instrument; **Round 2** triangulation **PASS** on [`reviews/amd_2026_009/`](../reviews/amd_2026_009/)); optional bundled addendum **[AMD-2026-009-ADD-001](AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** **v1.0.3** (Round 1 **PASS** + narrow post-review revision — see [`reviews/amd_2026_009_add_001/round_1/`](../reviews/amd_2026_009_add_001/round_1/)).
 
 ---
 
@@ -74,4 +88,4 @@ Upon **approval**, the following **SHALL** apply:
 
 ---
 
-*End of ratification motion — AMD-2026-009, motion version 1.0.0 (**Council-ready** **2026-04-08**).*
+*End of ratification motion — AMD-2026-009, motion version 1.0.0 (**approved** **2026-04-09**).*

@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.2.0
+version: 1.2.1
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-08
+last_updated: 2026-04-09
 cross_references:
   - doc_id: AMD-001
   - doc_id: AMD-2026-006
@@ -20,6 +20,9 @@ cross_references:
   - doc_id: AIOS-AMD-001-DISPOSITION-001
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.2.1
+    date: 2026-04-09
+    summary: AMD-2026-009 + ADD-001 ratified 1.0.0; AMD-2026-009-RATIFICATION-MOTION v1.0.0 executed; SPEC-007/009/010 checklist merges; AIOS_POLICY_INDEX v1.4.0; cohesion remainder AMD-2026-008.
   - version: 1.2.0
     date: 2026-04-08
     summary: AMD-2026-009-ratification-motion.md status council_ready 2026-04-08; next step Council vote / approval.
@@ -95,10 +98,10 @@ amendment_history:
 
 | Amendment | `status` (YAML) | Review packet | Next governed step |
 |-----------|-----------------|---------------|---------------------|
-| **AMD-2026-006** | **`ratified` `1.0.0`** | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) — Round 2 **PASS** on **SPEC-007**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **2026-04-08** | **Follow-on:** implementation alignment; **next cohesion track** **[AMD-2026-009](../amendments/AMD-2026-009.md)** |
+| **AMD-2026-006** | **`ratified` `1.0.0`** | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) — Round 2 **PASS** on **SPEC-007**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **2026-04-08** | **Follow-on:** implementation alignment; **next cohesion track** **[AMD-2026-008](../amendments/AMD-2026-008.md)** |
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
 | **AMD-2026-008** | `draft` | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/) (R2, R3) | **Close gate:** `REVIEW_SYNTHESIS` + `RATIFICATION_GATE_REPORT` for latest round; motion; council |
-| **AMD-2026-009** (+ addenda) | `draft` | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** complete | **Next:** **author revision** on ADD-001 (if bundled) **or** Council **parent-only**; **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** `draft` → Council-ready; **§10** checklist vs **SPEC-007** **1.0.0** |
+| **AMD-2026-009** (+ **ADD-001**) | **`ratified` `1.0.0`** | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** **PASS** | **Executed:** **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** **2026-04-09**; **[`AMD-2026-009-spec-merge-checklist.md`](../amendments/AMD-2026-009-spec-merge-checklist.md)** **v1.0.1**; **AIOS_POLICY_INDEX** **v1.4.0**. **Follow-on:** narrow **first implementation slice** (process gate; product in separate repo). |
 | **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
 
 ---
@@ -118,25 +121,25 @@ amendment_history:
 | **AMD-2026-012** | Shell authority and voice-first entry |
 | **AMD-2026-013** | Intent-bearing repository taxonomy (architecture / builder) |
 | **AMD-2026-006** | Google Workspace governed integration plane (**AIOS-SPEC-007**) |
+| **AMD-2026-009** (+ **ADD-001**) | Intent-scoped web retrieval + governed website review (**POL-WEB-***; **SPEC-007** / **SPEC-009** / **SPEC-010** alignment) |
 
-### AMD-001 — taxonomy resolution (before 009 / 008 closure)
+### AMD-001 — taxonomy resolution (before 008 closure)
 
 **[AMD-001](../../amendments/ammendment_google.md)** is **ratified** but uses the **pre-`AMD-2026-*`** numbering era and a **legacy** filename. It is **not** unfinished law; it is a **classification** problem. **Resolve** its place in the amendment universe **before** deep closure on the **2026** draft tracks below—see **[AMD-001 taxonomy and disposition](AMD-001-TAXONOMY-AND-DISPOSITION.md)**. This aligns with **[AMD-2026-013](../amendments/AMD-2026-013.md)** (declared taxonomy and accountability): **AMD-001** is the **explicit** legacy object, not an untracked exception.
 
-### Cohesion-critical remainder (two draft AMDs)
+### Cohesion-critical remainder (one draft AMD)
 
 | Order | Amendment | Title / scope | Why it belongs in this set |
 |-------|-----------|----------------|----------------------------|
-| **1** | **[AMD-2026-009](../amendments/AMD-2026-009.md)** (+ **[ADD-001](../amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md)** as packaged addendum, **[§10 spec-merge checklist](../amendments/AMD-2026-009-spec-merge-checklist.md)** execution) | Intent-scoped web retrieval + governed website review | Completes **external knowledge** acquisition **and** **SPEC-007 / SPEC-009 / SPEC-010** alignment; **Round 2** synthesis already **positive**. |
-| **2** | **[AMD-2026-008](../amendments/AMD-2026-008.md)** | Sovereign voice + local runtime lanes | Binds **local** STT / TTS / interpret stack **after** remote **Workspace** and **web** paths are defined; reduces cross-cutting churn on shared specs. |
+| **1** | **[AMD-2026-008](../amendments/AMD-2026-008.md)** | Sovereign voice + local runtime lanes | Binds **local** STT / TTS / interpret stack **after** remote **Workspace** and **web** paths are defined; reduces cross-cutting churn on shared specs. |
 
 **Not** separate foundation tracks: **ratification motions**, **merge-deltas** artifacts, and **checklists** — they **serve** the AMDs above, not additional AMD IDs.
 
 ### Ordering caveats (explicit)
 
 0. **AMD-001** taxonomy is **documented** (see subsection above); **spec embodiment** of its CLI matrix remains **AIOS-SPEC-003 / 004 / 005** maintenance work.
-1. **Logical order** for the **remainder** is **009 → 008** after **006** **ratified** **2026-04-08** (**AIOS-SPEC-007** **v1.0.0**).
-2. **Schedule order** may still differ: **009** may advance on its own motion timeline; **§10** spec-merge work **SHOULD** stay consistent with **ratified** **SPEC-007**.
+1. **Logical order** for the **remainder** is **008** after **006** **ratified** **2026-04-08** (**AIOS-SPEC-007** **v1.0.0**) and **009** **ratified** **2026-04-09**.
+2. **§10** spec-merge execution for **009** is **recorded** in **[`AMD-2026-009-spec-merge-checklist.md`](../amendments/AMD-2026-009-spec-merge-checklist.md)** **v1.0.1**; **first product slice** stays **narrow** per amendment **§12**.
 3. **One active binding track** at a time ([Operating rules](#operating-rules)) still applies unless **council** authorizes overlap.
 
 ---
@@ -155,4 +158,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.2.0.*
+*End of AIOS-AMD-TRACKER-001 v1.2.1.*
