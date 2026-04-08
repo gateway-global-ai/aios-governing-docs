@@ -8,11 +8,22 @@
 
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
+| AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
+| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.2 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.0.4 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-CORE-001 | AIOS Technical Manifesto & Platform Economics | 1.0.0 | ratified | core | `core/technical_manifesto.md` |
 | AIOS-CORE-002 | The Gateway Global AIOS Governance Constitution | 1.0.0 | ratified | core | `core/governance_constitution.md` |
 | AIOS-CORE-003 | Gateway Global AIOS Master Platform Operating Agreement | 3.0.0 | ratified | core | `core/master_platform_operating_agreement.md` |
+| AIOS-COUNCIL-BRIEF-001 | Council review brief — AIOS Master Implementation Program | 1.0.1 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-MASTER-IMPL-001.md` |
+| AIOS-COUNCIL-BRIEF-002 | Council review brief — AI OS interface implementation control program | 1.1.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-INTERFACE-CONTROL-001.md` |
+| AIOS-COUNCIL-BRIEF-003 | Council review brief — AIOS development conformance process (AIOS-DEV-PROC-001) | 1.0.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-DEV-PROC-001.md` |
+| AIOS-DEV-PROC-001 | AI OS development conformance — triangulated peer review | 1.0.0 | draft | reference | `reference/implementation/AIOS-DEVELOPMENT-CONFORMANCE-PROCESS.md` |
+| AIOS-EXEC-DEMO-001 | Isolated execution demonstration pipeline (draft proposal) | 0.1.3 | draft | reference | `reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md` |
+| AIOS-IMPL-LEDGER-001 | AIOS Implementation Ledger and Anti-Drift Operating Loop | 1.1.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-LEDGER.md` |
+| AIOS-MASTER-IMPL-001 | AIOS Master Implementation Program (cross-repo) | 1.2.4 | draft | reference | `reference/implementation/AIOS-MASTER-IMPLEMENTATION-PROGRAM.md` |
+| AIOS-MBL009-TRACKER-001 | MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker | 1.0.0 | open | reference | `reference/implementation/MBL-009-tracker-amd-2026-007-policy-index.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
 | AIOS-OPS-009 | Cursor Enforcement Contract (activation) | 1.0.0 | ratified | operations | `operations/CursorEnforcementContract.md` |
 | AIOS-OPS-010 | GitHub Enforcement — Activation Runbook | 1.0.0 | ratified | operations | `operations/GitHubEnforcementActivationRunbook.md` |
@@ -25,9 +36,11 @@
 | AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
 | AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
-| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.1.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.2.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
 | AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
+| AIOS-REF-013 | Implementation runway pointer (product conformance) | 1.6.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-RUNWAY-POINTER.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
@@ -44,7 +57,7 @@
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 0.1.0 | draft | amendment | `amendments/AMD-2026-006.md` |
-| AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.1.0 | draft | amendment | `amendments/AMD-2026-007.md` |
+| AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
 | AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.2.0 | draft | amendment | `amendments/AMD-2026-008.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 0.1.6 | draft | amendment | `amendments/AMD-2026-009.md` |
@@ -56,6 +69,8 @@
 | AMD-2026-010-RATIFICATION-MOTION | Ratification motion — AMD-2026-010 | — | approved | council_motion | `amendments/AMD-2026-010-ratification-motion.md` |
 | AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 1.0.0 | ratified | amendment | `amendments/AMD-2026-011.md` |
 | AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
+| AMD-2026-012 | Shell Authority and Voice-First Entry | 1.0.0 | ratified | amendment | `amendments/AMD-2026-012.md` |
+| AMD-2026-012-RATIFICATION-MOTION | Ratification motion — AMD-2026-012 | — | approved | council_motion | `amendments/AMD-2026-012-ratification-motion.md` |
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | draft | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
@@ -74,6 +89,34 @@
 ---
 
 ## Cross-Reference Map
+
+### ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries (AIOS-ADR-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-MASTER-IMPL-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-012 | — |
+
+### Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) (AIOS-AMD-PLAN-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-EXEC-DEMO-001 | — |
+| AIOS-REF-013 | — |
+| AIOS-SPEC-007 | — |
+| AMD-2026-005 | — |
+
+### Outstanding amendments — governed review tracker (AIOS-AMD-TRACKER-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AMD-2026-005 | — |
+| AMD-2026-006 | — |
+| AMD-2026-007 | — |
+| AMD-2026-008 | — |
+| AMD-2026-009 | — |
 
 ### AIOS Marketplace Terms & Vendor Onboarding (AIOS-COMM-001)
 
@@ -111,6 +154,94 @@
 |---------------------|--------------|
 | AIOS-CORE-001 | incorporates |
 | AIOS-CORE-002 | constrained_by |
+
+### Council review brief — AIOS Master Implementation Program (AIOS-COUNCIL-BRIEF-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-ADR-001 | — |
+| AIOS-COUNCIL-BRIEF-002 | — |
+| AIOS-IMPL-LEDGER-001 | — |
+| AIOS-MASTER-IMPL-001 | — |
+
+### Council review brief — AI OS interface implementation control program (AIOS-COUNCIL-BRIEF-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-ADR-001 | — |
+| AIOS-COUNCIL-BRIEF-001 | — |
+| AIOS-COUNCIL-BRIEF-003 | — |
+| AIOS-DEV-PROC-001 | — |
+| AIOS-IMPL-LEDGER-001 | — |
+| AIOS-MASTER-IMPL-001 | — |
+| AIOS-REF-013 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-012 | — |
+
+### Council review brief — AIOS development conformance process (AIOS-DEV-PROC-001) (AIOS-COUNCIL-BRIEF-003)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COUNCIL-BRIEF-001 | — |
+| AIOS-COUNCIL-BRIEF-002 | — |
+| AIOS-DEV-PROC-001 | — |
+| AIOS-MASTER-IMPL-001 | — |
+| AIOS-RAT-MOTION-DEV-PROC-001 | — |
+| AIOS-REF-013 | — |
+
+### AI OS development conformance — triangulated peer review (AIOS-DEV-PROC-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COUNCIL-BRIEF-002 | — |
+| AIOS-COUNCIL-BRIEF-003 | — |
+| AIOS-MASTER-IMPL-001 | — |
+| AIOS-RAT-MOTION-DEV-PROC-001 | — |
+| AIOS-REF-013 | — |
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-005 | — |
+| AMD-2026-012 | — |
+
+### Isolated execution demonstration pipeline (draft proposal) (AIOS-EXEC-DEMO-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-REF-013 | — |
+| AMD-2026-005 | — |
+
+### AIOS Implementation Ledger and Anti-Drift Operating Loop (AIOS-IMPL-LEDGER-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-ADR-001 | — |
+| AIOS-MASTER-IMPL-001 | — |
+
+### AIOS Master Implementation Program (cross-repo) (AIOS-MASTER-IMPL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-ADR-001 | — |
+| AIOS-COUNCIL-BRIEF-001 | — |
+| AIOS-COUNCIL-BRIEF-002 | — |
+| AIOS-COUNCIL-BRIEF-003 | — |
+| AIOS-DEV-PROC-001 | — |
+| AIOS-IMPL-LEDGER-001 | — |
+| AIOS-POLICY-INDEX | — |
+| AIOS-REF-013 | — |
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-007 | — |
+| AMD-2026-012 | — |
+
+### MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker (AIOS-MBL009-TRACKER-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-MASTER-IMPL-001 | — |
+| AIOS-POLICY-INDEX | — |
+| AMD-2026-007 | — |
 
 ### GitHub Branch Protection — Activation Checklist (AIOS-OPS-008)
 
@@ -242,6 +373,14 @@
 |---------------------|--------------|
 | AMD-2026-007 | references |
 | AMD-2026-010 | references |
+| AMD-2026-012 | references |
+
+### Ratification motion — AIOS-DEV-PROC-001 (AIOS-RAT-MOTION-DEV-PROC-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-COUNCIL-BRIEF-003 | — |
+| AIOS-DEV-PROC-001 | — |
 
 ### Governance Council Operating Manual (AIOS-REF-011)
 
@@ -259,6 +398,25 @@
 | AIOS-CORE-001 | implements |
 | AIOS-CORE-002 | governed_by |
 | AIOS-CORE-003 | complements |
+
+### Implementation runway pointer (product conformance) (AIOS-REF-013)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-ADR-001 | references |
+| AIOS-COUNCIL-BRIEF-001 | references |
+| AIOS-COUNCIL-BRIEF-002 | references |
+| AIOS-COUNCIL-BRIEF-003 | references |
+| AIOS-DEV-PROC-001 | references |
+| AIOS-IMPL-LEDGER-001 | references |
+| AIOS-MASTER-IMPL-001 | references |
+| AIOS-SPEC-006 | references |
+| AIOS-SPEC-007 | references |
+| AIOS-SPEC-008 | references |
+| AIOS-SPEC-009 | implements |
+| AMD-2026-007 | references |
+| AMD-2026-009 | references |
+| AMD-2026-010 | references |
 
 ### AIOS NodeContract Specification (AIOS-SPEC-001)
 
@@ -411,6 +569,7 @@
 |---------------------|--------------|
 | AIOS-SPEC-003 | amends |
 | AIOS-SPEC-006 | amends |
+| AIOS-SPEC-007 | ratifies |
 | AMD-2026-005 | amends |
 
 ### Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI (AMD-2026-007)
@@ -474,6 +633,17 @@
 | AIOS-SPEC-013 | — |
 | AMD-2026-005 | — |
 
+### Shell Authority and Voice-First Entry (AMD-2026-012)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-006 | — |
+| AIOS-SPEC-007 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-005 | — |
+| AMD-2026-007 | — |
+| AMD-2026-012-RATIFICATION-MOTION | — |
+
 ### Privacy Policy (LEGAL-001)
 
 | Referenced Document | Relationship |
@@ -514,8 +684,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 62
-- **Ratified:** 28
-- **Draft:** 24
+- **Total documents:** 77
+- **Ratified:** 30
+- **Draft:** 34
 - **Under review:** 0
 - **Unregistered (no front matter):** 8

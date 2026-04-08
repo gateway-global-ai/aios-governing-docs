@@ -8,6 +8,9 @@ Supports smart context injection (only cross-referenced docs) or full context (a
 Usage:
     python peer_review.py core/technical_manifesto.md --round 1
     python peer_review.py specifications/NodeContract.md --round 1 --rubric light --smart-context
+    python peer_review.py amendments/AMD-2026-006.md --round 1 --smart-context --product-context
+      # --product-context loads reference/knowledge_base/snapshots/product_context_bundle.md
+      # after: py -3 scripts/generate_product_context_bundle.py
 """
 
 import argparse
@@ -21,6 +24,7 @@ from context_assembler import (
     read_prompt_template, assemble_prompt,
     find_reviews, find_revision_log, call_models_parallel,
     save_review, today, MODEL_CALLERS,
+    resolve_product_implementation_text,
 )
 
 ROUND_1_MODELS = ["openai", "gemini"]
@@ -43,6 +47,7 @@ def build_prompt(
     model_name: str,
     rubric: str = "full",
     smart_context: bool = False,
+    product_context_arg: str | None = None,
 ) -> tuple[str, str]:
     """Build the system and user prompts for a peer review."""
     template = read_prompt_template("peer_review_prompt.md")
@@ -81,10 +86,13 @@ def build_prompt(
             "\n\n**RUBRIC MODE: FULL** — Score all 11 dimensions listed in the rubric below."
         )
 
+    product_impl = resolve_product_implementation_text(product_context_arg)
+
     replacements = {
         "REVIEWER_FOCUS": REVIEWER_FOCUS.get(model_name, ""),
         "REVIEW_ROUND": f"This is **Round {review_round}**.{rubric_instruction}",
         "GOVERNING_CONTEXT": context_text,
+        "PRODUCT_IMPLEMENTATION_CONTEXT": product_impl,
         "STYLE_GUIDE": read_style_guide(),
         "GRADING_RUBRIC": read_grading_rubric(rubric),
         "PRIOR_REVIEWS": prior_reviews_text,
@@ -112,6 +120,7 @@ async def run_review(
     models_override: list[str] | None = None,
     rubric_override: str | None = None,
     smart_context: bool = False,
+    product_context_arg: str | None = None,
 ):
     rubric = rubric_override or ("full" if _is_core_doc(doc_path) else "full")
     models = models_override or (ROUND_1_MODELS if review_round == 1 else ROUND_2_MODELS)
@@ -122,6 +131,8 @@ async def run_review(
     print(f"Models: {', '.join(models)}")
     print(f"Rubric: {rubric}")
     print(f"Context: {'smart (cross-refs only)' if smart_context else 'full (all core docs)'}")
+    if product_context_arg:
+        print(f"Product snapshot: {'default bundle' if product_context_arg == 'default' else product_context_arg}")
     print(f"{'='*60}\n")
 
     prompts = {}
@@ -129,6 +140,7 @@ async def run_review(
         sys_prompt, user_prompt = build_prompt(
             doc_path, review_round, model,
             rubric=rubric, smart_context=smart_context,
+            product_context_arg=product_context_arg,
         )
         prompts[model] = (sys_prompt, user_prompt)
 
@@ -165,6 +177,23 @@ def main():
                         help="Rubric variant (default: full for core, full for others)")
     parser.add_argument("--smart-context", action="store_true",
                         help="Inject only cross-referenced docs instead of all core docs")
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        choices=["deepseek", "openai", "gemini"],
+        default=None,
+        metavar="MODEL",
+        help="Override default Round 1/2 model lists (e.g. --models deepseek openai gemini)",
+    )
+    parser.add_argument(
+        "--product-context",
+        nargs="?",
+        const="default",
+        default=None,
+        metavar="REL_PATH",
+        help="Include ai-os-voice-interface snapshot (run generate_product_context_bundle.py first). "
+        "Use flag alone for reference/knowledge_base/snapshots/product_context_bundle.md, or pass a path under repo root.",
+    )
     args = parser.parse_args()
 
     if not (BASE_DIR / args.document).exists():
@@ -173,8 +202,10 @@ def main():
 
     asyncio.run(run_review(
         args.document, args.round,
+        models_override=args.models,
         rubric_override=args.rubric,
         smart_context=args.smart_context,
+        product_context_arg=args.product_context,
     ))
 
 

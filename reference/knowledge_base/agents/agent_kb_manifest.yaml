@@ -1,0 +1,22 @@
+# Inputs for scripts/build_agent_kb.py — single bundle for Ollama planning agents (Architect → UI).
+# Paths are relative to the governing_docs repository root.
+# Edit per amendment track; keep total size reasonable for local context windows.
+
+label: amd_2026_006_workspace_track
+
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-005.md
+  - amendments/AMD-2026-006.md
+  - amendments/AMD-2026-007.md
+  - reference/AIOS_POLICY_INDEX.md
+  - specifications/GoogleWorkspaceIntegrationGovernance.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - specifications/UIComponentRegistryStandard.md
+  - specifications/ExecutionScopeAndContextBounding.md
+
+reports_and_snapshots:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-07.md

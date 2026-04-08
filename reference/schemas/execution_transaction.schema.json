@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gateway-global-ai/aios-governing-docs/reference/schemas/execution_transaction.schema.json",
+  "title": "AIOS isolated execution transaction",
+  "description": "Structured execution record for Phase X (AIOS-EXEC-DEMO-001). v1.2.0 adds operator_disclosures (binding vs packet-only, validation proof honesty).",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "review_slug",
+    "source_repo",
+    "product_repo_path",
+    "source_branch",
+    "working_branch",
+    "base_commit_sha",
+    "governing_manifest_label",
+    "verification_status",
+    "promotion_status",
+    "created_at",
+    "updated_at",
+    "artifacts",
+    "human_review_status",
+    "operator_disclosures"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.2.0",
+      "description": "Version of this JSON shape."
+    },
+    "review_slug": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Folder name under reviews/, e.g. amd_2026_006."
+    },
+    "source_repo": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Remote clone URL or logical identity when known; may match product_repo_path for local-only operational runs."
+    },
+    "product_repo_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Concrete local filesystem path to the implementation repo (POSIX). Use not_applicable only for --no-git packet-only runs — not equivalent to a bound product clone; see operator_disclosures."
+    },
+    "source_branch": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Branch the execution derives from (e.g. main)."
+    },
+    "working_branch": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Isolated feature branch or worktree branch name."
+    },
+    "base_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{7,40}$",
+      "description": "Commit SHA at start of isolated work."
+    },
+    "head_commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{7,40}$",
+      "description": "Commit SHA after implementation (optional until run completes)."
+    },
+    "governing_manifest_label": {
+      "type": "string",
+      "description": "Label from agent_kb_manifest.yaml (or successor)."
+    },
+    "evidence_bundle_hash": {
+      "type": "string",
+      "description": "SHA-256 or similar of merged KB bundle at run time."
+    },
+    "architect_plan_hash": {
+      "type": "string",
+      "description": "Hash of ARCHITECT_PLAN.md when fixed for this run."
+    },
+    "ui_plan_hash": {
+      "type": "string",
+      "description": "Hash of UI_PLAN.md when fixed for this run."
+    },
+    "execution_scope": {
+      "type": "string",
+      "description": "Short identifier for bounded scope (e.g. workspace_hub_readonly_v1)."
+    },
+    "allowed_surfaces": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Routes, canvas ids, or component surfaces allowed to change."
+    },
+    "required_visual_proofs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of required captures (e.g. screenshot: /workspace hub)."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC when this transaction record was first created for the run."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC when this JSON was last written (single-run MVP: same as created unless re-run)."
+    },
+    "validation_started_at": {
+      "description": "ISO 8601 UTC when install/build/test began; null if skipped or failed before validation.",
+      "oneOf": [{ "type": "null" }, { "type": "string", "format": "date-time" }]
+    },
+    "validation_completed_at": {
+      "description": "ISO 8601 UTC when install/build/test finished; null if not reached.",
+      "oneOf": [{ "type": "null" }, { "type": "string", "format": "date-time" }]
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execution_contract",
+        "validation_results",
+        "worklog",
+        "changed_files",
+        "human_review_packet",
+        "visual_evidence_dir"
+      ],
+      "description": "Paths relative to reviews/<slug>/execution/ (this file's directory).",
+      "properties": {
+        "execution_contract": { "type": "string" },
+        "validation_results": { "type": "string" },
+        "worklog": { "type": "string" },
+        "changed_files": { "type": "string" },
+        "human_review_packet": { "type": "string" },
+        "visual_evidence_dir": { "type": "string" }
+      }
+    },
+    "failure_stage": {
+      "description": "First stage that failed when verification_status is failed; null when not failed or not applicable.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "string",
+          "enum": [
+            "input_validation",
+            "git_fetch",
+            "worktree_creation",
+            "contract_seeding",
+            "validation_skipped",
+            "install",
+            "build",
+            "test"
+          ]
+        }
+      ]
+    },
+    "operator_disclosures": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Honest machine-readable posture for reviewers; validation_skipped is a non-proof state, not soft success.",
+      "required": [
+        "execution_lane_posture",
+        "validation_proof_available",
+        "validation_non_proof_reason",
+        "visual_capture_automated"
+      ],
+      "properties": {
+        "execution_lane_posture": {
+          "type": "string",
+          "enum": ["packet_only", "failed_pre_worktree", "worktree_bound"],
+          "description": "packet_only: no product bind; failed_pre_worktree: git failed before usable worktree; worktree_bound: isolated worktree exists."
+        },
+        "validation_proof_available": {
+          "type": "boolean",
+          "description": "True only when npm install/build/test ran and all executed steps exited 0 (repo_truth_ok)."
+        },
+        "validation_non_proof_reason": {
+          "description": "Null when validation_proof_available is true; otherwise why there is no proof (e.g. skip_validation, validation_skipped).",
+          "oneOf": [{ "type": "null" }, { "type": "string" }]
+        },
+        "visual_capture_automated": {
+          "type": "boolean",
+          "const": false,
+          "description": "MVP runner does not automate screenshots."
+        }
+      }
+    },
+    "human_review_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Human judgment of the packet — separate from promotion_status (lifecycle). Populated by reviewers; runner seeds pending.",
+      "required": ["state"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["pending", "in_progress", "complete", "not_applicable"]
+        },
+        "reviewed_at": {
+          "oneOf": [{ "type": "null" }, { "type": "string", "format": "date-time" }]
+        },
+        "reviewer": {
+          "type": ["string", "null"]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "inputs_valid",
+        "branch_ready",
+        "contract_ready",
+        "build_passed",
+        "tests_passed",
+        "visual_proof_complete",
+        "repo_truth_ok",
+        "failed"
+      ]
+    },
+    "promotion_status": {
+      "type": "string",
+      "enum": [
+        "not_requested",
+        "blocked",
+        "ready_for_human_review",
+        "human_approved",
+        "human_rejected"
+      ]
+    },
+    "overrides_disclosed": {
+      "type": "boolean",
+      "description": "True if any force/override path was used; must be documented in HUMAN_REVIEW_PACKET.md."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Freeform operator notes."
+    },
+    "governance_repo_path": {
+      "type": "string",
+      "description": "Path to aios-governing-docs (often '.' when cwd is repo root)."
+    },
+    "worktree_path": {
+      "description": "Absolute path to git worktree directory when isolation_mode is worktree.",
+      "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }]
+    },
+    "isolation_mode": {
+      "type": "string",
+      "enum": ["worktree", "branch_in_place", "none"],
+      "description": "worktree: separate directory; branch_in_place: new branch in existing clone; none: packet only (--no-git)."
+    },
+    "runner_name": {
+      "type": "string",
+      "description": "e.g. run_isolated_execution_demo.py"
+    },
+    "runner_version": {
+      "type": "string",
+      "description": "Semantic version string of the runner for reproducibility."
+    }
+  }
+}

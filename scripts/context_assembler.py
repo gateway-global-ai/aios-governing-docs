@@ -51,6 +51,10 @@ INTRODUCTION_PATH = BASE_DIR / "introduction.md"
 DOCUMENT_REGISTRY_PATH = BASE_DIR / "DOCUMENT_REGISTRY.md"
 DOCUMENT_REGISTRY_JSON_PATH = BASE_DIR / "DOCUMENT_REGISTRY.json"
 
+DEFAULT_PRODUCT_CONTEXT_BUNDLE = (
+    BASE_DIR / "reference" / "knowledge_base" / "snapshots" / "product_context_bundle.md"
+)
+
 
 def read_file(path: Path) -> str:
     if path.exists():
@@ -116,6 +120,38 @@ def read_document_template() -> str:
 
 def read_introduction() -> str:
     return read_file(INTRODUCTION_PATH)
+
+
+def resolve_product_implementation_text(product_context_arg: str | None) -> str:
+    """Load optional ai-os-voice-interface snapshot for peer review prompts.
+
+    ``product_context_arg``:
+    - ``None`` — placeholder instructing coordinator to generate/load bundle.
+    - ``\"default\"`` — ``reference/knowledge_base/snapshots/product_context_bundle.md``.
+    - any other string — path relative to ``BASE_DIR`` (POSIX slashes).
+    """
+    if product_context_arg is None:
+        return (
+            "[**Not loaded.**] For Workspace / integration amendments, run "
+            "`py -3 scripts/generate_product_context_bundle.py` then re-run "
+            "`peer_review.py` with `--product-context` (see `reference/knowledge_base/README.md`)."
+        )
+    if product_context_arg == "default":
+        path = DEFAULT_PRODUCT_CONTEXT_BUNDLE
+    else:
+        rel = product_context_arg.replace("\\", "/").lstrip("/")
+        path = (BASE_DIR / rel).resolve()
+        try:
+            path.relative_to(BASE_DIR.resolve())
+        except ValueError:
+            return f"[**Rejected path** — outside governing_docs root: {product_context_arg}]"
+    if not path.is_file():
+        try:
+            rel_disp = path.relative_to(BASE_DIR.resolve())
+        except ValueError:
+            rel_disp = path
+        return f"[**Missing file:** `{rel_disp}`]"
+    return read_file(path)
 
 
 def read_document_registry() -> str:

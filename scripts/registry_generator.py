@@ -15,6 +15,7 @@ SCAN_DIRS = [
     "commercial",
     "amendments",
     "reference",
+    "reference/implementation",
     "legal",
     "operations",
 ]
