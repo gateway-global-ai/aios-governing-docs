@@ -34,7 +34,7 @@ except ImportError:  # pragma: no cover
     yaml = None  # type: ignore
 
 RUNNER_NAME = "run_isolated_execution_demo.py"
-RUNNER_VERSION = "0.3.0"
+RUNNER_VERSION = "0.3.1"
 SCRIPT_DIR = Path(__file__).resolve().parent
 GOVERNANCE_ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = GOVERNANCE_ROOT / "reference/knowledge_base/agents/agent_kb_manifest.yaml"
@@ -137,6 +137,112 @@ def _sha256_file(path: Path) -> str:
         for chunk in iter(lambda: f.read(65536), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def _load_review_target(planning_dir: Path) -> tuple[list[str], list[str]]:
+    """
+    Optional human-authored review targeting: planning/REVIEW_TARGET.yaml
+    keys: allowed_surfaces, required_visual_proofs (lists of strings).
+    """
+    path = planning_dir / "REVIEW_TARGET.yaml"
+    if yaml is None or not path.is_file():
+        return [], []
+    try:
+        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except Exception:
+        return [], []
+    if not isinstance(raw, dict):
+        return [], []
+
+    def _coerce_item(x: Any) -> str | None:
+        """YAML may parse `screenshot: foo` as a dict; normalize to a single string."""
+        if isinstance(x, dict):
+            if len(x) == 1:
+                k, v = next(iter(x.items()))
+                return f"{k}: {v}".strip()
+            return None
+        s = str(x).strip()
+        return s or None
+
+    def as_str_list(key: str) -> list[str]:
+        v = raw.get(key)
+        if not isinstance(v, list):
+            return []
+        out: list[str] = []
+        for x in v:
+            s = _coerce_item(x)
+            if s:
+                out.append(s)
+        return out
+
+    return as_str_list("allowed_surfaces"), as_str_list("required_visual_proofs")
+
+
+def _review_scope_markdown(tx: dict[str, Any]) -> str:
+    """Section: what validation proved vs declared visible scope vs manual visual gap."""
+    od = tx.get("operator_disclosures") or {}
+    posture = str(od.get("execution_lane_posture", ""))
+    proof = od.get("validation_proof_available")
+    allowed = tx.get("allowed_surfaces")
+    required_vis = tx.get("required_visual_proofs")
+    if not isinstance(allowed, list):
+        allowed = []
+    if not isinstance(required_vis, list):
+        required_vis = []
+    lines: list[str] = [
+        "## What validation proved vs what is still manual",
+        "",
+        "### Proven by automated validation",
+        "",
+    ]
+    if posture == "packet_only":
+        lines.append(
+            "- **No product worktree or npm steps.** This packet is planning/governance evidence only; "
+            "see `VALIDATION_RESULTS.md` and `operator_disclosures`."
+        )
+    elif proof is True:
+        lines.append(
+            "- **Repo binding:** `source_branch`, `worktree_path`, and commit SHAs in `EXECUTION_TRANSACTION.json` "
+            "when this run created a worktree."
+        )
+        lines.append(
+            "- **Install / build / test:** see `VALIDATION_RESULTS.md` for commands, exit codes, and captured logs."
+        )
+    else:
+        lines.append(
+            "- **Build/test proof:** not available for this run (skipped, failed, or not reached). "
+            "See `VALIDATION_RESULTS.md` and `validation_non_proof_reason` in `operator_disclosures` — **not** a soft pass."
+        )
+    lines.extend(["", "### Declared review target (visible behavior scope)", ""])
+    if allowed or required_vis:
+        if allowed:
+            lines.append("**allowed_surfaces** (from `planning/REVIEW_TARGET.yaml`):")
+            for s in allowed:
+                lines.append(f"- {s}")
+            lines.append("")
+        if required_vis:
+            lines.append("**required_visual_proofs** (from `planning/REVIEW_TARGET.yaml`):")
+            for s in required_vis:
+                lines.append(f"- {s}")
+            lines.append("")
+    else:
+        lines.append(
+            "*No entries in `planning/REVIEW_TARGET.yaml` — add `allowed_surfaces` and `required_visual_proofs` "
+            "when the review must judge UI/shell/workspace behavior.*"
+        )
+        lines.append("")
+    lines.extend(["### Still requires manual visual inspection", ""])
+    if od.get("visual_capture_automated") is False:
+        lines.append(
+            "- The runner does **not** produce screenshots. Capture evidence under `VISUAL_EVIDENCE/` per "
+            "`CAPTURE_CHECKLIST.md`."
+        )
+    else:
+        lines.append("- Visual capture posture: see `operator_disclosures.visual_capture_automated`.")
+    if required_vis:
+        lines.append("- **Minimum manual captures:** satisfy **required_visual_proofs** above (transaction mirrors this list).")
+    lines.append("")
+    return "\n".join(lines)
 
 
 def _read_manifest_label() -> str:
@@ -252,6 +358,14 @@ def _write_aux_artifacts(
     vis.mkdir(exist_ok=True)
     od = tx.get("operator_disclosures") or {}
     manual_visual = od.get("visual_capture_automated") is False
+    req_vis = tx.get("required_visual_proofs") or []
+    req_block = ""
+    if isinstance(req_vis, list) and req_vis:
+        req_block = (
+            "**Required captures (from `EXECUTION_TRANSACTION.json` → `required_visual_proofs`):**\n\n"
+            + "\n".join(f"- [ ] {x}" for x in req_vis)
+            + "\n\n"
+        )
     _write_text(
         vis / "CAPTURE_CHECKLIST.md",
         "# Visual evidence — manual capture (MVP)\n\n"
@@ -262,6 +376,7 @@ def _write_aux_artifacts(
             if manual_visual
             else ""
         )
+        + req_block
         + "Complete this checklist after `npm run dev` or your preferred preview.\n\n"
         "- [ ] Route / surface: …\n"
         "- [ ] Screenshot saved as `screenshots/01-<surface>.png`\n"
@@ -304,11 +419,20 @@ def _write_aux_artifacts(
             "proof** was produced. That is an honest **non-success** for build health — not a soft pass.\n\n"
         )
 
+    sample_note = ""
+    if slug.startswith("demo_exec_"):
+        sample_note = (
+            "> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, "
+            "not an authoritative product verdict or amendment review outcome. Index: "
+            "[`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).\n\n"
+        )
+
     hrp = (
         "# Human review packet — "
         + slug
         + "\n\n"
-        "**Status:** draft — MVP runner output\n\n"
+        + sample_note
+        + "**Status:** draft — MVP runner output\n\n"
         "## Navigation (canonical)\n\n"
         "Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the index of paths "
         "(relative to this folder):\n\n"
@@ -330,6 +454,8 @@ def _write_aux_artifacts(
         "- **failure_stage:** `"
         + ("null" if tx.get("failure_stage") is None else str(tx.get("failure_stage")))
         + "`\n\n"
+        + _review_scope_markdown(tx)
+        + "\n"
         "## Decision requested\n\n"
         "Can you approve **next action** given **what is actually proven** above (binding + validation proof + "
         "manual visual gap)?\n\n"
@@ -380,9 +506,13 @@ def _build_transaction(
     failure_stage: str | None,
     operator_disclosures: dict[str, Any],
     human_review_status: dict[str, Any] | None = None,
+    allowed_surfaces: list[str] | None = None,
+    required_visual_proofs: list[str] | None = None,
 ) -> dict[str, Any]:
     # Local path is first-class; source_repo remains URL-or-identity (defaults to path).
     source_identity = (source_repo_url or "").strip() or product_repo_path
+    surf = allowed_surfaces if allowed_surfaces is not None else []
+    visp = required_visual_proofs if required_visual_proofs is not None else []
     return {
         "schema_version": "1.2.0",
         "review_slug": slug,
@@ -397,8 +527,8 @@ def _build_transaction(
         "architect_plan_hash": arch_hash,
         "ui_plan_hash": ui_hash,
         "execution_scope": f"mvp_runner_{slug}",
-        "allowed_surfaces": [],
-        "required_visual_proofs": [],
+        "allowed_surfaces": surf,
+        "required_visual_proofs": visp,
         "created_at": created_at,
         "updated_at": updated_at,
         "validation_started_at": validation_started_at,
@@ -499,6 +629,7 @@ def main() -> None:
     arch_hash = _sha256_file(arch)
     ui_hash = _sha256_file(ui) if ui.is_file() else None
     manifest_label = _read_manifest_label()
+    allowed_surfaces, required_visual_proofs = _load_review_target(planning)
     stamp = _utc_stamp()
     working_branch = args.working_branch or f"execution/{_sanitize_branch_segment(slug)}/runner-{stamp}"
 
@@ -615,6 +746,8 @@ def main() -> None:
                 validation_completed_at=None,
                 failure_stage="git_fetch",
                 operator_disclosures=od_fail,
+                allowed_surfaces=allowed_surfaces,
+                required_visual_proofs=required_visual_proofs,
             )
             _write_text(exec_dir / "EXECUTION_TRANSACTION.json", json.dumps(tx, indent=2) + "\n")
             _write_text(exec_dir / "WORKLOG.md", "\n".join(worklog_lines) + "\n")
@@ -677,6 +810,8 @@ def main() -> None:
                 validation_completed_at=None,
                 failure_stage="worktree_creation",
                 operator_disclosures=od_fail,
+                allowed_surfaces=allowed_surfaces,
+                required_visual_proofs=required_visual_proofs,
             )
             _write_text(exec_dir / "EXECUTION_TRANSACTION.json", json.dumps(tx, indent=2) + "\n")
             _write_text(exec_dir / "WORKLOG.md", "\n".join(worklog_lines) + "\n")
@@ -811,6 +946,8 @@ def main() -> None:
         validation_completed_at=validation_completed_at,
         failure_stage=failure_stage,
         operator_disclosures=od_final,
+        allowed_surfaces=allowed_surfaces,
+        required_visual_proofs=required_visual_proofs,
     )
 
     _write_text(exec_dir / "EXECUTION_TRANSACTION.json", json.dumps(transaction, indent=2) + "\n")

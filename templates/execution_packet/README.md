@@ -30,9 +30,13 @@ py -3 scripts/run_isolated_execution_demo.py --review-slug amd_2026_006 --produc
 
 Packet-only (no git / no npm): `--no-git`. See **[AIOS-EXEC-DEMO-001](../../reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** Annex E and [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py).
 
+## Review target (optional, planning folder)
+
+For UI/shell/workspace reviews, add **`reviews/<slug>/planning/REVIEW_TARGET.yaml`** (see [`REVIEW_TARGET.example.yaml`](REVIEW_TARGET.example.yaml)). The MVP runner copies **`allowed_surfaces`** and **`required_visual_proofs`** into **`EXECUTION_TRANSACTION.json`** and expands **`HUMAN_REVIEW_PACKET.md`** with “what validation proved vs what is still manual.” **YAML:** quote list items that contain **`:`** so they stay strings (otherwise YAML may parse them as nested mappings); the runner also coerces single-key dicts to `key: value` strings when present.
+
 ## Relationship to planning
 
 | Location | Phase |
 |----------|--------|
-| `reviews/<slug>/planning/` | **AIOS-AMD-PLAN-001** — Architect/UI **drafts** |
+| `reviews/<slug>/planning/` | **AIOS-AMD-PLAN-001** — Architect/UI **drafts**; optional **`REVIEW_TARGET.yaml`** for visible scope |
 | `reviews/<slug>/execution/` | **AIOS-EXEC-DEMO-001** — branch-isolated **evidence** (after planning, before promotion) |

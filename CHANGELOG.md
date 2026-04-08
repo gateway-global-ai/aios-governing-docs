@@ -11,8 +11,13 @@ All notable changes to the governing document set are recorded here.
 
 ## [Unreleased] — Governance + Google Workspace pack (2026-04-02)
 
+### Changed
+
+- **Sample execution packets (2026-04-08):** [`reviews/demo_exec_packet_samples/README.md`](reviews/demo_exec_packet_samples/README.md) — explicit framing that **`demo_exec_*`** slugs are process-validation reference only; [`reviews/demo_exec_ui_review/README.md`](reviews/demo_exec_ui_review/README.md); runner **`HUMAN_REVIEW_PACKET.md`** banner for sample slugs.
+
 ### Added
 
+- **Runner 0.3.1 + review targeting (2026-04-08):** [`scripts/run_isolated_execution_demo.py`](scripts/run_isolated_execution_demo.py) — optional **`planning/REVIEW_TARGET.yaml`** → **`allowed_surfaces`** / **`required_visual_proofs`** in transaction; **`HUMAN_REVIEW_PACKET.md`** section *what validation proved vs manual*; [`templates/execution_packet/REVIEW_TARGET.example.yaml`](templates/execution_packet/REVIEW_TARGET.example.yaml). **[AIOS-EXEC-DEMO-001](reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** **v0.1.4**.
 - **Review delta template (2026-04-08):** [`templates/review_delta_template.md`](templates/review_delta_template.md) — compact round-to-round comparison (scores, failure themes, “critique level up”); linked from [`reviews/README.md`](reviews/README.md).
 - **Execution transaction schema 1.2.0 + runner 0.3.0 (2026-04-08):** [`reference/schemas/execution_transaction.schema.json`](reference/schemas/execution_transaction.schema.json) — **`operator_disclosures`** (packet-only vs worktree-bound, validation proof honesty, manual visual); [`scripts/run_isolated_execution_demo.py`](scripts/run_isolated_execution_demo.py) — **`HUMAN_REVIEW_PACKET.md`** navigation-first; sample packets [`reviews/demo_exec_packet_samples/README.md`](reviews/demo_exec_packet_samples/README.md). **[AIOS-EXEC-DEMO-001](reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** **v0.1.3**.
 - **Execution transaction schema 1.1.0 + runner 0.2.0 (2026-04-07):** [`reference/schemas/execution_transaction.schema.json`](reference/schemas/execution_transaction.schema.json) — **`product_repo_path`**, **`created_at` / `updated_at`**, **`validation_*_at`**, **`artifacts`** index, **`failure_stage`**, **`human_review_status`** (vs **`promotion_status`**); [`scripts/run_isolated_execution_demo.py`](scripts/run_isolated_execution_demo.py) — `reviews/<slug>/execution/` packet, git worktree + bounded npm argv, **`--source-repo-url`**. **[AIOS-EXEC-DEMO-001](reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md)** **v0.1.2** — Annex E.

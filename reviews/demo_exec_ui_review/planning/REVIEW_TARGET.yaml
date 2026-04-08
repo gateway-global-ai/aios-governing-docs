@@ -1,0 +1,15 @@
+# Review target — UI-meaningful disposable run (workspace + shell)
+# Align names with product surfaces a reviewer can open in dev preview and verify.
+
+allowed_surfaces:
+  - WorkspaceHubSurface (workspace hub overlay — connect / hub state)
+  - ShellIdentityBar (account / session identity)
+  - CommandRail (command entry / rail chrome)
+  - ShellVoiceIdlePanel (voice idle / listening affordance when applicable)
+  - WorkspaceOnboardingSurface (first-run or reconnect onboarding, if shown)
+
+required_visual_proofs:
+  - "screenshot: full app shell with identity bar + command rail visible (baseline)"
+  - "screenshot: workspace hub open showing connection or auth state (signed-in, auth_required, or error — whichever matches run)"
+  - "screenshot: same session with voice idle panel visible OR note N/A if voice chrome hidden by design for this branch"
+  - "short note: which route or overlay state each image corresponds to (one line each)"

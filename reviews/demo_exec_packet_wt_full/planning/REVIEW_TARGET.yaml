@@ -1,0 +1,11 @@
+# Disposable full-validation sample — conformance branch (workspace/shell review targeting)
+
+allowed_surfaces:
+  - workspace hub (Google Workspace connect / read slice)
+  - shell identity bar
+  - command rail
+  - workspace onboarding surface
+
+required_visual_proofs:
+  - "screenshot: workspace hub after sign-in or equivalent connected state"
+  - "screenshot: shell chrome with voice idle panel visible (if applicable to branch)"

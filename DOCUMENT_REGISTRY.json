@@ -293,7 +293,7 @@
   {
     "document_id": "AIOS-EXEC-DEMO-001",
     "title": "Isolated execution demonstration pipeline (draft proposal)",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md",

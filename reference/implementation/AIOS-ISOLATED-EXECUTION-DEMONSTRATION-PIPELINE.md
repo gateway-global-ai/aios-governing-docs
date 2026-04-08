@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-EXEC-DEMO-001
-version: 0.1.3
+version: 0.1.4
 status: draft
 category: reference
 title: Isolated execution demonstration pipeline (draft proposal)
@@ -12,6 +12,9 @@ cross_references:
   - doc_id: AMD-2026-005
   - doc_id: AIOS-REF-013
 amendment_history:
+  - version: 0.1.4
+    date: 2026-04-08
+    summary: Optional planning/REVIEW_TARGET.yaml populates allowed_surfaces and required_visual_proofs; HUMAN_REVIEW_PACKET section “what validation proved vs manual visual”; runner 0.3.1 (Windows npm PATH resolution; review targeting).
   - version: 0.1.3
     date: 2026-04-08
     summary: Schema 1.2.0 operator_disclosures (binding vs packet-only, validation proof honesty); HUMAN_REVIEW_PACKET navigation-first; sample packets under reviews/demo_exec_packet_*; runner 0.3.0.
@@ -377,16 +380,16 @@ Normative JSON Schema: **[`reference/schemas/execution_transaction.schema.json`]
 
 ## Annex E — MVP runner (implemented)
 
-**Location:** [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py) (Python 3; runner **v0.3.0**; stdlib + PyYAML for manifest label). **Sample outputs:** [`reviews/demo_exec_packet_samples/README.md`](../../reviews/demo_exec_packet_samples/README.md).
+**Location:** [`scripts/run_isolated_execution_demo.py`](../../scripts/run_isolated_execution_demo.py) (Python 3; runner **v0.3.1**; stdlib + PyYAML for manifest label and optional `REVIEW_TARGET.yaml`). **Sample outputs:** [`reviews/demo_exec_packet_samples/README.md`](../../reviews/demo_exec_packet_samples/README.md).
 
 **What it does (deterministic):**
 
 1. Requires **`reviews/<slug>/planning/ARCHITECT_PLAN.md`** (draft from **[AIOS-AMD-PLAN-001](AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** phase B or a coordinator copy from the template).
 2. Creates **`reviews/<slug>/execution/`** and copies **`EXECUTION_CONTRACT.md`** from [`templates/execution_packet/EXECUTION_CONTRACT_TEMPLATE.md`](../../templates/execution_packet/EXECUTION_CONTRACT_TEMPLATE.md) when missing; copies **`VALIDATION_COMMANDS.example.json`** for reference.
-3. Writes **`EXECUTION_TRANSACTION.json`** (**schema 1.2.0**): hashes of architect/UI plans; **`product_repo_path`** (local path, first-class; **`not_applicable`** only for **`--no-git`** — see **`operator_disclosures`**); **`source_repo`** (defaults to that path, or **`--source-repo-url`**); **`created_at` / `updated_at`**; **`validation_started_at` / `validation_completed_at`** when npm runs; **`artifacts`** (canonical index relative to this folder); **`operator_disclosures`** (**`execution_lane_posture`**, **`validation_proof_available`**, **`validation_non_proof_reason`**, **`visual_capture_automated`**); **`failure_stage`** on failure (`git_fetch`, `worktree_creation`, `install`, `build`, `test`, `validation_skipped`, …); **`human_review_status`** (runner seeds **`pending`** — separate from **`promotion_status`**); manifest label from `agent_kb_manifest.yaml` when PyYAML is available.
+3. Writes **`EXECUTION_TRANSACTION.json`** (**schema 1.2.0**): hashes of architect/UI plans; optional **`allowed_surfaces`** / **`required_visual_proofs`** from **`reviews/<slug>/planning/REVIEW_TARGET.yaml`** when present (see [`templates/execution_packet/REVIEW_TARGET.example.yaml`](../../templates/execution_packet/REVIEW_TARGET.example.yaml)); **`product_repo_path`** (local path, first-class; **`not_applicable`** only for **`--no-git`** — see **`operator_disclosures`**); **`source_repo`** (defaults to that path, or **`--source-repo-url`**); **`created_at` / `updated_at`**; **`validation_started_at` / `validation_completed_at`** when npm runs; **`artifacts`** (canonical index relative to this folder); **`operator_disclosures`** (**`execution_lane_posture`**, **`validation_proof_available`**, **`validation_non_proof_reason`**, **`visual_capture_automated`**); **`failure_stage`** on failure (`git_fetch`, `worktree_creation`, `install`, `build`, `test`, `validation_skipped`, …); **`human_review_status`** (runner seeds **`pending`** — separate from **`promotion_status`**); manifest label from `agent_kb_manifest.yaml` when PyYAML is available.
 4. **`--no-git`:** skips product repo; sets `isolation_mode` **`none`**; **`base_commit_sha`** placeholder **`0000000`**; validation section documents skip.
 5. **Default (with `--product-repo`):** `git fetch origin <source-branch>`, **`git worktree add`** to a sibling folder `aios-exec-<slug>-<UTC>` under `--worktree-parent` (default: parent of product repo), records **`base_commit_sha`**, runs **`npm ci`** (or **`npm install`** without lockfile) / **`npm run build`** / **`npm test`** unless overridden by **`VALIDATION_COMMANDS.json`** in the execution folder or **`--validation-config`**. Logs go to **`VALIDATION_RESULTS.md`**.
-6. Writes **`WORKLOG.md`**, **`CHANGED_FILES.md`** (no product edits by the runner), **`VISUAL_EVIDENCE/CAPTURE_CHECKLIST.md`**, **`VISUAL_EVIDENCE/screenshots/`**, **`HUMAN_REVIEW_PACKET.md`** (navigation + **`artifacts`** table first, then binding/proof callouts).
+6. Writes **`WORKLOG.md`**, **`CHANGED_FILES.md`** (no product edits by the runner), **`VISUAL_EVIDENCE/CAPTURE_CHECKLIST.md`**, **`VISUAL_EVIDENCE/screenshots/`**, **`HUMAN_REVIEW_PACKET.md`** (navigation + **`artifacts`** table first, binding/proof callouts, then **what validation proved vs declared visible scope vs manual visual**).
 
 **What it does not do:** screenshots, browser automation, LLM implementation, autonomous code mutation, amendment edits, or ratification. The runner remains an **execution lane initializer and bounded validation / evidence collector** — not an implementation agent.
 
@@ -418,4 +421,4 @@ It is **not** normative law; it is **operator guidance** for tooling and humans.
 
 ---
 
-*End of AIOS-EXEC-DEMO-001 v0.1.3 draft.*
+*End of AIOS-EXEC-DEMO-001 v0.1.4 draft.*

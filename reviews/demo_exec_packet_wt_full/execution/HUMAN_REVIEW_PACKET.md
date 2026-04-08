@@ -1,5 +1,7 @@
 # Human review packet — demo_exec_packet_wt_full
 
+> **Sample execution packet:** This slug is for **process validation and packet-quality reference**, not an authoritative product verdict or amendment review outcome. Index: [`reviews/demo_exec_packet_samples/README.md`](../../demo_exec_packet_samples/README.md).
+
 **Status:** draft — MVP runner output
 
 ## Navigation (canonical)
@@ -24,11 +26,35 @@ Start from **`EXECUTION_TRANSACTION.json`**. The **`artifacts`** object is the i
 
 ## Summary
 
-- **Isolation:** worktree `C:/Apps/aios-exec-demo_exec_packet_wt_full-20260408-044900Z`
+- **Isolation:** worktree `C:/Apps/aios-exec-demo_exec_packet_wt_full-20260408-050617Z`
 - **Base commit:** `8713c6df134fc27a76976d4b440471ba53d61dfa`
 - **verification_status:** `repo_truth_ok`
 - **promotion_status:** `ready_for_human_review`
 - **failure_stage:** `null`
+
+## What validation proved vs what is still manual
+
+### Proven by automated validation
+
+- **Repo binding:** `source_branch`, `worktree_path`, and commit SHAs in `EXECUTION_TRANSACTION.json` when this run created a worktree.
+- **Install / build / test:** see `VALIDATION_RESULTS.md` for commands, exit codes, and captured logs.
+
+### Declared review target (visible behavior scope)
+
+**allowed_surfaces** (from `planning/REVIEW_TARGET.yaml`):
+- workspace hub (Google Workspace connect / read slice)
+- shell identity bar
+- command rail
+- workspace onboarding surface
+
+**required_visual_proofs** (from `planning/REVIEW_TARGET.yaml`):
+- screenshot: workspace hub after sign-in or equivalent connected state
+- screenshot: shell chrome with voice idle panel visible (if applicable to branch)
+
+### Still requires manual visual inspection
+
+- The runner does **not** produce screenshots. Capture evidence under `VISUAL_EVIDENCE/` per `CAPTURE_CHECKLIST.md`.
+- **Minimum manual captures:** satisfy **required_visual_proofs** above (transaction mirrors this list).
 
 ## Decision requested
 
