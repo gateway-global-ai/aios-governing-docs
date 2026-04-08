@@ -1,10 +1,10 @@
 # Committee review packet — AMD-2026-006 / AIOS-SPEC-007
 
 **Date:** 2026-04-08  
-**Reviewers:** _assign at review time_  
+**Reviewers:** Maintainer / coordinator (single approver — recorded in §3)  
 **Purpose:** **Advisory** sign-off that **planning** (Phases A–C) is **complete enough** to authorize **author revision** toward **Round 2** — **not** ratification (**[AMD-2026-005](../../../amendments/AMD-2026-005.md)** + Council motion still apply).
 
-**Blocking rule:** **Do not** start **Phase E** (AMD + SPEC edits) until **§3** below is filled with **real** committee input. This file is **not** an author instruction by itself.
+**Phase E:** **Authorized** — §3 recorded. **[`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md)** and **[`UI_PLAN.md`](UI_PLAN.md)** approved **with no changes** to those planning files.
 
 ---
 
@@ -29,17 +29,26 @@ Answer each: **Approve** / **Revise** / **Reject** (one line each; optional comm
 3. **Shell vs Workspace:** Any **material conflict** with **AMD-2026-007** / **AIOS-SPEC-006** given the documented split (**`shellIntentRouter.ts`** vs Workspace canvas + ICP)?
 4. **Round 2 target:** Confirm **`peer_review.py`** should target **primarily** **`specifications/GoogleWorkspaceIntegrationGovernance.md`** (per Round 1 coordinator note), **or** insist on a **merged** AMD+SPEC target — **which**?
 
+**Recorded answers (2026-04-08):**
+
+| # | Answer | Comment |
+|---|--------|---------|
+| 1 | **Approve** | Implementation mapping sufficient to drive **AIOS-SPEC-007** redlines. |
+| 2 | **Approve** | Hub fallback documented in **UI_PLAN** is **acceptable MVP** for Round 2 narrative; **no** product/spec surface mandate **before** author revision. |
+| 3 | **Approve** | **No** material conflict with **AMD-2026-007** / **AIOS-SPEC-006** as documented. |
+| 4 | **Approve** | **Primary** **`peer_review.py`** target: **`specifications/GoogleWorkspaceIntegrationGovernance.md`** (per [`round_1/REVIEW_SYNTHESIS.md`](../round_1/REVIEW_SYNTHESIS.md) coordinator note); merged AMD+SPEC prompt **optional** at coordinator discretion. |
+
 ---
 
 ## 3. Committee outcome
 
 | Field | Value |
 |-------|--------|
-| **Outcome** | _Pending — not filled_ |
-| **Recorded by** | |
-| **Date** | |
+| **Outcome** | **Approved** (planning complete; **no** changes required to **ARCHITECT_PLAN** / **UI_PLAN**) |
+| **Recorded by** | Maintainer (approver in thread) |
+| **Date** | 2026-04-08 |
 
-**Author instructions (after outcome only):** _Committee fills when ready — **empty until then**._
+**Author instructions:** **[`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md)** and **[`UI_PLAN.md`](UI_PLAN.md)** — **freeze as-is** (no replanning). **Phase E:** revise **[`AMD-2026-006.md`](../../../amendments/AMD-2026-006.md)** and **[`GoogleWorkspaceIntegrationGovernance.md`](../../../specifications/GoogleWorkspaceIntegrationGovernance.md)** to close Round 1 gaps (**Completeness**, annex / § mapping, cross-refs) using **accepted** evidence and planning; bump **`version`** / **`last_updated`**; log in **[`revision_log.md`](../revision_log.md)**.
 
 ---
 
@@ -56,4 +65,4 @@ See **[AIOS-AMD-PLAN-001](../../../reference/implementation/AIOS-AMD-PRE-RATIFIC
 
 ---
 
-*Packet issued for committee scheduling — **Phase D** — 2026-04-08.*
+*Phase D complete — **Approved** 2026-04-08 — **Phase E** authorized.*

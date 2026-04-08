@@ -13,7 +13,7 @@ All notable changes to the governing document set are recorded here.
 
 ### Added
 
-- **AMD-2026-006 Phase D — COMMITTEE_PACKET.md (2026-04-08):** [`reviews/amd_2026_006/planning/COMMITTEE_PACKET.md`](reviews/amd_2026_006/planning/COMMITTEE_PACKET.md) — narrow decision questions; **§3 outcome pending**; **no** author revision until committee records. **Phase C** [`UI_PLAN.md`](reviews/amd_2026_006/planning/UI_PLAN.md) **accepted**; [`planning/README.md`](reviews/amd_2026_006/planning/README.md), [`revision_log.md`](reviews/amd_2026_006/revision_log.md).
+- **AMD-2026-006 Phase D — committee approval (2026-04-08):** [`reviews/amd_2026_006/planning/COMMITTEE_PACKET.md`](reviews/amd_2026_006/planning/COMMITTEE_PACKET.md) — **Approved**; **[`ARCHITECT_PLAN.md`](reviews/amd_2026_006/planning/ARCHITECT_PLAN.md)** / **[`UI_PLAN.md`](reviews/amd_2026_006/planning/UI_PLAN.md)** **no changes**; **Phase E** authorized (AMD + SPEC only).
 - **AMD-2026-006 Phase C — UI_PLAN.md (2026-04-08):** [`reviews/amd_2026_006/planning/UI_PLAN.md`](reviews/amd_2026_006/planning/UI_PLAN.md) — verified against `ai-os-voice-interface` (`App.tsx`, `workspaceIntentRouter.ts`); **accepted** 2026-04-08 (supersedes prior “pending verify” note).
 - **AMD-2026-006 Phase B — ARCHITECT_PLAN.md verified (2026-04-08):** [`reviews/amd_2026_006/planning/ARCHITECT_PLAN.md`](reviews/amd_2026_006/planning/ARCHITECT_PLAN.md); [`planning/README.md`](reviews/amd_2026_006/planning/README.md).
 - **AMD-AMENDMENT-REVIEW-TRACKER-001 v1.1.3 (2026-04-08):** [`reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md`](reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md) — AMD-2026-006 Phase A accepted; Phase B next.
