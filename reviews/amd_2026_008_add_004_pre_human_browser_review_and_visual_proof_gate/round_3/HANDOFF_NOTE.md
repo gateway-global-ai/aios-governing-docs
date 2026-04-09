@@ -19,7 +19,8 @@
 - Round 2 remains the historical failed review of assessed **`draft` `0.3.0`** under `../round_2/`.
 - This `round_3/` packet targets current doctrine head **`draft` `0.4.0`**.
 - Round 3 execution is now **closed**: the manual-resolution Gemini retry succeeded, the triad is complete, and the saved Round 3 gate is **PASS** under **AMD-2026-005**.
-- The governed next step is **`ratification_motion`** from this `round_3/` packet state.
+- The governed next step is **`ratification_motion`** from this `round_3/` packet state via **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**.
+- This pass drafted the motion only; ratification execution, amendment status changes, and broader registry/changelog follow-through remain pending.
 - Do **not** reopen Round 1 or Round 2 hygiene from this completed Round 3 packet state; they remain historical.
 
 ---

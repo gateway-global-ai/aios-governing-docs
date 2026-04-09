@@ -119,6 +119,17 @@
 
 **Next:** Open the ratification-motion path from the completed Round 3 packet state; keep **`round_2/`** as historical **FAIL** on assessed **`0.3.0`** and do **not** reopen prior-round hygiene from this slice.
 
+## Phase N — ratification-motion preparation — `0.4.0` basis (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Motion** | Added [`AMD-2026-008-ADD-004-ratification-motion.md`](../../amendments/AMD-2026-008-ADD-004-ratification-motion.md) as the narrow Council/coordinator motion surface for **AMD-2026-008-ADD-004** using **`draft` `0.4.0`** as the exact substantive basis |
+| **Evidence basis** | Motion points only to the completed [`round_3/`](round_3/) packet, including [`PACKET_STATUS.yaml`](round_3/PACKET_STATUS.yaml), [`REVIEW_SYNTHESIS.md`](round_3/REVIEW_SYNTHESIS.md), and [`RATIFICATION_GATE_REPORT.md`](round_3/RATIFICATION_GATE_REPORT.md) |
+| **Packet orientation** | [`round_3/README.md`](round_3/README.md) and [`round_3/HANDOFF_NOTE.md`](round_3/HANDOFF_NOTE.md) now point to the drafted motion as the next governed move |
+| **Boundaries preserved** | No doctrine revision, no ratification execution, no Round 1 / Round 2 reopening, no implementation authority, and no AMD-2026-015 work mixed into this slice |
+
+**Next:** Take the drafted motion through ratification decision handling; perform status/registry/changelog execution only in a separate ratification pass.
+
 ## Note — folder disambiguation (2026-04-08)
 
 Peer-review **filenames** overlap with **[`reviews/amd_2026_007/round_1/`](../amd_2026_007/round_1/)** (`review_001_openai.md`, etc.). **[`round_1/REVIEW_BRIEF.md`](round_1/REVIEW_BRIEF.md)** documents the canonical **ADD-004** paths and targets.

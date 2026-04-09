@@ -7,7 +7,7 @@
 
 **Validator:** `py -3 scripts/validate_review_packet.py --round-dir reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3`
 
-**Current state:** packet **`healthy`**; Round 3 triad is now complete on assessed **`draft` `0.4.0`**; review gate **`pass`** under **AMD-2026-005**; next **`ratification_motion`**; committee remains **`closed_superseded_by_review`** from the prior cycle.
+**Current state:** packet **`healthy`**; Round 3 triad is now complete on assessed **`draft` `0.4.0`**; review gate **`pass`** under **AMD-2026-005**; next **`ratification_motion`**; committee remains **`closed_superseded_by_review`** from the prior cycle. The drafted motion path is **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**; ratification execution is still pending.
 
 **Execution result:** Round 3 was opened in this folder, DeepSeek and OpenAI completed on the first pass, and a bounded Gemini-only manual-resolution retry completed the triad without mutating **`round_2/`**, which remains the historical failed review of **`draft` `0.3.0`**.
 
@@ -23,7 +23,7 @@
 
 **Target:** [`../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md`](../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)
 
-**Only live governed next step from this Round 3 state:** open the ratification-motion path from the completed **`round_3/`** packet. Do **not** reopen Round 1 / Round 2 packet hygiene from this state.
+**Only live governed next step from this Round 3 state:** advance the drafted **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)** through the ratification decision path from this completed **`round_3/`** packet. Do **not** reopen Round 1 / Round 2 packet hygiene from this state.
 
 **Gate summary:** triad **complete**; DeepSeek returned **`approved_with_changes`** with composite **3.8**; OpenAI returned **`approved_with_changes`** with composite **4.2**; Gemini returned **`approved`** with composite **5.0** on the bounded manual-resolution retry. The saved Round 3 gate result is **PASS**.
 
