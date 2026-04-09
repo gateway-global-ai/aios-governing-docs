@@ -18,9 +18,9 @@
 
 - Round 2 remains the historical failed review of assessed **`draft` `0.3.0`** under `../round_2/`.
 - This `round_3/` packet targets current doctrine head **`draft` `0.4.0`**.
-- Round 3 execution is **not closed** yet: DeepSeek and OpenAI completed, but Gemini returned provider-side **`503 UNAVAILABLE`** on the initial run and again on one scoped retry.
-- The governed next step is **manual resolution** to restore the missing third lane in `round_3/`, then refresh synthesis and gate from the completed triad.
-- Do **not** infer a substantive doctrine **FAIL** or reopen older-round packet hygiene from this incomplete packet state alone.
+- Round 3 execution is now **closed**: the manual-resolution Gemini retry succeeded, the triad is complete, and the saved Round 3 gate is **PASS** under **AMD-2026-005**.
+- The governed next step is **`ratification_motion`** from this `round_3/` packet state.
+- Do **not** reopen Round 1 or Round 2 hygiene from this completed Round 3 packet state; they remain historical.
 
 ---
 

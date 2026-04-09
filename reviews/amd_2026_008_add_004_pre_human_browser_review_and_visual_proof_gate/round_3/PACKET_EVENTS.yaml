@@ -58,3 +58,35 @@ events:
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/REVIEW_SYNTHESIS.md
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/RATIFICATION_GATE_REPORT.md
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/HANDOFF_NOTE.md
+- event_id: evt-20260409T191639Z-005
+  timestamp: '2026-04-09T19:16:39Z'
+  actor: governance_round_3_manual_resolution
+  event_type: review_gate_passed
+  from_version: 0.4.0
+  to_version: 0.4.0
+  round: 3
+  summary: AMD-2026-005 thresholds satisfied after successful Gemini manual-resolution
+    retry for Round 3 draft 0.4.0 (minimum composite 3.8; minimum dimension
+    3).
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/review_001_deepseek__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/review_002_openai__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/review_003_gemini__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/REVIEW_SYNTHESIS.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/RATIFICATION_GATE_REPORT.md
+- event_id: evt-20260409T191639Z-006
+  timestamp: '2026-04-09T19:16:39Z'
+  actor: governance_round_3_manual_resolution
+  event_type: packet_status_corrected
+  from_version: 0.4.0
+  to_version: 0.4.0
+  round: 3
+  summary: Corrected Round 3 packet status from incomplete/manual_resolution to
+    pass/ratification_motion after successful Gemini retry, Gemini front matter
+    normalization, and completed-triad synthesis and gate regeneration.
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/review_003_gemini__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/PACKET_STATUS.yaml
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/REVIEW_SYNTHESIS.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/RATIFICATION_GATE_REPORT.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/HANDOFF_NOTE.md

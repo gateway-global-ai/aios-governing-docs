@@ -2,7 +2,7 @@
 
 **Structured status:** **[`PACKET_STATUS.yaml`](PACKET_STATUS.yaml)** is authoritative for **`artifact_health`**, **`review_gate_status`**, **`committee_status`**, **`next_action`**, and version pointers. **Append-only history:** **[`PACKET_EVENTS.yaml`](PACKET_EVENTS.yaml)**.
 
-**Same evidence as status split (human-readable):** **Artifact health** — **healthy**. **Review gate** — **INCOMPLETE** (this report). **Next state** — **manual resolution**; no ratification motion or substantive revision call should be inferred from this Round 3 packet state alone. **Committee** — **`closed_superseded_by_review`** in **`PACKET_STATUS.yaml`**; narrative [`../planning/COMMITTEE_PACKET.md`](../planning/COMMITTEE_PACKET.md).
+**Same evidence as status split (human-readable):** **Artifact health** — **healthy**. **Review gate** — **PASS** (this report). **Next state** — **ratification motion** from the completed Round 3 packet. **Committee** — **`closed_superseded_by_review`** in **`PACKET_STATUS.yaml`**; narrative [`../planning/COMMITTEE_PACKET.md`](../planning/COMMITTEE_PACKET.md).
 
 **Target:** [`AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md`](../../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md) — **`draft` `0.4.0`**  
 **Process:** **[AMD-2026-005](../../../amendments/AMD-2026-005.md)** §3  
@@ -11,16 +11,16 @@
 
 ---
 
-## Gate result: **INCOMPLETE**
+## Gate result: **PASS**
 
 | Criterion | Result |
 |-----------|--------|
-| Triangulated peer review (three reviewers) | **Not satisfied** — DeepSeek and OpenAI completed; Gemini returned provider-side **`503 UNAVAILABLE`** on the initial run and on one scoped retry. |
-| Composite ≥ **3.5** | **Not evaluated** — the binding threshold applies to a completed triangulated round. The two completed lanes individually scored **3.8** and **4.2**, but the Round 3 gate cannot close on two lanes alone. |
-| No dimension **< 3** | **Not evaluated** — same reason; completed triangulation is still missing. |
-| Author revision on substantive findings | **Not newly required** from this packet state — the current blocker is operational/manual-resolution completion of the third lane, not a completed triad doctrine fail. |
+| Triangulated peer review (three reviewers) | **Satisfied** — DeepSeek, OpenAI, Gemini. |
+| Composite ≥ **3.5** | **Satisfied** — minimum composite **3.8** across the completed triad. |
+| No dimension **< 3** | **Satisfied** — minimum dimension observed across the saved scorecards is **3**. |
+| Author revision on substantive findings | **Not required before ratification motion** — the completed Round 3 triad cleared the numerical gate. |
 
-**Conclusion:** **`draft` `0.4.0`** cannot be closed as **PASS** or **FAIL** for Round 3 yet. The governed next step is to restore the missing third review lane in **`round_3/`** and then regenerate the synthesis and gate call from the completed triad. Do **not** reopen earlier packet hygiene or preemptively revise doctrine from this incomplete execution state alone.
+**Conclusion:** **`draft` `0.4.0`** now satisfies **[AMD-2026-005](../../../amendments/AMD-2026-005.md)** ratification thresholds for this Round 3 pass. The governed next step is the ratification-motion path from this completed **`round_3/`** packet state. Do **not** reopen earlier packet hygiene from this manual-resolution slice.
 
 ---
 
@@ -28,10 +28,10 @@
 
 - [`review_001_deepseek__AMD-2026-008-ADD-004.md`](review_001_deepseek__AMD-2026-008-ADD-004.md) — composite **3.8**, `approved_with_changes`
 - [`review_002_openai__AMD-2026-008-ADD-004.md`](review_002_openai__AMD-2026-008-ADD-004.md) — composite **4.2**, `approved_with_changes`
-- [`review_003_gemini__AMD-2026-008-ADD-004.md`](review_003_gemini__AMD-2026-008-ADD-004.md) — provider-side **`503 UNAVAILABLE`** on initial run and single retry
+- [`review_003_gemini__AMD-2026-008-ADD-004.md`](review_003_gemini__AMD-2026-008-ADD-004.md) — composite **5.0**, `approved`
 - [`peer_review_manifest_20260409T185752Z.json`](peer_review_manifest_20260409T185752Z.json) — initial Round 3 machine record
-- [`REVIEW_SYNTHESIS.md`](REVIEW_SYNTHESIS.md) — completed-lane themes and next-step recommendation
+- [`REVIEW_SYNTHESIS.md`](REVIEW_SYNTHESIS.md) — completed-triad themes and recommendation
 
 ---
 
-*Gate report — Round 3 — **INCOMPLETE** — 2026-04-09.*
+*Gate report — Round 3 — **PASS** — 2026-04-09.*

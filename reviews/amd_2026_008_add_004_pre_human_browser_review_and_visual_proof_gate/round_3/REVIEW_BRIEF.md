@@ -48,7 +48,7 @@ Round 2 historical artifacts live under [`../round_2/`](../round_2/) and must **
 
 ## Execution note
 
-This Round 3 packet is **operationally incomplete**, not a completed doctrine fail: DeepSeek and OpenAI produced scored reviews, while Gemini returned provider-side **`503 UNAVAILABLE`** on the initial run and on one scoped retry. Treat **[`PACKET_STATUS.yaml`](PACKET_STATUS.yaml)** and **[`RATIFICATION_GATE_REPORT.md`](RATIFICATION_GATE_REPORT.md)** as the current truth for whether the round is closed.
+This Round 3 packet is now **operationally complete**: DeepSeek and OpenAI produced scored reviews on the initial pass, and a bounded Gemini-only manual-resolution retry completed the missing third lane. Treat **[`PACKET_STATUS.yaml`](PACKET_STATUS.yaml)** and **[`RATIFICATION_GATE_REPORT.md`](RATIFICATION_GATE_REPORT.md)** as the current truth for the saved Round 3 outcome.
 
 ---
 

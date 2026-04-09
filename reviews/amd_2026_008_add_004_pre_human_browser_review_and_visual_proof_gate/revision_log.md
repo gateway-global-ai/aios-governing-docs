@@ -102,10 +102,22 @@
 | **Execution** | Scoped bounded Round 3 review run using the repo peer-review prompt, **light** rubric, **smart context**, and the normal DeepSeek / OpenAI / Gemini triad without mutating `round_2/` |
 | **Reviews** | [`round_3/review_001_deepseek__AMD-2026-008-ADD-004.md`](round_3/review_001_deepseek__AMD-2026-008-ADD-004.md), [`round_3/review_002_openai__AMD-2026-008-ADD-004.md`](round_3/review_002_openai__AMD-2026-008-ADD-004.md), [`round_3/review_003_gemini__AMD-2026-008-ADD-004.md`](round_3/review_003_gemini__AMD-2026-008-ADD-004.md) |
 | **Manifest** | [`round_3/peer_review_manifest_20260409T185752Z.json`](round_3/peer_review_manifest_20260409T185752Z.json) |
-| **Synthesis / gate** | [`round_3/REVIEW_SYNTHESIS.md`](round_3/REVIEW_SYNTHESIS.md), [`round_3/RATIFICATION_GATE_REPORT.md`](round_3/RATIFICATION_GATE_REPORT.md) — **INCOMPLETE** (Gemini provider-side **`503 UNAVAILABLE`** on initial run and one scoped retry) |
-| **Packet closeout** | DeepSeek / OpenAI review front matter normalized for Round 3 packet identity; Round 3 status remains **`incomplete`** / **`manual_resolution`**; no doctrine revision or Round 2 hygiene reopened from this slice |
+| **Synthesis / gate** | [`round_3/REVIEW_SYNTHESIS.md`](round_3/REVIEW_SYNTHESIS.md), [`round_3/RATIFICATION_GATE_REPORT.md`](round_3/RATIFICATION_GATE_REPORT.md) — **INCOMPLETE** after initial execution (Gemini provider-side **`503 UNAVAILABLE`**) |
+| **Packet closeout** | DeepSeek / OpenAI review front matter normalized for Round 3 packet identity; packet stayed **`incomplete`** / **`manual_resolution`** pending a later bounded Gemini-only retry |
 
-**Next:** Restore the missing third lane in **`round_3/`**, then refresh synthesis + gate from the completed triad; do **not** preemptively revise doctrine from this incomplete Round 3 execution alone.
+**Next:** One narrow Gemini-only manual-resolution pass on the existing **`round_3/`** packet path; do **not** reopen Round 1 / Round 2 hygiene or revise doctrine from the incomplete packet alone.
+
+## Phase M — Round 3 manual resolution — Gemini retry success (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Retry scope** | Gemini lane only in existing [`round_3/`](round_3/) — no DeepSeek / OpenAI rerun, no amendment-text edits, no new round path |
+| **Gemini result** | [`round_3/review_003_gemini__AMD-2026-008-ADD-004.md`](round_3/review_003_gemini__AMD-2026-008-ADD-004.md) — **`approved`**, composite **5.0** |
+| **Artifact repair** | Gemini review front matter normalized so the saved review file validates inside the packet |
+| **Synthesis / gate refresh** | [`round_3/REVIEW_SYNTHESIS.md`](round_3/REVIEW_SYNTHESIS.md), [`round_3/RATIFICATION_GATE_REPORT.md`](round_3/RATIFICATION_GATE_REPORT.md) — **PASS** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** (minimum composite **3.8**; minimum dimension **3**) |
+| **Packet state** | [`round_3/PACKET_STATUS.yaml`](round_3/PACKET_STATUS.yaml) corrected from **`incomplete`** / **`manual_resolution`** to **`pass`** / **`ratification_motion`** with **`ratification_ready`** lifecycle; [`round_3/PACKET_EVENTS.yaml`](round_3/PACKET_EVENTS.yaml) records the successful manual-resolution outcome |
+
+**Next:** Open the ratification-motion path from the completed Round 3 packet state; keep **`round_2/`** as historical **FAIL** on assessed **`0.3.0`** and do **not** reopen prior-round hygiene from this slice.
 
 ## Note — folder disambiguation (2026-04-08)
 
