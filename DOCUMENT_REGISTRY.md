@@ -11,7 +11,14 @@
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
 | AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
 | AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.2.6 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.3.5 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) | 0.1.1 | draft | reference | `reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md` |
+| AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001 | CANI capture surface and normalization handoff contract | 1.0.0 | ratified | reference | `reference/implementation/CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001.md` |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | CANI Experience Loop technical standard | 0.1.5 | draft | reference | `reference/implementation/CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001.md` |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | CANI observation and recommendation schema | 0.1.2 | draft | reference | `reference/implementation/CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001.md` |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | CANI persisted artifact taxonomy and storage contract | 0.1.0 | draft | reference | `reference/implementation/CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001.md` |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | CANI telemetry ingestion envelope and normalization contract | 0.1.1 | draft | reference | `reference/implementation/CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001.md` |
+| AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001 | CANI validator and tooling contract | 0.1.0 | draft | reference | `reference/implementation/CANI-VALIDATOR-AND-TOOLING-CONTRACT-001.md` |
 | AIOS-COMM-001 | AIOS Marketplace Terms & Vendor Onboarding | 1.0.0 | draft | commercial | `commercial/MarketplaceTermsOnboarding.md` |
 | AIOS-COMM-002 | Data Privacy & Compliance Addendum | 1.0.0 | draft | commercial | `commercial/DataPrivacyComplianceAddendum.md` |
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | Committee review brief — intent-bearing repository taxonomy (AMD-2026-013) | 1.0.1 | draft | reference | `reference/implementation/COMMITTEE-REVIEW-BRIEF-AMD-2026-013.md` |
@@ -25,7 +32,9 @@
 | AIOS-COUNCIL-BRIEF-003 | Council review brief — AIOS development conformance process (AIOS-DEV-PROC-001) | 1.0.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-DEV-PROC-001.md` |
 | AIOS-DEV-PROC-001 | AI OS development conformance — triangulated peer review | 1.0.0 | draft | reference | `reference/implementation/AIOS-DEVELOPMENT-CONFORMANCE-PROCESS.md` |
 | AIOS-EXEC-DEMO-001 | Isolated execution demonstration pipeline (draft proposal) | 0.1.5 | draft | reference | `reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md` |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | Governed authoring knowledge inputs and bounded author-like drafting | 0.1.1 | draft | reference | `reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md` |
 | AIOS-IMPL-LEDGER-001 | AIOS Implementation Ledger and Anti-Drift Operating Loop | 1.1.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-LEDGER.md` |
+| AIOS-KB-CANI-VICTORY-LAP-001 | CANI Experience Loop and Victory Lap Formula | 0.1.0 | draft | article | `reference/knowledge_base/articles/CANI-VICTORY-LAP-FORMULA.md` |
 | AIOS-MASTER-IMPL-001 | AIOS Master Implementation Program (cross-repo) | 1.2.4 | draft | reference | `reference/implementation/AIOS-MASTER-IMPLEMENTATION-PROGRAM.md` |
 | AIOS-MBL009-TRACKER-001 | MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker | 1.0.0 | open | reference | `reference/implementation/MBL-009-tracker-amd-2026-007-policy-index.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
@@ -40,6 +49,7 @@
 | AIOS-OPS-017 | GitHub Host Activation — Result Record | 1.1.0 | ratified | operations | `operations/GitHubHostActivationResult.md` |
 | AIOS-OPS-018 | Cursor / IDE Host Activation — Result Record | 1.0.0 | ratified | operations | `operations/CursorHostActivationResult.md` |
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
+| AIOS-PEER-REVIEW-EXPORT-STANDARD-001 | Peer-review export standard | 0.1.0 | draft | reference | `reference/implementation/AIOS-PEER-REVIEW-EXPORT-STANDARD-001.md` |
 | AIOS-PEER-REVIEW-MODEL-ROUTING-001 | Peer review model routing and evidence policy (AIOS) | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md` |
 | AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.4.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
 | AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
@@ -47,6 +57,7 @@
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | AIOS-REF-013 | Implementation runway pointer (product conformance) | 1.6.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-RUNWAY-POINTER.md` |
 | AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 1.0.0 | ratified | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | Review packet artifact taxonomy (identity, status, events, handoff) | 1.0.0 | draft | reference | `reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md` |
 | AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) | 1.0.0 | draft | reference | `reference/implementation/AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
@@ -74,6 +85,7 @@
 | AMD-2026-008-ADD-003 | Composition Control Plane for Messages, Invites, and Documents | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md` |
 | AMD-2026-008-ADD-003-ANNEX-A | ADD-003 Annex A — Informative composition and knowledge-basis examples | 1.0.0 | draft | amendment_addendum_annex | `amendments/AMD-2026-008-ADD-003-ANNEX-A-informative-composition-examples.md` |
 | AMD-2026-008-ADD-003-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-003 (composition control plane) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-003-ratification-motion.md` |
+| AMD-2026-008-ADD-004 | Pre-Human Browser Review and Visual Proof Gate | 0.4.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md` |
 | AMD-2026-008-RATIFICATION-MOTION | Ratification motion — AMD-2026-008 | — | approved | council_motion | `amendments/AMD-2026-008-ratification-motion.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-009.md` |
 | AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
@@ -88,6 +100,15 @@
 | AMD-2026-012-RATIFICATION-MOTION | Ratification motion — AMD-2026-012 | — | approved | council_motion | `amendments/AMD-2026-012-ratification-motion.md` |
 | AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-013.md` |
 | AMD-2026-013-RATIFICATION-MOTION | Ratification motion — AMD-2026-013 | — | approved | council_motion | `amendments/AMD-2026-013-ratification-motion.md` |
+| AMD-2026-014 | Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting | 0.1.0 | draft | amendment | `amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md` |
+| AMD-2026-015 | CANI Experience Loop and Victory Lap Formula | 0.1.6 | draft | amendment | `amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md` |
+| AMD-2026-015-ADD-001 | Governed Knowledge Artifact Registry and Declared-Input Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-001-governed-knowledge-artifact-registry-and-declared-input-bridge.md` |
+| AMD-2026-015-ADD-002 | CANI Observation Schema and Recommendation Routing Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-002-cani-observation-schema-and-recommendation-routing-bridge.md` |
+| AMD-2026-015-ADD-003 | CANI Persisted Artifact Taxonomy and Routing Storage Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-003-cani-persisted-artifact-taxonomy-and-routing-storage-bridge.md` |
+| AMD-2026-015-ADD-004 | CANI Telemetry Ingestion Envelope and Normalization Bridge | 0.1.1 | draft | amendment | `amendments/AMD-2026-015-ADD-004-cani-telemetry-ingestion-envelope-and-normalization-bridge.md` |
+| AMD-2026-015-ADD-005 | CANI Validator and Tooling Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-005-cani-validator-and-tooling-bridge.md` |
+| AMD-2026-015-ADD-006 | CANI Collector and Instrumentation Bridge | 1.0.0 | ratified | amendment | `amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md` |
+| AMD-2026-015-ADD-006-RATIFICATION-MOTION | Ratification motion — AMD-2026-015-ADD-006 | — | approved | council_motion | `amendments/AMD-2026-015-ADD-006-ratification-motion.md` |
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | ratified | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
@@ -98,6 +119,7 @@
 | — | UI_PHILOSOPHY | — | unregistered | reference | `reference/UI_PHILOSOPHY.md` |
 | — | gateway_plan | — | unregistered | reference | `reference/gateway_plan.md` |
 | — | gateway_plan_review | — | unregistered | reference | `reference/gateway_plan_review.md` |
+| — | AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — | unregistered | reference/implementation | `reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md` |
 | — | intent_driven_skill | — | unregistered | reference | `reference/intent_driven_skill.md` |
 | — | ptt_interface | — | unregistered | reference | `reference/ptt_interface.md` |
 | — | shell_overhaul | — | unregistered | reference | `reference/shell_overhaul.md` |
@@ -148,9 +170,147 @@
 | AMD-2026-007 | — |
 | AMD-2026-008 | — |
 | AMD-2026-008-ADD-003-RATIFICATION-MOTION | — |
+| AMD-2026-008-ADD-004 | — |
 | AMD-2026-008-RATIFICATION-MOTION | — |
 | AMD-2026-009 | — |
 | AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+| AMD-2026-015-ADD-005 | — |
+| AMD-2026-015-ADD-006 | — |
+| AMD-2026-015-ADD-006-RATIFICATION-MOTION | — |
+
+### Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) (AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-SPEC-013 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-004 | — |
+| AMD-2026-011 | — |
+
+### CANI capture surface and normalization handoff contract (AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+| AMD-2026-015-ADD-005 | — |
+| AMD-2026-015-ADD-006 | — |
+| AMD-2026-015-ADD-006-RATIFICATION-MOTION | ratification_motion |
+
+### CANI Experience Loop technical standard (AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+| AMD-2026-015-ADD-005 | — |
+| AMD-2026-015-ADD-006 | — |
+
+### CANI observation and recommendation schema (AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+
+### CANI persisted artifact taxonomy and storage contract (AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+
+### CANI telemetry ingestion envelope and normalization contract (AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+
+### CANI validator and tooling contract (AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+| AMD-2026-015-ADD-005 | — |
 
 ### AIOS Marketplace Terms & Vendor Onboarding (AIOS-COMM-001)
 
@@ -279,12 +439,38 @@
 | AIOS-REF-013 | — |
 | AMD-2026-005 | — |
 
+### Governed authoring knowledge inputs and bounded author-like drafting (AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-JT-AUTHORING-MODE-BOUNDARIES-001 | — |
+| AIOS-JT-EDITORIAL-STYLE-CARD-001 | — |
+| AIOS-JT-NARRATION-STYLE-CARD-001 | — |
+| AMD-2026-007 | — |
+| AMD-2026-009 | — |
+| AMD-2026-013 | — |
+
 ### AIOS Implementation Ledger and Anti-Drift Operating Loop (AIOS-IMPL-LEDGER-001)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-ADR-001 | — |
 | AIOS-MASTER-IMPL-001 | — |
+
+### CANI Experience Loop and Victory Lap Formula (AIOS-KB-CANI-VICTORY-LAP-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
 
 ### AIOS Master Implementation Program (cross-repo) (AIOS-MASTER-IMPL-001)
 
@@ -435,6 +621,14 @@
 | AIOS-OPS-016 | references |
 | AIOS-OPS-018 | references |
 
+### Peer-review export standard (AIOS-PEER-REVIEW-EXPORT-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-005 | — |
+| AMD-2026-014 | — |
+
 ### AIOS Policy Identifier Index (in-repo master list) (AIOS-POLICY-INDEX)
 
 | Referenced Document | Relationship |
@@ -496,6 +690,13 @@
 | AIOS-COMMITTEE-BRIEF-AMD-2026-013 | — |
 | AIOS-EXEC-DEMO-001 | — |
 | AMD-2026-013 | — |
+
+### Review packet artifact taxonomy (identity, status, events, handoff) (AIOS-REVIEW-PACKET-TAXONOMY-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AMD-2026-005 | — |
 
 ### Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) (AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001)
 
@@ -733,6 +934,22 @@
 | AMD-2026-008-ADD-002 | — |
 | AMD-2026-008-ADD-003 | — |
 
+### Pre-Human Browser Review and Visual Proof Gate (AMD-2026-008-ADD-004)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | — |
+| AIOS-SPEC-006 | — |
+| AIOS-SPEC-009 | — |
+| AIOS-SPEC-013 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
+| AMD-2026-011 | — |
+| MPOA | — |
+
 ### Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) (AMD-2026-009)
 
 | Referenced Document | Relationship |
@@ -801,7 +1018,103 @@
 | AMD-2026-012 | — |
 | AMD-2026-013-RATIFICATION-MOTION | — |
 
-### CANI capture surface and normalization handoff contract (AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001)
+### Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting (AMD-2026-014)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AMD-2026-005 | — |
+| AMD-2026-007 | — |
+| AMD-2026-009 | — |
+| AMD-2026-013 | — |
+
+### CANI Experience Loop and Victory Lap Formula (AMD-2026-015)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-005 | — |
+| AMD-2026-007 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+| AMD-2026-015-ADD-004 | — |
+| AMD-2026-015-ADD-005 | — |
+| AMD-2026-015-ADD-006 | — |
+
+### Governed Knowledge Artifact Registry and Declared-Input Bridge (AMD-2026-015-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+
+### CANI Observation Schema and Recommendation Routing Bridge (AMD-2026-015-ADD-002)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+
+### CANI Persisted Artifact Taxonomy and Routing Storage Bridge (AMD-2026-015-ADD-003)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+
+### CANI Telemetry Ingestion Envelope and Normalization Bridge (AMD-2026-015-ADD-004)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | — |
+| AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | — |
+| AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
+| AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+| AMD-2026-015 | — |
+| AMD-2026-015-ADD-001 | — |
+| AMD-2026-015-ADD-002 | — |
+| AMD-2026-015-ADD-003 | — |
+
+### CANI Validator and Tooling Bridge (AMD-2026-015-ADD-005)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
@@ -812,6 +1125,7 @@
 | AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001 | — |
 | AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001 | — |
 | AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001 | — |
+| AIOS-KB-CANI-VICTORY-LAP-001 | — |
 | AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
 | AMD-2026-013 | — |
 | AMD-2026-015 | — |
@@ -819,8 +1133,6 @@
 | AMD-2026-015-ADD-002 | — |
 | AMD-2026-015-ADD-003 | — |
 | AMD-2026-015-ADD-004 | — |
-| AMD-2026-015-ADD-005 | — |
-| AMD-2026-015-ADD-006 | — |
 
 ### CANI Collector and Instrumentation Bridge (AMD-2026-015-ADD-006)
 
@@ -843,6 +1155,7 @@
 | AMD-2026-015-ADD-003 | — |
 | AMD-2026-015-ADD-004 | — |
 | AMD-2026-015-ADD-005 | — |
+| AMD-2026-015-ADD-006-RATIFICATION-MOTION | ratification_motion |
 
 ### Privacy Policy (LEGAL-001)
 
@@ -894,8 +1207,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 96
-- **Ratified:** 43
-- **Draft:** 35
+- **Total documents:** 116
+- **Ratified:** 45
+- **Draft:** 51
 - **Under review:** 0
-- **Unregistered (no front matter):** 8
+- **Unregistered (no front matter):** 9
