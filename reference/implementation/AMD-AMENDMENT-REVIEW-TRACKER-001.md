@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.2.6
+version: 1.2.7
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -21,7 +21,12 @@ cross_references:
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
   - doc_id: AMD-2026-008-RATIFICATION-MOTION
   - doc_id: AMD-2026-008-ADD-003-RATIFICATION-MOTION
+  - doc_id: AMD-2026-015
+  - doc_id: AMD-2026-015-ADD-006
 amendment_history:
+  - version: 1.2.7
+    date: 2026-04-10
+    summary: AMD-2026-015 collector/instrumentation bridge pass filed with ADD-006 and review package; next governed step is capture-surface / normalization-handoff review before any collector implementation package.
   - version: 1.2.6
     date: 2026-04-10
     summary: AMD-2026-008-ADD-003 ratified 1.0.0 (motion 2026-04-10); review packet / synthesis / committee packet / review_queue meta closed; parent README addendum row; foundation cohesion note (ADD-001/ADD-002 still draft).
@@ -120,6 +125,7 @@ amendment_history:
 | **AMD-2026-008** | **`ratified` `1.0.0`** | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/README.md) — Round 3 triangulation **complete**; **[`AMD-2026-008-ratification-motion.md`](../amendments/AMD-2026-008-ratification-motion.md)** **v1.0.2** **`approved` `2026-04-08`** | **Follow-on:** **§4** implementation (product repo); **WORKSPACE.md** alignment. **ADD-003** **`ratified` `1.0.0`** **2026-04-10** — **[`AMD-2026-008-ADD-003-ratification-motion.md`](../amendments/AMD-2026-008-ADD-003-ratification-motion.md)**; **[`reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/`](../reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/)** **historical** (pre-ratification). **ADD-001** / **ADD-002** **`draft`**. |
 | **AMD-2026-009** (+ **ADD-001**) | **`ratified` `1.0.0`** | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** **PASS** | **Executed:** **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** **2026-04-09**; **[`AMD-2026-009-spec-merge-checklist.md`](../amendments/AMD-2026-009-spec-merge-checklist.md)** **v1.0.1**; **AIOS_POLICY_INDEX** **v1.4.0**. **Follow-on:** narrow **first implementation slice** (process gate; product in separate repo). **Cohesion block** **006 / 009 / 008** **complete.** |
 | **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
+| **AMD-2026-015** (+ **ADD-006**) | **`draft` `0.1.6`** parent; **`draft` `0.1.0`** addendum | [`reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/`](../../reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/README.md) | **Next:** review the CANI collector/instrumentation bridge before any governed collector implementation or deterministic intake-envelope construction package |
 
 ---
 
@@ -174,4 +180,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.2.6.*
+*End of AIOS-AMD-TRACKER-001 v1.2.7.*

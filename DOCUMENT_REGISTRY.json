@@ -68,7 +68,7 @@
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -111,6 +111,12 @@
       },
       {
         "doc_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION"
+      },
+      {
+        "doc_id": "AMD-2026-015"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006"
       }
     ]
   },
@@ -155,6 +161,80 @@
       {
         "doc_id": "AIOS-SPEC-011",
         "relationship": "complements"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001",
+    "title": "CANI capture surface and normalization handoff contract",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006",
+        "title": "CANI Collector and Instrumentation Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
       }
     ]
   },
@@ -2141,6 +2221,84 @@
     "category": "council_motion",
     "_path": "amendments/AMD-2026-013-ratification-motion.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-006",
+    "title": "CANI Collector and Instrumentation Bridge",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001",
+        "title": "CANI capture surface and normalization handoff contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
   },
   {
     "document_id": "LEGAL-001",
