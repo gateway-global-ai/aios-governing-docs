@@ -1,13 +1,16 @@
 ---
 document_id: AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001
-version: 0.1.0
-status: draft
+version: 1.0.0
+status: ratified
 category: reference
 title: CANI capture surface and normalization handoff contract
 author: Gateway Global AIOS
 created: 2026-04-09
 last_updated: 2026-04-09
 cross_references:
+  - doc_id: AMD-2026-015-ADD-006-RATIFICATION-MOTION
+    title: Ratification motion — AMD-2026-015-ADD-006
+    relationship: ratification_motion
   - doc_id: AMD-2026-015
     title: CANI Experience Loop and Victory Lap Formula
   - doc_id: AMD-2026-015-ADD-001
@@ -40,7 +43,14 @@ cross_references:
     title: Amendment pre-ratification planning lifecycle
   - doc_id: AMD-2026-013
     title: Intent-Bearing Repository Taxonomy (Architecture and Builder Control)
-note: Draft capture-surface and normalization-handoff contract for CANI. This document defines allowed governed capture surfaces, raw-capture versus normalized-intake distinction, pre-envelope boundary rules, and handoff from normalized intake envelopes into validator and writer lanes. It does not implement collectors, browser instrumentation, database/event-store services, or execution authority.
+note: Ratified capture-surface and normalization-handoff contract for CANI. This document defines allowed governed capture surfaces, raw-capture versus normalized-intake distinction, pre-envelope boundary rules, and handoff from normalized intake envelopes into validator and writer lanes. It does not implement collectors, browser instrumentation, database/event-store services, or execution authority.
+amendment_history:
+  - version: 1.0.0
+    date: 2026-04-09
+    summary: "Ratified in lockstep with AMD-2026-015-ADD-006 v1.0.0; substantive content frozen from v0.1.3 support-contract revision."
+  - version: 0.1.3
+    date: 2026-04-09
+    summary: "Add non-normative example of non-normalized repo-local reviewable evidence and align support-contract references with the final ADD-006 seam-tightening pass."
 ---
 
 # AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001
@@ -75,7 +85,7 @@ Only the following governed capture surface classes are eligible to emit CANI-re
 
 It is not an eligible capture surface for clean automatic normalization.
 
-If the source surface cannot be resolved beyond `unknown`, the signal should be blocked for manual review rather than silently normalized.
+If the source surface cannot be resolved beyond `unknown`, the signal SHALL be classified as `normalization_blocked` for manual review and SHALL NOT be normalized automatically.
 
 ## 3. Raw capture versus normalized intake
 
@@ -105,9 +115,15 @@ Minimum pre-envelope requirements:
 - repo-local reviewable payload reference candidate
 - repo-local evidence basis candidate
 - admitted-by candidate
-- sequence context sufficient to derive `stream_key` and `sequence_id`, or an explicit blocked result when sequence cannot be proven
+- sequence context sufficient to derive `stream_key` and `sequence_id`, or the signal SHALL be classified as `normalization_blocked` when sequence cannot be proven
+
+These minimums are the inputs required to construct a compliant intake envelope without inventing required fields later.
+
+They do not convert optional intake-envelope fields into mandatory fields unless omission would require fabrication or would break reviewable provenance.
 
 If these minimums are absent, the signal is not eligible for clean normalization into an intake envelope.
+
+Non-normative example: a repo-local markdown handoff note or shell transcript excerpt retained for human review may remain non-normalized reviewable evidence when these minimums are missing, but it is not an intake envelope or a persisted CANI artifact.
 
 ## 5. Provenance and evidence preservation
 
@@ -150,9 +166,9 @@ When the missing linkage makes the envelope materially incomplete for routing or
 
 The bridge must fail closed before validator handoff when capture data is incomplete, ambiguous, or boundary-violating.
 
-Pre-validator classification should align to the existing CANI outcome family:
+Pre-validator classification must use provisional normalization statuses rather than authoritative validator outcomes:
 
-### `fail`
+### `normalization_fail`
 
 Use when:
 
@@ -161,7 +177,7 @@ Use when:
 - external or hidden authority is required to interpret the signal
 - normalization would require invented provenance, routing, or approval state
 
-### `blocked`
+### `normalization_blocked`
 
 Use when:
 
@@ -170,7 +186,7 @@ Use when:
 - source-surface classification remains `unknown`
 - the signal cannot yet satisfy the minimum intake-envelope contract
 
-### `advisory_warning`
+### `normalization_advisory_warning`
 
 Use when:
 
@@ -178,7 +194,7 @@ Use when:
 - the evidence is sufficient for intake-envelope construction
 - but interpretation limits or confidence cautions should remain attached for downstream review
 
-### `pass`
+### `normalization_pass`
 
 Use only when:
 
@@ -193,7 +209,7 @@ The handoff sequence is:
 1. eligible capture candidate identified
 2. normalization bridge constructs an intake envelope under `ADD-004`
 3. intake envelope is handed to validator/tooling under `ADD-005`
-4. only if validator outcome allows and routing/policy permits, the normalized envelope may hand off into the persisted-artifact writer lane governed by `ADD-003`
+4. only if validator/tooling returns authoritative validator outcome `pass`, the normalized envelope may hand off into the persisted-artifact writer lane governed by `ADD-003`
 
 Hard rules:
 
@@ -201,6 +217,7 @@ Hard rules:
 - collectors or instrumentation must not bypass validator
 - collectors or instrumentation must not invent recommendation authority or routing outcomes
 - writer-lane materialization remains subordinate to the persisted-artifact contract and validator outcome
+- validator outcome `advisory_warning` does not authorize writer-lane materialization under this contract
 
 ## 9. Human/operator authority and review seams
 

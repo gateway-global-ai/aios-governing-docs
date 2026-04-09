@@ -1,5 +1,9 @@
 # AMD-2026-015-ADD-006 review package
 
+**Amendment:** [`AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md`](../../amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md) — **`ratified` `1.0.0`** (**[ratification motion](../../amendments/AMD-2026-015-ADD-006-ratification-motion.md)** **2026-04-09**).
+
+**Status:** **Closed for governance purposes.** Round 1 packet artifacts under [`round_1/`](round_1/) are pre-ratification evidence only; normative law is the ratified addendum and its lockstep companion contract.
+
 This review package covers the narrow collector / instrumentation bridge addendum under `AMD-2026-015` for governed capture surfaces, normalization into intake envelopes, and handoff into validator and writer lanes.
 
 ## Standard export

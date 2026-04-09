@@ -1,0 +1,11 @@
+document_id: AMD-2026-015-ADD-006
+packet_slug: amd_2026_015_add_006_cani_collector_and_instrumentation_bridge
+current_head_version: 0.1.6
+last_reviewed_version: 0.1.6
+artifact_health: healthy
+review_gate_status: pass
+committee_status: open
+next_action: archive
+lifecycle_phase: archived
+status_updated_at: '2026-04-09T15:45:05Z'
+status_updated_by: governance_coordinator
