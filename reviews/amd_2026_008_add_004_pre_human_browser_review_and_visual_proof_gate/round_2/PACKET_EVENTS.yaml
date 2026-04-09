@@ -1,0 +1,16 @@
+packet_schema_version: "2"
+document_id: AMD-2026-008-ADD-004
+packet_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
+events:
+  - event_id: evt-20260409-010
+    timestamp: 2026-04-09T00:15:00Z
+    actor: governance_round_2_prep
+    event_type: packet_initialized
+    from_version: 0.2.0
+    to_version: 0.3.0
+    round: 2
+    summary: Opened the clean Round 2 packet path for ADD-004 draft 0.3.0 so the next governed action can run from round_2 without reusing stale Round 1 surfaces.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/README.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/PACKET_STATUS.yaml
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/revision_log.md

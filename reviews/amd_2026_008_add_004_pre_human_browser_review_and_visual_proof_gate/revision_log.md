@@ -70,6 +70,16 @@
 
 **Next:** **Round 2** peer review on **`draft` `0.3.0`**; do **not** reopen doctrine drafting in this packet hygiene slice.
 
+## Phase J — Round 2 packet preparation (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Round 2 path** | Added clean governed packet surfaces under [`round_2/`](round_2/) — [`PACKET_IDENTITY.yaml`](round_2/PACKET_IDENTITY.yaml), [`PACKET_STATUS.yaml`](round_2/PACKET_STATUS.yaml), [`PACKET_EVENTS.yaml`](round_2/PACKET_EVENTS.yaml), [`HANDOFF_NOTE.md`](round_2/HANDOFF_NOTE.md), [`REVIEW_BRIEF.md`](round_2/REVIEW_BRIEF.md), [`README.md`](round_2/README.md) |
+| **Target** | Round 2 packet explicitly points to **`AMD-2026-008-ADD-004`** **`draft` `0.3.0`** while preserving **`last_reviewed_version`** **`0.2.0`** as the historical Round 1 assessment baseline |
+| **Root pointers** | Packet root [`README.md`](README.md) now treats **`round_2/`** as the live structured path and leaves **`round_1/`** explicitly historical |
+
+**Next:** Run **`peer_review.py --round 2`** against **`draft` `0.3.0`** from the prepared **`round_2/`** packet path; do **not** reuse Round 1 outputs as current review artifacts.
+
 ## Note — folder disambiguation (2026-04-08)
 
 Peer-review **filenames** overlap with **[`reviews/amd_2026_007/round_1/`](../amd_2026_007/round_1/)** (`review_001_openai.md`, etc.). **[`round_1/REVIEW_BRIEF.md`](round_1/REVIEW_BRIEF.md)** documents the canonical **ADD-004** paths and targets.
