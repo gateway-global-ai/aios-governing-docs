@@ -12,13 +12,14 @@ This module implements one narrow collector-side slice only:
 from __future__ import annotations
 
 import json
-import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Mapping
 
 import yaml
 
+from _cani_repo_local_intake_common import _build_common_repo_local_intake_envelope
+from _cani_repo_local_intake_common import _RepoLocalIntakeSurfaceConfig
 from cani_validator import BASE_DIR
 from cani_validator import CaniValidationResult
 from cani_validator import validate_intake_envelope_path
@@ -47,6 +48,15 @@ SPEC_OPTIONAL_KEYS = frozenset({
     "related_recommendation_id",
 })
 
+COMMON_ENVELOPE_CONFIG = _RepoLocalIntakeSurfaceConfig(
+    input_label="Planning artifact input",
+    artifact_ref_key="planning_artifact_ref",
+    source_surface="planning_artifact",
+    markdown_artifact_label="repo-local markdown planning artifact",
+    required_keys=SPEC_REQUIRED_KEYS,
+    optional_keys=SPEC_OPTIONAL_KEYS,
+)
+
 
 class PlanningArtifactNormalizationError(RuntimeError):
     """Raised when planning_artifact normalization must fail closed."""
@@ -71,52 +81,6 @@ def load_planning_artifact_spec(path: Path) -> dict[str, Any]:
     return body
 
 
-def _is_external_ref(value: str) -> bool:
-    return bool(re.match(r"^[a-z]+://", value.strip(), re.IGNORECASE))
-
-
-def _require_mapping(spec: Mapping[str, Any]) -> None:
-    missing = sorted(key for key in SPEC_REQUIRED_KEYS if key not in spec)
-    if missing:
-        raise PlanningArtifactNormalizationError(f"Planning artifact input is missing required keys: {missing}")
-    extras = sorted(set(spec.keys()) - (SPEC_REQUIRED_KEYS | SPEC_OPTIONAL_KEYS))
-    if extras:
-        raise PlanningArtifactNormalizationError(f"Planning artifact input contains unsupported keys: {extras}")
-
-
-def _require_nonempty_string(spec: Mapping[str, Any], key: str) -> str:
-    value = spec.get(key)
-    if not isinstance(value, str) or not value.strip():
-        raise PlanningArtifactNormalizationError(f"Planning artifact input requires non-empty string for {key}.")
-    return value.strip()
-
-
-def _require_positive_int(spec: Mapping[str, Any], key: str) -> int:
-    value = spec.get(key)
-    if not isinstance(value, int) or value < 1:
-        raise PlanningArtifactNormalizationError(f"Planning artifact input requires integer >= 1 for {key}.")
-    return value
-
-
-def _resolve_repo_file_ref(value: str, *, key: str, base_dir: Path, require_markdown: bool = False) -> str:
-    raw = str(value or "").strip()
-    if not raw:
-        raise PlanningArtifactNormalizationError(f"Planning artifact input requires repo-local value for {key}.")
-    if _is_external_ref(raw):
-        raise PlanningArtifactNormalizationError(f"{key} must remain repo-local and reviewable, not external.")
-    candidate = Path(raw)
-    resolved = candidate.resolve() if candidate.is_absolute() else (base_dir / candidate).resolve()
-    try:
-        rel = resolved.relative_to(base_dir.resolve()).as_posix()
-    except Exception as exc:
-        raise PlanningArtifactNormalizationError(f"{key} escapes the repo authority boundary: {raw}") from exc
-    if not resolved.exists() or not resolved.is_file():
-        raise PlanningArtifactNormalizationError(f"{key} must reference an existing repo-local file: {raw}")
-    if require_markdown and resolved.suffix.lower() != ".md":
-        raise PlanningArtifactNormalizationError(f"{key} must reference a repo-local markdown planning artifact: {raw}")
-    return rel
-
-
 def _resolve_repo_output_path(value: str | Path, *, base_dir: Path) -> Path:
     raw_path = Path(value)
     resolved = raw_path.resolve() if raw_path.is_absolute() else (base_dir / raw_path).resolve()
@@ -129,60 +93,15 @@ def _resolve_repo_output_path(value: str | Path, *, base_dir: Path) -> Path:
     return resolved
 
 
-def _normalize_evidence_refs(spec: Mapping[str, Any], *, base_dir: Path) -> list[str]:
-    value = spec.get("evidence_refs")
-    if not isinstance(value, list) or not value:
-        raise PlanningArtifactNormalizationError("Planning artifact input requires non-empty list for evidence_refs.")
-    normalized: list[str] = []
-    for item in value:
-        normalized.append(_resolve_repo_file_ref(item, key="evidence_refs", base_dir=base_dir))
-    return normalized
-
-
 def build_planning_artifact_envelope(spec: Mapping[str, Any], *, base_dir: Path = BASE_DIR) -> dict[str, Any]:
-    _require_mapping(spec)
-
-    planning_artifact_ref = _resolve_repo_file_ref(
-        _require_nonempty_string(spec, "planning_artifact_ref"),
-        key="planning_artifact_ref",
-        base_dir=base_dir,
-        require_markdown=True,
-    )
-    evidence_refs = _normalize_evidence_refs(spec, base_dir=base_dir)
-
-    provenance: dict[str, Any] = {
-        "admitted_by": _require_nonempty_string(spec, "admitted_by"),
-        "evidence_basis": _require_nonempty_string(spec, "evidence_basis"),
-    }
-    for key in ("observed_by", "confidence", "interpretation_limit"):
-        if key in spec and spec.get(key) is not None:
-            provenance[key] = _require_nonempty_string(spec, key)
-
-    sequence: dict[str, Any] = {
-        "stream_key": _require_nonempty_string(spec, "stream_key"),
-        "sequence_id": _require_positive_int(spec, "sequence_id"),
-    }
-    for key in ("batch_id", "causal_parent_id", "related_observation_set_id", "related_recommendation_id"):
-        if key in spec and spec.get(key) is not None:
-            sequence[key] = _require_nonempty_string(spec, key)
-
-    envelope: dict[str, Any] = {
-        "ingestion_envelope_id": _require_nonempty_string(spec, "ingestion_envelope_id"),
-        "envelope_schema_version": "1",
-        "recorded_at": _require_nonempty_string(spec, "recorded_at"),
-        "signal_family": _require_nonempty_string(spec, "signal_family"),
-        "signal_type": _require_nonempty_string(spec, "signal_type"),
-        "source_surface": "planning_artifact",
-        "source_artifact_ref": planning_artifact_ref,
-        "provenance": provenance,
-        "sequence": sequence,
-        "normalization_state": "normalized",
-        "payload_ref": planning_artifact_ref,
-        "evidence_refs": evidence_refs,
-    }
-    if "notes" in spec and spec.get("notes") is not None:
-        envelope["notes"] = _require_nonempty_string(spec, "notes")
-    return envelope
+    try:
+        return _build_common_repo_local_intake_envelope(
+            spec,
+            config=COMMON_ENVELOPE_CONFIG,
+            base_dir=base_dir,
+        )
+    except ValueError as exc:
+        raise PlanningArtifactNormalizationError(str(exc)) from exc
 
 
 def normalize_planning_artifact_to_intake_envelope(
