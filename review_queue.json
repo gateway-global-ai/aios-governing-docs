@@ -1,6 +1,14 @@
 {
   "meta": {
-    "queue_note": "No pending items. AMD-2026-008-ADD-003 is ratified 1.0.0 (2026-04-10); not on active review queue."
+    "queue_note": "Active: AMD-2026-008-ADD-004 draft 0.3.0 — artifact health good; review gate FAIL at 0.2.0 Round 1; Round 2 is the only live next governed step. Committee closed superseded_by_round_1_findings. Packet: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/README.md"
   },
-  "items": []
+  "items": [
+    {
+      "document_id": "AMD-2026-008-ADD-004",
+      "status": "draft",
+      "version": "0.3.0",
+      "packet_readme": "reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/README.md",
+      "next_governed_step": "peer_review_round_2"
+    }
+  ]
 }
