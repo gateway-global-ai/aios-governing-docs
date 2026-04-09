@@ -80,6 +80,33 @@
 
 **Next:** Run **`peer_review.py --round 2`** against **`draft` `0.3.0`** from the prepared **`round_2/`** packet path; do **not** reuse Round 1 outputs as current review artifacts.
 
+## Phase K — peer review Round 2 execution — `0.3.0` (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Command** | `peer_review.py --round 2 --rubric light --smart-context --models deepseek openai gemini` |
+| **Reviews** | [`round_2/review_001_deepseek__AMD-2026-008-ADD-004.md`](round_2/review_001_deepseek__AMD-2026-008-ADD-004.md), [`round_2/review_002_openai__AMD-2026-008-ADD-004.md`](round_2/review_002_openai__AMD-2026-008-ADD-004.md), [`round_2/review_003_gemini__AMD-2026-008-ADD-004.md`](round_2/review_003_gemini__AMD-2026-008-ADD-004.md) |
+| **Manifest** | [`round_2/peer_review_manifest_20260409T170114Z.json`](round_2/peer_review_manifest_20260409T170114Z.json) |
+| **Synthesis** | [`round_2/REVIEW_SYNTHESIS.md`](round_2/REVIEW_SYNTHESIS.md) |
+| **Gate** | [`round_2/RATIFICATION_GATE_REPORT.md`](round_2/RATIFICATION_GATE_REPORT.md) — **FAIL** **[AMD-2026-005](../../amendments/AMD-2026-005.md)** (DeepSeek composite **2.8**; dimensions **< 3**) |
+| **Packet repair** | Gemini review front matter repaired after execution so status could be corrected from **`incomplete`** to **`fail`** without reopening the review run |
+
+**Next:** Author revision on top of Round 2 findings; do **not** reopen packet-prep or Round 1 history from this execution slice.
+
+## Phase L — Round 3 execution — `0.4.0` (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Round 3 path** | Added clean governed packet surfaces under [`round_3/`](round_3/) — [`PACKET_IDENTITY.yaml`](round_3/PACKET_IDENTITY.yaml), [`PACKET_STATUS.yaml`](round_3/PACKET_STATUS.yaml), [`PACKET_EVENTS.yaml`](round_3/PACKET_EVENTS.yaml), [`HANDOFF_NOTE.md`](round_3/HANDOFF_NOTE.md), [`REVIEW_BRIEF.md`](round_3/REVIEW_BRIEF.md), [`README.md`](round_3/README.md) |
+| **Target** | Round 3 packet explicitly points to **`AMD-2026-008-ADD-004`** **`draft` `0.4.0`** while preserving **Round 2** under [`round_2/`](round_2/) as the historical failed assessment of **`0.3.0`** |
+| **Execution** | Scoped bounded Round 3 review run using the repo peer-review prompt, **light** rubric, **smart context**, and the normal DeepSeek / OpenAI / Gemini triad without mutating `round_2/` |
+| **Reviews** | [`round_3/review_001_deepseek__AMD-2026-008-ADD-004.md`](round_3/review_001_deepseek__AMD-2026-008-ADD-004.md), [`round_3/review_002_openai__AMD-2026-008-ADD-004.md`](round_3/review_002_openai__AMD-2026-008-ADD-004.md), [`round_3/review_003_gemini__AMD-2026-008-ADD-004.md`](round_3/review_003_gemini__AMD-2026-008-ADD-004.md) |
+| **Manifest** | [`round_3/peer_review_manifest_20260409T185752Z.json`](round_3/peer_review_manifest_20260409T185752Z.json) |
+| **Synthesis / gate** | [`round_3/REVIEW_SYNTHESIS.md`](round_3/REVIEW_SYNTHESIS.md), [`round_3/RATIFICATION_GATE_REPORT.md`](round_3/RATIFICATION_GATE_REPORT.md) — **INCOMPLETE** (Gemini provider-side **`503 UNAVAILABLE`** on initial run and one scoped retry) |
+| **Packet closeout** | DeepSeek / OpenAI review front matter normalized for Round 3 packet identity; Round 3 status remains **`incomplete`** / **`manual_resolution`**; no doctrine revision or Round 2 hygiene reopened from this slice |
+
+**Next:** Restore the missing third lane in **`round_3/`**, then refresh synthesis + gate from the completed triad; do **not** preemptively revise doctrine from this incomplete Round 3 execution alone.
+
 ## Note — folder disambiguation (2026-04-08)
 
 Peer-review **filenames** overlap with **[`reviews/amd_2026_007/round_1/`](../amd_2026_007/round_1/)** (`review_001_openai.md`, etc.). **[`round_1/REVIEW_BRIEF.md`](round_1/REVIEW_BRIEF.md)** documents the canonical **ADD-004** paths and targets.
