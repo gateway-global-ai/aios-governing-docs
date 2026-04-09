@@ -130,6 +130,17 @@
 
 **Next:** Take the drafted motion through ratification decision handling; perform status/registry/changelog execution only in a separate ratification pass.
 
+## Phase O — ratification execution — `0.4.0` basis to `ratified` `1.0.0` (2026-04-09)
+
+| Item | Detail |
+|------|--------|
+| **Motion** | [`AMD-2026-008-ADD-004-ratification-motion.md`](../../amendments/AMD-2026-008-ADD-004-ratification-motion.md) — **`approved`** **2026-04-09**; substantive basis frozen from **`draft` `0.4.0`** |
+| **Amendment** | [`AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md`](../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md) — **`ratified` `1.0.0`** with **`ratification_date: 2026-04-09`** and preserved **`0.4.0`** review basis in history |
+| **Packet closeout** | [`round_3/PACKET_STATUS.yaml`](round_3/PACKET_STATUS.yaml) moved to **`archive`** / **`archived`**; [`round_3/PACKET_EVENTS.yaml`](round_3/PACKET_EVENTS.yaml), [`round_3/README.md`](round_3/README.md), and [`round_3/HANDOFF_NOTE.md`](round_3/HANDOFF_NOTE.md) now record ratification execution and historical-evidence posture |
+| **Repo alignment** | Packet root [`README.md`](README.md), **[`AMD-AMENDMENT-REVIEW-TRACKER-001`](../../reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md)**, **`DOCUMENT_REGISTRY`**, and **[`CHANGELOG.md`](../../CHANGELOG.md)** aligned in the same narrow slice |
+
+**Next:** No further governance action is required for **ADD-004** in this packet; future work, if any, is separate follow-on doctrine clarification or implementation planning outside this ratification-execution slice.
+
 ## Note — folder disambiguation (2026-04-08)
 
 Peer-review **filenames** overlap with **[`reviews/amd_2026_007/round_1/`](../amd_2026_007/round_1/)** (`review_001_openai.md`, etc.). **[`round_1/REVIEW_BRIEF.md`](round_1/REVIEW_BRIEF.md)** documents the canonical **ADD-004** paths and targets.

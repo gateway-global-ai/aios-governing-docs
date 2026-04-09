@@ -90,3 +90,17 @@ events:
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/REVIEW_SYNTHESIS.md
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/RATIFICATION_GATE_REPORT.md
   - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/HANDOFF_NOTE.md
+- event_id: evt-20260409T200548Z-007
+  timestamp: '2026-04-09T20:05:48Z'
+  actor: governance_coordinator
+  event_type: packet_status_corrected
+  from_version: 0.4.0
+  to_version: 0.4.0
+  round: 3
+  summary: Ratification executed for AMD-2026-008-ADD-004 and the round_3 packet
+    was closed to archive as historical pre-ratification evidence.
+  evidence_paths:
+  - amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md
+  - amendments/AMD-2026-008-ADD-004-ratification-motion.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/PACKET_STATUS.yaml
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3/HANDOFF_NOTE.md

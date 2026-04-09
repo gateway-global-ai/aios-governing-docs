@@ -1,6 +1,6 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.3.6
+version: 1.3.7
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
@@ -31,6 +31,9 @@ cross_references:
   - doc_id: AMD-2026-015-ADD-006
   - doc_id: AMD-2026-015-ADD-006-RATIFICATION-MOTION
 amendment_history:
+  - version: 1.3.7
+    date: 2026-04-09
+    summary: AMD-2026-008-ADD-004 ratified 1.0.0; motion executed; Round 3 packet closed to archived pre-ratification evidence; tracker row aligned.
   - version: 1.3.6
     date: 2026-04-09
     summary: AMD-2026-008-ADD-004 tracker posture corrected to draft 0.4.0 with completed Round 3 PASS and next ratification motion; tracker footer aligned to current tracker version.
@@ -156,7 +159,7 @@ amendment_history:
 |-----------|-----------------|---------------|---------------------|
 | **AMD-2026-006** | **`ratified` `1.0.0`** | [`reviews/amd_2026_006/`](../../reviews/amd_2026_006/README.md) — Round 2 **PASS** on **SPEC-007**; **[`AMD-2026-006-ratification-motion.md`](../amendments/AMD-2026-006-ratification-motion.md)** **v1.0.0** **2026-04-08** | **Follow-on:** implementation alignment |
 | **AMD-2026-007** | **`ratified`** **v0.2.1** | [`reviews/amd_2026_007/`](../reviews/amd_2026_007/README.md) | **Follow-on:** §6 spec merges, §14 unchecked items; see amendment **§14** |
-| **AMD-2026-008** | **`ratified` `1.0.0`** | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/README.md) — Round 3 triangulation **complete**; **[`AMD-2026-008-ratification-motion.md`](../amendments/AMD-2026-008-ratification-motion.md)** **v1.0.2** **`approved` `2026-04-08`** | **Follow-on:** **§4** implementation (product repo); **WORKSPACE.md** alignment. **ADD-003** **`ratified` `1.0.0`** **2026-04-10** — **[`AMD-2026-008-ADD-003-ratification-motion.md`](../amendments/AMD-2026-008-ADD-003-ratification-motion.md)**; **[`reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/`](../reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/)** **historical** (pre-ratification). **ADD-004** **`draft` `0.4.0`** — **[`AMD-2026-008-ADD-004`](../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)**; **[`reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/`](../reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/)** — **artifact health** **healthy**; **Round 3** **[AMD-2026-005](../amendments/AMD-2026-005.md)** **gate** **PASS** on assessed **`0.4.0`**; **next** **ratification motion**; **committee** **closed** **`superseded_by_review`**. **ADD-001** / **ADD-002** **`draft`**. |
+| **AMD-2026-008** | **`ratified` `1.0.0`** | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/README.md) — Round 3 triangulation **complete**; **[`AMD-2026-008-ratification-motion.md`](../amendments/AMD-2026-008-ratification-motion.md)** **v1.0.2** **`approved` `2026-04-08`** | **Follow-on:** **§4** implementation (product repo); **WORKSPACE.md** alignment. **ADD-003** **`ratified` `1.0.0`** **2026-04-10** — **[`AMD-2026-008-ADD-003-ratification-motion.md`](../amendments/AMD-2026-008-ADD-003-ratification-motion.md)**; **[`reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/`](../reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/)** **historical** (pre-ratification). **ADD-004** **`ratified` `1.0.0`** **2026-04-09** — **[`AMD-2026-008-ADD-004-ratification-motion.md`](../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**; **[`AMD-2026-008-ADD-004`](../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)**; **[`reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/`](../reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/)** **historical** (pre-ratification evidence from assessed **`0.4.0`**). **ADD-001** / **ADD-002** **`draft`**. |
 | **AMD-2026-009** (+ **ADD-001**) | **`ratified` `1.0.0`** | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** **PASS** | **Executed:** **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** **2026-04-09**; **[`AMD-2026-009-spec-merge-checklist.md`](../amendments/AMD-2026-009-spec-merge-checklist.md)** **v1.0.1**; **AIOS_POLICY_INDEX** **v1.4.0**. **Follow-on:** narrow **first implementation slice** (process gate; product in separate repo). **Cohesion block** **006 / 009 / 008** **complete.** |
 | **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
 | **AMD-2026-015** (+ **ADD-001** / **ADD-002** / **ADD-003** / **ADD-004** / **ADD-005** / **ADD-006**) | **`draft` `0.1.6`** parent; **ADD-006 `ratified` `1.0.0`** | [`reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/`](../../reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/README.md) — **Round 1** packet archived as pre-ratification evidence; **[`AMD-2026-015-ADD-006-ratification-motion.md`](../../amendments/AMD-2026-015-ADD-006-ratification-motion.md)** **v1.0.0** **2026-04-09** | **Follow-on:** governed collector implementation remains separate; no collector/runtime authority was created by ratification |
@@ -187,7 +190,7 @@ amendment_history:
 
 ### Cohesion-critical remainder (2026 foundation)
 
-**None** for the **006 → 009 (+ addenda) → 008** parent-amendment sequence (**008** **ratified** **2026-04-08**). **AMD-2026-008-ADD-003** (composition control plane) is also **`ratified` `1.0.0`** **2026-04-10**; **ADD-004** (browser review gate) remains **`draft` `0.4.0`** with a completed **Round 3** **PASS** packet and **ratification motion** as the next governed step; **ADD-001** and **ADD-002** remain **`draft`** for **separate** ratification cycles. Further work is **implementation** and **spec maintenance**, not an open **draft** parent amendment in the cohesion sequence.
+**None** for the **006 → 009 (+ addenda) → 008** parent-amendment sequence (**008** **ratified** **2026-04-08**). **AMD-2026-008-ADD-003** (composition control plane) is also **`ratified` `1.0.0`** **2026-04-10**; **ADD-004** (browser review gate) is now **`ratified` `1.0.0`** **2026-04-09** from reviewed **`draft` `0.4.0`**; **ADD-001** and **ADD-002** remain **`draft`** for **separate** ratification cycles. Further work is **implementation** and **spec maintenance**, not an open **draft** parent amendment in the cohesion sequence.
 
 **Not** separate foundation tracks: **ratification motions**, **merge-deltas** artifacts, and **checklists** — they **serve** the AMDs above, not additional AMD IDs.
 
@@ -214,4 +217,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.3.6.*
+*End of AIOS-AMD-TRACKER-001 v1.3.7.*

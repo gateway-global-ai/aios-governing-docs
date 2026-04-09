@@ -2,14 +2,18 @@
 document_id: AMD-2026-008-ADD-004
 parent_amendment: AMD-2026-008
 parent_version: 1.0.0
-version: 0.4.0
-status: draft
+version: 1.0.0
+status: ratified
 category: amendment_addendum
 title: Pre-Human Browser Review and Visual Proof Gate
 author: Gateway Global AIOS
 created: 2026-04-08
 last_updated: 2026-04-09
+ratification_date: 2026-04-09
 cross_references:
+  - doc_id: AMD-2026-008-ADD-004-RATIFICATION-MOTION
+    title: Ratification motion — AMD-2026-008-ADD-004
+    relationship: ratification_motion
   - doc_id: AMD-2026-008
     title: Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)
   - doc_id: AMD-2026-008-ADD-001
@@ -33,6 +37,9 @@ cross_references:
   - doc_id: MPOA
     title: Master Platform Operating Agreement
 addendum_history:
+  - version: 1.0.0
+    date: 2026-04-09
+    summary: Ratified from reviewed draft 0.4.0 after approved ratification motion and completed Round 3 PASS evidence.
   - version: 0.4.0
     date: 2026-04-09
     summary: Round 2 author revision — §0.1 policy authority; §4.1 non-waivable proof floor; §6.1 default review-target conformance home; §9-§11 approval/exception/audit taxonomy; §14 conformance artifact alignment.
@@ -53,7 +60,7 @@ addendum_history:
 
 | Field | Value |
 |-------|--------|
-| **Status** | **`draft` `0.4.0`** — addendum to **AMD-2026-008** |
+| **Status** | **`ratified` `1.0.0`** — ratified from reviewed **`draft` `0.4.0`** as an addendum to **AMD-2026-008** |
 | **Purpose** | Establish a governed **browser review phase** for UI-affecting work **before** human approval, promotion, or release where visual proof is required. |
 | **Does not replace** | **ADD-001** (navigation), **ADD-002** (depth / voice / packaging / BOOK), **ADD-003** (composition control plane). This addendum governs **review evidence**, **browser-visible proof**, and **approval prerequisites** for UI-affecting changes. |
 | **Planning alignment** | This addendum codifies the **pre-human approval browser review phase** in the planning lifecycle and provides the minimum evidence needed before a human reviewer approves UI-affecting work. |
@@ -530,4 +537,4 @@ Promotion beyond **quarantine** (if any) **SHALL** follow **AIOS-SPEC-013** and 
 
 ---
 
-*End of AMD-2026-008-ADD-004 v0.4.0 (`draft`).*
+*End of AMD-2026-008-ADD-004, version 1.0.0 (ratified).*

@@ -11,7 +11,7 @@
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
 | AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
 | AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.3.5 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.3.7 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
 | AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) | 0.1.1 | draft | reference | `reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md` |
 | AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001 | CANI capture surface and normalization handoff contract | 1.0.0 | ratified | reference | `reference/implementation/CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001.md` |
 | AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | CANI Experience Loop technical standard | 0.1.5 | draft | reference | `reference/implementation/CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001.md` |
@@ -85,7 +85,8 @@
 | AMD-2026-008-ADD-003 | Composition Control Plane for Messages, Invites, and Documents | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md` |
 | AMD-2026-008-ADD-003-ANNEX-A | ADD-003 Annex A — Informative composition and knowledge-basis examples | 1.0.0 | draft | amendment_addendum_annex | `amendments/AMD-2026-008-ADD-003-ANNEX-A-informative-composition-examples.md` |
 | AMD-2026-008-ADD-003-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-003 (composition control plane) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-003-ratification-motion.md` |
-| AMD-2026-008-ADD-004 | Pre-Human Browser Review and Visual Proof Gate | 0.4.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md` |
+| AMD-2026-008-ADD-004 | Pre-Human Browser Review and Visual Proof Gate | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md` |
+| AMD-2026-008-ADD-004-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-004 (pre-human browser review and visual proof gate) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-004-ratification-motion.md` |
 | AMD-2026-008-RATIFICATION-MOTION | Ratification motion — AMD-2026-008 | — | approved | council_motion | `amendments/AMD-2026-008-ratification-motion.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-009.md` |
 | AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
@@ -947,6 +948,7 @@
 | AMD-2026-008-ADD-001 | — |
 | AMD-2026-008-ADD-002 | — |
 | AMD-2026-008-ADD-003 | — |
+| AMD-2026-008-ADD-004-RATIFICATION-MOTION | ratification_motion |
 | AMD-2026-011 | — |
 | MPOA | — |
 
@@ -1207,8 +1209,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 116
-- **Ratified:** 45
-- **Draft:** 51
+- **Total documents:** 117
+- **Ratified:** 46
+- **Draft:** 50
 - **Under review:** 0
 - **Unregistered (no front matter):** 9

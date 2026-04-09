@@ -7,7 +7,7 @@
 
 **Validator:** `py -3 scripts/validate_review_packet.py --round-dir reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_3`
 
-**Current state:** packet **`healthy`**; Round 3 triad is now complete on assessed **`draft` `0.4.0`**; review gate **`pass`** under **AMD-2026-005**; next **`ratification_motion`**; committee remains **`closed_superseded_by_review`** from the prior cycle. The drafted motion path is **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**; ratification execution is still pending.
+**Current state:** packet **`healthy`**; Round 3 triad completed on assessed **`draft` `0.4.0`**; review gate **`pass`** under **AMD-2026-005**; ratification then executed on **2026-04-09**. This **`round_3/`** folder is now **archived historical pre-ratification evidence** for **[`AMD-2026-008-ADD-004`](../../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)** at **`ratified` `1.0.0`** via **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**.
 
 **Execution result:** Round 3 was opened in this folder, DeepSeek and OpenAI completed on the first pass, and a bounded Gemini-only manual-resolution retry completed the triad without mutating **`round_2/`**, which remains the historical failed review of **`draft` `0.3.0`**.
 
@@ -23,10 +23,10 @@
 
 **Target:** [`../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md`](../../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)
 
-**Only live governed next step from this Round 3 state:** advance the drafted **[`AMD-2026-008-ADD-004-ratification-motion.md`](../../../amendments/AMD-2026-008-ADD-004-ratification-motion.md)** through the ratification decision path from this completed **`round_3/`** packet. Do **not** reopen Round 1 / Round 2 packet hygiene from this state.
+**Post-ratification posture:** this packet is **closed for governance purposes** and retained as **pre-ratification evidence** only. Do **not** reopen Round 1 / Round 2 packet hygiene from this state absent a real packet defect.
 
 **Gate summary:** triad **complete**; DeepSeek returned **`approved_with_changes`** with composite **3.8**; OpenAI returned **`approved_with_changes`** with composite **4.2**; Gemini returned **`approved`** with composite **5.0** on the bounded manual-resolution retry. The saved Round 3 gate result is **PASS**.
 
 ---
 
-*Round 3 executed 2026-04-09; gate now PASS.*
+*Round 3 executed 2026-04-09; ratification executed 2026-04-09; packet now archived as pre-ratification evidence.*
