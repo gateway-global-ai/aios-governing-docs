@@ -9,10 +9,11 @@
 | Document ID | Title | Version | Status | Category | Path |
 |-------------|-------|---------|--------|----------|------|
 | AIOS-ADR-001 | ADR-001: Core shell/kernel/control-plane vs AI OS interface boundaries | 1.1.0 | proposed | reference | `reference/implementation/ADR-001-core-shell-vs-interface-boundaries.md` |
+| AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001 | Agent, role, and toolchain roster for the restored planner system | 0.1.1 | draft | reference | `reference/implementation/AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001.md` |
 | AIOS-AMD-001-DISPOSITION-001 | AMD-001 — taxonomy, classification, and disposition | 1.0.0 | ratified | reference | `reference/implementation/AMD-001-TAXONOMY-AND-DISPOSITION.md` |
-| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.3 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
-| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.3.7 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
-| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) | 0.1.1 | draft | reference | `reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md` |
+| AIOS-AMD-PLAN-001 | Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review) | 1.0.4 | draft | reference | `reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md` |
+| AIOS-AMD-TRACKER-001 | Outstanding amendments — governed review tracker | 1.3.9 | draft | reference | `reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md` |
+| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) | 0.1.2 | draft | reference | `reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md` |
 | AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001 | CANI capture surface and normalization handoff contract | 1.0.0 | ratified | reference | `reference/implementation/CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001.md` |
 | AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001 | CANI Experience Loop technical standard | 0.1.5 | draft | reference | `reference/implementation/CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001.md` |
 | AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001 | CANI observation and recommendation schema | 0.1.2 | draft | reference | `reference/implementation/CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001.md` |
@@ -30,11 +31,22 @@
 | AIOS-COUNCIL-BRIEF-001 | Council review brief — AIOS Master Implementation Program | 1.0.1 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-MASTER-IMPL-001.md` |
 | AIOS-COUNCIL-BRIEF-002 | Council review brief — AI OS interface implementation control program | 1.1.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-INTERFACE-CONTROL-001.md` |
 | AIOS-COUNCIL-BRIEF-003 | Council review brief — AIOS development conformance process (AIOS-DEV-PROC-001) | 1.0.0 | draft | reference | `reference/implementation/COUNCIL-REVIEW-BRIEF-AIOS-DEV-PROC-001.md` |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001 | Cross-provider AI OS experiment protocol | 0.2.0 | draft | reference_implementation | `reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001.md` |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001 | Cross-provider AI OS experiment round 1 report | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001.md` |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001 | Cross-provider AI OS experiment round 2 report | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md` |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-3-REPORT-001 | Cross-provider AI OS experiment round 3 report | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-3-REPORT-001.md` |
 | AIOS-DEV-PROC-001 | AI OS development conformance — triangulated peer review | 1.0.0 | draft | reference | `reference/implementation/AIOS-DEVELOPMENT-CONFORMANCE-PROCESS.md` |
+| AIOS-DISCOVER-AGENT-PROCESS-001 | Discover-agent process for taxonomy-driven knowledge assembly | 0.1.1 | draft | reference | `reference/implementation/AIOS-DISCOVER-AGENT-PROCESS-001.md` |
 | AIOS-EXEC-DEMO-001 | Isolated execution demonstration pipeline (draft proposal) | 0.1.5 | draft | reference | `reference/implementation/AIOS-ISOLATED-EXECUTION-DEMONSTRATION-PIPELINE.md` |
-| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | Governed authoring knowledge inputs and bounded author-like drafting | 0.1.1 | draft | reference | `reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md` |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | Governed authoring knowledge inputs and bounded author-like drafting | 0.1.2 | draft | reference | `reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md` |
 | AIOS-IMPL-LEDGER-001 | AIOS Implementation Ledger and Anti-Drift Operating Loop | 1.1.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-LEDGER.md` |
 | AIOS-KB-CANI-VICTORY-LAP-001 | CANI Experience Loop and Victory Lap Formula | 0.1.0 | draft | article | `reference/knowledge_base/articles/CANI-VICTORY-LAP-FORMULA.md` |
+| AIOS-KB-CASE-STUDY-001 | Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures | 0.1.0 | draft | case_study | `reference/knowledge_base/articles/CASE-STUDY-001-SYSTEMATIC-FAILURE-IN-HIGH-VOLUME-VIBE-CODING-ARCHITECTURES.md` |
+| AIOS-KB-CASE-STUDY-001-ADDENDUM-001 | Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors | 0.1.0 | draft | case_study_addendum | `reference/knowledge_base/articles/CASE-STUDY-001-ADDENDUM-001-THE-SVJ-PIVOT-HIGH-STATUS-SIGNALS-AS-IDENTITY-ANCHORS.md` |
+| AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | Research Studies - ChatGPT Operating Model and Danger Analysis | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-CHATGPT-OPERATING-MODEL-DANGER-ANALYSIS.md` |
+| AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | Research Studies - Intent Control Layer and Signal Governance | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-INTENT-CONTROL-LAYER-AND-SIGNAL-GOVERNANCE.md` |
+| AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001 | Research Studies - Consumer AI Clinical, Architectural, and Economic Analysis | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-STUDIES-CONSUMER-AI-CLINICAL-ARCHITECTURAL-ECONOMIC-ANALYSIS.md` |
+| AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001 | Intent-driven knowledge-base review interface model | 0.1.1 | draft | reference | `reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md` |
 | AIOS-MASTER-IMPL-001 | AIOS Master Implementation Program (cross-repo) | 1.2.4 | draft | reference | `reference/implementation/AIOS-MASTER-IMPLEMENTATION-PROGRAM.md` |
 | AIOS-MBL009-TRACKER-001 | MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker | 1.0.0 | open | reference | `reference/implementation/MBL-009-tracker-amd-2026-007-policy-index.md` |
 | AIOS-OPS-008 | GitHub Branch Protection — Activation Checklist | 1.0.0 | ratified | operations | `operations/GitHubBranchProtectionActivationChecklist.md` |
@@ -51,20 +63,29 @@
 | AIOS-OPS-019 | Cursor / IDE — Activation Checklist (operators) | 1.0.0 | ratified | operations | `operations/CursorActivationChecklist.md` |
 | AIOS-PEER-REVIEW-EXPORT-STANDARD-001 | Peer-review export standard | 0.1.0 | draft | reference | `reference/implementation/AIOS-PEER-REVIEW-EXPORT-STANDARD-001.md` |
 | AIOS-PEER-REVIEW-MODEL-ROUTING-001 | Peer review model routing and evidence policy (AIOS) | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md` |
+| AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001 | Planner drift artifact inventory and disposition | 0.1.0 | draft | reference | `reference/implementation/AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001.md` |
+| AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001 | Planner drift provenance ledger and containment classification | 0.1.0 | draft | reference | `reference/implementation/AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001.md` |
 | AIOS-POLICY-INDEX | AIOS Policy Identifier Index (in-repo master list) | 1.4.0 | ratified | reference | `reference/AIOS_POLICY_INDEX.md` |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | Pre-architecture discovery agent for five-pass system research | 0.1.0 | draft | reference | `reference/implementation/AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001.md` |
 | AIOS-RAT-MOTION-DEV-PROC-001 | Ratification motion — AIOS-DEV-PROC-001 | 1.0.0 | draft | reference | `reference/implementation/RATIFICATION-MOTION-AIOS-DEV-PROC-001.md` |
 | AIOS-REF-011 | Governance Council Operating Manual | 1.0.0 | draft | reference | `reference/GovernanceCouncilOperatingManual.md` |
 | AIOS-REF-012 | Ecosystem Roadmap & Versioning Policy | 1.0.0 | draft | reference | `reference/EcosystemRoadmapVersioningPolicy.md` |
 | AIOS-REF-013 | Implementation runway pointer (product conformance) | 1.6.0 | draft | reference | `reference/implementation/AIOS-IMPLEMENTATION-RUNWAY-POINTER.md` |
 | AIOS-REPO-TAXONOMY-001 | Intent-bearing repository taxonomy — implementation note and migration appendix | 1.0.0 | ratified | reference | `reference/implementation/AIOS-REPO-TAXONOMY-001.md` |
+| AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001 | Analysis of the Cursor research-pack report set and committee posture | 0.1.0 | draft | reference | `reference/implementation/AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001.md` |
 | AIOS-REVIEW-PACKET-TAXONOMY-001 | Review packet artifact taxonomy (identity, status, events, handoff) | 1.0.0 | draft | reference | `reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md` |
+| AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001 | Schema, route, and storage inventory for the restored planner and review system | 0.1.1 | draft | reference | `reference/implementation/AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001.md` |
+| AIOS-SHELL-BASELINE-RECOVERY-PACKET-001 | Shell baseline recovery packet and review path | 0.1.0 | draft | reference | `reference/implementation/AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md` |
 | AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001 | Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) | 1.0.0 | draft | reference | `reference/implementation/AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001.md` |
+| AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001 | Shell-first governing document and artifact plan | 0.1.3 | draft | reference | `reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md` |
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | AI OS Shell UI Layout and Component Standard | 0.3.0 | draft | reference | `reference/implementation/AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001.md` |
+| AIOS-SOVEREIGN-PLAYWRIGHT-PROOF-HARNESS-001 | Sovereign Playwright proof harness | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-SOVEREIGN-PLAYWRIGHT-PROOF-HARNESS-001.md` |
 | AIOS-SPEC-001 | AIOS NodeContract Specification | 1.0.0 | ratified | specification | `specifications/NodeContract.md` |
 | AIOS-SPEC-002 | AIOS PolicyRecord Specification | 1.0.0 | ratified | specification | `specifications/PolicyRecord.md` |
 | AIOS-SPEC-003 | AIOS Agent Integration Protocol (AIP) | 1.3.0 | ratified | specification | `specifications/AgentIntegrationProtocol.md` |
 | AIOS-SPEC-004 | AIOS CLI Developer Experience Guide | 1.0.0 | ratified | specification | `specifications/CLIDeveloperGuide.md` |
 | AIOS-SPEC-005 | AIOS Agent Integration Guide (AGENTS.md) | 1.0.0 | ratified | specification | `specifications/agents.md` |
-| AIOS-SPEC-006 | UI Component Registry Standard | 1.3.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
+| AIOS-SPEC-006 | UI Component Registry Standard | 1.5.0 | draft | specification | `specifications/UIComponentRegistryStandard.md` |
 | AIOS-SPEC-007 | Google Workspace Integration Governance | 1.0.1 | ratified | specification | `specifications/GoogleWorkspaceIntegrationGovernance.md` |
 | AIOS-SPEC-008 | Intent Discovery & Onboarding Framework | 0.1.0 | draft | specification | `specifications/IntentDiscoveryOnboardingFramework.md` |
 | AIOS-SPEC-009 | Intent Primitive and Execution Model | 0.5.7 | ratified | specification | `specifications/IntentPrimitiveAndExecutionModel.md` |
@@ -73,11 +94,17 @@
 | AIOS-SPEC-011 | Security & Sandboxing Model | 1.0.0 | draft | specification | `specifications/SecuritySandboxingModel.md` |
 | AIOS-SPEC-012 | Workspace Domain Pack v1 | 0.1.0 | draft | specification | `specifications/WorkspaceDomainPackV1.md` |
 | AIOS-SPEC-013 | External Repository Acquisition, Analysis, and Promotion | 1.0.0 | ratified | specification | `specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md` |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | Systems and planning manual for planner/knowledge-base restoration | 0.1.1 | draft | reference | `reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md` |
+| AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001 | Taxonomy-first discovery and knowledge assembly contract | 0.1.0 | draft | reference | `reference/implementation/AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001.md` |
+| AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001 | User sovereignty disclosure and loop-exit standard | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md` |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | Voice-first UI artifact kit standard | 0.4.0 | draft | specification | `reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md` |
+| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | AI OS Voice TTS Architecture Standard | 0.2.0 | draft | reference | `reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md` |
 | AMD-001 | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 1.0.0 | ratified | amendment | `amendments/AMD-2026-006.md` |
 | AMD-2026-006-RATIFICATION-MOTION | Ratification motion — AMD-2026-006 / AIOS-SPEC-007 | — | approved | council_motion | `amendments/AMD-2026-006-ratification-motion.md` |
 | AMD-2026-007 | Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI | 0.2.1 | ratified | amendment | `amendments/AMD-2026-007.md` |
+| AMD-2026-007-ADD-001 | User Sovereignty Disclosure and Precision Controls | 0.4.0 | draft | amendment_addendum | `amendments/AMD-2026-007-ADD-001-user-sovereignty-disclosure-and-precision-controls.md` |
 | AMD-2026-007-RATIFICATION-MOTION | Ratification motion — AMD-2026-007 | — | approved | council_motion | `amendments/AMD-2026-007-ratification-motion.md` |
 | AMD-2026-008 | Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-008.md` |
 | AMD-2026-008-ADD-001 | Base Shell Navigation Primitives and Start-Here Control | 0.1.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-001-base-shell-navigation-primitives-and-start-here-control.md` |
@@ -87,6 +114,7 @@
 | AMD-2026-008-ADD-003-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-003 (composition control plane) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-003-ratification-motion.md` |
 | AMD-2026-008-ADD-004 | Pre-Human Browser Review and Visual Proof Gate | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md` |
 | AMD-2026-008-ADD-004-RATIFICATION-MOTION | Ratification motion — AMD-2026-008-ADD-004 (pre-human browser review and visual proof gate) | — | approved | council_motion | `amendments/AMD-2026-008-ADD-004-ratification-motion.md` |
+| AMD-2026-008-ADD-005 | Voice-First Rendered Session Proof and Artifact Checks | 0.7.0 | draft | amendment_addendum | `amendments/AMD-2026-008-ADD-005-voice-first-rendered-session-proof-and-artifact-checks.md` |
 | AMD-2026-008-RATIFICATION-MOTION | Ratification motion — AMD-2026-008 | — | approved | council_motion | `amendments/AMD-2026-008-ratification-motion.md` |
 | AMD-2026-009 | Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-009.md` |
 | AMD-2026-009-ADD-001 | Retrieval backend neutrality (beyond Google PSE / Custom Search) | 1.0.0 | ratified | amendment_addendum | `amendments/AMD-2026-009-ADD-001-retrieval-backend-neutrality.md` |
@@ -98,10 +126,12 @@
 | AMD-2026-011 | External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies | 1.0.0 | ratified | amendment | `amendments/AMD-2026-011.md` |
 | AMD-2026-011-RATIFICATION-MOTION | Ratification motion — AMD-2026-011 + AIOS-SPEC-013 (coordinated package) | 1.0.0 | ratified | council_motion | `amendments/AMD-2026-011-ratification-motion.md` |
 | AMD-2026-012 | Shell Authority and Voice-First Entry | 1.0.0 | ratified | amendment | `amendments/AMD-2026-012.md` |
+| AMD-2026-012-ADD-001 | Loop Exit and Discovery-First Voice Sequencing | 0.2.0 | draft | amendment_addendum | `amendments/AMD-2026-012-ADD-001-loop-exit-and-discovery-first-voice-sequencing.md` |
 | AMD-2026-012-RATIFICATION-MOTION | Ratification motion — AMD-2026-012 | — | approved | council_motion | `amendments/AMD-2026-012-ratification-motion.md` |
 | AMD-2026-013 | Intent-Bearing Repository Taxonomy (Architecture and Builder Control) | 1.0.0 | ratified | amendment | `amendments/AMD-2026-013.md` |
 | AMD-2026-013-RATIFICATION-MOTION | Ratification motion — AMD-2026-013 | — | approved | council_motion | `amendments/AMD-2026-013-ratification-motion.md` |
-| AMD-2026-014 | Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting | 0.1.0 | draft | amendment | `amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md` |
+| AMD-2026-014 | Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting | 1.0.0 | ratified | amendment | `amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md` |
+| AMD-2026-014-RATIFICATION-MOTION | Ratification motion — AMD-2026-014 | — | approved | council_motion | `amendments/AMD-2026-014-ratification-motion.md` |
 | AMD-2026-015 | CANI Experience Loop and Victory Lap Formula | 0.1.6 | draft | amendment | `amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md` |
 | AMD-2026-015-ADD-001 | Governed Knowledge Artifact Registry and Declared-Input Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-001-governed-knowledge-artifact-registry-and-declared-input-bridge.md` |
 | AMD-2026-015-ADD-002 | CANI Observation Schema and Recommendation Routing Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-002-cani-observation-schema-and-recommendation-routing-bridge.md` |
@@ -110,6 +140,7 @@
 | AMD-2026-015-ADD-005 | CANI Validator and Tooling Bridge | 0.1.0 | draft | amendment | `amendments/AMD-2026-015-ADD-005-cani-validator-and-tooling-bridge.md` |
 | AMD-2026-015-ADD-006 | CANI Collector and Instrumentation Bridge | 1.0.0 | ratified | amendment | `amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md` |
 | AMD-2026-015-ADD-006-RATIFICATION-MOTION | Ratification motion — AMD-2026-015-ADD-006 | — | approved | council_motion | `amendments/AMD-2026-015-ADD-006-ratification-motion.md` |
+| AMD-2026-016 | Governed Non-Human Principals and Deterministic Routed Authority | 0.3.0 | draft | amendment | `amendments/AMD-2026-016.md` |
 | LEGAL-001 | Privacy Policy | 0.1.0 | draft | legal | `legal/LEGAL-001-Privacy-Policy.md` |
 | LEGAL-002 | Terms of Service | 0.1.0 | draft | legal | `legal/LEGAL-002-Terms-of-Service.md` |
 | LOCAL_TTS_RUNTIME_STANDARD | Local Text-to-Speech (TTS) Runtime Standard | 0.1.0 | ratified | operations | `operations/LOCAL_TTS_RUNTIME_STANDARD.md` |
@@ -122,6 +153,7 @@
 | — | gateway_plan_review | — | unregistered | reference | `reference/gateway_plan_review.md` |
 | — | AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — | unregistered | reference/implementation | `reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md` |
 | — | intent_driven_skill | — | unregistered | reference | `reference/intent_driven_skill.md` |
+| — | README | — | unregistered | reference/knowledge_base/articles | `reference/knowledge_base/articles/README.md` |
 | — | ptt_interface | — | unregistered | reference | `reference/ptt_interface.md` |
 | — | shell_overhaul | — | unregistered | reference | `reference/shell_overhaul.md` |
 | — | uifix_ptt | — | unregistered | reference | `reference/uifix_ptt.md` |
@@ -138,6 +170,15 @@
 | AIOS-SPEC-009 | — |
 | AMD-2026-012 | — |
 
+### Agent, role, and toolchain roster for the restored planner system (AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-SPEC-012 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
+
 ### AMD-001 — taxonomy, classification, and disposition (AIOS-AMD-001-DISPOSITION-001)
 
 | Referenced Document | Relationship |
@@ -153,6 +194,7 @@
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-EXEC-DEMO-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
 | AIOS-REF-013 | — |
 | AIOS-SPEC-007 | — |
 | AMD-2026-005 | — |
@@ -175,6 +217,8 @@
 | AMD-2026-008-RATIFICATION-MOTION | — |
 | AMD-2026-009 | — |
 | AMD-2026-013 | — |
+| AMD-2026-014 | — |
+| AMD-2026-014-RATIFICATION-MOTION | — |
 | AMD-2026-015 | — |
 | AMD-2026-015-ADD-001 | — |
 | AMD-2026-015-ADD-002 | — |
@@ -183,6 +227,7 @@
 | AMD-2026-015-ADD-005 | — |
 | AMD-2026-015-ADD-006 | — |
 | AMD-2026-015-ADD-006-RATIFICATION-MOTION | — |
+| AMD-2026-016 | — |
 
 ### Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004) (AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001)
 
@@ -192,6 +237,7 @@
 | AIOS-SPEC-013 | — |
 | AMD-2026-008 | — |
 | AMD-2026-008-ADD-004 | — |
+| AMD-2026-008-ADD-005 | — |
 | AMD-2026-011 | — |
 
 ### CANI capture surface and normalization handoff contract (AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001)
@@ -418,6 +464,48 @@
 | AIOS-RAT-MOTION-DEV-PROC-001 | — |
 | AIOS-REF-013 | — |
 
+### Cross-provider AI OS experiment protocol (AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-KB-CASE-STUDY-001 | — |
+| AIOS-KB-CASE-STUDY-001-ADDENDUM-001 | — |
+| AIOS-PEER-REVIEW-MODEL-ROUTING-001 | — |
+| AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Cross-provider AI OS experiment round 1 report (AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001 | — |
+| AIOS-KB-CASE-STUDY-001 | — |
+| AIOS-KB-CASE-STUDY-001-ADDENDUM-001 | — |
+| AIOS-PEER-REVIEW-MODEL-ROUTING-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Cross-provider AI OS experiment round 2 report (AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001 | — |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001 | — |
+| AIOS-KB-CASE-STUDY-001 | — |
+| AIOS-KB-CASE-STUDY-001-ADDENDUM-001 | — |
+| AIOS-PEER-REVIEW-MODEL-ROUTING-001 | — |
+
+### Cross-provider AI OS experiment round 3 report (AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-3-REPORT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001 | — |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001 | — |
+| AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001 | — |
+| AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | — |
+| AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | — |
+| AIOS-PEER-REVIEW-MODEL-ROUTING-001 | — |
+
 ### AI OS development conformance — triangulated peer review (AIOS-DEV-PROC-001)
 
 | Referenced Document | Relationship |
@@ -431,6 +519,16 @@
 | AIOS-SPEC-009 | — |
 | AMD-2026-005 | — |
 | AMD-2026-012 | — |
+
+### Discover-agent process for taxonomy-driven knowledge assembly (AIOS-DISCOVER-AGENT-PROCESS-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001 | — |
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001 | — |
 
 ### Isolated execution demonstration pipeline (draft proposal) (AIOS-EXEC-DEMO-001)
 
@@ -472,6 +570,57 @@
 | AMD-2026-013 | — |
 | AMD-2026-015 | — |
 | AMD-2026-015-ADD-001 | — |
+
+### Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures (AIOS-KB-CASE-STUDY-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-KB-CASE-STUDY-001-ADDENDUM-001 | — |
+| AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | — |
+| AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors (AIOS-KB-CASE-STUDY-001-ADDENDUM-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-KB-CASE-STUDY-001 | — |
+| AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | — |
+| AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Research Studies - ChatGPT Operating Model and Danger Analysis (AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Research Studies - Intent Control Layer and Signal Governance (AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Research Studies - Consumer AI Clinical, Architectural, and Economic Analysis (AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-SPEC-009 | — |
+
+### Intent-driven knowledge-base review interface model (AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001 | — |
+| AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001 | — |
+| AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
 
 ### AIOS Master Implementation Program (cross-repo) (AIOS-MASTER-IMPL-001)
 
@@ -630,6 +779,22 @@
 | AMD-2026-005 | — |
 | AMD-2026-014 | — |
 
+### Planner drift artifact inventory and disposition (AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
+
+### Planner drift provenance ledger and containment classification (AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-014 | — |
+
 ### AIOS Policy Identifier Index (in-repo master list) (AIOS-POLICY-INDEX)
 
 | Referenced Document | Relationship |
@@ -639,6 +804,15 @@
 | AMD-2026-010 | references |
 | AMD-2026-012 | references |
 | AMD-2026-013 | references |
+
+### Pre-architecture discovery agent for five-pass system research (AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-DISCOVER-AGENT-PROCESS-001 | — |
+| AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001 | — |
+| AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001 | — |
 
 ### Ratification motion — AIOS-DEV-PROC-001 (AIOS-RAT-MOTION-DEV-PROC-001)
 
@@ -692,12 +866,41 @@
 | AIOS-EXEC-DEMO-001 | — |
 | AMD-2026-013 | — |
 
+### Analysis of the Cursor research-pack report set and committee posture (AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-DISCOVER-AGENT-PROCESS-001 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
+
 ### Review packet artifact taxonomy (identity, status, events, handoff) (AIOS-REVIEW-PACKET-TAXONOMY-001)
 
 | Referenced Document | Relationship |
 |---------------------|--------------|
 | AIOS-AMD-PLAN-001 | — |
 | AMD-2026-005 | — |
+
+### Schema, route, and storage inventory for the restored planner and review system (AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
+
+### Shell baseline recovery packet and review path (AIOS-SHELL-BASELINE-RECOVERY-PACKET-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-007 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+| AMD-2026-008-ADD-003 | — |
+| AMD-2026-012 | — |
 
 ### Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track) (AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001)
 
@@ -709,6 +912,43 @@
 | AMD-2026-008-ADD-001 | — |
 | AMD-2026-008-ADD-002 | — |
 | AMD-2026-008-ADD-003 | — |
+
+### Shell-first governing document and artifact plan (AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SHELL-BASELINE-RECOVERY-PACKET-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-012 | — |
+| AMD-2026-014 | — |
+| AMD-2026-016 | — |
+
+### AI OS Shell UI Layout and Component Standard (AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| ADR-001-core-shell-vs-interface-boundaries | — |
+| AIOS-SPEC-006 | — |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | — |
+| AMD-2026-007 | — |
+| AMD-2026-008-ADD-004 | — |
+| AMD-2026-012 | — |
+| AMD-2026-016 | — |
+
+### Sovereign Playwright proof harness (AIOS-SOVEREIGN-PLAYWRIGHT-PROOF-HARNESS-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | — |
+| AIOS-SPEC-006 | — |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | — |
+| AMD-2026-008-ADD-004 | — |
+| AMD-2026-008-ADD-005 | — |
 
 ### AIOS NodeContract Specification (AIOS-SPEC-001)
 
@@ -762,6 +1002,7 @@
 | AIOS-CORE-002 | constrained_by |
 | AIOS-CORE-003 | enforced_by |
 | AIOS-SPEC-007 | constrained_by |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | constrained_by |
 | AMD-2026-005 | constrained_by |
 | AMD-2026-007 | constrained_by |
 
@@ -855,6 +1096,63 @@
 | AMD-2026-005 | — |
 | AMD-2026-011 | — |
 
+### Systems and planning manual for planner/knowledge-base restoration (AIOS-SYSTEMS-AND-PLANNING-MANUAL-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AMD-2026-013 | — |
+
+### Taxonomy-first discovery and knowledge assembly contract (AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
+| AIOS-REPO-TAXONOMY-001 | — |
+| AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | — |
+| AMD-2026-013 | — |
+
+### User sovereignty disclosure and loop-exit standard (AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | — |
+| AIOS-DISCOVER-AGENT-PROCESS-001 | — |
+| AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | — |
+| AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | — |
+| AIOS-SPEC-009 | — |
+| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | — |
+| AMD-2026-007 | — |
+| AMD-2026-008-ADD-004 | — |
+
+### Voice-first UI artifact kit standard (AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | — |
+| AIOS-SPEC-006 | — |
+| AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001 | — |
+| AMD-2026-007 | — |
+| AMD-2026-008-ADD-004 | — |
+| AMD-2026-012 | — |
+
+### AI OS Voice TTS Architecture Standard (AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-001 | — |
+| AMD-2026-008-ADD-002 | — |
+
 ### Workspace Model & Governed Interface Surfaces (AMD-2026-005)
 
 | Referenced Document | Relationship |
@@ -883,6 +1181,14 @@
 | AIOS-SPEC-009 | references |
 | AMD-2026-005 | references |
 | AMD-2026-006 | references |
+
+### User Sovereignty Disclosure and Precision Controls (AMD-2026-007-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SPEC-009 | — |
+| AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001 | — |
+| AMD-2026-007 | — |
 
 ### Sovereign Voice and Local Runtime Lanes (Incorporation by Reference) (AMD-2026-008)
 
@@ -952,6 +1258,15 @@
 | AMD-2026-011 | — |
 | MPOA | — |
 
+### Voice-First Rendered Session Proof and Artifact Checks (AMD-2026-008-ADD-005)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001 | — |
+| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | — |
+| AMD-2026-008 | — |
+| AMD-2026-008-ADD-004 | — |
+
 ### Intent-Scoped Web Retrieval and Governed Website Review (External Knowledge Acquisition) (AMD-2026-009)
 
 | Referenced Document | Relationship |
@@ -1005,6 +1320,15 @@
 | AMD-2026-007 | — |
 | AMD-2026-012-RATIFICATION-MOTION | — |
 
+### Loop Exit and Discovery-First Voice Sequencing (AMD-2026-012-ADD-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-DISCOVER-AGENT-PROCESS-001 | — |
+| AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001 | — |
+| AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001 | — |
+| AMD-2026-012 | — |
+
 ### Intent-Bearing Repository Taxonomy (Architecture and Builder Control) (AMD-2026-013)
 
 | Referenced Document | Relationship |
@@ -1031,6 +1355,7 @@
 | AMD-2026-007 | — |
 | AMD-2026-009 | — |
 | AMD-2026-013 | — |
+| AMD-2026-014-RATIFICATION-MOTION | ratification_motion |
 
 ### CANI Experience Loop and Victory Lap Formula (AMD-2026-015)
 
@@ -1159,6 +1484,20 @@
 | AMD-2026-015-ADD-005 | — |
 | AMD-2026-015-ADD-006-RATIFICATION-MOTION | ratification_motion |
 
+### Governed Non-Human Principals and Deterministic Routed Authority (AMD-2026-016)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-AMD-PLAN-001 | — |
+| AIOS-AMENDMENT-INTAKE-SCAFFOLD-001 | — |
+| AIOS-REVIEW-PACKET-TAXONOMY-001 | — |
+| AIOS-SPEC-002 | — |
+| AIOS-SPEC-009 | — |
+| AMD-2026-005 | — |
+| AMD-2026-007 | — |
+| AMD-2026-012 | — |
+| AMD-2026-013 | — |
+
 ### Privacy Policy (LEGAL-001)
 
 | Referenced Document | Relationship |
@@ -1209,8 +1548,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 117
-- **Ratified:** 46
-- **Draft:** 50
+- **Total documents:** 149
+- **Ratified:** 47
+- **Draft:** 79
 - **Under review:** 0
-- **Unregistered (no front matter):** 9
+- **Unregistered (no front matter):** 10

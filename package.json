@@ -1,0 +1,30 @@
+{
+  "name": "aios-governing-docs",
+  "version": "1.0.0",
+  "description": "The authoritative governance framework for the Gateway Global AI Operating System (AIOS).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Use pytest or npm run playwright:test\" && exit 1",
+    "playwright:test": "playwright test",
+    "playwright:update-snapshots": "playwright test --update-snapshots",
+    "playwright:report": "playwright show-report artifacts/browser_review/report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gateway-global-ai/aios-governing-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gateway-global-ai/aios-governing-docs/issues"
+  },
+  "homepage": "https://github.com/gateway-global-ai/aios-governing-docs#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SPEC-006
 title: UI Component Registry Standard
-version: 1.3.0
+version: 1.5.0
 status: draft
 category: specification
 author: Gateway Global
 created: 2026-04-02
-last_updated: 2026-04-03
+last_updated: 2026-04-17
 reviewers: []
 supersedes: null
 cross_references:
@@ -17,6 +17,7 @@ cross_references:
   - { doc_id: "AMD-2026-005", relationship: "constrained_by" }
   - { doc_id: "AMD-2026-007", relationship: "constrained_by" }
   - { doc_id: "AIOS-SPEC-007", relationship: "constrained_by" }
+  - { doc_id: "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001", relationship: "constrained_by" }
 amendment_history:
   - amendment_id: AMD-2026-005
     ratified: 2026-04-02
@@ -28,11 +29,11 @@ amendment_history:
     ratified: null
     summary: Intent-driven primary surface, outcome-first rendering, transparency (Sections 11.4–11.6)
 ---
-# AIOS UI Component Registry Standard v1.3.0
+# AIOS UI Component Registry Standard v1.5.0
 
 ## 1. Architectural Purpose
 
-The AIOS UI Component Registry is the **canonical, governed collection** of UI primitives that the Stateful Shell is permitted to render. Every component in the registry corresponds to a concrete implementation in the global `shadcn/ui` library (or a custom, approved extension). This standard ensures that **UI sovereignty** (Technical Manifesto Article II) is enforced at the level of each individual visual element.
+The AIOS UI Component Registry is the **canonical, governed collection** of UI primitives that the Stateful Shell is permitted to render. Every component in the registry corresponds to a concrete implementation in the global `shadcn/ui` library, a custom approved extension, or a governed artifact defined by a law-controlled in-repo kit family. This standard ensures that **UI sovereignty** (Technical Manifesto Article II) is enforced at the level of each individual visual element.
 
 By requiring all components to be explicitly registered, versioned, and accessibility‑certified, the Platform prevents the "vibe‑coded" UI fragmentation that plagues ungoverned AI systems. No agent, Kit, or NodeContract may reference a component that is not present in the registry – the DCP compiler will reject any such reference.
 
@@ -58,13 +59,51 @@ The registry is stored as a versioned JSON file (e.g., `{{GATEWAY_COMPONENT_REGI
 |-------|------|-------------|
 | `component_id` | string | Globally unique identifier (kebab‑case, e.g., `aios-check-in-form`). |
 | `version` | string | Semantic version (e.g., `1.2.0`). |
-| `source` | enum | `shadcn/ui` (core) or `custom` (vendor‑submitted). |
+| `source` | enum | `shadcn/ui` (core), `custom` (vendor-submitted), or `governed-kit` (law-controlled in-repo artifact family). |
 | `variants` | array of strings | Allowed variants (e.g., `["default", "destructive"]`). |
 | `wcag_level` | string | Must be `AA` (WCAG 2.1 Level AA). |
 | `accessibility_attestation` | object | Signed attestation from the submitter (for custom components). |
 | `owner` | string | Entity that controls the component (e.g., `gateway-global` or a vendor ID). |
+| `kit_metadata` | object (optional) | Required when `source == "governed-kit"`; records `kit_id`, `artifact_id`, and governing reference. |
+| `shell_menu_metadata` | object (optional) | Required when the component renders protected shell menu content; records menu-zone, ownership class, level contract, template family, and permission class. |
 | `deprecated` | boolean | If `true`, the component is scheduled for removal. |
 | `replaces` | string (optional) | For deprecations: the `component_id` that supersedes this one. |
+
+### 3.1 Governed in-repo kit family
+
+The registry MAY also recognize governed artifact families whose canonical definitions live inside the `aios-governing-docs` repository.
+
+The first such family is the voice-first UI artifact kit governed by:
+
+- `reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md`
+- `sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.yaml`
+
+When a governed in-repo kit family is used:
+
+- the governing-docs repo remains the canonical source of artifact identity
+- downstream product libraries MUST NOT become the silent authority for those artifact definitions
+- the registry SHALL preserve stable one-to-one mapping between `component_id` and the corresponding governed `artifact_id`
+- registry entries for governed kits SHALL use `source: governed-kit`
+- registry entries for governed kits SHALL include `kit_metadata.kit_id`, `kit_metadata.artifact_id`, and the governing standard or manifest path needed for traceability
+
+### 3.2 Menu-bearing shell component contract
+
+When a registered component renders menu-bearing protected shell chrome, the registry entry SHALL declare `shell_menu_metadata` with at minimum:
+
+- `ownership_class` (`shell_owned` | `view_owned`)
+- `menu_zone` (`header_system` | `footer_user` | `view_local`)
+- `level_count`
+- `content_source_type`
+- `template_family`
+- `permission_class`
+
+Protected shell chrome entries SHALL satisfy the following rules:
+
+- `header_system` entries SHALL be `shell_owned`
+- `footer_user` entries SHALL be `shell_owned`
+- `header_system` entries SHALL use permission class `shell_system`
+- `footer_user` entries SHALL use permission class `user_surface`
+- view-owned menus SHALL NOT impersonate header or footer authority
 
 ### Example Entry
 
@@ -143,6 +182,7 @@ If rejected, the Board provides a written explanation and specific remediation s
 
 - **Compile‑time enforcement**: The DCP compiler (`aios validate`) checks every `permitted_ui_components` entry against the current registry. Unlisted or deprecated components cause a build failure.
 - **Runtime enforcement**: The Stateful Shell ignores any `RenderDirective` that refers to an unregistered component and logs a `UI_VIOLATION` event to the immutable audit log (Technical Manifesto Art VI).
+- **Protected-shell enforcement**: The Stateful Shell MUST deny or ignore attempts to mutate header or footer composition through unregistered, undeclared, or misclassified menu-bearing components.
 - **Vendor accountability**: Submitting a component that is later found to violate accessibility or security rules may result in the component's immediate suspension and trigger the due‑process provisions of the Marketplace Terms (Phase 5).
 
 ---
