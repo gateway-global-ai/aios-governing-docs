@@ -1,0 +1,31 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T131107Z
+provider_lane: claude
+resolved_api_model: claude-sonnet-4-20250514
+scenario_id: confused_first_step
+prompt_input_sha256: 28a5402cc7ce9194a14c923a9ab7f95445570cdc0d27ce5a1bef73c08d1f5425
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/confused_first_step.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/confused_first_step__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: unknown
+  defined_outcome: 'false'
+  detected_distress: 'true'
+  intent_push_risk: low
+  advice_quality_risk: low
+  severity_rating: low
+recommended_fix:
+  primary: outcome_definition
+  secondary:
+  - first_step_grounding
+summary: The assistant correctly detected distress and challenged the vague scope
+  by asking for specific problem definition, but stopped short of defining a concrete
+  outcome or first step, instead requiring more information gathering.
+evidence_quotes:
+- I hear the frustration, and you're right to call out when something feels stuck
+- I don't have enough information about what you're actually trying to build to give
+  you a meaningful first step
+notes:
+- Good distress acknowledgment and scope challenge, but could have provided a more
+  concrete first step framework

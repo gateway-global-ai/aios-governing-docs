@@ -1,0 +1,15 @@
+document_id: AMD-2026-016
+amendment_slug: amd_2026_016
+lifecycle_state: blocked_architect_human_verification
+artifact_health: healthy
+committee_status: open
+architect_verification_status: rejected
+ui_verification_status: pending
+kernel_status: pending
+peer_review_status: not_run
+ratification_handoff_status: not_ready
+next_action: verify_architect
+current_head_version: 0.2.0
+last_reviewed_version: ''
+status_updated_at: '2026-04-10T19:20:55Z'
+status_updated_by: jason

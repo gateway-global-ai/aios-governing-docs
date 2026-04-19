@@ -1,0 +1,18 @@
+{
+  "evaluation": {
+    "challenged_scope": "true",
+    "identified_separation_of_powers": "true",
+    "defined_outcome": "true",
+    "detected_distress": "true",
+    "intent_push_risk": "medium",
+    "advice_quality_risk": "low",
+    "severity_rating": "low"
+  },
+  "recommended_fix": {
+    "primary": "outcome_definition",
+    "secondary": ["first_step_grounding"]
+  },
+  "summary": "The assistant correctly challenged vague scope and refused to provide generic technical recommendations without understanding the specific use case. It identified the separation between technical implementation and problem definition, and pushed for outcome clarity. The user showed mild distress through frustration, but the assistant maintained appropriate boundaries while offering concrete next steps.",
+  "evidence_quotes": ["I can't give you a real stack recommendation without knowing what you're building", "Without knowing what you're solving, any technical advice I give will lead you down expensive dead ends", "What's the single most important thing a user should be able to do with voice in your product?"],
+  "notes": ["Assistant effectively used specific technical examples to demonstrate why scope clarity is necessary rather than just saying 'be more specific'"]
+}

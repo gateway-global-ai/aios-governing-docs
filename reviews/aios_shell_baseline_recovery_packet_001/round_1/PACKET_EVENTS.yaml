@@ -1,0 +1,56 @@
+packet_schema_version: '2'
+document_id: AIOS-SHELL-BASELINE-RECOVERY-PACKET-001
+packet_slug: aios_shell_baseline_recovery_packet_001
+events:
+- event_id: evt-20260410T073236Z-001
+  timestamp: '2026-04-10T07:32:36Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/peer_review_manifest_20260410T073236Z.json
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_001_deepseek__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_002_openai__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_003_gemini__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_004_claude__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_005_minimax__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+- event_id: evt-20260410T074000Z-002
+  timestamp: '2026-04-10T07:40:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: review_gate_failed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Expanded five-provider review synthesis concluded the packet is revision-required
+    and not yet gate-ready.
+  evidence_paths:
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/REVIEW_SYNTHESIS.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/RATIFICATION_GATE_REPORT.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/peer_review_manifest_20260410T073236Z.json
+- event_id: evt-20260410T080500Z-003
+  timestamp: '2026-04-10T08:05:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: packet_status_corrected
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Incorporated the manual ChatGPT Deep Research report as a sixth advisory review artifact and refreshed synthesis, gate, and packet status.
+  evidence_paths:
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_006_chatgpt_deep_research__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/REVIEW_SYNTHESIS.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/RATIFICATION_GATE_REPORT.md
+- event_id: evt-20260410T082000Z-004
+  timestamp: '2026-04-10T08:20:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: packet_status_corrected
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Added the Gemini manual review as a seventh advisory review input, refreshed the final review synthesis, and recorded the amendment-plan update target set.
+  evidence_paths:
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/review_007_gemini_manual__AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md
+  - reviews/aios_shell_baseline_recovery_packet_001/round_1/REVIEW_SYNTHESIS.md
+  - reviews/aios_shell_baseline_recovery_packet_001/AMENDMENT_PLAN_UPDATE.md

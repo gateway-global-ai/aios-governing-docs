@@ -1,0 +1,16 @@
+label: <DISCOVERED_PACKET_LABEL>
+packet_id: <DISCOVERED_PACKET_ID>
+role: discovery_output
+description: >
+  Discovery-built knowledge packet produced from taxonomy-guided source selection.
+governing_documents:
+  - <REPO_RELATIVE_GOVERNING_DOC_PATH>
+reports_and_snapshots:
+  - <REPO_RELATIVE_REPORT_OR_SNAPSHOT_PATH>
+review_intents:
+  - Explain why each selected artifact is necessary for downstream research and drafting.
+discovery_metadata:
+  scope_path: <REPO_RELATIVE_DISCOVERY_SCOPE_PATH>
+  report_path: <REPO_RELATIVE_DISCOVERY_REPORT_PATH>
+  taxonomy_classes_resolved:
+    - <CLASS_NAME>

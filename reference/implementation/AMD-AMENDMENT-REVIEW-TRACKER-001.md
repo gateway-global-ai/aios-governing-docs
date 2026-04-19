@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-AMD-TRACKER-001
-version: 1.3.7
+version: 1.3.9
 status: draft
 category: reference
 title: Outstanding amendments — governed review tracker
 author: Gateway Global AIOS
 created: 2026-04-07
-last_updated: 2026-04-09
+last_updated: 2026-04-10
 cross_references:
   - doc_id: AMD-001
   - doc_id: AMD-2026-006
@@ -17,6 +17,8 @@ cross_references:
   - doc_id: AIOS-AMD-PLAN-001
   - doc_id: AMD-2026-013
   - doc_id: AIOS-COMMITTEE-BRIEF-AMD-2026-013
+  - doc_id: AMD-2026-014
+  - doc_id: AMD-2026-014-RATIFICATION-MOTION
   - doc_id: AIOS-AMD-001-DISPOSITION-001
   - doc_id: AMD-2026-006-RATIFICATION-MOTION
   - doc_id: AMD-2026-008-RATIFICATION-MOTION
@@ -30,7 +32,14 @@ cross_references:
   - doc_id: AMD-2026-015-ADD-005
   - doc_id: AMD-2026-015-ADD-006
   - doc_id: AMD-2026-015-ADD-006-RATIFICATION-MOTION
+  - doc_id: AMD-2026-016
 amendment_history:
+  - version: 1.3.9
+    date: 2026-04-10
+    summary: AMD-2026-016 draft lane opened for governed non-human principals; tracker row added for draft 0.1.0 and review root established.
+  - version: 1.3.8
+    date: 2026-04-09
+    summary: AMD-2026-014 ratified 1.0.0; Round 2 PASS on draft 0.1.2; motion executed; tracker row aligned to closed packet truth.
   - version: 1.3.7
     date: 2026-04-09
     summary: AMD-2026-008-ADD-004 ratified 1.0.0; motion executed; Round 3 packet closed to archived pre-ratification evidence; tracker row aligned.
@@ -149,7 +158,7 @@ amendment_history:
 
 # Outstanding amendments — governed review tracker
 
-**Purpose:** Single **non-normative** place to track **AMD-2026-006** through **AMD-2026-009** under **AMD-2026-005** (triangulation, synthesis, ratification gate, council motion). **Execution is sequential:** advance **one** amendment through its **binding** peer-review and ratification steps **before** treating the next as the **active** governed track, unless **council** explicitly authorizes overlap. Each row links the **authoritative** amendment file and **reviews/** packet (if any).
+**Purpose:** Single **non-normative** place to track active and recently closed governed amendment lanes under **AMD-2026-005** (triangulation, synthesis, ratification gate, council motion). **Execution is sequential:** advance **one** amendment through its **binding** peer-review and ratification steps **before** treating the next as the **active** governed track, unless **council** explicitly authorizes overlap. Each row links the **authoritative** amendment file and **reviews/** packet (if any).
 
 ---
 
@@ -162,7 +171,9 @@ amendment_history:
 | **AMD-2026-008** | **`ratified` `1.0.0`** | [`reviews/amd_2026_008/`](../reviews/amd_2026_008/README.md) — Round 3 triangulation **complete**; **[`AMD-2026-008-ratification-motion.md`](../amendments/AMD-2026-008-ratification-motion.md)** **v1.0.2** **`approved` `2026-04-08`** | **Follow-on:** **§4** implementation (product repo); **WORKSPACE.md** alignment. **ADD-003** **`ratified` `1.0.0`** **2026-04-10** — **[`AMD-2026-008-ADD-003-ratification-motion.md`](../amendments/AMD-2026-008-ADD-003-ratification-motion.md)**; **[`reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/`](../reviews/amd_2026_008_add_003_composition_control_plane_messages_invites_documents/)** **historical** (pre-ratification). **ADD-004** **`ratified` `1.0.0`** **2026-04-09** — **[`AMD-2026-008-ADD-004-ratification-motion.md`](../amendments/AMD-2026-008-ADD-004-ratification-motion.md)**; **[`AMD-2026-008-ADD-004`](../amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md)**; **[`reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/`](../reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/)** **historical** (pre-ratification evidence from assessed **`0.4.0`**). **ADD-001** / **ADD-002** **`draft`**. |
 | **AMD-2026-009** (+ **ADD-001**) | **`ratified` `1.0.0`** | [`reviews/amd_2026_009/README.md`](../reviews/amd_2026_009/README.md) — **R2** main AMD; **ADD-001** **R1** **PASS** | **Executed:** **[`AMD-2026-009-ratification-motion.md`](../amendments/AMD-2026-009-ratification-motion.md)** **v1.0.0** **2026-04-09**; **[`AMD-2026-009-spec-merge-checklist.md`](../amendments/AMD-2026-009-spec-merge-checklist.md)** **v1.0.1**; **AIOS_POLICY_INDEX** **v1.4.0**. **Follow-on:** narrow **first implementation slice** (process gate; product in separate repo). **Cohesion block** **006 / 009 / 008** **complete.** |
 | **AMD-2026-013** | **`ratified` `1.0.0`** | [`reviews/amd_2026_013/`](../reviews/amd_2026_013/README.md) — Round 2 **PASS** on **v0.2.3**; ratified **[`AMD-2026-013-ratification-motion.md`](../../amendments/AMD-2026-013-ratification-motion.md)** **2026-04-07** | **Follow-on:** product/architecture alignment; memo **[AIOS-REPO-TAXONOMY-001](AIOS-REPO-TAXONOMY-001.md)** **v1.0.0** |
+| **AMD-2026-014** | **`ratified` `1.0.0`** | [`reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/`](../../reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/README.md) — Round 2 **PASS** on **`draft` `0.1.2`**; ratified **[`AMD-2026-014-ratification-motion.md`](../../amendments/AMD-2026-014-ratification-motion.md)** **2026-04-09** | **Follow-on:** bounded authoring implementation alignment only; packet closed as historical pre-ratification evidence |
 | **AMD-2026-015** (+ **ADD-001** / **ADD-002** / **ADD-003** / **ADD-004** / **ADD-005** / **ADD-006**) | **`draft` `0.1.6`** parent; **ADD-006 `ratified` `1.0.0`** | [`reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/`](../../reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/README.md) — **Round 1** packet archived as pre-ratification evidence; **[`AMD-2026-015-ADD-006-ratification-motion.md`](../../amendments/AMD-2026-015-ADD-006-ratification-motion.md)** **v1.0.0** **2026-04-09** | **Follow-on:** governed collector implementation remains separate; no collector/runtime authority was created by ratification |
+| **AMD-2026-016** | **`draft` `0.1.0`** | [`reviews/amd_2026_016/`](../../reviews/amd_2026_016/README.md) — intake lane opened; round packet not yet created | **Next governed step:** run Round 1 peer review on non-human principal law and deterministic routed authority |
 
 ---
 
@@ -180,6 +191,7 @@ amendment_history:
 | **AMD-2026-011** | External repo acquisition + **AIOS-SPEC-013** package |
 | **AMD-2026-012** | Shell authority and voice-first entry |
 | **AMD-2026-013** | Intent-bearing repository taxonomy (architecture / builder) |
+| **AMD-2026-014** | Governed authoring knowledge inputs and bounded author-like drafting |
 | **AMD-2026-006** | Google Workspace governed integration plane (**AIOS-SPEC-007**) |
 | **AMD-2026-009** (+ **ADD-001**) | Intent-scoped web retrieval + governed website review (**POL-WEB-***; **SPEC-007** / **SPEC-009** / **SPEC-010** alignment) |
 | **AMD-2026-008** | Sovereign voice + local runtime lanes (**AIOS-SPEC-009** §3.1 incorporation; **AIOS-OPS-001**–**003**) |
@@ -217,4 +229,4 @@ Canonical **[`amendments/AMD-2026-007.md`](../amendments/AMD-2026-007.md)** now 
 
 ---
 
-*End of AIOS-AMD-TRACKER-001 v1.3.7.*
+*End of AIOS-AMD-TRACKER-001 v1.3.8.*

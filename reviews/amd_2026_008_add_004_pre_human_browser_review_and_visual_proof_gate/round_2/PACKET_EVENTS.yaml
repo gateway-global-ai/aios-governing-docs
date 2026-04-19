@@ -1,16 +1,53 @@
-packet_schema_version: "2"
+packet_schema_version: '2'
 document_id: AMD-2026-008-ADD-004
 packet_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
 events:
-  - event_id: evt-20260409-010
-    timestamp: 2026-04-09T00:15:00Z
-    actor: governance_round_2_prep
-    event_type: packet_initialized
-    from_version: 0.2.0
-    to_version: 0.3.0
-    round: 2
-    summary: Opened the clean Round 2 packet path for ADD-004 draft 0.3.0 so the next governed action can run from round_2 without reusing stale Round 1 surfaces.
-    evidence_paths:
-      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/README.md
-      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/PACKET_STATUS.yaml
-      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/revision_log.md
+- event_id: evt-20260409-010
+  timestamp: 2026-04-09 00:15:00+00:00
+  actor: governance_round_2_prep
+  event_type: packet_initialized
+  from_version: 0.2.0
+  to_version: 0.3.0
+  round: 2
+  summary: Opened the clean Round 2 packet path for ADD-004 draft 0.3.0 so the next
+    governed action can run from round_2 without reusing stale Round 1 surfaces.
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/README.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/PACKET_STATUS.yaml
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/revision_log.md
+- event_id: evt-20260409T170114Z-002
+  timestamp: '2026-04-09T17:01:14Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.3.0
+  to_version: 0.3.0
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.3.0.
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/peer_review_manifest_20260409T170114Z.json
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_001_deepseek__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_002_openai__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_003_gemini__AMD-2026-008-ADD-004.md
+- event_id: evt-20260409T170314Z-003
+  timestamp: '2026-04-09T17:03:14Z'
+  actor: ratification_gate_assessor
+  event_type: review_gate_failed
+  from_version: 0.3.0
+  to_version: 0.3.0
+  round: 2
+  summary: AMD-2026-005 thresholds not met for draft 0.3.0 (DeepSeek composite 2.8 with multiple dimensions below 3); see Round 2 gate report and synthesis.
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/RATIFICATION_GATE_REPORT.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/REVIEW_SYNTHESIS.md
+- event_id: evt-20260409T170314Z-004
+  timestamp: '2026-04-09T17:03:14Z'
+  actor: governance_round_2_synthesis
+  event_type: packet_status_corrected
+  from_version: 0.3.0
+  to_version: 0.3.0
+  round: 2
+  summary: Corrected Round 2 packet status from incomplete/manual_resolution to fail/revise after repairing malformed Gemini front matter and recording the governed gate result from the completed triad review.
+  evidence_paths:
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_003_gemini__AMD-2026-008-ADD-004.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/PACKET_STATUS.yaml
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/RATIFICATION_GATE_REPORT.md

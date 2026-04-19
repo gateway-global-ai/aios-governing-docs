@@ -1,0 +1,23 @@
+target_document_id: AMD-2026-016
+target_document_path: amendments/AMD-2026-016.md
+review_slug: amd_2026_016
+lane_kind: amendment_discovery
+required_taxonomy_classes:
+  - target_authority
+  - cross_document_authority
+  - taxonomy_and_process_authority
+optional_taxonomy_classes:
+  - implementation_authority
+  - review_evidence
+  - runtime_evidence
+prohibited_source_classes:
+  - raw_chat_transcripts
+  - unpublished_private_notes
+  - undeclared_external_web_sources
+  - discussion_without_repo_conversion
+allow_runtime_evidence: false
+require_review_evidence: true
+notes:
+  - Discovery should prefer direct authority anchors before supportive references.
+  - Runtime evidence is optional and should be excluded unless the discover lane proves it is necessary.
+  - Round 1 review evidence is required because this lane is a revision loop, not a first draft.

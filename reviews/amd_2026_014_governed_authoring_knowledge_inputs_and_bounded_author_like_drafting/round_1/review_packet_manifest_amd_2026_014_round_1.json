@@ -1,0 +1,18 @@
+{
+  "document_id": "AMD-2026-014",
+  "document_slug": "amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting",
+  "review_round": 1,
+  "packet_stage": "round_opened",
+  "packet_purpose": "validator_ready_round_packet",
+  "review_targets": [
+    "amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md",
+    "reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md",
+    "reference/knowledge_base/agents/style/JT_EDITORIAL_STYLE_CARD.md",
+    "reference/knowledge_base/agents/style/JT_NARRATION_STYLE_CARD.md",
+    "reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md",
+    "reference/knowledge_base/agents/style/JT_EDITORIAL_REQUIRED_KNOWLEDGE_MANIFEST.yaml",
+    "reference/knowledge_base/agents/style/JT_NARRATION_REQUIRED_KNOWLEDGE_MANIFEST.yaml",
+    "modelfiles/jt_authoring_agent.Modelfile",
+    "scripts/ollama_authoring_agent.py"
+  ]
+}

@@ -138,6 +138,13 @@ All shell layers use named CSS custom properties. Raw z-index integers are prohi
 - surface play or stop, mic enabled, speaker enabled, and cue-menu controls in the same bounded player cluster, and
 - show current cue or playback state in the disclosure plate rather than treating speech as invisible background behavior.
 
+`ShellSystemControls` is the top-right system handoff surface for deeper shell controls. When the governed voice runtime is present, it MUST:
+
+- expose a current voice-runtime summary card while the system-controls panel is open,
+- show the active voice route and live shell-owned status rather than a detached settings-only entry point,
+- route deeper changes into `VoiceControlPanel.tsx` or other shell-root overlays through prop callbacks, and
+- remain subordinate to the shell cue controller in `App.tsx` for playback, queue, and mute authority.
+
 ### 4.5 Onboarding stability
 
 First-run onboarding surfaces MAY be narrated, but narration MUST NOT cause the onboarding center-stage surface to disappear. Generic shell `speaking` state is not sufficient authority to blank the first-run orientation surface while intro narration is active.

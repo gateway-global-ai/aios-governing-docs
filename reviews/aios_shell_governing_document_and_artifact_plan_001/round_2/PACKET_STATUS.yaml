@@ -1,0 +1,11 @@
+document_id: AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001
+packet_slug: aios_shell_governing_document_and_artifact_plan_001
+current_head_version: 0.1.2
+last_reviewed_version: 0.1.2
+artifact_health: healthy
+review_gate_status: pass
+committee_status: answered
+next_action: archive
+lifecycle_phase: archived
+status_updated_at: '2026-04-10T08:49:42Z'
+status_updated_by: shell_plan_human_approval_record

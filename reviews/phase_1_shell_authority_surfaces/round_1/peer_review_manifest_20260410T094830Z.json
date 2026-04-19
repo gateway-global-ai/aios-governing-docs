@@ -1,0 +1,108 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "phase_1_shell_authority_surfaces",
+  "document": "reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": "default",
+  "context_bundle": {
+    "context_mode": "smart_fallback_core_empty_refs",
+    "cross_reference_doc_ids_requested": [],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "technical_manifesto",
+        "path": "core/technical_manifesto.md",
+        "bytes": 11903,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.070498
+      },
+      {
+        "document_id": "governance_constitution",
+        "path": "core/governance_constitution.md",
+        "bytes": 9284,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.0694969
+      },
+      {
+        "document_id": "mpoa",
+        "path": "core/master_platform_operating_agreement.md",
+        "bytes": 10334,
+        "version": "3.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.070498
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": true,
+    "path": "reference\\knowledge_base\\snapshots\\product_context_bundle.md",
+    "bytes": 83322,
+    "mtime_utc": 1775776995.8043413
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "expanded_review": true,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_chars": 13079,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 33930,
+      "estimated_prompt_tokens_user": 3256,
+      "estimated_prompt_tokens_total": 37186,
+      "output_path": "reviews/phase_1_shell_authority_surfaces/round_1/review_001_deepseek__PHASE_1_SHELL_AUTHORITY_SURFACES.md"
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 22752,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 33935,
+      "estimated_prompt_tokens_user": 3256,
+      "estimated_prompt_tokens_total": 37191,
+      "output_path": "reviews/phase_1_shell_authority_surfaces/round_1/review_002_openai__PHASE_1_SHELL_AUTHORITY_SURFACES.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 10243,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 33928,
+      "estimated_prompt_tokens_user": 3256,
+      "estimated_prompt_tokens_total": 37184,
+      "output_path": "reviews/phase_1_shell_authority_surfaces/round_1/review_003_gemini__PHASE_1_SHELL_AUTHORITY_SURFACES.md"
+    },
+    {
+      "model_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "output_chars": 7119,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 33938,
+      "estimated_prompt_tokens_user": 3256,
+      "estimated_prompt_tokens_total": 37194,
+      "output_path": "reviews/phase_1_shell_authority_surfaces/round_1/review_004_claude__PHASE_1_SHELL_AUTHORITY_SURFACES.md"
+    },
+    {
+      "model_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "output_chars": 16047,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 33938,
+      "estimated_prompt_tokens_user": 3256,
+      "estimated_prompt_tokens_total": 37194,
+      "output_path": "reviews/phase_1_shell_authority_surfaces/round_1/review_005_minimax__PHASE_1_SHELL_AUTHORITY_SURFACES.md"
+    }
+  ]
+}

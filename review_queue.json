@@ -1,14 +1,6 @@
 {
   "meta": {
-    "queue_note": "Active: AMD-2026-008-ADD-004 draft 0.3.0 — artifact health good; review gate FAIL at 0.2.0 Round 1; Round 2 is the only live next governed step. Committee closed superseded_by_round_1_findings. Packet: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/README.md"
+    "queue_note": "No active governed review queue items. AMD-2026-014 is ratified 1.0.0 and its packet is closed as historical pre-ratification evidence; next closure focus is AMD-2026-015 parent."
   },
-  "items": [
-    {
-      "document_id": "AMD-2026-008-ADD-004",
-      "status": "draft",
-      "version": "0.3.0",
-      "packet_readme": "reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/README.md",
-      "next_governed_step": "peer_review_round_2"
-    }
-  ]
+  "items": []
 }

@@ -1,0 +1,156 @@
+intake_schema_version: '1'
+document_id: AMD-2026-013
+amendment_slug: amd_2026_013
+events:
+- event_id: evt-001
+  timestamp: '2026-04-09T07:32:02Z'
+  actor: stage3b_proof
+  event_type: intake_initialized
+  from_state: ''
+  to_state: intake_open
+  summary: Intake scaffold initialized for amendment orchestration.
+  evidence_paths:
+  - amendments/AMD-2026-013.md
+  - reviews/amd_2026_013/intake
+- event_id: evt-20260409T073202Z-002
+  timestamp: '2026-04-09T07:32:02Z'
+  actor: stage3b_proof
+  event_type: evidence_refreshed
+  from_state: intake_open
+  to_state: phase_a_evidence_ready
+  summary: Evidence refreshed and knowledge bundle rebuilt.
+  evidence_paths:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073233Z-003
+  timestamp: '2026-04-09T07:32:33Z'
+  actor: stage3b_proof
+  event_type: architect_bundle_manifest_mismatch_blocked
+  from_state: phase_a_evidence_ready
+  to_state: failed
+  summary: 'Architect lane blocked: selected manifest does not correspond to selected
+    KB bundle/build manifest pair: bundle header ''# Agent knowledge bundle — amd_2026_006_workspace_track**Generated:**
+    2026-04-09---## Source: `core/technical_manifesto.md`'' does not match selected
+    manifest label header ''# Agent knowledge bundle — amd_2026_006_workspace_track'''
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073353Z-004
+  timestamp: '2026-04-09T07:33:53Z'
+  actor: stage3b_proof
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN_TEMPLATE.md
+  - reviews/amd_2026_013/planning/UI_PLAN_TEMPLATE.md
+  - reviews/amd_2026_013/planning/COMMITTEE_PACKET_TEMPLATE.md
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073408Z-005
+  timestamp: '2026-04-09T07:34:08Z'
+  actor: stage3b_proof
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output still contains unresolved template placeholder ''_JSON Schema
+    fragments''; architect output still contains unresolved template placeholder ''_Table:'''
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T073506Z-006
+  timestamp: '2026-04-09T07:35:06Z'
+  actor: stage3b_proof
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073514Z-007
+  timestamp: '2026-04-09T07:35:14Z'
+  actor: stage3b_proof
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output still contains unresolved template placeholder ''_JSON Schema
+    fragments''; architect output still contains unresolved template placeholder ''_Table:'''
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T073614Z-008
+  timestamp: '2026-04-09T07:36:14Z'
+  actor: stage3b_proof
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073651Z-009
+  timestamp: '2026-04-09T07:36:51Z'
+  actor: stage3b_proof
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output missing required heading ''## 6. Gaps vs governing text''; architect
+    output missing required heading ''## 7. Verification checklist'''
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T073727Z-010
+  timestamp: '2026-04-09T07:37:27Z'
+  actor: stage3b_proof_qwen
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T073823Z-011
+  timestamp: '2026-04-09T07:38:23Z'
+  actor: stage3b_proof_qwen
+  event_type: architect_drafted
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_drafted
+  summary: Architect planning draft generated.
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T073823Z-012
+  timestamp: '2026-04-09T07:38:23Z'
+  actor: stage3b_proof_qwen
+  event_type: architect_output_verified
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output file existence verified before success recording.
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T073823Z-013
+  timestamp: '2026-04-09T07:38:23Z'
+  actor: stage3b_proof_qwen
+  event_type: architect_output_conformance_validated
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output passed template-based structural conformance validation.
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN_TEMPLATE.md
+- event_id: evt-20260409T073823Z-014
+  timestamp: '2026-04-09T07:38:23Z'
+  actor: stage3b_proof_qwen
+  event_type: architect_human_verification_blocked
+  from_state: phase_b_architect_drafted
+  to_state: blocked_architect_human_verification
+  summary: Architect draft now awaits human verification.
+  evidence_paths:
+  - reviews/amd_2026_013/planning/ARCHITECT_PLAN.md

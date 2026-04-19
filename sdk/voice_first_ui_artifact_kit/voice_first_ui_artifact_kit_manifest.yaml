@@ -1,0 +1,252 @@
+kit_id: voice_first_ui_artifact_kit
+version: 0.4.0
+status: draft
+library_root: sdk/voice_first_ui_artifact_kit
+schema_path: sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.schema.json
+governing_standard:
+  document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  document_path: reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+registry_mapping:
+  source_class: governed-kit
+  component_id_prefix: vf-kit-
+  normalization_rule: lowercase and replace "." and "_" with "-"
+delivery_surfaces:
+  - repo_local_governed_library
+  - governed_runtime_package
+  - future_dependency_surface
+  - future_mcp_surface
+main_shell_artifacts:
+  - artifact_id: header
+    artifact_label: Header
+    surface_zone: shell
+    artifact_kind: structural
+    interactive: true
+    voice_first_role: authority_and_disclosure
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+      - control_proof
+    related_governing_docs:
+      - AMD-2026-007
+      - AMD-2026-012
+  - artifact_id: header.audio_player_cluster
+    artifact_label: HeaderAudioPlayerCluster
+    surface_zone: shell
+    artifact_kind: control
+    interactive: true
+    voice_first_role: operator_visible_runtime_control
+    required_controls:
+      - play
+      - pause
+    required_visual_proofs:
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+  - artifact_id: header.cue_drawer
+    artifact_label: HeaderCueDrawer
+    surface_zone: shell
+    artifact_kind: control
+    interactive: true
+    voice_first_role: operator_visible_runtime_control
+    required_controls:
+      - play
+      - pause
+    required_visual_proofs:
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+  - artifact_id: header.system_control_panel
+    artifact_label: HeaderSystemControlPanel
+    surface_zone: shell
+    artifact_kind: control
+    interactive: true
+    voice_first_role: operator_visible_runtime_control
+    required_controls: []
+    required_visual_proofs:
+      - control_proof
+      - state_proof
+    related_governing_docs:
+      - AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+  - artifact_id: canvas
+    artifact_label: Canvas
+    surface_zone: shell
+    artifact_kind: structural
+    interactive: true
+    voice_first_role: primary_surface
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+      - state_proof
+    related_governing_docs:
+      - AMD-2026-007
+      - AMD-2026-012
+  - artifact_id: footer
+    artifact_label: Footer
+    surface_zone: shell
+    artifact_kind: structural
+    interactive: true
+    voice_first_role: action_and_navigation
+    required_controls:
+      - close
+    required_visual_proofs:
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AMD-2026-012
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+deployment_packages:
+  - package_id: header_voice_runtime_package
+    package_label: Header Voice Runtime Package
+    deployment_scope: header_voice_runtime
+    package_manifest_path: sdk/voice_first_ui_artifact_kit/header_voice_runtime_package_manifest.yaml
+    included_artifacts:
+      - header
+      - header.audio_player_cluster
+      - header.cue_drawer
+      - header.system_control_panel
+    runtime_components:
+      - src/App.tsx
+      - src/components/shell/ShellIdentityBar.tsx
+      - src/components/shell/ShellSystemControls.tsx
+      - src/components/shell/VoiceControlPanel.tsx
+      - src/core/io/GeminiVoiceEngine.ts
+      - src/core/io/BrowserVoiceEngine.ts
+      - src/core/io/SovereignVoiceEngine.ts
+      - src/core/io/VoiceboxClient.ts
+      - src/core/io/voiceRoutePreference.ts
+      - src/api/geminiGateway.ts
+      - server/geminiServe.ts
+      - server/prodHost.ts
+      - vite/localModelPlugin.ts
+    governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+      - AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+canvas_artifacts:
+  - artifact_id: canvas.background.1_1
+    artifact_label: 1_1 Background
+    surface_zone: canvas
+    artifact_kind: visual
+    interactive: false
+    voice_first_role: support
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.container.2_1
+    artifact_label: 2_1 Container
+    surface_zone: canvas
+    artifact_kind: structural
+    interactive: false
+    voice_first_role: support
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.overlay_card.3_1
+    artifact_label: 3_1 Overlay Card
+    surface_zone: canvas
+    artifact_kind: structural
+    interactive: true
+    voice_first_role: guided_step
+    required_controls:
+      - close
+    required_visual_proofs:
+      - surface_proof
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AMD-2026-008-ADD-004
+      - AMD-2026-008-ADD-005
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+  - artifact_id: canvas.title.4_1
+    artifact_label: 4_1 Title
+    surface_zone: canvas
+    artifact_kind: text
+    interactive: false
+    voice_first_role: orientation
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.title_description.4_2
+    artifact_label: 4_2 Title and Description
+    surface_zone: canvas
+    artifact_kind: text
+    interactive: false
+    voice_first_role: orientation
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.title_description_paragraph.4_3
+    artifact_label: 4_3 Title Description and Paragraph
+    surface_zone: canvas
+    artifact_kind: text
+    interactive: false
+    voice_first_role: explanation
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.image.5_1
+    artifact_label: 5_1 Image
+    surface_zone: canvas
+    artifact_kind: media
+    interactive: false
+    voice_first_role: support
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.video.5_2
+    artifact_label: 5_2 Video
+    surface_zone: canvas
+    artifact_kind: media
+    interactive: true
+    voice_first_role: support
+    required_controls:
+      - play
+      - pause
+    required_visual_proofs:
+      - surface_proof
+      - control_proof
+    related_governing_docs:
+      - AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+  - artifact_id: canvas.agent_controls.6_1
+    artifact_label: 6_1 Agent Controls
+    surface_zone: canvas
+    artifact_kind: control
+    interactive: true
+    voice_first_role: operator_visible_runtime_control
+    required_controls:
+      - back
+      - close
+    required_visual_proofs:
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AMD-2026-012
+      - AMD-2026-008-ADD-005
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+multi_step_navigation_contract:
+  applies_to:
+    - canvas.overlay_card.3_1
+    - canvas.agent_controls.6_1
+  required_elements:
+    - top_right_progress_label_x_of_y
+    - back_button
+    - close_button
+  notes:
+    - Multi-step cards and slides must not omit basic navigation on the assumption that narration or agent guidance is sufficient.

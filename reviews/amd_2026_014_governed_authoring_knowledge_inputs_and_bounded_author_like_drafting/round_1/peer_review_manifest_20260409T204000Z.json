@@ -1,0 +1,117 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting",
+  "document": "amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-005",
+      "AMD-2026-007",
+      "AMD-2026-009",
+      "AMD-2026-013",
+      "AIOS-AMD-PLAN-001",
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+      "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001"
+    ],
+    "missing_registry_ids": [
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001"
+    ],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-005",
+        "path": "amendments/AMD-2026-005.md",
+        "bytes": 10858,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.0563323
+      },
+      {
+        "document_id": "AMD-2026-007",
+        "path": "amendments/AMD-2026-007.md",
+        "bytes": 28235,
+        "version": "0.2.1",
+        "registry_id": null,
+        "mtime_utc": 1775607704.5096262
+      },
+      {
+        "document_id": "AMD-2026-009",
+        "path": "amendments/AMD-2026-009.md",
+        "bytes": 23129,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775636337.536455
+      },
+      {
+        "document_id": "AMD-2026-013",
+        "path": "amendments/AMD-2026-013.md",
+        "bytes": 18637,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775628171.4273007
+      },
+      {
+        "document_id": "AIOS-AMD-PLAN-001",
+        "path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
+        "bytes": 7319,
+        "version": "1.0.3",
+        "registry_id": null,
+        "mtime_utc": 1775711338.2682257
+      },
+      {
+        "document_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "path": "reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md",
+        "bytes": 6153,
+        "version": "0.1.1",
+        "registry_id": null,
+        "mtime_utc": 1775713625.846475
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini"
+  ],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_path": "reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_deepseek__AMD-2026-014.md",
+      "output_chars": 7857,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 29371,
+      "estimated_prompt_tokens_user": 2340,
+      "estimated_prompt_tokens_total": 31711
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_path": "reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_openai__AMD-2026-014.md",
+      "output_chars": 16755,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 29375,
+      "estimated_prompt_tokens_user": 2340,
+      "estimated_prompt_tokens_total": 31715
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_path": "reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_gemini__AMD-2026-014.md",
+      "output_chars": 203,
+      "output_classification": "api_error",
+      "estimated_prompt_tokens_system": 29369,
+      "estimated_prompt_tokens_user": 2340,
+      "estimated_prompt_tokens_total": 31709
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+packet_schema_version: '2'
+document_id: AMD-2026-016
+packet_slug: amd_2026_016
+events:
+- event_id: evt-20260410T110823Z-001
+  timestamp: '2026-04-10T11:08:23Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.2.0
+  to_version: 0.2.0
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.2.0.
+  evidence_paths:
+  - reviews/amd_2026_016/round_2/peer_review_manifest_20260410T110823Z.json
+  - reviews/amd_2026_016/round_2/review_001_deepseek__AMD-2026-016.md
+  - reviews/amd_2026_016/round_2/review_002_openai__AMD-2026-016.md
+  - reviews/amd_2026_016/round_2/review_003_gemini__AMD-2026-016.md
+  - reviews/amd_2026_016/round_2/review_004_claude__AMD-2026-016.md
+  - reviews/amd_2026_016/round_2/review_005_minimax__AMD-2026-016.md

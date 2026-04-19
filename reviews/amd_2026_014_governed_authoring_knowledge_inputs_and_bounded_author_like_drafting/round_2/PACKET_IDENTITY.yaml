@@ -1,0 +1,10 @@
+document_id: AMD-2026-014
+document_path: amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+current_head_version: 0.1.2
+review_round: 2
+packet_path: reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2
+manifest_path: reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/peer_review_manifest_20260409T224633Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-09T22:46:33Z'

@@ -46,6 +46,7 @@
 | AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001 | Research Studies - ChatGPT Operating Model and Danger Analysis | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-CHATGPT-OPERATING-MODEL-DANGER-ANALYSIS.md` |
 | AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001 | Research Studies - Intent Control Layer and Signal Governance | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-INTENT-CONTROL-LAYER-AND-SIGNAL-GOVERNANCE.md` |
 | AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001 | Research Studies - Consumer AI Clinical, Architectural, and Economic Analysis | 0.1.0 | draft | article | `reference/knowledge_base/articles/RESEARCH-STUDIES-CONSUMER-AI-CLINICAL-ARCHITECTURAL-ECONOMIC-ANALYSIS.md` |
+| AIOS-KB-VOICE-RUNTIME-HEADER-GUIDE-001 | AI OS Voice Runtime Lanes and Header Controls Guide | 0.1.0 | draft | article | `reference/knowledge_base/articles/AIOS-VOICE-RUNTIME-LANES-AND-HEADER-CONTROLS-GUIDE.md` |
 | AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001 | Intent-driven knowledge-base review interface model | 0.1.1 | draft | reference | `reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md` |
 | AIOS-MASTER-IMPL-001 | AIOS Master Implementation Program (cross-repo) | 1.2.4 | draft | reference | `reference/implementation/AIOS-MASTER-IMPLEMENTATION-PROGRAM.md` |
 | AIOS-MBL009-TRACKER-001 | MBL-009: AMD-2026-007 vs AIOS-POLICY-INDEX reconciliation tracker | 1.0.0 | open | reference | `reference/implementation/MBL-009-tracker-amd-2026-007-policy-index.md` |
@@ -97,8 +98,8 @@
 | AIOS-SYSTEMS-AND-PLANNING-MANUAL-001 | Systems and planning manual for planner/knowledge-base restoration | 0.1.1 | draft | reference | `reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md` |
 | AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001 | Taxonomy-first discovery and knowledge assembly contract | 0.1.0 | draft | reference | `reference/implementation/AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001.md` |
 | AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001 | User sovereignty disclosure and loop-exit standard | 0.1.0 | draft | reference_implementation | `reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md` |
-| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | Voice-first UI artifact kit standard | 0.4.0 | draft | specification | `reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md` |
-| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | AI OS Voice TTS Architecture Standard | 0.2.0 | draft | reference | `reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md` |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | Voice-first UI artifact kit standard | 0.6.0 | draft | specification | `reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md` |
+| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | AI OS Voice TTS Architecture Standard | 0.3.0 | draft | reference | `reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md` |
 | AMD-001 | Agent-Native CLI Design Patterns (Google CLI Article Analysis) | — | ratified | — | `amendments/ammendment_google.md` |
 | AMD-2026-005 | Workspace Model & Governed Interface Surfaces | 1.0.0 | ratified | amendment | `amendments/AMD-2026-005.md` |
 | AMD-2026-006 | Google Workspace Governed Integration Plane | 1.0.0 | ratified | amendment | `amendments/AMD-2026-006.md` |
@@ -612,6 +613,15 @@
 | AIOS-AMD-PLAN-001 | — |
 | AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001 | — |
 | AIOS-SPEC-009 | — |
+
+### AI OS Voice Runtime Lanes and Header Controls Guide (AIOS-KB-VOICE-RUNTIME-HEADER-GUIDE-001)
+
+| Referenced Document | Relationship |
+|---------------------|--------------|
+| AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001 | — |
+| AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001 | — |
+| AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001 | — |
+| AMD-2026-008 | — |
 
 ### Intent-driven knowledge-base review interface model (AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001)
 
@@ -1548,8 +1558,8 @@
 
 ## Document Statistics
 
-- **Total documents:** 149
+- **Total documents:** 150
 - **Ratified:** 47
-- **Draft:** 79
+- **Draft:** 80
 - **Under review:** 0
 - **Unregistered (no front matter):** 10

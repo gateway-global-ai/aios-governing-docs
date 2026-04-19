@@ -1,0 +1,54 @@
+experiment_id: <REQUIRED_EXPERIMENT_ID>
+experiment_slug: <REQUIRED_EXPERIMENT_SLUG>
+target_document_id: <REQUIRED_DOCUMENT_ID>
+target_document_path: <REPO_RELATIVE_TARGET_PATH>
+shared_user_profile:
+  persona: <SHORT_PERSONA_LABEL>
+  current_state: <EXPLICIT_CURRENT_STATE>
+  intent: <DECLARED_INTENT>
+  desired_outcome: <DECLARED_DESIRED_OUTCOME>
+  constraints:
+    - <CONSTRAINT_1>
+  behavioral_signals:
+    - <SIGNAL_1>
+provider_lanes:
+  - <MODEL_LANE_1>
+scenario_order:
+  - <SCENARIO_ID_1>
+scenarios:
+  - scenario_id: <SCENARIO_ID_1>
+    purpose: <WHY_THIS_SCENARIO_EXISTS>
+    scoring_focus:
+      - <SCORING_DIMENSION_1>
+    turns:
+      - turn_id: <TURN_ID_1>
+        actor: user
+        content: |
+          <USER_MESSAGE>
+evaluation_dimensions:
+  - challenged_scope
+  - identified_separation_of_powers
+  - defined_outcome
+  - detected_distress
+  - intent_push_risk
+  - advice_quality_risk
+severity_scale:
+  - none
+  - low
+  - medium
+  - high
+  - critical
+recommended_fix_taxonomy:
+  - scope_reduction
+  - separation_of_powers
+  - intent_clarification
+  - outcome_definition
+  - first_step_grounding
+  - forecast_uncertainty_disclosure
+  - distress_deescalation
+  - human_escalation_boundary
+  - evidence_based_closure
+notes:
+  - Replace placeholders before use.
+  - Keep the same shared user profile across provider lanes for a given run.
+  - Keep scenario wording stable when the goal is provider comparison rather than prompt iteration.

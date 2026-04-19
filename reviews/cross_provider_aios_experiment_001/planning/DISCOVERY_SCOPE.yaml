@@ -1,0 +1,23 @@
+target_document_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001
+target_document_path: reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001.md
+review_slug: cross_provider_aios_experiment_001
+lane_kind: amendment_discovery
+discovery_profile: packet_only
+required_taxonomy_classes:
+  - constitutional_and_philosophy_root
+  - target_authority
+  - cross_document_authority
+  - taxonomy_and_process_authority
+optional_taxonomy_classes:
+  - implementation_authority
+  - review_evidence
+prohibited_source_classes:
+  - raw_chat_transcripts
+  - unpublished_private_notes
+  - undeclared_external_web_sources
+  - discussion_without_repo_conversion
+allow_runtime_evidence: false
+require_review_evidence: true
+notes:
+  - This scope exists to govern a cross-provider experiment lane before raw API runs are treated as evidence.
+  - Runtime evidence becomes eligible only after experiment outputs are written into the review root.

@@ -1,0 +1,97 @@
+intake_schema_version: '1'
+document_id: AMD-2026-011
+amendment_slug: amd_2026_011
+events:
+- event_id: evt-001
+  timestamp: '2026-04-09T07:40:23Z'
+  actor: stage3b_clean_proof
+  event_type: intake_initialized
+  from_state: ''
+  to_state: intake_open
+  summary: Intake scaffold initialized for amendment orchestration.
+  evidence_paths:
+  - amendments/AMD-2026-011.md
+  - reviews/amd_2026_011/intake
+- event_id: evt-20260409T074024Z-002
+  timestamp: '2026-04-09T07:40:24Z'
+  actor: stage3b_clean_proof
+  event_type: evidence_refreshed
+  from_state: intake_open
+  to_state: phase_a_evidence_ready
+  summary: Evidence refreshed and knowledge bundle rebuilt.
+  evidence_paths:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T074024Z-003
+  timestamp: '2026-04-09T07:40:24Z'
+  actor: stage3b_clean_proof
+  event_type: architect_started
+  from_state: phase_a_evidence_ready
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN_TEMPLATE.md
+  - reviews/amd_2026_011/planning/UI_PLAN_TEMPLATE.md
+  - reviews/amd_2026_011/planning/COMMITTEE_PACKET_TEMPLATE.md
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T074118Z-004
+  timestamp: '2026-04-09T07:41:18Z'
+  actor: stage3b_clean_proof
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output does not begin with the expected architect-plan heading'
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T074151Z-005
+  timestamp: '2026-04-09T07:41:51Z'
+  actor: stage3b_clean_proof
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T074240Z-006
+  timestamp: '2026-04-09T07:42:40Z'
+  actor: stage3b_clean_proof
+  event_type: architect_drafted
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_drafted
+  summary: Architect planning draft generated.
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T074240Z-007
+  timestamp: '2026-04-09T07:42:40Z'
+  actor: stage3b_clean_proof
+  event_type: architect_output_verified
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output file existence verified before success recording.
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T074240Z-008
+  timestamp: '2026-04-09T07:42:40Z'
+  actor: stage3b_clean_proof
+  event_type: architect_output_conformance_validated
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output passed template-based structural conformance validation.
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN_TEMPLATE.md
+- event_id: evt-20260409T074240Z-009
+  timestamp: '2026-04-09T07:42:40Z'
+  actor: stage3b_clean_proof
+  event_type: architect_human_verification_blocked
+  from_state: phase_b_architect_drafted
+  to_state: blocked_architect_human_verification
+  summary: Architect draft now awaits human verification.
+  evidence_paths:
+  - reviews/amd_2026_011/planning/ARCHITECT_PLAN.md

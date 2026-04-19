@@ -1,0 +1,106 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "aios_voice_first_ui_artifact_kit_standard_001",
+  "document": "reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AIOS-SPEC-006",
+      "AMD-2026-007",
+      "AMD-2026-012",
+      "AMD-2026-008-ADD-004",
+      "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+      "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AIOS-SPEC-006",
+        "path": "specifications/UIComponentRegistryStandard.md",
+        "bytes": 15946,
+        "version": "1.3.0",
+        "registry_id": null,
+        "mtime_utc": 1776463739.3700595
+      },
+      {
+        "document_id": "AMD-2026-007",
+        "path": "amendments/AMD-2026-007.md",
+        "bytes": 28235,
+        "version": "0.2.1",
+        "registry_id": null,
+        "mtime_utc": 1776448101.164464
+      },
+      {
+        "document_id": "AMD-2026-012",
+        "path": "amendments/AMD-2026-012.md",
+        "bytes": 24571,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775593831.7785966
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-004",
+        "path": "amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md",
+        "bytes": 28221,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775765164.5528097
+      },
+      {
+        "document_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "path": "reference/implementation/AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001.md",
+        "bytes": 9479,
+        "version": "0.2.0",
+        "registry_id": null,
+        "mtime_utc": 1776463728.8645334
+      },
+      {
+        "document_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "path": "reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md",
+        "bytes": 11104,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776459847.8024323
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "openai",
+    "gemini"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 24424,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 35198,
+      "estimated_prompt_tokens_user": 1987,
+      "estimated_prompt_tokens_total": 37185,
+      "output_path": "reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_001_openai__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 8885,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 35192,
+      "estimated_prompt_tokens_user": 1987,
+      "estimated_prompt_tokens_total": 37179,
+      "output_path": "reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_002_gemini__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md"
+    }
+  ]
+}

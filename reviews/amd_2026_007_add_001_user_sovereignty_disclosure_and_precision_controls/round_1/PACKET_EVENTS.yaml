@@ -1,0 +1,30 @@
+packet_schema_version: '2'
+document_id: AMD-2026-007-ADD-001
+packet_slug: amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls
+events:
+- event_id: evt-20260417T222019Z-001
+  timestamp: '2026-04-17T22:20:19Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/peer_review_manifest_20260417T222019Z.json
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_001_openai__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_002_gemini__AMD-2026-007-ADD-001.md
+- event_id: evt-20260417T230908Z-002
+  timestamp: '2026-04-17T23:09:08Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/peer_review_manifest_20260417T230908Z.json
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_001_openai__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_002_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_003_openai__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_004_gemini__AMD-2026-007-ADD-001.md

@@ -1,0 +1,46 @@
+surface_id: aios_kb_review_surface
+title: AIOS knowledge-base review surface
+navigation_mode: intent_driven
+sections:
+  - intent: review.overview
+    title: System overview
+    artifact: reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md
+  - intent: review.provenance
+    title: Planner drift provenance
+    artifact: reference/implementation/AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001.md
+  - intent: review.inventory
+    title: Affected artifact inventory
+    artifact: reference/implementation/AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001.md
+  - intent: review.roles
+    title: Roles and toolchains
+    artifact: reference/implementation/AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001.md
+  - intent: review.schemas
+    title: Schema, route, and storage inventory
+    artifact: reference/implementation/AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001.md
+  - intent: review.shell_plan
+    title: Shell-first governing plan
+    artifact: reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+  - intent: review.shell_phase_1
+    title: Phase 1 shell authority surfaces
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - intent: review.shell_phase_2
+    title: Phase 2 account and identity surfaces
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md
+  - intent: review.shell_phase_3
+    title: Phase 3 document and folder baseline
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - intent: review.shell_phase_4
+    title: Phase 4 voice-lane and agent controls
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md
+  - intent: review.templates
+    title: Neutral template source of truth
+    artifact: templates/governance_system/README.md
+  - intent: review.packets
+    title: Role attachments and lane packets
+    artifact: reference/knowledge_base/review_surface/ROLE_ATTACHMENTS.yaml
+  - intent: review.approval
+    title: Approval status
+    artifact: reference/knowledge_base/review_surface/REVIEW_STATUS.yaml
+  - intent: review.interface
+    title: Review interface model
+    artifact: reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md

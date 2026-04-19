@@ -1,0 +1,88 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks",
+  "document": "amendments/AMD-2026-008-ADD-005-voice-first-rendered-session-proof-and-artifact-checks.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-008",
+      "AMD-2026-008-ADD-004",
+      "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+      "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-008",
+        "path": "amendments/AMD-2026-008.md",
+        "bytes": 13893,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775688061.750659
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-004",
+        "path": "amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md",
+        "bytes": 28221,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775765164.5528097
+      },
+      {
+        "document_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "path": "reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md",
+        "bytes": 4517,
+        "version": "0.1.1",
+        "registry_id": null,
+        "mtime_utc": 1776463777.1412978
+      },
+      {
+        "document_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+        "path": "reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md",
+        "bytes": 8004,
+        "version": "0.2.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.1765406
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "openai",
+    "gemini"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 18361,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 19495,
+      "estimated_prompt_tokens_user": 1622,
+      "estimated_prompt_tokens_total": 21117,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_1/review_001_openai__AMD-2026-008-ADD-005.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 9345,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 19489,
+      "estimated_prompt_tokens_user": 1622,
+      "estimated_prompt_tokens_total": 21111,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_1/review_002_gemini__AMD-2026-008-ADD-005.md"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate",
+  "document": "amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md",
+  "review_round": 2,
+  "rubric": "light",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-008",
+      "AMD-2026-008-ADD-001",
+      "AMD-2026-008-ADD-002",
+      "AMD-2026-008-ADD-003",
+      "AIOS-AMD-PLAN-001",
+      "AMD-2026-011",
+      "AIOS-SPEC-013",
+      "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+      "AIOS-SPEC-009",
+      "AIOS-SPEC-006",
+      "MPOA"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-008",
+        "path": "amendments/AMD-2026-008.md",
+        "bytes": 13893,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775688061.750659
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-001",
+        "path": "amendments/AMD-2026-008-ADD-001-base-shell-navigation-primitives-and-start-here-control.md",
+        "bytes": 4464,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1775673533.5075166
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-002",
+        "path": "amendments/AMD-2026-008-ADD-002-verbose-grounding-shell-voice-output-and-output-packaging.md",
+        "bytes": 27050,
+        "version": "0.13.0",
+        "registry_id": null,
+        "mtime_utc": 1775675239.3678381
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-003",
+        "path": "amendments/AMD-2026-008-ADD-003-composition-control-plane-messages-invites-documents.md",
+        "bytes": 90921,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775686613.3691335
+      },
+      {
+        "document_id": "AIOS-AMD-PLAN-001",
+        "path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
+        "bytes": 7319,
+        "version": "1.0.3",
+        "registry_id": null,
+        "mtime_utc": 1775711338.2682257
+      },
+      {
+        "document_id": "AMD-2026-011",
+        "path": "amendments/AMD-2026-011.md",
+        "bytes": 12618,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775540249.5344868
+      },
+      {
+        "document_id": "AIOS-SPEC-013",
+        "path": "specifications/ExternalRepositoryAcquisitionAnalysisAndPromotion.md",
+        "bytes": 8082,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775540249.5574598
+      },
+      {
+        "document_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "path": "reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md",
+        "bytes": 3775,
+        "version": "0.1.1",
+        "registry_id": null,
+        "mtime_utc": 1775692327.4429374
+      },
+      {
+        "document_id": "AIOS-SPEC-009",
+        "path": "specifications/IntentPrimitiveAndExecutionModel.md",
+        "bytes": 44863,
+        "version": "0.5.7",
+        "registry_id": null,
+        "mtime_utc": 1775670733.002278
+      },
+      {
+        "document_id": "AIOS-SPEC-006",
+        "path": "specifications/UIComponentRegistryStandard.md",
+        "bytes": 15046,
+        "version": "1.3.0",
+        "registry_id": null,
+        "mtime_utc": 1775539839.7847657
+      },
+      {
+        "document_id": "MPOA",
+        "path": "core/master_platform_operating_agreement.md",
+        "bytes": 10334,
+        "version": "3.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.070498
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini"
+  ],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_path": "reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_001_deepseek__AMD-2026-008-ADD-004.md",
+      "output_chars": 10939,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 76477,
+      "estimated_prompt_tokens_user": 6854,
+      "estimated_prompt_tokens_total": 83331
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_path": "reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_002_openai__AMD-2026-008-ADD-004.md",
+      "output_chars": 25369,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 76482,
+      "estimated_prompt_tokens_user": 6854,
+      "estimated_prompt_tokens_total": 83336
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_path": "reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_2/review_003_gemini__AMD-2026-008-ADD-004.md",
+      "output_chars": 9296,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 76475,
+      "estimated_prompt_tokens_user": 6854,
+      "estimated_prompt_tokens_total": 83329
+    }
+  ]
+}

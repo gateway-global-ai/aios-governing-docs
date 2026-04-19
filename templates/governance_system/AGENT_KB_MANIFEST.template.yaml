@@ -1,0 +1,31 @@
+label: <lane_label>
+packet_id: <packet_id>
+role: architect | ui | committee | peer_review | ratification | systems_manual
+description: >
+  Declared knowledge packet for one lane. This template carries metadata and
+  path structure only.
+review_intents:
+  - review.overview
+  - review.roles
+  - review.templates
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: false
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: false
+  product_evidence:
+    required: false
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+reports_and_snapshots:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance
+  - unrelated_default_manifest

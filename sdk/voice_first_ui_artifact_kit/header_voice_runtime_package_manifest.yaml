@@ -1,0 +1,73 @@
+package_id: header_voice_runtime_package
+version: 0.1.0
+status: draft
+package_scope: header_voice_runtime
+summary: >
+  Downstream handoff bundle for systems adopting the governed AI OS header voice runtime.
+  Covers the shell authority surfaces, voice route files, host transport, environment
+  variables, proof expectations, and deployment sequence needed to ship the package as
+  one traceable unit.
+governing_docs:
+  - document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+    path: reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+  - document_id: AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
+    path: reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md
+  - document_id: AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
+    path: reference/implementation/AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001.md
+runtime_files:
+  shell_integration:
+    - src/App.tsx
+    - src/components/shell/ShellIdentityBar.tsx
+    - src/components/shell/ShellSystemControls.tsx
+    - src/components/shell/VoiceControlPanel.tsx
+  voice_routes:
+    - src/core/io/GeminiVoiceEngine.ts
+    - src/core/io/BrowserVoiceEngine.ts
+    - src/core/io/SovereignVoiceEngine.ts
+    - src/core/io/VoiceboxClient.ts
+    - src/core/io/voiceRoutePreference.ts
+  host_transport:
+    - src/api/geminiGateway.ts
+    - server/geminiServe.ts
+    - server/prodHost.ts
+    - vite/localModelPlugin.ts
+  optional_local_personalization:
+    - local Voice Box voice profiles and transcript-to-audio assets kept outside governed manifests unless intentionally promoted
+env_vars:
+  - name: GEMINI_API_KEY
+    required_when: Gemini route is enabled
+    description: Host-owned Gemini credential used by the same-origin gateway. Must not be exposed to the browser bundle.
+  - name: GEMINI_LIVE_MODEL
+    required_when: Gemini live TTS route is enabled and the deployment overrides the default model
+    description: Optional host override for the Gemini live audio model used for streamed speech.
+    default: models/gemini-2.5-flash-native-audio-preview-12-2025
+  - name: GEMINI_VOICE_NAME
+    required_when: Gemini route is enabled and the deployment wants a non-default voice
+    description: Optional Gemini voice selection for the host-owned speech route.
+  - name: AIOS_VOICE_INTERFACE_ROOT
+    required_when: operators regenerate cross-repo product context bundles from the governing repo
+    description: Optional local path override used by governance scripts that assemble voice-interface context.
+proof_expectations:
+  - proof_id: header_surface_proof
+    description: Show the governed header authority surface with the disclosure plate and system-control entry visible.
+  - proof_id: header_control_proof
+    description: Show microphone, speaker, playback, and cue-drawer controls behaving from the header without silent secondary dispatch.
+  - proof_id: voice_route_state_proof
+    description: Show the active route label and runtime summary updating when switching among Gemini, local system voice, and Voice Box.
+  - proof_id: local_sovereignty_proof
+    description: Show that at least one non-API local speech route remains usable when Gemini is unavailable.
+  - proof_id: gemini_gateway_boundary_proof
+    description: Show that Gemini credentials terminate on the host and that the browser uses the same-origin gateway rather than bundling the key.
+deployment_steps:
+  - step: 1
+    action: Install the governed shell integration files and keep the header as the visible authority surface for playback, cue, microphone, and speaker controls.
+  - step: 2
+    action: Install the governed voice route files so the system retains Gemini, local baseline, and local personalized lane support rather than collapsing to a single engine.
+  - step: 3
+    action: Configure the host transport path and ensure Gemini calls terminate through the same-origin gateway if the Gemini route is offered.
+  - step: 4
+    action: Set required environment variables on the host only. Do not expose Gemini credentials to browser code or client-side build defines.
+  - step: 5
+    action: Verify that the local baseline route works without internet access and that the local personalized route remains operator-side when deployed.
+  - step: 6
+    action: Capture the required header, control, state, and sovereignty proofs before claiming conformance to the governed header voice runtime package.

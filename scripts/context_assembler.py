@@ -18,14 +18,21 @@ load_dotenv(BASE_DIR / ".env")
 # Repo-local secrets (e.g. Cursor workspace); overrides .env for the same keys.
 load_dotenv(BASE_DIR / ".env.local", override=True)
 # Optional: share LLM keys with ai-os-voice-interface (single .env.local in Apps).
-# override=True so newer keys in .env.local win over stale copies in governing_docs/.env.
-_voice_env = BASE_DIR.parent / "ai-os-voice-interface" / ".env.local"
-if _voice_env.exists():
-    load_dotenv(_voice_env, override=True)
+# Support both a sibling checkout and the top-level C:/Apps workspace layout.
+_voice_env_candidates = [
+    BASE_DIR.parent / "ai-os-voice-interface" / ".env.local",
+    BASE_DIR.parents[3] / "ai-os-voice-interface" / ".env.local",
+]
+for _voice_env in _voice_env_candidates:
+    if _voice_env.exists():
+        load_dotenv(_voice_env, override=True)
+        break
 
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+MINIMAX_API_KEY = os.getenv("MINIMAX_API_KEY")
 
 CORE_DOCS = {
     "technical_manifesto": BASE_DIR / "core" / "technical_manifesto.md",
@@ -299,7 +306,8 @@ def get_doc_slug(doc_path: str) -> str:
 def find_reviews(doc_path: str, review_round: int | None = None) -> list[str]:
     """Find existing peer reviews for prior-round context (e.g. Round 2 prompt).
 
-    When ``review_round`` is set, only loads files named ``review_<NNN>_<model>.md``.
+    When ``review_round`` is set, only loads files matching ``review_<NNN>_*.md``
+    (including ``review_<NNN>_<model>__<DOCUMENT_ID>.md``).
     If more than three index values exist (historical triads), only the **latest triad**
     (three highest **NNN** values) is included so prompts stay within model context limits
     (e.g. DeepSeek 131k) while still giving Round 2 models the most recent triangulation.
@@ -355,6 +363,28 @@ def read_existing_specs() -> str:
         content = read_file(f)
         parts.append(f"### {f.stem}\n\n{content}")
     return "\n\n---\n\n".join(parts)
+
+
+def read_governing_front_matter_dict(rel_path: str) -> dict:
+    """Parse YAML front matter from a governed markdown file under BASE_DIR. Returns {} on failure."""
+    path = BASE_DIR / rel_path.replace("\\", "/")
+    if not path.is_file():
+        return {}
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    if not text.startswith("---"):
+        return {}
+    end = text.find("\n---", 3)
+    if end == -1:
+        return {}
+    block = text[3:end]
+    try:
+        data = yaml.safe_load(block)
+        return data if isinstance(data, dict) else {}
+    except yaml.YAMLError:
+        return {}
 
 
 def get_next_review_number(doc_path: str, review_round: int) -> int:
@@ -458,10 +488,61 @@ async def call_gemini(system_prompt: str, user_prompt: str, model: str | None = 
     return response.text
 
 
+async def call_claude(
+    system_prompt: str,
+    user_prompt: str,
+    model: str | None = None,
+    *,
+    max_tokens: int = 8192,
+) -> str:
+    from anthropic import AsyncAnthropic
+
+    resolved = model or os.environ.get("CLAUDE_PEER_REVIEW_MODEL", "claude-sonnet-4-20250514")
+    client = AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    response = await client.messages.create(
+        model=resolved,
+        max_tokens=max_tokens,
+        temperature=0.3,
+        system=system_prompt,
+        messages=[
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+    return "".join(
+        block.text for block in response.content if getattr(block, "type", None) == "text"
+    )
+
+
+async def call_minimax(
+    system_prompt: str,
+    user_prompt: str,
+    model: str | None = None,
+    *,
+    max_tokens: int = 8192,
+) -> str:
+    from openai import AsyncOpenAI
+
+    resolved = model or os.environ.get("MINIMAX_PEER_REVIEW_MODEL", "MiniMax-M2.5")
+    base_url = os.environ.get("MINIMAX_BASE_URL", "https://api.minimax.io/v1")
+    client = AsyncOpenAI(api_key=MINIMAX_API_KEY, base_url=base_url)
+    response = await client.chat.completions.create(
+        model=resolved,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
+        max_tokens=max_tokens,
+        temperature=0.3,
+    )
+    return response.choices[0].message.content
+
+
 MODEL_CALLERS = {
     "deepseek": call_deepseek,
     "openai": call_openai,
     "gemini": call_gemini,
+    "claude": call_claude,
+    "minimax": call_minimax,
 }
 
 
@@ -487,13 +568,24 @@ async def call_models_parallel(
 
 
 def save_review(doc_path: str, review_round: int, model_name: str, content: str) -> Path:
-    """Save a review to the appropriate location and return the path."""
+    """Save a review to the appropriate location and return the path.
+
+    Filenames include ``__{document_id}`` after the model name so the same
+    basename (e.g. ``review_001_deepseek.md``) cannot be confused across amendments
+    when files are attached outside their ``reviews/<slug>/`` folder.
+    """
     slug = get_doc_slug(doc_path)
     num = get_next_review_number(doc_path, review_round)
     round_dir = BASE_DIR / "reviews" / slug / f"round_{review_round}"
     round_dir.mkdir(parents=True, exist_ok=True)
 
-    filename = f"review_{num:03d}_{model_name}.md"
+    fm = read_governing_front_matter_dict(doc_path)
+    doc_id = (fm.get("document_id") or "").strip()
+    if not doc_id:
+        doc_id = Path(doc_path.replace("\\", "/")).stem
+    # Safe filename segment (Windows-safe)
+    safe_id = re.sub(r"[^A-Za-z0-9._-]", "_", doc_id)
+    filename = f"review_{num:03d}_{model_name}__{safe_id}.md"
     out_path = round_dir / filename
     out_path.write_text(content, encoding="utf-8")
     return out_path

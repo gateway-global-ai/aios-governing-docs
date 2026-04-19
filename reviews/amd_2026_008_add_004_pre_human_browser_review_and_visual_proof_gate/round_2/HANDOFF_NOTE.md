@@ -17,8 +17,9 @@
 ## Operational reminders
 
 - Round 1 remains the historical review record for assessed **`draft` `0.2.0`** under `../round_1/`.
-- This `round_2/` packet targets current doctrine head **`draft` `0.3.0`**.
-- No Round 2 reviews, synthesis, gate report, or manifest are present yet by design; the next governed action is to run `peer_review.py --round 2`.
+- This `round_2/` packet assessed current doctrine head **`draft` `0.3.0`**.
+- Round 2 execution is complete in this folder: triad reviews, manifest, synthesis, and gate report are present.
+- The Round 2 gate result is **FAIL**; the governed next step is **revision**, not ratification or Round 1 reopening.
 
 ---
 

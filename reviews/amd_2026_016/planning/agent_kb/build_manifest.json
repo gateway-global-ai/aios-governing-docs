@@ -1,0 +1,113 @@
+{
+  "label": "amd_2026_016_nonhuman_principals_lane",
+  "packet_id": "PKT-AMD-2026-016-PLANNING",
+  "role": "architect",
+  "generated": "2026-04-10",
+  "generated_at": "2026-04-10T11:57:23Z",
+  "manifest_path": "reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml",
+  "bundle_path": "reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md",
+  "corpus_directory": "reviews/amd_2026_016/planning/agent_kb",
+  "review_intents": [
+    "review.overview",
+    "review.schemas",
+    "review.routes",
+    "review.storage"
+  ],
+  "files": [
+    {
+      "path": "core/technical_manifesto.md",
+      "status": "ok",
+      "bytes": 11903
+    },
+    {
+      "path": "core/governance_constitution.md",
+      "status": "ok",
+      "bytes": 9284
+    },
+    {
+      "path": "core/master_platform_operating_agreement.md",
+      "status": "ok",
+      "bytes": 10334
+    },
+    {
+      "path": "amendments/AMD-2026-007.md",
+      "status": "ok",
+      "bytes": 28235
+    },
+    {
+      "path": "amendments/AMD-2026-012.md",
+      "status": "ok",
+      "bytes": 24571
+    },
+    {
+      "path": "amendments/AMD-2026-013.md",
+      "status": "ok",
+      "bytes": 18637
+    },
+    {
+      "path": "amendments/AMD-2026-016.md",
+      "status": "ok",
+      "bytes": 25037
+    },
+    {
+      "path": "specifications/PolicyRecord.md",
+      "status": "ok",
+      "bytes": 12205
+    },
+    {
+      "path": "specifications/IntentPrimitiveAndExecutionModel.md",
+      "status": "ok",
+      "bytes": 44863
+    },
+    {
+      "path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
+      "status": "ok",
+      "bytes": 8411
+    },
+    {
+      "path": "reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md",
+      "status": "ok",
+      "bytes": 23847
+    },
+    {
+      "path": "reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md",
+      "status": "ok",
+      "bytes": 15842
+    },
+    {
+      "path": "reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_SCHEMA_ROUTE_STORAGE_MAP.md",
+      "status": "ok",
+      "bytes": 4596
+    },
+    {
+      "path": "reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_CONTROLS_MATRIX.md",
+      "status": "ok",
+      "bytes": 3354
+    },
+    {
+      "path": "reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_BASELINE_GAP_MAP.md",
+      "status": "ok",
+      "bytes": 4270
+    },
+    {
+      "path": "reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md",
+      "status": "ok",
+      "bytes": 18609
+    },
+    {
+      "path": "reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md",
+      "status": "ok",
+      "bytes": 13470
+    },
+    {
+      "path": "reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md",
+      "status": "ok",
+      "bytes": 12181
+    },
+    {
+      "path": "reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md",
+      "status": "ok",
+      "bytes": 12417
+    }
+  ]
+}

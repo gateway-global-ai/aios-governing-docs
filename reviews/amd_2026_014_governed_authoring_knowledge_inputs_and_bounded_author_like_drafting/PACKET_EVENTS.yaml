@@ -1,0 +1,105 @@
+amendment_id: AMD-2026-014
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+events:
+  - event_id: evt-20260409T000000Z-014-001
+    timestamp: '2026-04-09T00:00:00Z'
+    actor: governance_phase_1_packet_backbone
+    event_type: packet_created
+    summary: Created the canonical packet root for AMD-2026-014 so the lane has one authoritative governed review home.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/README.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/PACKET_IDENTITY.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/PACKET_STATUS.yaml
+  - event_id: evt-20260409T000001Z-014-002
+    timestamp: '2026-04-09T00:00:01Z'
+    actor: governance_phase_1_packet_backbone
+    event_type: round_1_opened
+    summary: Opened round_1 as the active governed review round and established validator-ready round artifacts.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_IDENTITY.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_EVENTS.yaml
+  - event_id: evt-20260409T205500Z-014-003
+    timestamp: '2026-04-09T20:55:00Z'
+    actor: governance_phase_1_synthesis
+    event_type: review_synthesis_completed
+    summary: Completed the Round 1 synthesis for the frozen authored triad and concluded that AMD-2026-014 is not ready for ratification as-is.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/REVIEW_SYNTHESIS.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_deepseek__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_openai__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_gemini__AMD-2026-014.md
+  - event_id: evt-20260409T205600Z-014-004
+    timestamp: '2026-04-09T20:56:00Z'
+    actor: governance_phase_1_gate_closeout
+    event_type: gate_report_completed
+    summary: Completed the Round 1 gate report and recorded a failed gate outcome requiring revision before another peer-review round.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/RATIFICATION_GATE_REPORT.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_EVENTS.yaml
+  - event_id: evt-20260409T223000Z-014-005
+    timestamp: '2026-04-09T22:30:00Z'
+    actor: governance_phase_1_expanded_round_closeout
+    event_type: review_synthesis_completed
+    summary: Rewrote the Round 1 synthesis to reflect the completed expanded five-review set for draft 0.1.1 and preserved the failed-gate revision posture.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/REVIEW_SYNTHESIS.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_006_gemini__AMD-2026-014.md
+  - event_id: evt-20260409T223001Z-014-006
+    timestamp: '2026-04-09T22:30:01Z'
+    actor: governance_phase_1_expanded_round_closeout
+    event_type: gate_report_completed
+    summary: Rewrote the Round 1 gate report to reflect the completed expanded five-review set and confirmed that AMD-2026-005 thresholds are still not met.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/RATIFICATION_GATE_REPORT.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_EVENTS.yaml
+  - event_id: evt-20260409T224400Z-014-007
+    timestamp: '2026-04-09T22:44:00Z'
+    actor: governance_phase_1_author_revision
+    event_type: amendment_revised
+    summary: Revised AMD-2026-014 from draft 0.1.1 to draft 0.1.2 against the completed Round 1 expanded-review findings and logged the accepted delta in revision_log.md.
+    evidence_paths:
+      - amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/revision_log.md
+  - event_id: evt-20260409T224633Z-014-008
+    timestamp: '2026-04-09T22:46:33Z'
+    actor: peer_review.py
+    event_type: round_2_opened
+    summary: Opened round_2 and completed the standard triad peer review for draft 0.1.2 with DeepSeek, OpenAI, and Gemini.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/PACKET_IDENTITY.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/PACKET_STATUS.yaml
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/peer_review_manifest_20260409T224633Z.json
+  - event_id: evt-20260409T225000Z-014-009
+    timestamp: '2026-04-09T22:50:00Z'
+    actor: governance_phase_1_round_2_closeout
+    event_type: review_synthesis_completed
+    summary: Rewrote the packet synthesis to reflect the Round 2 pass on draft 0.1.2 and the ratification-ready disposition.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/REVIEW_SYNTHESIS.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_001_deepseek__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_002_openai__AMD-2026-014.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_003_gemini__AMD-2026-014.md
+  - event_id: evt-20260409T225100Z-014-010
+    timestamp: '2026-04-09T22:51:00Z'
+    actor: governance_phase_1_round_2_closeout
+    event_type: gate_report_completed
+    summary: Rewrote the packet gate report to reflect the Round 2 AMD-2026-005 pass and ratification-ready posture.
+    evidence_paths:
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/RATIFICATION_GATE_REPORT.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/PACKET_STATUS.yaml
+  - event_id: evt-20260409T225500Z-014-011
+    timestamp: '2026-04-09T22:55:00Z'
+    actor: governance_phase_1_round_2_ratification_closeout
+    event_type: ratification_motion_executed
+    summary: Executed the AMD-2026-014 ratification motion, promoted the amendment to ratified 1.0.0, and closed the packet as historical pre-ratification evidence.
+    evidence_paths:
+      - amendments/AMD-2026-014-ratification-motion.md
+      - amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+      - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/PACKET_STATUS.yaml

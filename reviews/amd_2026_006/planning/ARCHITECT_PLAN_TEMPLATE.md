@@ -1,58 +1,69 @@
-# Architect plan — AMD-2026-006 / AIOS-SPEC-007 (draft)
+# Architect plan — `<document_id>` (draft)
 
 **Date:** YYYY-MM-DD  
-**Evidence used:** `product_context_bundle.md` (date); `CURRENT_SYSTEM_RESEARCH_*.md` (date)  
-**Verifier:** _name / role_
+**Knowledge packet:** `reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml`  
+**Verifier:** `TBD`
 
 ---
 
 ## 1. Executive summary
 
-_3–6 sentences: governed routing stack, MCP boundary, what is in scope for this ratification._
+Summarize the architecture-bearing decision this lane is trying to resolve, what governing inputs shaped it, and what the planner believes is the intended system posture.
 
 ---
 
-## 2. Current system grounding (file-cited)
+## 2. Declared grounding
 
-| Topic | Repo path(s) | Notes |
-|-------|--------------|--------|
-| Phase 1 intents | `src/workspace/intentRegistry.ts` | |
-| Intent → scope class | `src/workspace/scopeClasses.ts` | |
-| Intent → MCP tool | `src/workspace/mcpIntentToolMap.ts` | |
-| ICP entry | `src/workspace/integrationControlPlane.ts` | `runWorkspaceControlPlane` |
-| Canvas views | `src/shellCanvas/canvasTypes.ts`, `workspaceIntentRouter.ts` | |
-| HTTP host | `server/prodHost.ts` | |
+| Input class | Source path | Why it matters |
+|-------------|-------------|----------------|
+| Constitutional / philosophy root | | |
+| Amendment under review | | |
+| Coupled implementation reference | | |
+| Product evidence, if required | | |
 
 ---
 
-## 3. Schemas (normative targets for SPEC / annex)
+## 3. Schemas and data contracts
 
-_JSON Schema fragments or tables for: routing envelope, audit fields, optional config — align with **AIOS-SPEC-009** / **AIOS-SPEC-010** where referenced._
+Describe the schemas, envelopes, controlled values, and field-ownership rules that this lane depends on.
 
----
-
-## 4. Routes (intent → surface → control plane)
-
-_Table: `workspace.*` intent → canvas view → scope class → policy check → MCP tool name._
+| Surface | Contract / schema | Status | Notes |
+|---------|-------------------|--------|-------|
+| | | | |
 
 ---
 
-## 5. Storage / session / tokens
+## 4. Routes and decision flow
 
-_Where OAuth tokens live (memory vs server), MCP session headers, env vars — **no secrets** in client bundles for production claims._
+Describe how intent, role, review state, or execution flow moves through the system for this lane.
+
+| From | To | Gate / rule | Notes |
+|------|----|-------------|-------|
+| | | | |
 
 ---
 
-## 6. Gaps vs governing text
+## 5. Storage, state, and persistence
 
-| Gap | AMD/SPEC § | Proposed resolution |
-|-----|------------|---------------------|
+Describe state ownership, append-only records, mutable status records, retained evidence, and any runtime or repo-local storage assumptions.
+
+| State surface | Owner | Durability | Notes |
+|---------------|-------|------------|-------|
+| | | | |
+
+---
+
+## 6. Gaps vs governing intent
+
+| Gap | Governing source | Proposed resolution |
+|-----|------------------|---------------------|
 | | | |
 
 ---
 
 ## 7. Verification checklist
 
-- [ ] Every **SHALL** in **AIOS-SPEC-007** §2–3 maps to a **file** or **explicit deferral**.
-- [ ] No **invented** path — all **src/** references verified in repo.
-- [ ] **Diff** reviewed against **`main`** (or stated branch).
+- [ ] Every claim is traceable to declared packet inputs.
+- [ ] No lane-specific doctrine was inherited from another amendment lane.
+- [ ] Schema, route, and storage sections reflect the actual target lane rather than a reused scaffold.
+- [ ] Open questions are labeled explicitly rather than hidden in implied assumptions.

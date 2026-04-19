@@ -1,0 +1,110 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks",
+  "document": "amendments/AMD-2026-008-ADD-005-voice-first-rendered-session-proof-and-artifact-checks.md",
+  "review_round": 2,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-008",
+      "AMD-2026-008-ADD-004",
+      "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+      "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-008",
+        "path": "amendments/AMD-2026-008.md",
+        "bytes": 13893,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775688061.750659
+      },
+      {
+        "document_id": "AMD-2026-008-ADD-004",
+        "path": "amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md",
+        "bytes": 28221,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775765164.5528097
+      },
+      {
+        "document_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "path": "reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md",
+        "bytes": 4517,
+        "version": "0.1.1",
+        "registry_id": null,
+        "mtime_utc": 1776463777.1412978
+      },
+      {
+        "document_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+        "path": "reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md",
+        "bytes": 8004,
+        "version": "0.2.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.1765406
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "deepseek",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_chars": 11135,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 24278,
+      "estimated_prompt_tokens_user": 3240,
+      "estimated_prompt_tokens_total": 27518,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2/review_017_deepseek__AMD-2026-008-ADD-005.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 7300,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 24276,
+      "estimated_prompt_tokens_user": 3240,
+      "estimated_prompt_tokens_total": 27516,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2/review_018_gemini__AMD-2026-008-ADD-005.md"
+    },
+    {
+      "model_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "output_chars": 7586,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 24285,
+      "estimated_prompt_tokens_user": 3240,
+      "estimated_prompt_tokens_total": 27525,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2/review_019_claude__AMD-2026-008-ADD-005.md"
+    },
+    {
+      "model_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "output_chars": 15663,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 24286,
+      "estimated_prompt_tokens_user": 3240,
+      "estimated_prompt_tokens_total": 27526,
+      "output_path": "reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2/review_020_minimax__AMD-2026-008-ADD-005.md"
+    }
+  ]
+}

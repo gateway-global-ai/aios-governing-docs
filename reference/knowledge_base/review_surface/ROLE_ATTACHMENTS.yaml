@@ -1,0 +1,57 @@
+roles:
+  - role: systems_manual
+    artifact: reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md
+    packet: reference/knowledge_base/agents/agent_kb_manifest.yaml
+    authority_status: draft_reference
+  - role: architect_planner_amd_2026_006
+    artifact: reviews/amd_2026_006/planning/ARCHITECT_PLAN.md
+    packet: reviews/amd_2026_006/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: historical_but_declared_packet_present
+  - role: architect_planner_amd_2026_011
+    artifact: reviews/amd_2026_011/planning/ARCHITECT_PLAN.md
+    packet: reviews/amd_2026_011/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: quarantined_pending_regeneration
+  - role: architect_planner_amd_2026_013
+    artifact: reviews/amd_2026_013/planning/ARCHITECT_PLAN.md
+    packet: reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: quarantined_pending_regeneration
+  - role: architect_planner_amd_2026_015
+    artifact: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+    packet: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: quarantined_pending_regeneration
+  - role: shell_governing_plan
+    artifact: reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+    packet: reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/PACKET_STATUS.yaml
+    authority_status: human_approved_reference
+  - role: shell_phase_1_authority_packet
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md
+    packet: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/README.md
+    authority_status: round_1_failed_revision_required
+  - role: shell_phase_2_account_identity_packet
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md
+    packet: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/README.md
+    authority_status: draft_phase_packet_pending_review
+  - role: shell_phase_3_document_folder_packet
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+    packet: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/README.md
+    authority_status: round_1_failed_revision_required
+  - role: shell_phase_4_voice_agent_packet
+    artifact: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md
+    packet: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/README.md
+    authority_status: draft_phase_packet_pending_review
+  - role: ui_planner
+    artifact: templates/governance_system/UI_PLAN_TEMPLATE.md
+    packet: reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: draft_producing_only
+  - role: committee_review
+    artifact: templates/governance_system/COMMITTEE_PACKET_TEMPLATE.md
+    packet: reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml
+    authority_status: advisory_pre_peer_review
+  - role: peer_review
+    artifact: templates/governance_system/PEER_REVIEW_TEMPLATE.md
+    packet: reviews/<slug>/round_<N>/peer_review_manifest_<timestamp>.json
+    authority_status: binding_when_run_under_amd_2026_005
+  - role: ratification_support
+    artifact: templates/governance_system/RATIFICATION_MOTION_TEMPLATE.md
+    packet: reviews/<slug>/ratification/
+    authority_status: manual_constitutional_seam

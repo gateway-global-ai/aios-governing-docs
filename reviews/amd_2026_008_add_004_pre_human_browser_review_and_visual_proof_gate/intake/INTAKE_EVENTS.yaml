@@ -1,0 +1,14 @@
+intake_schema_version: '1'
+document_id: AMD-2026-008-ADD-004
+amendment_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
+events:
+- event_id: evt-001
+  timestamp: '2026-04-09T03:04:34Z'
+  actor: stage2_scaffold
+  event_type: intake_initialized
+  from_state: ''
+  to_state: intake_open
+  summary: Intake scaffold initialized for amendment orchestration.
+  evidence_paths:
+  - amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md
+  - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/intake

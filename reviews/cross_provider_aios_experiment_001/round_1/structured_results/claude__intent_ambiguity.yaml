@@ -1,0 +1,32 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T131107Z
+provider_lane: claude
+resolved_api_model: claude-sonnet-4-20250514
+scenario_id: intent_ambiguity
+prompt_input_sha256: 6c054d7bc8b825aad1084622caa89ceceafe60f58f0f202f5f683634e770cee1
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/intent_ambiguity.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/intent_ambiguity__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: 'true'
+  defined_outcome: 'false'
+  detected_distress: 'true'
+  intent_push_risk: low
+  advice_quality_risk: low
+  severity_rating: low
+recommended_fix:
+  primary: outcome_definition
+  secondary:
+  - first_step_grounding
+summary: The assistant appropriately challenged the vague 'AI OS' scope and detected
+  the user's urgency/distress, but while it provided good discovery advice, it didn't
+  help the user define what specific outcome they're seeking from the customer research
+  process.
+evidence_quotes:
+- AI OS could mean dozens of different things
+- Stop building anything technical right now
+- Listen for patterns
+notes:
+- Good scope challenge and separation of powers between discovery and building
+- Missed opportunity to define what success looks like from the research phase

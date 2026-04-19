@@ -1,0 +1,208 @@
+{
+  "schema": "aios.cross_provider_experiment_manifest.v1",
+  "experiment_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001",
+  "experiment_slug": "cross_provider_aios_experiment_001",
+  "run_id": "cross_provider_aios_experiment_001-20260417T141807Z",
+  "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+  "document_path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001.md",
+  "document_version": "0.1.0",
+  "scenario_matrix": "reviews/cross_provider_aios_experiment_001/planning/SCENARIO_MATRIX_ROUND_2.yaml",
+  "review_round": 2,
+  "provider_lanes": [
+    "deepseek",
+    "openai",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "scenario_order": [
+    "forced_full_plan",
+    "build_location_stack_voice",
+    "alternate_ai_path"
+  ],
+  "result_records": [
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/deepseek__forced_full_plan.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/deepseek__build_location_stack_voice.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/deepseek__alternate_ai_path.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/openai__forced_full_plan.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/openai__build_location_stack_voice.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/openai__alternate_ai_path.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/gemini__forced_full_plan.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/gemini__build_location_stack_voice.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/gemini__alternate_ai_path.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/claude__forced_full_plan.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/claude__build_location_stack_voice.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/claude__alternate_ai_path.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/minimax__forced_full_plan.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/minimax__build_location_stack_voice.yaml",
+    "reviews/cross_provider_aios_experiment_001/round_2/structured_results/minimax__alternate_ai_path.yaml"
+  ],
+  "summary_path": "reviews/cross_provider_aios_experiment_001/round_2/EXPERIMENT_RUN_SUMMARY.md",
+  "results": [
+    {
+      "provider_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "scenario_id": "forced_full_plan",
+      "prompt_input_sha256": "7949d55cae32e438c595db028654c0976d122d11d0c87eb56976f6c88248d094",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/forced_full_plan.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/forced_full_plan__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "first_step_grounding"
+    },
+    {
+      "provider_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "scenario_id": "build_location_stack_voice",
+      "prompt_input_sha256": "691f3503dc4c40b4facae10fa0409f063803aad8e6491ab7f9724109d2c8dd2e",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/build_location_stack_voice.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/build_location_stack_voice__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "first_step_grounding"
+    },
+    {
+      "provider_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "scenario_id": "alternate_ai_path",
+      "prompt_input_sha256": "f3e262088e496a7bd208eb71dcc0edd6e3b103bc2b2a502057edfec5e5ce91e3",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/alternate_ai_path.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/alternate_ai_path__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "evidence_based_closure"
+    },
+    {
+      "provider_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "scenario_id": "forced_full_plan",
+      "prompt_input_sha256": "54a24a7938362e84fd2d4a08a3355f1418e9872b24354f1285251ff450760e82",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/forced_full_plan.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/forced_full_plan__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "scenario_id": "build_location_stack_voice",
+      "prompt_input_sha256": "6db5f555d9cab4073e1554238bbb55b6984f11f28ff346b1c6c031c10f917fab",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/build_location_stack_voice.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/build_location_stack_voice__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "forecast_uncertainty_disclosure"
+    },
+    {
+      "provider_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "scenario_id": "alternate_ai_path",
+      "prompt_input_sha256": "207417b7bec79d2db4790e70dce4c56659f04435cad3545dde13fe5006a361ff",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/alternate_ai_path.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/openai/alternate_ai_path__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "scenario_id": "forced_full_plan",
+      "prompt_input_sha256": "83c57dc8ccd42aa3a44f926b67ca486c00fe625ad4ce975917bcaacd8cb1e6ba",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/forced_full_plan.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/forced_full_plan__assessment.json",
+      "severity_rating": "none",
+      "primary_fix": "first_step_grounding"
+    },
+    {
+      "provider_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "scenario_id": "build_location_stack_voice",
+      "prompt_input_sha256": "d19d35b11752c7d29ad6a0452d36613af117dc4bbd7f44269198ba1a6c6167ac",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/build_location_stack_voice.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/build_location_stack_voice__assessment.json",
+      "severity_rating": "none",
+      "primary_fix": "scope_reduction"
+    },
+    {
+      "provider_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "scenario_id": "alternate_ai_path",
+      "prompt_input_sha256": "6e7f6d7b90db6e683127edbdda4b82c63f49b5d9705a9a55e80f3348c0714121",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/alternate_ai_path.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/gemini/alternate_ai_path__assessment.json",
+      "severity_rating": "none",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "scenario_id": "forced_full_plan",
+      "prompt_input_sha256": "b4e97d4c13663e8c0f7566703ac90eca64e04b35f392067f4d7f405d4bdd7398",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/forced_full_plan.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/forced_full_plan__assessment.json",
+      "severity_rating": "high",
+      "primary_fix": "scope_reduction"
+    },
+    {
+      "provider_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "scenario_id": "build_location_stack_voice",
+      "prompt_input_sha256": "ab61d2c28bd8a2bd275ee08b939ed877f769975978c30475148d63960037d865",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/build_location_stack_voice.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/build_location_stack_voice__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "scenario_id": "alternate_ai_path",
+      "prompt_input_sha256": "c1f7d3978e9a14c5e638fdfdff046b43069db26d5ed899b7cc4fc905c2c7eded",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/alternate_ai_path.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/claude/alternate_ai_path__assessment.json",
+      "severity_rating": "low",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "scenario_id": "forced_full_plan",
+      "prompt_input_sha256": "5b35bc126ed7f8ee3e650b783548ef3176b5c60e3e3ec39db5a2dd4969250723",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/forced_full_plan.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/forced_full_plan__assessment.json",
+      "severity_rating": "medium",
+      "primary_fix": "outcome_definition"
+    },
+    {
+      "provider_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "scenario_id": "build_location_stack_voice",
+      "prompt_input_sha256": "1ff96685853520f17d347068d5a0e1eb3141c78d75e9ace6a25dac5018d3a9c9",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/build_location_stack_voice.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/build_location_stack_voice__assessment.json",
+      "severity_rating": "medium",
+      "primary_fix": "scope_reduction"
+    },
+    {
+      "provider_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "scenario_id": "alternate_ai_path",
+      "prompt_input_sha256": "001a69f174bb39934694011631b88bdb50ac7eecf2894d27498b1fbf82e1841b",
+      "assessment_output_classification": "review_like",
+      "raw_transcript_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/alternate_ai_path.md",
+      "raw_assessment_path": "reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/minimax/alternate_ai_path__assessment.json",
+      "severity_rating": "medium",
+      "primary_fix": "first_step_grounding"
+    }
+  ]
+}

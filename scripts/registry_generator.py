@@ -15,6 +15,7 @@ SCAN_DIRS = [
     "commercial",
     "amendments",
     "reference",
+    "reference/knowledge_base/articles",
     "reference/implementation",
     "legal",
     "operations",

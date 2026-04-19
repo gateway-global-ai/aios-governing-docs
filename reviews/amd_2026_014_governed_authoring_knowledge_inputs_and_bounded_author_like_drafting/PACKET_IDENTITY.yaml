@@ -1,0 +1,18 @@
+amendment_id: AMD-2026-014
+document_id: AMD-2026-014
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+packet_purpose: Close AMD-2026-014 from draft doctrine into a fully governed review and ratification trace.
+governing_doc_path: amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+implementation_support_paths:
+  - reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md
+  - reference/knowledge_base/agents/style/JT_EDITORIAL_STYLE_CARD.md
+  - reference/knowledge_base/agents/style/JT_NARRATION_STYLE_CARD.md
+  - reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
+  - reference/knowledge_base/agents/style/JT_EDITORIAL_REQUIRED_KNOWLEDGE_MANIFEST.yaml
+  - reference/knowledge_base/agents/style/JT_NARRATION_REQUIRED_KNOWLEDGE_MANIFEST.yaml
+  - modelfiles/jt_authoring_agent.Modelfile
+  - scripts/ollama_authoring_agent.py
+current_round: round_2
+authoritative_packet_root: reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+legacy_helper_paths:
+  - reviews/governed_authoring_knowledge_package_2026-04-09

@@ -1,9 +1,62 @@
 # Local Ollama planning agents (Architect → UI)
 
-This document is the **operator README** for the **pre-ratification planning** automation that uses a **local** [Ollama](https://ollama.com/) LLM and a **merged knowledge bundle** (governing documents + product snapshots + research reports). It implements **AIOS-AMD-PLAN-001** phases **B** and **C** in software-assisted form; **Phases D–F** (committee, author revision, binding peer review) are **not** automated here.
+This document is the **operator README** for the **pre-ratification planning** automation that uses a **local** [Ollama](https://ollama.com/) LLM and a **declared lane knowledge packet** plus a **merged knowledge bundle**. It implements **AIOS-AMD-PLAN-001** phases **B** and **C** in software-assisted form; **Phases D–F** (committee, author revision, binding peer review) are **not** automated here.
+
+The governed runway may also require a **pre-architecture discovery** lane before Architect planning. That discovery role should use the five-pass research family defined in `reference/knowledge_base/cursor_research_pack.md` when current-system structure must be mapped before schemas, routes, and storage/state planning can be trusted.
 
 **Binding lifecycle:** **[AIOS-AMD-PLAN-001](../../implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)**  
 **Parent KB overview:** **[`reference/knowledge_base/README.md`](../README.md)**
+
+---
+
+## Governed authoring inputs
+
+This folder now also contains a bounded **author-like** knowledge surface under:
+
+```text
+reference/knowledge_base/agents/style/
+```
+
+These artifacts are for governed drafting support only. They are **not** default planning authority and they do **not** silently change architect or UI runs.
+
+Bounded author-like inputs currently include:
+
+- `JT_EDITORIAL_STYLE_CARD.md`
+- `JT_NARRATION_STYLE_CARD.md`
+- `JT_AUTHORING_MODE_BOUNDARIES.md`
+- `JT_EDITORIAL_REQUIRED_KNOWLEDGE_MANIFEST.yaml`
+- `JT_EDITORIAL_SHELL_PLAN_REQUIRED_KNOWLEDGE_MANIFEST.yaml`
+- `JT_NARRATION_REQUIRED_KNOWLEDGE_MANIFEST.yaml`
+
+Rules:
+
+- style cards are advisory drafting inputs, not doctrine
+- author-like runs must use a declared manifest
+- raw discussion does not become required knowledge until converted into a governed repo artifact
+- architect/UI planning runs may use these artifacts only when an operator explicitly declares them as inputs for that run
+
+Example bounded authoring commands:
+
+```bash
+ollama create jt_authoring_agent -f modelfiles/jt_authoring_agent.Modelfile
+py -3 scripts/ollama_authoring_agent.py --mode editorial --prompt "Draft the requested piece." --dry-run
+py -3 scripts/ollama_authoring_agent.py --mode editorial --manifest reference/knowledge_base/agents/style/JT_EDITORIAL_SHELL_PLAN_REQUIRED_KNOWLEDGE_MANIFEST.yaml --prompt "Draft the shell-first governing plan." --output reviews/aios_shell_governing_document_and_artifact_plan_001/packet_2026-04-10/example_editorial_output.md
+py -3 scripts/ollama_authoring_agent.py --mode narration --prompt "Draft a narrated explainer." --include reference/knowledge_base/snapshots/product_context_bundle.md
+```
+
+Separated amendment revision loop example:
+
+```bash
+py -3 scripts/run_ollama_revision_loop.py --review-slug amd_2026_016 --manifest reference/knowledge_base/agents/style/JT_EDITORIAL_AMD_2026_016_REQUIRED_KNOWLEDGE_MANIFEST.yaml --step full --discovery-include reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md --discovery-include reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md --discovery-include reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md --discovery-include reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md --discovery-include reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md --research-include reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md --research-include reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md --research-include reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md --research-include reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md --research-include reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md --draft-include reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md --draft-include reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md --draft-include reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md --draft-include reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md --draft-include reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md
+```
+
+This wrapper exists so local `discovery`, `research`, and `drafting` passes can be benchmarked independently instead of collapsing coordinator, discoverer, drafter, and reviewer into one lane.
+
+Optional local media note:
+
+- a local voice-clone archive, such as a Voicebox zip provided by the operator, may be documented or used later as a runtime narration asset
+- it is not part of the governed knowledge bundle by default
+- it must not be added to required manifests as if it were doctrine or repo truth
 
 ---
 
@@ -28,6 +81,7 @@ The amendment pre-ratification lifecycle is **non‑normative** workflow guidanc
 
 | Phase | Name | This README covers |
 |-------|------|--------------------|
+| **A0** | Discovery | **Prerequisite when needed** — taxonomy-first discovery and, where required, pre-architecture five-pass discovery |
 | **A** | Evidence (product snapshot, research) | **Prerequisite** — refresh snapshot/research when stale; inputs to the bundle |
 | **B** | Architect | **`--role architect`** → `ARCHITECT_PLAN.md` |
 | **C** | UI | **`--role ui`** → `UI_PLAN.md` (needs Phase B output) |
@@ -42,7 +96,7 @@ The amendment pre-ratification lifecycle is **non‑normative** workflow guidanc
 ```mermaid
 flowchart TB
   subgraph inputs [Repository inputs]
-    M[agent_kb_manifest.yaml]
+    M[reviews or manual packet yaml]
     GD[Core / amendments / specs / policy index]
     PS[product_context_bundle.md]
     RS[Cursor research outputs e.g. CURRENT_SYSTEM_RESEARCH]
@@ -125,15 +179,16 @@ sequenceDiagram
 
 | Path | Role |
 |------|------|
-| [`agent_kb_manifest.yaml`](agent_kb_manifest.yaml) | YAML list of **relative paths** (from repo root) under `governing_documents` and `reports_and_snapshots`. Set `label` to identify the track (e.g. `amd_2026_006_workspace_track`). |
-| Paths referenced in the manifest | Typically: core law, relevant **AMD**s, **SPEC**s (e.g. Workspace integration, intent model, UI registry, execution scope), **[`AIOS_POLICY_INDEX.md`](../../AIOS_POLICY_INDEX.md)**, **[`product_context_bundle.md`](../snapshots/product_context_bundle.md)**, **[`CURRENT_SYSTEM_RESEARCH_*.md`](../cursor_research_outputs/)**. |
+| `reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml` | Default lane-specific planning packet. Architect/UI runs should declare one packet per lane rather than reusing another amendment's manifest. |
+| [`agent_kb_manifest.yaml`](agent_kb_manifest.yaml) | Neutral systems-foundation packet for manual review-surface or exploratory bundle builds. It is **not** the implicit manifest for unrelated architect/UI lanes. |
+| Paths referenced in the packet | Typically: core law, relevant **AMD**s, relevant **SPEC**s / implementation references, and product evidence only when the lane actually depends on runtime state. |
 
 ### 4.2 Scripts (repository root)
 
 | Script | Purpose |
 |--------|---------|
-| [`scripts/build_agent_kb.py`](../../../scripts/build_agent_kb.py) | Concatenates manifest paths into one markdown file + JSON manifest. Warns on missing paths. |
-| [`scripts/ollama_planning_agent.py`](../../../scripts/ollama_planning_agent.py) | Loads corpus + templates + prompts; calls Ollama; writes `ARCHITECT_PLAN.md` or `UI_PLAN.md`. |
+| [`scripts/build_agent_kb.py`](../../../scripts/build_agent_kb.py) | Concatenates manifest paths into one markdown file + JSON manifest. Warns on missing paths. Intake lanes now write lane-local outputs by passing `--output-dir reviews/<slug>/planning/agent_kb`. |
+| [`scripts/ollama_planning_agent.py`](../../../scripts/ollama_planning_agent.py) | Loads the built corpus + copied planning templates + prompts; calls Ollama; writes `ARCHITECT_PLAN.md` or `UI_PLAN.md` plus a `.run_record.json` file recording the selected manifest and bundle. |
 | [`scripts/generate_product_context_bundle.py`](../../../scripts/generate_product_context_bundle.py) | Refreshes product excerpt when Phase A evidence is stale (often run from or alongside the product repo workflow — see [`../README.md`](../README.md)). |
 
 ### 4.3 Prompts (system messages)
@@ -145,23 +200,32 @@ sequenceDiagram
 
 ### 4.4 Per-review planning artifacts (templates and outputs)
 
-Under **`reviews/<amd-slug>/planning/`** (example: **`amd_2026_006`**):
+Under **`reviews/<amd-slug>/planning/`** (example: **`amd_2026_013`**):
 
 | File | Role |
 |------|------|
+| `KNOWLEDGE_PACKET.yaml` | Declared lane-specific source set for the bundle build and later human review. |
 | `ARCHITECT_PLAN_TEMPLATE.md` | Input shape for the Architect agent. |
 | `UI_PLAN_TEMPLATE.md` | Input shape for the UI agent. |
+| `agent_kb/government_and_reports_bundle.md` | Lane-local knowledge bundle built from `KNOWLEDGE_PACKET.yaml`. |
+| `agent_kb/build_manifest.json` | Lane-local machine-readable KB build record used for correspondence and freshness checks. |
 | **`ARCHITECT_PLAN.md`** | **Written** by `--role architect` (draft). |
+| `ARCHITECT_PLAN.md.run_record.json` | Run record for the architect draft. |
 | **`UI_PLAN.md`** | **Written** by `--role ui` (draft). |
+| `UI_PLAN.md.run_record.json` | Run record for the UI draft. |
 
-**`--amd-slug`** must match the folder name under `reviews/` (underscores, e.g. `amd_2026_006`).
+The template files are copied from [`templates/governance_system/`](../../../templates/governance_system/), which is the neutral planner-template source-of-truth.
 
-### 4.5 Generated corpus (local build; gitignored)
+**`--amd-slug`** must match the folder name under `reviews/`.
+
+### 4.5 Generated corpus (local build)
 
 | Path | Role |
 |------|------|
-| [`corpus/government_and_reports_bundle.md`](corpus/government_and_reports_bundle.md) | Single markdown file: concatenation of all manifest sources with section headers. **Do not hand-edit** — regenerate with `build_agent_kb.py`. |
-| [`corpus/build_manifest.json`](corpus/build_manifest.json) | Machine-readable list of included files, sizes, `ok` / `missing`. |
+| `reviews/<slug>/planning/agent_kb/government_and_reports_bundle.md` | Default governed planning bundle for a specific lane. **Do not hand-edit** — regenerate with `build_agent_kb.py --output-dir reviews/<slug>/planning/agent_kb`. |
+| `reviews/<slug>/planning/agent_kb/build_manifest.json` | Lane-local machine-readable list of included files, sizes, `ok` / `missing`. |
+| [`corpus/government_and_reports_bundle.md`](corpus/government_and_reports_bundle.md) | Optional neutral/global corpus path for manual exploratory runs outside a governed lane. |
+| [`corpus/build_manifest.json`](corpus/build_manifest.json) | Matching optional neutral/global build record. |
 
 See [`.gitignore`](.gitignore). Operators should **run the builder** after changing the manifest or any included source file.
 
@@ -179,9 +243,9 @@ See [`.gitignore`](.gitignore). Operators should **run the builder** after chang
    `ollama pull llama3.2`  
    Use `ollama list` to confirm the name.
 
-4. **Bundle built** before any agent run:  
-   `py -3 scripts/build_agent_kb.py`  
-   If the command reports missing paths, fix the manifest or restore files.
+4. **Bundle built** before any agent run from the lane packet you intend to use:  
+   `py -3 scripts/build_agent_kb.py --manifest reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml --output-dir reviews/<slug>/planning/agent_kb`  
+   If the command reports missing paths, fix the packet or restore files.
 
 5. **Phase A** (recommended): If the Workspace/product picture is outdated, regenerate **`product_context_bundle.md`** per [`../README.md`](../README.md), then rebuild the agent KB.
 
@@ -193,13 +257,13 @@ See [`.gitignore`](.gitignore). Operators should **run the builder** after chang
 
 - Regenerate **`reference/knowledge_base/snapshots/product_context_bundle.md`** if `ai-os-voice-interface` has changed materially.
 - Update or add **Cursor research** outputs if you are tracking a new research pass.
-- If you add new paths, edit **`agent_kb_manifest.yaml`** and rebuild.
+- If you add or remove lane inputs, update that lane's **`KNOWLEDGE_PACKET.yaml`** and rebuild.
 
 ### Step 2 — Build the knowledge bundle
 
 ```bash
 # From aios-governing-docs repository root
-py -3 scripts/build_agent_kb.py
+py -3 scripts/build_agent_kb.py --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml
 ```
 
 Optional:
@@ -213,19 +277,22 @@ Confirm console output: path to `government_and_reports_bundle.md` and character
 ### Step 3 — Architect (Phase B)
 
 ```bash
-py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_006
+py -3 scripts/build_agent_kb.py --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --output-dir reviews/amd_2026_013/planning/agent_kb
+py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_013 --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --bundle reviews/amd_2026_013/planning/agent_kb/government_and_reports_bundle.md
 ```
 
-- **Writes:** `reviews/amd_2026_006/planning/ARCHITECT_PLAN.md`.
+- **Writes:** `reviews/amd_2026_013/planning/ARCHITECT_PLAN.md`.
+- **Also writes:** `reviews/amd_2026_013/planning/ARCHITECT_PLAN.md.run_record.json`.
 - **Dry run (no Ollama call):** add `--dry-run` to print prompt sizes.
 
 ### Step 4 — UI (Phase C)
 
 ```bash
-py -3 scripts/ollama_planning_agent.py --role ui --amd-slug amd_2026_006
+py -3 scripts/ollama_planning_agent.py --role ui --amd-slug amd_2026_013 --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --bundle reviews/amd_2026_013/planning/agent_kb/government_and_reports_bundle.md
 ```
 
 - **Requires:** `ARCHITECT_PLAN.md` from Step 3.
+- **Also writes:** `reviews/amd_2026_013/planning/UI_PLAN.md.run_record.json`.
 - **Escape hatch:** `--force` runs UI without an architect file (not recommended). The user message includes an explicit note that no architect plan was provided.
 
 ### Step 5 — Human verification
@@ -241,8 +308,9 @@ py -3 scripts/ollama_planning_agent.py --role ui --amd-slug amd_2026_006
 | Argument | Description |
 |----------|-------------|
 | `--role architect \| ui` | **Required.** Architect runs first; UI consumes Architect output. |
-| `--amd-slug <name>` | Folder under `reviews/<name>/planning/`. Default in code: `amd_2026_006`. |
-| `--bundle PATH` | Override default corpus path (default: `reference/knowledge_base/agents/corpus/government_and_reports_bundle.md`). |
+| `--amd-slug <name>` | Folder under `reviews/<name>/planning/`. Required explicitly so the runner does not default to another lane. |
+| `--bundle PATH` | Bundle path for the run. Governed intake lanes should point this at `reviews/<slug>/planning/agent_kb/government_and_reports_bundle.md`. |
+| `--manifest PATH` | Declared manifest used to build the selected bundle. Included in the run record for review traceability. |
 | `--dry-run` | Do not call Ollama; print KB size and prompt character counts. |
 | `--force` | **UI role only.** Proceed without `ARCHITECT_PLAN.md`. |
 
@@ -298,7 +366,7 @@ Use **`--dry-run`** to see **system** and **user** prompt sizes before spending 
 | Tool | Relationship |
 |------|----------------|
 | **`peer_review.py`** | **Binding** triangulated review with optional `--product-context`. Planning agents **do not** replace peer review. |
-| **`generate_product_context_bundle.py`** | Feeds **Phase A** snapshot that often **is** included in `agent_kb_manifest.yaml`. |
+| **`generate_product_context_bundle.py`** | Feeds **Phase A** snapshot when the selected lane packet declares product evidence. |
 | **Governance integrity CI** | Uses minimal `requirements.governance-integrity.txt`; **does not** install Ollama or run these agents. |
 
 ---
@@ -307,15 +375,15 @@ Use **`--dry-run`** to see **system** and **user** prompt sizes before spending 
 
 ```bash
 py -3 -m pip install -r scripts/requirements.txt
-py -3 scripts/build_agent_kb.py
-py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_006
-py -3 scripts/ollama_planning_agent.py --role ui --amd-slug amd_2026_006
+py -3 scripts/build_agent_kb.py --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --output-dir reviews/amd_2026_013/planning/agent_kb
+py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_013 --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --bundle reviews/amd_2026_013/planning/agent_kb/government_and_reports_bundle.md
+py -3 scripts/ollama_planning_agent.py --role ui --amd-slug amd_2026_013 --manifest reviews/amd_2026_013/planning/KNOWLEDGE_PACKET.yaml --bundle reviews/amd_2026_013/planning/agent_kb/government_and_reports_bundle.md
 ```
 
 Dry run:
 
 ```bash
-py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_006 --dry-run
+py -3 scripts/ollama_planning_agent.py --role architect --amd-slug amd_2026_013 --dry-run
 ```
 
 ---

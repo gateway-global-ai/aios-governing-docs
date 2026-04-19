@@ -13,7 +13,12 @@ Usage:
       # after: py -3 scripts/generate_product_context_bundle.py
 
 Env (optional): OPENAI_PEER_REVIEW_MODEL (default gpt-5.4), GEMINI_PEER_REVIEW_MODEL,
-  DEEPSEEK_PEER_REVIEW_MODEL (default deepseek-chat). Each run writes peer_review_manifest_*.json under reviews/<slug>/round_N/.
+  DEEPSEEK_PEER_REVIEW_MODEL (default deepseek-chat), CLAUDE_PEER_REVIEW_MODEL
+  (default claude-sonnet-4-20250514), MINIMAX_PEER_REVIEW_MODEL
+  (default MiniMax-M2.5). Each run writes peer_review_manifest_*.json
+  PACKET_IDENTITY.yaml, PACKET_STATUS.yaml, PACKET_EVENTS.yaml, and optional HANDOFF_NOTE.md
+  under reviews/<slug>/round_N/. Review files are named
+  review_<NNN>_<model>__<DOCUMENT_ID>.md so attachments cannot be confused across amendments.
 """
 
 import argparse
@@ -35,15 +40,28 @@ from context_assembler import (
     product_context_bundle_info,
     classify_peer_review_output,
     get_doc_slug,
+    read_governing_front_matter_dict,
+)
+from review_packet_taxonomy import (
+    append_packet_events_peer_review,
+    ensure_default_handoff_note,
+    infer_amd_2026_005_gate_from_round_dir,
+    merge_and_write_packet_status,
+    write_packet_identity_v2,
 )
 
 ROUND_1_MODELS = ["openai", "gemini"]
 ROUND_2_MODELS = ["deepseek", "openai", "gemini"]
+EXPANDED_MODELS = ["deepseek", "openai", "gemini", "claude", "minimax"]
+FALLBACK_MODELS = ["claude", "minimax"]
+ALL_MODELS = ["deepseek", "openai", "gemini", "claude", "minimax"]
 
 REVIEWER_FOCUS = {
     "deepseek": "Your primary focus is TECHNICAL/ARCHITECTURAL RIGOR.",
     "openai": "Your primary focus is EDITORIAL CLARITY and CROSS-DOCUMENT COHERENCE.",
     "gemini": "Your primary focus is LEGAL/COMPLIANCE GAPS.",
+    "claude": "Your primary focus is GOVERNANCE PRECISION, FAILURE MODES, and POLICY EDGE CASES.",
+    "minimax": "Your primary focus is OPERABILITY, IMPLEMENTATION GAPS, and ACTIONABLE REMEDIATION.",
 }
 
 
@@ -66,7 +84,54 @@ def _resolved_api_model(model_name: str) -> str:
         return os.environ.get("GEMINI_PEER_REVIEW_MODEL", "gemini-2.5-pro")
     if model_name == "deepseek":
         return os.environ.get("DEEPSEEK_PEER_REVIEW_MODEL", "deepseek-chat")
+    if model_name == "claude":
+        return os.environ.get("CLAUDE_PEER_REVIEW_MODEL", "claude-sonnet-4-20250514")
+    if model_name == "minimax":
+        return os.environ.get("MINIMAX_PEER_REVIEW_MODEL", "MiniMax-M2.5")
     return model_name
+
+
+def _is_error_output(content: str) -> bool:
+    return content.strip().startswith("[ERROR:")
+
+
+async def _execute_review_batch(
+    prompts: dict[str, tuple[str, str]],
+    models: list[str],
+) -> tuple[dict[str, str], list[dict]]:
+    print("Sending to models in parallel...")
+    tasks = {}
+    for model_name in models:
+        sys_p, usr_p = prompts[model_name]
+        caller = MODEL_CALLERS[model_name]
+        tasks[model_name] = asyncio.create_task(caller(sys_p, usr_p))
+
+    results = {}
+    result_rows = []
+    for model_name, task in tasks.items():
+        sys_p, usr_p = prompts[model_name]
+        try:
+            content = await task
+            results[model_name] = content
+            print(f"  [{model_name}] Review received ({len(content)} chars)")
+        except Exception as e:
+            content = f"[ERROR: {e}]"
+            results[model_name] = content
+            print(f"  [{model_name}] ERROR: {e}")
+
+        result_rows.append(
+            {
+                "model_lane": model_name,
+                "resolved_api_model": _resolved_api_model(model_name),
+                "output_chars": len(content),
+                "output_classification": classify_peer_review_output(content),
+                "estimated_prompt_tokens_system": _rough_tokens(sys_p),
+                "estimated_prompt_tokens_user": _rough_tokens(usr_p),
+                "estimated_prompt_tokens_total": _rough_tokens(sys_p) + _rough_tokens(usr_p),
+            }
+        )
+
+    return results, result_rows
 
 
 def build_prompt(
@@ -149,9 +214,14 @@ async def run_review(
     rubric_override: str | None = None,
     smart_context: bool = False,
     product_context_arg: str | None = None,
+    expanded: bool = False,
+    fallback_unavailable: bool = False,
+    fallback_models_override: list[str] | None = None,
 ):
     rubric = rubric_override or ("full" if _is_core_doc(doc_path) else "full")
-    models = models_override or (ROUND_1_MODELS if review_round == 1 else ROUND_2_MODELS)
+    default_models = EXPANDED_MODELS if expanded else (ROUND_1_MODELS if review_round == 1 else ROUND_2_MODELS)
+    models = models_override or default_models
+    fallback_models = fallback_models_override or FALLBACK_MODELS
 
     print(f"\n{'='*60}")
     print(f"AIOS Peer Review — Round {review_round}")
@@ -175,41 +245,42 @@ async def run_review(
         )
         prompts[model] = (sys_prompt, user_prompt)
 
-    print("Sending to models in parallel...")
+    results, result_rows = await _execute_review_batch(prompts, models)
 
-    tasks = {}
-    for model_name in models:
-        sys_p, usr_p = prompts[model_name]
-        caller = MODEL_CALLERS[model_name]
-        tasks[model_name] = asyncio.create_task(caller(sys_p, usr_p))
+    if fallback_unavailable:
+        needed_successes = len(models)
+        successful_reviews = sum(1 for content in results.values() if not _is_error_output(content))
+        attempted = set(models)
+        fallback_candidates = [m for m in fallback_models if m not in attempted]
 
-    results = {}
-    for model_name, task in tasks.items():
-        try:
-            results[model_name] = await task
-            print(f"  [{model_name}] Review received ({len(results[model_name])} chars)")
-        except Exception as e:
-            results[model_name] = f"[ERROR: {e}]"
-            print(f"  [{model_name}] ERROR: {e}")
+        while successful_reviews < needed_successes and fallback_candidates:
+            fallback_model = fallback_candidates.pop(0)
+            print(f"Attempting fallback provider: {fallback_model}")
+            sys_prompt, user_prompt = build_prompt(
+                doc_path,
+                review_round,
+                fallback_model,
+                rubric=rubric,
+                smart_context=smart_context,
+                product_context_arg=product_context_arg,
+            )
+            prompts[fallback_model] = (sys_prompt, user_prompt)
+            fallback_results, fallback_rows = await _execute_review_batch(prompts, [fallback_model])
+            results.update(fallback_results)
+            result_rows.extend(fallback_rows)
+            attempted.add(fallback_model)
+            if not _is_error_output(fallback_results[fallback_model]):
+                successful_reviews += 1
 
     print("\nSaving reviews...")
-    result_rows = []
     for model_name, content in results.items():
         sys_p, usr_p = prompts[model_name]
         out_path = save_review(doc_path, review_round, model_name, content)
         print(f"  Saved: {out_path.relative_to(BASE_DIR)}")
-        result_rows.append(
-            {
-                "model_lane": model_name,
-                "resolved_api_model": _resolved_api_model(model_name),
-                "output_path": str(out_path.relative_to(BASE_DIR)).replace("\\", "/"),
-                "output_chars": len(content),
-                "output_classification": classify_peer_review_output(content),
-                "estimated_prompt_tokens_system": _rough_tokens(sys_p),
-                "estimated_prompt_tokens_user": _rough_tokens(usr_p),
-                "estimated_prompt_tokens_total": _rough_tokens(sys_p) + _rough_tokens(usr_p),
-            }
-        )
+        for row in result_rows:
+            if row["model_lane"] == model_name and "output_path" not in row:
+                row["output_path"] = str(out_path.relative_to(BASE_DIR)).replace("\\", "/")
+                break
 
     slug = get_doc_slug(doc_path)
     round_dir = BASE_DIR / "reviews" / slug / f"round_{review_round}"
@@ -228,10 +299,60 @@ async def run_review(
         "context_bundle": bundle_info,
         "product_context_bundle": prod_info,
         "models_requested": models,
+        "expanded_review": expanded,
+        "fallback_unavailable": fallback_unavailable,
+        "fallback_models": fallback_models if fallback_unavailable else [],
         "results": result_rows,
     }
     manifest_path.write_text(json.dumps(manifest_body, indent=2), encoding="utf-8")
     print(f"\nManifest: {manifest_path.relative_to(BASE_DIR)}")
+
+    fm = read_governing_front_matter_dict(doc_path)
+    doc_id = (fm.get("document_id") or "").strip() or Path(doc_path.replace("\\", "/")).stem
+    head_ver = str(fm.get("version") or "").strip()
+    manifest_rel = manifest_path.relative_to(BASE_DIR).as_posix()
+
+    gate, gate_summary = infer_amd_2026_005_gate_from_round_dir(round_dir)
+
+    write_packet_identity_v2(
+        round_dir,
+        BASE_DIR,
+        document_id=doc_id,
+        document_path=doc_path.replace("\\", "/"),
+        packet_slug=slug,
+        current_head_version=head_ver,
+        review_round=review_round,
+        manifest_rel=manifest_rel,
+        generated_by="peer_review.py",
+    )
+    print(f"Packet identity: {round_dir / 'PACKET_IDENTITY.yaml'}")
+
+    merge_and_write_packet_status(
+        round_dir,
+        document_id=doc_id,
+        packet_slug=slug,
+        current_head_version=head_ver,
+        last_reviewed_version=head_ver,
+        review_round=review_round,
+        gate=gate,
+        gate_summary=gate_summary,
+    )
+    print(f"Packet status: {round_dir / 'PACKET_STATUS.yaml'}")
+
+    append_packet_events_peer_review(
+        round_dir,
+        BASE_DIR,
+        document_id=doc_id,
+        packet_slug=slug,
+        from_version=head_ver,
+        reviewed_version=head_ver,
+        review_round=review_round,
+        gate=gate,
+        gate_summary=gate_summary,
+    )
+    print(f"Packet events appended: {round_dir / 'PACKET_EVENTS.yaml'}")
+
+    ensure_default_handoff_note(round_dir)
 
     print(f"\nRound {review_round} review complete.")
 
@@ -247,10 +368,28 @@ def main():
     parser.add_argument(
         "--models",
         nargs="+",
-        choices=["deepseek", "openai", "gemini"],
+        choices=ALL_MODELS,
         default=None,
         metavar="MODEL",
-        help="Override default Round 1/2 model lists (e.g. --models deepseek openai gemini)",
+        help="Override default Round 1/2 model lists (e.g. --models deepseek openai gemini claude minimax)",
+    )
+    parser.add_argument(
+        "--expanded",
+        action="store_true",
+        help="Run the expanded five-provider review set: deepseek, openai, gemini, claude, minimax.",
+    )
+    parser.add_argument(
+        "--fallback-unavailable",
+        action="store_true",
+        help="Backfill provider errors with additional fallback providers until the intended review count is met or fallbacks are exhausted.",
+    )
+    parser.add_argument(
+        "--fallback-models",
+        nargs="+",
+        choices=ALL_MODELS,
+        default=None,
+        metavar="MODEL",
+        help="Fallback providers to try in order when --fallback-unavailable is enabled (default: claude minimax).",
     )
     parser.add_argument(
         "--product-context",
@@ -273,6 +412,9 @@ def main():
         rubric_override=args.rubric,
         smart_context=args.smart_context,
         product_context_arg=args.product_context,
+        expanded=args.expanded,
+        fallback_unavailable=args.fallback_unavailable,
+        fallback_models_override=args.fallback_models,
     ))
 
 

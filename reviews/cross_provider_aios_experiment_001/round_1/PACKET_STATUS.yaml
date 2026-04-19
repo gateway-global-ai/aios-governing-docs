@@ -1,0 +1,11 @@
+document_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001
+packet_slug: cross_provider_aios_experiment_001
+current_head_version: 0.1.0
+last_reviewed_version: 0.1.0
+artifact_health: healthy
+review_gate_status: not_run
+committee_status: open
+next_action: peer_review_round_1
+lifecycle_phase: planning
+status_updated_at: '2026-04-17T13:11:07Z'
+status_updated_by: cross_provider_experiment.py

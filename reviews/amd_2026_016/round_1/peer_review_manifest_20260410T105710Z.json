@@ -1,0 +1,160 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_016",
+  "document": "amendments/AMD-2026-016.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": "default",
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-005",
+      "AMD-2026-007",
+      "AMD-2026-012",
+      "AMD-2026-013",
+      "AIOS-SPEC-002",
+      "AIOS-SPEC-009",
+      "AIOS-AMD-PLAN-001",
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+      "AIOS-REVIEW-PACKET-TAXONOMY-001"
+    ],
+    "missing_registry_ids": [
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001"
+    ],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-005",
+        "path": "amendments/AMD-2026-005.md",
+        "bytes": 10858,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.0563323
+      },
+      {
+        "document_id": "AMD-2026-007",
+        "path": "amendments/AMD-2026-007.md",
+        "bytes": 28235,
+        "version": "0.2.1",
+        "registry_id": null,
+        "mtime_utc": 1775607704.5096262
+      },
+      {
+        "document_id": "AMD-2026-012",
+        "path": "amendments/AMD-2026-012.md",
+        "bytes": 24571,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775593831.7785966
+      },
+      {
+        "document_id": "AMD-2026-013",
+        "path": "amendments/AMD-2026-013.md",
+        "bytes": 18637,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775628171.4273007
+      },
+      {
+        "document_id": "AIOS-SPEC-002",
+        "path": "specifications/PolicyRecord.md",
+        "bytes": 12205,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775272037.0905337
+      },
+      {
+        "document_id": "AIOS-SPEC-009",
+        "path": "specifications/IntentPrimitiveAndExecutionModel.md",
+        "bytes": 44863,
+        "version": "0.5.7",
+        "registry_id": null,
+        "mtime_utc": 1775670733.002278
+      },
+      {
+        "document_id": "AIOS-AMD-PLAN-001",
+        "path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
+        "bytes": 7785,
+        "version": "1.0.3",
+        "registry_id": null,
+        "mtime_utc": 1775808882.4122353
+      },
+      {
+        "document_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "path": "reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md",
+        "bytes": 8202,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775712773.9031944
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": true,
+    "path": "reference\\knowledge_base\\snapshots\\product_context_bundle.md",
+    "bytes": 83322,
+    "mtime_utc": 1775776995.8043413
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "expanded_review": true,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_chars": 8816,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 64915,
+      "estimated_prompt_tokens_user": 4150,
+      "estimated_prompt_tokens_total": 69065,
+      "output_path": "reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md"
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 17018,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 64919,
+      "estimated_prompt_tokens_user": 4150,
+      "estimated_prompt_tokens_total": 69069,
+      "output_path": "reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 10059,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 64913,
+      "estimated_prompt_tokens_user": 4150,
+      "estimated_prompt_tokens_total": 69063,
+      "output_path": "reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md"
+    },
+    {
+      "model_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "output_chars": 7252,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 64922,
+      "estimated_prompt_tokens_user": 4150,
+      "estimated_prompt_tokens_total": 69072,
+      "output_path": "reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md"
+    },
+    {
+      "model_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "output_chars": 13323,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 64922,
+      "estimated_prompt_tokens_user": 4150,
+      "estimated_prompt_tokens_total": 69072,
+      "output_path": "reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md"
+    }
+  ]
+}

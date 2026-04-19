@@ -1,0 +1,10 @@
+document_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001
+document_path: reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md
+packet_slug: aios_cross_provider_ai_os_experiment_round_2_report_001
+current_head_version: 0.1.0
+review_round: 1
+packet_path: reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1
+manifest_path: reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/peer_review_manifest_20260417T175331Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-17T17:53:31Z'

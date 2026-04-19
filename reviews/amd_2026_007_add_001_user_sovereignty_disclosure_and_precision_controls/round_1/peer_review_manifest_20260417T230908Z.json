@@ -1,0 +1,79 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls",
+  "document": "amendments/AMD-2026-007-ADD-001-user-sovereignty-disclosure-and-precision-controls.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-007",
+      "AIOS-SPEC-009",
+      "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-007",
+        "path": "amendments/AMD-2026-007.md",
+        "bytes": 28235,
+        "version": "0.2.1",
+        "registry_id": null,
+        "mtime_utc": 1776448101.164464
+      },
+      {
+        "document_id": "AIOS-SPEC-009",
+        "path": "specifications/IntentPrimitiveAndExecutionModel.md",
+        "bytes": 44863,
+        "version": "0.5.7",
+        "registry_id": null,
+        "mtime_utc": 1775670733.002278
+      },
+      {
+        "document_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "path": "reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md",
+        "bytes": 11104,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776459847.8024323
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "openai",
+    "gemini"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 411,
+      "output_classification": "api_error",
+      "estimated_prompt_tokens_system": 26748,
+      "estimated_prompt_tokens_user": 1773,
+      "estimated_prompt_tokens_total": 28521,
+      "output_path": "reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_003_openai__AMD-2026-007-ADD-001.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 9441,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 26742,
+      "estimated_prompt_tokens_user": 1773,
+      "estimated_prompt_tokens_total": 28515,
+      "output_path": "reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_1/review_004_gemini__AMD-2026-007-ADD-001.md"
+    }
+  ]
+}

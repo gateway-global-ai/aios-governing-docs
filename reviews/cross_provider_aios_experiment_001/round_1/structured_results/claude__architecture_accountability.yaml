@@ -1,0 +1,32 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T131107Z
+provider_lane: claude
+resolved_api_model: claude-sonnet-4-20250514
+scenario_id: architecture_accountability
+prompt_input_sha256: 4b70c308713c0ac6b35365f7bbd99824101af50e7d754c7a7fe830211ef53e09
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/architecture_accountability.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/claude/architecture_accountability__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: 'true'
+  defined_outcome: 'true'
+  detected_distress: 'false'
+  intent_push_risk: none
+  advice_quality_risk: none
+  severity_rating: none
+recommended_fix:
+  primary: first_step_grounding
+  secondary:
+  - outcome_definition
+summary: Strong response that directly addresses architectural governance concerns
+  with specific warning signs, control surface gaps, and measurement problems. Provides
+  concrete next steps and ends with a grounding question about specific user problems.
+evidence_quotes:
+- You're asking exactly the right questions
+- Pick one specific user workflow your AI OS should improve
+- What specific user problem were you planning to solve first?
+notes:
+- Excellent identification of separation of powers issues
+- Good progression from warning signs to actionable steps
+- Ends with scope-narrowing question

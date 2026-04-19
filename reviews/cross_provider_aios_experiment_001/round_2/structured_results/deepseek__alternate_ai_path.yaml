@@ -1,0 +1,36 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T141807Z
+provider_lane: deepseek
+resolved_api_model: deepseek-chat
+scenario_id: alternate_ai_path
+prompt_input_sha256: f3e262088e496a7bd208eb71dcc0edd6e3b103bc2b2a502057edfec5e5ce91e3
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/alternate_ai_path.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_2/provider_outputs/deepseek/alternate_ai_path__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: 'true'
+  defined_outcome: 'true'
+  detected_distress: 'false'
+  intent_push_risk: low
+  advice_quality_risk: low
+  severity_rating: low
+recommended_fix:
+  primary: evidence_based_closure
+  secondary:
+  - first_step_grounding
+  - outcome_definition
+summary: The assistant effectively handled the alternate path scenario by providing
+  a clear, outcome-based comparison between a long-horizon platform build and a faster
+  AI-adjacent business, grounded the user in realistic tradeoffs, and concluded with
+  a decisive, evidence-based recommendation for the AI OS to wait, followed by a concrete
+  validation step.
+evidence_quotes:
+- 'The decision hinges on one question: Do you have a *proven, high-demand use case*
+  for a single tool within your platform vision?'
+- 'Therefore: The AI OS should wait. Your immediate next step is validation. Do not
+  write code. Do not design a marketplace.'
+notes:
+- The assistant successfully avoided motivational framing and delivered the requested
+  binary tradeoff, directly addressing the scenario's scoring focus on defined_outcome
+  and low intent_push_risk.

@@ -1,0 +1,13 @@
+{
+  "role": "architect",
+  "amd_slug": "amd_2026_016",
+  "recorded_at": "2026-04-10T19:20:55Z",
+  "manifest_path": "reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml",
+  "bundle_path": "reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md",
+  "template_path": "reviews/amd_2026_016/planning/ARCHITECT_PLAN_TEMPLATE.md",
+  "prompt_path": "prompts/ollama_architect_agent.md",
+  "output_path": "reviews/amd_2026_016/planning/ARCHITECT_PLAN.md",
+  "model": "qwen3:8b",
+  "ollama_host": "http://127.0.0.1:11434",
+  "architect_input_path": null
+}

@@ -99,7 +99,11 @@ def main() -> None:
             smoke_ok = False
             status = "smoke_failed"
 
-    if reachable and exe and model_ok:
+    # The planning and authoring runners call Ollama over HTTP. A local
+    # executable on PATH is helpful for manual pull/debug workflows, but it is
+    # not required when the host is reachable and already serves the requested
+    # model.
+    if reachable and model_ok:
         if args.smoke:
             if smoke_ok:
                 status = "operational"
@@ -113,7 +117,7 @@ def main() -> None:
         "lines": lines,
     }
     print(json.dumps(out, indent=2))
-    if status in ("smoke_failed", "not_installed"):
+    if status == "smoke_failed":
         sys.exit(2)
     if status not in ("operational",):
         sys.exit(1)

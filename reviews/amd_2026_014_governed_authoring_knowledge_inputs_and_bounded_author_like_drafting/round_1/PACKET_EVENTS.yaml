@@ -1,0 +1,383 @@
+packet_schema_version: '2'
+document_id: AMD-2026-014
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+events:
+- event_id: evt-20260409T000001Z-014-r1-001
+  timestamp: '2026-04-09T00:00:01Z'
+  actor: governance_phase_1_packet_backbone
+  event_type: packet_initialized
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Opened the Round 1 packet path for AMD-2026-014 and established validator-ready
+    packet artifacts before live peer review execution.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_IDENTITY.yaml
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_packet_manifest_amd_2026_014_round_1.json
+- event_id: evt-20260409T204000Z-002
+  timestamp: '2026-04-09T20:40:00Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T204000Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014.md
+- event_id: evt-20260409T204042Z-003
+  timestamp: '2026-04-09T20:40:42Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T204042Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_gemini__AMD-2026-014.md
+- event_id: evt-20260409T204959Z-004
+  timestamp: '2026-04-09T20:49:59Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T204959Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_005_gemini__AMD-2026-014.md
+- event_id: evt-20260409T205100Z-005
+  timestamp: '2026-04-09T20:51:00Z'
+  actor: governance_phase_1_round_freeze
+  event_type: packet_status_corrected
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Archived the two provider-error Gemini retry files under retry_failures
+    and froze the active Round 1 review set to the authored triad review_001, review_002,
+    and review_005.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/README.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_005_gemini__AMD-2026-014.md
+- event_id: evt-20260409T205600Z-006
+  timestamp: '2026-04-09T20:56:00Z'
+  actor: governance_phase_1_gate_closeout
+  event_type: review_gate_failed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Round 1 gate failed because the completed triad did not satisfy AMD-2026-005
+    thresholds and the next governed step is a narrow author revision before another
+    review round.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/archive_draft_0.1.0_2026-04-09/review_005_gemini__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/REVIEW_SYNTHESIS.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/RATIFICATION_GATE_REPORT.md
+- event_id: evt-20260409T214311Z-007
+  timestamp: '2026-04-09T21:43:11Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T214311Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_002_gemini__AMD-2026-014__draft_0.1.1_retry_1.md
+- event_id: evt-20260409T214449Z-008
+  timestamp: '2026-04-09T21:44:49Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T214449Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+- event_id: evt-20260409T214601Z-009
+  timestamp: '2026-04-09T21:46:01Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T214601Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014__draft_0.1.1_retry_2.md
+- event_id: evt-20260409T214627Z-010
+  timestamp: '2026-04-09T21:46:27Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T214627Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014__draft_0.1.1_retry_3.md
+- event_id: evt-20260409T214712Z-011
+  timestamp: '2026-04-09T21:47:12Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T214712Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_003_gemini__AMD-2026-014__draft_0.1.1_retry_4.md
+- event_id: evt-20260409T215049Z-012
+  timestamp: '2026-04-09T21:50:49Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T215049Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+- event_id: evt-20260409T215158Z-013
+  timestamp: '2026-04-09T21:51:58Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T215158Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+- event_id: evt-20260409T215158Z-014
+  timestamp: '2026-04-09T21:51:58Z'
+  actor: peer_review.py
+  event_type: review_gate_failed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: AMD-2026-005 composite threshold not met (min composite 2.9; require ≥
+    3.5).
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T215158Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+- event_id: evt-20260409T215518Z-015
+  timestamp: '2026-04-09T21:55:18Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T215518Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_minimax__AMD-2026-014__auth_error.md
+- event_id: evt-20260409T215806Z-016
+  timestamp: '2026-04-09T21:58:06Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T215806Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_minimax__AMD-2026-014__auth_error_retry_2.md
+- event_id: evt-20260409T220139Z-017
+  timestamp: '2026-04-09T22:01:39Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220139Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_004_gemini__AMD-2026-014__expanded_retry_1.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+- event_id: evt-20260409T220254Z-018
+  timestamp: '2026-04-09T22:02:54Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220254Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__expanded_retry_2.md
+- event_id: evt-20260409T220621Z-019
+  timestamp: '2026-04-09T22:06:21Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220621Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__bounded_retry_2026-04-09T220621Z.md
+- event_id: evt-20260409T220700Z-020
+  timestamp: '2026-04-09T22:07:00Z'
+  actor: governance_gemini_retry_preserver
+  event_type: packet_status_corrected
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Preserved the latest bounded Gemini retry failure under retry_failures,
+    removed the transient error file from the active top-level review set, and kept
+    the expanded five-review target incomplete pending one valid Gemini-authored review.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220621Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__bounded_retry_2026-04-09T220621Z.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+- event_id: evt-20260409T220900Z-021
+  timestamp: '2026-04-09T22:09:00Z'
+  actor: governance_expanded_gemini_retry_preserver
+  event_type: packet_status_corrected
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Preserved the latest expanded-mode Gemini retry failure under retry_failures,
+    removed the transient error file from the active top-level review set, and kept
+    the expanded five-review target incomplete pending one valid Gemini-authored review.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220819Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__exp_220819.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+- event_id: evt-20260409T221000Z-022
+  timestamp: '2026-04-09T22:10:00Z'
+  actor: governance_expanded_gemini_retry_preserver
+  event_type: packet_status_corrected
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Preserved the latest expanded-mode Gemini retry failure under retry_failures,
+    removed the transient top-level Gemini error file from the active authored review
+    set, and kept the expanded five-review target incomplete.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220939Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__exp_220939.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/PACKET_STATUS.yaml
+- event_id: evt-20260409T220819Z-021
+  timestamp: '2026-04-09T22:08:19Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220819Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__exp_220819.md
+- event_id: evt-20260409T220939Z-023
+  timestamp: '2026-04-09T22:09:39Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T220939Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/retry_failures/review_006_gemini__AMD-2026-014__exp_220939.md
+- event_id: evt-20260409T222452Z-025
+  timestamp: '2026-04-09T22:24:52Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.1.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T222452Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_006_gemini__AMD-2026-014.md
+- event_id: evt-20260409T222452Z-026
+  timestamp: '2026-04-09T22:24:52Z'
+  actor: peer_review.py
+  event_type: review_gate_failed
+  from_version: 0.1.1
+  to_version: 0.1.1
+  round: 1
+  summary: AMD-2026-005 composite threshold not met (min composite 2.9; require ≥
+    3.5).
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/peer_review_manifest_20260409T222452Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_001_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_002_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_003_claude__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_005_minimax__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_1/review_006_gemini__AMD-2026-014.md

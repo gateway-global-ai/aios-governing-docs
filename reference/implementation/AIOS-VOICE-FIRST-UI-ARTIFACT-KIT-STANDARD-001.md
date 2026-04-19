@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
-version: 0.4.0
+version: 0.6.0
 status: draft
 category: specification
 title: Voice-first UI artifact kit standard
 author: Gateway Global AIOS
 created: 2026-04-17
-last_updated: 2026-04-17
+last_updated: 2026-04-18
 cross_references:
   - doc_id: AIOS-SPEC-006
     title: UI Component Registry Standard
@@ -59,6 +59,9 @@ The first governed shell artifact family is:
 
 - `Header`
 - `HeaderAttachedMenu`
+- `HeaderAudioPlayerCluster`
+- `HeaderCueDrawer`
+- `HeaderSystemControlPanel`
 - `Canvas`
 - `Footer`
 - `FooterUserMenu`
@@ -87,6 +90,9 @@ Shell artifacts define the structural authority frame for the session. Canvas ar
 |----------|---------|
 | `Header` | Shell authority, identity, disclosure, and global orientation surface. |
 | `HeaderAttachedMenu` | Deterministic system-shell menu surface anchored to the bottom of the header. |
+| `HeaderAudioPlayerCluster` | Bounded header control cluster for play or stop, mic, speaker, and cue inspection. |
+| `HeaderCueDrawer` | Header-attached drawer for current and queued shell-controlled audio plus nearby route handoff. |
+| `HeaderSystemControlPanel` | Top-right system panel that carries current voice-runtime state and deeper control handoff. |
 | `Canvas` | Primary voice-first workspace where the active session state is rendered. |
 | `Footer` | Action and navigation rail for close, back, and other governed controls. |
 | `FooterUserMenu` | Secondary user/PTT-adjacent menu surface for user-related actions only. |
@@ -164,6 +170,44 @@ The kit SHALL support a voice-first shell architecture in which:
 - overlays and cards support the active voice-led state
 - menus and dropdowns remain subordinate fallback surfaces
 
+## Header voice-runtime package rule
+
+The governed kit SHALL define one deployable header voice-runtime package for downstream systems that claim conformance to the voice-first shell model.
+
+That package SHALL include at minimum:
+
+- the `Header` authority surface,
+- the `HeaderAudioPlayerCluster`,
+- the `HeaderCueDrawer`,
+- the `HeaderSystemControlPanel`,
+- the `VoiceControlPanel` or governed successor for deeper route control,
+- the shell cue controller contract, and
+- the Gemini or equivalent governed voice runtime transport contract when the system offers cloud speech.
+
+Downstream systems MAY style or implement the package locally, but they SHALL retain governed artifact identifiers and SHALL deploy the package as one traceable set rather than cherry-picking hidden substitutes.
+
+## Package deployment contract
+
+When a system deploys the governed header voice-runtime package, the deployment contract SHALL preserve:
+
+- shell-owned playback, replay, mute, and stop authority,
+- visible header disclosure of current cue or playback state,
+- visible handoff from the header into deeper voice settings,
+- package-local traceability between runtime components and governed artifact identifiers, and
+- auditable reference to the governing standard and manifest that define the package.
+
+The package SHALL also expose a machine-readable downstream handoff manifest that records:
+
+- required runtime files,
+- host-only environment-variable boundaries,
+- proof expectations, and
+- minimum deployment steps.
+
+For the current release, that downstream handoff surface SHALL live at:
+
+- `sdk/voice_first_ui_artifact_kit/header_voice_runtime_package_manifest.yaml`
+- `sdk/voice_first_ui_artifact_kit/header_voice_runtime_package_manifest.schema.json`
+
 The kit SHALL NOT be used to justify dashboard-first planning, dropdown-first control flow, or menu-first session architecture.
 
 ## Multi-step card navigation rule
@@ -226,6 +270,10 @@ When an artifact from this kit is represented in the UI component registry:
 The normative schema for the first kit release SHALL live at:
 
 - `sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.schema.json`
+
+The downstream package handoff schema for the current governed header voice-runtime package SHALL live at:
+
+- `sdk/voice_first_ui_artifact_kit/header_voice_runtime_package_manifest.schema.json`
 
 The manifest and schema together are the machine-verifiable contract for kit identity, artifact vocabulary, and proof requirements.
 
