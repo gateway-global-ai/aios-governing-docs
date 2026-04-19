@@ -1332,7 +1332,7 @@
   {
     "document_id": "AIOS-KB-VOICE-RUNTIME-HEADER-GUIDE-001",
     "title": "AI OS Voice Runtime Lanes and Header Controls Guide",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "status": "draft",
     "category": "article",
     "_path": "reference/knowledge_base/articles/AIOS-VOICE-RUNTIME-LANES-AND-HEADER-CONTROLS-GUIDE.md",
@@ -2290,7 +2290,7 @@
   {
     "document_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
     "title": "AI OS Shell UI Layout and Component Standard",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001.md",
@@ -2929,7 +2929,7 @@
   {
     "document_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
     "title": "Voice-first UI artifact kit standard",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "status": "draft",
     "category": "specification",
     "_path": "reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md",
@@ -2963,7 +2963,7 @@
   {
     "document_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
     "title": "AI OS Voice TTS Architecture Standard",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md",

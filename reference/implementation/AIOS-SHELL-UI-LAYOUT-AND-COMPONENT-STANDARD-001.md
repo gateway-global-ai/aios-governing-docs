@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
-version: 0.3.0
+version: 0.4.0
 status: draft
 category: reference
 title: AI OS Shell UI Layout and Component Standard
 author: Gateway Global AIOS
 created: 2026-04-16
-last_updated: 2026-04-17
+last_updated: 2026-04-19
 cross_references:
   - doc_id: AIOS-SPEC-006
     title: UI Component Registry Standard
@@ -26,7 +26,7 @@ cross_references:
 
 # AI OS Shell UI Layout and Component Standard
 
-`AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001` — Draft v0.3.0
+`AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001` — Draft v0.4.0
 
 ---
 
@@ -133,15 +133,24 @@ All shell layers use named CSS custom properties. Raw z-index integers are prohi
 
 `ShellIdentityBar` is the shell disclosure surface and the operator-facing audio authority. It MUST:
 
-- remove redundant product naming inside the center disclosure card when that identity is already present elsewhere in shell chrome,
-- show model and loyalty disclosure as stacked crumbs of consistent size,
-- surface play or stop, mic enabled, speaker enabled, and cue-menu controls in the same bounded player cluster, and
-- show current cue or playback state in the disclosure plate rather than treating speech as invisible background behavior.
+- avoid centered disclosure bubbles or other redundant mid-header status plates when the same state can be conveyed through the bounded player cluster or menu surfaces,
+- keep model disclosure compact and subordinate to shell chrome rather than turning it into a second menu trigger,
+- surface play or stop, mic enabled, speaker enabled, cue-menu access, and the governed header system-menu trigger in the same bounded player cluster, and
+- reserve the right-side `LayoutGrid` trigger as the sole primary entry point into the header system shell menu.
+
+`HeaderCueDrawer` is a bounded cue-state surface. It MUST:
+
+- remain attached to `ShellIdentityBar`,
+- expose only current cue, queued cues, playback state, and closely related shell-audio status,
+- SHALL NOT duplicate voice-route switching or deeper settings actions that belong to `VoiceControlPanel` or the governed header menu, and
+- keep queued speech inspectable without turning the drawer into a second navigation surface.
 
 `ShellSystemControls` is the top-right system handoff surface for deeper shell controls. When the governed voice runtime is present, it MUST:
 
 - expose a current voice-runtime summary card while the system-controls panel is open,
 - show the active voice route and live shell-owned status rather than a detached settings-only entry point,
+- avoid competing with the header system shell menu for primary navigation ownership,
+- limit itself to account, summary, and bounded handoff duties unless later law explicitly expands that scope,
 - route deeper changes into `VoiceControlPanel.tsx` or other shell-root overlays through prop callbacks, and
 - remain subordinate to the shell cue controller in `App.tsx` for playback, queue, and mute authority.
 
@@ -176,7 +185,9 @@ Header menus SHALL:
 - render as header-attached overlays anchored to the bottom edge of `ShellIdentityBar`,
 - use governed menu records rather than ad hoc JSX placement,
 - declare template family, level count, content source type, and permission class,
-- remain shell-owned even when the content is proposed by a non-human principal through governed data.
+- remain shell-owned even when the content is proposed by a non-human principal through governed data,
+- use the right-side header `LayoutGrid` control as the only primary menu trigger, and
+- route shell destinations into voice-first Level 1 / Level 2 intent surfaces rather than dropping directly into feature-dense destination pages.
 
 #### Footer
 
@@ -246,8 +257,19 @@ All centered OS overlays use the full-backdrop + centered-card pattern:
 
 Dropdown positioning from header corners is prohibited for general navigation or system panels. The bounded exceptions are:
 
-- a governed cue drawer attached to `ShellIdentityBar` that exists only to expose current and queued shell audio plus closely related voice-route controls,
+- a governed cue drawer attached to `ShellIdentityBar` that exists only to expose current and queued shell audio plus cue-state disclosure,
 - a governed header-attached menu overlay that satisfies §4.7 and remains shell-owned.
+
+### 5.3 Top-aligned menu overlays
+
+When shell-menu-driven destination surfaces remain overlay-based, they SHALL preserve header clearance and visible shell ownership.
+
+Minimum requirements:
+
+- the overlay launch path SHALL originate from the governed header menu or another explicitly governed shell route,
+- overlays launched from those menu routes SHALL align to the top rather than centering by default,
+- top-aligned overlays SHALL preserve `padding-top` that clears `--shell-header-height`, and
+- destination surfaces such as Voice Control, Voice Box, Appearance, and System Configuration SHALL expose a Level 1 intent menu plus a focused Level 2 pane instead of a flat long-form control dump.
 
 ---
 
@@ -261,7 +283,9 @@ Agents and developers making changes to shell UI components SHALL:
 4. Use layout tokens (`--shell-header-height`, `--shell-footer-height`) for all spacing
 5. Route protected shell menus through governed menu records rather than ad hoc menu placement
 6. Keep the header as the primary system-shell menu zone and the footer as a secondary user/PTT zone
-7. Reference `AIOS-SPEC-006` for component registration requirements
+7. Keep cue drawers cue-only and prevent them from becoming secondary settings menus
+8. Use top-aligned overlay posture for shell-menu-driven destination surfaces that remain overlay-based
+9. Reference `AIOS-SPEC-006` for component registration requirements
 
 Violations of §3.2 (prohibited styling patterns), §4.7 (deterministic shell menu contract), or §5.1 (stacking context trap) constitute UI governance failures and MUST be remediated before any related build is approved per AMD-2026-008-ADD-004.
 

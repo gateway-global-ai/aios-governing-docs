@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001
-version: 0.3.0
+version: 0.4.0
 status: draft
 category: reference
 title: AI OS Voice TTS Architecture Standard
 author: Gateway Global AIOS
 created: 2026-04-16
-last_updated: 2026-04-18
+last_updated: 2026-04-19
 cross_references:
   - doc_id: AMD-2026-008
     title: Sovereign Voice and Local Runtime Lanes
@@ -22,7 +22,7 @@ cross_references:
 
 # AI OS Voice TTS Architecture Standard
 
-`AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001` — Draft v0.3.0
+`AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001` — Draft v0.4.0
 
 ---
 
@@ -198,11 +198,12 @@ If streaming fails, the route MAY fall back to a host-side one-shot TTS response
 
 ## 8. Voice Control Surfaces
 
-The operator-facing route selection UI is `VoiceControlPanel.tsx` (Model section). It MUST:
-- Show one tile per `VoiceRouteId` value
-- Highlight the active route using `var(--panel-accent-bg)` + `var(--panel-accent-border)`
-- Call `setVoiceRoute()` on selection
-- Never bypass the `voiceRoutePreference.ts` configuration authority
+The operator-facing route selection UI is `VoiceControlPanel.tsx`. It MUST:
+- operate as a governed Level 1 / Level 2 routing surface rather than a feature-dense destination page,
+- expose route selection as a focused Level 2 pane,
+- hand off deeper Voice Box profile work into the governed Voice Box intent surface,
+- call `setVoiceRoute()` on selection, and
+- never bypass the `voiceRoutePreference.ts` configuration authority.
 
 The operator-facing playback / cue surface is `ShellIdentityBar.tsx`. It MUST:
 
@@ -212,12 +213,21 @@ The operator-facing playback / cue surface is `ShellIdentityBar.tsx`. It MUST:
 - allow the operator to inspect queued audio before replay, and
 - remain a shell disclosure surface, not a hidden implementation detail.
 
+The cue drawer inside `ShellIdentityBar.tsx` MUST remain cue-only. It SHALL NOT duplicate route switching or deeper settings actions that belong to `VoiceControlPanel.tsx` or the governed header menu.
+
 The top-right system handoff surface is `ShellSystemControls.tsx`. It MUST:
 
 - expose the currently active governed voice route label,
 - show current voice runtime status handed off from the shell cue controller,
-- preserve the route-selection handoff into `VoiceControlPanel.tsx`, and
+- preserve bounded handoff only and avoid becoming a second primary system-navigation surface,
 - avoid becoming a second independent voice dispatcher or queue owner.
+
+The deeper local profile surface is `VoiceBoxPanel.tsx`. It MUST:
+
+- open as an intent-first menu with `View Profiles`, `Create Profile`, `Record Voice`, and `Upload Profile` as explicit Level 1 entries,
+- route each of those entries into a focused Level 2 pane,
+- preserve archive import, profile activation, and sample recording behind those panes, and
+- keep local personalization subordinate to the governed route-selection model rather than inventing a parallel shell authority surface.
 
 ---
 

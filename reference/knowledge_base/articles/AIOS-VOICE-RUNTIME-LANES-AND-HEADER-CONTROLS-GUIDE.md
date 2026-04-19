@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-KB-VOICE-RUNTIME-HEADER-GUIDE-001
-version: 0.1.0
+version: 0.2.0
 status: draft
 category: article
 title: AI OS Voice Runtime Lanes and Header Controls Guide
 author: Gateway Global AIOS
 created: 2026-04-18
-last_updated: 2026-04-18
+last_updated: 2026-04-19
 cross_references:
   - doc_id: AMD-2026-008
     title: Sovereign Voice and Local Runtime Lanes
@@ -177,7 +177,8 @@ It lets the operator inspect:
 - the current cue
 - queued cues
 - replay state
-- nearby voice route controls
+
+The cue drawer is intentionally bounded. It does **not** duplicate voice-route switching or deeper settings actions. Those belong to the governed shell menu and the deeper voice-control surface.
 
 This matters because queued or muted speech is still system state and should stay inspectable.
 
@@ -192,7 +193,7 @@ It shows:
 - the current cue when relevant
 - the handoff into the deeper `VoiceControlPanel`
 
-This keeps the header and the system-control panel aligned instead of creating a second disconnected voice settings world.
+This keeps the header and the system-control panel aligned instead of creating a second disconnected voice settings world. The right-side header menu button remains the sole primary trigger for system-shell routing.
 
 ### Voice control panel
 
@@ -201,6 +202,19 @@ The deeper voice panel is where the operator switches among:
 - Gemini Voice
 - local system voice
 - Voice Box
+
+That surface should be read as a routing menu, not as a feature dump. It uses a Level 1 / Level 2 pattern so the operator chooses an intent first and then works inside the focused pane for that choice.
+
+### Voice Box intent model
+
+When the operator goes deeper into Voice Box, the governed first surface is a four-option intent menu:
+
+- `View Profiles`
+- `Create Profile`
+- `Record Voice`
+- `Upload Profile`
+
+Those entries exist so the operator can navigate the local personalization workflow cleanly by click or voice command before dealing with archive import, profile activation, or recording details.
 
 That panel is not supposed to own playback itself. It exists to manage route selection and deeper voice profile work while leaving immediate playback authority in the shell header.
 
@@ -239,6 +253,7 @@ They should deploy the full governed package:
 - header cue drawer
 - header system-control panel
 - route-selection handoff
+- top-aligned shell-menu-driven overlays for Voice Control, Voice Box, Appearance, and System Configuration when those surfaces remain overlay-based
 - local baseline voice path
 - optional Voice Box personalization path
 - governed Gemini runtime path when cloud speech is offered

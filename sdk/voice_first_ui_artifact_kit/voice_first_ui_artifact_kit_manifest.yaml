@@ -1,5 +1,5 @@
 kit_id: voice_first_ui_artifact_kit
-version: 0.4.0
+version: 0.5.0
 status: draft
 library_root: sdk/voice_first_ui_artifact_kit
 schema_path: sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.schema.json
@@ -29,6 +29,20 @@ main_shell_artifacts:
     related_governing_docs:
       - AMD-2026-007
       - AMD-2026-012
+  - artifact_id: header.attached_menu
+    artifact_label: HeaderAttachedMenu
+    surface_zone: shell
+    artifact_kind: control
+    interactive: true
+    voice_first_role: authority_and_disclosure
+    required_controls: []
+    required_visual_proofs:
+      - surface_proof
+      - control_proof
+      - behavior_proof
+    related_governing_docs:
+      - AMD-2026-012
+      - AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001
   - artifact_id: header.audio_player_cluster
     artifact_label: HeaderAudioPlayerCluster
     surface_zone: shell
@@ -106,6 +120,7 @@ deployment_packages:
     package_manifest_path: sdk/voice_first_ui_artifact_kit/header_voice_runtime_package_manifest.yaml
     included_artifacts:
       - header
+      - header.attached_menu
       - header.audio_player_cluster
       - header.cue_drawer
       - header.system_control_panel
@@ -114,11 +129,13 @@ deployment_packages:
       - src/components/shell/ShellIdentityBar.tsx
       - src/components/shell/ShellSystemControls.tsx
       - src/components/shell/VoiceControlPanel.tsx
+      - src/components/shell/VoiceBoxPanel.tsx
+      - src/components/shell/AppearanceOverlay.tsx
       - src/core/io/GeminiVoiceEngine.ts
       - src/core/io/BrowserVoiceEngine.ts
       - src/core/io/SovereignVoiceEngine.ts
       - src/core/io/VoiceboxClient.ts
-      - src/core/io/voiceRoutePreference.ts
+      - src/config/voiceRoutePreference.ts
       - src/api/geminiGateway.ts
       - server/geminiServe.ts
       - server/prodHost.ts

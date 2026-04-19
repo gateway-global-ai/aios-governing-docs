@@ -1,12 +1,12 @@
 ---
 document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
-version: 0.6.0
+version: 0.7.0
 status: draft
 category: specification
 title: Voice-first UI artifact kit standard
 author: Gateway Global AIOS
 created: 2026-04-17
-last_updated: 2026-04-18
+last_updated: 2026-04-19
 cross_references:
   - doc_id: AIOS-SPEC-006
     title: UI Component Registry Standard
@@ -91,8 +91,8 @@ Shell artifacts define the structural authority frame for the session. Canvas ar
 | `Header` | Shell authority, identity, disclosure, and global orientation surface. |
 | `HeaderAttachedMenu` | Deterministic system-shell menu surface anchored to the bottom of the header. |
 | `HeaderAudioPlayerCluster` | Bounded header control cluster for play or stop, mic, speaker, and cue inspection. |
-| `HeaderCueDrawer` | Header-attached drawer for current and queued shell-controlled audio plus nearby route handoff. |
-| `HeaderSystemControlPanel` | Top-right system panel that carries current voice-runtime state and deeper control handoff. |
+| `HeaderCueDrawer` | Header-attached drawer for current and queued shell-controlled audio only; it does not duplicate settings navigation. |
+| `HeaderSystemControlPanel` | Top-right system panel that carries current voice-runtime state, bounded account controls, and deeper shell handoff without competing for primary menu ownership. |
 | `Canvas` | Primary voice-first workspace where the active session state is rendered. |
 | `Footer` | Action and navigation rail for close, back, and other governed controls. |
 | `FooterUserMenu` | Secondary user/PTT-adjacent menu surface for user-related actions only. |
@@ -155,7 +155,8 @@ When this kit defines menu-bearing artifacts, those artifacts SHALL follow one d
 - the header remains the primary system-shell menu surface,
 - the footer remains a secondary user/PTT menu surface,
 - menu structure SHALL be declared through governed records,
-- level stacks and templates SHALL be explicit rather than inferred from downstream product code.
+- level stacks and templates SHALL be explicit rather than inferred from downstream product code, and
+- menu-launched destination surfaces SHALL preserve voice-first intent routing instead of bypassing directly into feature-dense pages.
 
 Product repos MAY populate governed records or mirror the artifact implementation, but they SHALL NOT silently redefine protected shell chrome by inventing a new menu placement model.
 
@@ -177,10 +178,12 @@ The governed kit SHALL define one deployable header voice-runtime package for do
 That package SHALL include at minimum:
 
 - the `Header` authority surface,
+- the `HeaderAttachedMenu`,
 - the `HeaderAudioPlayerCluster`,
 - the `HeaderCueDrawer`,
 - the `HeaderSystemControlPanel`,
 - the `VoiceControlPanel` or governed successor for deeper route control,
+- the governed Voice Box intent surface with `View Profiles`, `Create Profile`, `Record Voice`, and `Upload Profile` as explicit Level 1 entries,
 - the shell cue controller contract, and
 - the Gemini or equivalent governed voice runtime transport contract when the system offers cloud speech.
 
@@ -191,8 +194,10 @@ Downstream systems MAY style or implement the package locally, but they SHALL re
 When a system deploys the governed header voice-runtime package, the deployment contract SHALL preserve:
 
 - shell-owned playback, replay, mute, and stop authority,
-- visible header disclosure of current cue or playback state,
-- visible handoff from the header into deeper voice settings,
+- cue-only disclosure of current cue or playback state,
+- the right-side header menu trigger as the sole primary entry into system-shell routing,
+- visible handoff from the header into deeper voice settings through governed Level 1 / Level 2 intent surfaces,
+- top-aligned shell-menu-driven overlays when those destination surfaces remain overlay-based,
 - package-local traceability between runtime components and governed artifact identifiers, and
 - auditable reference to the governing standard and manifest that define the package.
 

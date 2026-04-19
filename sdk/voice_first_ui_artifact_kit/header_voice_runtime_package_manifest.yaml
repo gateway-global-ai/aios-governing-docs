@@ -1,5 +1,5 @@
 package_id: header_voice_runtime_package
-version: 0.1.0
+version: 0.2.0
 status: draft
 package_scope: header_voice_runtime
 summary: >
@@ -20,12 +20,14 @@ runtime_files:
     - src/components/shell/ShellIdentityBar.tsx
     - src/components/shell/ShellSystemControls.tsx
     - src/components/shell/VoiceControlPanel.tsx
+    - src/components/shell/VoiceBoxPanel.tsx
+    - src/components/shell/AppearanceOverlay.tsx
   voice_routes:
     - src/core/io/GeminiVoiceEngine.ts
     - src/core/io/BrowserVoiceEngine.ts
     - src/core/io/SovereignVoiceEngine.ts
     - src/core/io/VoiceboxClient.ts
-    - src/core/io/voiceRoutePreference.ts
+    - src/config/voiceRoutePreference.ts
   host_transport:
     - src/api/geminiGateway.ts
     - server/geminiServe.ts
@@ -49,18 +51,22 @@ env_vars:
     description: Optional local path override used by governance scripts that assemble voice-interface context.
 proof_expectations:
   - proof_id: header_surface_proof
-    description: Show the governed header authority surface with the disclosure plate and system-control entry visible.
+    description: Show the governed header authority surface without a centered disclosure bubble and with the bounded player cluster plus the right-side system-menu trigger visible.
   - proof_id: header_control_proof
-    description: Show microphone, speaker, playback, and cue-drawer controls behaving from the header without silent secondary dispatch.
+    description: Show microphone, speaker, playback, and cue-drawer controls behaving from the header without silent secondary dispatch or duplicate settings controls inside the cue drawer.
   - proof_id: voice_route_state_proof
-    description: Show the active route label and runtime summary updating when switching among Gemini, local system voice, and Voice Box.
+    description: Show the active route label and runtime summary updating when switching among Gemini, local system voice, and Voice Box through the governed Level 1 / Level 2 voice-control routing surface.
+  - proof_id: voicebox_intent_surface_proof
+    description: Show Voice Box opening as a four-intent menu with View Profiles, Create Profile, Record Voice, and Upload Profile visible as Level 1 entries.
+  - proof_id: top_aligned_overlay_proof
+    description: Show menu-launched overlays such as Appearance and System configuration clearing the header through top-aligned shell-owned positioning.
   - proof_id: local_sovereignty_proof
     description: Show that at least one non-API local speech route remains usable when Gemini is unavailable.
   - proof_id: gemini_gateway_boundary_proof
     description: Show that Gemini credentials terminate on the host and that the browser uses the same-origin gateway rather than bundling the key.
 deployment_steps:
   - step: 1
-    action: Install the governed shell integration files and keep the header as the visible authority surface for playback, cue, microphone, and speaker controls.
+    action: Install the governed shell integration files and keep the header as the visible authority surface for playback, cue, microphone, and speaker controls, with the right-side header menu button as the sole primary system-menu trigger.
   - step: 2
     action: Install the governed voice route files so the system retains Gemini, local baseline, and local personalized lane support rather than collapsing to a single engine.
   - step: 3
@@ -68,6 +74,6 @@ deployment_steps:
   - step: 4
     action: Set required environment variables on the host only. Do not expose Gemini credentials to browser code or client-side build defines.
   - step: 5
-    action: Verify that the local baseline route works without internet access and that the local personalized route remains operator-side when deployed.
+    action: Verify that the local baseline route works without internet access, that the local personalized route remains operator-side when deployed, and that Voice Box appears first as the governed four-intent menu before exposing deeper tools.
   - step: 6
-    action: Capture the required header, control, state, and sovereignty proofs before claiming conformance to the governed header voice runtime package.
+    action: Capture the required header, control, state, intent-surface, top-aligned overlay, and sovereignty proofs before claiming conformance to the governed header voice runtime package.
