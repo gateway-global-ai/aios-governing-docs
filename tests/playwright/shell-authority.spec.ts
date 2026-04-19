@@ -133,7 +133,7 @@ test('runtime voice box record voice renders governed detail surface', async ({ 
   await expect(page.locator('label', { hasText: 'Select a profile' })).toBeVisible();
   await expect(page.getByText(/0 \/ 5 recommended/i)).toBeVisible();
   await expect(page.getByText(/Read this aloud/i)).toBeVisible();
-  await expect(page.locator('p', { hasText: 'Hold to speak' })).toBeVisible();
+  await expect(page.locator('p').filter({ hasText: /^Hold to speak$/ }).first()).toBeVisible();
 });
 
 test('runtime appearance overlay stays top-aligned with intent menu', async ({ page }) => {
