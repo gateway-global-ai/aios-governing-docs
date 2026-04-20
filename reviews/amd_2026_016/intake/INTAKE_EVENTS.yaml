@@ -1,0 +1,289 @@
+intake_schema_version: '1'
+document_id: AMD-2026-016
+amendment_slug: amd_2026_016
+events:
+- event_id: evt-20260410T000000Z-001
+  timestamp: '2026-04-10T00:00:00Z'
+  actor: gpt-5.4
+  event_type: intake_initialized
+  from_state: ''
+  to_state: intake_open
+  summary: Intake scaffold initialized for the non-human principals amendment lane.
+  evidence_paths:
+  - amendments/AMD-2026-016.md
+  - reviews/amd_2026_016/intake
+- event_id: evt-20260410T000500Z-002
+  timestamp: '2026-04-10T00:05:00Z'
+  actor: gpt-5.4
+  event_type: intake_status_corrected
+  from_state: intake_open
+  to_state: intake_open
+  summary: Intake next_action corrected to the scaffold-controlled vocabulary for
+    Round 1 peer review.
+  evidence_paths:
+  - reviews/amd_2026_016/intake/INTAKE_STATUS.yaml
+- event_id: evt-20260410T115723Z-003
+  timestamp: '2026-04-10T11:57:23Z'
+  actor: jason
+  event_type: evidence_refreshed
+  from_state: intake_open
+  to_state: phase_a_evidence_ready
+  summary: Evidence refreshed and knowledge bundle rebuilt from declared lane packet
+    reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T115800Z-004
+  timestamp: '2026-04-10T11:58:00Z'
+  actor: gpt-5.4
+  event_type: intake_status_corrected
+  from_state: phase_a_evidence_ready
+  to_state: phase_a_evidence_ready
+  summary: Intake metadata corrected so the lane head version matches amendment draft
+    0.2.0 before governed planning continues.
+  evidence_paths:
+  - amendments/AMD-2026-016.md
+  - reviews/amd_2026_016/intake/INTAKE_IDENTITY.yaml
+  - reviews/amd_2026_016/intake/INTAKE_STATUS.yaml
+- event_id: evt-20260410T115818Z-005
+  timestamp: '2026-04-10T11:58:18Z'
+  actor: jason
+  event_type: architect_started
+  from_state: phase_a_evidence_ready
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN_TEMPLATE.md
+  - reviews/amd_2026_016/planning/UI_PLAN_TEMPLATE.md
+  - reviews/amd_2026_016/planning/COMMITTEE_PACKET_TEMPLATE.md
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T115819Z-006
+  timestamp: '2026-04-10T11:58:19Z'
+  actor: jason
+  event_type: architect_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: "Architect lane failed before verified output was recorded: Command failed\
+    \ with non-zero exit code:\n{\n  \"command\": [\n    \"py\",\n    \"-3\",\n  \
+    \  \"scripts/preflight_local_agents.py\"\n  ],\n  \"returncode\": 1,\n  \"stdout\"\
+    : \"{\\n  \\\"status\\\": \\\"model_present\\\",\\n  \\\"ollama_host\\\": \\\"\
+    http://127.0.0.1:11434\\\",\\n  \\\"ollama_model\\\": \\\"llama3.2\\\",\\n  \\\
+    \"lines\\\": [\\n    \\\"ollama executable: NOT FOUND on PATH\\\",\\n    \\\"\
+    OLLAMA_HOST: http://127.0.0.1:11434 OK\\\",\\n    \\\"Models on host: ['jt_authoring_agent:latest',\
+    \ 'gurubot/self-after-dark:latest', 'fluffy/l3-8b-stheno-v3.2:latest', 'qwen3:8b',\
+    \ 'llama3.2:latest']\\\",\\n    \\\"Desired model 'llama3.2': present\\\"\\n \
+    \ ]\\n}\\n\",\n  \"stderr\": \"\"\n}"
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md.run_record.json
+- event_id: evt-20260410T115915Z-007
+  timestamp: '2026-04-10T11:59:15Z'
+  actor: jason
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T115915Z-008
+  timestamp: '2026-04-10T11:59:15Z'
+  actor: jason
+  event_type: architect_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: "Architect lane failed before verified output was recorded: Command failed\
+    \ with non-zero exit code:\n{\n  \"command\": [\n    \"py\",\n    \"-3\",\n  \
+    \  \"scripts/ollama_planning_agent.py\",\n    \"--role\",\n    \"architect\",\n\
+    \    \"--amd-slug\",\n    \"amd_2026_016\",\n    \"--manifest\",\n    \"reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml\"\
+    ,\n    \"--bundle\",\n    \"reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md\"\
+    \n  ],\n  \"returncode\": 1,\n  \"stdout\": \"\",\n  \"stderr\": \"WARNING: Direct\
+    \ architect invocation is an operator/manual path. The governed architect path\
+    \ is `py -3 scripts/amendment_intake_agent.py <amendment> --phase architect`.\\\
+    nTraceback (most recent call last):\\n  File \\\"C:\\\\Apps\\\\github_repos\\\\\
+    AI_OS_Governance\\\\aios-governing-docs\\\\aios-governing-docs\\\\scripts\\\\\
+    ollama_planning_agent.py\\\", line 237, in <module>\\n    main()\\n    ~~~~^^\\\
+    n  File \\\"C:\\\\Apps\\\\github_repos\\\\AI_OS_Governance\\\\aios-governing-docs\\\
+    \\aios-governing-docs\\\\scripts\\\\ollama_planning_agent.py\\\", line 142, in\
+    \ main\\n    print(f\\\"KB bundle: {args.bundle.relative_to(BASE_DIR)} ({len(kb):,}\
+    \ chars)\\\")\\n                        ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\\n \
+    \ File \\\"C:\\\\Users\\\\jason\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\\
+    Python313\\\\Lib\\\\pathlib\\\\_local.py\\\", line 385, in relative_to\\n    raise\
+    \ ValueError(f\\\"{str(self)!r} is not in the subpath of {str(other)!r}\\\")\\\
+    nValueError: 'reviews\\\\\\\\amd_2026_016\\\\\\\\planning\\\\\\\\agent_kb\\\\\\\
+    \\government_and_reports_bundle.md' is not in the subpath of 'C:\\\\\\\\Apps\\\
+    \\\\\\github_repos\\\\\\\\AI_OS_Governance\\\\\\\\aios-governing-docs\\\\\\\\\
+    aios-governing-docs'\\n\"\n}"
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md.run_record.json
+- event_id: evt-20260410T115948Z-009
+  timestamp: '2026-04-10T11:59:48Z'
+  actor: jason
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T120003Z-010
+  timestamp: '2026-04-10T12:00:03Z'
+  actor: jason
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output missing required heading ''## 1. Executive summary''; architect
+    output missing required heading ''## 2. Declared grounding''; architect output
+    missing required heading ''## 3. Schemas and data contracts''; architect output
+    missing required heading ''## 4. Routes and decision flow''; architect output
+    missing required heading ''## 5. Storage, state, and persistence''; architect
+    output missing required heading ''## 6. Gaps vs governing intent''; architect
+    output missing required heading ''## 7. Verification checklist'''
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260410T121502Z-011
+  timestamp: '2026-04-10T12:15:02Z'
+  actor: jason
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T121640Z-012
+  timestamp: '2026-04-10T12:16:40Z'
+  actor: jason
+  event_type: architect_drafted
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_drafted
+  summary: Architect planning draft generated.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260410T121640Z-013
+  timestamp: '2026-04-10T12:16:40Z'
+  actor: jason
+  event_type: architect_output_verified
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output file existence verified before success recording.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260410T121640Z-014
+  timestamp: '2026-04-10T12:16:40Z'
+  actor: jason
+  event_type: architect_output_conformance_validated
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output passed template-based structural conformance validation.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN_TEMPLATE.md
+- event_id: evt-20260410T121700Z-015
+  timestamp: '2026-04-10T12:17:00Z'
+  actor: gpt-5.4
+  event_type: architect_human_verification_blocked
+  from_state: phase_b_architect_drafted
+  to_state: blocked_architect_human_verification
+  summary: Architect draft now awaits human verification after the earlier intake
+    bookkeeping bug was repaired.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/intake/INTAKE_STATUS.yaml
+- event_id: evt-20260410T123310Z-016
+  timestamp: '2026-04-10T12:33:10Z'
+  actor: jason
+  event_type: architect_verified
+  from_state: blocked_architect_human_verification
+  to_state: phase_c_ui_pending
+  summary: Architect draft verified by human reviewer.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/intake/INTAKE_STATUS.yaml
+- event_id: evt-20260410T123500Z-017
+  timestamp: '2026-04-10T12:35:00Z'
+  actor: gpt-5.4
+  event_type: intake_status_corrected
+  from_state: phase_c_ui_pending
+  to_state: failed
+  summary: Architect verification was recorded in error. Human reviewer rejected the
+    current architect draft for revision due to missing required planning metadata
+    and insufficient grounded traceability.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/intake/INTAKE_STATUS.yaml
+- event_id: evt-20260410T191911Z-018
+  timestamp: '2026-04-10T19:19:11Z'
+  actor: jason
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+- event_id: evt-20260410T192055Z-019
+  timestamp: '2026-04-10T19:20:55Z'
+  actor: jason
+  event_type: architect_drafted
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_drafted
+  summary: Architect planning draft generated.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260410T192055Z-020
+  timestamp: '2026-04-10T19:20:55Z'
+  actor: jason
+  event_type: architect_output_verified
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output file existence verified before success recording.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260410T192055Z-021
+  timestamp: '2026-04-10T19:20:55Z'
+  actor: jason
+  event_type: architect_output_conformance_validated
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output passed template-based structural conformance validation.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN_TEMPLATE.md
+- event_id: evt-20260410T192055Z-022
+  timestamp: '2026-04-10T19:20:55Z'
+  actor: jason
+  event_type: architect_run_identity_recorded
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect lane recorded the manifest, bundle, build manifest, and run-record
+    paths selected for this drafting run.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/KNOWLEDGE_PACKET.yaml
+  - reviews/amd_2026_016/planning/agent_kb/government_and_reports_bundle.md
+  - reviews/amd_2026_016/planning/agent_kb/build_manifest.json
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md.run_record.json
+- event_id: evt-20260410T192055Z-023
+  timestamp: '2026-04-10T19:20:55Z'
+  actor: jason
+  event_type: architect_human_verification_blocked
+  from_state: phase_b_architect_drafted
+  to_state: blocked_architect_human_verification
+  summary: Architect draft now awaits human verification.
+  evidence_paths:
+  - reviews/amd_2026_016/planning/ARCHITECT_PLAN.md

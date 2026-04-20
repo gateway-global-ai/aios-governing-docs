@@ -1,0 +1,42 @@
+label: jt_editorial_amd_2026_016_revision_loop
+mode: editorial
+style_cards:
+  - reference/knowledge_base/agents/style/JT_EDITORIAL_STYLE_CARD.md
+boundaries:
+  - reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
+required_documents:
+  - reference/knowledge_base/agents/style/JT_EDITORIAL_STYLE_CARD.md
+  - reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
+  - reference/knowledge_base/README.md
+  - reference/knowledge_base/agents/README.md
+  - amendments/AMD-2026-007.md
+  - amendments/AMD-2026-012.md
+  - amendments/AMD-2026-016.md
+  - specifications/PolicyRecord.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/AIOS_POLICY_INDEX.md
+  - reference/implementation/AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001.md
+  - reference/implementation/AIOS-DISCOVER-AGENT-PROCESS-001.md
+  - reviews/amd_2026_016/revision_log.md
+  - reviews/amd_2026_016/planning/DISCOVERY_SCOPE.yaml
+allowed_optional_documents:
+  - reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md
+  - reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md
+  - reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md
+  - reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md
+  - reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md
+  - reviews/amd_2026_016/planning/DISCOVERY_REPORT.md
+  - reviews/amd_2026_016/planning/LOCAL_RESEARCH_REPORT.md
+  - reviews/amd_2026_016/planning/DRAFT_AMENDMENT_PROPOSAL.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md
+  - reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+prohibited_source_classes:
+  - raw_chat_transcripts
+  - unpublished_private_notes
+  - undeclared_external_web_sources
+  - discussion_without_repo_conversion
+identity_boundary_rule: reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md

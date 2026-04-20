@@ -1,0 +1,12 @@
+---
+description: Keep Voicebox outside governed repo authority
+alwaysApply: true
+---
+
+# Voicebox Boundary
+
+- Treat `Voicebox` as a local operator-side tooling asset, not governed repo content.
+- If present near the workspace, keep it in a sibling folder such as `C:\Apps\github_repos\Voicebox\`, not inside `aios-governing-docs`.
+- Never add Voicebox paths, profiles, renders, or prompts to governed manifests, required knowledge inputs, or peer-review exports.
+- Never let Voicebox become part of authoring, architect, UI, committee, peer-review, kernel, or ratification decision logic.
+- Any mention inside this repo stays descriptive only: optional local narration/render support outside the governed repo boundary.

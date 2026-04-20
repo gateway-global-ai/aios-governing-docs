@@ -1,0 +1,43 @@
+label: amd_2026_015_cani_experience_loop_lane
+packet_id: PKT-AMD-2026-015-PLANNING
+role: architect
+description: >
+  Declared planning packet for the CANI experience-loop lane. This lane depends
+  on constitutional, packet-taxonomy, and CANI bridge documents.
+review_intents:
+  - review.overview
+  - review.schemas
+  - review.routes
+  - review.storage
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: true
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: true
+  product_evidence:
+    required: false
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-013.md
+  - amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+  - amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md
+  - reference/implementation/CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001.md
+  - reference/implementation/CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001.md
+  - reference/implementation/CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001.md
+  - reference/implementation/CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001.md
+  - reference/implementation/CANI-VALIDATOR-AND-TOOLING-CONTRACT-001.md
+reports_and_snapshots: []
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

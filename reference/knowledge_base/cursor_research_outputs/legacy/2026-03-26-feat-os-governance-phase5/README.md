@@ -1,10 +1,20 @@
-# Legacy Cursor research outputs (superseded)
+# Cursor research outputs — historical five-pass snapshot
 
 **Captured:** 2026-03-26 (per Pass 1 header)  
 **Branch (stated):** `feat/os-governance-phase5`  
 **Layout:** **`client/src/...`** monorepo paths — **not** the current **`ai-os-voice-interface`** tree (**`src/...`** only).
 
-These five files are **archived for history only**. Do **not** use them as the source of truth for the present app.
+These five files are a **historical snapshot** of one governed five-pass research run captured against the tree and path layout stated above.
+
+The **five-pass method itself remains active** as a governed research pattern:
+
+1. Architecture Cartographer
+2. Capability Extractor
+3. Governance Breach Auditor
+4. Registry Migration Planner
+5. Control Plane Coverage
+
+Do **not** use these specific 2026-03-26 outputs as the source of truth for the present app without rerun or explicit reconfirmation against the current tree.
 
 **Current research:** [`../../CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](../../CURRENT_SYSTEM_RESEARCH_2026-04-08.md)
 

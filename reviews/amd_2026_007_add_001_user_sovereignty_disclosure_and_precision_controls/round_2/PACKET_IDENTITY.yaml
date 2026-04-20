@@ -1,0 +1,10 @@
+document_id: AMD-2026-007-ADD-001
+document_path: amendments/AMD-2026-007-ADD-001-user-sovereignty-disclosure-and-precision-controls.md
+packet_slug: amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls
+current_head_version: 0.4.0
+review_round: 2
+packet_path: reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2
+manifest_path: reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/peer_review_manifest_20260418T014742Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-18T01:47:42Z'

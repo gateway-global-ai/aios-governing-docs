@@ -1,0 +1,11 @@
+document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+packet_slug: aios_voice_first_ui_artifact_kit_standard_001
+current_head_version: 0.1.0
+last_reviewed_version: 0.1.0
+artifact_health: healthy
+review_gate_status: incomplete
+committee_status: open
+next_action: manual_resolution
+lifecycle_phase: round_1_complete
+status_updated_at: '2026-04-17T23:09:12Z'
+status_updated_by: peer_review.py

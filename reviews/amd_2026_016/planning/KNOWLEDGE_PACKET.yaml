@@ -1,0 +1,48 @@
+label: amd_2026_016_nonhuman_principals_lane
+packet_id: PKT-AMD-2026-016-PLANNING
+role: architect
+description: >
+  Declared planning packet for governed non-human principal law. This lane must
+  produce architecture-bearing schema, route, and storage/state surfaces before
+  downstream drafting or renewed peer review is treated as above the line.
+review_intents:
+  - review.overview
+  - review.schemas
+  - review.routes
+  - review.storage
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: true
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: true
+  product_evidence:
+    required: false
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-007.md
+  - amendments/AMD-2026-012.md
+  - amendments/AMD-2026-013.md
+  - amendments/AMD-2026-016.md
+  - specifications/PolicyRecord.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+reports_and_snapshots:
+  - reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_SCHEMA_ROUTE_STORAGE_MAP.md
+  - reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_CONTROLS_MATRIX.md
+  - reviews/aios_shell_baseline_recovery_packet_001/packet_2026-04-09/SHELL_BASELINE_GAP_MAP.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

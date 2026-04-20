@@ -1,0 +1,11 @@
+document_id: AMD-2026-014
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+current_head_version: 0.1.2
+last_reviewed_version: 0.1.2
+artifact_health: healthy
+review_gate_status: pass
+committee_status: open
+next_action: archive
+lifecycle_phase: archived
+status_updated_at: '2026-04-09T22:55:00Z'
+status_updated_by: governance_phase_1_round_2_ratification_closeout

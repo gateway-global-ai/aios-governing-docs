@@ -1,22 +1,39 @@
-# Inputs for scripts/build_agent_kb.py — single bundle for Ollama planning agents (Architect → UI).
-# Paths are relative to the governing_docs repository root.
-# Edit per amendment track; keep total size reasonable for local context windows.
+# Default bundle for `scripts/build_agent_kb.py`.
+# This file is now a neutral systems-foundation packet.
+# Architect/UI lanes should prefer `reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml`.
 
-label: amd_2026_006_workspace_track
+label: aios_system_foundation_review_surface
+packet_id: PKT-AIOS-SYSTEM-FOUNDATION
+role: systems_manual
+description: >
+  Neutral review-surface packet for systems-manual and governance-foundation
+  work. It must not be treated as the implicit packet for unrelated amendment
+  lanes.
+review_intents:
+  - review.overview
+  - review.roles
+  - review.templates
+  - review.transparency
 
 governing_documents:
   - core/technical_manifesto.md
   - core/governance_constitution.md
   - core/master_platform_operating_agreement.md
-  - amendments/AMD-2026-005.md
-  - amendments/AMD-2026-006.md
   - amendments/AMD-2026-007.md
-  - reference/AIOS_POLICY_INDEX.md
-  - specifications/GoogleWorkspaceIntegrationGovernance.md
+  - amendments/AMD-2026-009.md
+  - amendments/AMD-2026-013.md
+  - amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
   - specifications/IntentPrimitiveAndExecutionModel.md
-  - specifications/UIComponentRegistryStandard.md
-  - specifications/ExecutionScopeAndContextBounding.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md
+  - reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md
 
 reports_and_snapshots:
   - reference/knowledge_base/snapshots/product_context_bundle.md
   - reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md
+
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

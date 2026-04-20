@@ -1,0 +1,31 @@
+packet_schema_version: '2'
+document_id: PHASE_1_SHELL_AUTHORITY_SURFACES
+packet_slug: phase_1_shell_authority_surfaces
+events:
+- event_id: evt-20260410T094830Z-001
+  timestamp: '2026-04-10T09:48:30Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: ''
+  to_version: ''
+  round: 1
+  summary: Peer review round 1 completed for assessed draft .
+  evidence_paths:
+  - reviews/phase_1_shell_authority_surfaces/round_1/peer_review_manifest_20260410T094830Z.json
+  - reviews/phase_1_shell_authority_surfaces/round_1/review_001_deepseek__PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/review_002_openai__PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/review_003_gemini__PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/review_004_claude__PHASE_1_SHELL_AUTHORITY_SURFACES.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/review_005_minimax__PHASE_1_SHELL_AUTHORITY_SURFACES.md
+- event_id: evt-20260410T095600Z-002
+  timestamp: '2026-04-10T09:56:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: review_gate_failed
+  from_version: ''
+  to_version: ''
+  round: 1
+  summary: Expanded Round 1 review concluded the Phase 1 shell authority packet requires major revision before it can act as the authority floor for downstream privileged shell work.
+  evidence_paths:
+  - reviews/phase_1_shell_authority_surfaces/round_1/REVIEW_SYNTHESIS.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/RATIFICATION_GATE_REPORT.md
+  - reviews/phase_1_shell_authority_surfaces/round_1/peer_review_manifest_20260410T094830Z.json

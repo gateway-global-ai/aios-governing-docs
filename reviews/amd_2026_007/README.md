@@ -12,3 +12,7 @@
 |-------|--------|
 | 1 | [`round_1/`](round_1/) |
 | 2 | [`round_2/`](round_2/) |
+
+## Legacy packet layout note
+
+This AMD’s peer-review folders **pre-date** **[AIOS-REVIEW-PACKET-TAXONOMY-001](../../reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md)** (`PACKET_STATUS.yaml` / `PACKET_EVENTS.yaml` as first-class artifacts). Do **not** assume `round_*` directories here have **`packet_schema_version` `2`** identity/status/events files; **`validate_review_packet.py`** may report **`legacy_packet_schema`** or **`schema_version_missing`** until a deliberate migration.

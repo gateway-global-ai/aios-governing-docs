@@ -1,0 +1,10 @@
+document_id: PHASE_3_DOCUMENT_AND_FOLDER_BASELINE
+document_path: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+packet_slug: phase_3_document_and_folder_baseline
+current_head_version: ''
+review_round: 1
+packet_path: reviews/phase_3_document_and_folder_baseline/round_1
+manifest_path: reviews/phase_3_document_and_folder_baseline/round_1/peer_review_manifest_20260410T100610Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-10T10:06:10Z'

@@ -1,0 +1,130 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "aios_cross_provider_ai_os_experiment_round_2_report_001",
+  "document": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+      "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001",
+      "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+      "AIOS-KB-CASE-STUDY-001",
+      "AIOS-KB-CASE-STUDY-001-ADDENDUM-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+        "path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001.md",
+        "bytes": 7841,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.2120163
+      },
+      {
+        "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001",
+        "path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001.md",
+        "bytes": 8720,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.2130213
+      },
+      {
+        "document_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+        "path": "reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md",
+        "bytes": 2785,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1775682710.8806598
+      },
+      {
+        "document_id": "AIOS-KB-CASE-STUDY-001",
+        "path": "reference/knowledge_base/articles/CASE-STUDY-001-SYSTEMATIC-FAILURE-IN-HIGH-VOLUME-VIBE-CODING-ARCHITECTURES.md",
+        "bytes": 9249,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.1765406
+      },
+      {
+        "document_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+        "path": "reference/knowledge_base/articles/CASE-STUDY-001-ADDENDUM-001-THE-SVJ-PIVOT-HIGH-STATUS-SIGNALS-AS-IDENTITY-ANCHORS.md",
+        "bytes": 8851,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776448101.1765406
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_chars": 8985,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 15314,
+      "estimated_prompt_tokens_user": 3520,
+      "estimated_prompt_tokens_total": 18834,
+      "output_path": "reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/review_001_deepseek__AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md"
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 16151,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 15318,
+      "estimated_prompt_tokens_user": 3520,
+      "estimated_prompt_tokens_total": 18838,
+      "output_path": "reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/review_002_openai__AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 8647,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 15312,
+      "estimated_prompt_tokens_user": 3520,
+      "estimated_prompt_tokens_total": 18832,
+      "output_path": "reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/review_003_gemini__AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md"
+    },
+    {
+      "model_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "output_chars": 9879,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 15321,
+      "estimated_prompt_tokens_user": 3520,
+      "estimated_prompt_tokens_total": 18841,
+      "output_path": "reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/review_004_claude__AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md"
+    },
+    {
+      "model_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "output_chars": 14972,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 15322,
+      "estimated_prompt_tokens_user": 3520,
+      "estimated_prompt_tokens_total": 18842,
+      "output_path": "reviews/aios_cross_provider_ai_os_experiment_round_2_report_001/round_1/review_005_minimax__AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+packet_schema_version: '2'
+document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+packet_slug: aios_voice_first_ui_artifact_kit_standard_001
+events:
+- event_id: evt-20260417T222032Z-001
+  timestamp: '2026-04-17T22:20:32Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/peer_review_manifest_20260417T222032Z.json
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_001_openai__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_002_gemini__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+- event_id: evt-20260417T230912Z-002
+  timestamp: '2026-04-17T23:09:12Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/peer_review_manifest_20260417T230912Z.json
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_001_openai__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_002_gemini__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_003_openai__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+  - reviews/aios_voice_first_ui_artifact_kit_standard_001/round_1/review_004_gemini__AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md

@@ -1,0 +1,11 @@
+document_id: AIOS-SHELL-BASELINE-RECOVERY-PACKET-001
+packet_slug: aios_shell_baseline_recovery_packet_001
+current_head_version: 0.1.0
+last_reviewed_version: 0.1.0
+artifact_health: healthy
+review_gate_status: fail
+committee_status: open
+next_action: revise
+lifecycle_phase: round_1_complete
+status_updated_at: '2026-04-10T08:20:00Z'
+status_updated_by: coordinator_manual_synthesis

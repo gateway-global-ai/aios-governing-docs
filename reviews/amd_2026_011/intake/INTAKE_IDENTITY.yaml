@@ -1,0 +1,11 @@
+document_id: AMD-2026-011
+document_path: amendments/AMD-2026-011.md
+amendment_slug: amd_2026_011
+intake_schema_version: '1'
+intake_path: reviews/amd_2026_011/intake
+planning_path: reviews/amd_2026_011/planning
+kernel_path: reviews/amd_2026_011/kernel
+ratification_path: reviews/amd_2026_011/ratification
+current_head_version: 1.0.0
+created_at: '2026-04-09T07:40:23Z'
+created_by: stage3b_clean_proof

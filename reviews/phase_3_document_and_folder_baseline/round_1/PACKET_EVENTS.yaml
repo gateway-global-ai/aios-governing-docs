@@ -1,0 +1,51 @@
+packet_schema_version: '2'
+document_id: PHASE_3_DOCUMENT_AND_FOLDER_BASELINE
+packet_slug: phase_3_document_and_folder_baseline
+events:
+- event_id: evt-20260410T100305Z-001
+  timestamp: '2026-04-10T10:03:05Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: ''
+  to_version: ''
+  round: 1
+  summary: Peer review round 1 completed for assessed draft .
+  evidence_paths:
+  - reviews/phase_3_document_and_folder_baseline/round_1/peer_review_manifest_20260410T100305Z.json
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_001_deepseek__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_002_openai__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_003_gemini__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_004_claude__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_005_minimax__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+- event_id: evt-20260410T100610Z-002
+  timestamp: '2026-04-10T10:06:10Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: ''
+  to_version: ''
+  round: 1
+  summary: Peer review round 1 completed for assessed draft .
+  evidence_paths:
+  - reviews/phase_3_document_and_folder_baseline/round_1/peer_review_manifest_20260410T100610Z.json
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_001_deepseek__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_002_openai__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_003_gemini__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_004_claude__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_005_minimax__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_006_deepseek__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_007_openai__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_008_gemini__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_009_claude__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/review_010_minimax__PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+- event_id: evt-20260410T101400Z-003
+  timestamp: '2026-04-10T10:14:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: review_gate_failed
+  from_version: ''
+  to_version: ''
+  round: 1
+  summary: Expanded Round 1 review concluded the Phase 3 document and folder baseline packet requires major revision before it can act as the shell document/storage baseline.
+  evidence_paths:
+  - reviews/phase_3_document_and_folder_baseline/round_1/REVIEW_SYNTHESIS.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/RATIFICATION_GATE_REPORT.md
+  - reviews/phase_3_document_and_folder_baseline/round_1/peer_review_manifest_20260410T100610Z.json

@@ -1,0 +1,257 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gateway-global-ai.github.io/aios-governing-docs/sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.schema.json",
+  "title": "Voice-first UI artifact kit manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kit_id",
+    "version",
+    "status",
+    "library_root",
+    "schema_path",
+    "governing_standard",
+    "registry_mapping",
+    "delivery_surfaces",
+    "main_shell_artifacts",
+    "canvas_artifacts",
+    "deployment_packages",
+    "multi_step_navigation_contract"
+  ],
+  "properties": {
+    "kit_id": {
+      "type": "string",
+      "const": "voice_first_ui_artifact_kit"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "ratified", "deprecated"]
+    },
+    "library_root": {
+      "type": "string",
+      "const": "sdk/voice_first_ui_artifact_kit"
+    },
+    "schema_path": {
+      "type": "string",
+      "const": "sdk/voice_first_ui_artifact_kit/voice_first_ui_artifact_kit_manifest.schema.json"
+    },
+    "governing_standard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document_id", "document_path"],
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "const": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001"
+        },
+        "document_path": {
+          "type": "string"
+        }
+      }
+    },
+    "registry_mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_class", "component_id_prefix", "normalization_rule"],
+      "properties": {
+        "source_class": {
+          "type": "string",
+          "const": "governed-kit"
+        },
+        "component_id_prefix": {
+          "type": "string",
+          "const": "vf-kit-"
+        },
+        "normalization_rule": {
+          "type": "string"
+        }
+      }
+    },
+    "delivery_surfaces": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "repo_local_governed_library",
+          "governed_runtime_package",
+          "future_dependency_surface",
+          "future_mcp_surface"
+        ]
+      }
+    },
+    "main_shell_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "canvas_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "deployment_packages": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/deployment_package" }
+    },
+    "multi_step_navigation_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["applies_to", "required_elements", "notes"],
+      "properties": {
+        "applies_to": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "required_elements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "top_right_progress_label_x_of_y",
+              "back_button",
+              "close_button"
+            ]
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "artifact_label",
+        "surface_zone",
+        "artifact_kind",
+        "interactive",
+        "voice_first_role",
+        "required_controls",
+        "required_visual_proofs",
+        "related_governing_docs"
+      ],
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._]+$"
+        },
+        "artifact_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "surface_zone": {
+          "type": "string",
+          "enum": ["shell", "canvas"]
+        },
+        "artifact_kind": {
+          "type": "string",
+          "enum": ["structural", "visual", "text", "media", "control"]
+        },
+        "interactive": {
+          "type": "boolean"
+        },
+        "voice_first_role": {
+          "type": "string",
+          "enum": [
+            "authority_and_disclosure",
+            "primary_surface",
+            "action_and_navigation",
+            "support",
+            "guided_step",
+            "orientation",
+            "explanation",
+            "operator_visible_runtime_control"
+          ]
+        },
+        "required_controls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["back", "close", "play", "pause"]
+          }
+        },
+        "required_visual_proofs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "surface_proof",
+              "state_proof",
+              "control_proof",
+              "behavior_proof"
+            ]
+          }
+        },
+        "related_governing_docs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z0-9-]+$"
+          }
+        }
+      }
+    },
+    "deployment_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "package_id",
+        "package_label",
+        "deployment_scope",
+        "package_manifest_path",
+        "included_artifacts",
+        "runtime_components",
+        "governing_docs"
+      ],
+      "properties": {
+        "package_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+$"
+        },
+        "package_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deployment_scope": {
+          "type": "string",
+          "enum": ["header_voice_runtime", "full_shell_runtime"]
+        },
+        "package_manifest_path": {
+          "type": "string"
+        },
+        "included_artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "runtime_components": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "governing_docs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z0-9-]+$"
+          }
+        }
+      }
+    }
+  }
+}

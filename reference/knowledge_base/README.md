@@ -1,6 +1,11 @@
-# Knowledge base — product context for governance peer review
+# Knowledge base — declared evidence and review surfaces
 
-**Purpose:** Governing documents are ratified against **intent**, but **Workspace / shell / integration** amendments (**AMD-2026-006**, **AIOS-SPEC-007**, related) must stay **consistent** with the **running product**. Peer reviewers need the same **evidence** operators use in Cursor: **what the code actually does** (intents, scope classes, MCP tool map, control-plane entry), not only **AMD/SPEC** prose.
+**Purpose:** The knowledge base now serves two related roles:
+
+1. declared evidence for planning and peer review
+2. a human-reviewable surface for the restored planner / knowledge-packet model
+
+Governing documents are ratified against **intent**, but implementation-aware lanes still need the same evidence operators use in Cursor: **what the code actually does**, not only **AMD/SPEC** prose.
 
 ---
 
@@ -12,6 +17,8 @@
 | [`ai_os_voice_bundle_manifest.yaml`](ai_os_voice_bundle_manifest.yaml) | List of **ai-os-voice-interface** paths concatenated into the product snapshot. |
 | [`snapshots/product_context_bundle.md`](snapshots/product_context_bundle.md) | **Generated** bundle (run script below). **Informative** input to `peer_review.py`. |
 | [`cursor_research_outputs/`](cursor_research_outputs/README.md) | **Current** system research (**`CURRENT_SYSTEM_RESEARCH_2026-04-08.md`**) + **legacy** archived five-pass reports (superseded **`client/src`** era). |
+| [`articles/`](articles/) | Long-form knowledge artifacts for agent retrieval and human review. Includes `Research Studies` articles such as [`RESEARCH-STUDIES-CONSUMER-AI-CLINICAL-ARCHITECTURAL-ECONOMIC-ANALYSIS.md`](articles/RESEARCH-STUDIES-CONSUMER-AI-CLINICAL-ARCHITECTURAL-ECONOMIC-ANALYSIS.md), [`RESEARCH-CHATGPT-OPERATING-MODEL-DANGER-ANALYSIS.md`](articles/RESEARCH-CHATGPT-OPERATING-MODEL-DANGER-ANALYSIS.md), and [`RESEARCH-INTENT-CONTROL-LAYER-AND-SIGNAL-GOVERNANCE.md`](articles/RESEARCH-INTENT-CONTROL-LAYER-AND-SIGNAL-GOVERNANCE.md), concept articles such as [`AIOS-VOICE-RUNTIME-LANES-AND-HEADER-CONTROLS-GUIDE.md`](articles/AIOS-VOICE-RUNTIME-LANES-AND-HEADER-CONTROLS-GUIDE.md) and [`CANI-VICTORY-LAP-FORMULA.md`](articles/CANI-VICTORY-LAP-FORMULA.md), plus empirical `Case Studies` such as [`CASE-STUDY-001-SYSTEMATIC-FAILURE-IN-HIGH-VOLUME-VIBE-CODING-ARCHITECTURES.md`](articles/CASE-STUDY-001-SYSTEMATIC-FAILURE-IN-HIGH-VOLUME-VIBE-CODING-ARCHITECTURES.md) and follow-on `Case Study Addenda` such as [`CASE-STUDY-001-ADDENDUM-001-THE-SVJ-PIVOT-HIGH-STATUS-SIGNALS-AS-IDENTITY-ANCHORS.md`](articles/CASE-STUDY-001-ADDENDUM-001-THE-SVJ-PIVOT-HIGH-STATUS-SIGNALS-AS-IDENTITY-ANCHORS.md). |
+| [`review_surface/`](review_surface/) | Intent-oriented review artifacts for the restored planner / KB system: TOC, approval states, and role-to-packet attachments. |
 
 ---
 
@@ -60,6 +67,6 @@ The prompt template injects this under **“Product implementation snapshot”**
 
 The canonical copy of **`0_cursor_research_pack.md`** lives here as [`cursor_research_pack.md`](cursor_research_pack.md) (sync from your machine if you iterate). **Product snapshot** + **research pack** are complementary: **snapshot** = current code excerpts; **research pack** = **how** to run multi-agent discovery and coverage passes before changing architecture.
 
-The **current** research narrative is [`cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md). Older five-pass Downloads live under [`cursor_research_outputs/legacy/`](cursor_research_outputs/legacy/2026-03-26-feat-os-governance-phase5/README.md) (**do not** treat as present-day architecture). Use **`product_context_bundle.md`** for **verbatim** source excerpts; use **CURRENT_SYSTEM_RESEARCH** for **structured** commentary aligned to today’s tree.
+The **current** research narrative is [`cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md`](cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md). The earlier five-pass report set remains an **active governed research pattern**, but the specific 2026-03-26 outputs live under the historical storage path [`cursor_research_outputs/legacy/`](cursor_research_outputs/legacy/2026-03-26-feat-os-governance-phase5/README.md) and should **not** be treated as present-day architecture truth without rerun or reconfirmation against the current tree. Use **`product_context_bundle.md`** for **verbatim** source excerpts; use **CURRENT_SYSTEM_RESEARCH** for **structured** commentary aligned to today’s tree; use the five-pass report family when cartography, capability extraction, breach audit, registry planning, or coverage analysis is needed as a governed method.
 
 **Amendment workflow:** **[`AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md`](../implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md)** (**AIOS-AMD-PLAN-001**) ties evidence + architect + UI + committee **before** binding peer review on integration-heavy AMDs (e.g. **AMD-2026-006** [`planning/`](../../reviews/amd_2026_006/planning/README.md)).

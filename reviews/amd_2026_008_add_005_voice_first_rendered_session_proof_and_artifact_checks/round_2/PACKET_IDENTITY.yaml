@@ -1,0 +1,10 @@
+document_id: AMD-2026-008-ADD-005
+document_path: amendments/AMD-2026-008-ADD-005-voice-first-rendered-session-proof-and-artifact-checks.md
+packet_slug: amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks
+current_head_version: 0.7.0
+review_round: 2
+packet_path: reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2
+manifest_path: reviews/amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks/round_2/peer_review_manifest_20260418T020652Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-18T02:06:52Z'

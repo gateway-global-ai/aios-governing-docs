@@ -1,0 +1,12 @@
+---
+description: Keep local Ollama workspace separate from governed repo authority
+alwaysApply: true
+---
+
+# Ollama Workspace Boundary
+
+- Treat `C:\Apps\github_repos\Ollama\` as a local operator-side workspace folder, not governed repo content.
+- The installed Ollama executable may remain at its application install path, for example `C:\Users\jason\AppData\Local\Programs\Ollama\ollama.exe`; do not reinterpret the sibling workspace folder as doctrine or required input.
+- Never add local Ollama workspace files to governed manifests, required knowledge inputs, or peer-review exports unless they are first intentionally converted into governed repo artifacts.
+- Never let ad hoc files from the local Ollama workspace become silent authority for authoring, architect, UI, committee, peer-review, kernel, or ratification decisions.
+- Any use of Ollama inside `aios-governing-docs` must still flow through declared repo inputs and existing governance boundaries.

@@ -1,0 +1,160 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "aios_shell_governing_document_and_artifact_plan_001",
+  "document": "reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md",
+  "review_round": 2,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": "default",
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AIOS-SHELL-BASELINE-RECOVERY-PACKET-001",
+      "AIOS-SPEC-009",
+      "AMD-2026-012",
+      "AIOS-AMD-PLAN-001",
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+      "AIOS-REVIEW-PACKET-TAXONOMY-001",
+      "AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001",
+      "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+      "AMD-2026-014"
+    ],
+    "missing_registry_ids": [
+      "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001"
+    ],
+    "included_documents": [
+      {
+        "document_id": "AIOS-SHELL-BASELINE-RECOVERY-PACKET-001",
+        "path": "reference/implementation/AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md",
+        "bytes": 6626,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1775805889.3617945
+      },
+      {
+        "document_id": "AIOS-SPEC-009",
+        "path": "specifications/IntentPrimitiveAndExecutionModel.md",
+        "bytes": 44863,
+        "version": "0.5.7",
+        "registry_id": null,
+        "mtime_utc": 1775670733.002278
+      },
+      {
+        "document_id": "AMD-2026-012",
+        "path": "amendments/AMD-2026-012.md",
+        "bytes": 24571,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775593831.7785966
+      },
+      {
+        "document_id": "AIOS-AMD-PLAN-001",
+        "path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
+        "bytes": 7785,
+        "version": "1.0.3",
+        "registry_id": null,
+        "mtime_utc": 1775808882.4122353
+      },
+      {
+        "document_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "path": "reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md",
+        "bytes": 8202,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775712773.9031944
+      },
+      {
+        "document_id": "AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001",
+        "path": "reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md",
+        "bytes": 2350,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1775782133.706685
+      },
+      {
+        "document_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "path": "reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md",
+        "bytes": 6948,
+        "version": "0.1.2",
+        "registry_id": null,
+        "mtime_utc": 1775808868.3773296
+      },
+      {
+        "document_id": "AMD-2026-014",
+        "path": "amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md",
+        "bytes": 11969,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775775019.1857162
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": true,
+    "path": "reference\\knowledge_base\\snapshots\\product_context_bundle.md",
+    "bytes": 83322,
+    "mtime_utc": 1775776995.8043413
+  },
+  "models_requested": [
+    "deepseek",
+    "openai",
+    "gemini",
+    "claude",
+    "minimax"
+  ],
+  "expanded_review": true,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "deepseek",
+      "resolved_api_model": "deepseek-chat",
+      "output_chars": 11797,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 61220,
+      "estimated_prompt_tokens_user": 4350,
+      "estimated_prompt_tokens_total": 65570,
+      "output_path": "reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/review_001_deepseek__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md"
+    },
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 20366,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 61225,
+      "estimated_prompt_tokens_user": 4350,
+      "estimated_prompt_tokens_total": 65575,
+      "output_path": "reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/review_002_openai__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 7906,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 61218,
+      "estimated_prompt_tokens_user": 4350,
+      "estimated_prompt_tokens_total": 65568,
+      "output_path": "reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/review_003_gemini__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md"
+    },
+    {
+      "model_lane": "claude",
+      "resolved_api_model": "claude-sonnet-4-20250514",
+      "output_chars": 9738,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 61228,
+      "estimated_prompt_tokens_user": 4350,
+      "estimated_prompt_tokens_total": 65578,
+      "output_path": "reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/review_004_claude__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md"
+    },
+    {
+      "model_lane": "minimax",
+      "resolved_api_model": "MiniMax-M2.5",
+      "output_chars": 14464,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 61228,
+      "estimated_prompt_tokens_user": 4350,
+      "estimated_prompt_tokens_total": 65578,
+      "output_path": "reviews/aios_shell_governing_document_and_artifact_plan_001/round_2/review_005_minimax__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md"
+    }
+  ]
+}

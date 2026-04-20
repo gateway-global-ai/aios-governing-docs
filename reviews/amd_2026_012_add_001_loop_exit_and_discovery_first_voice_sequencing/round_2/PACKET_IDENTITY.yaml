@@ -1,0 +1,10 @@
+document_id: AMD-2026-012-ADD-001
+document_path: amendments/AMD-2026-012-ADD-001-loop-exit-and-discovery-first-voice-sequencing.md
+packet_slug: amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing
+current_head_version: 0.2.0
+review_round: 2
+packet_path: reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_2
+manifest_path: reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_2/peer_review_manifest_20260417T232109Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-17T23:21:09Z'

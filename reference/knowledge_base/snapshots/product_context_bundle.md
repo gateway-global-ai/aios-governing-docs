@@ -1,6 +1,6 @@
 # Product implementation snapshot — ai-os-voice-interface
 
-**Generated:** 2026-04-08
+**Generated:** 2026-04-09
 **Source root:** `C:\Apps\ai-os-voice-interface`
 
 This file is **informative** for **peer review** of Workspace / integration **AMD** and **SPEC** text. It concatenates **current** TypeScript sources so reviewers can align governance claims with **implemented** intents, scope classes, and MCP mapping. Regenerate before binding review rounds when the product repo changes.

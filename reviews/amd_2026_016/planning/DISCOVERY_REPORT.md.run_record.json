@@ -1,0 +1,17 @@
+{
+  "mode": "technical",
+  "recorded_at": "2026-04-10T11:42:46Z",
+  "manifest_path": "reference/knowledge_base/agents/style/JT_EDITORIAL_AMD_2026_016_REQUIRED_KNOWLEDGE_MANIFEST.yaml",
+  "optional_include_paths": [
+    "reviews/amd_2026_016/round_1/review_001_deepseek__AMD-2026-016.md",
+    "reviews/amd_2026_016/round_1/review_002_openai__AMD-2026-016.md",
+    "reviews/amd_2026_016/round_1/review_003_gemini__AMD-2026-016.md",
+    "reviews/amd_2026_016/round_1/review_004_claude__AMD-2026-016.md",
+    "reviews/amd_2026_016/round_1/review_005_minimax__AMD-2026-016.md"
+  ],
+  "tool_invocation_identity": "scripts/ollama_authoring_agent.py",
+  "output_path": "reviews/amd_2026_016/planning/DISCOVERY_REPORT.md",
+  "run_record_path": "reviews/amd_2026_016/planning/DISCOVERY_REPORT.md.run_record.json",
+  "model": "jt_authoring_agent",
+  "ollama_host": "http://127.0.0.1:11434"
+}

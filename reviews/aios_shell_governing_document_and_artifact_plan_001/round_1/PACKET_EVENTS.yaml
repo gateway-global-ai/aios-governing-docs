@@ -1,0 +1,31 @@
+packet_schema_version: '2'
+document_id: AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001
+packet_slug: aios_shell_governing_document_and_artifact_plan_001
+events:
+- event_id: evt-20260410T081812Z-001
+  timestamp: '2026-04-10T08:18:12Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/peer_review_manifest_20260410T081812Z.json
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/review_001_deepseek__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/review_002_openai__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/review_003_gemini__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/review_004_claude__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/review_005_minimax__AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+- event_id: evt-20260410T082500Z-002
+  timestamp: '2026-04-10T08:25:00Z'
+  actor: coordinator_manual_synthesis
+  event_type: review_gate_failed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Expanded five-provider review synthesis concluded the shell-first plan required revision before it could act as the pre-artifact foundation gate.
+  evidence_paths:
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/REVIEW_SYNTHESIS.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/RATIFICATION_GATE_REPORT.md
+  - reviews/aios_shell_governing_document_and_artifact_plan_001/round_1/peer_review_manifest_20260410T081812Z.json

@@ -1,0 +1,42 @@
+packet_schema_version: '2'
+document_id: AMD-2026-014
+packet_slug: amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting
+events:
+- event_id: evt-20260409T224633Z-001
+  timestamp: '2026-04-09T22:46:33Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.2
+  to_version: 0.1.2
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.1.2.
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/peer_review_manifest_20260409T224633Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_003_gemini__AMD-2026-014.md
+- event_id: evt-20260409T224633Z-002
+  timestamp: '2026-04-09T22:46:33Z'
+  actor: peer_review.py
+  event_type: review_gate_passed
+  from_version: 0.1.2
+  to_version: 0.1.2
+  round: 2
+  summary: AMD-2026-005 thresholds satisfied (min composite 4.1; no dimension below 3; observed floor 4).
+  evidence_paths:
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/peer_review_manifest_20260409T224633Z.json
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_001_deepseek__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_002_openai__AMD-2026-014.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/review_003_gemini__AMD-2026-014.md
+- event_id: evt-20260409T225500Z-003
+  timestamp: '2026-04-09T22:55:00Z'
+  actor: governance_phase_1_round_2_ratification_closeout
+  event_type: packet_status_corrected
+  from_version: 0.1.2
+  to_version: 1.0.0
+  round: 2
+  summary: Ratification motion executed; round_2 retained as the authoritative pre-ratification pass basis and archived after amendment promotion to ratified 1.0.0.
+  evidence_paths:
+  - amendments/AMD-2026-014-ratification-motion.md
+  - amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md
+  - reviews/amd_2026_014_governed_authoring_knowledge_inputs_and_bounded_author_like_drafting/round_2/PACKET_STATUS.yaml

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "queue_note": "No pending items. AMD-2026-008-ADD-003 is ratified 1.0.0 (2026-04-10); not on active review queue."
+    "queue_note": "No active governed review queue items. AMD-2026-014 is ratified 1.0.0 and its packet is closed as historical pre-ratification evidence; next closure focus is AMD-2026-015 parent."
   },
   "items": []
 }

@@ -1,0 +1,40 @@
+label: amd_2026_006_workspace_integration_lane
+packet_id: PKT-AMD-2026-006-PLANNING
+role: architect
+description: >
+  Declared planning packet for the Google Workspace integration lane. This
+  lane requires shell, intent, scope, and current product evidence.
+review_intents:
+  - review.overview
+  - review.routes
+  - review.schemas
+  - review.storage
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: true
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: true
+  product_evidence:
+    required: true
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-006.md
+  - amendments/AMD-2026-007.md
+  - amendments/AMD-2026-009.md
+  - specifications/GoogleWorkspaceIntegrationGovernance.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+reports_and_snapshots:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

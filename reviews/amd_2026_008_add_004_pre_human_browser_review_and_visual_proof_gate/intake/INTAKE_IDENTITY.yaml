@@ -1,0 +1,11 @@
+document_id: AMD-2026-008-ADD-004
+document_path: amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md
+amendment_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
+intake_schema_version: '1'
+intake_path: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/intake
+planning_path: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/planning
+kernel_path: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/kernel
+ratification_path: reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/ratification
+current_head_version: 0.3.0
+created_at: '2026-04-09T03:04:34Z'
+created_by: stage2_scaffold

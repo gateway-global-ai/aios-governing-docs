@@ -1,0 +1,88 @@
+{
+  "schema": "aios.peer_review_manifest.v1",
+  "document_slug": "amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing",
+  "document": "amendments/AMD-2026-012-ADD-001-loop-exit-and-discovery-first-voice-sequencing.md",
+  "review_round": 1,
+  "rubric": "full",
+  "smart_context": true,
+  "product_context_arg": null,
+  "context_bundle": {
+    "context_mode": "smart_cross_refs",
+    "cross_reference_doc_ids_requested": [
+      "AMD-2026-012",
+      "AIOS-DISCOVER-AGENT-PROCESS-001",
+      "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+      "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001"
+    ],
+    "missing_registry_ids": [],
+    "included_documents": [
+      {
+        "document_id": "AMD-2026-012",
+        "path": "amendments/AMD-2026-012.md",
+        "bytes": 24571,
+        "version": "1.0.0",
+        "registry_id": null,
+        "mtime_utc": 1775593831.7785966
+      },
+      {
+        "document_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+        "path": "reference/implementation/AIOS-DISCOVER-AGENT-PROCESS-001.md",
+        "bytes": 5907,
+        "version": "0.1.1",
+        "registry_id": null,
+        "mtime_utc": 1776353140.8753777
+      },
+      {
+        "document_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "path": "reference/implementation/AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001.md",
+        "bytes": 5334,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776353140.8753777
+      },
+      {
+        "document_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "path": "reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md",
+        "bytes": 11104,
+        "version": "0.1.0",
+        "registry_id": null,
+        "mtime_utc": 1776459847.8024323
+      }
+    ]
+  },
+  "product_context_bundle": {
+    "loaded": false,
+    "path": null,
+    "bytes": 0,
+    "mtime_utc": null
+  },
+  "models_requested": [
+    "openai",
+    "gemini"
+  ],
+  "expanded_review": false,
+  "fallback_unavailable": false,
+  "fallback_models": [],
+  "results": [
+    {
+      "model_lane": "openai",
+      "resolved_api_model": "gpt-5.4",
+      "output_chars": 19431,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 17603,
+      "estimated_prompt_tokens_user": 1638,
+      "estimated_prompt_tokens_total": 19241,
+      "output_path": "reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_001_openai__AMD-2026-012-ADD-001.md"
+    },
+    {
+      "model_lane": "gemini",
+      "resolved_api_model": "gemini-2.5-pro",
+      "output_chars": 8720,
+      "output_classification": "review_like",
+      "estimated_prompt_tokens_system": 17596,
+      "estimated_prompt_tokens_user": 1638,
+      "estimated_prompt_tokens_total": 19234,
+      "output_path": "reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_002_gemini__AMD-2026-012-ADD-001.md"
+    }
+  ]
+}

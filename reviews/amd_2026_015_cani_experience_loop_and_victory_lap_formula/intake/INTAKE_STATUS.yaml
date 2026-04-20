@@ -1,0 +1,15 @@
+document_id: AMD-2026-015
+amendment_slug: amd_2026_015_cani_experience_loop_and_victory_lap_formula
+lifecycle_state: blocked_architect_human_verification
+artifact_health: healthy
+committee_status: open
+architect_verification_status: pending
+ui_verification_status: pending
+kernel_status: pending
+peer_review_status: not_run
+ratification_handoff_status: not_ready
+next_action: verify_architect
+current_head_version: 0.1.6
+last_reviewed_version: ''
+status_updated_at: '2026-04-09T23:37:28Z'
+status_updated_by: governance_parent_lane_architect_retry

@@ -1,0 +1,11 @@
+document_id: AMD-2026-015
+document_path: amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md
+amendment_slug: amd_2026_015_cani_experience_loop_and_victory_lap_formula
+intake_schema_version: '1'
+intake_path: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/intake
+planning_path: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning
+kernel_path: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/kernel
+ratification_path: reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/ratification
+current_head_version: 0.1.6
+created_at: '2026-04-09T23:22:56Z'
+created_by: governance_phase_2_parent_intake

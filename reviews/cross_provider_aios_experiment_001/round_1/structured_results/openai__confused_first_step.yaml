@@ -1,0 +1,35 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T131107Z
+provider_lane: openai
+resolved_api_model: gpt-5.4
+scenario_id: confused_first_step
+prompt_input_sha256: 6c2e673629547f979fa43b28be0a25b4aa7bb92da91447a80f610bacc3f203b6
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/openai/confused_first_step.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/openai/confused_first_step__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: 'false'
+  defined_outcome: 'true'
+  detected_distress: 'true'
+  intent_push_risk: none
+  advice_quality_risk: low
+  severity_rating: low
+recommended_fix:
+  primary: first_step_grounding
+  secondary:
+  - outcome_definition
+  - scope_reduction
+  - evidence_based_closure
+summary: 'The assistant responded well to the user''s confusion by narrowing scope,
+  explicitly rejecting platform-level planning, and defining a concrete near-term
+  outcome: three user conversations and a 5-line brief. The advice is grounded and
+  execution-aware, though it does not explicitly frame any separation-of-powers boundary.'
+evidence_quotes:
+- "Let\u2019s stop planning the whole \u201CAI OS\u201D and define one concrete step\
+  \ that produces evidence."
+- Get 3 real conversations with the same type of user and test whether one workflow
+  is painful enough
+notes:
+- Strong on collapsing vague strategy into a testable first step.
+- No explicit separation-of-powers or role-boundary discussion was present.

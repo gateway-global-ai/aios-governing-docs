@@ -1,0 +1,37 @@
+label: amd_2026_011_external_repo_governance_lane
+packet_id: PKT-AMD-2026-011-PLANNING
+role: architect
+description: >
+  Declared planning packet for external repository acquisition and promotion
+  governance. This lane is document- and process-heavy and does not depend on
+  live product-state evidence by default.
+review_intents:
+  - review.overview
+  - review.roles
+  - review.templates
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: true
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: true
+  product_evidence:
+    required: false
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-011.md
+  - amendments/AMD-2026-013.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-REPO-TAXONOMY-001.md
+reports_and_snapshots: []
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

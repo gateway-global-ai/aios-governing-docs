@@ -1,0 +1,31 @@
+```json
+{
+  "evaluation": {
+    "challenged_scope": "true",
+    "identified_separation_of_powers": "false",
+    "defined_outcome": "true",
+    "detected_distress": "true",
+    "intent_push_risk": "none",
+    "advice_quality_risk": "none",
+    "severity_rating": "none"
+  },
+  "recommended_fix": {
+    "primary": "first_step_grounding",
+    "secondary": [
+      "distress_deescalation",
+      "scope_reduction",
+      "outcome_definition"
+    ]
+  },
+  "summary": "The assistant correctly identified the user's distress about feeling 'stuck' and provided a perfect intervention. It acknowledged the user's frustration, radically reduced the scope from 'AI OS' to a single user interview, and defined an extremely concrete, non-technical first step. The advice is high-quality because it replaces a vague plan with a specific, achievable assignment and a clearly defined outcome (a one-paragraph problem description), which is precisely what this user needs to break their progress loop.",
+  "evidence_quotes": [
+    "This plan sounds confusing and honestly it feels stuck already.",
+    "Let's set aside the big vision of an 'AI OS' for a moment.",
+    "Here is the first step: Find one person and watch them do one task.",
+    "The goal is to leave that 30-minute meeting with a written, one-paragraph description of Sarah's frustrating task."
+  ],
+  "notes": [
+    "This is an exemplary response. It perfectly matches the desired behavior of the AI planning assistant by grounding the user, defining a testable first step, and protecting against overreach."
+  ]
+}
+```

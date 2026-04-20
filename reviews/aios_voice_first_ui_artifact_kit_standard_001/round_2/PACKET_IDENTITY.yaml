@@ -1,0 +1,10 @@
+document_id: AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001
+document_path: reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md
+packet_slug: aios_voice_first_ui_artifact_kit_standard_001
+current_head_version: 0.3.0
+review_round: 2
+packet_path: reviews/aios_voice_first_ui_artifact_kit_standard_001/round_2
+manifest_path: reviews/aios_voice_first_ui_artifact_kit_standard_001/round_2/peer_review_manifest_20260417T232734Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-17T23:27:34Z'

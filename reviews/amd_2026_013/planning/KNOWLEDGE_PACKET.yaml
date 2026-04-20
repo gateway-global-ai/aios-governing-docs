@@ -1,0 +1,36 @@
+label: amd_2026_013_repo_taxonomy_lane
+packet_id: PKT-AMD-2026-013-PLANNING
+role: architect
+description: >
+  Declared planning packet for intent-bearing repository taxonomy and builder
+  control. This lane depends on constitutional, shell, and taxonomy doctrine.
+review_intents:
+  - review.overview
+  - review.routes
+  - review.storage
+authority_tier:
+  constitutional_root:
+    required: true
+  philosophy_and_design:
+    required: true
+  target_amendment:
+    required: true
+  implementation_reference:
+    required: true
+  product_evidence:
+    required: false
+governing_documents:
+  - core/technical_manifesto.md
+  - core/governance_constitution.md
+  - core/master_platform_operating_agreement.md
+  - amendments/AMD-2026-007.md
+  - amendments/AMD-2026-013.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-REPO-TAXONOMY-001.md
+reports_and_snapshots: []
+prohibited_source_classes:
+  - hidden_operator_memory
+  - undeclared_discussion
+  - prior_lane_semantic_inheritance

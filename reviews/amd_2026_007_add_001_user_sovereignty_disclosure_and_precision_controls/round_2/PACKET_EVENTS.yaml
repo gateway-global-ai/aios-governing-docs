@@ -1,0 +1,57 @@
+packet_schema_version: '2'
+document_id: AMD-2026-007-ADD-001
+packet_slug: amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls
+events:
+- event_id: evt-20260417T232115Z-001
+  timestamp: '2026-04-17T23:21:15Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.2.0
+  to_version: 0.2.0
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.2.0.
+  evidence_paths:
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/peer_review_manifest_20260417T232115Z.json
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_001_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_002_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_003_claude__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_004_minimax__AMD-2026-007-ADD-001.md
+- event_id: evt-20260417T232730Z-002
+  timestamp: '2026-04-17T23:27:30Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.3.0
+  to_version: 0.3.0
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.3.0.
+  evidence_paths:
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/peer_review_manifest_20260417T232730Z.json
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_001_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_002_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_003_claude__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_004_minimax__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_005_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_006_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_007_claude__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_008_minimax__AMD-2026-007-ADD-001.md
+- event_id: evt-20260418T014742Z-003
+  timestamp: '2026-04-18T01:47:42Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.4.0
+  to_version: 0.4.0
+  round: 2
+  summary: Peer review round 2 completed for assessed draft 0.4.0.
+  evidence_paths:
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/peer_review_manifest_20260418T014742Z.json
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_001_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_002_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_003_claude__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_004_minimax__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_005_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_006_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_007_claude__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_008_minimax__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_009_deepseek__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_010_gemini__AMD-2026-007-ADD-001.md
+  - reviews/amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls/round_2/review_011_claude__AMD-2026-007-ADD-001.md

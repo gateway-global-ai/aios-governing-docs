@@ -1,0 +1,11 @@
+document_id: AMD-2026-008-ADD-005
+packet_slug: amd_2026_008_add_005_voice_first_rendered_session_proof_and_artifact_checks
+current_head_version: 0.7.0
+last_reviewed_version: 0.7.0
+artifact_health: healthy
+review_gate_status: incomplete
+committee_status: open
+next_action: manual_resolution
+lifecycle_phase: round_2_ready
+status_updated_at: '2026-04-18T02:06:52Z'
+status_updated_by: peer_review.py

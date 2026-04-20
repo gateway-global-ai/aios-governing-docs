@@ -1,0 +1,15 @@
+document_id: AMD-2026-013
+amendment_slug: amd_2026_013
+lifecycle_state: blocked_architect_human_verification
+artifact_health: incomplete_packet
+committee_status: open
+architect_verification_status: pending
+ui_verification_status: pending
+kernel_status: pending
+peer_review_status: not_run
+ratification_handoff_status: not_ready
+next_action: verify_architect
+current_head_version: 1.0.0
+last_reviewed_version: ''
+status_updated_at: '2026-04-09T07:38:23Z'
+status_updated_by: stage3b_proof_qwen

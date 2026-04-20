@@ -1,0 +1,10 @@
+document_id: AMD-2026-015-ADD-006
+document_path: amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md
+packet_slug: amd_2026_015_add_006_cani_collector_and_instrumentation_bridge
+current_head_version: 0.1.6
+review_round: 1
+packet_path: reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/round_1
+manifest_path: reviews/amd_2026_015_add_006_cani_collector_and_instrumentation_bridge/round_1/peer_review_manifest_20260409T151305Z.json
+packet_schema_version: '2'
+generated_by: peer_review.py
+generated_at: '2026-04-09T15:13:05Z'

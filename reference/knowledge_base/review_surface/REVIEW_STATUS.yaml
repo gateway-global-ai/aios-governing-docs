@@ -1,0 +1,39 @@
+surface_id: aios_kb_review_surface
+approval_gate: human_review_required
+overall_status: pending_human_review
+artifacts:
+  - path: reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md
+    status: approved
+  - path: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_1_SHELL_AUTHORITY_SURFACES.md
+    status: changes_requested
+  - path: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_2_ACCOUNT_AND_IDENTITY_SURFACES.md
+    status: pending_human_review
+  - path: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_3_DOCUMENT_AND_FOLDER_BASELINE.md
+    status: changes_requested
+  - path: reviews/aios_shell_governing_document_and_artifact_plan_001/phase_packets_2026-04-10/PHASE_4_VOICE_LANE_AND_AGENT_CONTROLS.md
+    status: pending_human_review
+  - path: reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md
+    status: pending_human_review
+  - path: templates/governance_system/README.md
+    status: pending_human_review
+  - path: reference/knowledge_base/review_surface/ROLE_ATTACHMENTS.yaml
+    status: pending_human_review
+notes:
+  - `overall_status` is the aggregate posture of the assembled review surface, not a synonym for any one artifact entry.
+  - Planner trust restoration remains blocked until the review surface is approved.
+  - Contaminated planning lanes remain historical-only until regenerated or explicitly cleared.
+  - The shell-first governing plan artifact was approved after `draft` `0.1.2` added explicit admin account-view and access-level administration scope; downstream shell artifact creation may now begin only under the plan's phase-by-phase review gates.
+  - Phase 1 through Phase 4 shell packets have now been opened as bounded planning artifacts and are pending review before any derivative support artifacts are treated as governed output.
+  - Phase 1 shell authority surfaces completed an expanded Round 1 review and returned `major_revision_required`; it should not be treated as the authority floor until revised and rerun.
+  - Phase 3 document and folder baseline completed an expanded Round 1 review and returned `major_revision_required`; it should not be treated as the shell document/storage baseline until revised and rerun.
+  - The review surface remains `pending_human_review` in aggregate because other listed surface artifacts are still awaiting human approval.

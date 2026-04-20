@@ -13,11 +13,23 @@
 
 ---
 
-## Legacy (historical only)
+## Historical snapshot outputs
 
 | Location | Notes |
 |----------|--------|
-| [`legacy/2026-03-26-feat-os-governance-phase5/`](legacy/2026-03-26-feat-os-governance-phase5/README.md) | Superseded five-pass Downloads archive — **`client/src`** era; execution-contract / server routes may not match this repo today. |
+| [`legacy/2026-03-26-feat-os-governance-phase5/`](legacy/2026-03-26-feat-os-governance-phase5/README.md) | Historical five-pass discovery snapshot — keep as evidence of one governed run. The five-pass method remains active as a pre-architecture discovery pattern, but these specific outputs are tied to an older tree and path layout. |
+
+### Pre-architecture discovery use
+
+The five-pass family should be treated as the governed pre-architecture discovery suite when a planning lane must first map the current system before architect planning can be trusted.
+
+That suite is:
+
+1. architecture cartography
+2. implicit capability extraction
+3. governance breach audit
+4. registry migration planning
+5. control-plane coverage audit
 
 ---
 

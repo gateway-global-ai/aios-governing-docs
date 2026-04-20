@@ -1,0 +1,11 @@
+document_id: PHASE_1_SHELL_AUTHORITY_SURFACES
+packet_slug: phase_1_shell_authority_surfaces
+current_head_version: ''
+last_reviewed_version: ''
+artifact_health: healthy
+review_gate_status: fail
+committee_status: open
+next_action: revise
+lifecycle_phase: round_1_complete
+status_updated_at: '2026-04-10T09:56:00Z'
+status_updated_by: coordinator_manual_synthesis

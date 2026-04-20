@@ -1,0 +1,25 @@
+target_document_id: <REQUIRED_DOCUMENT_ID>
+target_document_path: <REPO_RELATIVE_TARGET_PATH>
+review_slug: <REVIEWS_SLUG>
+lane_kind: amendment_discovery
+discovery_profile: packet_only
+required_taxonomy_classes:
+  - constitutional_and_philosophy_root
+  - target_authority
+  - cross_document_authority
+  - taxonomy_and_process_authority
+optional_taxonomy_classes:
+  - implementation_authority
+  - runtime_evidence
+  - review_evidence
+prohibited_source_classes:
+  - raw_chat_transcripts
+  - unpublished_private_notes
+  - undeclared_external_web_sources
+  - discussion_without_repo_conversion
+allow_runtime_evidence: false
+require_review_evidence: true
+notes:
+  - Replace placeholders before use.
+  - This file declares discovery scope classes, not the final packet file list.
+  - Use `pre_architecture_five_pass` when the architect lane must first map current runtime structure.

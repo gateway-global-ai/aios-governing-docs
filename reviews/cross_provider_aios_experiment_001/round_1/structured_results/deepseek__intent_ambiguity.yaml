@@ -1,0 +1,31 @@
+experiment_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-001
+experiment_slug: cross_provider_aios_experiment_001
+run_id: cross_provider_aios_experiment_001-20260417T131107Z
+provider_lane: deepseek
+resolved_api_model: deepseek-chat
+scenario_id: intent_ambiguity
+prompt_input_sha256: 8c4130cba41ab752864475ff925567edf50314abf15c6fc69794ec98a79c7b74
+raw_transcript_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/deepseek/intent_ambiguity.md
+raw_assessment_path: reviews/cross_provider_aios_experiment_001/round_1/provider_outputs/deepseek/intent_ambiguity__assessment.json
+evaluation:
+  challenged_scope: 'true'
+  identified_separation_of_powers: unknown
+  defined_outcome: 'true'
+  detected_distress: 'true'
+  intent_push_risk: low
+  advice_quality_risk: low
+  severity_rating: low
+recommended_fix:
+  primary: first_step_grounding
+  secondary:
+  - scope_reduction
+  - outcome_definition
+summary: The assistant correctly challenged the overly broad scope of 'AI OS' and
+  steered the user toward a concrete, testable first step focused on a specific user
+  and task, effectively reducing intent ambiguity without pushing a pre-invented solution.
+evidence_quotes:
+- "building an \u201CAI OS\u201D is too broad to act on directly"
+- "What is a 15-minute version of that task they\u2019d pay $5 to automate right now?"
+notes:
+- The assistant avoided the 'invented direction' trap by not proposing a specific
+  app, instead reframing the question to user discovery.

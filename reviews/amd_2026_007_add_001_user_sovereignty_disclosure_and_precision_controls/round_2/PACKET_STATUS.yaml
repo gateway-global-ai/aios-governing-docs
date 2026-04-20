@@ -1,0 +1,11 @@
+document_id: AMD-2026-007-ADD-001
+packet_slug: amd_2026_007_add_001_user_sovereignty_disclosure_and_precision_controls
+current_head_version: 0.4.0
+last_reviewed_version: 0.4.0
+artifact_health: healthy
+review_gate_status: incomplete
+committee_status: open
+next_action: manual_resolution
+lifecycle_phase: round_2_ready
+status_updated_at: '2026-04-18T01:47:42Z'
+status_updated_by: peer_review.py

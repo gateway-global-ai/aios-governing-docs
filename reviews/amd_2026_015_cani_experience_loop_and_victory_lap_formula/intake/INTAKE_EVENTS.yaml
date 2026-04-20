@@ -1,0 +1,149 @@
+intake_schema_version: '1'
+document_id: AMD-2026-015
+amendment_slug: amd_2026_015_cani_experience_loop_and_victory_lap_formula
+events:
+- event_id: evt-001
+  timestamp: '2026-04-09T23:22:56Z'
+  actor: governance_phase_2_parent_intake
+  event_type: intake_initialized
+  from_state: ''
+  to_state: intake_open
+  summary: Intake scaffold initialized for amendment orchestration.
+  evidence_paths:
+  - amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/intake
+- event_id: evt-20260409T232315Z-002
+  timestamp: '2026-04-09T23:23:15Z'
+  actor: governance_phase_2_parent_intake
+  event_type: evidence_refreshed
+  from_state: intake_open
+  to_state: phase_a_evidence_ready
+  summary: Evidence refreshed and knowledge bundle rebuilt.
+  evidence_paths:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T232322Z-003
+  timestamp: '2026-04-09T23:23:22Z'
+  actor: governance_phase_2_parent_intake
+  event_type: architect_started
+  from_state: phase_a_evidence_ready
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN_TEMPLATE.md
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/UI_PLAN_TEMPLATE.md
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/COMMITTEE_PACKET_TEMPLATE.md
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T232322Z-004
+  timestamp: '2026-04-09T23:23:22Z'
+  actor: governance_phase_2_parent_intake
+  event_type: architect_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: "Architect lane failed before verified output was recorded: Command failed\
+    \ with non-zero exit code:\n{\n  \"command\": [\n    \"py\",\n    \"-3\",\n  \
+    \  \"scripts/preflight_local_agents.py\"\n  ],\n  \"returncode\": 1,\n  \"stdout\"\
+    : \"{\\n  \\\"status\\\": \\\"model_present\\\",\\n  \\\"ollama_host\\\": \\\"\
+    http://127.0.0.1:11434\\\",\\n  \\\"ollama_model\\\": \\\"llama3.2\\\",\\n  \\\
+    \"lines\\\": [\\n    \\\"ollama executable: NOT FOUND on PATH\\\",\\n    \\\"\
+    OLLAMA_HOST: http://127.0.0.1:11434 OK\\\",\\n    \\\"Models on host: ['jt_authoring_agent:latest',\
+    \ 'gurubot/self-after-dark:latest', 'fluffy/l3-8b-stheno-v3.2:latest', 'qwen3:8b',\
+    \ 'llama3.2:latest']\\\",\\n    \\\"Desired model 'llama3.2': present\\\"\\n \
+    \ ]\\n}\\n\",\n  \"stderr\": \"\"\n}"
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T232922Z-005
+  timestamp: '2026-04-09T23:29:22Z'
+  actor: governance_parent_lane_process_repair
+  event_type: intake_status_corrected
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Parent lane re-grounded on the canonical intake scaffold and planning-template
+    path; architect execution remains pending as the next explicit step.
+  evidence_paths:
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - scripts/amendment_intake_agent.py
+  - scripts/intake_paths.py
+- event_id: evt-20260409T233335Z-006
+  timestamp: '2026-04-09T23:33:35Z'
+  actor: governance_parent_lane_architect
+  event_type: architect_started
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T233352Z-007
+  timestamp: '2026-04-09T23:33:52Z'
+  actor: governance_parent_lane_architect
+  event_type: architect_output_validation_failed
+  from_state: phase_b_architect_pending
+  to_state: failed
+  summary: 'Architect lane blocked: output failed architect-plan conformance validation:
+    architect output missing required heading ''## 1. Executive summary''; architect
+    output missing required heading ''## 2. Current system grounding (file-cited)'';
+    architect output missing required heading ''## 3. Schemas (normative targets for
+    SPEC / annex)''; architect output missing required heading ''## 4. Routes (intent
+    → surface → control plane)''; architect output missing required heading ''## 5.
+    Storage / session / tokens''; architect output missing required heading ''## 6.
+    Gaps vs governing text''; architect output missing required heading ''## 7. Verification
+    checklist'''
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T233442Z-008
+  timestamp: '2026-04-09T23:34:42Z'
+  actor: governance_parent_lane_architect_retry
+  event_type: architect_started
+  from_state: failed
+  to_state: phase_b_architect_pending
+  summary: Architect planning started after precondition and path reconciliation checks.
+  evidence_paths:
+  - reference/knowledge_base/agents/agent_kb_manifest.yaml
+  - reference/knowledge_base/agents/corpus/government_and_reports_bundle.md
+  - reference/knowledge_base/agents/corpus/build_manifest.json
+- event_id: evt-20260409T233728Z-009
+  timestamp: '2026-04-09T23:37:28Z'
+  actor: governance_parent_lane_architect_retry
+  event_type: architect_drafted
+  from_state: phase_b_architect_pending
+  to_state: phase_b_architect_drafted
+  summary: Architect planning draft generated.
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T233728Z-010
+  timestamp: '2026-04-09T23:37:28Z'
+  actor: governance_parent_lane_architect_retry
+  event_type: architect_output_verified
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output file existence verified before success recording.
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+- event_id: evt-20260409T233728Z-011
+  timestamp: '2026-04-09T23:37:28Z'
+  actor: governance_parent_lane_architect_retry
+  event_type: architect_output_conformance_validated
+  from_state: phase_b_architect_drafted
+  to_state: phase_b_architect_drafted
+  summary: Architect output passed template-based structural conformance validation.
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN_TEMPLATE.md
+- event_id: evt-20260409T233728Z-012
+  timestamp: '2026-04-09T23:37:28Z'
+  actor: governance_parent_lane_architect_retry
+  event_type: architect_human_verification_blocked
+  from_state: phase_b_architect_drafted
+  to_state: blocked_architect_human_verification
+  summary: Architect draft now awaits human verification.
+  evidence_paths:
+  - reviews/amd_2026_015_cani_experience_loop_and_victory_lap_formula/planning/ARCHITECT_PLAN.md

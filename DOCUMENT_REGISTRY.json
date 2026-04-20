@@ -19,6 +19,32 @@
     ]
   },
   {
+    "document_id": "AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001",
+    "title": "Agent, role, and toolchain roster for the restored planner system",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AIOS-SPEC-012",
+        "title": "Agent registry"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-AMD-001-DISPOSITION-001",
     "title": "AMD-001 — taxonomy, classification, and disposition",
     "version": "1.0.0",
@@ -46,7 +72,7 @@
   {
     "document_id": "AIOS-AMD-PLAN-001",
     "title": "Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md",
@@ -62,13 +88,16 @@
       },
       {
         "doc_id": "AIOS-EXEC-DEMO-001"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001"
       }
     ]
   },
   {
     "document_id": "AIOS-AMD-TRACKER-001",
     "title": "Outstanding amendments — governed review tracker",
-    "version": "1.2.6",
+    "version": "1.3.9",
     "status": "draft",
     "category": "reference",
     "_path": "reference/implementation/AMD-AMENDMENT-REVIEW-TRACKER-001.md",
@@ -101,6 +130,12 @@
         "doc_id": "AIOS-COMMITTEE-BRIEF-AMD-2026-013"
       },
       {
+        "doc_id": "AMD-2026-014"
+      },
+      {
+        "doc_id": "AMD-2026-014-RATIFICATION-MOTION"
+      },
+      {
         "doc_id": "AIOS-AMD-001-DISPOSITION-001"
       },
       {
@@ -111,6 +146,482 @@
       },
       {
         "doc_id": "AMD-2026-008-ADD-003-RATIFICATION-MOTION"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004"
+      },
+      {
+        "doc_id": "AMD-2026-015"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006-RATIFICATION-MOTION"
+      },
+      {
+        "doc_id": "AMD-2026-016"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+    "title": "Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004)",
+    "version": "0.1.2",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001"
+      },
+      {
+        "doc_id": "AMD-2026-011"
+      },
+      {
+        "doc_id": "AIOS-SPEC-013"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-005",
+        "title": "Voice-First Rendered Session Proof and Artifact Checks"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001",
+    "title": "CANI capture surface and normalization handoff contract",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015-ADD-006-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-015-ADD-006",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006",
+        "title": "CANI Collector and Instrumentation Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+    "title": "CANI Experience Loop technical standard",
+    "version": "0.1.5",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006",
+        "title": "CANI Collector and Instrumentation Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001",
+        "title": "CANI capture surface and normalization handoff contract"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+    "title": "CANI observation and recommendation schema",
+    "version": "0.1.2",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+    "title": "CANI persisted artifact taxonomy and storage contract",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+    "title": "CANI telemetry ingestion envelope and normalization contract",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+    "title": "CANI validator and tooling contract",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/CANI-VALIDATOR-AND-TOOLING-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
       }
     ]
   },
@@ -387,6 +898,134 @@
     ]
   },
   {
+    "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+    "title": "Cross-provider AI OS experiment protocol",
+    "version": "0.2.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+        "title": "Peer review model routing and evidence policy"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      },
+      {
+        "doc_id": "AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001",
+        "title": "Analysis of the Cursor research-pack report set and committee posture"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001",
+        "title": "Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+        "title": "Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001",
+    "title": "Cross-provider AI OS experiment round 1 report",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+        "title": "Cross-provider AI OS experiment protocol"
+      },
+      {
+        "doc_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+        "title": "Peer review model routing and evidence policy"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001",
+        "title": "Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+        "title": "Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001",
+    "title": "Cross-provider AI OS experiment round 2 report",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+        "title": "Cross-provider AI OS experiment protocol"
+      },
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001",
+        "title": "Cross-provider AI OS experiment round 1 report"
+      },
+      {
+        "doc_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+        "title": "Peer review model routing and evidence policy"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001",
+        "title": "Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures"
+      },
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+        "title": "Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-3-REPORT-001",
+    "title": "Cross-provider AI OS experiment round 3 report",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-3-REPORT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001",
+        "title": "Cross-provider AI OS experiment protocol"
+      },
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-1-REPORT-001",
+        "title": "Cross-provider AI OS experiment round 1 report"
+      },
+      {
+        "doc_id": "AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-ROUND-2-REPORT-001",
+        "title": "Cross-provider AI OS experiment round 2 report"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001",
+        "title": "Research Studies - ChatGPT Operating Model and Danger Analysis"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001",
+        "title": "Research Studies - Intent Control Layer and Signal Governance"
+      },
+      {
+        "doc_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
+        "title": "Peer review model routing and evidence policy"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-DEV-PROC-001",
     "title": "AI OS development conformance — triangulated peer review",
     "version": "1.0.0",
@@ -424,6 +1063,36 @@
     ]
   },
   {
+    "document_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+    "title": "Discover-agent process for taxonomy-driven knowledge assembly",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-DISCOVER-AGENT-PROCESS-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001",
+        "title": "Taxonomy-first discovery and knowledge assembly contract"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001",
+        "title": "Agent, role, and toolchain roster for the restored planner system"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-EXEC-DEMO-001",
     "title": "Isolated execution demonstration pipeline (draft proposal)",
     "version": "0.1.5",
@@ -443,6 +1112,48 @@
     ]
   },
   {
+    "document_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+    "title": "Governed authoring knowledge inputs and bounded author-like drafting",
+    "version": "0.1.2",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-JT-EDITORIAL-STYLE-CARD-001",
+        "title": "JT editorial style card"
+      },
+      {
+        "doc_id": "AIOS-JT-NARRATION-STYLE-CARD-001",
+        "title": "JT narration style card"
+      },
+      {
+        "doc_id": "AIOS-JT-AUTHORING-MODE-BOUNDARIES-001",
+        "title": "JT authoring modes and identity boundaries"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "title": "Intent-Scoped Web Retrieval and Governed Website Review"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-IMPL-LEDGER-001",
     "title": "AIOS Implementation Ledger and Anti-Drift Operating Loop",
     "version": "1.1.0",
@@ -455,6 +1166,218 @@
       },
       {
         "doc_id": "AIOS-ADR-001"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+    "title": "CANI Experience Loop and Victory Lap Formula",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "article",
+    "_path": "reference/knowledge_base/articles/CANI-VICTORY-LAP-FORMULA.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-CASE-STUDY-001",
+    "title": "Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "case_study",
+    "_path": "reference/knowledge_base/articles/CASE-STUDY-001-SYSTEMATIC-FAILURE-IN-HIGH-VOLUME-VIBE-CODING-ARCHITECTURES.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+        "title": "Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001",
+        "title": "Research Studies - Consumer AI Clinical, Architectural, and Economic Analysis"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001",
+        "title": "Research Studies - Intent Control Layer and Signal Governance"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-CASE-STUDY-001-ADDENDUM-001",
+    "title": "Case Study 001 Addendum 001 - The SVJ Pivot High-Status Signals as Identity Anchors",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "case_study_addendum",
+    "_path": "reference/knowledge_base/articles/CASE-STUDY-001-ADDENDUM-001-THE-SVJ-PIVOT-HIGH-STATUS-SIGNALS-AS-IDENTITY-ANCHORS.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-KB-CASE-STUDY-001",
+        "title": "Case Study 001 - Systematic Failure in High-Volume Vibe-Coding Architectures"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001",
+        "title": "Research Studies - Intent Control Layer and Signal Governance"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001",
+        "title": "Research Studies - ChatGPT Operating Model and Danger Analysis"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001",
+    "title": "Research Studies - ChatGPT Operating Model and Danger Analysis",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "article",
+    "_path": "reference/knowledge_base/articles/RESEARCH-CHATGPT-OPERATING-MODEL-DANGER-ANALYSIS.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge input standard"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001",
+    "title": "Research Studies - Intent Control Layer and Signal Governance",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "article",
+    "_path": "reference/knowledge_base/articles/RESEARCH-INTENT-CONTROL-LAYER-AND-SIGNAL-GOVERNANCE.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001",
+        "title": "Research Studies - ChatGPT Operating Model and Danger Analysis"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge input standard"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-RESEARCH-STUDIES-CONSUMER-AI-001",
+    "title": "Research Studies - Consumer AI Clinical, Architectural, and Economic Analysis",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "article",
+    "_path": "reference/knowledge_base/articles/RESEARCH-STUDIES-CONSUMER-AI-CLINICAL-ARCHITECTURAL-ECONOMIC-ANALYSIS.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge input standard"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KB-VOICE-RUNTIME-HEADER-GUIDE-001",
+    "title": "AI OS Voice Runtime Lanes and Header Controls Guide",
+    "version": "0.2.0",
+    "status": "draft",
+    "category": "article",
+    "_path": "reference/knowledge_base/articles/AIOS-VOICE-RUNTIME-LANES-AND-HEADER-CONTROLS-GUIDE.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes"
+      },
+      {
+        "doc_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+        "title": "AI OS Voice TTS Architecture Standard"
+      },
+      {
+        "doc_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "title": "AI OS Shell UI Layout and Component Standard"
+      },
+      {
+        "doc_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
+        "title": "Voice-first UI artifact kit standard"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001",
+    "title": "Intent-driven knowledge-base review interface model",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      },
+      {
+        "doc_id": "AIOS-AGENT-AND-TOOLCHAIN-ROSTER-001",
+        "title": "Agent, role, and toolchain roster"
+      },
+      {
+        "doc_id": "AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001",
+        "title": "Schema, route, and storage inventory"
+      },
+      {
+        "doc_id": "AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001",
+        "title": "Planner drift provenance ledger and containment classification"
       }
     ]
   },
@@ -900,6 +1823,28 @@
     ]
   },
   {
+    "document_id": "AIOS-PEER-REVIEW-EXPORT-STANDARD-001",
+    "title": "Peer-review export standard",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-PEER-REVIEW-EXPORT-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-014",
+        "title": "Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-PEER-REVIEW-MODEL-ROUTING-001",
     "title": "Peer review model routing and evidence policy (AIOS)",
     "version": "0.1.0",
@@ -907,6 +1852,50 @@
     "category": "reference_implementation",
     "_path": "reference/implementation/AIOS-PEER-REVIEW-MODEL-ROUTING-001.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001",
+    "title": "Planner drift artifact inventory and disposition",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-PLANNER-DRIFT-ARTIFACT-INVENTORY-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001",
+        "title": "Planner drift provenance ledger and containment classification"
+      },
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001",
+    "title": "Planner drift provenance ledger and containment classification",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      },
+      {
+        "doc_id": "AMD-2026-014",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      }
+    ]
   },
   {
     "document_id": "AIOS-POLICY-INDEX",
@@ -935,6 +1924,32 @@
       {
         "doc_id": "AMD-2026-013",
         "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+    "title": "Pre-architecture discovery agent for five-pass system research",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+        "title": "Discover-agent process for taxonomy-driven knowledge assembly"
+      },
+      {
+        "doc_id": "AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001",
+        "title": "Taxonomy-first discovery and knowledge assembly contract"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001",
+        "title": "Analysis of the Cursor research-pack report set and committee posture"
       }
     ]
   },
@@ -1093,6 +2108,108 @@
     ]
   },
   {
+    "document_id": "AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001",
+    "title": "Analysis of the Cursor research-pack report set and committee posture",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-RESEARCH-PACK-REPORT-SET-ANALYSIS-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      },
+      {
+        "doc_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+        "title": "Discover-agent process for taxonomy-driven knowledge assembly"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+    "title": "Review packet artifact taxonomy (identity, status, events, handoff)",
+    "version": "1.0.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001",
+    "title": "Schema, route, and storage inventory for the restored planner and review system",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SCHEMA-ROUTE-STORAGE-INVENTORY-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      },
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SHELL-BASELINE-RECOVERY-PACKET-001",
+    "title": "Shell baseline recovery packet and review path",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SHELL-BASELINE-RECOVERY-PACKET-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001",
+        "title": "Base Shell Navigation Primitives and Start-Here Control"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003",
+        "title": "Composition Control Plane for Messages, Invites, and Documents"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      }
+    ]
+  },
+  {
     "document_id": "AIOS-SHELL-COMPOSITION-SURFACE-MEMO-001",
     "title": "Shell and composition — surface grammar and user-state memo (AMD-2026-008 addendum track)",
     "version": "1.0.0",
@@ -1117,6 +2234,124 @@
       },
       {
         "doc_id": "AIOS-COMPOSITION-CONTROL-ARCHITECTURE-MEMO-001"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001",
+    "title": "Shell-first governing document and artifact plan",
+    "version": "0.1.3",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SHELL-GOVERNING-DOCUMENT-AND-ARTIFACT-PLAN-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SHELL-BASELINE-RECOVERY-PACKET-001",
+        "title": "Shell baseline recovery packet and review path"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      },
+      {
+        "doc_id": "AIOS-KNOWLEDGE-BASE-REVIEW-INTERFACE-MODEL-001",
+        "title": "Knowledge-base review interface model"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-014",
+        "title": "Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting"
+      },
+      {
+        "doc_id": "AMD-2026-016",
+        "title": "Governed Non-Human Principals and Deterministic Routed Authority"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+    "title": "AI OS Shell UI Layout and Component Standard",
+    "version": "0.4.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004",
+        "title": "Pre-Human Browser Review and Visual Proof Gate"
+      },
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AMD-2026-016",
+        "title": "Governed Non-Human Principals and Deterministic Routed Authority"
+      },
+      {
+        "doc_id": "ADR-001-core-shell-vs-interface-boundaries",
+        "title": "Core Shell vs Interface Boundaries (proposed)"
+      },
+      {
+        "doc_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
+        "title": "Voice-first UI artifact kit standard"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-SOVEREIGN-PLAYWRIGHT-PROOF-HARNESS-001",
+    "title": "Sovereign Playwright proof harness",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-SOVEREIGN-PLAYWRIGHT-PROOF-HARNESS-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-004",
+        "title": "Pre-Human Browser Review and Visual Proof Gate"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-005",
+        "title": "Voice-First Rendered Session Proof and Artifact Checks"
+      },
+      {
+        "doc_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "title": "AI OS Shell UI Layout and Component Standard"
+      },
+      {
+        "doc_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
+        "title": "Voice-first UI artifact kit standard"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
       }
     ]
   },
@@ -1245,7 +2480,7 @@
   {
     "document_id": "AIOS-SPEC-006",
     "title": "UI Component Registry Standard",
-    "version": "1.3.0",
+    "version": "1.5.0",
     "status": "draft",
     "category": "specification",
     "_path": "specifications/UIComponentRegistryStandard.md",
@@ -1276,6 +2511,10 @@
       },
       {
         "doc_id": "AIOS-SPEC-007",
+        "relationship": "constrained_by"
+      },
+      {
+        "doc_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
         "relationship": "constrained_by"
       }
     ]
@@ -1574,6 +2813,184 @@
     ]
   },
   {
+    "document_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+    "title": "Systems and planning manual for planner/knowledge-base restoration",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-SYSTEMS-AND-PLANNING-MANUAL-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-PLANNER-DRIFT-PROVENANCE-LEDGER-001",
+        "title": "Planner drift provenance ledger and containment classification"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-bearing repository taxonomy"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001",
+    "title": "Taxonomy-first discovery and knowledge assembly contract",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-TAXONOMY-FIRST-DISCOVERY-CONTRACT-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      },
+      {
+        "doc_id": "AIOS-REPO-TAXONOMY-001",
+        "title": "Intent-bearing repository taxonomy"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-SYSTEMS-AND-PLANNING-MANUAL-001",
+        "title": "Systems and planning manual for planner/knowledge-base restoration"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+    "title": "User sovereignty disclosure and loop-exit standard",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "reference_implementation",
+    "_path": "reference/implementation/AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-INTENT-SIGNAL-GOVERNANCE-001",
+        "title": "Research Studies - Intent Control Layer and Signal Governance"
+      },
+      {
+        "doc_id": "AIOS-KB-RESEARCH-CHATGPT-OPERATING-MODEL-001",
+        "title": "Research Studies - ChatGPT Operating Model and Danger Analysis"
+      },
+      {
+        "doc_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+        "title": "Discover-agent process for taxonomy-driven knowledge assembly"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004",
+        "title": "Pre-Human Browser Review and Visual Proof Gate"
+      },
+      {
+        "doc_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "title": "Browser review gate - R&D and knowledge capture"
+      },
+      {
+        "doc_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "title": "AI OS Shell UI Layout and Component Standard"
+      },
+      {
+        "doc_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+        "title": "AI OS Voice TTS Architecture Standard"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001",
+    "title": "Voice-first UI artifact kit standard",
+    "version": "0.7.0",
+    "status": "draft",
+    "category": "specification",
+    "_path": "reference/implementation/AIOS-VOICE-FIRST-UI-ARTIFACT-KIT-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004",
+        "title": "Pre-Human Browser Review and Visual Proof Gate"
+      },
+      {
+        "doc_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "title": "AI OS Shell UI Layout and Component Standard"
+      },
+      {
+        "doc_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "title": "User sovereignty disclosure and loop-exit standard"
+      }
+    ]
+  },
+  {
+    "document_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+    "title": "AI OS Voice TTS Architecture Standard",
+    "version": "0.4.0",
+    "status": "draft",
+    "category": "reference",
+    "_path": "reference/implementation/AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001",
+        "title": "Base Shell Navigation Primitives and Start-Here Control"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output and Output Packaging"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model (§17 Sovereign Voice)"
+      },
+      {
+        "doc_id": "AIOS-SHELL-UI-LAYOUT-AND-COMPONENT-STANDARD-001",
+        "title": "AI OS Shell UI Layout and Component Standard"
+      }
+    ]
+  },
+  {
     "document_id": "AMD-001",
     "title": "Agent-Native CLI Design Patterns (Google CLI Article Analysis)",
     "version": "",
@@ -1675,6 +3092,28 @@
       {
         "doc_id": "AMD-2026-006",
         "relationship": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-007-ADD-001",
+    "title": "User Sovereignty Disclosure and Precision Controls",
+    "version": "0.4.0",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-007-ADD-001-user-sovereignty-disclosure-and-precision-controls.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "title": "User sovereignty disclosure and loop-exit standard"
       }
     ]
   },
@@ -1860,6 +3299,100 @@
     "category": "council_motion",
     "_path": "amendments/AMD-2026-008-ADD-003-ratification-motion.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-004",
+    "title": "Pre-Human Browser Review and Visual Proof Gate",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008-ADD-004-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-008-ADD-004",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-001",
+        "title": "Base Shell Navigation Primitives and Start-Here Control"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-002",
+        "title": "Verbose Grounding, Shell Voice Output Control, and Output Packaging"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-003",
+        "title": "Composition Control Plane for Messages, Invites, and Documents"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle (architect → UI → committee → peer review)"
+      },
+      {
+        "doc_id": "AMD-2026-011",
+        "title": "External Repository Acquisition, Quarantine, Promotion, and Minimal Governance Execution Dependencies"
+      },
+      {
+        "doc_id": "AIOS-SPEC-013",
+        "title": "External Repository Acquisition, Analysis, and Promotion"
+      },
+      {
+        "doc_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "title": "Browser review gate — R&D and knowledge capture (AMD-2026-008-ADD-004)"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-SPEC-006",
+        "title": "UI Component Registry Standard"
+      },
+      {
+        "doc_id": "MPOA",
+        "title": "Master Platform Operating Agreement"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-004-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-008-ADD-004 (pre-human browser review and visual proof gate)",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-008-ADD-004-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-008-ADD-005",
+    "title": "Voice-First Rendered Session Proof and Artifact Checks",
+    "version": "0.7.0",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-008-ADD-005-voice-first-rendered-session-proof-and-artifact-checks.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-008",
+        "title": "Sovereign Voice and Local Runtime Lanes (Incorporation by Reference)"
+      },
+      {
+        "doc_id": "AMD-2026-008-ADD-004",
+        "title": "Pre-Human Browser Review and Visual Proof Gate"
+      },
+      {
+        "doc_id": "AIOS-BROWSER-REVIEW-GATE-RD-NOTES-001",
+        "title": "Browser review gate - R&D and knowledge capture"
+      },
+      {
+        "doc_id": "AIOS-VOICE-TTS-ARCHITECTURE-STANDARD-001",
+        "title": "AI OS Voice TTS Architecture Standard"
+      }
+    ]
   },
   {
     "document_id": "AMD-2026-008-RATIFICATION-MOTION",
@@ -2075,6 +3608,32 @@
     ]
   },
   {
+    "document_id": "AMD-2026-012-ADD-001",
+    "title": "Loop Exit and Discovery-First Voice Sequencing",
+    "version": "0.2.0",
+    "status": "draft",
+    "category": "amendment_addendum",
+    "_path": "amendments/AMD-2026-012-ADD-001-loop-exit-and-discovery-first-voice-sequencing.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AIOS-DISCOVER-AGENT-PROCESS-001",
+        "title": "Discover-agent process for taxonomy-driven knowledge assembly"
+      },
+      {
+        "doc_id": "AIOS-PRE-ARCHITECTURE-DISCOVERY-AGENT-001",
+        "title": "Pre-architecture discovery agent for five-pass system research"
+      },
+      {
+        "doc_id": "AIOS-USER-SOVEREIGNTY-DISCLOSURE-AND-LOOP-EXIT-STANDARD-001",
+        "title": "User sovereignty disclosure and loop-exit standard"
+      }
+    ]
+  },
+  {
     "document_id": "AMD-2026-012-RATIFICATION-MOTION",
     "title": "Ratification motion — AMD-2026-012",
     "version": "",
@@ -2141,6 +3700,552 @@
     "category": "council_motion",
     "_path": "amendments/AMD-2026-013-ratification-motion.md",
     "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-014",
+    "title": "Governed Authoring Knowledge Inputs and Bounded Author-Like Drafting",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-014-governed-authoring-knowledge-inputs-and-bounded-author-like-drafting.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-014-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-014",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-009",
+        "title": "Intent-Scoped Web Retrieval and Governed Website Review"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-014-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-014",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-014-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-015",
+    "title": "CANI Experience Loop and Victory Lap Formula",
+    "version": "0.1.6",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-cani-experience-loop-and-victory-lap-formula.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-006",
+        "title": "CANI Collector and Instrumentation Bridge"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-001",
+    "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-001-governed-knowledge-artifact-registry-and-declared-input-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-002",
+    "title": "CANI Observation Schema and Recommendation Routing Bridge",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-002-cani-observation-schema-and-recommendation-routing-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-003",
+    "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-003-cani-persisted-artifact-taxonomy-and-routing-storage-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-GOVERNED-AUTHORING-KNOWLEDGE-INPUT-STANDARD-001",
+        "title": "Governed authoring knowledge inputs and bounded author-like drafting"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-004",
+    "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge",
+    "version": "0.1.1",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-004-cani-telemetry-ingestion-envelope-and-normalization-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-005",
+    "title": "CANI Validator and Tooling Bridge",
+    "version": "0.1.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-005-cani-validator-and-tooling-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-006",
+    "title": "CANI Collector and Instrumentation Bridge",
+    "version": "1.0.0",
+    "status": "ratified",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-015-ADD-006-cani-collector-and-instrumentation-bridge.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-015-ADD-006-RATIFICATION-MOTION",
+        "title": "Ratification motion — AMD-2026-015-ADD-006",
+        "relationship": "ratification_motion"
+      },
+      {
+        "doc_id": "AMD-2026-015",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-001",
+        "title": "Governed Knowledge Artifact Registry and Declared-Input Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-002",
+        "title": "CANI Observation Schema and Recommendation Routing Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-003",
+        "title": "CANI Persisted Artifact Taxonomy and Routing Storage Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-004",
+        "title": "CANI Telemetry Ingestion Envelope and Normalization Bridge"
+      },
+      {
+        "doc_id": "AMD-2026-015-ADD-005",
+        "title": "CANI Validator and Tooling Bridge"
+      },
+      {
+        "doc_id": "AIOS-KB-CANI-VICTORY-LAP-001",
+        "title": "CANI Experience Loop and Victory Lap Formula"
+      },
+      {
+        "doc_id": "AIOS-CANI-EXPERIENCE-LOOP-TECHNICAL-STANDARD-001",
+        "title": "CANI Experience Loop technical standard"
+      },
+      {
+        "doc_id": "AIOS-CANI-OBSERVATION-AND-RECOMMENDATION-SCHEMA-001",
+        "title": "CANI observation and recommendation schema"
+      },
+      {
+        "doc_id": "AIOS-CANI-PERSISTED-ARTIFACT-TAXONOMY-AND-STORAGE-CONTRACT-001",
+        "title": "CANI persisted artifact taxonomy and storage contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-TELEMETRY-INGESTION-ENVELOPE-AND-NORMALIZATION-CONTRACT-001",
+        "title": "CANI telemetry ingestion envelope and normalization contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-VALIDATOR-AND-TOOLING-CONTRACT-001",
+        "title": "CANI validator and tooling contract"
+      },
+      {
+        "doc_id": "AIOS-CANI-CAPTURE-SURFACE-AND-NORMALIZATION-HANDOFF-CONTRACT-001",
+        "title": "CANI capture surface and normalization handoff contract"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      }
+    ]
+  },
+  {
+    "document_id": "AMD-2026-015-ADD-006-RATIFICATION-MOTION",
+    "title": "Ratification motion — AMD-2026-015-ADD-006",
+    "version": "",
+    "status": "approved",
+    "category": "council_motion",
+    "_path": "amendments/AMD-2026-015-ADD-006-ratification-motion.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "AMD-2026-016",
+    "title": "Governed Non-Human Principals and Deterministic Routed Authority",
+    "version": "0.3.0",
+    "status": "draft",
+    "category": "amendment",
+    "_path": "amendments/AMD-2026-016.md",
+    "cross_references": [
+      {
+        "doc_id": "AMD-2026-005",
+        "title": "Workspace Model & Governed Interface Surfaces"
+      },
+      {
+        "doc_id": "AMD-2026-007",
+        "title": "Intent Primitive, Shell Affordances, Session Disclosure, Workspace Domain Pack v1, and Primary vs Operator UI"
+      },
+      {
+        "doc_id": "AMD-2026-012",
+        "title": "Shell Authority and Voice-First Entry"
+      },
+      {
+        "doc_id": "AMD-2026-013",
+        "title": "Intent-Bearing Repository Taxonomy (Architecture and Builder Control)"
+      },
+      {
+        "doc_id": "AIOS-SPEC-002",
+        "title": "AIOS PolicyRecord Specification"
+      },
+      {
+        "doc_id": "AIOS-SPEC-009",
+        "title": "Intent Primitive and Execution Model"
+      },
+      {
+        "doc_id": "AIOS-AMD-PLAN-001",
+        "title": "Amendment pre-ratification planning lifecycle"
+      },
+      {
+        "doc_id": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+        "title": "Amendment intake scaffold standard"
+      },
+      {
+        "doc_id": "AIOS-REVIEW-PACKET-TAXONOMY-001",
+        "title": "Review packet artifact taxonomy (identity, status, events, handoff)"
+      }
+    ]
   },
   {
     "document_id": "LEGAL-001",
@@ -2305,11 +4410,29 @@
   },
   {
     "document_id": "—",
+    "title": "AIOS-AMENDMENT-INTAKE-SCAFFOLD-001",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference/implementation",
+    "_path": "reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
     "title": "intent_driven_skill",
     "version": "—",
     "status": "unregistered",
     "category": "reference",
     "_path": "reference/intent_driven_skill.md",
+    "cross_references": []
+  },
+  {
+    "document_id": "—",
+    "title": "README",
+    "version": "—",
+    "status": "unregistered",
+    "category": "reference/knowledge_base/articles",
+    "_path": "reference/knowledge_base/articles/README.md",
     "cross_references": []
   },
   {

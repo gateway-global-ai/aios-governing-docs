@@ -1,0 +1,15 @@
+packet_schema_version: 2
+document_id: AIOS-CROSS-PROVIDER-AI-OS-EXPERIMENT-PROTOCOL-001
+packet_slug: cross_provider_aios_experiment_001
+events:
+- event_id: evt-001
+  timestamp: '2026-04-17T18:15:22Z'
+  actor: cross_provider_experiment.py
+  event_type: packet_initialized
+  from_version: ''
+  to_version: ''
+  round: 3
+  summary: Cross-provider experiment packet initialized and ready for raw provider
+    runs.
+  evidence_paths:
+  - reviews/cross_provider_aios_experiment_001/round_3/experiment_manifest_20260417T181522Z.json

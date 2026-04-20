@@ -1,0 +1,15 @@
+document_id: AMD-2026-008-ADD-004
+amendment_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
+lifecycle_state: intake_open
+artifact_health: healthy
+committee_status: open
+architect_verification_status: pending
+ui_verification_status: pending
+kernel_status: pending
+peer_review_status: not_run
+ratification_handoff_status: not_ready
+next_action: build_evidence
+current_head_version: 0.3.0
+last_reviewed_version: ''
+status_updated_at: '2026-04-09T03:04:34Z'
+status_updated_by: stage2_scaffold

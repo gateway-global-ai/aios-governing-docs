@@ -1,46 +1,57 @@
-# UI plan — AMD-2026-006 / Workspace surfaces (draft)
+# UI plan — `<document_id>` (draft)
 
 **Date:** YYYY-MM-DD  
-**Builds on:** [`ARCHITECT_PLAN.md`](ARCHITECT_PLAN.md) (same packet)  
-**Verifier:** _name / role_
+**Builds on:** `ARCHITECT_PLAN.md`  
+**Knowledge packet:** `reviews/<slug>/planning/KNOWLEDGE_PACKET.yaml`  
+**Verifier:** `TBD`
 
 ---
 
 ## 1. Executive summary
 
-_How users see Workspace: hubs, onboarding, errors, disclosure — Shell authority per **AMD-2026-007** / **AIOS-SPEC-006** registration intent._
+Summarize the intended user-facing posture, what the shell or review surface must make visible, and how the UI should reflect the governing philosophy for this lane.
 
 ---
 
-## 2. Surfaces inventory
+## 2. Surface inventory
 
-| Canvas / view id | User-facing purpose | Primary entry intent | Component / file |
-|------------------|---------------------|----------------------|------------------|
+| Surface / view | Purpose | Primary intent or role | Notes |
+|----------------|---------|------------------------|-------|
 | | | | |
 
 ---
 
-## 3. Disclosure & readiness
+## 3. Disclosure and readiness
 
-_Alignment with **SPEC-009** disclosure; **no** contradictory “connected” vs “sign-in required” per **AMD-2026-012** family where applicable._
+State what the user must be able to see about authority, provenance, state, blockers, and review posture.
 
----
-
-## 4. Shell vs Workspace boundary
-
-_What **Shell** owns vs **Workspace** canvas; voice/chat routing to `workspace.*` intents._
+| Disclosure area | Required signal | Current / proposed handling |
+|-----------------|-----------------|-----------------------------|
+| | | |
 
 ---
 
-## 5. Gaps / open UX risks
+## 4. Boundary model
 
-| Risk | Mitigation in spec or code |
-|------|----------------------------|
-| | |
+Describe what is owned by the shell, by the review surface, by lane-local artifacts, and by human approval steps.
+
+| Boundary | Owner | Why it matters |
+|----------|-------|----------------|
+| | | |
+
+---
+
+## 5. Gaps and UX risks
+
+| Risk | Governing source | Mitigation |
+|------|------------------|------------|
+| | | |
 
 ---
 
 ## 6. Verification checklist
 
-- [ ] Surface IDs match **`canvasTypes.ts`** / **`ALL_CANVAS_VIEWS`** (or document **new** IDs for spec merge).
-- [ ] No **dashboard-first** regression vs shell authority amendments.
+- [ ] Surface definitions match declared role and authority boundaries.
+- [ ] Required provenance and approval signals are visible to a human reviewer.
+- [ ] The UI does not collapse shell authority, planning authority, and ratification authority into one undifferentiated state.
+- [ ] Open UI assumptions are explicit.

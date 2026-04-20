@@ -1,6 +1,10 @@
 # Optional: copy to reviews/<slug>/planning/REVIEW_TARGET.yaml before running the MVP runner.
 # Populates EXECUTION_TRANSACTION.json → allowed_surfaces, required_visual_proofs
 # and drives the human review packet + VISUAL_EVIDENCE checklist (no screenshot automation).
+# Where a sovereign Playwright run is used, policy or ops MAY also attach:
+# - visual_proof_harness: playwright
+# - visual_proof_target: sovereign_fixture | external_runtime
+# - visual_proof_base_url: <approved base URL or fixture target>
 #
 # Quote lines that contain ":" so they stay plain strings (not YAML mappings).
 

@@ -1,0 +1,30 @@
+packet_schema_version: '2'
+document_id: AMD-2026-012-ADD-001
+packet_slug: amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing
+events:
+- event_id: evt-20260417T222349Z-001
+  timestamp: '2026-04-17T22:23:49Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/peer_review_manifest_20260417T222349Z.json
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_001_openai__AMD-2026-012-ADD-001.md
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_002_gemini__AMD-2026-012-ADD-001.md
+- event_id: evt-20260417T230904Z-002
+  timestamp: '2026-04-17T23:09:04Z'
+  actor: peer_review.py
+  event_type: review_round_completed
+  from_version: 0.1.0
+  to_version: 0.1.0
+  round: 1
+  summary: Peer review round 1 completed for assessed draft 0.1.0.
+  evidence_paths:
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/peer_review_manifest_20260417T230904Z.json
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_001_openai__AMD-2026-012-ADD-001.md
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_002_gemini__AMD-2026-012-ADD-001.md
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_003_openai__AMD-2026-012-ADD-001.md
+  - reviews/amd_2026_012_add_001_loop_exit_and_discovery_first_voice_sequencing/round_1/review_004_gemini__AMD-2026-012-ADD-001.md

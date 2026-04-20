@@ -1,0 +1,109 @@
+packet_schema_version: "2"
+document_id: AMD-2026-008-ADD-004
+packet_slug: amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate
+events:
+  - event_id: evt-20260408-001
+    timestamp: 2026-04-08T12:00:00Z
+    actor: governance_packet_author
+    event_type: packet_initialized
+    from_version: ""
+    to_version: 0.1.0
+    round: 0
+    summary: ADD-004 peer review packet opened for draft 0.1.0 intake.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/revision_log.md
+
+  - event_id: evt-20260408-002
+    timestamp: 2026-04-08T14:00:00Z
+    actor: amendment_author
+    event_type: draft_revised
+    from_version: 0.1.0
+    to_version: 0.2.0
+    round: 0
+    summary: Phase E revision addressing Round 1 feedback on definitions, proportionality, schema home, test-captured proof, and remediation.
+    evidence_paths:
+      - amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/revision_log.md
+
+  - event_id: evt-20260408-003
+    timestamp: 2026-04-08T23:45:00Z
+    actor: peer_review.py
+    event_type: review_round_completed
+    from_version: 0.2.0
+    to_version: 0.2.0
+    round: 1
+    summary: Triangulated Round 1 completed (DeepSeek, OpenAI, Gemini) on assessed draft 0.2.0.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/peer_review_manifest_20260408T234537Z.json
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/review_001_deepseek__AMD-2026-008-ADD-004.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/review_002_openai__AMD-2026-008-ADD-004.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/review_003_gemini__AMD-2026-008-ADD-004.md
+
+  - event_id: evt-20260408-004
+    timestamp: 2026-04-08T23:46:00Z
+    actor: ratification_gate_assessor
+    event_type: review_gate_failed
+    from_version: 0.2.0
+    to_version: 0.2.0
+    round: 1
+    summary: AMD-2026-005 thresholds not met for draft 0.2.0 (e.g. composite below 3.5 and dimensions below 3 on at least one lane); see RATIFICATION_GATE_REPORT.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/RATIFICATION_GATE_REPORT.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/REVIEW_SYNTHESIS.md
+
+  - event_id: evt-20260408-005
+    timestamp: 2026-04-08T23:55:00Z
+    actor: amendment_author
+    event_type: draft_revised
+    from_version: 0.2.0
+    to_version: 0.3.0
+    round: 0
+    summary: Author revision 0.3.0 mapping Round 1 synthesis themes (implementation seam, SPEC/MPOA pointers, precedence, policy-equivalent surfaces).
+    evidence_paths:
+      - amendments/AMD-2026-008-ADD-004-pre-human-browser-review-and-visual-proof-gate.md
+
+  - event_id: evt-20260408-006
+    timestamp: 2026-04-08T23:58:00Z
+    actor: governance_coordinator
+    event_type: committee_closed_superseded
+    from_version: 0.3.0
+    to_version: 0.3.0
+    round: 0
+    summary: Phase D committee packet closed as superseded by Round 1 evidence; procedural closure not a doctrine rewrite.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/planning/COMMITTEE_PACKET.md
+
+  - event_id: evt-20260408-007
+    timestamp: 2026-04-08T23:58:30Z
+    actor: governance_coordinator
+    event_type: external_review_package_created
+    from_version: 0.3.0
+    to_version: 0.3.0
+    round: 0
+    summary: External peer audit package created for prior committee and status-split documentation.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/external_peer_review_audit_2026-04-08/README.md
+
+  - event_id: evt-20260408-008
+    timestamp: 2026-04-08T23:59:00Z
+    actor: governance_taxonomy_migration
+    event_type: handoff_hardening_applied
+    from_version: 0.3.0
+    to_version: 0.3.0
+    round: 1
+    summary: Split PACKET_IDENTITY into identity-only plus PACKET_STATUS and PACKET_EVENTS per AIOS-REVIEW-PACKET-TAXONOMY-001; no change to Round 1 gate outcome.
+    evidence_paths:
+      - reference/implementation/AIOS-REVIEW-PACKET-TAXONOMY-001.md
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/PACKET_STATUS.yaml
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/PACKET_EVENTS.yaml
+
+  - event_id: evt-20260408-009
+    timestamp: 2026-04-09T00:00:00Z
+    actor: governance_taxonomy_repair
+    event_type: packet_status_corrected
+    from_version: 0.3.0
+    to_version: 0.3.0
+    round: 1
+    summary: Corrected next_action to peer_review_round_2; current_head_version 0.3.0 exceeds last_reviewed_version 0.2.0 while Round 1 review_gate_status remains fail until Round 2.
+    evidence_paths:
+      - reviews/amd_2026_008_add_004_pre_human_browser_review_and_visual_proof_gate/round_1/PACKET_STATUS.yaml

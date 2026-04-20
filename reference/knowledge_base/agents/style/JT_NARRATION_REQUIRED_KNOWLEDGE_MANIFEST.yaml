@@ -1,0 +1,26 @@
+label: jt_narration_governed_authoring
+mode: narration
+style_cards:
+  - reference/knowledge_base/agents/style/JT_NARRATION_STYLE_CARD.md
+boundaries:
+  - reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
+required_documents:
+  - reference/knowledge_base/agents/style/JT_NARRATION_STYLE_CARD.md
+  - reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
+  - reference/knowledge_base/README.md
+  - reference/knowledge_base/agents/README.md
+  - amendments/AMD-2026-007.md
+  - amendments/AMD-2026-009.md
+  - amendments/AMD-2026-013.md
+  - specifications/IntentPrimitiveAndExecutionModel.md
+allowed_optional_documents:
+  - reference/knowledge_base/snapshots/product_context_bundle.md
+  - reference/knowledge_base/cursor_research_outputs/CURRENT_SYSTEM_RESEARCH_2026-04-08.md
+  - reference/implementation/AIOS-AMD-PRE-RATIFICATION-PLANNING-LIFECYCLE.md
+  - reference/implementation/AIOS-AMENDMENT-INTAKE-SCAFFOLD-001.md
+prohibited_source_classes:
+  - raw_chat_transcripts
+  - unpublished_private_notes
+  - undeclared_external_web_sources
+  - discussion_without_repo_conversion
+identity_boundary_rule: reference/knowledge_base/agents/style/JT_AUTHORING_MODE_BOUNDARIES.md
