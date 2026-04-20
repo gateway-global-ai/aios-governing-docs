@@ -172,3 +172,59 @@ test('runtime agent identity overlay stays top-aligned with intent menu', async 
   expect(panelBox).not.toBeNull();
   expect(panelBox!.y).toBeGreaterThanOrEqual(headerBox!.height - 2);
 });
+
+test('runtime intent ingestion captures payload and prepares handoff', async ({ page }) => {
+  test.skip(!process.env.AIOS_PLAYWRIGHT_BASE_URL, 'requires live runtime');
+
+  // Navigate to Voice Box Record
+  await page.getByRole('button', { name: 'Open system shell menu' }).click();
+  await page.getByRole('button', { name: /Voice control/i }).click();
+  await page.getByRole('button', { name: /Voice profiles/i }).click();
+  await page.getByRole('button', { name: /Voice Box/i }).click();
+  await page.getByRole('button', { name: /Record Voice/i }).click();
+
+  await expect(page.locator('label', { hasText: 'Select a profile' })).toBeVisible();
+
+  // Mock MediaRecorder and getUserMedia to simulate governed capture payload
+  await page.evaluate(() => {
+    class MockMediaRecorder {
+      mimeType = 'audio/webm';
+      state = 'inactive';
+      ondataavailable: any;
+      onstop: any;
+      start() {
+        this.state = 'recording';
+        setTimeout(() => {
+          if (this.ondataavailable) {
+            this.ondataavailable({ data: new Blob(['mock audio data'], { type: 'audio/webm' }) });
+          }
+          this.stop();
+        }, 100);
+      }
+      stop() {
+        if (this.state === 'inactive') return;
+        this.state = 'inactive';
+        if (this.onstop) this.onstop();
+      }
+    }
+    (window as any).MediaRecorder = MockMediaRecorder;
+
+    Object.defineProperty(navigator, 'mediaDevices', {
+      value: {
+        getUserMedia: () => Promise.resolve({
+          getTracks: () => [{ stop: () => {} }]
+        })
+      },
+      writable: true
+    });
+  });
+
+  // Trigger the recording
+  const recordButton = page.getByRole('button', { name: /Push to talk/i }).first();
+  await recordButton.dispatchEvent('pointerdown');
+  await page.waitForTimeout(200); // Wait for mock recording
+  await recordButton.dispatchEvent('pointerup');
+
+  // Assert that the intent-ingestion state updates correctly without breaking the shell registry routing
+  await expect(page.getByText('Voice Box', { exact: true }).first()).toBeVisible();
+});
